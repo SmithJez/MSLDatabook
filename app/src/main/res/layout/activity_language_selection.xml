@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="@dimen/sp_24"
+        android:textStyle="bold"
+        android:text="@string/select_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+
+
+        android:id="@+id/gvLanguageSelection"
+        android:smoothScrollbar="true"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:fastScrollEnabled="true"
+        android:numColumns="2"
+        android:choiceMode="singleChoice"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

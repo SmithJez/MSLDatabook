@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dp_64">128dp</dimen>
+
+    <dimen name="sp_8">14sp</dimen>
+    <dimen name="sp_10">18sp</dimen>
+    <dimen name="sp_12">20sp</dimen>
+    <dimen name="sp_16">28sp</dimen>
+
+    <dimen name="dp_20">40dp</dimen>
+    <dimen name="dp_2">4dp</dimen>
+
+    <dimen name="dp_1">2dp</dimen>
+    <dimen name="dp_4">8dp</dimen>
+
+    <dimen name="dp_14">28dp</dimen>
+    <dimen name="dp_18">36dp</dimen>
+    <dimen name="dp_24">48dp</dimen>
+    <dimen name="dp_30">60dp</dimen>
+
+    <dimen name="bar_height">30dp</dimen>
+
+    <dimen name="ic_stat_size">60dp</dimen>
+
+    <dimen name="dp_26">52dp</dimen>
+
+    <dimen name="dp_6">12dp</dimen>
+
+    <dimen name="dp_48">72dp</dimen>
+
+    <dimen name="dp_52">80dp</dimen>
+
+    <!--<item name="scaleCheckBox" type="dimen" format="float">1.5</item>-->
+
+</resources>

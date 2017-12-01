@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:background="@color/white"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/skill_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFilterTitle" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cbSkillBook"
+                android:text="Skill Book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@color/white"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/element"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <CheckBox
+
+                android:checked="true"
+                android:text="@string/select_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbSelectAllElement" />
+
+            <GridView
+
+
+                android:horizontalSpacing="@dimen/dp_1"
+                android:numColumns="1"
+                android:id="@+id/gvElement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </GridView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@color/white"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <CheckBox
+                android:checked="true"
+                android:text="@string/select_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbSelectAllGrade" />
+
+            <GridView
+
+
+                android:horizontalSpacing="@dimen/dp_1"
+                android:numColumns="1"
+                android:id="@+id/gvGrade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </GridView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@color/white"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <CheckBox
+                android:checked="true"
+                android:text="@string/select_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbSelectAllType" />
+
+            <GridView
+
+
+                android:horizontalSpacing="@dimen/dp_1"
+                android:numColumns="1"
+                android:id="@+id/gvType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </GridView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/variant_skill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <CheckBox
+            android:checked="true"
+            android:text="@string/select_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbSelectAllVariant" />
+
+        <GridView
+
+            android:horizontalSpacing="@dimen/dp_1"
+            android:numColumns="2"
+            android:id="@+id/gvVariant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </GridView>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

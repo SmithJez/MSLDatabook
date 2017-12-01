@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@color/grey_tran"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="@dimen/dp_8"
+            android:visibility="invisible"
+            android:src="@drawable/ic_keyboard_arrow_down_white_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="@dimen/dp_54"
+            android:layout_height="@dimen/dp_54">
+
+            <ImageView
+                android:layout_marginTop="@dimen/dp_2"
+                android:id="@+id/ivGolemParentIcon"
+                android:layout_width="@dimen/dp_54"
+                android:layout_height="@dimen/dp_52"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/dp_4"
+                android:src="@drawable/amorg" />
+
+
+            <ImageView
+
+                android:id="@+id/ivFrameGolem"
+                android:layout_width="@dimen/dp_54"
+                android:layout_height="@dimen/dp_54"
+                android:adjustViewBounds="true"
+                android:src="@drawable/frame_evo1_wood" />
+
+
+            <ImageView
+                android:id="@+id/ivGolemGrade"
+                android:layout_width="@dimen/dp_54"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:adjustViewBounds="true"
+                android:paddingEnd="@dimen/dp_4"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingStart="@dimen/dp_4"
+                android:src="@drawable/s6" />
+
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/tvGolemParentStage"
+            android:text="@string/dump"
+            android:textStyle="bold"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/ivParentEggReward"-->
+            <!--android:padding="@dimen/dp_4"-->
+            <!--android:src="@drawable/egg_pink"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:layout_width="@dimen/dp_52"-->
+            <!--android:layout_height="@dimen/dp_52" />-->
+
+        <!--<LinearLayout-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="@dimen/dp_52"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/ivParentRuneReward"-->
+                <!--android:padding="@dimen/dp_4"-->
+                <!--android:src="@drawable/rune_icon_dragon_all_1"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_width="@dimen/dp_52"-->
+                <!--android:layout_height="@dimen/dp_52" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvGolemParentRuneGrade"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="@dimen/sp_11"-->
+                <!--android:text="@string/dump"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+
+
+
+        <ImageView
+            android:src="@drawable/energy"
+            android:padding="@dimen/dp_8"
+
+            android:adjustViewBounds="true"
+            android:layout_width="@dimen/dp_52"
+            android:layout_height="@dimen/dp_52" />
+
+        <TextView
+            android:layout_margin="@dimen/dp_8"
+            android:id="@+id/tvEnergyCost"
+            android:textColor="@color/white"
+            android:text="@string/dump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">MSL Databook</string>
+
+
+    <string name="banner_ad_unit_id">ca-app-pub-1489459199627698/1164106162</string>
+
+    <string name="select_all">Select All</string>
+
+    <string name="debuff">Debuff</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="adrenaline">Adrenaline</string>
+    <string name="aggression__defense_">Aggression (Defense)</string>
+    <string name="aggression__hp_">Aggression (HP)</string>
+    <string name="aggression__recovery_">Aggression (Recovery)</string>
+    <string name="attack_down">Attack Down</string>
+    <string name="attack_up">Attack Up</string>
+    <string name="azure_spirit_s_bounty">Azure Spirit\'s Bounty</string>
+    <string name="battle_rush">Battle Rush</string>
+    <string name="buff_breaker">Buff Breaker</string>
+    <string name="dark_hunter">Dark Hunter</string>
+    <string name="dark_predator">Dark Predator</string>
+    <string name="dark_stalker">Dark Stalker</string>
+    <string name="defense_down">Defense Down</string>
+    <string name="defense_up">Defense Up</string>
+    <string name="dominance">Dominance</string>
+    <string name="fatigue">Fatigue</string>
+    <string name="fire_hunter">Fire Hunter</string>
+    <string name="fire_predator">Fire Predator</string>
+    <string name="fire_stalker">Fire Stalker</string>
+    <string name="hp_siphon">HP Siphon</string>
+    <string name="hunter">Hunter</string>
+    <string name="light_hunter">Light Hunter</string>
+    <string name="light_predator">Light Predator</string>
+    <string name="light_stalker">Light Stalker</string>
+    <string name="morale_boost">Morale Boost</string>
+    <string name="petrification">Petrification</string>
+    <string name="predator">Predator</string>
+    <string name="purification">Purification</string>
+    <string name="recovery_down">Recovery Down</string>
+    <string name="recovery_up">Recovery Up</string>
+    <string name="resilience">Resilience</string>
+    <string name="sap">Sap</string>
+    <string name="seal">Seal</string>
+    <string name="shield">Shield</string>
+    <string name="shield_breaker">Shield Breaker</string>
+    <string name="shock">Shock</string>
+    <string name="silence">Silence</string>
+    <string name="sleep">Sleep</string>
+    <string name="soul_boon__blue">Soul Boon: Blue</string>
+    <string name="soul_boon__red">Soul Boon: Red</string>
+    <string name="sp_siphon">SP Siphon</string>
+    <string name="stalker">Stalker</string>
+    <string name="stun">Stun</string>
+    <string name="taunt">Taunt</string>
+    <string name="thirst">Thirst</string>
+    <string name="vigor">Vigor</string>
+    <string name="water_hunter">Water Hunter</string>
+    <string name="water_predator">Water Predator</string>
+    <string name="water_stalker">Water Stalker</string>
+    <string name="wood_hunter">Wood Hunter</string>
+    <string name="wood_predator">Wood Predator</string>
+    <string name="wood_stalker">Wood Stalker</string>
+    <string name="zeal">Zeal</string>
+    <string name="elemental_edge">Elemental Edge</string>
+    <string name="hp_leverage">HP Leverage</string>
+    <string name="attack_modifier">Attack Modifier</string>
+    <string name="recovery">Recovery</string>
+    <string name="buff">Buff</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="fire">Fire</string>
+    <string name="water">Water</string>
+    <string name="wood">Wood</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="element">Element</string>
+    <string name="attacker">Attacker</string>
+    <string name="balanced">Balanced</string>
+    <string name="defender">Defender</string>
+    <string name="tank">Tank</string>
+    <string name="type">Type</string>
+    <string name="grade">Grade</string>
+    <string name="element_grade"><![CDATA[Element & Grade]]></string>
+    <string name="astromon_filter">Astromon Filter</string>
+    <string name="all_element">All Element</string>
+    <string name="all_grade">All Grade</string>
+    <string name="all_type">All Type</string>
+    <string name="skill_filter">Skill Filter</string>
+    <string name="skill_3">Skill 3</string>
+    <string name="variant_skill">Variant Skill</string>
+    <string name="x">x</string>
+    <string name="search_title">Search Astromon</string>
+    <string name="clearFilter">Clear Filter</string>
+    <string name="astroguide">Astroguide</string>
+    <string name="exit">Exit</string>
+    <string name="help">Help</string>
+    <string name="launchMslGame">Launch MSL Game</string>
+    <string name="learn_more">Learn More</string>
+
+
+</resources>

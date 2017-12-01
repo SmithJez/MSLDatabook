@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="@dimen/dp_4"
+    android:layout_margin="@dimen/dp_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <FrameLayout
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivTitanIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/dp_6"
+                android:src="@drawable/amorg" />
+
+
+            <ImageView
+
+                android:id="@+id/ivFrameTitan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/frame_evo1_wood" />
+
+
+            <ImageView
+                android:id="@+id/ivTitanGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:adjustViewBounds="true"
+                android:paddingEnd="@dimen/dp_4"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingStart="@dimen/dp_4"
+                android:src="@drawable/s6" />
+
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tvClanStage"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/dp_2"
+                android:text="@string/dump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="@color/grey_tran"
+
+                android:padding="@dimen/dp_2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+
+
+
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanHpText"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanHp"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanAttackText"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanAttack"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanDefenseText"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanDefense"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanRecoveryText"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanRecovery"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanCritDmgText"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanCritDmg"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanCritRateText"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanCritRate"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanResistText"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tvTitanResist"
+                            android:text="@string/dump"
+                            android:textSize="@dimen/sp_12"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/grey_tran"
+            android:layout_margin="@dimen/dp_2"
+            android:padding="@dimen/dp_2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/dp_2"
+                android:textStyle="bold"
+                android:textColor="@color/msl_yellow"
+                android:id="@+id/tvTitanSkillNormal"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/dump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="@dimen/dp_2"
+                    android:id="@+id/ivTitanSkillNormal"
+                    android:src="@drawable/skill_blank"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:minLines="3"
+                    android:maxLines="3"
+                    android:layout_margin="@dimen/dp_2"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvTitanSkillNormalDesc"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/dump"
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:background="@color/grey_tran"
+            android:layout_margin="@dimen/dp_2"
+            android:padding="@dimen/dp_2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/dp_2"
+                android:textStyle="bold"
+                android:textColor="@color/msl_yellow"
+                android:id="@+id/tvTitanSkillActive"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/dump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="@dimen/dp_2"
+                    android:id="@+id/ivTitanSkillActive"
+                    android:src="@drawable/skill_blank"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:minLines="3"
+                    android:maxLines="3"
+                    android:layout_margin="@dimen/dp_2"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvTitanSkillActiveDesc"
+                    android:textSize="@dimen/sp_12"
+                    android:text="@string/dump"
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:title="@string/sort"
+        android:icon="@drawable/ic_sort_white_24dp"
+        app:showAsAction="never"
+        >
+
+        <menu>
+            <item android:id="@+id/sortHP"
+                android:title="Sort by HP"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/sortAttack"
+                android:title="Sort by Attack"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/sortDefense"
+                android:title="Sort by Defense"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/sortRecovery"
+                android:title="Sort by Recovery"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <!--<item android:id="@+id/sortName"-->
+                <!--android:title="Sort by Name"-->
+                <!--android:orderInCategory="100"-->
+                <!--app:showAsAction="never" />-->
+
+            <!--<item android:id="@+id/sortElement"-->
+                <!--android:title="Sort by Element"-->
+                <!--android:orderInCategory="100"-->
+                <!--app:showAsAction="never" />-->
+
+
+            <item android:id="@+id/sortStar"
+                android:title="Sort by Grade"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <!--<item android:id="@+id/sortReset"-->
+                <!--android:title="Reset to Default"-->
+                <!--android:orderInCategory="100"-->
+                <!--app:showAsAction="never" />-->
+
+
+        </menu>
+
+
+    </item>
+
+    <item
+        android:id="@+id/mySearch"
+        android:title="@string/search_title"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
+
+
+    <item android:title="@string/filter"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_remove_red_eye_white_24dp"
+        android:id="@+id/menuFilter" />
+
+    <item android:title="@string/clearFilter"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_close_white_24dp"
+        android:id="@+id/resetToDefault" />
+
+    <!--<item android:title="@string/clearFilter"-->
+        <!--app:showAsAction="never"-->
+        <!--android:icon="@drawable/ic_close_white_24dp"-->
+        <!--android:id="@+id/menuClearFilter2" />-->
+
+    <!--<item android:title="@string/clearFilter"-->
+        <!--app:showAsAction="never"-->
+        <!--android:icon="@drawable/ic_close_white_24dp"-->
+        <!--android:id="@+id/menuClearFilter3" />-->
+</menu>

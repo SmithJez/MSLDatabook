@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llMonDetailProfileBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:background="@color/grey_tran"
+            android:layout_margin="@dimen/dp_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_2">
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivEvo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:padding="@dimen/dp_6"
+
+                        android:src="@drawable/amorg" />
+
+
+                    <ImageView
+
+                        android:id="@+id/frame_evo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/frame_evo1_wood" />
+
+
+                    <ImageView
+                        android:id="@+id/ivGradeEvo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:adjustViewBounds="true"
+                        android:paddingEnd="@dimen/dp_4"
+                        android:paddingLeft="@dimen/dp_4"
+                        android:paddingRight="@dimen/dp_4"
+                        android:paddingStart="@dimen/dp_4"
+                        android:src="@drawable/s6" />
+
+
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvEvo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dump"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_weight="0.7"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/evo1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_2">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivEvo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:padding="@dimen/dp_6"
+
+                        android:src="@drawable/amorg" />
+
+
+                    <ImageView
+                        android:id="@+id/frame_evo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/frame_evo2_wood" />
+
+
+                    <ImageView
+                        android:id="@+id/ivGradeEvo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:adjustViewBounds="true"
+                        android:paddingEnd="@dimen/dp_4"
+                        android:paddingLeft="@dimen/dp_4"
+                        android:paddingRight="@dimen/dp_4"
+                        android:paddingStart="@dimen/dp_4"
+                        android:src="@drawable/s6" />
+
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvEvo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dump"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_weight="0.7"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/evo2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_2">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivEvo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:padding="@dimen/dp_6"
+                        android:src="@drawable/amorg" />
+
+
+                    <ImageView
+                        android:id="@+id/frame_evo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/frame_evo3_wood" />
+
+
+                    <ImageView
+                        android:id="@+id/ivGradeEvo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:adjustViewBounds="true"
+                        android:paddingEnd="@dimen/dp_4"
+                        android:paddingLeft="@dimen/dp_4"
+                        android:paddingRight="@dimen/dp_4"
+                        android:paddingStart="@dimen/dp_4"
+                        android:src="@drawable/s6" />
+
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvEvo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dump"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_weight="0.7"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/evo3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:background="@color/grey_tran"
+            android:layout_margin="@dimen/dp_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <include layout="@layout/mon_stat" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

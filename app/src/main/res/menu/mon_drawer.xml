@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:enabled="true">
+        <item
+            android:id="@+id/navAstroguide"
+            android:icon="@drawable/ic_action_astroguide_10"
+            android:title="@string/astroguide" />
+
+        <item
+            android:id="@+id/navClan"
+            android:icon="@drawable/ic_action_clan"
+            android:title="@string/Clan" />
+
+        <!--<item-->
+            <!--android:id="@+id/navGolem"-->
+            <!--android:icon="@drawable/ic_action_golem"-->
+            <!--android:title="@string/Golem" />-->
+
+
+        <!--<item-->
+            <!--android:id="@+id/navGolem2"-->
+            <!--android:icon="@drawable/ic_action_golem"-->
+            <!--android:title="@string/dump" />-->
+
+    </group>
+
+    <group>
+
+        <item
+            android:id="@+id/navLaunch"
+            android:icon="@drawable/ic_launch_black_24dp"
+            android:title="@string/launchMslGame" />
+
+        <!--<item-->
+            <!--android:id="@+id/learnMore"-->
+            <!--android:icon="@drawable/ic_help_black_24dp"-->
+            <!--android:title="@string/learn_more" />-->
+
+        <item
+            android:id="@+id/langSetting"
+            android:icon="@drawable/ic_language_black_24dp"
+            android:title="@string/language" />
+
+
+        <!--<item-->
+            <!--android:id="@+id/navHelp"-->
+            <!--android:icon="@drawable/ic_help_outline_black_24dp"-->
+            <!--android:title="@string/help" />-->
+        <item
+            android:id="@+id/navExit"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/exit" />
+
+
+    </group>
+
+
+
+
+
+</menu>

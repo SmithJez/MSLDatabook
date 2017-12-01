@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:padding="@dimen/dp_8"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/tran_white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+            <!--<TextView-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="@dimen/sp_16"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text=""-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/tvProgressText" />-->
+
+            <!--<TextView-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="@dimen/sp_16"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text=""-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/tvProgressPercentage" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<ProgressBar-->
+
+            <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/progressBar"-->
+            <!--android:minHeight="20dp"-->
+
+            <!--/>-->
+
+
+
+
+
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:id="@+id/dummy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/mon_item"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:id="@+id/dummyDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/mon_profile_detail"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/skill_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFilterTitle" />
+
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFilterActiveTarget" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:checked="true"
+                android:id="@+id/cbActiveTargetAll"
+                android:text="@string/target_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:checked="true"
+                android:id="@+id/cbActiveTargetSingle"
+                android:text="@string/target_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:checked="true"
+                android:id="@+id/cbActiveTargetAllies"
+                android:text="@string/target_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"/>
+
+
+    <CheckBox
+        android:checked="true"
+        android:text="@string/select_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbSelectAllSkill" />
+
+
+
+
+
+
+    <GridView
+
+        android:id="@+id/lvFilterSkill"
+        android:horizontalSpacing="@dimen/dp_1"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

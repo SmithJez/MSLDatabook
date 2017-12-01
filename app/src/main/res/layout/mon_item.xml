@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:padding="@dimen/dp_2"
+            android:id="@+id/llMonBg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/grey_tran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/mon_profile"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@color/grey_tran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/mon_stat"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/dp_2"
+                android:layout_height="match_parent"/>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:background="@color/grey_tran"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <include layout="@layout/mon_skill"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

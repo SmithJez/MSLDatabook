@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    >
+
+    <LinearLayout
+        android:padding="@dimen/dp_2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+
+        android:id="@+id/tvType"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginBottom="@dimen/dp_2"
+        android:gravity="center_horizontal"
+        android:text="@string/dump"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+<!--Red-->
+
+        <android.support.design.widget.CoordinatorLayout
+
+
+            android:layout_marginBottom="@dimen/dp_2"
+            android:id="@+id/coorForCal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/barCpRed"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ic_stat_size">
+
+                <ImageView
+
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/_rounded_rect_bar_bg"
+                    android:contentDescription="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height"
+                    />
+
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/ivBarHp"
+                    android:contentDescription="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bar_height"
+                    android:background="@drawable/_rounded_rect_team_red" />
+
+
+
+                <TextView
+
+                    android:textSize="@dimen/sp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvMaxHp"
+                    android:text="@string/dump"
+                    android:layout_toRightOf="@+id/tvHp"
+                    android:layout_toEndOf="@+id/tvHp" />
+
+                <TextView
+                    android:text="@string/dump"
+                    android:textStyle="bold"
+
+                    android:textSize="@dimen/sp_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvHp"
+                    android:layout_alignBaseline="@id/tvMaxHp"
+
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/barHp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height">
+
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+<!--Blue-->
+
+        <android.support.design.widget.CoordinatorLayout
+
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+
+            <RelativeLayout
+                android:id="@+id/barCpBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ic_stat_size">
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/_rounded_rect_bar_bg"
+                    android:contentDescription="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height"
+                    />
+
+                <ImageView
+
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/ivBarAttack"
+                    android:contentDescription="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bar_height"
+                    android:background="@drawable/_rounded_rect_team_blue" />
+
+
+
+                <TextView
+
+                    android:textSize="@dimen/sp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvMaxAttack"
+                    android:text="@string/dump"
+                    android:layout_toRightOf="@+id/tvAttack"
+                    android:layout_toEndOf="@+id/tvAttack" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="@string/dump"
+
+                    android:textSize="@dimen/sp_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvAttack"
+
+                    android:layout_alignBaseline="@id/tvMaxAttack"
+                    />
+
+                <LinearLayout
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height">
+
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+<!--Orange-->
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/barCpOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ic_stat_size">
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/_rounded_rect_bar_bg"
+                    android:contentDescription="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height"
+                    />
+
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/ivBarDefense"
+                    android:contentDescription="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bar_height"
+                    android:background="@drawable/_rounded_rect_team_orange" />
+
+
+
+
+
+                <TextView
+
+                    android:textSize="@dimen/sp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvMaxDefense"
+                    android:text="@string/dump"
+                    android:layout_toRightOf="@+id/tvDefense"
+                    android:layout_toEndOf="@+id/tvDefense" />
+
+                <TextView
+                    android:text="@string/dump"
+                    android:textStyle="bold"
+
+                    android:textSize="@dimen/sp_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvDefense"
+                    android:layout_alignBaseline="@id/tvMaxDefense"
+                    />
+
+                <LinearLayout
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height">
+
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+            <!--Start-->
+
+<!--Green-->
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/barCpGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ic_stat_size">
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/_rounded_rect_bar_bg"
+                    android:contentDescription="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height"
+                    />
+
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/ivBarRecovery"
+                    android:contentDescription="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bar_height"
+                    android:background="@drawable/_rounded_rect_team_green" />
+
+
+
+                <TextView
+
+                    android:textSize="@dimen/sp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvMaxRecovery"
+                    android:text="@string/dump"
+                    android:layout_toRightOf="@+id/tvRecovery"
+                    android:layout_toEndOf="@+id/tvRecovery" />
+
+
+                <TextView
+                    android:text="@string/dump"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvRecovery"
+                    android:layout_alignBaseline="@id/tvMaxRecovery"
+                    />
+
+                <LinearLayout
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height">
+
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/view" />
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+            <!--End-->
+
+<!--Grey-->
+
+        <!--Start-->
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/barCpGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ic_stat_size">
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/_rounded_rect_bar_bg"
+                    android:contentDescription="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height"
+                    />
+
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/ivBarCritDmg"
+                    android:contentDescription="@null"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/bar_height"
+                    android:background="@drawable/_rounded_rect_team_grey" />
+
+
+
+                <TextView
+
+                    android:textSize="@dimen/sp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvMaxCritDmg"
+                    android:text="@string/dump"
+                    android:layout_toRightOf="@+id/tvCritDmg"
+                    android:layout_toEndOf="@+id/tvCritDmg" />
+
+
+                <TextView
+                    android:text="@string/dump"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvCritDmg"
+                    android:layout_alignBaseline="@id/tvMaxCritDmg"
+                    />
+
+                <LinearLayout
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height">
+
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <!--End-->
+
+
+<!--Purple-->
+
+        <!--Start-->
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/barCpPurple"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ic_stat_size">
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/_rounded_rect_bar_bg"
+                    android:contentDescription="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height"
+                    />
+
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/ivBarCritRate"
+                    android:contentDescription="@null"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/bar_height"
+                    android:background="@drawable/_rounded_rect_team_purple" />
+
+
+
+                <TextView
+
+                    android:textSize="@dimen/sp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvMaxCritRate"
+                    android:text="@string/dump"
+                    android:layout_toRightOf="@+id/tvCritRate"
+                    android:layout_toEndOf="@+id/tvCritRate" />
+
+
+                <TextView
+                    android:text="@string/dump"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvCritRate"
+                    android:layout_alignBaseline="@id/tvMaxCritRate"
+                    />
+
+                <LinearLayout
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height">
+
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <!--End-->
+
+
+<!--Yellow-->
+        <!--Start-->
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/barCpYellow"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ic_stat_size">
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/_rounded_rect_bar_bg"
+                    android:contentDescription="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height"
+                    />
+
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/ivBarResist"
+                    android:contentDescription="@null"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/bar_height"
+                    android:background="@drawable/_rounded_rect_team_yellow" />
+
+
+
+                <TextView
+
+                    android:textSize="@dimen/sp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvMaxResist"
+                    android:text="@string/dump"
+                    android:layout_toRightOf="@+id/tvResist"
+                    android:layout_toEndOf="@+id/tvResist" />
+
+
+                <TextView
+                    android:text="@string/dump"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvResist"
+                    android:layout_alignBaseline="@id/tvMaxResist"
+                    />
+
+                <LinearLayout
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height">
+
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:background="@color/tran_black"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/bar_height" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <!--End-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

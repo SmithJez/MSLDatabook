@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="hp_color">#c62828</color>
+
+
+    <color name="fire_bg">#855154</color>
+    <color name="wood_bg">#4d663e</color>
+    <color name="water_bg">#4e6882</color>
+    <color name="light_bg">#877558</color>
+    <color name="dark_bg">#746587</color>
+
+
+    <color name="mon_light">#76664a</color>
+
+    <color name="tran_white">#65ffffff</color>
+
+
+    <color name="team_green">#2E7D32</color>
+
+    <color name="tran_black">#232e240b</color>
+
+    <color name="border">#a2a2a2</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="team_red">#C62828</color>
+    <color name="team_red_bot">#ff6962</color>
+    <color name="team_red_border">#ffa5a0</color>
+
+    <color name="team_yellow">#F9A825</color>
+    <color name="team_yellow_bot">#ffe463</color>
+    <color name="team_yellow_border">#ffee9f</color>
+
+    <color name="team_blue">#1565C0</color>
+    <color name="team_blue_bot">#63afff</color>
+    <color name="team_blue_border">#a2cfff</color>
+
+
+    <color name="blue">#90CAF9</color>
+    <color name="red">#ef9a9a</color>
+    <color name="green">#A5D6A7</color>
+
+    <color name="grey">#e0e0e0</color>
+    <color name="dark_grey">#616161</color>
+    <color name="dark_red">#77080a</color>
+
+    <color name="light_red">#6fbfb1b1</color>
+
+    <color name="type_border">#6D6D4E</color>
+
+    <color name="green_mat_800">#2E7D32</color>
+
+
+    <!--<color name="grass">#7bce52</color>-->
+    <!--<color name="poison">#b55aa5</color>-->
+
+    <!--<color name="water">#399cff</color>-->
+    <!--<color name="flying">#9cadf7</color>-->
+
+
+    <color name="grey_tran">#26e0e0e0</color>
+
+    <color name="blue_tran">#9690caf9</color>
+
+    <color name="skill_bar_top">#3da2fd</color>
+    <color name="skill_bar_bot">#55dafb</color>
+    <color name="skill_bar_border">#afdaff</color>
+
+
+    <color name="white_tran">#4b747474</color>
+
+    <color name="white_tran_pure">#7dffffff</color>
+
+    <color name = "dark">#705848</color>
+    <color name = "bug">#A8B820</color>
+    <color name = "dragon">#7038F8</color>
+    <color name = "electric">#F8D030</color>
+    <color name = "fairy">#EE99AC</color>
+    <color name = "fighting">#C03028</color>
+    <color name = "fire">#F08030</color>
+    <color name = "flying">#A890F0</color>
+    <color name = "ghost">#705898</color>
+    <color name = "grass">#78C850</color>
+    <color name = "ground">#E0C068</color>
+    <color name = "ice">#98D8D8</color>
+    <color name = "normal">#A8A878</color>
+    <color name = "poison">#A040A0</color>
+    <color name = "psychic">#F85888</color>
+    <color name = "rock">#B8A038</color>
+    <color name = "steel">#B8B8D0</color>
+    <color name = "water">#6890F0</color>
+    <color name="red_mat_700">#d50000</color>
+    <color name="green_mat">#64dd17</color>
+
+    <color name="brown_mat_500">#795548</color>
+
+    <color name="brown_mat_500_tran">#7ea68579</color>
+
+    <color name="grey_mat_800">#424242</color>
+    <color name="grey_mat_900">#212121</color>
+    <color name="grey_mat_disabled">#80bebebe</color>
+
+    <color name="grey_light2">#855e5e5e</color>
+
+
+    <color name="blackPrimary">#424242</color>
+    <color name="blackPrimaryDark">#212121</color>
+
+
+    <color name="brownPrimary">#5d4037</color>
+    <color name="brownPrimaryDark">#4e342e</color>
+    <color name="yellowAccent">#ffff00</color>
+
+
+    <color name="lightGreenPrimary">#689f38</color>
+    <color name="lightGreenPrimary2">#7cb342</color>
+    <color name="lightGreenPrimaryDark">#558b2f</color>
+    <color name="orangeAccent">#ffd740</color>
+    <color name="grey_light3">#48000000</color>
+</resources>
