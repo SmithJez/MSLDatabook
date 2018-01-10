@@ -580,6 +580,14 @@ public final class ResultOuterClass {
      */
     ErrorAlreadyGetRankReward(457),
     /**
+     * <code>ErrorAlreadyGetBonusLuckyTicket = 458;</code>
+     */
+    ErrorAlreadyGetBonusLuckyTicket(458),
+    /**
+     * <code>ErrorBonusLuckyTicketIsGone = 459;</code>
+     */
+    ErrorBonusLuckyTicketIsGone(459),
+    /**
      * <code>ErrorShopStockInvalid = 500;</code>
      */
     ErrorShopStockInvalid(500),
@@ -1731,6 +1739,14 @@ public final class ResultOuterClass {
      */
     public static final int ErrorAlreadyGetRankReward_VALUE = 457;
     /**
+     * <code>ErrorAlreadyGetBonusLuckyTicket = 458;</code>
+     */
+    public static final int ErrorAlreadyGetBonusLuckyTicket_VALUE = 458;
+    /**
+     * <code>ErrorBonusLuckyTicketIsGone = 459;</code>
+     */
+    public static final int ErrorBonusLuckyTicketIsGone_VALUE = 459;
+    /**
      * <code>ErrorShopStockInvalid = 500;</code>
      */
     public static final int ErrorShopStockInvalid_VALUE = 500;
@@ -2478,6 +2494,8 @@ public final class ResultOuterClass {
         case 455: return ErrorMaxLuckyTicket;
         case 456: return ErrorLogRefreshCaptureFestivalNotExist;
         case 457: return ErrorAlreadyGetRankReward;
+        case 458: return ErrorAlreadyGetBonusLuckyTicket;
+        case 459: return ErrorBonusLuckyTicketIsGone;
         case 500: return ErrorShopStockInvalid;
         case 501: return ErrorItemCountInsufficient;
         case 502: return ErrorItemInvalid;
@@ -2686,7 +2704,7 @@ public final class ResultOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014Result.proto\022\013msggamedata*\356I\n\006Result\022\014" +
+      "\n\014Result.proto\022\013msggamedata*\266J\n\006Result\022\014" +
       "\n\010ResultOk\020\000\022\020\n\014ErrorUnknown\020\001\022\037\n\033ErrorI" +
       "nvalidProtocolVersion\020\002\022\023\n\017ErrorCountLim" +
       "it\020\n\022\022\n\016ErrorTimeLimit\020\013\022\034\n\030ErrorInterna" +
@@ -2803,127 +2821,129 @@ public final class ResultOuterClass {
       "Season\020\305\003\022!\n\034ErrorLuckyTicketInsufficien" +
       "t\020\306\003\022\030\n\023ErrorMaxLuckyTicket\020\307\003\022+\n&ErrorL" +
       "ogRefreshCaptureFestivalNotExist\020\310\003\022\036\n\031E" +
-      "rrorAlreadyGetRankReward\020\311\003\022\032\n\025ErrorShop" +
-      "StockInvalid\020\364\003\022\037\n\032ErrorItemCountInsuffi" +
-      "cient\020\365\003\022\025\n\020ErrorItemInvalid\020\366\003\022\032\n\025Error",
-      "ItemRetainExceed\020\367\003\022!\n\034ErrorBeyondStoneR" +
-      "etainExceed\020\370\003\022\032\n\025ErrorUserItemNotExist\020" +
-      "\371\003\022\022\n\rErrorPurchase\020\246\004\022\035\n\030ErrorInvalidPu" +
-      "rchaseItem\020\247\004\022\033\n\026ErrorInvalidPurchaseId\020" +
-      "\250\004\022\035\n\030ErrorInvalidPurchaseData\020\251\004\022!\n\034Err" +
-      "orAlreadyCompletePurchase\020\252\004\022 \n\033ErrorAlr" +
-      "eadyPurchasePackage\020\253\004\022\033\n\026ErrorClosedPac" +
-      "kageItem\020\254\004\022\034\n\027ErrorInvalidPackageItem\020\255" +
-      "\004\022#\n\036ErrorInvalidPackageRewardIndex\020\256\004\022%" +
-      "\n ErrorAlreadyReceivePackageReward\020\257\004\022 \n",
-      "\033ErrorAlreadyCompletePackage\020\260\004\022\035\n\030Error" +
-      "InvalidPackageQuest\020\261\004\022\035\n\030ErrorExpiredJo" +
-      "jeShopItem\020\262\004\022\033\n\026ErrorDuplicatedOrderID\020" +
-      "\263\004\022%\n ErrorInvalidPackagePurchaseBonus\020\264" +
-      "\004\022\037\n\032ErrorNotAvailableProductId\020\265\004\022\030\n\023Er" +
-      "rorClosedShopItem\020\266\004\022\'\n\"ErrorAlreadyPurc" +
-      "haseFestivalTicket\020\267\004\022\"\n\035ErrorNotAvailab" +
-      "leHeroFestival\020\270\004\022(\n#ErrorUserFestivalTi" +
-      "cketInsufficient\020\271\004\022%\n ErrorNotAvailable" +
-      "TicketSalesDate\020\272\004\022\035\n\030ErrorExceedUserSki",
-      "llBook\020\273\004\022\033\n\026ErrorNotInClanFestival\020\274\004\022!" +
-      "\n\034ErrorInvalidClanFestivalGift\020\275\004\022!\n\034Err" +
-      "orHeroEssenceInsufficient\020\276\004\022\"\n\035ErrorGet" +
-      "MaxClanFestivalReward\020\277\004\022\037\n\032ErrorInvalid" +
-      "BoosterPackage\020\300\004\022#\n\036ErrorPurchaseDuplic" +
-      "atedPackage\020\330\004\022\"\n\035ErrorPurchaseAppleServ" +
-      "erError\020\331\004\022\027\n\022ErrorReservedCode3\020\332\004\022\027\n\022E" +
-      "rrorReservedCode4\020\333\004\022\027\n\022ErrorReservedCod" +
-      "e5\020\334\004\022\037\n\032ErrorItemBundleMaxPurchase\020\212\005\022!" +
-      "\n\034ErrorItemBundleNotSalePeriod\020\213\005\022!\n\034Err",
-      "orInvalidItemBundleReward\020\214\005\022\033\n\026ErrorInv" +
-      "alidItemBundle\020\215\005\022\"\n\035ErrorAlreadyPurchas" +
-      "eLobbyShip\020\224\005\022\031\n\024ErrorUserShipExpired\020\225\005" +
-      "\022\031\n\024ErrorInvalidUserShip\020\226\005\022\034\n\027ErrorUser" +
-      "ShipNotUpdated\020\227\005\022 \n\033ErrorExistUnexpired" +
-      "UserShip\020\230\005\022\027\n\022ErrorQuestNotFound\020\274\005\022\031\n\024" +
-      "ErrorQuestIncomplete\020\275\005\022\037\n\032ErrorQuestAlr" +
-      "eadyCompleted\020\276\005\022#\n\036ErrorInvalidContract" +
-      "MonsterUid\020\356\005\022$\n\037ErrorBattleFriendMonste" +
-      "rExpired\020\241\006\022.\n)ErrorBattleFriendMonsterN",
-      "oMoreReprMonster\020\242\006\022\035\n\030ErrorBattleFriend" +
-      "Deleted\020\243\006\022#\n\036ErrorBattleAlreadyUsedBatt" +
-      "leId\020\244\006\022\030\n\023ErrorClanApprentice\020\321\006\022\031\n\024Err" +
-      "orAlreadyJoinClan\020\322\006\022\027\n\022ErrorClanNotExis" +
-      "ts\020\323\006\022\031\n\024ErrorInvalidClanName\020\324\006\022\031\n\024Erro" +
-      "rInvalidClanDesc\020\325\006\022\036\n\031ErrorAlreadyExist" +
-      "ClanName\020\326\006\022\032\n\025ErrorAlreadyApplyClan\020\327\006\022" +
-      "\037\n\032ErrorTodayAlreadyApplyClan\020\330\006\022\026\n\021Erro" +
-      "rMaxClanApply\020\331\006\022\027\n\022ErrorNotClanMember\020\332" +
-      "\006\022\030\n\023ErrorNotClanManager\020\333\006\022\027\n\022ErrorNotC",
-      "lanMaster\020\334\006\022 \n\033ErrorClanJoinApplyNotExi" +
-      "sts\020\335\006\022\036\n\031ErrorAlreadyCanceledApply\020\336\006\022&" +
-      "\n!ErrorInvalidClanMemberGradeChange\020\337\006\022\027" +
-      "\n\022ErrorMaxClanMember\020\340\006\022\031\n\024ErrorClanMast" +
-      "erUnreg\020\341\006\022\033\n\026ErrorClanNameNotExists\020\342\006\022" +
-      "\037\n\032ErrorClanSeasonNotOpenTime\020\343\006\022\037\n\032Erro" +
-      "rAlreadyJoinClanSeason\020\344\006\022\033\n\026ErrorMaxCla" +
-      "nViceMaster\020\345\006\022&\n!ErrorInvalidChangeClan" +
-      "MemberGrade\020\346\006\022\033\n\026ErrorNotFineClanMember" +
-      "\020\347\006\022\036\n\031ErrorClanGradeBeyondPower\020\350\006\022 \n\033E",
-      "rrorDestroyClanExistMember\020\351\006\022\030\n\023ErrorKi" +
-      "ckClanMyself\020\352\006\022\033\n\026ErrorNotClanViceMaste" +
-      "r\020\353\006\022(\n#ErrorInvalidClanChattingNoticeLe" +
-      "nth\020\354\006\022#\n\036ErrorInvalidClanChattingNotice" +
-      "\020\355\006\022!\n\034ErrorInvalidClanCommentLenth\020\356\006\022\034" +
-      "\n\027ErrorInvalidClanComment\020\357\006\022\036\n\031ErrorInv" +
-      "alidClanDescLenth\020\360\006\022\033\n\026ErrorNotChangeCl" +
-      "anData\020\361\006\022\035\n\030ErrorNotClanOpenConditon\020\362\006" +
-      "\022\033\n\026ErrorInvalidClanSeason\020\363\006\022\032\n\025ErrorIn" +
-      "validClanPhase\020\364\006\022\036\n\031ErrorInvalidClanBat",
-      "tleCnt\020\365\006\022\035\n\030ErrorClanBossAlreadyDead\020\366\006" +
-      "\022\030\n\023ErrorTodayLeaveClan\020\367\006\022%\n ErrorNotEn" +
-      "oughMemberApplyClanWar\020\370\006\022\035\n\030ErrorApplyC" +
-      "lanWarOnPhase\020\371\006\022\036\n\031ErrorSanctionedClanM" +
-      "ember\020\372\006\022 \n\033ErrorAcceptClanApplyOnPhase\020" +
-      "\373\006\022\027\n\022ErrorPickSameStage\020\374\006\022%\n ErrorClan" +
-      "MemberCountInsufficient\020\375\006\022\035\n\030ErrorMaxAp" +
-      "prenticeMember\020\376\006\022\033\n\026ErrorSendMaxScoutAp" +
-      "ply\020\377\006\022\036\n\031ErrorReceiveMaxScoutApply\020\200\007\022 " +
-      "\n\033ErrorInvalidCountryForScout\020\201\007\022%\n Erro",
-      "rInvalidApplyClanMemberGrade\020\202\007\022\037\n\032Error" +
-      "BattleSimulateInvalid\020\203\007\022&\n!ErrorNoticeR" +
-      "estrictInServiceCheck\020\204\007\022,\n\'ErrorInvalid" +
-      "ClanApprenticeTimeCondition\020\205\007\022 \n\033ErrorC" +
-      "lanUserScoutNotExists\020\206\007\022\032\n\025ErrorAlready" +
-      "ScoutUser\020\207\007\022\037\n\032ErrorTodayAlreadyScoutUs" +
-      "er\020\210\007\022\033\n\026ErrorAlreadyClanAttend\020\211\007\022(\n#Er" +
-      "rorAlreadyReceivedClanJoinRequest\020\212\007\022#\n\036" +
-      "ErrorNotClearCVCApplyCondition\020\213\007\022)\n$Err" +
-      "orNotClearCVCApplyMemberCondition\020\214\007\022\035\n\030",
-      "ErrorDisableApplyCVCTime\020\215\007\022\031\n\024ErrorAlre" +
-      "adyApplyCVC\020\216\007\022\025\n\020ErrorNotApplyCVC\020\217\007\022\037\n" +
-      "\032ErrorCVCMemberNotLeaveClan\020\220\007\022&\n!ErrorI" +
-      "nvalidCVCMonsterDefenceSlot\020\221\007\022+\n&ErrorC" +
-      "annotChangeCVCMonsterSlotOnPhase\020\222\007\022&\n!E" +
-      "rrorCVCMemberBattleIsNotFinished\020\223\007\022\030\n\023E" +
-      "rrorNotCVCMatching\020\224\007\022!\n\034ErrorInvalidCVC" +
-      "EnemyMemberId\020\225\007\022\'\n\"ErrorNotEnoughCVCMem" +
-      "berBattleCount\020\226\007\022 \n\033ErrorNotExistCVCMon" +
-      "sterSlot\020\227\007\022\034\n\027ErrorDestroyClanJoinCVC\020\230",
-      "\007\022\037\n\032ErrorPromisePackageAlready\020\231\007\022\037\n\032Er" +
-      "rorInvalidPromisePackage\020\232\007\022\026\n\021ErrorNotC" +
-      "VCMember\020\233\007\022!\n\034ErrorUserMonsterOnCVCDefe" +
-      "nse\020\234\007\022\036\n\031ErrorEnemyCVCEnergyIsZero\020\235\007\022\025" +
-      "\n\020ErrorCVCPhaseEnd\020\236\007\022&\n!ErrorSuperStone" +
-      "StuffsInsufficient\020\237\007\022\036\n\031ErrorSuperStone" +
-      "AlreadyMax\020\240\007\022$\n\037ErrorSuperStoneStuffsAl" +
-      "readyMax\020\241\007\022(\n#ErrorCombiningSuperStoneN" +
-      "otFinished\020\242\007\022%\n ErrorNotExistCombiningS" +
-      "uperStone\020\243\007\022)\n$ErrorInvalidMonsterForSu",
-      "perEvolution\020\244\007\022 \n\033ErrorSuperStoneInsuff" +
-      "icient\020\245\007\022#\n\036ErrorInvalidCVCJoinMemberCo" +
-      "unt\020\254\007\022\033\n\026ErrorRenewBeforeSeason\020\255\007\022!\n\034E" +
-      "rrorNotMonthlyMonsterSeason\020\256\007\022$\n\037ErrorM" +
-      "onthlyMonsterSeasonChange\020\257\007\022\035\n\030ErrorInv" +
-      "alidBanhaoUserID\020\336\007\022\035\n\030ErrorInvalidBanha" +
-      "oUserPW\020\337\007\022 \n\033ErrorForceFinishTransactio" +
-      "n\020\347\007B\023\n\021com.felania.msldbb\006proto3"
+      "rrorAlreadyGetRankReward\020\311\003\022$\n\037ErrorAlre" +
+      "adyGetBonusLuckyTicket\020\312\003\022 \n\033ErrorBonusL" +
+      "uckyTicketIsGone\020\313\003\022\032\n\025ErrorShopStockInv",
+      "alid\020\364\003\022\037\n\032ErrorItemCountInsufficient\020\365\003" +
+      "\022\025\n\020ErrorItemInvalid\020\366\003\022\032\n\025ErrorItemReta" +
+      "inExceed\020\367\003\022!\n\034ErrorBeyondStoneRetainExc" +
+      "eed\020\370\003\022\032\n\025ErrorUserItemNotExist\020\371\003\022\022\n\rEr" +
+      "rorPurchase\020\246\004\022\035\n\030ErrorInvalidPurchaseIt" +
+      "em\020\247\004\022\033\n\026ErrorInvalidPurchaseId\020\250\004\022\035\n\030Er" +
+      "rorInvalidPurchaseData\020\251\004\022!\n\034ErrorAlread" +
+      "yCompletePurchase\020\252\004\022 \n\033ErrorAlreadyPurc" +
+      "hasePackage\020\253\004\022\033\n\026ErrorClosedPackageItem" +
+      "\020\254\004\022\034\n\027ErrorInvalidPackageItem\020\255\004\022#\n\036Err",
+      "orInvalidPackageRewardIndex\020\256\004\022%\n ErrorA" +
+      "lreadyReceivePackageReward\020\257\004\022 \n\033ErrorAl" +
+      "readyCompletePackage\020\260\004\022\035\n\030ErrorInvalidP" +
+      "ackageQuest\020\261\004\022\035\n\030ErrorExpiredJojeShopIt" +
+      "em\020\262\004\022\033\n\026ErrorDuplicatedOrderID\020\263\004\022%\n Er" +
+      "rorInvalidPackagePurchaseBonus\020\264\004\022\037\n\032Err" +
+      "orNotAvailableProductId\020\265\004\022\030\n\023ErrorClose" +
+      "dShopItem\020\266\004\022\'\n\"ErrorAlreadyPurchaseFest" +
+      "ivalTicket\020\267\004\022\"\n\035ErrorNotAvailableHeroFe" +
+      "stival\020\270\004\022(\n#ErrorUserFestivalTicketInsu",
+      "fficient\020\271\004\022%\n ErrorNotAvailableTicketSa" +
+      "lesDate\020\272\004\022\035\n\030ErrorExceedUserSkillBook\020\273" +
+      "\004\022\033\n\026ErrorNotInClanFestival\020\274\004\022!\n\034ErrorI" +
+      "nvalidClanFestivalGift\020\275\004\022!\n\034ErrorHeroEs" +
+      "senceInsufficient\020\276\004\022\"\n\035ErrorGetMaxClanF" +
+      "estivalReward\020\277\004\022\037\n\032ErrorInvalidBoosterP" +
+      "ackage\020\300\004\022#\n\036ErrorPurchaseDuplicatedPack" +
+      "age\020\330\004\022\"\n\035ErrorPurchaseAppleServerError\020" +
+      "\331\004\022\027\n\022ErrorReservedCode3\020\332\004\022\027\n\022ErrorRese" +
+      "rvedCode4\020\333\004\022\027\n\022ErrorReservedCode5\020\334\004\022\037\n",
+      "\032ErrorItemBundleMaxPurchase\020\212\005\022!\n\034ErrorI" +
+      "temBundleNotSalePeriod\020\213\005\022!\n\034ErrorInvali" +
+      "dItemBundleReward\020\214\005\022\033\n\026ErrorInvalidItem" +
+      "Bundle\020\215\005\022\"\n\035ErrorAlreadyPurchaseLobbySh" +
+      "ip\020\224\005\022\031\n\024ErrorUserShipExpired\020\225\005\022\031\n\024Erro" +
+      "rInvalidUserShip\020\226\005\022\034\n\027ErrorUserShipNotU" +
+      "pdated\020\227\005\022 \n\033ErrorExistUnexpiredUserShip" +
+      "\020\230\005\022\027\n\022ErrorQuestNotFound\020\274\005\022\031\n\024ErrorQue" +
+      "stIncomplete\020\275\005\022\037\n\032ErrorQuestAlreadyComp" +
+      "leted\020\276\005\022#\n\036ErrorInvalidContractMonsterU",
+      "id\020\356\005\022$\n\037ErrorBattleFriendMonsterExpired" +
+      "\020\241\006\022.\n)ErrorBattleFriendMonsterNoMoreRep" +
+      "rMonster\020\242\006\022\035\n\030ErrorBattleFriendDeleted\020" +
+      "\243\006\022#\n\036ErrorBattleAlreadyUsedBattleId\020\244\006\022" +
+      "\030\n\023ErrorClanApprentice\020\321\006\022\031\n\024ErrorAlread" +
+      "yJoinClan\020\322\006\022\027\n\022ErrorClanNotExists\020\323\006\022\031\n" +
+      "\024ErrorInvalidClanName\020\324\006\022\031\n\024ErrorInvalid" +
+      "ClanDesc\020\325\006\022\036\n\031ErrorAlreadyExistClanName" +
+      "\020\326\006\022\032\n\025ErrorAlreadyApplyClan\020\327\006\022\037\n\032Error" +
+      "TodayAlreadyApplyClan\020\330\006\022\026\n\021ErrorMaxClan",
+      "Apply\020\331\006\022\027\n\022ErrorNotClanMember\020\332\006\022\030\n\023Err" +
+      "orNotClanManager\020\333\006\022\027\n\022ErrorNotClanMaste" +
+      "r\020\334\006\022 \n\033ErrorClanJoinApplyNotExists\020\335\006\022\036" +
+      "\n\031ErrorAlreadyCanceledApply\020\336\006\022&\n!ErrorI" +
+      "nvalidClanMemberGradeChange\020\337\006\022\027\n\022ErrorM" +
+      "axClanMember\020\340\006\022\031\n\024ErrorClanMasterUnreg\020" +
+      "\341\006\022\033\n\026ErrorClanNameNotExists\020\342\006\022\037\n\032Error" +
+      "ClanSeasonNotOpenTime\020\343\006\022\037\n\032ErrorAlready" +
+      "JoinClanSeason\020\344\006\022\033\n\026ErrorMaxClanViceMas" +
+      "ter\020\345\006\022&\n!ErrorInvalidChangeClanMemberGr",
+      "ade\020\346\006\022\033\n\026ErrorNotFineClanMember\020\347\006\022\036\n\031E" +
+      "rrorClanGradeBeyondPower\020\350\006\022 \n\033ErrorDest" +
+      "royClanExistMember\020\351\006\022\030\n\023ErrorKickClanMy" +
+      "self\020\352\006\022\033\n\026ErrorNotClanViceMaster\020\353\006\022(\n#" +
+      "ErrorInvalidClanChattingNoticeLenth\020\354\006\022#" +
+      "\n\036ErrorInvalidClanChattingNotice\020\355\006\022!\n\034E" +
+      "rrorInvalidClanCommentLenth\020\356\006\022\034\n\027ErrorI" +
+      "nvalidClanComment\020\357\006\022\036\n\031ErrorInvalidClan" +
+      "DescLenth\020\360\006\022\033\n\026ErrorNotChangeClanData\020\361" +
+      "\006\022\035\n\030ErrorNotClanOpenConditon\020\362\006\022\033\n\026Erro",
+      "rInvalidClanSeason\020\363\006\022\032\n\025ErrorInvalidCla" +
+      "nPhase\020\364\006\022\036\n\031ErrorInvalidClanBattleCnt\020\365" +
+      "\006\022\035\n\030ErrorClanBossAlreadyDead\020\366\006\022\030\n\023Erro" +
+      "rTodayLeaveClan\020\367\006\022%\n ErrorNotEnoughMemb" +
+      "erApplyClanWar\020\370\006\022\035\n\030ErrorApplyClanWarOn" +
+      "Phase\020\371\006\022\036\n\031ErrorSanctionedClanMember\020\372\006" +
+      "\022 \n\033ErrorAcceptClanApplyOnPhase\020\373\006\022\027\n\022Er" +
+      "rorPickSameStage\020\374\006\022%\n ErrorClanMemberCo" +
+      "untInsufficient\020\375\006\022\035\n\030ErrorMaxApprentice" +
+      "Member\020\376\006\022\033\n\026ErrorSendMaxScoutApply\020\377\006\022\036",
+      "\n\031ErrorReceiveMaxScoutApply\020\200\007\022 \n\033ErrorI" +
+      "nvalidCountryForScout\020\201\007\022%\n ErrorInvalid" +
+      "ApplyClanMemberGrade\020\202\007\022\037\n\032ErrorBattleSi" +
+      "mulateInvalid\020\203\007\022&\n!ErrorNoticeRestrictI" +
+      "nServiceCheck\020\204\007\022,\n\'ErrorInvalidClanAppr" +
+      "enticeTimeCondition\020\205\007\022 \n\033ErrorClanUserS" +
+      "coutNotExists\020\206\007\022\032\n\025ErrorAlreadyScoutUse" +
+      "r\020\207\007\022\037\n\032ErrorTodayAlreadyScoutUser\020\210\007\022\033\n" +
+      "\026ErrorAlreadyClanAttend\020\211\007\022(\n#ErrorAlrea" +
+      "dyReceivedClanJoinRequest\020\212\007\022#\n\036ErrorNot",
+      "ClearCVCApplyCondition\020\213\007\022)\n$ErrorNotCle" +
+      "arCVCApplyMemberCondition\020\214\007\022\035\n\030ErrorDis" +
+      "ableApplyCVCTime\020\215\007\022\031\n\024ErrorAlreadyApply" +
+      "CVC\020\216\007\022\025\n\020ErrorNotApplyCVC\020\217\007\022\037\n\032ErrorCV" +
+      "CMemberNotLeaveClan\020\220\007\022&\n!ErrorInvalidCV" +
+      "CMonsterDefenceSlot\020\221\007\022+\n&ErrorCannotCha" +
+      "ngeCVCMonsterSlotOnPhase\020\222\007\022&\n!ErrorCVCM" +
+      "emberBattleIsNotFinished\020\223\007\022\030\n\023ErrorNotC" +
+      "VCMatching\020\224\007\022!\n\034ErrorInvalidCVCEnemyMem" +
+      "berId\020\225\007\022\'\n\"ErrorNotEnoughCVCMemberBattl",
+      "eCount\020\226\007\022 \n\033ErrorNotExistCVCMonsterSlot" +
+      "\020\227\007\022\034\n\027ErrorDestroyClanJoinCVC\020\230\007\022\037\n\032Err" +
+      "orPromisePackageAlready\020\231\007\022\037\n\032ErrorInval" +
+      "idPromisePackage\020\232\007\022\026\n\021ErrorNotCVCMember" +
+      "\020\233\007\022!\n\034ErrorUserMonsterOnCVCDefense\020\234\007\022\036" +
+      "\n\031ErrorEnemyCVCEnergyIsZero\020\235\007\022\025\n\020ErrorC" +
+      "VCPhaseEnd\020\236\007\022&\n!ErrorSuperStoneStuffsIn" +
+      "sufficient\020\237\007\022\036\n\031ErrorSuperStoneAlreadyM" +
+      "ax\020\240\007\022$\n\037ErrorSuperStoneStuffsAlreadyMax" +
+      "\020\241\007\022(\n#ErrorCombiningSuperStoneNotFinish",
+      "ed\020\242\007\022%\n ErrorNotExistCombiningSuperSton" +
+      "e\020\243\007\022)\n$ErrorInvalidMonsterForSuperEvolu" +
+      "tion\020\244\007\022 \n\033ErrorSuperStoneInsufficient\020\245" +
+      "\007\022#\n\036ErrorInvalidCVCJoinMemberCount\020\254\007\022\033" +
+      "\n\026ErrorRenewBeforeSeason\020\255\007\022!\n\034ErrorNotM" +
+      "onthlyMonsterSeason\020\256\007\022$\n\037ErrorMonthlyMo" +
+      "nsterSeasonChange\020\257\007\022\035\n\030ErrorInvalidBanh" +
+      "aoUserID\020\336\007\022\035\n\030ErrorInvalidBanhaoUserPW\020" +
+      "\337\007\022 \n\033ErrorForceFinishTransaction\020\347\007B\023\n\021" +
+      "com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

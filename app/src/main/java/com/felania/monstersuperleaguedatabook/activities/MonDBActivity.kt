@@ -266,9 +266,9 @@ class MonDBActivity : AppCompatActivity() {
 
                 }
 
-//                R.id.navGolem -> {
-//                    StartGolem()
-//                }
+                R.id.navSynergies -> {
+                    StartSynergies()
+                }
 
 
 
@@ -809,6 +809,15 @@ class MonDBActivity : AppCompatActivity() {
 
         startActivity(intent)
 
+    }
+
+
+    private fun StartSynergies () {
+        val intent = Intent(this@MonDBActivity, SynergyActivity::class.java)
+
+        intent.putExtra(Variables.SETTING_LANGUAGE, saveLang)
+
+        startActivity(intent)
     }
 
     private fun StartClan () {

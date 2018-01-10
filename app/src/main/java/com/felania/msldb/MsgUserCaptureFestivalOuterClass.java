@@ -42,6 +42,11 @@ public final class MsgUserCaptureFestivalOuterClass {
      * <code>uint32 season_event_message_count = 5;</code>
      */
     int getSeasonEventMessageCount();
+
+    /**
+     * <code>uint64 last_bonus_ticket_date = 6;</code>
+     */
+    long getLastBonusTicketDate();
   }
   /**
    * Protobuf type {@code msggamedata.MsgUserCaptureFestival}
@@ -61,6 +66,7 @@ public final class MsgUserCaptureFestivalOuterClass {
       seasonCaptureScore_ = 0;
       seasonShareCount_ = 0;
       seasonEventMessageCount_ = 0;
+      lastBonusTicketDate_ = 0L;
     }
 
     @java.lang.Override
@@ -114,6 +120,11 @@ public final class MsgUserCaptureFestivalOuterClass {
             case 40: {
 
               seasonEventMessageCount_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              lastBonusTicketDate_ = input.readUInt64();
               break;
             }
           }
@@ -185,6 +196,15 @@ public final class MsgUserCaptureFestivalOuterClass {
       return seasonEventMessageCount_;
     }
 
+    public static final int LAST_BONUS_TICKET_DATE_FIELD_NUMBER = 6;
+    private long lastBonusTicketDate_;
+    /**
+     * <code>uint64 last_bonus_ticket_date = 6;</code>
+     */
+    public long getLastBonusTicketDate() {
+      return lastBonusTicketDate_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -211,6 +231,9 @@ public final class MsgUserCaptureFestivalOuterClass {
       }
       if (seasonEventMessageCount_ != 0) {
         output.writeUInt32(5, seasonEventMessageCount_);
+      }
+      if (lastBonusTicketDate_ != 0L) {
+        output.writeUInt64(6, lastBonusTicketDate_);
       }
       unknownFields.writeTo(output);
     }
@@ -240,6 +263,10 @@ public final class MsgUserCaptureFestivalOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, seasonEventMessageCount_);
       }
+      if (lastBonusTicketDate_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(6, lastBonusTicketDate_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -266,6 +293,8 @@ public final class MsgUserCaptureFestivalOuterClass {
           == other.getSeasonShareCount());
       result = result && (getSeasonEventMessageCount()
           == other.getSeasonEventMessageCount());
+      result = result && (getLastBonusTicketDate()
+          == other.getLastBonusTicketDate());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -288,6 +317,9 @@ public final class MsgUserCaptureFestivalOuterClass {
       hash = (53 * hash) + getSeasonShareCount();
       hash = (37 * hash) + SEASON_EVENT_MESSAGE_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getSeasonEventMessageCount();
+      hash = (37 * hash) + LAST_BONUS_TICKET_DATE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getLastBonusTicketDate());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -427,6 +459,8 @@ public final class MsgUserCaptureFestivalOuterClass {
 
         seasonEventMessageCount_ = 0;
 
+        lastBonusTicketDate_ = 0L;
+
         return this;
       }
 
@@ -454,6 +488,7 @@ public final class MsgUserCaptureFestivalOuterClass {
         result.seasonCaptureScore_ = seasonCaptureScore_;
         result.seasonShareCount_ = seasonShareCount_;
         result.seasonEventMessageCount_ = seasonEventMessageCount_;
+        result.lastBonusTicketDate_ = lastBonusTicketDate_;
         onBuilt();
         return result;
       }
@@ -509,6 +544,9 @@ public final class MsgUserCaptureFestivalOuterClass {
         }
         if (other.getSeasonEventMessageCount() != 0) {
           setSeasonEventMessageCount(other.getSeasonEventMessageCount());
+        }
+        if (other.getLastBonusTicketDate() != 0L) {
+          setLastBonusTicketDate(other.getLastBonusTicketDate());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -666,6 +704,32 @@ public final class MsgUserCaptureFestivalOuterClass {
         onChanged();
         return this;
       }
+
+      private long lastBonusTicketDate_ ;
+      /**
+       * <code>uint64 last_bonus_ticket_date = 6;</code>
+       */
+      public long getLastBonusTicketDate() {
+        return lastBonusTicketDate_;
+      }
+      /**
+       * <code>uint64 last_bonus_ticket_date = 6;</code>
+       */
+      public Builder setLastBonusTicketDate(long value) {
+        
+        lastBonusTicketDate_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 last_bonus_ticket_date = 6;</code>
+       */
+      public Builder clearLastBonusTicketDate() {
+        
+        lastBonusTicketDate_ = 0L;
+        onChanged();
+        return this;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -730,12 +794,12 @@ public final class MsgUserCaptureFestivalOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034MsgUserCaptureFestival.proto\022\013msggamed" +
-      "ata\"\251\001\n\026MsgUserCaptureFestival\022\033\n\023captur" +
+      "ata\"\311\001\n\026MsgUserCaptureFestival\022\033\n\023captur" +
       "e_festival_id\030\001 \001(\004\022\024\n\014lucky_ticket\030\002 \001(" +
       "\r\022\034\n\024season_capture_score\030\003 \001(\r\022\032\n\022seaso" +
       "n_share_count\030\004 \001(\r\022\"\n\032season_event_mess" +
-      "age_count\030\005 \001(\rB\023\n\021com.felania.msldbb\006pr" +
-      "oto3"
+      "age_count\030\005 \001(\r\022\036\n\026last_bonus_ticket_dat" +
+      "e\030\006 \001(\004B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -754,7 +818,7 @@ public final class MsgUserCaptureFestivalOuterClass {
     internal_static_msggamedata_MsgUserCaptureFestival_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgUserCaptureFestival_descriptor,
-        new java.lang.String[] { "CaptureFestivalId", "LuckyTicket", "SeasonCaptureScore", "SeasonShareCount", "SeasonEventMessageCount", });
+        new java.lang.String[] { "CaptureFestivalId", "LuckyTicket", "SeasonCaptureScore", "SeasonShareCount", "SeasonEventMessageCount", "LastBonusTicketDate", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

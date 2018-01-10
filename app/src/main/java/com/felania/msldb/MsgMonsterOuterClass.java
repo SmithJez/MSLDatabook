@@ -304,6 +304,15 @@ public final class MsgMonsterOuterClass {
      * <code>fixed32 first_evolution_monster_uid = 51;</code>
      */
     int getFirstEvolutionMonsterUid();
+
+    /**
+     * <code>.msggamedata.MonsterGenderType gender_type = 52;</code>
+     */
+    int getGenderTypeValue();
+    /**
+     * <code>.msggamedata.MonsterGenderType gender_type = 52;</code>
+     */
+    com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType getGenderType();
   }
   /**
    * Protobuf type {@code msggamedata.MsgMonster}
@@ -361,6 +370,7 @@ public final class MsgMonsterOuterClass {
       rootMonsterUid_ = 0;
       skillLevel_ = 0;
       firstEvolutionMonsterUid_ = 0;
+      genderType_ = 0;
     }
 
     @java.lang.Override
@@ -645,6 +655,12 @@ public final class MsgMonsterOuterClass {
             case 413: {
 
               firstEvolutionMonsterUid_ = input.readFixed32();
+              break;
+            }
+            case 416: {
+              int rawValue = input.readEnum();
+
+              genderType_ = rawValue;
               break;
             }
           }
@@ -1301,6 +1317,22 @@ public final class MsgMonsterOuterClass {
       return firstEvolutionMonsterUid_;
     }
 
+    public static final int GENDER_TYPE_FIELD_NUMBER = 52;
+    private int genderType_;
+    /**
+     * <code>.msggamedata.MonsterGenderType gender_type = 52;</code>
+     */
+    public int getGenderTypeValue() {
+      return genderType_;
+    }
+    /**
+     * <code>.msggamedata.MonsterGenderType gender_type = 52;</code>
+     */
+    public com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType getGenderType() {
+      com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType result = com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType.valueOf(genderType_);
+      return result == null ? com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType.UNRECOGNIZED : result;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -1449,6 +1481,9 @@ public final class MsgMonsterOuterClass {
       }
       if (firstEvolutionMonsterUid_ != 0) {
         output.writeFixed32(51, firstEvolutionMonsterUid_);
+      }
+      if (genderType_ != com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType.Mon_Gender_Type_None.getNumber()) {
+        output.writeEnum(52, genderType_);
       }
       unknownFields.writeTo(output);
     }
@@ -1634,6 +1669,10 @@ public final class MsgMonsterOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeFixed32Size(51, firstEvolutionMonsterUid_);
       }
+      if (genderType_ != com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType.Mon_Gender_Type_None.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(52, genderType_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -1759,6 +1798,7 @@ public final class MsgMonsterOuterClass {
           == other.getSkillLevel());
       result = result && (getFirstEvolutionMonsterUid()
           == other.getFirstEvolutionMonsterUid());
+      result = result && genderType_ == other.genderType_;
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -1873,6 +1913,8 @@ public final class MsgMonsterOuterClass {
       hash = (53 * hash) + getSkillLevel();
       hash = (37 * hash) + FIRST_EVOLUTION_MONSTER_UID_FIELD_NUMBER;
       hash = (53 * hash) + getFirstEvolutionMonsterUid();
+      hash = (37 * hash) + GENDER_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + genderType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -2094,6 +2136,8 @@ public final class MsgMonsterOuterClass {
 
         firstEvolutionMonsterUid_ = 0;
 
+        genderType_ = 0;
+
         return this;
       }
 
@@ -2172,6 +2216,7 @@ public final class MsgMonsterOuterClass {
         result.rootMonsterUid_ = rootMonsterUid_;
         result.skillLevel_ = skillLevel_;
         result.firstEvolutionMonsterUid_ = firstEvolutionMonsterUid_;
+        result.genderType_ = genderType_;
         result.bitField0_ = to_bitField0_;
         result.bitField1_ = to_bitField1_;
         onBuilt();
@@ -2360,6 +2405,9 @@ public final class MsgMonsterOuterClass {
         }
         if (other.getFirstEvolutionMonsterUid() != 0) {
           setFirstEvolutionMonsterUid(other.getFirstEvolutionMonsterUid());
+        }
+        if (other.genderType_ != 0) {
+          setGenderTypeValue(other.getGenderTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -4037,6 +4085,50 @@ public final class MsgMonsterOuterClass {
         onChanged();
         return this;
       }
+
+      private int genderType_ = 0;
+      /**
+       * <code>.msggamedata.MonsterGenderType gender_type = 52;</code>
+       */
+      public int getGenderTypeValue() {
+        return genderType_;
+      }
+      /**
+       * <code>.msggamedata.MonsterGenderType gender_type = 52;</code>
+       */
+      public Builder setGenderTypeValue(int value) {
+        genderType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MonsterGenderType gender_type = 52;</code>
+       */
+      public com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType getGenderType() {
+        com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType result = com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType.valueOf(genderType_);
+        return result == null ? com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.msggamedata.MonsterGenderType gender_type = 52;</code>
+       */
+      public Builder setGenderType(com.felania.msldb.MonsterGenderTypeOuterClass.MonsterGenderType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        genderType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MonsterGenderType gender_type = 52;</code>
+       */
+      public Builder clearGenderType() {
+        
+        genderType_ = 0;
+        onChanged();
+        return this;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -4103,39 +4195,41 @@ public final class MsgMonsterOuterClass {
       "\n\020MsgMonster.proto\022\013msggamedata\032\022Monster" +
       "Grade.proto\032\025MonsterStatType.proto\032\030Mons" +
       "terElementType.proto\032\016MsgPrice.proto\032\026Mo" +
-      "nsterEvolution.proto\"\321\t\n\nMsgMonster\022\013\n\003u" +
-      "id\030\001 \001(\007\022\014\n\004name\030\002 \001(\007\022-\n\nborn_grade\030\004 \001" +
-      "(\0162\031.msggamedata.MonsterGrade\022\016\n\006def_hp\030" +
-      "\n \001(\002\022\022\n\ndef_attack\030\013 \001(\002\022\023\n\013def_defence" +
-      "\030\014 \001(\002\022\020\n\010def_heal\030\r \001(\002\022\016\n\006inc_hp\030\016 \001(\002" +
-      "\022\022\n\ninc_attack\030\017 \001(\002\022\023\n\013inc_defence\030\020 \001(" +
-      "\002\022\020\n\010inc_heal\030\021 \001(\002\022\n\n\002mp\030\022 \001(\r\022\023\n\013mp_re",
-      "covery\030\023 \001(\r\0223\n\rdef_stat_type\030\024 \001(\0162\034.ms" +
-      "ggamedata.MonsterStatType\022\021\n\tused_type\030\025" +
-      " \001(\t\0220\n\007element\030\026 \001(\0162\037.msggamedata.Mons" +
-      "terElementType\022)\n\nsell_price\030\027 \001(\0132\025.msg" +
-      "gamedata.MsgPrice\022\025\n\rdefault_skill\030\030 \001(\007" +
-      "\022\024\n\014active_skill\030\031 \001(\007\022*\n\"default_skill_" +
-      "status_effect_beyond\030\032 \001(\007\022)\n!active_ski" +
-      "ll_status_effect_beyond\030\033 \001(\007\022\024\n\014leader_" +
-      "skill\030\034 \001(\007\0220\n\tevolution\030\035 \001(\0162\035.msggame" +
-      "data.MonsterEvolution\022\025\n\rresource_name\030\036",
-      " \001(\t\022%\n\035first_evolution_resource_name\030\037 " +
-      "\001(\t\022\032\n\022base_resource_name\030  \001(\t\022\025\n\rcriti" +
-      "cal_prob\030! \001(\002\022\027\n\017critical_damage\030\" \001(\002\022" +
-      " \n\030status_effect_resistance\030# \001(\002\022\023\n\013siz" +
-      "e_factor\030$ \001(\007\022\026\n\016next_evolution\030% \001(\007\022\032" +
-      "\n\022required_soulstone\030\' \001(\r\022\032\n\022monster_de" +
-      "fault_ai\030( \001(\007\022\031\n\021monster_active_ai\030) \001(" +
-      "\007\022\031\n\021default_hit_sound\030* \001(\t\022\030\n\020active_h" +
-      "it_sound\030+ \001(\t\022\022\n\nstory_desc\030, \003(\007\022\031\n\021co" +
-      "nd_active_skill\030- \001(\007\022.\n&cond_active_ski",
-      "ll_status_effect_beyond\030. \001(\007\022\036\n\026monster" +
-      "_cond_active_ai\030/ \001(\007\022\035\n\025cond_active_hit" +
-      "_sound\0300 \001(\t\022\030\n\020root_monster_uid\0301 \001(\007\022\023" +
-      "\n\013skill_level\0302 \001(\007\022#\n\033first_evolution_m" +
-      "onster_uid\0303 \001(\007B\023\n\021com.felania.msldbb\006p" +
-      "roto3"
+      "nsterEvolution.proto\032\027MonsterGenderType." +
+      "proto\"\206\n\n\nMsgMonster\022\013\n\003uid\030\001 \001(\007\022\014\n\004nam" +
+      "e\030\002 \001(\007\022-\n\nborn_grade\030\004 \001(\0162\031.msggamedat" +
+      "a.MonsterGrade\022\016\n\006def_hp\030\n \001(\002\022\022\n\ndef_at" +
+      "tack\030\013 \001(\002\022\023\n\013def_defence\030\014 \001(\002\022\020\n\010def_h" +
+      "eal\030\r \001(\002\022\016\n\006inc_hp\030\016 \001(\002\022\022\n\ninc_attack\030" +
+      "\017 \001(\002\022\023\n\013inc_defence\030\020 \001(\002\022\020\n\010inc_heal\030\021",
+      " \001(\002\022\n\n\002mp\030\022 \001(\r\022\023\n\013mp_recovery\030\023 \001(\r\0223\n" +
+      "\rdef_stat_type\030\024 \001(\0162\034.msggamedata.Monst" +
+      "erStatType\022\021\n\tused_type\030\025 \001(\t\0220\n\007element" +
+      "\030\026 \001(\0162\037.msggamedata.MonsterElementType\022" +
+      ")\n\nsell_price\030\027 \001(\0132\025.msggamedata.MsgPri" +
+      "ce\022\025\n\rdefault_skill\030\030 \001(\007\022\024\n\014active_skil" +
+      "l\030\031 \001(\007\022*\n\"default_skill_status_effect_b" +
+      "eyond\030\032 \001(\007\022)\n!active_skill_status_effec" +
+      "t_beyond\030\033 \001(\007\022\024\n\014leader_skill\030\034 \001(\007\0220\n\t" +
+      "evolution\030\035 \001(\0162\035.msggamedata.MonsterEvo",
+      "lution\022\025\n\rresource_name\030\036 \001(\t\022%\n\035first_e" +
+      "volution_resource_name\030\037 \001(\t\022\032\n\022base_res" +
+      "ource_name\030  \001(\t\022\025\n\rcritical_prob\030! \001(\002\022" +
+      "\027\n\017critical_damage\030\" \001(\002\022 \n\030status_effec" +
+      "t_resistance\030# \001(\002\022\023\n\013size_factor\030$ \001(\007\022" +
+      "\026\n\016next_evolution\030% \001(\007\022\032\n\022required_soul" +
+      "stone\030\' \001(\r\022\032\n\022monster_default_ai\030( \001(\007\022" +
+      "\031\n\021monster_active_ai\030) \001(\007\022\031\n\021default_hi" +
+      "t_sound\030* \001(\t\022\030\n\020active_hit_sound\030+ \001(\t\022" +
+      "\022\n\nstory_desc\030, \003(\007\022\031\n\021cond_active_skill",
+      "\030- \001(\007\022.\n&cond_active_skill_status_effec" +
+      "t_beyond\030. \001(\007\022\036\n\026monster_cond_active_ai" +
+      "\030/ \001(\007\022\035\n\025cond_active_hit_sound\0300 \001(\t\022\030\n" +
+      "\020root_monster_uid\0301 \001(\007\022\023\n\013skill_level\0302" +
+      " \001(\007\022#\n\033first_evolution_monster_uid\0303 \001(" +
+      "\007\0223\n\013gender_type\0304 \001(\0162\036.msggamedata.Mon" +
+      "sterGenderTypeB\023\n\021com.felania.msldbb\006pro" +
+      "to3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -4153,18 +4247,20 @@ public final class MsgMonsterOuterClass {
           com.felania.msldb.MonsterElementTypeOuterClass.getDescriptor(),
           com.felania.msldb.MsgPriceOuterClass.getDescriptor(),
           com.felania.msldb.MonsterEvolutionOuterClass.getDescriptor(),
+          com.felania.msldb.MonsterGenderTypeOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_MsgMonster_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_msggamedata_MsgMonster_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgMonster_descriptor,
-        new java.lang.String[] { "Uid", "Name", "BornGrade", "DefHp", "DefAttack", "DefDefence", "DefHeal", "IncHp", "IncAttack", "IncDefence", "IncHeal", "Mp", "MpRecovery", "DefStatType", "UsedType", "Element", "SellPrice", "DefaultSkill", "ActiveSkill", "DefaultSkillStatusEffectBeyond", "ActiveSkillStatusEffectBeyond", "LeaderSkill", "Evolution", "ResourceName", "FirstEvolutionResourceName", "BaseResourceName", "CriticalProb", "CriticalDamage", "StatusEffectResistance", "SizeFactor", "NextEvolution", "RequiredSoulstone", "MonsterDefaultAi", "MonsterActiveAi", "DefaultHitSound", "ActiveHitSound", "StoryDesc", "CondActiveSkill", "CondActiveSkillStatusEffectBeyond", "MonsterCondActiveAi", "CondActiveHitSound", "RootMonsterUid", "SkillLevel", "FirstEvolutionMonsterUid", });
+        new java.lang.String[] { "Uid", "Name", "BornGrade", "DefHp", "DefAttack", "DefDefence", "DefHeal", "IncHp", "IncAttack", "IncDefence", "IncHeal", "Mp", "MpRecovery", "DefStatType", "UsedType", "Element", "SellPrice", "DefaultSkill", "ActiveSkill", "DefaultSkillStatusEffectBeyond", "ActiveSkillStatusEffectBeyond", "LeaderSkill", "Evolution", "ResourceName", "FirstEvolutionResourceName", "BaseResourceName", "CriticalProb", "CriticalDamage", "StatusEffectResistance", "SizeFactor", "NextEvolution", "RequiredSoulstone", "MonsterDefaultAi", "MonsterActiveAi", "DefaultHitSound", "ActiveHitSound", "StoryDesc", "CondActiveSkill", "CondActiveSkillStatusEffectBeyond", "MonsterCondActiveAi", "CondActiveHitSound", "RootMonsterUid", "SkillLevel", "FirstEvolutionMonsterUid", "GenderType", });
     com.felania.msldb.MonsterGradeOuterClass.getDescriptor();
     com.felania.msldb.MonsterStatTypeOuterClass.getDescriptor();
     com.felania.msldb.MonsterElementTypeOuterClass.getDescriptor();
     com.felania.msldb.MsgPriceOuterClass.getDescriptor();
     com.felania.msldb.MonsterEvolutionOuterClass.getDescriptor();
+    com.felania.msldb.MonsterGenderTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

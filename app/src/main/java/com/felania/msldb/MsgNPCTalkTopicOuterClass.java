@@ -371,6 +371,10 @@ public final class MsgNPCTalkTopicOuterClass {
        * <code>ClanShop = 15;</code>
        */
       ClanShop(15),
+      /**
+       * <code>LinkSystemDictionary = 16;</code>
+       */
+      LinkSystemDictionary(16),
       UNRECOGNIZED(-1),
       ;
 
@@ -438,6 +442,10 @@ public final class MsgNPCTalkTopicOuterClass {
        * <code>ClanShop = 15;</code>
        */
       public static final int ClanShop_VALUE = 15;
+      /**
+       * <code>LinkSystemDictionary = 16;</code>
+       */
+      public static final int LinkSystemDictionary_VALUE = 16;
 
 
       public final int getNumber() {
@@ -474,6 +482,7 @@ public final class MsgNPCTalkTopicOuterClass {
           case 13: return ClanMain;
           case 14: return ClanBattle;
           case 15: return ClanShop;
+          case 16: return LinkSystemDictionary;
           default: return null;
         }
       }
@@ -1291,7 +1300,7 @@ public final class MsgNPCTalkTopicOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025MsgNPCTalkTopic.proto\022\013msggamedata\032\031St" +
-      "ageDifficultyType.proto\"\302\004\n\017MsgNPCTalkTo" +
+      "ageDifficultyType.proto\"\334\004\n\017MsgNPCTalkTo" +
       "pic\022\013\n\003uid\030\001 \001(\007\0221\n\005scene\030\002 \001(\0162\".msggam" +
       "edata.MsgNPCTalkTopic.Scene\0225\n\007trigger\030\003" +
       " \001(\0162$.msggamedata.MsgNPCTalkTopic.Trigg" +
@@ -1300,13 +1309,14 @@ public final class MsgNPCTalkTopicOuterClass {
       "cultyType\022\024\n\014talk_seq_uid\030\006 \001(\007\022\022\n\ntopic" +
       "_name\030\007 \001(\007\"J\n\007Trigger\022\010\n\004None\020\000\022\t\n\005Hell" +
       "o\020\001\022\016\n\nStageClear\020\002\022\013\n\007NPCTalk\020\003\022\r\n\tIntr",
-      "oduce\020\004\"\352\001\n\005Scene\022\t\n\005Quest\020\000\022\t\n\005Arena\020\001\022" +
+      "oduce\020\004\"\204\002\n\005Scene\022\t\n\005Quest\020\000\022\t\n\005Arena\020\001\022" +
       "\010\n\004Shop\020\002\022\014\n\010JojeShop\020\003\022\n\n\006Summon\020\004\022\013\n\007M" +
       "onster\020\005\022\t\n\005Lobby\020\006\022\n\n\006Battle\020\007\022\026\n\022Monst" +
       "erUpgradeRune\020\010\022\r\n\tGachaShop\020\t\022\020\n\014StoneC" +
       "ombine\020\n\022\017\n\013Association\020\013\022\r\n\tClanLobby\020\014" +
       "\022\014\n\010ClanMain\020\r\022\016\n\nClanBattle\020\016\022\014\n\010ClanSh" +
-      "op\020\017B\023\n\021com.felania.msldbb\006proto3"
+      "op\020\017\022\030\n\024LinkSystemDictionary\020\020B\023\n\021com.fe" +
+      "lania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

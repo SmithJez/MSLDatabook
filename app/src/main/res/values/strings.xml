@@ -147,6 +147,7 @@
     <string name="rr_normal">Normal</string>
     <string name="rr_rare">Rare</string>
     <string name="rr_s_rare">Super Rare</string>
+    <string name="synergies">Synergies</string>
 
 
 </resources>

@@ -3,6 +3,7 @@ package com.felania.monstersuperleaguedatabook.adapters
 import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.text.Html
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -229,6 +230,36 @@ class AstromonAdapter(var context: Context,
                 itemView.tvMaxResist.text = resist
 //
                 itemView.tvType.text = UtilFunctions.GetMonsterType(mapMonster, mapString, mapUid , monsterUid)
+
+
+                val gender = mapMonster[monsterUid]!!.genderType
+
+
+                itemView.ivGender.visibility = View.VISIBLE
+
+                when (gender) {
+                    MonsterGenderTypeOuterClass.MonsterGenderType.Mon_Gender_Type_Male ->
+
+                        Picasso.with(itemView.context)
+                            .load(R.drawable.ic_male)
+                            .error(R.drawable.skill_blank)
+                            .placeholder(R.drawable.skill_blank)
+                            .into(itemView.ivGender)
+                    MonsterGenderTypeOuterClass.MonsterGenderType.Mon_Gender_Type_Female ->
+
+                        Picasso.with(itemView.context)
+                            .load(R.drawable.ic_female)
+                            .error(R.drawable.skill_blank)
+                            .placeholder(R.drawable.skill_blank)
+                            .into(itemView.ivGender)
+                    else ->
+                        itemView.ivGender.visibility = View.GONE
+                }
+
+
+
+
+
 
 //                itemView.tvSkillTitle.text = UtilFunctions.GetSkillText(mapString, mapUid)["default"]
                 itemView.tvSkillLeaderText.text = UtilFunctions.GetSkillText(mapString, mapUid)["leader"]

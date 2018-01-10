@@ -60,9 +60,17 @@ public final class MonsterSlotIndexOuterClass {
      */
     MSI_ArenaDefense(9),
     /**
-     * <code>MSI_Count = 10;</code>
+     * <code>MSI_DungeonAncientGolem = 10;</code>
      */
-    MSI_Count(10),
+    MSI_DungeonAncientGolem(10),
+    /**
+     * <code>MSI_DungeonDragon = 11;</code>
+     */
+    MSI_DungeonDragon(11),
+    /**
+     * <code>MSI_Count = 12;</code>
+     */
+    MSI_Count(12),
     UNRECOGNIZED(-1),
     ;
 
@@ -107,9 +115,17 @@ public final class MonsterSlotIndexOuterClass {
      */
     public static final int MSI_ArenaDefense_VALUE = 9;
     /**
-     * <code>MSI_Count = 10;</code>
+     * <code>MSI_DungeonAncientGolem = 10;</code>
      */
-    public static final int MSI_Count_VALUE = 10;
+    public static final int MSI_DungeonAncientGolem_VALUE = 10;
+    /**
+     * <code>MSI_DungeonDragon = 11;</code>
+     */
+    public static final int MSI_DungeonDragon_VALUE = 11;
+    /**
+     * <code>MSI_Count = 12;</code>
+     */
+    public static final int MSI_Count_VALUE = 12;
 
 
     public final int getNumber() {
@@ -140,7 +156,9 @@ public final class MonsterSlotIndexOuterClass {
         case 7: return MSI_InfiniteDungeon;
         case 8: return MSI_ArenaAttack;
         case 9: return MSI_ArenaDefense;
-        case 10: return MSI_Count;
+        case 10: return MSI_DungeonAncientGolem;
+        case 11: return MSI_DungeonDragon;
+        case 12: return MSI_Count;
         default: return null;
       }
     }
@@ -202,7 +220,7 @@ public final class MonsterSlotIndexOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026MonsterSlotIndex.proto\022\013msggamedata*\257\002" +
+      "\n\026MonsterSlotIndex.proto\022\013msggamedata*\343\002" +
       "\n\020MonsterSlotIndex\022\r\n\tMSI_Story\020\000\022\017\n\013MSI" +
       "_Dungeon\020\001\022 \n\034MSI_DayBeyondStoneDungeonM" +
       "on\020\002\022 \n\034MSI_DayBeyondStoneDungeonTue\020\003\022 " +
@@ -210,8 +228,9 @@ public final class MonsterSlotIndexOuterClass {
       "DayBeyondStoneDungeonThr\020\005\022 \n\034MSI_DayBey" +
       "ondStoneDungeonFri\020\006\022\027\n\023MSI_InfiniteDung" +
       "eon\020\007\022\023\n\017MSI_ArenaAttack\020\010\022\024\n\020MSI_ArenaD" +
-      "efense\020\t\022\r\n\tMSI_Count\020\nB\023\n\021com.felania.m" +
-      "sldbb\006proto3"
+      "efense\020\t\022\033\n\027MSI_DungeonAncientGolem\020\n\022\025\n" +
+      "\021MSI_DungeonDragon\020\013\022\r\n\tMSI_Count\020\014B\023\n\021c",
+      "om.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

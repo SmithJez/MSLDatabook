@@ -723,8 +723,11 @@ class InitialLoadingActivity : AppCompatActivity() {
         val appDir = File(cache.parent)
         if (appDir.exists()) {
             val children = appDir.list()
-            for (s in children) {
-                if (s != "lib") {
+            for (s in children  ) {
+//                Log.wtf("ttt", "ss " + s)
+                if (s != "lib"
+//                        || s != Variables.SETTING_LANGUAGE
+                        ) {
                     deleteDir(File(appDir, s))
 
                 }

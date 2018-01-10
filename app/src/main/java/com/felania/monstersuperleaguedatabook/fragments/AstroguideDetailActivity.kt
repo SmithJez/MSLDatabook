@@ -394,7 +394,75 @@ class AstroguideDetailActivity : AppCompatActivity() {
         tvEvo2.text =   UtilFunctions.GetAstromonNameByID(mapString, mapMonster, evo2)
         tvEvo3.text =   UtilFunctions.GetAstromonNameByID(mapString, mapMonster, evo3)
 
-//        val ctx = (context as MonDBActivity)
+
+
+        val gender1 = mapMonster[evo1]!!.genderType
+        val gender2 = mapMonster[evo2]!!.genderType
+        val gender3 = mapMonster[evo3]!!.genderType
+
+        ivGenderDetail1.visibility = View.VISIBLE
+        ivGenderDetail2.visibility = View.VISIBLE
+        ivGenderDetail3.visibility = View.VISIBLE
+
+        when (gender1) {
+            MonsterGenderTypeOuterClass.MonsterGenderType.Mon_Gender_Type_Male ->
+
+                Picasso.with(context)
+                        .load(R.drawable.ic_male)
+                        .error(R.drawable.skill_blank)
+                        .placeholder(R.drawable.skill_blank)
+                        .into(ivGenderDetail1)
+            MonsterGenderTypeOuterClass.MonsterGenderType.Mon_Gender_Type_Female ->
+
+                Picasso.with(context)
+                        .load(R.drawable.ic_female)
+                        .error(R.drawable.skill_blank)
+                        .placeholder(R.drawable.skill_blank)
+                        .into(ivGenderDetail1)
+            else ->
+                ivGenderDetail1.visibility = View.GONE
+        }
+
+        when (gender2) {
+            MonsterGenderTypeOuterClass.MonsterGenderType.Mon_Gender_Type_Male ->
+
+                Picasso.with(context)
+                        .load(R.drawable.ic_male)
+                        .error(R.drawable.skill_blank)
+                        .placeholder(R.drawable.skill_blank)
+                        .into(ivGenderDetail2)
+            MonsterGenderTypeOuterClass.MonsterGenderType.Mon_Gender_Type_Female ->
+
+                Picasso.with(context)
+                        .load(R.drawable.ic_female)
+                        .error(R.drawable.skill_blank)
+                        .placeholder(R.drawable.skill_blank)
+                        .into(ivGenderDetail2)
+            else ->
+                ivGenderDetail2.visibility = View.GONE
+        }
+
+
+        when (gender3) {
+            MonsterGenderTypeOuterClass.MonsterGenderType.Mon_Gender_Type_Male ->
+
+                Picasso.with(context)
+                        .load(R.drawable.ic_male)
+                        .error(R.drawable.skill_blank)
+                        .placeholder(R.drawable.skill_blank)
+                        .into(ivGenderDetail3)
+            MonsterGenderTypeOuterClass.MonsterGenderType.Mon_Gender_Type_Female ->
+
+                Picasso.with(context)
+                        .load(R.drawable.ic_female)
+                        .error(R.drawable.skill_blank)
+                        .placeholder(R.drawable.skill_blank)
+                        .into(ivGenderDetail3)
+            else ->
+                ivGenderDetail3.visibility = View.GONE
+        }
+
+
 
         llWholeDetail.setBackgroundColor(UtilFunctions.GetElementBG(context, mapMonster, evo3))
 
@@ -461,6 +529,8 @@ class AstroguideDetailActivity : AppCompatActivity() {
                 .error(R.drawable.s1)
                 .placeholder(R.drawable.s1)
                 .into(ivGradeEvo3)
+
+        ivGender.visibility = View.GONE
 
         tvType.text = UtilFunctions.GetMonsterType(mapMonster, mapString, mapUid , evo3)
         
@@ -763,8 +833,8 @@ class AstroguideDetailActivity : AppCompatActivity() {
         tvActiveSkillType.text = activeSkill.action.type.name
         tvPassiveSkillType.text = defaultSkill.action.type.name
 
-//        tvActiveSkillTarget.text = activity.getString(UtilFunctions.GetTargetStringResource( activeSkill.target))
-//        tvPassiveSkillTarget.text = activity.getString(UtilFunctions.GetTargetStringResource( defaultSkill.target))
+        tvActiveSkillTarget.text = context.getString(UtilFunctions.GetTargetStringResource( activeSkill.target))
+        tvPassiveSkillTarget.text = context.getString(UtilFunctions.GetTargetStringResource( defaultSkill.target))
 
         tvActiveSkillSoulSize.text = activeSkill.soulSize.toString()
         tvPassiveSkillSoulSize.text = defaultSkill.soulSize.toString()
@@ -772,12 +842,7 @@ class AstroguideDetailActivity : AppCompatActivity() {
 
 
 
-
     }
-
-
-
-
 
 
 

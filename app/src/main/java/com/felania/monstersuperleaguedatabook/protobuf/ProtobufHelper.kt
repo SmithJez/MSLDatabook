@@ -8,6 +8,7 @@ import com.felania.monstersuperleaguedatabook.utils.GameDBEnum
 import com.felania.monstersuperleaguedatabook.utils.MonsterEvolutionGroup
 import com.felania.msldb.*
 import com.felania.msldb.MsgGameDataOuterClass.MsgGameData
+import com.felania.msldb.MsgLinkBonusOuterClass.*
 import java.io.*
 
 open class ProtobufHelper {
@@ -229,6 +230,21 @@ open class ProtobufHelper {
 //        return ee.localStringsList
 //
 //    }
+
+    fun ReadSynergy (obj: Int, context: Context):  MutableList<MsgLinkBonusOuterClass.MsgLinkBonus>  {
+        val key = GameDBEnum.getValue(obj).toString() + ".smj"
+        Log.wtf("key", "key " + key)
+        try {
+            val input = context.assets.open(key)
+            return MsgGameData.parseFrom(input)!!.linkBonusesList
+        } catch (e: IOException) {
+            e.printStackTrace()
+            Log.wtf("filenotFound", "file not found")
+        }
+        return MsgGameData.getDefaultInstance().linkBonusesList
+    }
+
+
 
     fun ReadMonsters (obj: Int, context: Context): MutableList<MsgMonsterOuterClass.MsgMonster> {
         val key = GameDBEnum.getValue(obj).toString() + ".smj"

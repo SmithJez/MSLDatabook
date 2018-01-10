@@ -2389,6 +2389,54 @@ public final class MsgGameDataOuterClass {
      */
     com.felania.msldb.MsgMonthlyMonsterRewardDataOuterClass.MsgMonthlyMonsterRewardDataOrBuilder getMonthlyMonsterRewardDataOrBuilder(
         int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+     */
+    java.util.List<com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus> 
+        getLinkBonusesList();
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+     */
+    com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus getLinkBonuses(int index);
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+     */
+    int getLinkBonusesCount();
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonusOrBuilder> 
+        getLinkBonusesOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+     */
+    com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonusOrBuilder getLinkBonusesOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+     */
+    java.util.List<com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData> 
+        getLinkBonusHiddenDatasList();
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+     */
+    com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData getLinkBonusHiddenDatas(int index);
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+     */
+    int getLinkBonusHiddenDatasCount();
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenDataOrBuilder> 
+        getLinkBonusHiddenDatasOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+     */
+    com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenDataOrBuilder getLinkBonusHiddenDatasOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code msggamedata.MsgGameData}
@@ -2504,6 +2552,8 @@ public final class MsgGameDataOuterClass {
       monthlyMonsterSeasonData_ = java.util.Collections.emptyList();
       monthlyMonsterGroupData_ = java.util.Collections.emptyList();
       monthlyMonsterRewardData_ = java.util.Collections.emptyList();
+      linkBonuses_ = java.util.Collections.emptyList();
+      linkBonusHiddenDatas_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -3478,6 +3528,24 @@ public final class MsgGameDataOuterClass {
                   input.readMessage(com.felania.msldb.MsgMonthlyMonsterRewardDataOuterClass.MsgMonthlyMonsterRewardData.parser(), extensionRegistry));
               break;
             }
+            case 874: {
+              if (!((mutable_bitField3_ & 0x00000020) == 0x00000020)) {
+                linkBonuses_ = new java.util.ArrayList<com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus>();
+                mutable_bitField3_ |= 0x00000020;
+              }
+              linkBonuses_.add(
+                  input.readMessage(com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.parser(), extensionRegistry));
+              break;
+            }
+            case 882: {
+              if (!((mutable_bitField3_ & 0x00000040) == 0x00000040)) {
+                linkBonusHiddenDatas_ = new java.util.ArrayList<com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData>();
+                mutable_bitField3_ |= 0x00000040;
+              }
+              linkBonusHiddenDatas_.add(
+                  input.readMessage(com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.parser(), extensionRegistry));
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -3785,6 +3853,12 @@ public final class MsgGameDataOuterClass {
         }
         if (((mutable_bitField3_ & 0x00000010) == 0x00000010)) {
           monthlyMonsterRewardData_ = java.util.Collections.unmodifiableList(monthlyMonsterRewardData_);
+        }
+        if (((mutable_bitField3_ & 0x00000020) == 0x00000020)) {
+          linkBonuses_ = java.util.Collections.unmodifiableList(linkBonuses_);
+        }
+        if (((mutable_bitField3_ & 0x00000040) == 0x00000040)) {
+          linkBonusHiddenDatas_ = java.util.Collections.unmodifiableList(linkBonusHiddenDatas_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -7276,6 +7350,76 @@ public final class MsgGameDataOuterClass {
       return monthlyMonsterRewardData_.get(index);
     }
 
+    public static final int LINK_BONUSES_FIELD_NUMBER = 109;
+    private java.util.List<com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus> linkBonuses_;
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus> getLinkBonusesList() {
+      return linkBonuses_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonusOrBuilder> 
+        getLinkBonusesOrBuilderList() {
+      return linkBonuses_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+     */
+    public int getLinkBonusesCount() {
+      return linkBonuses_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+     */
+    public com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus getLinkBonuses(int index) {
+      return linkBonuses_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+     */
+    public com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonusOrBuilder getLinkBonusesOrBuilder(
+        int index) {
+      return linkBonuses_.get(index);
+    }
+
+    public static final int LINK_BONUS_HIDDEN_DATAS_FIELD_NUMBER = 110;
+    private java.util.List<com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData> linkBonusHiddenDatas_;
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData> getLinkBonusHiddenDatasList() {
+      return linkBonusHiddenDatas_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenDataOrBuilder> 
+        getLinkBonusHiddenDatasOrBuilderList() {
+      return linkBonusHiddenDatas_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+     */
+    public int getLinkBonusHiddenDatasCount() {
+      return linkBonusHiddenDatas_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+     */
+    public com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData getLinkBonusHiddenDatas(int index) {
+      return linkBonusHiddenDatas_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+     */
+    public com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenDataOrBuilder getLinkBonusHiddenDatasOrBuilder(
+        int index) {
+      return linkBonusHiddenDatas_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -7603,6 +7747,12 @@ public final class MsgGameDataOuterClass {
       }
       for (int i = 0; i < monthlyMonsterRewardData_.size(); i++) {
         output.writeMessage(108, monthlyMonsterRewardData_.get(i));
+      }
+      for (int i = 0; i < linkBonuses_.size(); i++) {
+        output.writeMessage(109, linkBonuses_.get(i));
+      }
+      for (int i = 0; i < linkBonusHiddenDatas_.size(); i++) {
+        output.writeMessage(110, linkBonusHiddenDatas_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -8046,6 +8196,14 @@ public final class MsgGameDataOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(108, monthlyMonsterRewardData_.get(i));
       }
+      for (int i = 0; i < linkBonuses_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(109, linkBonuses_.get(i));
+      }
+      for (int i = 0; i < linkBonusHiddenDatas_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(110, linkBonusHiddenDatas_.get(i));
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -8264,6 +8422,10 @@ public final class MsgGameDataOuterClass {
           .equals(other.getMonthlyMonsterGroupDataList());
       result = result && getMonthlyMonsterRewardDataList()
           .equals(other.getMonthlyMonsterRewardDataList());
+      result = result && getLinkBonusesList()
+          .equals(other.getLinkBonusesList());
+      result = result && getLinkBonusHiddenDatasList()
+          .equals(other.getLinkBonusHiddenDatasList());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -8677,6 +8839,14 @@ public final class MsgGameDataOuterClass {
         hash = (37 * hash) + MONTHLY_MONSTER_REWARD_DATA_FIELD_NUMBER;
         hash = (53 * hash) + getMonthlyMonsterRewardDataList().hashCode();
       }
+      if (getLinkBonusesCount() > 0) {
+        hash = (37 * hash) + LINK_BONUSES_FIELD_NUMBER;
+        hash = (53 * hash) + getLinkBonusesList().hashCode();
+      }
+      if (getLinkBonusHiddenDatasCount() > 0) {
+        hash = (37 * hash) + LINK_BONUS_HIDDEN_DATAS_FIELD_NUMBER;
+        hash = (53 * hash) + getLinkBonusHiddenDatasList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -8899,6 +9069,8 @@ public final class MsgGameDataOuterClass {
           getMonthlyMonsterSeasonDataFieldBuilder();
           getMonthlyMonsterGroupDataFieldBuilder();
           getMonthlyMonsterRewardDataFieldBuilder();
+          getLinkBonusesFieldBuilder();
+          getLinkBonusHiddenDatasFieldBuilder();
         }
       }
       public Builder clear() {
@@ -9492,6 +9664,18 @@ public final class MsgGameDataOuterClass {
           bitField3_ = (bitField3_ & ~0x00000010);
         } else {
           monthlyMonsterRewardDataBuilder_.clear();
+        }
+        if (linkBonusesBuilder_ == null) {
+          linkBonuses_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000020);
+        } else {
+          linkBonusesBuilder_.clear();
+        }
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          linkBonusHiddenDatas_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000040);
+        } else {
+          linkBonusHiddenDatasBuilder_.clear();
         }
         return this;
       }
@@ -10408,6 +10592,24 @@ public final class MsgGameDataOuterClass {
           result.monthlyMonsterRewardData_ = monthlyMonsterRewardData_;
         } else {
           result.monthlyMonsterRewardData_ = monthlyMonsterRewardDataBuilder_.build();
+        }
+        if (linkBonusesBuilder_ == null) {
+          if (((bitField3_ & 0x00000020) == 0x00000020)) {
+            linkBonuses_ = java.util.Collections.unmodifiableList(linkBonuses_);
+            bitField3_ = (bitField3_ & ~0x00000020);
+          }
+          result.linkBonuses_ = linkBonuses_;
+        } else {
+          result.linkBonuses_ = linkBonusesBuilder_.build();
+        }
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          if (((bitField3_ & 0x00000040) == 0x00000040)) {
+            linkBonusHiddenDatas_ = java.util.Collections.unmodifiableList(linkBonusHiddenDatas_);
+            bitField3_ = (bitField3_ & ~0x00000040);
+          }
+          result.linkBonusHiddenDatas_ = linkBonusHiddenDatas_;
+        } else {
+          result.linkBonusHiddenDatas_ = linkBonusHiddenDatasBuilder_.build();
         }
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -13003,6 +13205,58 @@ public final class MsgGameDataOuterClass {
                    getMonthlyMonsterRewardDataFieldBuilder() : null;
             } else {
               monthlyMonsterRewardDataBuilder_.addAllMessages(other.monthlyMonsterRewardData_);
+            }
+          }
+        }
+        if (linkBonusesBuilder_ == null) {
+          if (!other.linkBonuses_.isEmpty()) {
+            if (linkBonuses_.isEmpty()) {
+              linkBonuses_ = other.linkBonuses_;
+              bitField3_ = (bitField3_ & ~0x00000020);
+            } else {
+              ensureLinkBonusesIsMutable();
+              linkBonuses_.addAll(other.linkBonuses_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.linkBonuses_.isEmpty()) {
+            if (linkBonusesBuilder_.isEmpty()) {
+              linkBonusesBuilder_.dispose();
+              linkBonusesBuilder_ = null;
+              linkBonuses_ = other.linkBonuses_;
+              bitField3_ = (bitField3_ & ~0x00000020);
+              linkBonusesBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getLinkBonusesFieldBuilder() : null;
+            } else {
+              linkBonusesBuilder_.addAllMessages(other.linkBonuses_);
+            }
+          }
+        }
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          if (!other.linkBonusHiddenDatas_.isEmpty()) {
+            if (linkBonusHiddenDatas_.isEmpty()) {
+              linkBonusHiddenDatas_ = other.linkBonusHiddenDatas_;
+              bitField3_ = (bitField3_ & ~0x00000040);
+            } else {
+              ensureLinkBonusHiddenDatasIsMutable();
+              linkBonusHiddenDatas_.addAll(other.linkBonusHiddenDatas_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.linkBonusHiddenDatas_.isEmpty()) {
+            if (linkBonusHiddenDatasBuilder_.isEmpty()) {
+              linkBonusHiddenDatasBuilder_.dispose();
+              linkBonusHiddenDatasBuilder_ = null;
+              linkBonusHiddenDatas_ = other.linkBonusHiddenDatas_;
+              bitField3_ = (bitField3_ & ~0x00000040);
+              linkBonusHiddenDatasBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getLinkBonusHiddenDatasFieldBuilder() : null;
+            } else {
+              linkBonusHiddenDatasBuilder_.addAllMessages(other.linkBonusHiddenDatas_);
             }
           }
         }
@@ -36540,6 +36794,486 @@ public final class MsgGameDataOuterClass {
         }
         return monthlyMonsterRewardDataBuilder_;
       }
+
+      private java.util.List<com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus> linkBonuses_ =
+        java.util.Collections.emptyList();
+      private void ensureLinkBonusesIsMutable() {
+        if (!((bitField3_ & 0x00000020) == 0x00000020)) {
+          linkBonuses_ = new java.util.ArrayList<com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus>(linkBonuses_);
+          bitField3_ |= 0x00000020;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus, com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.Builder, com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonusOrBuilder> linkBonusesBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus> getLinkBonusesList() {
+        if (linkBonusesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(linkBonuses_);
+        } else {
+          return linkBonusesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public int getLinkBonusesCount() {
+        if (linkBonusesBuilder_ == null) {
+          return linkBonuses_.size();
+        } else {
+          return linkBonusesBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus getLinkBonuses(int index) {
+        if (linkBonusesBuilder_ == null) {
+          return linkBonuses_.get(index);
+        } else {
+          return linkBonusesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public Builder setLinkBonuses(
+          int index, com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus value) {
+        if (linkBonusesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLinkBonusesIsMutable();
+          linkBonuses_.set(index, value);
+          onChanged();
+        } else {
+          linkBonusesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public Builder setLinkBonuses(
+          int index, com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.Builder builderForValue) {
+        if (linkBonusesBuilder_ == null) {
+          ensureLinkBonusesIsMutable();
+          linkBonuses_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          linkBonusesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public Builder addLinkBonuses(com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus value) {
+        if (linkBonusesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLinkBonusesIsMutable();
+          linkBonuses_.add(value);
+          onChanged();
+        } else {
+          linkBonusesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public Builder addLinkBonuses(
+          int index, com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus value) {
+        if (linkBonusesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLinkBonusesIsMutable();
+          linkBonuses_.add(index, value);
+          onChanged();
+        } else {
+          linkBonusesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public Builder addLinkBonuses(
+          com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.Builder builderForValue) {
+        if (linkBonusesBuilder_ == null) {
+          ensureLinkBonusesIsMutable();
+          linkBonuses_.add(builderForValue.build());
+          onChanged();
+        } else {
+          linkBonusesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public Builder addLinkBonuses(
+          int index, com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.Builder builderForValue) {
+        if (linkBonusesBuilder_ == null) {
+          ensureLinkBonusesIsMutable();
+          linkBonuses_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          linkBonusesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public Builder addAllLinkBonuses(
+          java.lang.Iterable<? extends com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus> values) {
+        if (linkBonusesBuilder_ == null) {
+          ensureLinkBonusesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, linkBonuses_);
+          onChanged();
+        } else {
+          linkBonusesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public Builder clearLinkBonuses() {
+        if (linkBonusesBuilder_ == null) {
+          linkBonuses_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000020);
+          onChanged();
+        } else {
+          linkBonusesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public Builder removeLinkBonuses(int index) {
+        if (linkBonusesBuilder_ == null) {
+          ensureLinkBonusesIsMutable();
+          linkBonuses_.remove(index);
+          onChanged();
+        } else {
+          linkBonusesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.Builder getLinkBonusesBuilder(
+          int index) {
+        return getLinkBonusesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonusOrBuilder getLinkBonusesOrBuilder(
+          int index) {
+        if (linkBonusesBuilder_ == null) {
+          return linkBonuses_.get(index);  } else {
+          return linkBonusesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonusOrBuilder> 
+           getLinkBonusesOrBuilderList() {
+        if (linkBonusesBuilder_ != null) {
+          return linkBonusesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(linkBonuses_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.Builder addLinkBonusesBuilder() {
+        return getLinkBonusesFieldBuilder().addBuilder(
+            com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.Builder addLinkBonusesBuilder(
+          int index) {
+        return getLinkBonusesFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonus link_bonuses = 109;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.Builder> 
+           getLinkBonusesBuilderList() {
+        return getLinkBonusesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus, com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.Builder, com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonusOrBuilder> 
+          getLinkBonusesFieldBuilder() {
+        if (linkBonusesBuilder_ == null) {
+          linkBonusesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus, com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonus.Builder, com.felania.msldb.MsgLinkBonusOuterClass.MsgLinkBonusOrBuilder>(
+                  linkBonuses_,
+                  ((bitField3_ & 0x00000020) == 0x00000020),
+                  getParentForChildren(),
+                  isClean());
+          linkBonuses_ = null;
+        }
+        return linkBonusesBuilder_;
+      }
+
+      private java.util.List<com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData> linkBonusHiddenDatas_ =
+        java.util.Collections.emptyList();
+      private void ensureLinkBonusHiddenDatasIsMutable() {
+        if (!((bitField3_ & 0x00000040) == 0x00000040)) {
+          linkBonusHiddenDatas_ = new java.util.ArrayList<com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData>(linkBonusHiddenDatas_);
+          bitField3_ |= 0x00000040;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData, com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.Builder, com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenDataOrBuilder> linkBonusHiddenDatasBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData> getLinkBonusHiddenDatasList() {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(linkBonusHiddenDatas_);
+        } else {
+          return linkBonusHiddenDatasBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public int getLinkBonusHiddenDatasCount() {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          return linkBonusHiddenDatas_.size();
+        } else {
+          return linkBonusHiddenDatasBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData getLinkBonusHiddenDatas(int index) {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          return linkBonusHiddenDatas_.get(index);
+        } else {
+          return linkBonusHiddenDatasBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public Builder setLinkBonusHiddenDatas(
+          int index, com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData value) {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLinkBonusHiddenDatasIsMutable();
+          linkBonusHiddenDatas_.set(index, value);
+          onChanged();
+        } else {
+          linkBonusHiddenDatasBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public Builder setLinkBonusHiddenDatas(
+          int index, com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.Builder builderForValue) {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          ensureLinkBonusHiddenDatasIsMutable();
+          linkBonusHiddenDatas_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          linkBonusHiddenDatasBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public Builder addLinkBonusHiddenDatas(com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData value) {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLinkBonusHiddenDatasIsMutable();
+          linkBonusHiddenDatas_.add(value);
+          onChanged();
+        } else {
+          linkBonusHiddenDatasBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public Builder addLinkBonusHiddenDatas(
+          int index, com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData value) {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLinkBonusHiddenDatasIsMutable();
+          linkBonusHiddenDatas_.add(index, value);
+          onChanged();
+        } else {
+          linkBonusHiddenDatasBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public Builder addLinkBonusHiddenDatas(
+          com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.Builder builderForValue) {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          ensureLinkBonusHiddenDatasIsMutable();
+          linkBonusHiddenDatas_.add(builderForValue.build());
+          onChanged();
+        } else {
+          linkBonusHiddenDatasBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public Builder addLinkBonusHiddenDatas(
+          int index, com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.Builder builderForValue) {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          ensureLinkBonusHiddenDatasIsMutable();
+          linkBonusHiddenDatas_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          linkBonusHiddenDatasBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public Builder addAllLinkBonusHiddenDatas(
+          java.lang.Iterable<? extends com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData> values) {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          ensureLinkBonusHiddenDatasIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, linkBonusHiddenDatas_);
+          onChanged();
+        } else {
+          linkBonusHiddenDatasBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public Builder clearLinkBonusHiddenDatas() {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          linkBonusHiddenDatas_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000040);
+          onChanged();
+        } else {
+          linkBonusHiddenDatasBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public Builder removeLinkBonusHiddenDatas(int index) {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          ensureLinkBonusHiddenDatasIsMutable();
+          linkBonusHiddenDatas_.remove(index);
+          onChanged();
+        } else {
+          linkBonusHiddenDatasBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.Builder getLinkBonusHiddenDatasBuilder(
+          int index) {
+        return getLinkBonusHiddenDatasFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenDataOrBuilder getLinkBonusHiddenDatasOrBuilder(
+          int index) {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          return linkBonusHiddenDatas_.get(index);  } else {
+          return linkBonusHiddenDatasBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenDataOrBuilder> 
+           getLinkBonusHiddenDatasOrBuilderList() {
+        if (linkBonusHiddenDatasBuilder_ != null) {
+          return linkBonusHiddenDatasBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(linkBonusHiddenDatas_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.Builder addLinkBonusHiddenDatasBuilder() {
+        return getLinkBonusHiddenDatasFieldBuilder().addBuilder(
+            com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.Builder addLinkBonusHiddenDatasBuilder(
+          int index) {
+        return getLinkBonusHiddenDatasFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLinkBonusHiddenData link_bonus_hidden_datas = 110;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.Builder> 
+           getLinkBonusHiddenDatasBuilderList() {
+        return getLinkBonusHiddenDatasFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData, com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.Builder, com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenDataOrBuilder> 
+          getLinkBonusHiddenDatasFieldBuilder() {
+        if (linkBonusHiddenDatasBuilder_ == null) {
+          linkBonusHiddenDatasBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData, com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.Builder, com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenDataOrBuilder>(
+                  linkBonusHiddenDatas_,
+                  ((bitField3_ & 0x00000040) == 0x00000040),
+                  getParentForChildren(),
+                  isClean());
+          linkBonusHiddenDatas_ = null;
+        }
+        return linkBonusHiddenDatasBuilder_;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -36659,149 +37393,153 @@ public final class MsgGameDataOuterClass {
       "alRankReward.proto\032!MsgMonthlyMonsterSea" +
       "sonData.proto\032 MsgMonthlyMonsterGroupDat" +
       "a.proto\032!MsgMonthlyMonsterRewardData.pro" +
-      "to\"\254,\n\013MsgGameData\022\017\n\007version\030\001 \001(\r\022!\n\004u" +
-      "ids\030\002 \003(\0132\023.msggamedata.MsgUid\022.\n\013user_l" +
-      "evels\030\003 \003(\0132\031.msggamedata.MsgUserLevel\022)" +
-      "\n\010monsters\030\004 \003(\0132\027.msggamedata.MsgMonste",
-      "r\0222\n\rmonster_types\030\005 \003(\0132\033.msggamedata.M" +
-      "sgMonsterType\0224\n\016monster_levels\030\007 \003(\0132\034." +
-      "msggamedata.MsgMonsterLevel\0224\n\016monster_s" +
-      "kills\030\010 \003(\0132\034.msggamedata.MsgMonsterSkil" +
-      "l\022\'\n\007randoms\030\t \003(\0132\026.msggamedata.MsgRand" +
-      "om\022)\n\010settings\030\n \003(\0132\027.msggamedata.MsgSe" +
-      "tting\022,\n\nshop_items\030\013 \003(\0132\030.msggamedata." +
-      "MsgShopItem\022#\n\005items\030\014 \003(\0132\024.msggamedata" +
-      ".MsgItem\022%\n\006stages\030\r \003(\0132\025.msggamedata.M" +
-      "sgStage\022+\n\tsubstages\030\016 \003(\0132\030.msggamedata",
-      ".MsgSubStage\0224\n\016stage_monsters\030\017 \003(\0132\034.m" +
-      "sggamedata.MsgStageMonster\022?\n\024stage_mons" +
-      "ter_groups\030\020 \003(\0132!.msggamedata.MsgStageM" +
-      "onsterGroup\0224\n\016dungeon_stages\030\021 \003(\0132\034.ms" +
-      "ggamedata.MsgDungeonStage\022:\n\021dungeon_sub" +
-      "stages\030\022 \003(\0132\037.msggamedata.MsgDungeonSub" +
-      "Stage\0226\n\020dungeon_monsters\030\023 \003(\0132\034.msggam" +
-      "edata.MsgStageMonster\022A\n\026dungeon_monster" +
-      "_groups\030\024 \003(\0132!.msggamedata.MsgStageMons" +
-      "terGroup\0224\n\016status_effects\030\025 \003(\0132\034.msgga",
-      "medata.MsgStatusEffect\0224\n\016start_monsters" +
-      "\030\026 \003(\0132\034.msggamedata.MsgStartMonster\022#\n\005" +
-      "runes\030\027 \003(\0132\024.msggamedata.MsgRune\022\'\n\007sum" +
-      "mons\030\030 \003(\0132\026.msggamedata.MsgSummon\0222\n\rru" +
-      "ne_settings\030\031 \003(\0132\033.msggamedata.MsgRuneS" +
-      "etting\022,\n\nrune_rares\030\032 \003(\0132\030.msggamedata" +
-      ".MsgRuneRare\022A\n\025rune_optional_effects\030\033 " +
-      "\003(\0132\".msggamedata.MsgRuneOptionalEffect\022" +
-      "7\n\020rune_set_effects\030\034 \003(\0132\035.msggamedata." +
-      "MsgRuneSetEffect\022=\n\026monster_beyond_prici",
-      "ng\030\035 \003(\0132\035.msggamedata.MsgMonsterBeyond\022" +
-      ".\n\014monster_dict\030\036 \003(\0132\030.msggamedata.MsgD" +
-      "ictItem\022/\n\013gift_sender\030\037 \003(\0132\032.msggameda" +
-      "ta.MsgGiftSender\0223\n\rgift_template\030  \003(\0132" +
-      "\034.msggamedata.MsgGiftTemplate\022%\n\006quests\030" +
-      "! \003(\0132\025.msggamedata.MsgQuest\022!\n\004npcs\030\" \003" +
-      "(\0132\023.msggamedata.MsgNPC\0226\n\rnpc_talk_seqs" +
-      "\030# \003(\0132\037.msggamedata.MsgNPCTalkSequence\022" +
-      "3\n\016npc_auto_talks\030$ \003(\0132\033.msggamedata.Ms" +
-      "gNPCTalkAuto\022:\n\021user_profile_icon\030% \003(\0132",
-      "\037.msggamedata.MsgUserProfileIcon\022C\n\031mons" +
-      "ter_evolution_pricing\030& \003(\0132 .msggamedat" +
-      "a.MsgMonsterEvolution\022#\n\005helps\030\' \003(\0132\024.m" +
-      "sggamedata.MsgHelp\022)\n\010subhelps\030( \003(\0132\027.m" +
-      "sggamedata.MsgSubHelp\0225\n\017joje_shop_slots" +
-      "\030) \003(\0132\034.msggamedata.MsgJojeShopSlot\022.\n\013" +
-      "monster_ais\030* \003(\0132\031.msggamedata.MsgMonst" +
-      "erAi\022@\n\024battle_master_script\030+ \003(\0132\".msg" +
-      "gamedata.MsgBattleMasterScript\022/\n\013arena_" +
-      "grade\030, \003(\0132\032.msggamedata.MsgArenaGrade\022",
-      "6\n\017arena_sub_grade\030- \003(\0132\035.msggamedata.M" +
-      "sgArenaSubGrade\022A\n\025monster_egg_cutscenes" +
-      "\030. \003(\0132\".msggamedata.MsgMonsterEggCutSce" +
-      "ne\0229\n\020loading_template\030/ \003(\0132\037.msggameda" +
-      "ta.MsgLoadingTemplate\0220\n\014log_template\0300 " +
-      "\003(\0132\032.msggamedata.MsgLogTemplte\0228\n\020suppo" +
-      "rt_monsters\0302 \003(\0132\036.msggamedata.MsgSuppo" +
-      "rtMonster\0229\n\021custom_btn_sounds\0303 \003(\0132\036.m" +
-      "sggamedata.MsgCustomBtnSound\0222\n\rarena_se" +
-      "asons\0304 \003(\0132\033.msggamedata.MsgArenaSeason",
-      "\022)\n!arena_attacker_gain_winning_point\0305 " +
-      "\003(\r\022)\n!arena_defender_gain_winning_point" +
-      "\0306 \003(\r\0226\n\017chat_like_color\0307 \003(\0132\035.msggam" +
-      "edata.MsgChatLikeColor\022=\n\023daily_bonus_se" +
-      "asons\0308 \003(\0132 .msggamedata.MsgDailyBonusS" +
-      "eason\0221\n\rdaily_bonuses\0309 \003(\0132\032.msggameda" +
-      "ta.MsgDailyBonus\0228\n\020infinite_seasons\030: \003" +
-      "(\0132\036.msggamedata.MsgInfiniteSeason\0226\n\017in" +
-      "finite_stages\030; \003(\0132\035.msggamedata.MsgInf" +
-      "initeStage\022<\n\022infinite_substages\030< \003(\0132 ",
-      ".msggamedata.MsgInfiniteSubStage\0227\n\021infi" +
-      "nite_monsters\030= \003(\0132\034.msggamedata.MsgSta" +
-      "geMonster\022B\n\027infinite_monster_groups\030> \003" +
-      "(\0132!.msggamedata.MsgStageMonsterGroup\022)\n" +
-      "\010missions\030? \003(\0132\027.msggamedata.MsgMission" +
-      "\0222\n\rlobby_rewards\030@ \003(\0132\033.msggamedata.Ms" +
-      "gLobbyReward\022>\n\025monster_capture_dicts\030A " +
-      "\003(\0132\037.msggamedata.MsgCaptureDictItem\022&\n\006" +
-      "credit\030B \003(\0132\026.msggamedata.MsgCredit\022<\n\022" +
-      "enforcement_values\030C \003(\0132 .msggamedata.M",
-      "sgEnforcementValue\0226\n\017revive_monsters\030D " +
-      "\003(\0132\035.msggamedata.MsgReviveMonster\022B\n\025pl" +
-      "atform_achievements\030E \003(\0132#.msggamedata." +
-      "MsgPlatformAchievement\022.\n\010packages\030F \003(\013" +
-      "2\034.msggamedata.MsgPackageQuest\022>\n\023captur" +
-      "eking_seasons\030G \003(\0132!.msggamedata.MsgCap" +
-      "tureKingSeason\022<\n\022captureking_grades\030H \003" +
-      "(\0132 .msggamedata.MsgCaptureKingGrade\0220\n\014" +
-      "clan_emblems\030I \003(\0132\032.msggamedata.MsgClan" +
-      "Emblem\0220\n\014clan_seasons\030J \003(\0132\032.msggameda",
-      "ta.MsgClanSeason\022=\n\023clan_season_battles\030" +
-      "K \003(\0132 .msggamedata.MsgClanSeasonBattle\022" +
-      "4\n\013clan_grades\030L \003(\0132\037.msggamedata.MsgCl" +
-      "anRewardGrade\0229\n\021clan_reward_tiers\030M \003(\013" +
-      "2\036.msggamedata.MsgClanRewardTier\022.\n\013clan" +
-      "_stages\030N \003(\0132\031.msggamedata.MsgClanStage" +
-      "\0224\n\016clan_substages\030O \003(\0132\034.msggamedata.M" +
-      "sgClanSubStage\022=\n\023clan_battle_rewards\030P " +
-      "\003(\0132 .msggamedata.MsgClanBattleReward\022V\n" +
-      " daily_bonus_returnuser_sequences\030Q \003(\0132",
-      ",.msggamedata.MsgDailyBonusReturnUserSeq" +
-      "uence\022<\n\022contractor_seasons\030R \003(\0132 .msgg" +
-      "amedata.MsgContractorSeason\022F\n\030gacha_sho" +
-      "p_event_banners\030S \003(\0132$.msggamedata.MsgG" +
-      "achaShopEventBanner\022>\n\027special_revive_mo" +
-      "nsters\030T \003(\0132\035.msggamedata.MsgReviveMons" +
-      "ter\0222\n\rbingo_seasons\030Z \003(\0132\033.msggamedata" +
-      ".MsgBingoSeason\022;\n\022bingo_season_datas\030[ " +
-      "\003(\0132\037.msggamedata.MsgBingoSeasonData\0227\n\020" +
-      "bingo_time_datas\030\\ \003(\0132\035.msggamedata.Msg",
-      "BingoTimeData\022C\n\026monster_upgrade_skills\030" +
-      "] \003(\0132#.msggamedata.MsgMonsterUpgradeSki" +
-      "ll\022O\n\035monster_upgrade_skill_pricing\030^ \003(" +
-      "\0132(.msggamedata.MsgMonsterUpgradeSkillPr" +
-      "ice\022E\n\027clan_attendance_rewards\030_ \003(\0132$.m" +
-      "sggamedata.MsgClanAttendanceReward\022<\n\022cv" +
-      "c_season_battles\030` \003(\0132 .msggamedata.Msg" +
-      "ClanSeasonBattle\022)\n\010promises\030a \003(\0132\027.msg" +
-      "gamedata.MsgPromise\022G\n\030super_evolution_m" +
-      "onsters\030b \003(\0132%.msggamedata.MsgSuperEvol",
-      "utionMonster\022=\n\023super_stone_recipes\030c \003(" +
-      "\0132 .msggamedata.MsgSuperStoneRecipe\022:\n\021c" +
-      "vc_battle_reward\030d \003(\0132\037.msggamedata.Msg" +
-      "CVCBattleReward\022\035\n\025cvc_phase_bonus_point" +
-      "\030e \003(\r\022@\n\020capture_festival\030f \003(\0132&.msgga" +
-      "medata.MsgCaptureFestivalRawData\022Y\n!capt" +
-      "ure_festival_ticket_condition\030g \003(\0132..ms" +
-      "ggamedata.MsgCaptureFestivalTicketCondit" +
-      "ion\022P\n\035stage_monster_groups_festival\030h \003" +
-      "(\0132).msggamedata.MsgStageMonsterGroupFes",
-      "tival\022O\n\034capture_festival_rank_reward\030i " +
-      "\003(\0132).msggamedata.MsgCaptureFestivalRank" +
-      "Reward\022M\n\033monthly_monster_season_data\030j " +
-      "\003(\0132(.msggamedata.MsgMonthlyMonsterSeaso" +
-      "nData\022K\n\032monthly_monster_group_data\030k \003(" +
-      "\0132\'.msggamedata.MsgMonthlyMonsterGroupDa" +
-      "ta\022M\n\033monthly_monster_reward_data\030l \003(\0132" +
-      "(.msggamedata.MsgMonthlyMonsterRewardDat" +
-      "aB\023\n\021com.felania.msldbb\006proto3"
+      "to\032\022MsgLinkBonus.proto\032\034MsgLinkBonusHidd" +
+      "enData.proto\"\243-\n\013MsgGameData\022\017\n\007version\030" +
+      "\001 \001(\r\022!\n\004uids\030\002 \003(\0132\023.msggamedata.MsgUid" +
+      "\022.\n\013user_levels\030\003 \003(\0132\031.msggamedata.MsgU",
+      "serLevel\022)\n\010monsters\030\004 \003(\0132\027.msggamedata" +
+      ".MsgMonster\0222\n\rmonster_types\030\005 \003(\0132\033.msg" +
+      "gamedata.MsgMonsterType\0224\n\016monster_level" +
+      "s\030\007 \003(\0132\034.msggamedata.MsgMonsterLevel\0224\n" +
+      "\016monster_skills\030\010 \003(\0132\034.msggamedata.MsgM" +
+      "onsterSkill\022\'\n\007randoms\030\t \003(\0132\026.msggameda" +
+      "ta.MsgRandom\022)\n\010settings\030\n \003(\0132\027.msggame" +
+      "data.MsgSetting\022,\n\nshop_items\030\013 \003(\0132\030.ms" +
+      "ggamedata.MsgShopItem\022#\n\005items\030\014 \003(\0132\024.m" +
+      "sggamedata.MsgItem\022%\n\006stages\030\r \003(\0132\025.msg",
+      "gamedata.MsgStage\022+\n\tsubstages\030\016 \003(\0132\030.m" +
+      "sggamedata.MsgSubStage\0224\n\016stage_monsters" +
+      "\030\017 \003(\0132\034.msggamedata.MsgStageMonster\022?\n\024" +
+      "stage_monster_groups\030\020 \003(\0132!.msggamedata" +
+      ".MsgStageMonsterGroup\0224\n\016dungeon_stages\030" +
+      "\021 \003(\0132\034.msggamedata.MsgDungeonStage\022:\n\021d" +
+      "ungeon_substages\030\022 \003(\0132\037.msggamedata.Msg" +
+      "DungeonSubStage\0226\n\020dungeon_monsters\030\023 \003(" +
+      "\0132\034.msggamedata.MsgStageMonster\022A\n\026dunge" +
+      "on_monster_groups\030\024 \003(\0132!.msggamedata.Ms",
+      "gStageMonsterGroup\0224\n\016status_effects\030\025 \003" +
+      "(\0132\034.msggamedata.MsgStatusEffect\0224\n\016star" +
+      "t_monsters\030\026 \003(\0132\034.msggamedata.MsgStartM" +
+      "onster\022#\n\005runes\030\027 \003(\0132\024.msggamedata.MsgR" +
+      "une\022\'\n\007summons\030\030 \003(\0132\026.msggamedata.MsgSu" +
+      "mmon\0222\n\rrune_settings\030\031 \003(\0132\033.msggamedat" +
+      "a.MsgRuneSetting\022,\n\nrune_rares\030\032 \003(\0132\030.m" +
+      "sggamedata.MsgRuneRare\022A\n\025rune_optional_" +
+      "effects\030\033 \003(\0132\".msggamedata.MsgRuneOptio" +
+      "nalEffect\0227\n\020rune_set_effects\030\034 \003(\0132\035.ms",
+      "ggamedata.MsgRuneSetEffect\022=\n\026monster_be" +
+      "yond_pricing\030\035 \003(\0132\035.msggamedata.MsgMons" +
+      "terBeyond\022.\n\014monster_dict\030\036 \003(\0132\030.msggam" +
+      "edata.MsgDictItem\022/\n\013gift_sender\030\037 \003(\0132\032" +
+      ".msggamedata.MsgGiftSender\0223\n\rgift_templ" +
+      "ate\030  \003(\0132\034.msggamedata.MsgGiftTemplate\022" +
+      "%\n\006quests\030! \003(\0132\025.msggamedata.MsgQuest\022!" +
+      "\n\004npcs\030\" \003(\0132\023.msggamedata.MsgNPC\0226\n\rnpc" +
+      "_talk_seqs\030# \003(\0132\037.msggamedata.MsgNPCTal" +
+      "kSequence\0223\n\016npc_auto_talks\030$ \003(\0132\033.msgg",
+      "amedata.MsgNPCTalkAuto\022:\n\021user_profile_i" +
+      "con\030% \003(\0132\037.msggamedata.MsgUserProfileIc" +
+      "on\022C\n\031monster_evolution_pricing\030& \003(\0132 ." +
+      "msggamedata.MsgMonsterEvolution\022#\n\005helps" +
+      "\030\' \003(\0132\024.msggamedata.MsgHelp\022)\n\010subhelps" +
+      "\030( \003(\0132\027.msggamedata.MsgSubHelp\0225\n\017joje_" +
+      "shop_slots\030) \003(\0132\034.msggamedata.MsgJojeSh" +
+      "opSlot\022.\n\013monster_ais\030* \003(\0132\031.msggamedat" +
+      "a.MsgMonsterAi\022@\n\024battle_master_script\030+" +
+      " \003(\0132\".msggamedata.MsgBattleMasterScript",
+      "\022/\n\013arena_grade\030, \003(\0132\032.msggamedata.MsgA" +
+      "renaGrade\0226\n\017arena_sub_grade\030- \003(\0132\035.msg" +
+      "gamedata.MsgArenaSubGrade\022A\n\025monster_egg" +
+      "_cutscenes\030. \003(\0132\".msggamedata.MsgMonste" +
+      "rEggCutScene\0229\n\020loading_template\030/ \003(\0132\037" +
+      ".msggamedata.MsgLoadingTemplate\0220\n\014log_t" +
+      "emplate\0300 \003(\0132\032.msggamedata.MsgLogTemplt" +
+      "e\0228\n\020support_monsters\0302 \003(\0132\036.msggamedat" +
+      "a.MsgSupportMonster\0229\n\021custom_btn_sounds" +
+      "\0303 \003(\0132\036.msggamedata.MsgCustomBtnSound\0222",
+      "\n\rarena_seasons\0304 \003(\0132\033.msggamedata.MsgA" +
+      "renaSeason\022)\n!arena_attacker_gain_winnin" +
+      "g_point\0305 \003(\r\022)\n!arena_defender_gain_win" +
+      "ning_point\0306 \003(\r\0226\n\017chat_like_color\0307 \003(" +
+      "\0132\035.msggamedata.MsgChatLikeColor\022=\n\023dail" +
+      "y_bonus_seasons\0308 \003(\0132 .msggamedata.MsgD" +
+      "ailyBonusSeason\0221\n\rdaily_bonuses\0309 \003(\0132\032" +
+      ".msggamedata.MsgDailyBonus\0228\n\020infinite_s" +
+      "easons\030: \003(\0132\036.msggamedata.MsgInfiniteSe" +
+      "ason\0226\n\017infinite_stages\030; \003(\0132\035.msggamed",
+      "ata.MsgInfiniteStage\022<\n\022infinite_substag" +
+      "es\030< \003(\0132 .msggamedata.MsgInfiniteSubSta" +
+      "ge\0227\n\021infinite_monsters\030= \003(\0132\034.msggamed" +
+      "ata.MsgStageMonster\022B\n\027infinite_monster_" +
+      "groups\030> \003(\0132!.msggamedata.MsgStageMonst" +
+      "erGroup\022)\n\010missions\030? \003(\0132\027.msggamedata." +
+      "MsgMission\0222\n\rlobby_rewards\030@ \003(\0132\033.msgg" +
+      "amedata.MsgLobbyReward\022>\n\025monster_captur" +
+      "e_dicts\030A \003(\0132\037.msggamedata.MsgCaptureDi" +
+      "ctItem\022&\n\006credit\030B \003(\0132\026.msggamedata.Msg",
+      "Credit\022<\n\022enforcement_values\030C \003(\0132 .msg" +
+      "gamedata.MsgEnforcementValue\0226\n\017revive_m" +
+      "onsters\030D \003(\0132\035.msggamedata.MsgReviveMon" +
+      "ster\022B\n\025platform_achievements\030E \003(\0132#.ms" +
+      "ggamedata.MsgPlatformAchievement\022.\n\010pack" +
+      "ages\030F \003(\0132\034.msggamedata.MsgPackageQuest" +
+      "\022>\n\023captureking_seasons\030G \003(\0132!.msggamed" +
+      "ata.MsgCaptureKingSeason\022<\n\022captureking_" +
+      "grades\030H \003(\0132 .msggamedata.MsgCaptureKin" +
+      "gGrade\0220\n\014clan_emblems\030I \003(\0132\032.msggameda",
+      "ta.MsgClanEmblem\0220\n\014clan_seasons\030J \003(\0132\032" +
+      ".msggamedata.MsgClanSeason\022=\n\023clan_seaso" +
+      "n_battles\030K \003(\0132 .msggamedata.MsgClanSea" +
+      "sonBattle\0224\n\013clan_grades\030L \003(\0132\037.msggame" +
+      "data.MsgClanRewardGrade\0229\n\021clan_reward_t" +
+      "iers\030M \003(\0132\036.msggamedata.MsgClanRewardTi" +
+      "er\022.\n\013clan_stages\030N \003(\0132\031.msggamedata.Ms" +
+      "gClanStage\0224\n\016clan_substages\030O \003(\0132\034.msg" +
+      "gamedata.MsgClanSubStage\022=\n\023clan_battle_" +
+      "rewards\030P \003(\0132 .msggamedata.MsgClanBattl",
+      "eReward\022V\n daily_bonus_returnuser_sequen" +
+      "ces\030Q \003(\0132,.msggamedata.MsgDailyBonusRet" +
+      "urnUserSequence\022<\n\022contractor_seasons\030R " +
+      "\003(\0132 .msggamedata.MsgContractorSeason\022F\n" +
+      "\030gacha_shop_event_banners\030S \003(\0132$.msggam" +
+      "edata.MsgGachaShopEventBanner\022>\n\027special" +
+      "_revive_monsters\030T \003(\0132\035.msggamedata.Msg" +
+      "ReviveMonster\0222\n\rbingo_seasons\030Z \003(\0132\033.m" +
+      "sggamedata.MsgBingoSeason\022;\n\022bingo_seaso" +
+      "n_datas\030[ \003(\0132\037.msggamedata.MsgBingoSeas",
+      "onData\0227\n\020bingo_time_datas\030\\ \003(\0132\035.msgga" +
+      "medata.MsgBingoTimeData\022C\n\026monster_upgra" +
+      "de_skills\030] \003(\0132#.msggamedata.MsgMonster" +
+      "UpgradeSkill\022O\n\035monster_upgrade_skill_pr" +
+      "icing\030^ \003(\0132(.msggamedata.MsgMonsterUpgr" +
+      "adeSkillPrice\022E\n\027clan_attendance_rewards" +
+      "\030_ \003(\0132$.msggamedata.MsgClanAttendanceRe" +
+      "ward\022<\n\022cvc_season_battles\030` \003(\0132 .msgga" +
+      "medata.MsgClanSeasonBattle\022)\n\010promises\030a" +
+      " \003(\0132\027.msggamedata.MsgPromise\022G\n\030super_e",
+      "volution_monsters\030b \003(\0132%.msggamedata.Ms" +
+      "gSuperEvolutionMonster\022=\n\023super_stone_re" +
+      "cipes\030c \003(\0132 .msggamedata.MsgSuperStoneR" +
+      "ecipe\022:\n\021cvc_battle_reward\030d \003(\0132\037.msgga" +
+      "medata.MsgCVCBattleReward\022\035\n\025cvc_phase_b" +
+      "onus_point\030e \003(\r\022@\n\020capture_festival\030f \003" +
+      "(\0132&.msggamedata.MsgCaptureFestivalRawDa" +
+      "ta\022Y\n!capture_festival_ticket_condition\030" +
+      "g \003(\0132..msggamedata.MsgCaptureFestivalTi" +
+      "cketCondition\022P\n\035stage_monster_groups_fe",
+      "stival\030h \003(\0132).msggamedata.MsgStageMonst" +
+      "erGroupFestival\022O\n\034capture_festival_rank" +
+      "_reward\030i \003(\0132).msggamedata.MsgCaptureFe" +
+      "stivalRankReward\022M\n\033monthly_monster_seas" +
+      "on_data\030j \003(\0132(.msggamedata.MsgMonthlyMo" +
+      "nsterSeasonData\022K\n\032monthly_monster_group" +
+      "_data\030k \003(\0132\'.msggamedata.MsgMonthlyMons" +
+      "terGroupData\022M\n\033monthly_monster_reward_d" +
+      "ata\030l \003(\0132(.msggamedata.MsgMonthlyMonste" +
+      "rRewardData\022/\n\014link_bonuses\030m \003(\0132\031.msgg",
+      "amedata.MsgLinkBonus\022D\n\027link_bonus_hidde" +
+      "n_datas\030n \003(\0132#.msggamedata.MsgLinkBonus" +
+      "HiddenDataB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -36905,13 +37643,15 @@ public final class MsgGameDataOuterClass {
           com.felania.msldb.MsgMonthlyMonsterSeasonDataOuterClass.getDescriptor(),
           com.felania.msldb.MsgMonthlyMonsterGroupDataOuterClass.getDescriptor(),
           com.felania.msldb.MsgMonthlyMonsterRewardDataOuterClass.getDescriptor(),
+          com.felania.msldb.MsgLinkBonusOuterClass.getDescriptor(),
+          com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_MsgGameData_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_msggamedata_MsgGameData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgGameData_descriptor,
-        new java.lang.String[] { "Version", "Uids", "UserLevels", "Monsters", "MonsterTypes", "MonsterLevels", "MonsterSkills", "Randoms", "Settings", "ShopItems", "Items", "Stages", "Substages", "StageMonsters", "StageMonsterGroups", "DungeonStages", "DungeonSubstages", "DungeonMonsters", "DungeonMonsterGroups", "StatusEffects", "StartMonsters", "Runes", "Summons", "RuneSettings", "RuneRares", "RuneOptionalEffects", "RuneSetEffects", "MonsterBeyondPricing", "MonsterDict", "GiftSender", "GiftTemplate", "Quests", "Npcs", "NpcTalkSeqs", "NpcAutoTalks", "UserProfileIcon", "MonsterEvolutionPricing", "Helps", "Subhelps", "JojeShopSlots", "MonsterAis", "BattleMasterScript", "ArenaGrade", "ArenaSubGrade", "MonsterEggCutscenes", "LoadingTemplate", "LogTemplate", "SupportMonsters", "CustomBtnSounds", "ArenaSeasons", "ArenaAttackerGainWinningPoint", "ArenaDefenderGainWinningPoint", "ChatLikeColor", "DailyBonusSeasons", "DailyBonuses", "InfiniteSeasons", "InfiniteStages", "InfiniteSubstages", "InfiniteMonsters", "InfiniteMonsterGroups", "Missions", "LobbyRewards", "MonsterCaptureDicts", "Credit", "EnforcementValues", "ReviveMonsters", "PlatformAchievements", "Packages", "CapturekingSeasons", "CapturekingGrades", "ClanEmblems", "ClanSeasons", "ClanSeasonBattles", "ClanGrades", "ClanRewardTiers", "ClanStages", "ClanSubstages", "ClanBattleRewards", "DailyBonusReturnuserSequences", "ContractorSeasons", "GachaShopEventBanners", "SpecialReviveMonsters", "BingoSeasons", "BingoSeasonDatas", "BingoTimeDatas", "MonsterUpgradeSkills", "MonsterUpgradeSkillPricing", "ClanAttendanceRewards", "CvcSeasonBattles", "Promises", "SuperEvolutionMonsters", "SuperStoneRecipes", "CvcBattleReward", "CvcPhaseBonusPoint", "CaptureFestival", "CaptureFestivalTicketCondition", "StageMonsterGroupsFestival", "CaptureFestivalRankReward", "MonthlyMonsterSeasonData", "MonthlyMonsterGroupData", "MonthlyMonsterRewardData", });
+        new java.lang.String[] { "Version", "Uids", "UserLevels", "Monsters", "MonsterTypes", "MonsterLevels", "MonsterSkills", "Randoms", "Settings", "ShopItems", "Items", "Stages", "Substages", "StageMonsters", "StageMonsterGroups", "DungeonStages", "DungeonSubstages", "DungeonMonsters", "DungeonMonsterGroups", "StatusEffects", "StartMonsters", "Runes", "Summons", "RuneSettings", "RuneRares", "RuneOptionalEffects", "RuneSetEffects", "MonsterBeyondPricing", "MonsterDict", "GiftSender", "GiftTemplate", "Quests", "Npcs", "NpcTalkSeqs", "NpcAutoTalks", "UserProfileIcon", "MonsterEvolutionPricing", "Helps", "Subhelps", "JojeShopSlots", "MonsterAis", "BattleMasterScript", "ArenaGrade", "ArenaSubGrade", "MonsterEggCutscenes", "LoadingTemplate", "LogTemplate", "SupportMonsters", "CustomBtnSounds", "ArenaSeasons", "ArenaAttackerGainWinningPoint", "ArenaDefenderGainWinningPoint", "ChatLikeColor", "DailyBonusSeasons", "DailyBonuses", "InfiniteSeasons", "InfiniteStages", "InfiniteSubstages", "InfiniteMonsters", "InfiniteMonsterGroups", "Missions", "LobbyRewards", "MonsterCaptureDicts", "Credit", "EnforcementValues", "ReviveMonsters", "PlatformAchievements", "Packages", "CapturekingSeasons", "CapturekingGrades", "ClanEmblems", "ClanSeasons", "ClanSeasonBattles", "ClanGrades", "ClanRewardTiers", "ClanStages", "ClanSubstages", "ClanBattleRewards", "DailyBonusReturnuserSequences", "ContractorSeasons", "GachaShopEventBanners", "SpecialReviveMonsters", "BingoSeasons", "BingoSeasonDatas", "BingoTimeDatas", "MonsterUpgradeSkills", "MonsterUpgradeSkillPricing", "ClanAttendanceRewards", "CvcSeasonBattles", "Promises", "SuperEvolutionMonsters", "SuperStoneRecipes", "CvcBattleReward", "CvcPhaseBonusPoint", "CaptureFestival", "CaptureFestivalTicketCondition", "StageMonsterGroupsFestival", "CaptureFestivalRankReward", "MonthlyMonsterSeasonData", "MonthlyMonsterGroupData", "MonthlyMonsterRewardData", "LinkBonuses", "LinkBonusHiddenDatas", });
     com.felania.msldb.MsgUidOuterClass.getDescriptor();
     com.felania.msldb.MsgUserLevelOuterClass.getDescriptor();
     com.felania.msldb.MsgMonsterOuterClass.getDescriptor();
@@ -37003,6 +37743,8 @@ public final class MsgGameDataOuterClass {
     com.felania.msldb.MsgMonthlyMonsterSeasonDataOuterClass.getDescriptor();
     com.felania.msldb.MsgMonthlyMonsterGroupDataOuterClass.getDescriptor();
     com.felania.msldb.MsgMonthlyMonsterRewardDataOuterClass.getDescriptor();
+    com.felania.msldb.MsgLinkBonusOuterClass.getDescriptor();
+    com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

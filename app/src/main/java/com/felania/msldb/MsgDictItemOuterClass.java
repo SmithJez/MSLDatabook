@@ -15,7 +15,7 @@ public final class MsgDictItemOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface MsgDictItemOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:MsgDictItem)
+      // @@protoc_insertion_point(interface_extends:msggamedata.MsgDictItem)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -29,42 +29,47 @@ public final class MsgDictItemOuterClass {
     int getMonsterUid();
 
     /**
-     * <code>.MonsterStatWeightType weight_type = 3;</code>
+     * <code>.msggamedata.MonsterStatWeightType weight_type = 3;</code>
      */
     int getWeightTypeValue();
     /**
-     * <code>.MonsterStatWeightType weight_type = 3;</code>
+     * <code>.msggamedata.MonsterStatWeightType weight_type = 3;</code>
      */
     com.felania.msldb.MonsterStatWeightTypeOuterClass.MonsterStatWeightType getWeightType();
 
     /**
-     * <code>.MonsterGainType gain_type = 4;</code>
+     * <code>uint64 register_date = 4;</code>
+     */
+    long getRegisterDate();
+
+    /**
+     * <code>.msggamedata.MonsterGainType gain_type = 5;</code>
      */
     int getGainTypeValue();
     /**
-     * <code>.MonsterGainType gain_type = 4;</code>
+     * <code>.msggamedata.MonsterGainType gain_type = 5;</code>
      */
     com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType getGainType();
 
     /**
-     * <code>.MsgUidAndAmount reward = 5;</code>
+     * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
      */
     boolean hasReward();
     /**
-     * <code>.MsgUidAndAmount reward = 5;</code>
+     * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
      */
     com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount getReward();
     /**
-     * <code>.MsgUidAndAmount reward = 5;</code>
+     * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
      */
     com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmountOrBuilder getRewardOrBuilder();
   }
   /**
-   * Protobuf type {@code MsgDictItem}
+   * Protobuf type {@code msggamedata.MsgDictItem}
    */
   public  static final class MsgDictItem extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:MsgDictItem)
+      // @@protoc_insertion_point(message_implements:msggamedata.MsgDictItem)
       MsgDictItemOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use MsgDictItem.newBuilder() to construct.
@@ -75,6 +80,7 @@ public final class MsgDictItemOuterClass {
       uid_ = 0;
       monsterUid_ = 0;
       weightType_ = 0;
+      registerDate_ = 0L;
       gainType_ = 0;
     }
 
@@ -123,12 +129,17 @@ public final class MsgDictItemOuterClass {
               break;
             }
             case 32: {
+
+              registerDate_ = input.readUInt64();
+              break;
+            }
+            case 40: {
               int rawValue = input.readEnum();
 
               gainType_ = rawValue;
               break;
             }
-            case 42: {
+            case 50: {
               com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount.Builder subBuilder = null;
               if (reward_ != null) {
                 subBuilder = reward_.toBuilder();
@@ -155,12 +166,12 @@ public final class MsgDictItemOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.felania.msldb.MsgDictItemOuterClass.internal_static_MsgDictItem_descriptor;
+      return com.felania.msldb.MsgDictItemOuterClass.internal_static_msggamedata_MsgDictItem_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.felania.msldb.MsgDictItemOuterClass.internal_static_MsgDictItem_fieldAccessorTable
+      return com.felania.msldb.MsgDictItemOuterClass.internal_static_msggamedata_MsgDictItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.felania.msldb.MsgDictItemOuterClass.MsgDictItem.class, com.felania.msldb.MsgDictItemOuterClass.MsgDictItem.Builder.class);
     }
@@ -186,51 +197,60 @@ public final class MsgDictItemOuterClass {
     public static final int WEIGHT_TYPE_FIELD_NUMBER = 3;
     private int weightType_;
     /**
-     * <code>.MonsterStatWeightType weight_type = 3;</code>
+     * <code>.msggamedata.MonsterStatWeightType weight_type = 3;</code>
      */
     public int getWeightTypeValue() {
       return weightType_;
     }
     /**
-     * <code>.MonsterStatWeightType weight_type = 3;</code>
+     * <code>.msggamedata.MonsterStatWeightType weight_type = 3;</code>
      */
     public com.felania.msldb.MonsterStatWeightTypeOuterClass.MonsterStatWeightType getWeightType() {
       com.felania.msldb.MonsterStatWeightTypeOuterClass.MonsterStatWeightType result = com.felania.msldb.MonsterStatWeightTypeOuterClass.MonsterStatWeightType.valueOf(weightType_);
       return result == null ? com.felania.msldb.MonsterStatWeightTypeOuterClass.MonsterStatWeightType.UNRECOGNIZED : result;
     }
 
-    public static final int GAIN_TYPE_FIELD_NUMBER = 4;
+    public static final int REGISTER_DATE_FIELD_NUMBER = 4;
+    private long registerDate_;
+    /**
+     * <code>uint64 register_date = 4;</code>
+     */
+    public long getRegisterDate() {
+      return registerDate_;
+    }
+
+    public static final int GAIN_TYPE_FIELD_NUMBER = 5;
     private int gainType_;
     /**
-     * <code>.MonsterGainType gain_type = 4;</code>
+     * <code>.msggamedata.MonsterGainType gain_type = 5;</code>
      */
     public int getGainTypeValue() {
       return gainType_;
     }
     /**
-     * <code>.MonsterGainType gain_type = 4;</code>
+     * <code>.msggamedata.MonsterGainType gain_type = 5;</code>
      */
     public com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType getGainType() {
       com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType result = com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType.valueOf(gainType_);
       return result == null ? com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType.UNRECOGNIZED : result;
     }
 
-    public static final int REWARD_FIELD_NUMBER = 5;
+    public static final int REWARD_FIELD_NUMBER = 6;
     private com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount reward_;
     /**
-     * <code>.MsgUidAndAmount reward = 5;</code>
+     * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
      */
     public boolean hasReward() {
       return reward_ != null;
     }
     /**
-     * <code>.MsgUidAndAmount reward = 5;</code>
+     * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
      */
     public com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount getReward() {
       return reward_ == null ? com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount.getDefaultInstance() : reward_;
     }
     /**
-     * <code>.MsgUidAndAmount reward = 5;</code>
+     * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
      */
     public com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmountOrBuilder getRewardOrBuilder() {
       return getReward();
@@ -257,11 +277,14 @@ public final class MsgDictItemOuterClass {
       if (weightType_ != com.felania.msldb.MonsterStatWeightTypeOuterClass.MonsterStatWeightType.MonsterStatWeightTypeNULL.getNumber()) {
         output.writeEnum(3, weightType_);
       }
+      if (registerDate_ != 0L) {
+        output.writeUInt64(4, registerDate_);
+      }
       if (gainType_ != com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType.MGT_Capture.getNumber()) {
-        output.writeEnum(4, gainType_);
+        output.writeEnum(5, gainType_);
       }
       if (reward_ != null) {
-        output.writeMessage(5, getReward());
+        output.writeMessage(6, getReward());
       }
       unknownFields.writeTo(output);
     }
@@ -283,13 +306,17 @@ public final class MsgDictItemOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(3, weightType_);
       }
+      if (registerDate_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(4, registerDate_);
+      }
       if (gainType_ != com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType.MGT_Capture.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, gainType_);
+          .computeEnumSize(5, gainType_);
       }
       if (reward_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getReward());
+          .computeMessageSize(6, getReward());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,6 +339,8 @@ public final class MsgDictItemOuterClass {
       result = result && (getMonsterUid()
           == other.getMonsterUid());
       result = result && weightType_ == other.weightType_;
+      result = result && (getRegisterDate()
+          == other.getRegisterDate());
       result = result && gainType_ == other.gainType_;
       result = result && (hasReward() == other.hasReward());
       if (hasReward()) {
@@ -335,6 +364,9 @@ public final class MsgDictItemOuterClass {
       hash = (53 * hash) + getMonsterUid();
       hash = (37 * hash) + WEIGHT_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + weightType_;
+      hash = (37 * hash) + REGISTER_DATE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getRegisterDate());
       hash = (37 * hash) + GAIN_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + gainType_;
       if (hasReward()) {
@@ -435,20 +467,20 @@ public final class MsgDictItemOuterClass {
       return builder;
     }
     /**
-     * Protobuf type {@code MsgDictItem}
+     * Protobuf type {@code msggamedata.MsgDictItem}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:MsgDictItem)
+        // @@protoc_insertion_point(builder_implements:msggamedata.MsgDictItem)
         com.felania.msldb.MsgDictItemOuterClass.MsgDictItemOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.felania.msldb.MsgDictItemOuterClass.internal_static_MsgDictItem_descriptor;
+        return com.felania.msldb.MsgDictItemOuterClass.internal_static_msggamedata_MsgDictItem_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.felania.msldb.MsgDictItemOuterClass.internal_static_MsgDictItem_fieldAccessorTable
+        return com.felania.msldb.MsgDictItemOuterClass.internal_static_msggamedata_MsgDictItem_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.felania.msldb.MsgDictItemOuterClass.MsgDictItem.class, com.felania.msldb.MsgDictItemOuterClass.MsgDictItem.Builder.class);
       }
@@ -476,6 +508,8 @@ public final class MsgDictItemOuterClass {
 
         weightType_ = 0;
 
+        registerDate_ = 0L;
+
         gainType_ = 0;
 
         if (rewardBuilder_ == null) {
@@ -489,7 +523,7 @@ public final class MsgDictItemOuterClass {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.felania.msldb.MsgDictItemOuterClass.internal_static_MsgDictItem_descriptor;
+        return com.felania.msldb.MsgDictItemOuterClass.internal_static_msggamedata_MsgDictItem_descriptor;
       }
 
       public com.felania.msldb.MsgDictItemOuterClass.MsgDictItem getDefaultInstanceForType() {
@@ -509,6 +543,7 @@ public final class MsgDictItemOuterClass {
         result.uid_ = uid_;
         result.monsterUid_ = monsterUid_;
         result.weightType_ = weightType_;
+        result.registerDate_ = registerDate_;
         result.gainType_ = gainType_;
         if (rewardBuilder_ == null) {
           result.reward_ = reward_;
@@ -564,6 +599,9 @@ public final class MsgDictItemOuterClass {
         }
         if (other.weightType_ != 0) {
           setWeightTypeValue(other.getWeightTypeValue());
+        }
+        if (other.getRegisterDate() != 0L) {
+          setRegisterDate(other.getRegisterDate());
         }
         if (other.gainType_ != 0) {
           setGainTypeValue(other.getGainTypeValue());
@@ -652,13 +690,13 @@ public final class MsgDictItemOuterClass {
 
       private int weightType_ = 0;
       /**
-       * <code>.MonsterStatWeightType weight_type = 3;</code>
+       * <code>.msggamedata.MonsterStatWeightType weight_type = 3;</code>
        */
       public int getWeightTypeValue() {
         return weightType_;
       }
       /**
-       * <code>.MonsterStatWeightType weight_type = 3;</code>
+       * <code>.msggamedata.MonsterStatWeightType weight_type = 3;</code>
        */
       public Builder setWeightTypeValue(int value) {
         weightType_ = value;
@@ -666,14 +704,14 @@ public final class MsgDictItemOuterClass {
         return this;
       }
       /**
-       * <code>.MonsterStatWeightType weight_type = 3;</code>
+       * <code>.msggamedata.MonsterStatWeightType weight_type = 3;</code>
        */
       public com.felania.msldb.MonsterStatWeightTypeOuterClass.MonsterStatWeightType getWeightType() {
         com.felania.msldb.MonsterStatWeightTypeOuterClass.MonsterStatWeightType result = com.felania.msldb.MonsterStatWeightTypeOuterClass.MonsterStatWeightType.valueOf(weightType_);
         return result == null ? com.felania.msldb.MonsterStatWeightTypeOuterClass.MonsterStatWeightType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.MonsterStatWeightType weight_type = 3;</code>
+       * <code>.msggamedata.MonsterStatWeightType weight_type = 3;</code>
        */
       public Builder setWeightType(com.felania.msldb.MonsterStatWeightTypeOuterClass.MonsterStatWeightType value) {
         if (value == null) {
@@ -685,7 +723,7 @@ public final class MsgDictItemOuterClass {
         return this;
       }
       /**
-       * <code>.MonsterStatWeightType weight_type = 3;</code>
+       * <code>.msggamedata.MonsterStatWeightType weight_type = 3;</code>
        */
       public Builder clearWeightType() {
         
@@ -694,15 +732,41 @@ public final class MsgDictItemOuterClass {
         return this;
       }
 
+      private long registerDate_ ;
+      /**
+       * <code>uint64 register_date = 4;</code>
+       */
+      public long getRegisterDate() {
+        return registerDate_;
+      }
+      /**
+       * <code>uint64 register_date = 4;</code>
+       */
+      public Builder setRegisterDate(long value) {
+        
+        registerDate_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 register_date = 4;</code>
+       */
+      public Builder clearRegisterDate() {
+        
+        registerDate_ = 0L;
+        onChanged();
+        return this;
+      }
+
       private int gainType_ = 0;
       /**
-       * <code>.MonsterGainType gain_type = 4;</code>
+       * <code>.msggamedata.MonsterGainType gain_type = 5;</code>
        */
       public int getGainTypeValue() {
         return gainType_;
       }
       /**
-       * <code>.MonsterGainType gain_type = 4;</code>
+       * <code>.msggamedata.MonsterGainType gain_type = 5;</code>
        */
       public Builder setGainTypeValue(int value) {
         gainType_ = value;
@@ -710,14 +774,14 @@ public final class MsgDictItemOuterClass {
         return this;
       }
       /**
-       * <code>.MonsterGainType gain_type = 4;</code>
+       * <code>.msggamedata.MonsterGainType gain_type = 5;</code>
        */
       public com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType getGainType() {
         com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType result = com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType.valueOf(gainType_);
         return result == null ? com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.MonsterGainType gain_type = 4;</code>
+       * <code>.msggamedata.MonsterGainType gain_type = 5;</code>
        */
       public Builder setGainType(com.felania.msldb.MonsterGainTypeOuterClass.MonsterGainType value) {
         if (value == null) {
@@ -729,7 +793,7 @@ public final class MsgDictItemOuterClass {
         return this;
       }
       /**
-       * <code>.MonsterGainType gain_type = 4;</code>
+       * <code>.msggamedata.MonsterGainType gain_type = 5;</code>
        */
       public Builder clearGainType() {
         
@@ -742,13 +806,13 @@ public final class MsgDictItemOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount, com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount.Builder, com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmountOrBuilder> rewardBuilder_;
       /**
-       * <code>.MsgUidAndAmount reward = 5;</code>
+       * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
        */
       public boolean hasReward() {
         return rewardBuilder_ != null || reward_ != null;
       }
       /**
-       * <code>.MsgUidAndAmount reward = 5;</code>
+       * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
        */
       public com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount getReward() {
         if (rewardBuilder_ == null) {
@@ -758,7 +822,7 @@ public final class MsgDictItemOuterClass {
         }
       }
       /**
-       * <code>.MsgUidAndAmount reward = 5;</code>
+       * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
        */
       public Builder setReward(com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount value) {
         if (rewardBuilder_ == null) {
@@ -774,7 +838,7 @@ public final class MsgDictItemOuterClass {
         return this;
       }
       /**
-       * <code>.MsgUidAndAmount reward = 5;</code>
+       * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
        */
       public Builder setReward(
           com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount.Builder builderForValue) {
@@ -788,7 +852,7 @@ public final class MsgDictItemOuterClass {
         return this;
       }
       /**
-       * <code>.MsgUidAndAmount reward = 5;</code>
+       * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
        */
       public Builder mergeReward(com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount value) {
         if (rewardBuilder_ == null) {
@@ -806,7 +870,7 @@ public final class MsgDictItemOuterClass {
         return this;
       }
       /**
-       * <code>.MsgUidAndAmount reward = 5;</code>
+       * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
        */
       public Builder clearReward() {
         if (rewardBuilder_ == null) {
@@ -820,7 +884,7 @@ public final class MsgDictItemOuterClass {
         return this;
       }
       /**
-       * <code>.MsgUidAndAmount reward = 5;</code>
+       * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
        */
       public com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount.Builder getRewardBuilder() {
         
@@ -828,7 +892,7 @@ public final class MsgDictItemOuterClass {
         return getRewardFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MsgUidAndAmount reward = 5;</code>
+       * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
        */
       public com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmountOrBuilder getRewardOrBuilder() {
         if (rewardBuilder_ != null) {
@@ -839,7 +903,7 @@ public final class MsgDictItemOuterClass {
         }
       }
       /**
-       * <code>.MsgUidAndAmount reward = 5;</code>
+       * <code>.msggamedata.MsgUidAndAmount reward = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount, com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount.Builder, com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmountOrBuilder> 
@@ -865,10 +929,10 @@ public final class MsgDictItemOuterClass {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:MsgDictItem)
+      // @@protoc_insertion_point(builder_scope:msggamedata.MsgDictItem)
     }
 
-    // @@protoc_insertion_point(class_scope:MsgDictItem)
+    // @@protoc_insertion_point(class_scope:msggamedata.MsgDictItem)
     private static final com.felania.msldb.MsgDictItemOuterClass.MsgDictItem DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.felania.msldb.MsgDictItemOuterClass.MsgDictItem();
@@ -904,10 +968,10 @@ public final class MsgDictItemOuterClass {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MsgDictItem_descriptor;
+    internal_static_msggamedata_MsgDictItem_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MsgDictItem_fieldAccessorTable;
+      internal_static_msggamedata_MsgDictItem_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -917,14 +981,16 @@ public final class MsgDictItemOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MsgDictItem.proto\032\033MonsterStatWeightTy" +
-      "pe.proto\032\025MonsterGainType.proto\032\025MsgUidA" +
-      "ndAmount.proto\"\243\001\n\013MsgDictItem\022\013\n\003uid\030\001 " +
-      "\001(\007\022\023\n\013monster_uid\030\002 \001(\007\022+\n\013weight_type\030" +
-      "\003 \001(\0162\026.MonsterStatWeightType\022#\n\tgain_ty" +
-      "pe\030\004 \001(\0162\020.MonsterGainType\022 \n\006reward\030\005 \001" +
-      "(\0132\020.MsgUidAndAmountB\023\n\021com.felania.msld" +
-      "bb\006proto3"
+      "\n\021MsgDictItem.proto\022\013msggamedata\032\033Monste" +
+      "rStatWeightType.proto\032\025MonsterGainType.p" +
+      "roto\032\025MsgUidAndAmount.proto\"\336\001\n\013MsgDictI" +
+      "tem\022\013\n\003uid\030\001 \001(\007\022\023\n\013monster_uid\030\002 \001(\007\0227\n" +
+      "\013weight_type\030\003 \001(\0162\".msggamedata.Monster" +
+      "StatWeightType\022\025\n\rregister_date\030\004 \001(\004\022/\n" +
+      "\tgain_type\030\005 \001(\0162\034.msggamedata.MonsterGa" +
+      "inType\022,\n\006reward\030\006 \001(\0132\034.msggamedata.Msg" +
+      "UidAndAmountB\023\n\021com.felania.msldbb\006proto" +
+      "3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -941,12 +1007,12 @@ public final class MsgDictItemOuterClass {
           com.felania.msldb.MonsterGainTypeOuterClass.getDescriptor(),
           com.felania.msldb.MsgUidAndAmountOuterClass.getDescriptor(),
         }, assigner);
-    internal_static_MsgDictItem_descriptor =
+    internal_static_msggamedata_MsgDictItem_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_MsgDictItem_fieldAccessorTable = new
+    internal_static_msggamedata_MsgDictItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MsgDictItem_descriptor,
-        new java.lang.String[] { "Uid", "MonsterUid", "WeightType", "GainType", "Reward", });
+        internal_static_msggamedata_MsgDictItem_descriptor,
+        new java.lang.String[] { "Uid", "MonsterUid", "WeightType", "RegisterDate", "GainType", "Reward", });
     com.felania.msldb.MonsterStatWeightTypeOuterClass.getDescriptor();
     com.felania.msldb.MonsterGainTypeOuterClass.getDescriptor();
     com.felania.msldb.MsgUidAndAmountOuterClass.getDescriptor();

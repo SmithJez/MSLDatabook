@@ -45,30 +45,57 @@ public final class RspMonsterSummonByEggOuterClass {
     com.felania.msldb.MsgUserItemOuterClass.MsgUserItemOrBuilder getUserItemOrBuilder();
 
     /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+     * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
      */
-    boolean hasUserMonster();
+    java.util.List<com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster> 
+        getUserMonstersList();
     /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+     * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
      */
-    com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster getUserMonster();
+    com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster getUserMonsters(int index);
     /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+     * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
      */
-    com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder getUserMonsterOrBuilder();
+    int getUserMonstersCount();
+    /**
+     * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder> 
+        getUserMonstersOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+     */
+    com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder getUserMonstersOrBuilder(
+        int index);
 
     /**
-     * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+     * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
      */
-    boolean hasUserMonsterDictData();
+    java.util.List<com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData> 
+        getUserMonsterDictDatasList();
     /**
-     * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+     * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
      */
-    com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData getUserMonsterDictData();
+    com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData getUserMonsterDictDatas(int index);
     /**
-     * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+     * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
      */
-    com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder getUserMonsterDictDataOrBuilder();
+    int getUserMonsterDictDatasCount();
+    /**
+     * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder> 
+        getUserMonsterDictDatasOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+     */
+    com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder getUserMonsterDictDatasOrBuilder(
+        int index);
+
+    /**
+     * <code>bool multiple_summon = 5;</code>
+     */
+    boolean getMultipleSummon();
   }
   /**
    * Protobuf type {@code msggamedata.RspMonsterSummonByEgg}
@@ -83,6 +110,9 @@ public final class RspMonsterSummonByEggOuterClass {
       super(builder);
     }
     private RspMonsterSummonByEgg() {
+      userMonsters_ = java.util.Collections.emptyList();
+      userMonsterDictDatas_ = java.util.Collections.emptyList();
+      multipleSummon_ = false;
     }
 
     @java.lang.Override
@@ -140,29 +170,26 @@ public final class RspMonsterSummonByEggOuterClass {
               break;
             }
             case 26: {
-              com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder subBuilder = null;
-              if (userMonster_ != null) {
-                subBuilder = userMonster_.toBuilder();
+              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                userMonsters_ = new java.util.ArrayList<com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster>();
+                mutable_bitField0_ |= 0x00000004;
               }
-              userMonster_ = input.readMessage(com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(userMonster_);
-                userMonster_ = subBuilder.buildPartial();
-              }
-
+              userMonsters_.add(
+                  input.readMessage(com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.parser(), extensionRegistry));
               break;
             }
             case 34: {
-              com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder subBuilder = null;
-              if (userMonsterDictData_ != null) {
-                subBuilder = userMonsterDictData_.toBuilder();
+              if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
+                userMonsterDictDatas_ = new java.util.ArrayList<com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData>();
+                mutable_bitField0_ |= 0x00000008;
               }
-              userMonsterDictData_ = input.readMessage(com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(userMonsterDictData_);
-                userMonsterDictData_ = subBuilder.buildPartial();
-              }
+              userMonsterDictDatas_.add(
+                  input.readMessage(com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.parser(), extensionRegistry));
+              break;
+            }
+            case 40: {
 
+              multipleSummon_ = input.readBool();
               break;
             }
           }
@@ -173,6 +200,12 @@ public final class RspMonsterSummonByEggOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+          userMonsters_ = java.util.Collections.unmodifiableList(userMonsters_);
+        }
+        if (((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
+          userMonsterDictDatas_ = java.util.Collections.unmodifiableList(userMonsterDictDatas_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -189,6 +222,7 @@ public final class RspMonsterSummonByEggOuterClass {
               com.felania.msldb.RspMonsterSummonByEggOuterClass.RspMonsterSummonByEgg.class, com.felania.msldb.RspMonsterSummonByEggOuterClass.RspMonsterSummonByEgg.Builder.class);
     }
 
+    private int bitField0_;
     public static final int USER_FIELD_NUMBER = 1;
     private com.felania.msldb.MsgUserOuterClass.MsgUser user_;
     /**
@@ -231,46 +265,83 @@ public final class RspMonsterSummonByEggOuterClass {
       return getUserItem();
     }
 
-    public static final int USER_MONSTER_FIELD_NUMBER = 3;
-    private com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster userMonster_;
+    public static final int USER_MONSTERS_FIELD_NUMBER = 3;
+    private java.util.List<com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster> userMonsters_;
     /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+     * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
      */
-    public boolean hasUserMonster() {
-      return userMonster_ != null;
+    public java.util.List<com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster> getUserMonstersList() {
+      return userMonsters_;
     }
     /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+     * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
      */
-    public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster getUserMonster() {
-      return userMonster_ == null ? com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.getDefaultInstance() : userMonster_;
+    public java.util.List<? extends com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder> 
+        getUserMonstersOrBuilderList() {
+      return userMonsters_;
     }
     /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+     * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
      */
-    public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder getUserMonsterOrBuilder() {
-      return getUserMonster();
+    public int getUserMonstersCount() {
+      return userMonsters_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+     */
+    public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster getUserMonsters(int index) {
+      return userMonsters_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+     */
+    public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder getUserMonstersOrBuilder(
+        int index) {
+      return userMonsters_.get(index);
     }
 
-    public static final int USER_MONSTER_DICT_DATA_FIELD_NUMBER = 4;
-    private com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData userMonsterDictData_;
+    public static final int USER_MONSTER_DICT_DATAS_FIELD_NUMBER = 4;
+    private java.util.List<com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData> userMonsterDictDatas_;
     /**
-     * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+     * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
      */
-    public boolean hasUserMonsterDictData() {
-      return userMonsterDictData_ != null;
+    public java.util.List<com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData> getUserMonsterDictDatasList() {
+      return userMonsterDictDatas_;
     }
     /**
-     * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+     * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
      */
-    public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData getUserMonsterDictData() {
-      return userMonsterDictData_ == null ? com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.getDefaultInstance() : userMonsterDictData_;
+    public java.util.List<? extends com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder> 
+        getUserMonsterDictDatasOrBuilderList() {
+      return userMonsterDictDatas_;
     }
     /**
-     * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+     * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
      */
-    public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder getUserMonsterDictDataOrBuilder() {
-      return getUserMonsterDictData();
+    public int getUserMonsterDictDatasCount() {
+      return userMonsterDictDatas_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+     */
+    public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData getUserMonsterDictDatas(int index) {
+      return userMonsterDictDatas_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+     */
+    public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder getUserMonsterDictDatasOrBuilder(
+        int index) {
+      return userMonsterDictDatas_.get(index);
+    }
+
+    public static final int MULTIPLE_SUMMON_FIELD_NUMBER = 5;
+    private boolean multipleSummon_;
+    /**
+     * <code>bool multiple_summon = 5;</code>
+     */
+    public boolean getMultipleSummon() {
+      return multipleSummon_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -291,11 +362,14 @@ public final class RspMonsterSummonByEggOuterClass {
       if (userItem_ != null) {
         output.writeMessage(2, getUserItem());
       }
-      if (userMonster_ != null) {
-        output.writeMessage(3, getUserMonster());
+      for (int i = 0; i < userMonsters_.size(); i++) {
+        output.writeMessage(3, userMonsters_.get(i));
       }
-      if (userMonsterDictData_ != null) {
-        output.writeMessage(4, getUserMonsterDictData());
+      for (int i = 0; i < userMonsterDictDatas_.size(); i++) {
+        output.writeMessage(4, userMonsterDictDatas_.get(i));
+      }
+      if (multipleSummon_ != false) {
+        output.writeBool(5, multipleSummon_);
       }
       unknownFields.writeTo(output);
     }
@@ -313,13 +387,17 @@ public final class RspMonsterSummonByEggOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getUserItem());
       }
-      if (userMonster_ != null) {
+      for (int i = 0; i < userMonsters_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getUserMonster());
+          .computeMessageSize(3, userMonsters_.get(i));
       }
-      if (userMonsterDictData_ != null) {
+      for (int i = 0; i < userMonsterDictDatas_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getUserMonsterDictData());
+          .computeMessageSize(4, userMonsterDictDatas_.get(i));
+      }
+      if (multipleSummon_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, multipleSummon_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -347,16 +425,12 @@ public final class RspMonsterSummonByEggOuterClass {
         result = result && getUserItem()
             .equals(other.getUserItem());
       }
-      result = result && (hasUserMonster() == other.hasUserMonster());
-      if (hasUserMonster()) {
-        result = result && getUserMonster()
-            .equals(other.getUserMonster());
-      }
-      result = result && (hasUserMonsterDictData() == other.hasUserMonsterDictData());
-      if (hasUserMonsterDictData()) {
-        result = result && getUserMonsterDictData()
-            .equals(other.getUserMonsterDictData());
-      }
+      result = result && getUserMonstersList()
+          .equals(other.getUserMonstersList());
+      result = result && getUserMonsterDictDatasList()
+          .equals(other.getUserMonsterDictDatasList());
+      result = result && (getMultipleSummon()
+          == other.getMultipleSummon());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -376,14 +450,17 @@ public final class RspMonsterSummonByEggOuterClass {
         hash = (37 * hash) + USER_ITEM_FIELD_NUMBER;
         hash = (53 * hash) + getUserItem().hashCode();
       }
-      if (hasUserMonster()) {
-        hash = (37 * hash) + USER_MONSTER_FIELD_NUMBER;
-        hash = (53 * hash) + getUserMonster().hashCode();
+      if (getUserMonstersCount() > 0) {
+        hash = (37 * hash) + USER_MONSTERS_FIELD_NUMBER;
+        hash = (53 * hash) + getUserMonstersList().hashCode();
       }
-      if (hasUserMonsterDictData()) {
-        hash = (37 * hash) + USER_MONSTER_DICT_DATA_FIELD_NUMBER;
-        hash = (53 * hash) + getUserMonsterDictData().hashCode();
+      if (getUserMonsterDictDatasCount() > 0) {
+        hash = (37 * hash) + USER_MONSTER_DICT_DATAS_FIELD_NUMBER;
+        hash = (53 * hash) + getUserMonsterDictDatasList().hashCode();
       }
+      hash = (37 * hash) + MULTIPLE_SUMMON_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getMultipleSummon());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -509,6 +586,8 @@ public final class RspMonsterSummonByEggOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getUserMonstersFieldBuilder();
+          getUserMonsterDictDatasFieldBuilder();
         }
       }
       public Builder clear() {
@@ -525,18 +604,20 @@ public final class RspMonsterSummonByEggOuterClass {
           userItem_ = null;
           userItemBuilder_ = null;
         }
-        if (userMonsterBuilder_ == null) {
-          userMonster_ = null;
+        if (userMonstersBuilder_ == null) {
+          userMonsters_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
         } else {
-          userMonster_ = null;
-          userMonsterBuilder_ = null;
+          userMonstersBuilder_.clear();
         }
-        if (userMonsterDictDataBuilder_ == null) {
-          userMonsterDictData_ = null;
+        if (userMonsterDictDatasBuilder_ == null) {
+          userMonsterDictDatas_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
         } else {
-          userMonsterDictData_ = null;
-          userMonsterDictDataBuilder_ = null;
+          userMonsterDictDatasBuilder_.clear();
         }
+        multipleSummon_ = false;
+
         return this;
       }
 
@@ -559,6 +640,8 @@ public final class RspMonsterSummonByEggOuterClass {
 
       public com.felania.msldb.RspMonsterSummonByEggOuterClass.RspMonsterSummonByEgg buildPartial() {
         com.felania.msldb.RspMonsterSummonByEggOuterClass.RspMonsterSummonByEgg result = new com.felania.msldb.RspMonsterSummonByEggOuterClass.RspMonsterSummonByEgg(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         if (userBuilder_ == null) {
           result.user_ = user_;
         } else {
@@ -569,16 +652,26 @@ public final class RspMonsterSummonByEggOuterClass {
         } else {
           result.userItem_ = userItemBuilder_.build();
         }
-        if (userMonsterBuilder_ == null) {
-          result.userMonster_ = userMonster_;
+        if (userMonstersBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004)) {
+            userMonsters_ = java.util.Collections.unmodifiableList(userMonsters_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.userMonsters_ = userMonsters_;
         } else {
-          result.userMonster_ = userMonsterBuilder_.build();
+          result.userMonsters_ = userMonstersBuilder_.build();
         }
-        if (userMonsterDictDataBuilder_ == null) {
-          result.userMonsterDictData_ = userMonsterDictData_;
+        if (userMonsterDictDatasBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008)) {
+            userMonsterDictDatas_ = java.util.Collections.unmodifiableList(userMonsterDictDatas_);
+            bitField0_ = (bitField0_ & ~0x00000008);
+          }
+          result.userMonsterDictDatas_ = userMonsterDictDatas_;
         } else {
-          result.userMonsterDictData_ = userMonsterDictDataBuilder_.build();
+          result.userMonsterDictDatas_ = userMonsterDictDatasBuilder_.build();
         }
+        result.multipleSummon_ = multipleSummon_;
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -626,11 +719,60 @@ public final class RspMonsterSummonByEggOuterClass {
         if (other.hasUserItem()) {
           mergeUserItem(other.getUserItem());
         }
-        if (other.hasUserMonster()) {
-          mergeUserMonster(other.getUserMonster());
+        if (userMonstersBuilder_ == null) {
+          if (!other.userMonsters_.isEmpty()) {
+            if (userMonsters_.isEmpty()) {
+              userMonsters_ = other.userMonsters_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureUserMonstersIsMutable();
+              userMonsters_.addAll(other.userMonsters_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.userMonsters_.isEmpty()) {
+            if (userMonstersBuilder_.isEmpty()) {
+              userMonstersBuilder_.dispose();
+              userMonstersBuilder_ = null;
+              userMonsters_ = other.userMonsters_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              userMonstersBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getUserMonstersFieldBuilder() : null;
+            } else {
+              userMonstersBuilder_.addAllMessages(other.userMonsters_);
+            }
+          }
         }
-        if (other.hasUserMonsterDictData()) {
-          mergeUserMonsterDictData(other.getUserMonsterDictData());
+        if (userMonsterDictDatasBuilder_ == null) {
+          if (!other.userMonsterDictDatas_.isEmpty()) {
+            if (userMonsterDictDatas_.isEmpty()) {
+              userMonsterDictDatas_ = other.userMonsterDictDatas_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+            } else {
+              ensureUserMonsterDictDatasIsMutable();
+              userMonsterDictDatas_.addAll(other.userMonsterDictDatas_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.userMonsterDictDatas_.isEmpty()) {
+            if (userMonsterDictDatasBuilder_.isEmpty()) {
+              userMonsterDictDatasBuilder_.dispose();
+              userMonsterDictDatasBuilder_ = null;
+              userMonsterDictDatas_ = other.userMonsterDictDatas_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+              userMonsterDictDatasBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getUserMonsterDictDatasFieldBuilder() : null;
+            } else {
+              userMonsterDictDatasBuilder_.addAllMessages(other.userMonsterDictDatas_);
+            }
+          }
+        }
+        if (other.getMultipleSummon() != false) {
+          setMultipleSummon(other.getMultipleSummon());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -658,6 +800,7 @@ public final class RspMonsterSummonByEggOuterClass {
         }
         return this;
       }
+      private int bitField0_;
 
       private com.felania.msldb.MsgUserOuterClass.MsgUser user_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -893,238 +1036,510 @@ public final class RspMonsterSummonByEggOuterClass {
         return userItemBuilder_;
       }
 
-      private com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster userMonster_ = null;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder> userMonsterBuilder_;
-      /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
-       */
-      public boolean hasUserMonster() {
-        return userMonsterBuilder_ != null || userMonster_ != null;
+      private java.util.List<com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster> userMonsters_ =
+        java.util.Collections.emptyList();
+      private void ensureUserMonstersIsMutable() {
+        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+          userMonsters_ = new java.util.ArrayList<com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster>(userMonsters_);
+          bitField0_ |= 0x00000004;
+         }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder> userMonstersBuilder_;
+
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
        */
-      public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster getUserMonster() {
-        if (userMonsterBuilder_ == null) {
-          return userMonster_ == null ? com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.getDefaultInstance() : userMonster_;
+      public java.util.List<com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster> getUserMonstersList() {
+        if (userMonstersBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(userMonsters_);
         } else {
-          return userMonsterBuilder_.getMessage();
+          return userMonstersBuilder_.getMessageList();
         }
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
        */
-      public Builder setUserMonster(com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster value) {
-        if (userMonsterBuilder_ == null) {
+      public int getUserMonstersCount() {
+        if (userMonstersBuilder_ == null) {
+          return userMonsters_.size();
+        } else {
+          return userMonstersBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+       */
+      public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster getUserMonsters(int index) {
+        if (userMonstersBuilder_ == null) {
+          return userMonsters_.get(index);
+        } else {
+          return userMonstersBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+       */
+      public Builder setUserMonsters(
+          int index, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster value) {
+        if (userMonstersBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          userMonster_ = value;
+          ensureUserMonstersIsMutable();
+          userMonsters_.set(index, value);
           onChanged();
         } else {
-          userMonsterBuilder_.setMessage(value);
+          userMonstersBuilder_.setMessage(index, value);
         }
-
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
        */
-      public Builder setUserMonster(
+      public Builder setUserMonsters(
+          int index, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder builderForValue) {
+        if (userMonstersBuilder_ == null) {
+          ensureUserMonstersIsMutable();
+          userMonsters_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          userMonstersBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+       */
+      public Builder addUserMonsters(com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster value) {
+        if (userMonstersBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUserMonstersIsMutable();
+          userMonsters_.add(value);
+          onChanged();
+        } else {
+          userMonstersBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+       */
+      public Builder addUserMonsters(
+          int index, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster value) {
+        if (userMonstersBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUserMonstersIsMutable();
+          userMonsters_.add(index, value);
+          onChanged();
+        } else {
+          userMonstersBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+       */
+      public Builder addUserMonsters(
           com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder builderForValue) {
-        if (userMonsterBuilder_ == null) {
-          userMonster_ = builderForValue.build();
+        if (userMonstersBuilder_ == null) {
+          ensureUserMonstersIsMutable();
+          userMonsters_.add(builderForValue.build());
           onChanged();
         } else {
-          userMonsterBuilder_.setMessage(builderForValue.build());
+          userMonstersBuilder_.addMessage(builderForValue.build());
         }
-
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
        */
-      public Builder mergeUserMonster(com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster value) {
-        if (userMonsterBuilder_ == null) {
-          if (userMonster_ != null) {
-            userMonster_ =
-              com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.newBuilder(userMonster_).mergeFrom(value).buildPartial();
-          } else {
-            userMonster_ = value;
-          }
+      public Builder addUserMonsters(
+          int index, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder builderForValue) {
+        if (userMonstersBuilder_ == null) {
+          ensureUserMonstersIsMutable();
+          userMonsters_.add(index, builderForValue.build());
           onChanged();
         } else {
-          userMonsterBuilder_.mergeFrom(value);
+          userMonstersBuilder_.addMessage(index, builderForValue.build());
         }
-
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
        */
-      public Builder clearUserMonster() {
-        if (userMonsterBuilder_ == null) {
-          userMonster_ = null;
+      public Builder addAllUserMonsters(
+          java.lang.Iterable<? extends com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster> values) {
+        if (userMonstersBuilder_ == null) {
+          ensureUserMonstersIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, userMonsters_);
           onChanged();
         } else {
-          userMonster_ = null;
-          userMonsterBuilder_ = null;
+          userMonstersBuilder_.addAllMessages(values);
         }
-
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
        */
-      public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder getUserMonsterBuilder() {
-        
-        onChanged();
-        return getUserMonsterFieldBuilder().getBuilder();
+      public Builder clearUserMonsters() {
+        if (userMonstersBuilder_ == null) {
+          userMonsters_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          userMonstersBuilder_.clear();
+        }
+        return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
        */
-      public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder getUserMonsterOrBuilder() {
-        if (userMonsterBuilder_ != null) {
-          return userMonsterBuilder_.getMessageOrBuilder();
+      public Builder removeUserMonsters(int index) {
+        if (userMonstersBuilder_ == null) {
+          ensureUserMonstersIsMutable();
+          userMonsters_.remove(index);
+          onChanged();
         } else {
-          return userMonster_ == null ?
-              com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.getDefaultInstance() : userMonster_;
+          userMonstersBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+       */
+      public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder getUserMonstersBuilder(
+          int index) {
+        return getUserMonstersFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+       */
+      public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder getUserMonstersOrBuilder(
+          int index) {
+        if (userMonstersBuilder_ == null) {
+          return userMonsters_.get(index);  } else {
+          return userMonstersBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 3;</code>
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
+      public java.util.List<? extends com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder> 
+           getUserMonstersOrBuilderList() {
+        if (userMonstersBuilder_ != null) {
+          return userMonstersBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(userMonsters_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+       */
+      public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder addUserMonstersBuilder() {
+        return getUserMonstersFieldBuilder().addBuilder(
+            com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+       */
+      public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder addUserMonstersBuilder(
+          int index) {
+        return getUserMonstersFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonster user_monsters = 3;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder> 
+           getUserMonstersBuilderList() {
+        return getUserMonstersFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
           com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder> 
-          getUserMonsterFieldBuilder() {
-        if (userMonsterBuilder_ == null) {
-          userMonsterBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getUserMonstersFieldBuilder() {
+        if (userMonstersBuilder_ == null) {
+          userMonstersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder>(
-                  getUserMonster(),
+                  userMonsters_,
+                  ((bitField0_ & 0x00000004) == 0x00000004),
                   getParentForChildren(),
                   isClean());
-          userMonster_ = null;
+          userMonsters_ = null;
         }
-        return userMonsterBuilder_;
+        return userMonstersBuilder_;
       }
 
-      private com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData userMonsterDictData_ = null;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder> userMonsterDictDataBuilder_;
-      /**
-       * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
-       */
-      public boolean hasUserMonsterDictData() {
-        return userMonsterDictDataBuilder_ != null || userMonsterDictData_ != null;
+      private java.util.List<com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData> userMonsterDictDatas_ =
+        java.util.Collections.emptyList();
+      private void ensureUserMonsterDictDatasIsMutable() {
+        if (!((bitField0_ & 0x00000008) == 0x00000008)) {
+          userMonsterDictDatas_ = new java.util.ArrayList<com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData>(userMonsterDictDatas_);
+          bitField0_ |= 0x00000008;
+         }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder> userMonsterDictDatasBuilder_;
+
       /**
-       * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
        */
-      public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData getUserMonsterDictData() {
-        if (userMonsterDictDataBuilder_ == null) {
-          return userMonsterDictData_ == null ? com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.getDefaultInstance() : userMonsterDictData_;
+      public java.util.List<com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData> getUserMonsterDictDatasList() {
+        if (userMonsterDictDatasBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(userMonsterDictDatas_);
         } else {
-          return userMonsterDictDataBuilder_.getMessage();
+          return userMonsterDictDatasBuilder_.getMessageList();
         }
       }
       /**
-       * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
        */
-      public Builder setUserMonsterDictData(com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData value) {
-        if (userMonsterDictDataBuilder_ == null) {
+      public int getUserMonsterDictDatasCount() {
+        if (userMonsterDictDatasBuilder_ == null) {
+          return userMonsterDictDatas_.size();
+        } else {
+          return userMonsterDictDatasBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+       */
+      public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData getUserMonsterDictDatas(int index) {
+        if (userMonsterDictDatasBuilder_ == null) {
+          return userMonsterDictDatas_.get(index);
+        } else {
+          return userMonsterDictDatasBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+       */
+      public Builder setUserMonsterDictDatas(
+          int index, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData value) {
+        if (userMonsterDictDatasBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          userMonsterDictData_ = value;
+          ensureUserMonsterDictDatasIsMutable();
+          userMonsterDictDatas_.set(index, value);
           onChanged();
         } else {
-          userMonsterDictDataBuilder_.setMessage(value);
+          userMonsterDictDatasBuilder_.setMessage(index, value);
         }
-
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
        */
-      public Builder setUserMonsterDictData(
-          com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder builderForValue) {
-        if (userMonsterDictDataBuilder_ == null) {
-          userMonsterDictData_ = builderForValue.build();
+      public Builder setUserMonsterDictDatas(
+          int index, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder builderForValue) {
+        if (userMonsterDictDatasBuilder_ == null) {
+          ensureUserMonsterDictDatasIsMutable();
+          userMonsterDictDatas_.set(index, builderForValue.build());
           onChanged();
         } else {
-          userMonsterDictDataBuilder_.setMessage(builderForValue.build());
+          userMonsterDictDatasBuilder_.setMessage(index, builderForValue.build());
         }
-
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
        */
-      public Builder mergeUserMonsterDictData(com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData value) {
-        if (userMonsterDictDataBuilder_ == null) {
-          if (userMonsterDictData_ != null) {
-            userMonsterDictData_ =
-              com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.newBuilder(userMonsterDictData_).mergeFrom(value).buildPartial();
-          } else {
-            userMonsterDictData_ = value;
+      public Builder addUserMonsterDictDatas(com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData value) {
+        if (userMonsterDictDatasBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
           }
+          ensureUserMonsterDictDatasIsMutable();
+          userMonsterDictDatas_.add(value);
           onChanged();
         } else {
-          userMonsterDictDataBuilder_.mergeFrom(value);
+          userMonsterDictDatasBuilder_.addMessage(value);
         }
-
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
        */
-      public Builder clearUserMonsterDictData() {
-        if (userMonsterDictDataBuilder_ == null) {
-          userMonsterDictData_ = null;
+      public Builder addUserMonsterDictDatas(
+          int index, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData value) {
+        if (userMonsterDictDatasBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUserMonsterDictDatasIsMutable();
+          userMonsterDictDatas_.add(index, value);
           onChanged();
         } else {
-          userMonsterDictData_ = null;
-          userMonsterDictDataBuilder_ = null;
+          userMonsterDictDatasBuilder_.addMessage(index, value);
         }
-
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
        */
-      public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder getUserMonsterDictDataBuilder() {
-        
-        onChanged();
-        return getUserMonsterDictDataFieldBuilder().getBuilder();
+      public Builder addUserMonsterDictDatas(
+          com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder builderForValue) {
+        if (userMonsterDictDatasBuilder_ == null) {
+          ensureUserMonsterDictDatasIsMutable();
+          userMonsterDictDatas_.add(builderForValue.build());
+          onChanged();
+        } else {
+          userMonsterDictDatasBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
        */
-      public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder getUserMonsterDictDataOrBuilder() {
-        if (userMonsterDictDataBuilder_ != null) {
-          return userMonsterDictDataBuilder_.getMessageOrBuilder();
+      public Builder addUserMonsterDictDatas(
+          int index, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder builderForValue) {
+        if (userMonsterDictDatasBuilder_ == null) {
+          ensureUserMonsterDictDatasIsMutable();
+          userMonsterDictDatas_.add(index, builderForValue.build());
+          onChanged();
         } else {
-          return userMonsterDictData_ == null ?
-              com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.getDefaultInstance() : userMonsterDictData_;
+          userMonsterDictDatasBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+       */
+      public Builder addAllUserMonsterDictDatas(
+          java.lang.Iterable<? extends com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData> values) {
+        if (userMonsterDictDatasBuilder_ == null) {
+          ensureUserMonsterDictDatasIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, userMonsterDictDatas_);
+          onChanged();
+        } else {
+          userMonsterDictDatasBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+       */
+      public Builder clearUserMonsterDictDatas() {
+        if (userMonsterDictDatasBuilder_ == null) {
+          userMonsterDictDatas_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+          onChanged();
+        } else {
+          userMonsterDictDatasBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+       */
+      public Builder removeUserMonsterDictDatas(int index) {
+        if (userMonsterDictDatasBuilder_ == null) {
+          ensureUserMonsterDictDatasIsMutable();
+          userMonsterDictDatas_.remove(index);
+          onChanged();
+        } else {
+          userMonsterDictDatasBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+       */
+      public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder getUserMonsterDictDatasBuilder(
+          int index) {
+        return getUserMonsterDictDatasFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+       */
+      public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder getUserMonsterDictDatasOrBuilder(
+          int index) {
+        if (userMonsterDictDatasBuilder_ == null) {
+          return userMonsterDictDatas_.get(index);  } else {
+          return userMonsterDictDatasBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>.msggamedata.MsgUserMonsterDictData user_monster_dict_data = 4;</code>
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
+      public java.util.List<? extends com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder> 
+           getUserMonsterDictDatasOrBuilderList() {
+        if (userMonsterDictDatasBuilder_ != null) {
+          return userMonsterDictDatasBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(userMonsterDictDatas_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+       */
+      public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder addUserMonsterDictDatasBuilder() {
+        return getUserMonsterDictDatasFieldBuilder().addBuilder(
+            com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+       */
+      public com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder addUserMonsterDictDatasBuilder(
+          int index) {
+        return getUserMonsterDictDatasFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgUserMonsterDictData user_monster_dict_datas = 4;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder> 
+           getUserMonsterDictDatasBuilderList() {
+        return getUserMonsterDictDatasFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
           com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder> 
-          getUserMonsterDictDataFieldBuilder() {
-        if (userMonsterDictDataBuilder_ == null) {
-          userMonsterDictDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getUserMonsterDictDatasFieldBuilder() {
+        if (userMonsterDictDatasBuilder_ == null) {
+          userMonsterDictDatasBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictData.Builder, com.felania.msldb.MsgUserMonsterDictDataOuterClass.MsgUserMonsterDictDataOrBuilder>(
-                  getUserMonsterDictData(),
+                  userMonsterDictDatas_,
+                  ((bitField0_ & 0x00000008) == 0x00000008),
                   getParentForChildren(),
                   isClean());
-          userMonsterDictData_ = null;
+          userMonsterDictDatas_ = null;
         }
-        return userMonsterDictDataBuilder_;
+        return userMonsterDictDatasBuilder_;
+      }
+
+      private boolean multipleSummon_ ;
+      /**
+       * <code>bool multiple_summon = 5;</code>
+       */
+      public boolean getMultipleSummon() {
+        return multipleSummon_;
+      }
+      /**
+       * <code>bool multiple_summon = 5;</code>
+       */
+      public Builder setMultipleSummon(boolean value) {
+        
+        multipleSummon_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool multiple_summon = 5;</code>
+       */
+      public Builder clearMultipleSummon() {
+        
+        multipleSummon_ = false;
+        onChanged();
+        return this;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1192,13 +1607,14 @@ public final class RspMonsterSummonByEggOuterClass {
       "\n\033RspMonsterSummonByEgg.proto\022\013msggameda" +
       "ta\032\rMsgUser.proto\032\021MsgUserItem.proto\032\024Ms" +
       "gUserMonster.proto\032\034MsgUserMonsterDictDa" +
-      "ta.proto\"\340\001\n\025RspMonsterSummonByEgg\022\"\n\004us" +
+      "ta.proto\"\373\001\n\025RspMonsterSummonByEgg\022\"\n\004us" +
       "er\030\001 \001(\0132\024.msggamedata.MsgUser\022+\n\tuser_i" +
-      "tem\030\002 \001(\0132\030.msggamedata.MsgUserItem\0221\n\014u" +
-      "ser_monster\030\003 \001(\0132\033.msggamedata.MsgUserM" +
-      "onster\022C\n\026user_monster_dict_data\030\004 \001(\0132#" +
-      ".msggamedata.MsgUserMonsterDictDataB\023\n\021c" +
-      "om.felania.msldbb\006proto3"
+      "tem\030\002 \001(\0132\030.msggamedata.MsgUserItem\0222\n\ru" +
+      "ser_monsters\030\003 \003(\0132\033.msggamedata.MsgUser" +
+      "Monster\022D\n\027user_monster_dict_datas\030\004 \003(\013" +
+      "2#.msggamedata.MsgUserMonsterDictData\022\027\n" +
+      "\017multiple_summon\030\005 \001(\010B\023\n\021com.felania.ms",
+      "ldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1221,7 +1637,7 @@ public final class RspMonsterSummonByEggOuterClass {
     internal_static_msggamedata_RspMonsterSummonByEgg_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_RspMonsterSummonByEgg_descriptor,
-        new java.lang.String[] { "User", "UserItem", "UserMonster", "UserMonsterDictData", });
+        new java.lang.String[] { "User", "UserItem", "UserMonsters", "UserMonsterDictDatas", "MultipleSummon", });
     com.felania.msldb.MsgUserOuterClass.getDescriptor();
     com.felania.msldb.MsgUserItemOuterClass.getDescriptor();
     com.felania.msldb.MsgUserMonsterOuterClass.getDescriptor();

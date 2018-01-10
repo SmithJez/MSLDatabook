@@ -98,7 +98,22 @@ public enum GameDBEnum {
     bingo_time_datas(92),
     monster_upgrade_skills(93),
     monster_upgrade_skill_pricing(94),
-    clan_attendance_rewards(95);
+    clan_attendance_rewards(95),
+    cvc_season_battles(96),
+    promises(97),
+    super_evolution_monsters(98),
+    super_stone_recipes(99),
+    cvc_battle_reward(100),
+    cvc_phase_bonus_point(101),
+    capture_festival(102),
+    capture_festival_ticket_condition(103),
+    stage_monster_groups_festival(104),
+    capture_festival_rank_reward(105),
+    monthly_monster_season_data(106),
+    monthly_monster_group_data(107),
+    monthly_monster_reward_data(108),
+    link_bonuses(109),
+    link_bonus_hidden_datas(110);
 
 
 

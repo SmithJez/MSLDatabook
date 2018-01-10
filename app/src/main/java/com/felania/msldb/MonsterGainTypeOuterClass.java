@@ -15,7 +15,7 @@ public final class MonsterGainTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * Protobuf enum {@code MonsterGainType}
+   * Protobuf enum {@code msggamedata.MonsterGainType}
    */
   public enum MonsterGainType
       implements com.google.protobuf.ProtocolMessageEnum {
@@ -118,7 +118,7 @@ public final class MonsterGainTypeOuterClass {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:MonsterGainType)
+    // @@protoc_insertion_point(enum_scope:msggamedata.MonsterGainType)
   }
 
 
@@ -130,10 +130,10 @@ public final class MonsterGainTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025MonsterGainType.proto*C\n\017MonsterGainTy" +
-      "pe\022\017\n\013MGT_Capture\020\000\022\016\n\nMGT_Summon\020\001\022\017\n\013M" +
-      "GT_Evolved\020\002B\023\n\021com.felania.msldbb\006proto" +
-      "3"
+      "\n\025MonsterGainType.proto\022\013msggamedata*C\n\017" +
+      "MonsterGainType\022\017\n\013MGT_Capture\020\000\022\016\n\nMGT_" +
+      "Summon\020\001\022\017\n\013MGT_Evolved\020\002B\023\n\021com.felania" +
+      ".msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

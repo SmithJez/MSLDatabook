@@ -22,6 +22,11 @@ public final class ReqMonsterSummonByEggOuterClass {
      * <code>fixed32 item_uid = 1;</code>
      */
     int getItemUid();
+
+    /**
+     * <code>bool multiple_summon = 2;</code>
+     */
+    boolean getMultipleSummon();
   }
   /**
    * Protobuf type {@code msggamedata.ReqMonsterSummonByEgg}
@@ -37,6 +42,7 @@ public final class ReqMonsterSummonByEggOuterClass {
     }
     private ReqMonsterSummonByEgg() {
       itemUid_ = 0;
+      multipleSummon_ = false;
     }
 
     @java.lang.Override
@@ -72,6 +78,11 @@ public final class ReqMonsterSummonByEggOuterClass {
               itemUid_ = input.readFixed32();
               break;
             }
+            case 16: {
+
+              multipleSummon_ = input.readBool();
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -105,6 +116,15 @@ public final class ReqMonsterSummonByEggOuterClass {
       return itemUid_;
     }
 
+    public static final int MULTIPLE_SUMMON_FIELD_NUMBER = 2;
+    private boolean multipleSummon_;
+    /**
+     * <code>bool multiple_summon = 2;</code>
+     */
+    public boolean getMultipleSummon() {
+      return multipleSummon_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -120,6 +140,9 @@ public final class ReqMonsterSummonByEggOuterClass {
       if (itemUid_ != 0) {
         output.writeFixed32(1, itemUid_);
       }
+      if (multipleSummon_ != false) {
+        output.writeBool(2, multipleSummon_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -131,6 +154,10 @@ public final class ReqMonsterSummonByEggOuterClass {
       if (itemUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeFixed32Size(1, itemUid_);
+      }
+      if (multipleSummon_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, multipleSummon_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -150,6 +177,8 @@ public final class ReqMonsterSummonByEggOuterClass {
       boolean result = true;
       result = result && (getItemUid()
           == other.getItemUid());
+      result = result && (getMultipleSummon()
+          == other.getMultipleSummon());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -163,6 +192,9 @@ public final class ReqMonsterSummonByEggOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ITEM_UID_FIELD_NUMBER;
       hash = (53 * hash) + getItemUid();
+      hash = (37 * hash) + MULTIPLE_SUMMON_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getMultipleSummon());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -294,6 +326,8 @@ public final class ReqMonsterSummonByEggOuterClass {
         super.clear();
         itemUid_ = 0;
 
+        multipleSummon_ = false;
+
         return this;
       }
 
@@ -317,6 +351,7 @@ public final class ReqMonsterSummonByEggOuterClass {
       public com.felania.msldb.ReqMonsterSummonByEggOuterClass.ReqMonsterSummonByEgg buildPartial() {
         com.felania.msldb.ReqMonsterSummonByEggOuterClass.ReqMonsterSummonByEgg result = new com.felania.msldb.ReqMonsterSummonByEggOuterClass.ReqMonsterSummonByEgg(this);
         result.itemUid_ = itemUid_;
+        result.multipleSummon_ = multipleSummon_;
         onBuilt();
         return result;
       }
@@ -360,6 +395,9 @@ public final class ReqMonsterSummonByEggOuterClass {
         if (other == com.felania.msldb.ReqMonsterSummonByEggOuterClass.ReqMonsterSummonByEgg.getDefaultInstance()) return this;
         if (other.getItemUid() != 0) {
           setItemUid(other.getItemUid());
+        }
+        if (other.getMultipleSummon() != false) {
+          setMultipleSummon(other.getMultipleSummon());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -410,6 +448,32 @@ public final class ReqMonsterSummonByEggOuterClass {
       public Builder clearItemUid() {
         
         itemUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean multipleSummon_ ;
+      /**
+       * <code>bool multiple_summon = 2;</code>
+       */
+      public boolean getMultipleSummon() {
+        return multipleSummon_;
+      }
+      /**
+       * <code>bool multiple_summon = 2;</code>
+       */
+      public Builder setMultipleSummon(boolean value) {
+        
+        multipleSummon_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool multiple_summon = 2;</code>
+       */
+      public Builder clearMultipleSummon() {
+        
+        multipleSummon_ = false;
         onChanged();
         return this;
       }
@@ -477,8 +541,9 @@ public final class ReqMonsterSummonByEggOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ReqMonsterSummonByEgg.proto\022\013msggameda" +
-      "ta\")\n\025ReqMonsterSummonByEgg\022\020\n\010item_uid\030" +
-      "\001 \001(\007B\023\n\021com.felania.msldbb\006proto3"
+      "ta\"B\n\025ReqMonsterSummonByEgg\022\020\n\010item_uid\030" +
+      "\001 \001(\007\022\027\n\017multiple_summon\030\002 \001(\010B\023\n\021com.fe" +
+      "lania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -497,7 +562,7 @@ public final class ReqMonsterSummonByEggOuterClass {
     internal_static_msggamedata_ReqMonsterSummonByEgg_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_ReqMonsterSummonByEgg_descriptor,
-        new java.lang.String[] { "ItemUid", });
+        new java.lang.String[] { "ItemUid", "MultipleSummon", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

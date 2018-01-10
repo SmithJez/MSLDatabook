@@ -14,19 +14,42 @@
         android:layout_height="match_parent">
 
 
-    <TextView
+     <LinearLayout
+         android:padding="@dimen/dp_2"
+         android:orientation="horizontal"
+         android:gravity="center_horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
 
-        android:id="@+id/tvType"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textSize="@dimen/sp_12"
-        android:layout_marginBottom="@dimen/dp_2"
-        android:gravity="center_horizontal"
-        android:text="@string/dump"
-        android:textAllCaps="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+         <ImageView
+
+             android:layout_marginEnd="@dimen/dp_4"
+             android:layout_marginRight="@dimen/dp_4"
+             android:id="@+id/ivGender"
+             android:src="@drawable/ic_male"
+             android:adjustViewBounds="true"
+             android:layout_width="@dimen/dp_24"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:layout_gravity="center_vertical"
+             android:id="@+id/tvType"
+             android:textStyle="bold"
+             android:textColor="@color/white"
+             android:textSize="@dimen/sp_12"
+             android:layout_marginBottom="@dimen/dp_2"
+             android:gravity="center_horizontal"
+             android:text="@string/dump"
+             android:textAllCaps="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             />
+
+
+
+     </LinearLayout>
+
+
 
 <!--Red-->
 
@@ -562,7 +585,7 @@
                     android:layout_alignParentBottom="true"
                     android:id="@+id/ivBarCritDmg"
                     android:contentDescription="@null"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="@dimen/bar_height"
                     android:background="@drawable/_rounded_rect_team_grey" />
 
@@ -689,7 +712,7 @@
                     android:layout_alignParentBottom="true"
                     android:id="@+id/ivBarCritRate"
                     android:contentDescription="@null"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="@dimen/bar_height"
                     android:background="@drawable/_rounded_rect_team_purple" />
 
@@ -815,7 +838,7 @@
                     android:layout_alignParentBottom="true"
                     android:id="@+id/ivBarResist"
                     android:contentDescription="@null"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="@dimen/bar_height"
                     android:background="@drawable/_rounded_rect_team_yellow" />
 

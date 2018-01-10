@@ -10,12 +10,12 @@
         <item
             android:id="@+id/navClan"
             android:icon="@drawable/ic_action_clan"
-            android:title="@string/Clan" />
+            android:title="@string/Golem" />
 
-        <!--<item-->
-            <!--android:id="@+id/navGolem"-->
-            <!--android:icon="@drawable/ic_action_golem"-->
-            <!--android:title="@string/Golem" />-->
+        <item
+            android:id="@+id/navSynergies"
+            android:icon="@drawable/ic_action_golem"
+            android:title="@string/synergies" />
 
 
         <!--<item-->

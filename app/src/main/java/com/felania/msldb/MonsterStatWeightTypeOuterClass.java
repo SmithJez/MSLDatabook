@@ -15,7 +15,7 @@ public final class MonsterStatWeightTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * Protobuf enum {@code MonsterStatWeightType}
+   * Protobuf enum {@code msggamedata.MonsterStatWeightType}
    */
   public enum MonsterStatWeightType
       implements com.google.protobuf.ProtocolMessageEnum {
@@ -118,7 +118,7 @@ public final class MonsterStatWeightTypeOuterClass {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:MonsterStatWeightType)
+    // @@protoc_insertion_point(enum_scope:msggamedata.MonsterStatWeightType)
   }
 
 
@@ -130,10 +130,10 @@ public final class MonsterStatWeightTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033MonsterStatWeightType.proto*U\n\025Monster" +
-      "StatWeightType\022\035\n\031MonsterStatWeightTypeN" +
-      "ULL\020\000\022\r\n\tMS_Normal\020\001\022\016\n\nMS_Special\020\002B\023\n\021" +
-      "com.felania.msldbb\006proto3"
+      "\n\033MonsterStatWeightType.proto\022\013msggameda" +
+      "ta*U\n\025MonsterStatWeightType\022\035\n\031MonsterSt" +
+      "atWeightTypeNULL\020\000\022\r\n\tMS_Normal\020\001\022\016\n\nMS_" +
+      "Special\020\002B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

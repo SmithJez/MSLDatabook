@@ -15,7 +15,7 @@ public final class MsgUidAndAmountOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface MsgUidAndAmountOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:MsgUidAndAmount)
+      // @@protoc_insertion_point(interface_extends:msggamedata.MsgUidAndAmount)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -29,11 +29,11 @@ public final class MsgUidAndAmountOuterClass {
     int getAmount();
   }
   /**
-   * Protobuf type {@code MsgUidAndAmount}
+   * Protobuf type {@code msggamedata.MsgUidAndAmount}
    */
   public  static final class MsgUidAndAmount extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:MsgUidAndAmount)
+      // @@protoc_insertion_point(message_implements:msggamedata.MsgUidAndAmount)
       MsgUidAndAmountOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use MsgUidAndAmount.newBuilder() to construct.
@@ -97,12 +97,12 @@ public final class MsgUidAndAmountOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.felania.msldb.MsgUidAndAmountOuterClass.internal_static_MsgUidAndAmount_descriptor;
+      return com.felania.msldb.MsgUidAndAmountOuterClass.internal_static_msggamedata_MsgUidAndAmount_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.felania.msldb.MsgUidAndAmountOuterClass.internal_static_MsgUidAndAmount_fieldAccessorTable
+      return com.felania.msldb.MsgUidAndAmountOuterClass.internal_static_msggamedata_MsgUidAndAmount_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount.class, com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount.Builder.class);
     }
@@ -288,20 +288,20 @@ public final class MsgUidAndAmountOuterClass {
       return builder;
     }
     /**
-     * Protobuf type {@code MsgUidAndAmount}
+     * Protobuf type {@code msggamedata.MsgUidAndAmount}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:MsgUidAndAmount)
+        // @@protoc_insertion_point(builder_implements:msggamedata.MsgUidAndAmount)
         com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmountOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.felania.msldb.MsgUidAndAmountOuterClass.internal_static_MsgUidAndAmount_descriptor;
+        return com.felania.msldb.MsgUidAndAmountOuterClass.internal_static_msggamedata_MsgUidAndAmount_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.felania.msldb.MsgUidAndAmountOuterClass.internal_static_MsgUidAndAmount_fieldAccessorTable
+        return com.felania.msldb.MsgUidAndAmountOuterClass.internal_static_msggamedata_MsgUidAndAmount_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount.class, com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount.Builder.class);
       }
@@ -332,7 +332,7 @@ public final class MsgUidAndAmountOuterClass {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.felania.msldb.MsgUidAndAmountOuterClass.internal_static_MsgUidAndAmount_descriptor;
+        return com.felania.msldb.MsgUidAndAmountOuterClass.internal_static_msggamedata_MsgUidAndAmount_descriptor;
       }
 
       public com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount getDefaultInstanceForType() {
@@ -487,10 +487,10 @@ public final class MsgUidAndAmountOuterClass {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:MsgUidAndAmount)
+      // @@protoc_insertion_point(builder_scope:msggamedata.MsgUidAndAmount)
     }
 
-    // @@protoc_insertion_point(class_scope:MsgUidAndAmount)
+    // @@protoc_insertion_point(class_scope:msggamedata.MsgUidAndAmount)
     private static final com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.felania.msldb.MsgUidAndAmountOuterClass.MsgUidAndAmount();
@@ -526,10 +526,10 @@ public final class MsgUidAndAmountOuterClass {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MsgUidAndAmount_descriptor;
+    internal_static_msggamedata_MsgUidAndAmount_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MsgUidAndAmount_fieldAccessorTable;
+      internal_static_msggamedata_MsgUidAndAmount_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -539,9 +539,9 @@ public final class MsgUidAndAmountOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025MsgUidAndAmount.proto\".\n\017MsgUidAndAmou" +
-      "nt\022\013\n\003uid\030\001 \001(\007\022\016\n\006amount\030\002 \001(\rB\023\n\021com.f" +
-      "elania.msldbb\006proto3"
+      "\n\025MsgUidAndAmount.proto\022\013msggamedata\".\n\017" +
+      "MsgUidAndAmount\022\013\n\003uid\030\001 \001(\007\022\016\n\006amount\030\002" +
+      " \001(\rB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -555,11 +555,11 @@ public final class MsgUidAndAmountOuterClass {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_MsgUidAndAmount_descriptor =
+    internal_static_msggamedata_MsgUidAndAmount_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_MsgUidAndAmount_fieldAccessorTable = new
+    internal_static_msggamedata_MsgUidAndAmount_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MsgUidAndAmount_descriptor,
+        internal_static_msggamedata_MsgUidAndAmount_descriptor,
         new java.lang.String[] { "Uid", "Amount", });
   }
 

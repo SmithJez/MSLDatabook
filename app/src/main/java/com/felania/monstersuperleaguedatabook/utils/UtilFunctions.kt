@@ -531,6 +531,25 @@ class UtilFunctions {
         }
 
 
+        fun GetSynergyText (mapString: Map<Int, String>, mapUid: Map<String, MsgUidOuterClass.MsgUid>) : HashMap<String, String> {
+            val map : HashMap<String, String> = hashMapOf()
+
+            val uidElement = "ustr.link.bonus.dic.tap.element" // Skill Text
+            val uidGender = "ustr.link.bonus.dic.tap.gender"
+            val uidType = "ustr.link.bonus.dic.tap.type"
+            val uidEvolution = "ustr.link.bonus.dic.tap.evolution"
+            val uidHidden = "ustr.link.bonus.dic.tap.hidden"
+
+            map.put("element", mapString[mapUid[uidElement]!!.uid].toString())
+            map.put("gender", mapString[mapUid[uidGender]!!.uid].toString())
+            map.put("type", mapString[mapUid[uidType]!!.uid].toString())
+            map.put("evolution", mapString[mapUid[uidEvolution]!!.uid].toString())
+            map.put("hidden", mapString[mapUid[uidHidden]!!.uid].toString())
+
+            return map
+        }
+
+
 
         fun GetSkillText (mapString: Map<Int, String>, mapUid: Map<String, MsgUidOuterClass.MsgUid>) : HashMap<String, String> {
 
@@ -540,18 +559,15 @@ class UtilFunctions {
             val map : HashMap<String, String> = hashMapOf()
 
             val uidSkillDefault = "ustr.default.skill" // Skill Text
-//            val uidSkillDefault =         "ustr.skill.default"
-
             val uidSkillActive = "ustr.active.skill"
-//            val uidSkillPassive = "ustr.passive.skill"
             val uidSkillPassive = "ustr.skill.default"
-
             val uidSkillLeader = "ustr.leader.skill"
 
             map.put("default", mapString[mapUid[uidSkillDefault]!!.uid].toString())
             map.put("active", mapString[mapUid[uidSkillActive]!!.uid].toString())
             map.put("passive", mapString[mapUid[uidSkillPassive]!!.uid].toString())
             map.put("leader", mapString[mapUid[uidSkillLeader]!!.uid].toString())
+
 
 
 

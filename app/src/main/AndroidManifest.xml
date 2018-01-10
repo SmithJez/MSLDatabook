@@ -77,6 +77,12 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <activity android:name="com.felania.monstersuperleaguedatabook.activities.SynergyActivity"
+
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait">
+        </activity>
+
         <!--<activity android:nacom.felania.msldatabook.activities.AstroguideDetailFragmentntvity"-->
             <!--android:label=""-->
             <!--android:theme="@style/Theme.AppCompat.Dialog"-->

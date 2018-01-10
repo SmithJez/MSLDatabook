@@ -40,6 +40,10 @@ public final class CaptureFestivalLuckyTicketChangeCauseOuterClass {
      */
     CFLTCC_Get_Top_Rank_Reward(4),
     /**
+     * <code>CFLTCC_Get_Bonus_Ticket = 5;</code>
+     */
+    CFLTCC_Get_Bonus_Ticket(5),
+    /**
      * <code>CFLTCC_Use_Finale_Reward = 10;</code>
      */
     CFLTCC_Use_Finale_Reward(10),
@@ -66,6 +70,10 @@ public final class CaptureFestivalLuckyTicketChangeCauseOuterClass {
      * <code>CFLTCC_Get_Top_Rank_Reward = 4;</code>
      */
     public static final int CFLTCC_Get_Top_Rank_Reward_VALUE = 4;
+    /**
+     * <code>CFLTCC_Get_Bonus_Ticket = 5;</code>
+     */
+    public static final int CFLTCC_Get_Bonus_Ticket_VALUE = 5;
     /**
      * <code>CFLTCC_Use_Finale_Reward = 10;</code>
      */
@@ -95,6 +103,7 @@ public final class CaptureFestivalLuckyTicketChangeCauseOuterClass {
         case 2: return CFLTCC_Get_Send_Message_Reward;
         case 3: return CFLTCC_Get_Capture_Success_Reward;
         case 4: return CFLTCC_Get_Top_Rank_Reward;
+        case 5: return CFLTCC_Get_Bonus_Ticket;
         case 10: return CFLTCC_Use_Finale_Reward;
         default: return null;
       }
@@ -158,14 +167,15 @@ public final class CaptureFestivalLuckyTicketChangeCauseOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n+CaptureFestivalLuckyTicketChangeCause." +
-      "proto\022\013msggamedata*\374\001\n%CaptureFestivalLu" +
+      "proto\022\013msggamedata*\231\002\n%CaptureFestivalLu" +
       "ckyTicketChangeCause\022-\n)CaptureFestivalL" +
       "uckyTicketChangeCauseNULL\020\000\022\033\n\027CFLTCC_Ge" +
       "t_Share_Reward\020\001\022\"\n\036CFLTCC_Get_Send_Mess" +
       "age_Reward\020\002\022%\n!CFLTCC_Get_Capture_Succe" +
       "ss_Reward\020\003\022\036\n\032CFLTCC_Get_Top_Rank_Rewar" +
-      "d\020\004\022\034\n\030CFLTCC_Use_Finale_Reward\020\nB\023\n\021com" +
-      ".felania.msldbb\006proto3"
+      "d\020\004\022\033\n\027CFLTCC_Get_Bonus_Ticket\020\005\022\034\n\030CFLT" +
+      "CC_Use_Finale_Reward\020\nB\023\n\021com.felania.ms" +
+      "ldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
