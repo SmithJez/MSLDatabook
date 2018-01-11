@@ -1,35 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/dp_1"
+    android:background="@color/black"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/dp_54"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/dp_4"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_synergies_base" />
+
+
+            <ImageView
+                android:id="@+id/ivSynergiesIcon"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_hidden" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/synergyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dump"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:padding="@dimen/dp_2"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tvSynergiesCount"
+                    android:layout_toStartOf="@+id/tvSynergiesCount"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_monster_icon" />
+
+                <TextView
+                    android:layout_marginRight="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_4"
+                    android:id="@+id/tvSynergiesCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/dump"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSynergiesTargetLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dump"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tvSynergiesTarget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dump"
+                    android:textColor="@color/msl_yellow"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSynergiesDescLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dump"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tvSynergiesDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dump"
+                    android:textColor="@color/msl_yellow"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/synergyName"
-        android:text="@string/dump"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone"
+        android:id="@+id/tvSynergiesHelp"
+        android:paddingStart="@dimen/dp_4"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:paddingEnd="@dimen/dp_4"
+        android:textColor="@color/msl_yellow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <TextView
-        android:text="@string/dump"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <TextView
-        android:text="@string/dump"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <GridView
+    <com.felania.monstersuperleaguedatabook.utils.GridViewForSynergies
+        android:visibility="gone"
+        android:padding="@dimen/dp_4"
         android:id="@+id/gvSynergies"
-        android:numColumns="5"
+        android:background="@color/grey_tran"
+        android:numColumns="7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    </GridView>
-
+    </com.felania.monstersuperleaguedatabook.utils.GridViewForSynergies>
 
 
 

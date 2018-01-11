@@ -231,6 +231,19 @@ open class ProtobufHelper {
 //
 //    }
 
+    fun ReadSynergyHiddenData (obj: Int, context: Context):  MutableList<MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData>  {
+        val key = GameDBEnum.getValue(obj).toString() + ".smj"
+        Log.wtf("key", "key " + key)
+        try {
+            val input = context.assets.open(key)
+            return MsgGameData.parseFrom(input)!!.linkBonusHiddenDatasList
+        } catch (e: IOException) {
+            e.printStackTrace()
+            Log.wtf("filenotFound", "file not found")
+        }
+        return MsgGameData.getDefaultInstance().linkBonusHiddenDatasList
+    }
+
     fun ReadSynergy (obj: Int, context: Context):  MutableList<MsgLinkBonusOuterClass.MsgLinkBonus>  {
         val key = GameDBEnum.getValue(obj).toString() + ".smj"
         Log.wtf("key", "key " + key)

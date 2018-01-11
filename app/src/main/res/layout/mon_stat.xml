@@ -28,7 +28,7 @@
              android:id="@+id/ivGender"
              android:src="@drawable/ic_male"
              android:adjustViewBounds="true"
-             android:layout_width="@dimen/dp_24"
+             android:layout_width="@dimen/dp_22"
              android:layout_height="wrap_content" />
 
          <TextView

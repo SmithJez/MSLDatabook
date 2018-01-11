@@ -11,6 +11,7 @@ import com.felania.msldb.MonsterEvolutionOuterClass.MonsterEvolution.ME_2
 import com.felania.msldb.MonsterSkillTargetTypeOuterClass.MonsterSkillTargetType
 import com.felania.msldb.MonsterUpgradeSkillDataOuterClass.MonsterUpgradeSkillData
 import com.felania.msldb.MsgStageMonsterOuterClass.MsgStageMonster
+import com.felania.msldb.MsgStatusEffectOuterClass.*
 import com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster
 import java.io.File
 import java.io.FileInputStream
@@ -274,6 +275,61 @@ class UtilFunctions {
 
             }
 
+        }
+
+        fun GetStringFromUidText (mapString: Map<Int, String>, mapUid: Map<String, MsgUidOuterClass.MsgUid>, text: String): String {
+            return mapString[ mapUid[text]!!.uid]!!
+        }
+
+        fun GetStringForStatusEffectWhere (mapString: Map<Int, String>, mapUid: Map<String, MsgUidOuterClass.MsgUid>, where: MsgStatusEffectOuterClass.MsgStatusEffect.StatusEffectWhere): String {
+            val ret: String
+            when (where) {
+                MsgStatusEffect.StatusEffectWhere.SEW_All ->
+                    ret = mapString[ mapUid["ustr.clan.leader.skill.all"]!!.uid]!!
+                MsgStatusEffect.StatusEffectWhere.SEW_Story ->
+                    ret = mapString[ mapUid["ustr.clan.leader.skill.story"]!!.uid]!!
+                MsgStatusEffect.StatusEffectWhere.SEW_Dungeon ->
+                    ret = mapString[ mapUid["ustr.clan.leader.skill.dungeon"]!!.uid]!!
+                MsgStatusEffect.StatusEffectWhere.SEW_Infinite ->
+                    ret = mapString[ mapUid["ustr.clan.leader.skill.infinte.dungeon"]!!.uid]!!
+                MsgStatusEffect.StatusEffectWhere.SEW_Clan ->
+                    ret = mapString[ mapUid["ustr.clan.leader.skill.clan"]!!.uid]!!
+                MsgStatusEffect.StatusEffectWhere.SEW_Arena ->
+                    ret = mapString[ mapUid["ustr.clan.leader.skill.arena"]!!.uid]!!
+                else ->
+                    ret = ""
+            }
+
+            return ret
+        }
+
+        fun GetStringForStatusEffectSubType (mapString: Map<Int, String>, mapUid: Map<String, MsgUidOuterClass.MsgUid>, subType: MsgStatusEffect.StatusEffectSubType) : String {
+
+            return when (subType) {
+                MsgStatusEffect.StatusEffectSubType.SEST_LeaderBuffHp -> mapString[ mapUid["ustr.hp"]!!.uid]!!
+                MsgStatusEffect.StatusEffectSubType.SEST_LeaderBuffAttack -> mapString[ mapUid["ustr.attack"]!!.uid]!!
+                MsgStatusEffect.StatusEffectSubType.SEST_LeaderBuffDefence -> mapString[ mapUid["ustr.defence"]!!.uid]!!
+                MsgStatusEffect.StatusEffectSubType.SEST_LeaderBuffHeal -> mapString[ mapUid["ustr.heal"]!!.uid]!!
+                MsgStatusEffect.StatusEffectSubType.SEST_LeaderBuffHpCrystalRecovery -> mapString[ mapUid["ustr.red.soul.name"]!!.uid]!!
+                MsgStatusEffect.StatusEffectSubType.SEST_LeaderBuffMpCrystalRecovery -> mapString[ mapUid["ustr.blue.soul.name"]!!.uid]!!
+                MsgStatusEffect.StatusEffectSubType.SEST_LeaderBuffCriticalDamage -> mapString[ mapUid["ustr.critical"]!!.uid]!!
+                MsgStatusEffect.StatusEffectSubType.SEST_LeaderBuffCriticalProb -> mapString[ mapUid["ustr.critical.prob"]!!.uid]!!
+                MsgStatusEffect.StatusEffectSubType.SEST_LeaderBuffStatusEffectResistance -> mapString[ mapUid["ustr.status.effect.resistance"]!!.uid]!!
+                else -> ""
+            }
+        }
+
+        fun GetStringForStatusEffectValueSymbol (statusEffectType: MsgStatusEffect.StatusEffectType): String {
+            return if (statusEffectType != MsgStatusEffect.StatusEffectType.SET_Debuff) "+" else "-"
+        }
+
+        fun GetStringForLinkBonusTarget (mapString: Map<Int, String>, mapUid: Map<String, MsgUidOuterClass.MsgUid>, targetType: MsgLinkBonusOuterClass.MsgLinkBonus.LinkBonusTargetType) : String {
+            return when (targetType) {
+                MsgLinkBonusOuterClass.MsgLinkBonus.LinkBonusTargetType.LBTT_Target -> mapString[mapUid["ustr.link.bonus.dic.taget.my.linked"]!!.uid]!!
+                MsgLinkBonusOuterClass.MsgLinkBonus.LinkBonusTargetType.LBTT_Party -> mapString[mapUid["ustr.link.bonus.dic.taget.my.all"]!!.uid]!!
+                MsgLinkBonusOuterClass.MsgLinkBonus.LinkBonusTargetType.LBTT_Enemy -> mapString[mapUid["ustr.link.bonus.dic.taget.enemy.all"]!!.uid]!!
+                else -> ""
+            }
         }
 
 

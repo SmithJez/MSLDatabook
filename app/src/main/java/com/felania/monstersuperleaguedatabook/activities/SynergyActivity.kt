@@ -9,6 +9,7 @@ import android.util.Log
 import com.felania.monstersuperleaguedatabook.R
 import com.felania.monstersuperleaguedatabook.fragments.SynergiesFragment
 import com.felania.monstersuperleaguedatabook.protobuf.ProtobufHelper
+import com.felania.monstersuperleaguedatabook.utils.MonsterEvolutionGroup
 import com.felania.monstersuperleaguedatabook.utils.UtilFunctions
 import com.felania.monstersuperleaguedatabook.utils.Variables
 import com.felania.msldb.*
@@ -25,8 +26,19 @@ class SynergyActivity : AppCompatActivity() {
 
     var mapMonster: Map<Int, MsgMonsterOuterClass.MsgMonster> = hashMapOf()
     var mapLinkBonus: Map<Int, MsgLinkBonusOuterClass.MsgLinkBonus> = hashMapOf()
+    var mapLinkHiddenData: Map<Int, MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData> = hashMapOf()
     var mapString: Map<Int, String> = hashMapOf()
     var mapUid: Map<String, MsgUidOuterClass.MsgUid> = hashMapOf()
+    var mapEffect : Map<Int, MsgStatusEffectOuterClass.MsgStatusEffect> = hashMapOf()
+
+    var mapUidInt: Map<Int, MsgUidOuterClass.MsgUid> = hashMapOf()
+    var mapDictName : MutableMap<String, MonsterEvolutionGroup> = mutableMapOf()
+    var monEvo1 = mutableListOf<MsgMonsterOuterClass.MsgMonster>()
+    var monEvo2 = mutableListOf<MsgMonsterOuterClass.MsgMonster>()
+    var monEvo3 = mutableListOf<MsgMonsterOuterClass.MsgMonster>()
+
+    var maxStat: java.util.HashMap<String, Float> = hashMapOf()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,16 +68,37 @@ class SynergyActivity : AppCompatActivity() {
 
         val listLinkBonus = protoHelper.ReadSynergy(MsgGameDataOuterClass.MsgGameData.LINK_BONUSES_FIELD_NUMBER, context )
 
+        val listLinkHiddenData = protoHelper.ReadSynergyHiddenData(MsgGameDataOuterClass.MsgGameData.LINK_BONUS_HIDDEN_DATAS_FIELD_NUMBER, context)
+        val listEffect = protoHelper.ReadEffect(MsgGameDataOuterClass.MsgGameData.STATUS_EFFECTS_FIELD_NUMBER, context)
+
 //        Log.wtf("lis", "list " + listLinkBonus.size)
 
         mapMonster = listMonster.associateBy ({ it.uid } , {it} )
         mapString = listString.associateBy( {it.uid}, {it.text})
         mapUid = listUid.associateBy ({ it.strUid }, {it})
         mapLinkBonus = listLinkBonus.associateBy ({ it.uid }, {it})
+        mapLinkHiddenData = listLinkHiddenData.associateBy ({ it.uid }, {it})
+
+        mapUidInt = listUid.associateBy ({ it.uid }, {it})
+
+        mapEffect = listEffect.associateBy( {it.uid } , {it})
 
 
+        mapDictName = protoHelper.ReadMapDictName(context).associateBy( { it.resName }, { MonsterEvolutionGroup(it.resName,  it.evo1, it.evo2, it.evo3  )  } ).toMutableMap()
 
+        maxStat = intent.getSerializableExtra("max_stat") as java.util.HashMap<String, Float>
 
+        ManageMapDict()
+
+    }
+
+    fun ManageMapDict () {
+
+        for (gg in mapDictName) {
+            monEvo1.add(mapMonster[gg.value.evo1.monsterUid]!!)
+            monEvo2.add(mapMonster[gg.value.evo2.monsterUid]!!)
+            monEvo3.add(mapMonster[gg.value.evo3.monsterUid]!!)
+        }
     }
 
 
@@ -128,9 +161,8 @@ class SynergyActivity : AppCompatActivity() {
                 0 -> {
                     val synergy1 = SynergiesFragment()
                     val bundleGen = Bundle()
-
                     bundleGen.putSerializable("bonus_type", MsgLinkBonusOuterClass.MsgLinkBonus.LinkBonusType.LBT_Hidden )
-
+                    bundleGen.putString(Variables.SETTING_LANGUAGE, saveLang)
                     synergy1.arguments = bundleGen
                     return synergy1
                 }
@@ -139,8 +171,7 @@ class SynergyActivity : AppCompatActivity() {
                     val synergy2 = SynergiesFragment()
                     val bundleGen = Bundle()
                     bundleGen.putSerializable("bonus_type", MsgLinkBonusOuterClass.MsgLinkBonus.LinkBonusType.LBT_Element )
-
-
+                    bundleGen.putString(Variables.SETTING_LANGUAGE, saveLang)
                     synergy2.arguments = bundleGen
                     return synergy2
                 }
@@ -149,7 +180,7 @@ class SynergyActivity : AppCompatActivity() {
                     val synergy3 = SynergiesFragment()
                     val bundleGen = Bundle()
                     bundleGen.putSerializable("bonus_type", MsgLinkBonusOuterClass.MsgLinkBonus.LinkBonusType.LBT_Gender )
-
+                    bundleGen.putString(Variables.SETTING_LANGUAGE, saveLang)
                     synergy3.arguments = bundleGen
                     return synergy3
                 }
@@ -158,7 +189,7 @@ class SynergyActivity : AppCompatActivity() {
                     val synergy3 = SynergiesFragment()
                     val bundleGen = Bundle()
                     bundleGen.putSerializable("bonus_type", MsgLinkBonusOuterClass.MsgLinkBonus.LinkBonusType.LBT_StatType )
-
+                    bundleGen.putString(Variables.SETTING_LANGUAGE, saveLang)
                     synergy3.arguments = bundleGen
                     return synergy3
                 }
@@ -167,7 +198,7 @@ class SynergyActivity : AppCompatActivity() {
                     val synergy3 = SynergiesFragment()
                     val bundleGen = Bundle()
                     bundleGen.putSerializable("bonus_type", MsgLinkBonusOuterClass.MsgLinkBonus.LinkBonusType.LBT_Evolution )
-
+                    bundleGen.putString(Variables.SETTING_LANGUAGE, saveLang)
                     synergy3.arguments = bundleGen
                     return synergy3
                 }

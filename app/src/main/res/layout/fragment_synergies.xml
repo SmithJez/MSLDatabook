@@ -2,41 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
 
-    <RelativeLayout
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/white"
+        android:id="@+id/lvSynergies"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="wrap_content"
+        android:animationCache="false"
+        android:fastScrollEnabled="true"
 
-        <!--<ProgressBar-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:id="@+id/pbSynergies"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--/>-->
+        android:scrollingCache="false"
+        android:smoothScrollbar="true" />
 
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/lvSynergies"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:animationCache="false"
-            android:fastScrollEnabled="true"
-
-            android:scrollingCache="false"
-            android:smoothScrollbar="true" />
-
-
-
-
-    </RelativeLayout>
 
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"

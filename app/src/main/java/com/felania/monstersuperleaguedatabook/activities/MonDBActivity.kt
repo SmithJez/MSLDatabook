@@ -814,7 +814,7 @@ class MonDBActivity : AppCompatActivity() {
 
     private fun StartSynergies () {
         val intent = Intent(this@MonDBActivity, SynergyActivity::class.java)
-
+        intent.putExtra("max_stat", maxStat)
         intent.putExtra(Variables.SETTING_LANGUAGE, saveLang)
 
         startActivity(intent)

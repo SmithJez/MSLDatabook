@@ -74,13 +74,7 @@ class FilterTypeAdapter (var context: Context,
 
         }
 
-//        val gradeRes : Int = _mapType[position].gradeRes
-//        val gradeString : String = _mapGrade[ position].gradeString
         val typeString : String = _mapType[position].typeString
-
-
-//        val skillName = mapStr[ mapEff!!.name  ]!!
-//        val elePath = GetSkillEffectResource( mapFx[skill.uid]!!.subType.name)
 
         viewHolder.tvSkill.text = typeString
         viewHolder.tvSkill.setAllCaps(true)
@@ -106,7 +100,6 @@ class FilterTypeAdapter (var context: Context,
         val tvSkill: TextView = view.tvSkill
         val cbSkill: CheckBox = view.cbSkill
 //        val llSkill: LinearLayout = view.llSkill
-
 
     }
 

@@ -85,7 +85,7 @@
                             android:id="@+id/ivGenderDetail1"
                             android:src="@drawable/ic_male"
                             android:adjustViewBounds="true"
-                            android:layout_width="@dimen/dp_24"
+                            android:layout_width="@dimen/dp_22"
                             android:layout_height="wrap_content" />
 
                         <TextView
@@ -94,7 +94,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/dump"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/sp_16"
+                            android:textSize="@dimen/sp_14"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -186,7 +186,7 @@
                             android:id="@+id/ivGenderDetail2"
                             android:src="@drawable/ic_male"
                             android:adjustViewBounds="true"
-                            android:layout_width="@dimen/dp_24"
+                            android:layout_width="@dimen/dp_22"
                             android:layout_height="wrap_content" />
 
                         <TextView
@@ -195,7 +195,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/dump"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/sp_16"
+                            android:textSize="@dimen/sp_14"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -283,7 +283,7 @@
                             android:id="@+id/ivGenderDetail3"
                             android:src="@drawable/ic_male"
                             android:adjustViewBounds="true"
-                            android:layout_width="@dimen/dp_24"
+                            android:layout_width="@dimen/dp_22"
                             android:layout_height="wrap_content" />
 
                         <TextView
@@ -292,7 +292,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/dump"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/sp_16"
+                            android:textSize="@dimen/sp_14"
                             android:textStyle="bold" />
                     </LinearLayout>
 
