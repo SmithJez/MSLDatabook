@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import com.felania.monstersuperleaguedatabook.R
 import com.felania.monstersuperleaguedatabook.fragments.SynergiesFragment
 import com.felania.monstersuperleaguedatabook.protobuf.ProtobufHelper
@@ -71,18 +73,24 @@ class SynergyActivity : AppCompatActivity() {
         val listLinkHiddenData = protoHelper.ReadSynergyHiddenData(MsgGameDataOuterClass.MsgGameData.LINK_BONUS_HIDDEN_DATAS_FIELD_NUMBER, context)
         val listEffect = protoHelper.ReadEffect(MsgGameDataOuterClass.MsgGameData.STATUS_EFFECTS_FIELD_NUMBER, context)
 
+
+
 //        Log.wtf("lis", "list " + listLinkBonus.size)
 
         mapMonster = listMonster.associateBy ({ it.uid } , {it} )
         mapString = listString.associateBy( {it.uid}, {it.text})
         mapUid = listUid.associateBy ({ it.strUid }, {it})
-        mapLinkBonus = listLinkBonus.associateBy ({ it.uid }, {it})
+
         mapLinkHiddenData = listLinkHiddenData.associateBy ({ it.uid }, {it})
 
         mapUidInt = listUid.associateBy ({ it.uid }, {it})
 
         mapEffect = listEffect.associateBy( {it.uid } , {it})
 
+        val sortedLink = listLinkBonus.sortedBy { mapString[it.name] }.sortedBy { !it.newTag }
+
+
+        mapLinkBonus = sortedLink.associateBy ({ it.uid }, {it})
 
         mapDictName = protoHelper.ReadMapDictName(context).associateBy( { it.resName }, { MonsterEvolutionGroup(it.resName,  it.evo1, it.evo2, it.evo3  )  } ).toMutableMap()
 
@@ -225,5 +233,30 @@ class SynergyActivity : AppCompatActivity() {
             }
             return null
         }
+    }
+
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.mon_skill_book_popup, menu)
+
+        return true
+    }
+
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+
+        val id : Int = item!!.itemId
+        return when (id) {
+            R.id.btnSkillBookBack -> {
+                finish()
+                true
+            }
+
+            else -> {
+                true
+            }
+        }
+
+
     }
 }

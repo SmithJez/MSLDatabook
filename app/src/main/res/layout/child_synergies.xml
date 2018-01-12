@@ -17,6 +17,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+
+
             <ImageView
                 android:layout_width="@dimen/dp_54"
                 android:layout_height="wrap_content"
@@ -29,11 +31,18 @@
 
             <ImageView
                 android:id="@+id/ivSynergiesIcon"
-                android:layout_width="@dimen/dp_24"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/dp_22"
+                android:layout_height="@dimen/dp_22"
                 android:layout_centerInParent="true"
                 android:adjustViewBounds="true"
                 android:src="@drawable/ic_hidden" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/ivSynergiesNew"
+                android:src="@drawable/ic_new"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24" />
 
 
         </RelativeLayout>
@@ -133,12 +142,13 @@
     <TextView
         android:textSize="@dimen/sp_12"
         android:visibility="gone"
+
         android:id="@+id/tvSynergiesHelp"
         android:paddingStart="@dimen/dp_4"
         android:paddingLeft="@dimen/dp_4"
         android:paddingRight="@dimen/dp_4"
         android:paddingEnd="@dimen/dp_4"
-        android:textColor="@color/msl_yellow"
+        android:textColor="@color/red_mat_700"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

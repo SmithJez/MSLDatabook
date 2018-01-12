@@ -117,6 +117,12 @@ class SynergiesAdapter(private var synergiesFragment: SynergiesFragment,
 
                 itemView.tvSynergiesCount.text = monCount
 
+                if(linkBonus.newTag) {
+                    itemView.ivSynergiesNew.visibility = View.VISIBLE
+                } else {
+                    itemView.ivSynergiesNew.visibility = View.GONE
+                }
+
 
 
                 if (linkBonus.linkBonusType == MsgLinkBonusOuterClass.MsgLinkBonus.LinkBonusType.LBT_Hidden) {

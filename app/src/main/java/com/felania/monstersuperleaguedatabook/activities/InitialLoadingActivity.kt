@@ -167,8 +167,8 @@ class InitialLoadingActivity : AppCompatActivity() {
 
     fun LoadDB(){
 
-        Log.wtf("FileMap", "FileMap " + existWriteMapMonBar)
-        Log.wtf("FileMap", "MapDictName " + existWriteMapDictName)
+//        Log.wtf("FileMap", "FileMap " + existWriteMapMonBar)
+//        Log.wtf("FileMap", "MapDictName " + existWriteMapDictName)
 
         val localeMap: HashMap<String, String> = Variables.localeToStringMap
 
@@ -427,7 +427,7 @@ class InitialLoadingActivity : AppCompatActivity() {
 //            SaveFileListToSharedPref(setFileList, prefFileListName)
 
         } catch (e: IOException) {
-            Log.e("tag", "Failed to get asset file list.", e)
+//            Log.e("tag", "Failed to get asset file list.", e)
         }
 
 
@@ -468,7 +468,7 @@ class InitialLoadingActivity : AppCompatActivity() {
         val currentVersionCode = BuildConfig.VERSION_CODE
 //        val currentVersionCode = 15
 
-        Log.wtf("currentVersion", "currentVer " + currentVersionCode)
+//        Log.wtf("currentVersion", "currentVer " + currentVersionCode)
 
         // Get saved version code
         val prefs = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
@@ -478,14 +478,14 @@ class InitialLoadingActivity : AppCompatActivity() {
         when {
             currentVersionCode == savedVersionCode -> {
                 // Normal Run
-                Log.wtf("normal", "normal")
+//                Log.wtf("normal", "normal")
                 val sharedPreferences = context.getSharedPreferences(prefFileListName, Context.MODE_PRIVATE)
                 setFileList = sharedPreferences.getStringSet(keyFileList, HashSet())
 //                return
             }
 
             currentVersionCode > savedVersionCode -> {
-                Log.wtf("upgrade", "upgrade")
+//                Log.wtf("upgrade", "upgrade")
                 // This is an upgrade
                 val sharedPreferenceFile = File( context.filesDir.path + "/shared_prefs/" )
                 val listFiles = sharedPreferenceFile.listFiles()
@@ -512,7 +512,7 @@ class InitialLoadingActivity : AppCompatActivity() {
 
             savedVersionCode == DOESNT_EXIST -> {
                 // This is a new install (or the user cleared the shared preferences)
-                Log.wtf("new", "new")
+//                Log.wtf("new", "new")
                 val sharedPreferenceFile = File(context.filesDir.path + "/shared_prefs/")
                 val listFiles = sharedPreferenceFile.listFiles()
                 if(listFiles != null) {
@@ -532,7 +532,7 @@ class InitialLoadingActivity : AppCompatActivity() {
             }
 
             else -> {
-                Log.wtf("else", "else ")
+//                Log.wtf("else", "else ")
             }
 
         }
@@ -687,7 +687,7 @@ class InitialLoadingActivity : AppCompatActivity() {
             LoadDB()
 
 
-            var listSkillUpgrade = protoHelper.ReadSkillUpgrade(MsgGameDataOuterClass.MsgGameData.MONSTER_UPGRADE_SKILLS_FIELD_NUMBER, context)
+            val listSkillUpgrade = protoHelper.ReadSkillUpgrade(MsgGameDataOuterClass.MsgGameData.MONSTER_UPGRADE_SKILLS_FIELD_NUMBER, context)
 
             mapSkillUpgrade = listSkillUpgrade.associateBy ({ it.uid }, {it})
 

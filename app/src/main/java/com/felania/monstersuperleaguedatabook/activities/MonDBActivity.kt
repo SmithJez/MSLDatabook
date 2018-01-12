@@ -22,8 +22,11 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
 import android.widget.SearchView
+import android.widget.TextView
 import android.widget.Toast
 import com.felania.monstersuperleaguedatabook.R
+import com.felania.monstersuperleaguedatabook.R.id.navAstroguide
+import com.felania.monstersuperleaguedatabook.R.id.navSynergies
 import com.felania.monstersuperleaguedatabook.adapters.AstromonAdapter
 import com.felania.monstersuperleaguedatabook.fragments.AstroguideDetailActivity
 import com.felania.monstersuperleaguedatabook.protobuf.ProtobufHelper
@@ -154,7 +157,7 @@ class MonDBActivity : AppCompatActivity() {
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
 
-        DrawerController()
+
 
 
         barMaxSize = intent.getIntExtra(Variables.BAR_MAX_SIZE, 0)
@@ -248,9 +251,35 @@ class MonDBActivity : AppCompatActivity() {
 
     private fun DrawerController() {
 
+        val astroguideLabel = UtilFunctions.GetStringFromUidText(mapString, mapUid,"ustr.dictionary")
+        val synergyLabel = UtilFunctions.GetStringFromUidText(mapString, mapUid,"ustr.link.bonus.dic")
+        val titanLabel = UtilFunctions.GetStringFromUidText(mapString, mapUid,"str.mon.name.light.bosstitan.1")
+        val exitLabel = UtilFunctions.GetStringFromUidText(mapString, mapUid,"ustr.terms.exit")
+        val languageLabel = UtilFunctions.GetStringFromUidText(mapString, mapUid,"ustr.dlg.user.info.tab.language")
+        val playLabel = UtilFunctions.GetStringFromUidText(mapString, mapUid,"ustr.lobby.btn_selectstage")
+
+        val navMenu = nav_view.menu
+
+        val navSyn = navMenu.findItem(navSynergies)
+        navSyn.title = synergyLabel
+
+        val navAstroguide = navMenu.findItem(navAstroguide)
+        navAstroguide.title = astroguideLabel
+
+        val navTitan = navMenu.findItem(R.id.navClan)
+        navTitan.title = titanLabel
+
+        val navExit = navMenu.findItem(R.id.navExit)
+        navExit.title = exitLabel
+
+        val langSetting = navMenu.findItem(R.id.langSetting)
+        langSetting.title = languageLabel
+
+        val navLaunch = navMenu.findItem(R.id.navLaunch)
+        navLaunch.title = playLabel
+
         nav_view.setNavigationItemSelectedListener(NavigationView.OnNavigationItemSelectedListener { item ->
             val id = item.itemId
-
 
             when (id) {
                 R.id.navExit -> {
@@ -267,6 +296,7 @@ class MonDBActivity : AppCompatActivity() {
                 }
 
                 R.id.navSynergies -> {
+
                     StartSynergies()
                 }
 
@@ -1209,6 +1239,7 @@ class MonDBActivity : AppCompatActivity() {
             Bind()
 
 
+            DrawerController()
 
             super.onPostExecute(result)
         }
