@@ -1131,6 +1131,10 @@ public final class MsgShopItemOuterClass {
        * <code>IT_BoosterPackage = 63;</code>
        */
       IT_BoosterPackage(63),
+      /**
+       * <code>IT_CostumeTicket = 64;</code>
+       */
+      IT_CostumeTicket(64),
       UNRECOGNIZED(-1),
       ;
 
@@ -1310,6 +1314,10 @@ public final class MsgShopItemOuterClass {
        * <code>IT_BoosterPackage = 63;</code>
        */
       public static final int IT_BoosterPackage_VALUE = 63;
+      /**
+       * <code>IT_CostumeTicket = 64;</code>
+       */
+      public static final int IT_CostumeTicket_VALUE = 64;
 
 
       public final int getNumber() {
@@ -1374,6 +1382,7 @@ public final class MsgShopItemOuterClass {
           case 61: return IT_SuperStone;
           case 62: return IT_SuperStoneStuff;
           case 63: return IT_BoosterPackage;
+          case 64: return IT_CostumeTicket;
           default: return null;
         }
       }
@@ -7674,7 +7683,7 @@ public final class MsgShopItemOuterClass {
       "\035MsgPackagePurchaseBonus.proto\032!MsgShopI" +
       "temMetaUserShipBuff.proto\032#MsgShopItemMe" +
       "taPromisePackage.proto\032#MsgShopItemMetaB" +
-      "oosterPackage.proto\"\257\031\n\013MsgShopItem\022\013\n\003u" +
+      "oosterPackage.proto\"\305\031\n\013MsgShopItem\022\013\n\003u" +
       "id\030\001 \001(\007\022\014\n\004name\030\002 \001(\007\022\014\n\004desc\030\003 \001(\007\0227\n\010" +
       "category\030\004 \001(\0162%.msggamedata.MsgShopItem" +
       ".CategoryType\0224\n\titem_type\030\005 \001(\0162!.msgga",
@@ -7719,7 +7728,7 @@ public final class MsgShopItemOuterClass {
       "amedata.MsgShopItemMetaPromisePackage\022C\n" +
       "\017booster_package\030+ \001(\0132*.msggamedata.Msg",
       "ShopItemMetaBoosterPackage\022\016\n\006illust\030, \001" +
-      "(\t\"\372\006\n\010ItemType\022\020\n\014ItemTypeNULL\020\000\022\n\n\006IT_" +
+      "(\t\"\220\007\n\010ItemType\022\020\n\014ItemTypeNULL\020\000\022\n\n\006IT_" +
       "Gem\020\001\022\013\n\007IT_Gold\020\002\022\r\n\tIT_Energy\020\003\022\022\n\016IT_" +
       "ArenaTicket\020\004\022\013\n\007IT_Rune\020\005\022\022\n\016IT_BeyondS" +
       "tone\020\006\022\016\n\nIT_Monster\020\007\022\n\n\006IT_Gun\020\010\022\r\n\tIT" +
@@ -7741,22 +7750,22 @@ public final class MsgShopItemOuterClass {
       "ge\0209\022\025\n\021IT_FestivalTicket\020:\022\020\n\014IT_SkillB" +
       "ook\020;\022\026\n\022IT_Promise_Package\020<\022\021\n\rIT_Supe" +
       "rStone\020=\022\026\n\022IT_SuperStoneStuff\020>\022\025\n\021IT_B" +
-      "oosterPackage\020?\"\277\001\n\tWhereType\022\021\n\rWhereTy" +
-      "peNULL\020\000\022\013\n\007WT_Shop\020\001\022\014\n\010WT_Popup\020\002\022\020\n\014W" +
-      "T_GoldPopup\020\003\022\013\n\007WT_Joje\020\004\022\016\n\nWT_Setting" +
-      "\020\005\022\014\n\010WT_Gacha\020\007\022\016\n\nWT_Package\020\010\022\016\n\nWT_E" +
-      "xpired\020\t\022\013\n\007WT_Clan\020\n\022\016\n\nWT_Booster\020\013\022\n\n" +
-      "\006WT_Etc\0202\"\363\001\n\014CategoryType\022\024\n\020CategoryTy" +
-      "peNULL\020\000\022\013\n\007CT_Cash\020\001\022\013\n\007CT_Rune\020\002\022\022\n\016CT",
-      "_BeyondStone\020\003\022\016\n\nCT_Monster\020\004\022\016\n\nCT_Cap" +
-      "ture\020\005\022\022\n\016CT_InstantGold\020\006\022\013\n\007CT_Joje\020\007\022" +
-      "\022\n\016CT_ProfileIcon\020\010\022\016\n\nCT_Package\020\t\022\021\n\rC" +
-      "T_ItemBundle\020\n\022\016\n\nCT_Crystal\020\013\022\013\n\007CT_Cla" +
-      "n\020\014\022\n\n\006CT_Etc\0202\"\203\001\n\010MarkType\022\020\n\014MarkType" +
-      "NULL\020\000\022\r\n\tMT_Common\020\001\022\n\n\006MT_Hot\020\002\022\013\n\007MT_" +
-      "Sale\020\003\022\n\n\006MT_New\020\004\022\r\n\tMT_Update\020\005\022\022\n\016MT_" +
-      "Unavailable\020\006\022\016\n\nMT_Limited\020\007B\023\n\021com.fel" +
-      "ania.msldbb\006proto3"
+      "oosterPackage\020?\022\024\n\020IT_CostumeTicket\020@\"\277\001" +
+      "\n\tWhereType\022\021\n\rWhereTypeNULL\020\000\022\013\n\007WT_Sho" +
+      "p\020\001\022\014\n\010WT_Popup\020\002\022\020\n\014WT_GoldPopup\020\003\022\013\n\007W" +
+      "T_Joje\020\004\022\016\n\nWT_Setting\020\005\022\014\n\010WT_Gacha\020\007\022\016" +
+      "\n\nWT_Package\020\010\022\016\n\nWT_Expired\020\t\022\013\n\007WT_Cla" +
+      "n\020\n\022\016\n\nWT_Booster\020\013\022\n\n\006WT_Etc\0202\"\363\001\n\014Cate" +
+      "goryType\022\024\n\020CategoryTypeNULL\020\000\022\013\n\007CT_Cas",
+      "h\020\001\022\013\n\007CT_Rune\020\002\022\022\n\016CT_BeyondStone\020\003\022\016\n\n" +
+      "CT_Monster\020\004\022\016\n\nCT_Capture\020\005\022\022\n\016CT_Insta" +
+      "ntGold\020\006\022\013\n\007CT_Joje\020\007\022\022\n\016CT_ProfileIcon\020" +
+      "\010\022\016\n\nCT_Package\020\t\022\021\n\rCT_ItemBundle\020\n\022\016\n\n" +
+      "CT_Crystal\020\013\022\013\n\007CT_Clan\020\014\022\n\n\006CT_Etc\0202\"\203\001" +
+      "\n\010MarkType\022\020\n\014MarkTypeNULL\020\000\022\r\n\tMT_Commo" +
+      "n\020\001\022\n\n\006MT_Hot\020\002\022\013\n\007MT_Sale\020\003\022\n\n\006MT_New\020\004" +
+      "\022\r\n\tMT_Update\020\005\022\022\n\016MT_Unavailable\020\006\022\016\n\nM" +
+      "T_Limited\020\007B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

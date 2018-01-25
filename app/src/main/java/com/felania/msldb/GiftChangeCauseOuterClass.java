@@ -192,6 +192,14 @@ public final class GiftChangeCauseOuterClass {
      */
     GCC_Reward_Monthly_Monster_Reward(43),
     /**
+     * <code>GCC_Bingo_Event_Reward = 44;</code>
+     */
+    GCC_Bingo_Event_Reward(44),
+    /**
+     * <code>GCC_Rejoin_Clan_Reward = 45;</code>
+     */
+    GCC_Rejoin_Clan_Reward(45),
+    /**
      * <code>GCC_Refund_From_DBTool = 99;</code>
      */
     GCC_Refund_From_DBTool(99),
@@ -371,6 +379,14 @@ public final class GiftChangeCauseOuterClass {
      */
     public static final int GCC_Reward_Monthly_Monster_Reward_VALUE = 43;
     /**
+     * <code>GCC_Bingo_Event_Reward = 44;</code>
+     */
+    public static final int GCC_Bingo_Event_Reward_VALUE = 44;
+    /**
+     * <code>GCC_Rejoin_Clan_Reward = 45;</code>
+     */
+    public static final int GCC_Rejoin_Clan_Reward_VALUE = 45;
+    /**
      * <code>GCC_Refund_From_DBTool = 99;</code>
      */
     public static final int GCC_Refund_From_DBTool_VALUE = 99;
@@ -437,6 +453,8 @@ public final class GiftChangeCauseOuterClass {
         case 41: return GCC_purchase_Booster_Package_On_Event;
         case 42: return GCC_Reward_Capture_Festival_Finale;
         case 43: return GCC_Reward_Monthly_Monster_Reward;
+        case 44: return GCC_Bingo_Event_Reward;
+        case 45: return GCC_Rejoin_Clan_Reward;
         case 99: return GCC_Refund_From_DBTool;
         default: return null;
       }
@@ -499,7 +517,7 @@ public final class GiftChangeCauseOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025GiftChangeCause.proto\022\013msggamedata*\213\013\n" +
+      "\n\025GiftChangeCause.proto\022\013msggamedata*\303\013\n" +
       "\017GiftChangeCause\022\027\n\023GiftChangeCauseNULL\020" +
       "\000\022\024\n\020GCC_Arena_Reward\020\001\022\023\n\017GCC_Daily_Bon" +
       "us\020\002\022\024\n\020GCC_Lobby_Reward\020\003\022\032\n\026GCC_First_" +
@@ -534,9 +552,10 @@ public final class GiftChangeCauseOuterClass {
       "\n\030GCC_Booster_Package_Item\020(\022)\n%GCC_purc" +
       "hase_Booster_Package_On_Event\020)\022&\n\"GCC_R" +
       "eward_Capture_Festival_Finale\020*\022%\n!GCC_R" +
-      "eward_Monthly_Monster_Reward\020+\022\032\n\026GCC_Re" +
-      "fund_From_DBTool\020cB\023\n\021com.felania.msldbb" +
-      "\006proto3"
+      "eward_Monthly_Monster_Reward\020+\022\032\n\026GCC_Bi" +
+      "ngo_Event_Reward\020,\022\032\n\026GCC_Rejoin_Clan_Re" +
+      "ward\020-\022\032\n\026GCC_Refund_From_DBTool\020cB\023\n\021co" +
+      "m.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

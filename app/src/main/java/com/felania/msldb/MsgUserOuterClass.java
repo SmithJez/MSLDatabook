@@ -240,6 +240,11 @@ public final class MsgUserOuterClass {
      * <code>uint32 lucky_ticket = 41;</code>
      */
     int getLuckyTicket();
+
+    /**
+     * <code>uint32 costume_ticket = 42;</code>
+     */
+    int getCostumeTicket();
   }
   /**
    * Protobuf type {@code msggamedata.MsgUser}
@@ -293,6 +298,7 @@ public final class MsgUserOuterClass {
       createDate_ = 0L;
       cvcMessage_ = "";
       luckyTicket_ = 0;
+      costumeTicket_ = 0;
     }
 
     @java.lang.Override
@@ -523,6 +529,11 @@ public final class MsgUserOuterClass {
             case 328: {
 
               luckyTicket_ = input.readUInt32();
+              break;
+            }
+            case 336: {
+
+              costumeTicket_ = input.readUInt32();
               break;
             }
           }
@@ -1014,6 +1025,15 @@ public final class MsgUserOuterClass {
       return luckyTicket_;
     }
 
+    public static final int COSTUME_TICKET_FIELD_NUMBER = 42;
+    private int costumeTicket_;
+    /**
+     * <code>uint32 costume_ticket = 42;</code>
+     */
+    public int getCostumeTicket() {
+      return costumeTicket_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -1142,6 +1162,9 @@ public final class MsgUserOuterClass {
       }
       if (luckyTicket_ != 0) {
         output.writeUInt32(41, luckyTicket_);
+      }
+      if (costumeTicket_ != 0) {
+        output.writeUInt32(42, costumeTicket_);
       }
       unknownFields.writeTo(output);
     }
@@ -1303,6 +1326,10 @@ public final class MsgUserOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(41, luckyTicket_);
       }
+      if (costumeTicket_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(42, costumeTicket_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -1395,6 +1422,8 @@ public final class MsgUserOuterClass {
           .equals(other.getCvcMessage());
       result = result && (getLuckyTicket()
           == other.getLuckyTicket());
+      result = result && (getCostumeTicket()
+          == other.getCostumeTicket());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -1491,6 +1520,8 @@ public final class MsgUserOuterClass {
       hash = (53 * hash) + getCvcMessage().hashCode();
       hash = (37 * hash) + LUCKY_TICKET_FIELD_NUMBER;
       hash = (53 * hash) + getLuckyTicket();
+      hash = (37 * hash) + COSTUME_TICKET_FIELD_NUMBER;
+      hash = (53 * hash) + getCostumeTicket();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1698,6 +1729,8 @@ public final class MsgUserOuterClass {
 
         luckyTicket_ = 0;
 
+        costumeTicket_ = 0;
+
         return this;
       }
 
@@ -1759,6 +1792,7 @@ public final class MsgUserOuterClass {
         result.createDate_ = createDate_;
         result.cvcMessage_ = cvcMessage_;
         result.luckyTicket_ = luckyTicket_;
+        result.costumeTicket_ = costumeTicket_;
         onBuilt();
         return result;
       }
@@ -1920,6 +1954,9 @@ public final class MsgUserOuterClass {
         }
         if (other.getLuckyTicket() != 0) {
           setLuckyTicket(other.getLuckyTicket());
+        }
+        if (other.getCostumeTicket() != 0) {
+          setCostumeTicket(other.getCostumeTicket());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -3169,6 +3206,32 @@ public final class MsgUserOuterClass {
         onChanged();
         return this;
       }
+
+      private int costumeTicket_ ;
+      /**
+       * <code>uint32 costume_ticket = 42;</code>
+       */
+      public int getCostumeTicket() {
+        return costumeTicket_;
+      }
+      /**
+       * <code>uint32 costume_ticket = 42;</code>
+       */
+      public Builder setCostumeTicket(int value) {
+        
+        costumeTicket_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 costume_ticket = 42;</code>
+       */
+      public Builder clearCostumeTicket() {
+        
+        costumeTicket_ = 0;
+        onChanged();
+        return this;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -3233,7 +3296,7 @@ public final class MsgUserOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\rMsgUser.proto\022\013msggamedata\032\022UserCharTy" +
-      "pe.proto\032\026UserCharSkinType.proto\"\327\007\n\007Msg" +
+      "pe.proto\032\026UserCharSkinType.proto\"\357\007\n\007Msg" +
       "User\022\017\n\007user_id\030\001 \001(\004\022\023\n\013account_idx\030\002 \001" +
       "(\004\022\014\n\004name\030\004 \001(\t\022\013\n\003lev\030\005 \001(\r\022\013\n\003exp\030\006 \001" +
       "(\r\022\014\n\004gold\030\007 \001(\r\022\020\n\010paid_gem\030\010 \001(\r\022\020\n\010fr" +
@@ -3258,8 +3321,8 @@ public final class MsgUserOuterClass {
       "a_season_idx\030# \001(\r\022\021\n\ttime_zone\030$ \001(\r\022\017\n" +
       "\007crystal\030% \001(\r\022\022\n\nclan_point\030& \001(\r\022\023\n\013cr" +
       "eate_date\030\' \001(\004\022\023\n\013cvc_message\030( \001(\t\022\024\n\014" +
-      "lucky_ticket\030) \001(\rB\023\n\021com.felania.msldbb" +
-      "\006proto3"
+      "lucky_ticket\030) \001(\r\022\026\n\016costume_ticket\030* \001" +
+      "(\rB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3280,7 +3343,7 @@ public final class MsgUserOuterClass {
     internal_static_msggamedata_MsgUser_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgUser_descriptor,
-        new java.lang.String[] { "UserId", "AccountIdx", "Name", "Lev", "Exp", "Gold", "PaidGem", "FreeGem", "Energy", "ArenaPoint", "ArenaTicket", "DungeonTicket", "EnergyChargeTime", "MonsterInvenCnt", "RepresentativeMonsterId", "CaptureBullet", "HelloMessage", "LikeCount", "LikeTicketCount", "AutoFillCaptureBullet", "MaxEnergy", "CharType", "SkinType", "UserProfileIconUid", "TutorialStep", "ArenaWinningPoint", "ArenaMessage", "DungeonTicketExpiredDate", "ArenaCandidateListPublishedDate", "ArenaTicketChargeTime", "ArenaRewardDate", "LastArenaWinningPoint", "ArenaSeasonIdx", "TimeZone", "Crystal", "ClanPoint", "CreateDate", "CvcMessage", "LuckyTicket", });
+        new java.lang.String[] { "UserId", "AccountIdx", "Name", "Lev", "Exp", "Gold", "PaidGem", "FreeGem", "Energy", "ArenaPoint", "ArenaTicket", "DungeonTicket", "EnergyChargeTime", "MonsterInvenCnt", "RepresentativeMonsterId", "CaptureBullet", "HelloMessage", "LikeCount", "LikeTicketCount", "AutoFillCaptureBullet", "MaxEnergy", "CharType", "SkinType", "UserProfileIconUid", "TutorialStep", "ArenaWinningPoint", "ArenaMessage", "DungeonTicketExpiredDate", "ArenaCandidateListPublishedDate", "ArenaTicketChargeTime", "ArenaRewardDate", "LastArenaWinningPoint", "ArenaSeasonIdx", "TimeZone", "Crystal", "ClanPoint", "CreateDate", "CvcMessage", "LuckyTicket", "CostumeTicket", });
     com.felania.msldb.UserCharTypeOuterClass.getDescriptor();
     com.felania.msldb.UserCharSkinTypeOuterClass.getDescriptor();
   }

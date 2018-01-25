@@ -256,6 +256,10 @@ public final class CurrencyChangeCauseOuterClass {
      */
     CCC_Use_Super_Evolution(78),
     /**
+     * <code>CCC_Use_Costume_Ticket = 79;</code>
+     */
+    CCC_Use_Costume_Ticket(79),
+    /**
      * <code>CCC_Refund_From_DBTool = 99;</code>
      */
     CCC_Refund_From_DBTool(99),
@@ -499,6 +503,10 @@ public final class CurrencyChangeCauseOuterClass {
      */
     public static final int CCC_Use_Super_Evolution_VALUE = 78;
     /**
+     * <code>CCC_Use_Costume_Ticket = 79;</code>
+     */
+    public static final int CCC_Use_Costume_Ticket_VALUE = 79;
+    /**
      * <code>CCC_Refund_From_DBTool = 99;</code>
      */
     public static final int CCC_Refund_From_DBTool_VALUE = 99;
@@ -581,6 +589,7 @@ public final class CurrencyChangeCauseOuterClass {
         case 76: return CCC_Use_Upgrade_Monster_Skill;
         case 77: return CCC_Use_Rapid_Combining_Superstone;
         case 78: return CCC_Use_Super_Evolution;
+        case 79: return CCC_Use_Costume_Ticket;
         case 99: return CCC_Refund_From_DBTool;
         default: return null;
       }
@@ -644,7 +653,7 @@ public final class CurrencyChangeCauseOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031CurrencyChangeCause.proto\022\013msggamedata" +
-      "*\227\017\n\023CurrencyChangeCause\022\033\n\027CurrencyChan" +
+      "*\263\017\n\023CurrencyChangeCause\022\033\n\027CurrencyChan" +
       "geCauseNULL\020\000\022\027\n\023CCC_Get_Buy_In_Shop\020\001\022\037" +
       "\n\033CCC_Get_Buy_In_Instant_Shop\020\002\022\030\n\024CCC_G" +
       "et_Lobby_Reward\020\003\022\027\n\023CCC_Get_Battle_Drop" +
@@ -692,8 +701,9 @@ public final class CurrencyChangeCauseOuterClass {
       "Default_Ship\020K\022!\n\035CCC_Use_Upgrade_Monste" +
       "r_Skill\020L\022&\n\"CCC_Use_Rapid_Combining_Sup" +
       "erstone\020M\022\033\n\027CCC_Use_Super_Evolution\020N\022\032" +
-      "\n\026CCC_Refund_From_DBTool\020cB\023\n\021com.felani",
-      "a.msldbb\006proto3"
+      "\n\026CCC_Use_Costume_Ticket\020O\022\032\n\026CCC_Refund",
+      "_From_DBTool\020cB\023\n\021com.felania.msldbb\006pro" +
+      "to3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

@@ -135,6 +135,10 @@ public final class UserMetaTypeOuterClass {
      * <code>UMT_Combine_Superstone_Stuff = 1022;</code>
      */
     UMT_Combine_Superstone_Stuff(1022),
+    /**
+     * <code>UMT_Get_Rejoin_Clan_Reward = 1023;</code>
+     */
+    UMT_Get_Rejoin_Clan_Reward(1023),
     UNRECOGNIZED(-1),
     ;
 
@@ -254,6 +258,10 @@ public final class UserMetaTypeOuterClass {
      * <code>UMT_Combine_Superstone_Stuff = 1022;</code>
      */
     public static final int UMT_Combine_Superstone_Stuff_VALUE = 1022;
+    /**
+     * <code>UMT_Get_Rejoin_Clan_Reward = 1023;</code>
+     */
+    public static final int UMT_Get_Rejoin_Clan_Reward_VALUE = 1023;
 
 
     public final int getNumber() {
@@ -303,6 +311,7 @@ public final class UserMetaTypeOuterClass {
         case 1020: return UMT_LOCK_MONSTER_MIHO;
         case 1021: return UMT_Tutorial_CVC;
         case 1022: return UMT_Combine_Superstone_Stuff;
+        case 1023: return UMT_Get_Rejoin_Clan_Reward;
         default: return null;
       }
     }
@@ -364,7 +373,7 @@ public final class UserMetaTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022UserMetaType.proto\022\013msggamedata*\253\006\n\014Us" +
+      "\n\022UserMetaType.proto\022\013msggamedata*\314\006\n\014Us" +
       "erMetaType\022\013\n\007UMT_All\020\000\022\022\n\016UMT_Server_Al" +
       "l\020\001\022\025\n\021UMT_BreakUpFriend\020\n\022\027\n\023UMT_VoteMo" +
       "nsterTalk\020\024\022\034\n\030UMT_VoteMonsterRecommend\020" +
@@ -385,7 +394,8 @@ public final class UserMetaTypeOuterClass {
       "RETURN\020\372\007\022\036\n\031UMT_LOCK_MONSTER_VICTORIA\020\373" +
       "\007\022\032\n\025UMT_LOCK_MONSTER_MIHO\020\374\007\022\025\n\020UMT_Tut",
       "orial_CVC\020\375\007\022!\n\034UMT_Combine_Superstone_S" +
-      "tuff\020\376\007B\023\n\021com.felania.msldbb\006proto3"
+      "tuff\020\376\007\022\037\n\032UMT_Get_Rejoin_Clan_Reward\020\377\007" +
+      "B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

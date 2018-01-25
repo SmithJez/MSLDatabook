@@ -236,6 +236,10 @@ public final class WebEventPlayModeOuterClass {
      */
     WEPM_Upgrade_Monster_Skill(205),
     /**
+     * <code>WEPM_Super_Evolution_Monster = 206;</code>
+     */
+    WEPM_Super_Evolution_Monster(206),
+    /**
      * <code>WEPM_Find_Nezz = 300;</code>
      */
     WEPM_Find_Nezz(300),
@@ -511,6 +515,10 @@ public final class WebEventPlayModeOuterClass {
      */
     public static final int WEPM_Upgrade_Monster_Skill_VALUE = 205;
     /**
+     * <code>WEPM_Super_Evolution_Monster = 206;</code>
+     */
+    public static final int WEPM_Super_Evolution_Monster_VALUE = 206;
+    /**
      * <code>WEPM_Find_Nezz = 300;</code>
      */
     public static final int WEPM_Find_Nezz_VALUE = 300;
@@ -640,6 +648,7 @@ public final class WebEventPlayModeOuterClass {
         case 203: return WEPM_Upgrade_Rune;
         case 204: return WEPM_Feed_Item;
         case 205: return WEPM_Upgrade_Monster_Skill;
+        case 206: return WEPM_Super_Evolution_Monster;
         case 300: return WEPM_Find_Nezz;
         case 301: return WEPM_Lobby_Reward;
         case 302: return WEPM_Set_Free_Monster;
@@ -715,7 +724,7 @@ public final class WebEventPlayModeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026WebEventPlayMode.proto\022\013msggamedata*\263\021" +
+      "\n\026WebEventPlayMode.proto\022\013msggamedata*\326\021" +
       "\n\020WebEventPlayMode\022\030\n\024WebEventPlayModeNU" +
       "LL\020\000\022\031\n\025WEPM_Account_Level_Up\020\001\022\023\n\017WEPM_" +
       "Use_Energy\020\024\022\031\n\025WEPM_Use_Arena_Ticket\020\025\022" +
@@ -760,19 +769,20 @@ public final class WebEventPlayModeOuterClass {
       "lution_Monster\020\311\001\022\030\n\023WEPM_Beyond_Monster" +
       "\020\312\001\022\026\n\021WEPM_Upgrade_Rune\020\313\001\022\023\n\016WEPM_Feed" +
       "_Item\020\314\001\022\037\n\032WEPM_Upgrade_Monster_Skill\020\315" +
-      "\001\022\023\n\016WEPM_Find_Nezz\020\254\002\022\026\n\021WEPM_Lobby_Rew" +
-      "ard\020\255\002\022\032\n\025WEPM_Set_Free_Monster\020\256\002\022\032\n\025WE" +
-      "PM_Send_Friend_Gift\020\266\002\022\031\n\024WEPM_Capture_M" +
-      "onster\020\300\002\022,\n\'WEPM_Capture_Rare_Monster_I" +
-      "n_Continent1\020\301\002\022,\n\'WEPM_Capture_Rare_Mon",
-      "ster_In_Continent2\020\302\002\022,\n\'WEPM_Capture_Ra" +
-      "re_Monster_In_Continent3\020\303\002\022\025\n\020WEPM_Get_" +
-      "Monster\020\312\002\022#\n\036WEPM_Summon_Monster_By_Rev" +
-      "ives\020\324\002\022\030\n\023WEPM_Summon_Monster\020\336\002\022%\n WEP" +
-      "M_Summon_Monster_By_Soulstone\020\337\002\022\037\n\032WEPM" +
-      "_Summon_Monster_By_Egg\020\340\002\022(\n#WEPM_Summon" +
-      "_Monster_From_Gacha_Shop\020\341\002B\023\n\021com.felan" +
-      "ia.msldbb\006proto3"
+      "\001\022!\n\034WEPM_Super_Evolution_Monster\020\316\001\022\023\n\016" +
+      "WEPM_Find_Nezz\020\254\002\022\026\n\021WEPM_Lobby_Reward\020\255" +
+      "\002\022\032\n\025WEPM_Set_Free_Monster\020\256\002\022\032\n\025WEPM_Se" +
+      "nd_Friend_Gift\020\266\002\022\031\n\024WEPM_Capture_Monste" +
+      "r\020\300\002\022,\n\'WEPM_Capture_Rare_Monster_In_Con",
+      "tinent1\020\301\002\022,\n\'WEPM_Capture_Rare_Monster_" +
+      "In_Continent2\020\302\002\022,\n\'WEPM_Capture_Rare_Mo" +
+      "nster_In_Continent3\020\303\002\022\025\n\020WEPM_Get_Monst" +
+      "er\020\312\002\022#\n\036WEPM_Summon_Monster_By_Revives\020" +
+      "\324\002\022\030\n\023WEPM_Summon_Monster\020\336\002\022%\n WEPM_Sum" +
+      "mon_Monster_By_Soulstone\020\337\002\022\037\n\032WEPM_Summ" +
+      "on_Monster_By_Egg\020\340\002\022(\n#WEPM_Summon_Mons" +
+      "ter_From_Gacha_Shop\020\341\002B\023\n\021com.felania.ms" +
+      "ldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

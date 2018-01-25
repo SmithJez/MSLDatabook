@@ -112,6 +112,11 @@ public final class MsgLinkBonusOuterClass {
      * <code>uint64 release_date = 15;</code>
      */
     long getReleaseDate();
+
+    /**
+     * <code>fixed32 proposer = 16;</code>
+     */
+    int getProposer();
   }
   /**
    * Protobuf type {@code msggamedata.MsgLinkBonus}
@@ -140,6 +145,7 @@ public final class MsgLinkBonusOuterClass {
       newTag_ = false;
       checkBaseMonster_ = false;
       releaseDate_ = 0L;
+      proposer_ = 0;
     }
 
     @java.lang.Override
@@ -254,6 +260,11 @@ public final class MsgLinkBonusOuterClass {
             case 120: {
 
               releaseDate_ = input.readUInt64();
+              break;
+            }
+            case 133: {
+
+              proposer_ = input.readFixed32();
               break;
             }
           }
@@ -1514,6 +1525,15 @@ public final class MsgLinkBonusOuterClass {
       return releaseDate_;
     }
 
+    public static final int PROPOSER_FIELD_NUMBER = 16;
+    private int proposer_;
+    /**
+     * <code>fixed32 proposer = 16;</code>
+     */
+    public int getProposer() {
+      return proposer_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -1570,6 +1590,9 @@ public final class MsgLinkBonusOuterClass {
       }
       if (releaseDate_ != 0L) {
         output.writeUInt64(15, releaseDate_);
+      }
+      if (proposer_ != 0) {
+        output.writeFixed32(16, proposer_);
       }
       unknownFields.writeTo(output);
     }
@@ -1639,6 +1662,10 @@ public final class MsgLinkBonusOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(15, releaseDate_);
       }
+      if (proposer_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed32Size(16, proposer_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -1685,6 +1712,8 @@ public final class MsgLinkBonusOuterClass {
           == other.getCheckBaseMonster());
       result = result && (getReleaseDate()
           == other.getReleaseDate());
+      result = result && (getProposer()
+          == other.getProposer());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -1732,6 +1761,8 @@ public final class MsgLinkBonusOuterClass {
       hash = (37 * hash) + RELEASE_DATE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getReleaseDate());
+      hash = (37 * hash) + PROPOSER_FIELD_NUMBER;
+      hash = (53 * hash) + getProposer();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1895,6 +1926,8 @@ public final class MsgLinkBonusOuterClass {
 
         releaseDate_ = 0L;
 
+        proposer_ = 0;
+
         return this;
       }
 
@@ -1936,6 +1969,7 @@ public final class MsgLinkBonusOuterClass {
         result.newTag_ = newTag_;
         result.checkBaseMonster_ = checkBaseMonster_;
         result.releaseDate_ = releaseDate_;
+        result.proposer_ = proposer_;
         onBuilt();
         return result;
       }
@@ -2021,6 +2055,9 @@ public final class MsgLinkBonusOuterClass {
         }
         if (other.getReleaseDate() != 0L) {
           setReleaseDate(other.getReleaseDate());
+        }
+        if (other.getProposer() != 0) {
+          setProposer(other.getProposer());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2583,6 +2620,32 @@ public final class MsgLinkBonusOuterClass {
         onChanged();
         return this;
       }
+
+      private int proposer_ ;
+      /**
+       * <code>fixed32 proposer = 16;</code>
+       */
+      public int getProposer() {
+        return proposer_;
+      }
+      /**
+       * <code>fixed32 proposer = 16;</code>
+       */
+      public Builder setProposer(int value) {
+        
+        proposer_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed32 proposer = 16;</code>
+       */
+      public Builder clearProposer() {
+        
+        proposer_ = 0;
+        onChanged();
+        return this;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -2654,7 +2717,7 @@ public final class MsgLinkBonusOuterClass {
       "\n\022MsgLinkBonus.proto\022\013msggamedata\032\025MsgSt" +
       "atusEffect.proto\032\030MonsterElementType.pro" +
       "to\032\027MonsterGenderType.proto\032\025MonsterStat" +
-      "Type.proto\032\026MonsterEvolution.proto\"\271\007\n\014M" +
+      "Type.proto\032\026MonsterEvolution.proto\"\313\007\n\014M" +
       "sgLinkBonus\022\013\n\003uid\030\001 \001(\007\022\014\n\004name\030\002 \001(\007\022\014" +
       "\n\004desc\030\003 \001(\007\022\014\n\004hint\030\004 \001(\007\022@\n\017link_bonus" +
       "_type\030\005 \001(\0162\'.msggamedata.MsgLinkBonus.L" +
@@ -2667,19 +2730,19 @@ public final class MsgLinkBonusOuterClass {
       "ata.MsgLinkBonus.LinkBonusTargetType\022\017\n\007" +
       "overlap\030\014 \001(\010\022\017\n\007new_tag\030\r \001(\010\022\032\n\022check_" +
       "base_monster\030\016 \001(\010\022\024\n\014release_date\030\017 \001(\004" +
-      "\032\360\001\n\025LinkBonusSubTypeValue\0220\n\007element\030\001 " +
-      "\001(\0162\037.msggamedata.MonsterElementType\022.\n\006" +
-      "gender\030\002 \001(\0162\036.msggamedata.MonsterGender" +
-      "Type\022/\n\tstat_type\030\003 \001(\0162\034.msggamedata.Mo",
-      "nsterStatType\0220\n\tevolution\030\004 \001(\0162\035.msgga" +
-      "medata.MonsterEvolution\022\022\n\nhidden_uid\030\005 " +
-      "\001(\007\"|\n\rLinkBonusType\022\025\n\021LinkBonusTypeNUL" +
-      "L\020\000\022\017\n\013LBT_Element\020\001\022\016\n\nLBT_Gender\020\002\022\020\n\014" +
-      "LBT_StatType\020\003\022\021\n\rLBT_Evolution\020\004\022\016\n\nLBT" +
-      "_Hidden\020\005\"c\n\023LinkBonusTargetType\022\033\n\027Link" +
-      "BonusTargetTypeNULL\020\000\022\017\n\013LBTT_Target\020\001\022\016" +
-      "\n\nLBTT_Party\020\002\022\016\n\nLBTT_Enemy\020\003B\023\n\021com.fe" +
-      "lania.msldbb\006proto3"
+      "\022\020\n\010proposer\030\020 \001(\007\032\360\001\n\025LinkBonusSubTypeV" +
+      "alue\0220\n\007element\030\001 \001(\0162\037.msggamedata.Mons" +
+      "terElementType\022.\n\006gender\030\002 \001(\0162\036.msggame" +
+      "data.MonsterGenderType\022/\n\tstat_type\030\003 \001(",
+      "\0162\034.msggamedata.MonsterStatType\0220\n\tevolu" +
+      "tion\030\004 \001(\0162\035.msggamedata.MonsterEvolutio" +
+      "n\022\022\n\nhidden_uid\030\005 \001(\007\"|\n\rLinkBonusType\022\025" +
+      "\n\021LinkBonusTypeNULL\020\000\022\017\n\013LBT_Element\020\001\022\016" +
+      "\n\nLBT_Gender\020\002\022\020\n\014LBT_StatType\020\003\022\021\n\rLBT_" +
+      "Evolution\020\004\022\016\n\nLBT_Hidden\020\005\"c\n\023LinkBonus" +
+      "TargetType\022\033\n\027LinkBonusTargetTypeNULL\020\000\022" +
+      "\017\n\013LBTT_Target\020\001\022\016\n\nLBTT_Party\020\002\022\016\n\nLBTT" +
+      "_Enemy\020\003B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2703,7 +2766,7 @@ public final class MsgLinkBonusOuterClass {
     internal_static_msggamedata_MsgLinkBonus_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgLinkBonus_descriptor,
-        new java.lang.String[] { "Uid", "Name", "Desc", "Hint", "LinkBonusType", "SubTypeValue", "Where", "Grade", "MonsterCount", "StatusEffectUid", "Target", "Overlap", "NewTag", "CheckBaseMonster", "ReleaseDate", });
+        new java.lang.String[] { "Uid", "Name", "Desc", "Hint", "LinkBonusType", "SubTypeValue", "Where", "Grade", "MonsterCount", "StatusEffectUid", "Target", "Overlap", "NewTag", "CheckBaseMonster", "ReleaseDate", "Proposer", });
     internal_static_msggamedata_MsgLinkBonus_LinkBonusSubTypeValue_descriptor =
       internal_static_msggamedata_MsgLinkBonus_descriptor.getNestedTypes().get(0);
     internal_static_msggamedata_MsgLinkBonus_LinkBonusSubTypeValue_fieldAccessorTable = new

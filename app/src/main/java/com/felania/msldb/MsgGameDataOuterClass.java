@@ -2437,6 +2437,102 @@ public final class MsgGameDataOuterClass {
      */
     com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenDataOrBuilder getLinkBonusHiddenDatasOrBuilder(
         int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+     */
+    java.util.List<com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent> 
+        getBingoCompleteEventList();
+    /**
+     * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+     */
+    com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent getBingoCompleteEvent(int index);
+    /**
+     * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+     */
+    int getBingoCompleteEventCount();
+    /**
+     * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEventOrBuilder> 
+        getBingoCompleteEventOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+     */
+    com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEventOrBuilder getBingoCompleteEventOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+     */
+    java.util.List<com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection> 
+        getMonsterCostumeCollectionsList();
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+     */
+    com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection getMonsterCostumeCollections(int index);
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+     */
+    int getMonsterCostumeCollectionsCount();
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollectionOrBuilder> 
+        getMonsterCostumeCollectionsOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+     */
+    com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollectionOrBuilder getMonsterCostumeCollectionsOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+     */
+    java.util.List<com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle> 
+        getMonsterCostumeBundlesList();
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+     */
+    com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle getMonsterCostumeBundles(int index);
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+     */
+    int getMonsterCostumeBundlesCount();
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundleOrBuilder> 
+        getMonsterCostumeBundlesOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+     */
+    com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundleOrBuilder getMonsterCostumeBundlesOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+     */
+    java.util.List<com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume> 
+        getMonsterCostumesList();
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+     */
+    com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume getMonsterCostumes(int index);
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+     */
+    int getMonsterCostumesCount();
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostumeOrBuilder> 
+        getMonsterCostumesOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+     */
+    com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostumeOrBuilder getMonsterCostumesOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code msggamedata.MsgGameData}
@@ -2554,6 +2650,10 @@ public final class MsgGameDataOuterClass {
       monthlyMonsterRewardData_ = java.util.Collections.emptyList();
       linkBonuses_ = java.util.Collections.emptyList();
       linkBonusHiddenDatas_ = java.util.Collections.emptyList();
+      bingoCompleteEvent_ = java.util.Collections.emptyList();
+      monsterCostumeCollections_ = java.util.Collections.emptyList();
+      monsterCostumeBundles_ = java.util.Collections.emptyList();
+      monsterCostumes_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -3546,6 +3646,42 @@ public final class MsgGameDataOuterClass {
                   input.readMessage(com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.MsgLinkBonusHiddenData.parser(), extensionRegistry));
               break;
             }
+            case 890: {
+              if (!((mutable_bitField3_ & 0x00000080) == 0x00000080)) {
+                bingoCompleteEvent_ = new java.util.ArrayList<com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent>();
+                mutable_bitField3_ |= 0x00000080;
+              }
+              bingoCompleteEvent_.add(
+                  input.readMessage(com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.parser(), extensionRegistry));
+              break;
+            }
+            case 898: {
+              if (!((mutable_bitField3_ & 0x00000100) == 0x00000100)) {
+                monsterCostumeCollections_ = new java.util.ArrayList<com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection>();
+                mutable_bitField3_ |= 0x00000100;
+              }
+              monsterCostumeCollections_.add(
+                  input.readMessage(com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.parser(), extensionRegistry));
+              break;
+            }
+            case 906: {
+              if (!((mutable_bitField3_ & 0x00000200) == 0x00000200)) {
+                monsterCostumeBundles_ = new java.util.ArrayList<com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle>();
+                mutable_bitField3_ |= 0x00000200;
+              }
+              monsterCostumeBundles_.add(
+                  input.readMessage(com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.parser(), extensionRegistry));
+              break;
+            }
+            case 914: {
+              if (!((mutable_bitField3_ & 0x00000400) == 0x00000400)) {
+                monsterCostumes_ = new java.util.ArrayList<com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume>();
+                mutable_bitField3_ |= 0x00000400;
+              }
+              monsterCostumes_.add(
+                  input.readMessage(com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.parser(), extensionRegistry));
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -3859,6 +3995,18 @@ public final class MsgGameDataOuterClass {
         }
         if (((mutable_bitField3_ & 0x00000040) == 0x00000040)) {
           linkBonusHiddenDatas_ = java.util.Collections.unmodifiableList(linkBonusHiddenDatas_);
+        }
+        if (((mutable_bitField3_ & 0x00000080) == 0x00000080)) {
+          bingoCompleteEvent_ = java.util.Collections.unmodifiableList(bingoCompleteEvent_);
+        }
+        if (((mutable_bitField3_ & 0x00000100) == 0x00000100)) {
+          monsterCostumeCollections_ = java.util.Collections.unmodifiableList(monsterCostumeCollections_);
+        }
+        if (((mutable_bitField3_ & 0x00000200) == 0x00000200)) {
+          monsterCostumeBundles_ = java.util.Collections.unmodifiableList(monsterCostumeBundles_);
+        }
+        if (((mutable_bitField3_ & 0x00000400) == 0x00000400)) {
+          monsterCostumes_ = java.util.Collections.unmodifiableList(monsterCostumes_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -7420,6 +7568,146 @@ public final class MsgGameDataOuterClass {
       return linkBonusHiddenDatas_.get(index);
     }
 
+    public static final int BINGO_COMPLETE_EVENT_FIELD_NUMBER = 111;
+    private java.util.List<com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent> bingoCompleteEvent_;
+    /**
+     * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent> getBingoCompleteEventList() {
+      return bingoCompleteEvent_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEventOrBuilder> 
+        getBingoCompleteEventOrBuilderList() {
+      return bingoCompleteEvent_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+     */
+    public int getBingoCompleteEventCount() {
+      return bingoCompleteEvent_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+     */
+    public com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent getBingoCompleteEvent(int index) {
+      return bingoCompleteEvent_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+     */
+    public com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEventOrBuilder getBingoCompleteEventOrBuilder(
+        int index) {
+      return bingoCompleteEvent_.get(index);
+    }
+
+    public static final int MONSTER_COSTUME_COLLECTIONS_FIELD_NUMBER = 112;
+    private java.util.List<com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection> monsterCostumeCollections_;
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection> getMonsterCostumeCollectionsList() {
+      return monsterCostumeCollections_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollectionOrBuilder> 
+        getMonsterCostumeCollectionsOrBuilderList() {
+      return monsterCostumeCollections_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+     */
+    public int getMonsterCostumeCollectionsCount() {
+      return monsterCostumeCollections_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+     */
+    public com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection getMonsterCostumeCollections(int index) {
+      return monsterCostumeCollections_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+     */
+    public com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollectionOrBuilder getMonsterCostumeCollectionsOrBuilder(
+        int index) {
+      return monsterCostumeCollections_.get(index);
+    }
+
+    public static final int MONSTER_COSTUME_BUNDLES_FIELD_NUMBER = 113;
+    private java.util.List<com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle> monsterCostumeBundles_;
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle> getMonsterCostumeBundlesList() {
+      return monsterCostumeBundles_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundleOrBuilder> 
+        getMonsterCostumeBundlesOrBuilderList() {
+      return monsterCostumeBundles_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+     */
+    public int getMonsterCostumeBundlesCount() {
+      return monsterCostumeBundles_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+     */
+    public com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle getMonsterCostumeBundles(int index) {
+      return monsterCostumeBundles_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+     */
+    public com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundleOrBuilder getMonsterCostumeBundlesOrBuilder(
+        int index) {
+      return monsterCostumeBundles_.get(index);
+    }
+
+    public static final int MONSTER_COSTUMES_FIELD_NUMBER = 114;
+    private java.util.List<com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume> monsterCostumes_;
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume> getMonsterCostumesList() {
+      return monsterCostumes_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostumeOrBuilder> 
+        getMonsterCostumesOrBuilderList() {
+      return monsterCostumes_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+     */
+    public int getMonsterCostumesCount() {
+      return monsterCostumes_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+     */
+    public com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume getMonsterCostumes(int index) {
+      return monsterCostumes_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+     */
+    public com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostumeOrBuilder getMonsterCostumesOrBuilder(
+        int index) {
+      return monsterCostumes_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -7753,6 +8041,18 @@ public final class MsgGameDataOuterClass {
       }
       for (int i = 0; i < linkBonusHiddenDatas_.size(); i++) {
         output.writeMessage(110, linkBonusHiddenDatas_.get(i));
+      }
+      for (int i = 0; i < bingoCompleteEvent_.size(); i++) {
+        output.writeMessage(111, bingoCompleteEvent_.get(i));
+      }
+      for (int i = 0; i < monsterCostumeCollections_.size(); i++) {
+        output.writeMessage(112, monsterCostumeCollections_.get(i));
+      }
+      for (int i = 0; i < monsterCostumeBundles_.size(); i++) {
+        output.writeMessage(113, monsterCostumeBundles_.get(i));
+      }
+      for (int i = 0; i < monsterCostumes_.size(); i++) {
+        output.writeMessage(114, monsterCostumes_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -8204,6 +8504,22 @@ public final class MsgGameDataOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(110, linkBonusHiddenDatas_.get(i));
       }
+      for (int i = 0; i < bingoCompleteEvent_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(111, bingoCompleteEvent_.get(i));
+      }
+      for (int i = 0; i < monsterCostumeCollections_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(112, monsterCostumeCollections_.get(i));
+      }
+      for (int i = 0; i < monsterCostumeBundles_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(113, monsterCostumeBundles_.get(i));
+      }
+      for (int i = 0; i < monsterCostumes_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(114, monsterCostumes_.get(i));
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -8426,6 +8742,14 @@ public final class MsgGameDataOuterClass {
           .equals(other.getLinkBonusesList());
       result = result && getLinkBonusHiddenDatasList()
           .equals(other.getLinkBonusHiddenDatasList());
+      result = result && getBingoCompleteEventList()
+          .equals(other.getBingoCompleteEventList());
+      result = result && getMonsterCostumeCollectionsList()
+          .equals(other.getMonsterCostumeCollectionsList());
+      result = result && getMonsterCostumeBundlesList()
+          .equals(other.getMonsterCostumeBundlesList());
+      result = result && getMonsterCostumesList()
+          .equals(other.getMonsterCostumesList());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -8847,6 +9171,22 @@ public final class MsgGameDataOuterClass {
         hash = (37 * hash) + LINK_BONUS_HIDDEN_DATAS_FIELD_NUMBER;
         hash = (53 * hash) + getLinkBonusHiddenDatasList().hashCode();
       }
+      if (getBingoCompleteEventCount() > 0) {
+        hash = (37 * hash) + BINGO_COMPLETE_EVENT_FIELD_NUMBER;
+        hash = (53 * hash) + getBingoCompleteEventList().hashCode();
+      }
+      if (getMonsterCostumeCollectionsCount() > 0) {
+        hash = (37 * hash) + MONSTER_COSTUME_COLLECTIONS_FIELD_NUMBER;
+        hash = (53 * hash) + getMonsterCostumeCollectionsList().hashCode();
+      }
+      if (getMonsterCostumeBundlesCount() > 0) {
+        hash = (37 * hash) + MONSTER_COSTUME_BUNDLES_FIELD_NUMBER;
+        hash = (53 * hash) + getMonsterCostumeBundlesList().hashCode();
+      }
+      if (getMonsterCostumesCount() > 0) {
+        hash = (37 * hash) + MONSTER_COSTUMES_FIELD_NUMBER;
+        hash = (53 * hash) + getMonsterCostumesList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -9071,6 +9411,10 @@ public final class MsgGameDataOuterClass {
           getMonthlyMonsterRewardDataFieldBuilder();
           getLinkBonusesFieldBuilder();
           getLinkBonusHiddenDatasFieldBuilder();
+          getBingoCompleteEventFieldBuilder();
+          getMonsterCostumeCollectionsFieldBuilder();
+          getMonsterCostumeBundlesFieldBuilder();
+          getMonsterCostumesFieldBuilder();
         }
       }
       public Builder clear() {
@@ -9676,6 +10020,30 @@ public final class MsgGameDataOuterClass {
           bitField3_ = (bitField3_ & ~0x00000040);
         } else {
           linkBonusHiddenDatasBuilder_.clear();
+        }
+        if (bingoCompleteEventBuilder_ == null) {
+          bingoCompleteEvent_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000080);
+        } else {
+          bingoCompleteEventBuilder_.clear();
+        }
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          monsterCostumeCollections_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000100);
+        } else {
+          monsterCostumeCollectionsBuilder_.clear();
+        }
+        if (monsterCostumeBundlesBuilder_ == null) {
+          monsterCostumeBundles_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000200);
+        } else {
+          monsterCostumeBundlesBuilder_.clear();
+        }
+        if (monsterCostumesBuilder_ == null) {
+          monsterCostumes_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000400);
+        } else {
+          monsterCostumesBuilder_.clear();
         }
         return this;
       }
@@ -10610,6 +10978,42 @@ public final class MsgGameDataOuterClass {
           result.linkBonusHiddenDatas_ = linkBonusHiddenDatas_;
         } else {
           result.linkBonusHiddenDatas_ = linkBonusHiddenDatasBuilder_.build();
+        }
+        if (bingoCompleteEventBuilder_ == null) {
+          if (((bitField3_ & 0x00000080) == 0x00000080)) {
+            bingoCompleteEvent_ = java.util.Collections.unmodifiableList(bingoCompleteEvent_);
+            bitField3_ = (bitField3_ & ~0x00000080);
+          }
+          result.bingoCompleteEvent_ = bingoCompleteEvent_;
+        } else {
+          result.bingoCompleteEvent_ = bingoCompleteEventBuilder_.build();
+        }
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          if (((bitField3_ & 0x00000100) == 0x00000100)) {
+            monsterCostumeCollections_ = java.util.Collections.unmodifiableList(monsterCostumeCollections_);
+            bitField3_ = (bitField3_ & ~0x00000100);
+          }
+          result.monsterCostumeCollections_ = monsterCostumeCollections_;
+        } else {
+          result.monsterCostumeCollections_ = monsterCostumeCollectionsBuilder_.build();
+        }
+        if (monsterCostumeBundlesBuilder_ == null) {
+          if (((bitField3_ & 0x00000200) == 0x00000200)) {
+            monsterCostumeBundles_ = java.util.Collections.unmodifiableList(monsterCostumeBundles_);
+            bitField3_ = (bitField3_ & ~0x00000200);
+          }
+          result.monsterCostumeBundles_ = monsterCostumeBundles_;
+        } else {
+          result.monsterCostumeBundles_ = monsterCostumeBundlesBuilder_.build();
+        }
+        if (monsterCostumesBuilder_ == null) {
+          if (((bitField3_ & 0x00000400) == 0x00000400)) {
+            monsterCostumes_ = java.util.Collections.unmodifiableList(monsterCostumes_);
+            bitField3_ = (bitField3_ & ~0x00000400);
+          }
+          result.monsterCostumes_ = monsterCostumes_;
+        } else {
+          result.monsterCostumes_ = monsterCostumesBuilder_.build();
         }
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -13257,6 +13661,110 @@ public final class MsgGameDataOuterClass {
                    getLinkBonusHiddenDatasFieldBuilder() : null;
             } else {
               linkBonusHiddenDatasBuilder_.addAllMessages(other.linkBonusHiddenDatas_);
+            }
+          }
+        }
+        if (bingoCompleteEventBuilder_ == null) {
+          if (!other.bingoCompleteEvent_.isEmpty()) {
+            if (bingoCompleteEvent_.isEmpty()) {
+              bingoCompleteEvent_ = other.bingoCompleteEvent_;
+              bitField3_ = (bitField3_ & ~0x00000080);
+            } else {
+              ensureBingoCompleteEventIsMutable();
+              bingoCompleteEvent_.addAll(other.bingoCompleteEvent_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.bingoCompleteEvent_.isEmpty()) {
+            if (bingoCompleteEventBuilder_.isEmpty()) {
+              bingoCompleteEventBuilder_.dispose();
+              bingoCompleteEventBuilder_ = null;
+              bingoCompleteEvent_ = other.bingoCompleteEvent_;
+              bitField3_ = (bitField3_ & ~0x00000080);
+              bingoCompleteEventBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getBingoCompleteEventFieldBuilder() : null;
+            } else {
+              bingoCompleteEventBuilder_.addAllMessages(other.bingoCompleteEvent_);
+            }
+          }
+        }
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          if (!other.monsterCostumeCollections_.isEmpty()) {
+            if (monsterCostumeCollections_.isEmpty()) {
+              monsterCostumeCollections_ = other.monsterCostumeCollections_;
+              bitField3_ = (bitField3_ & ~0x00000100);
+            } else {
+              ensureMonsterCostumeCollectionsIsMutable();
+              monsterCostumeCollections_.addAll(other.monsterCostumeCollections_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.monsterCostumeCollections_.isEmpty()) {
+            if (monsterCostumeCollectionsBuilder_.isEmpty()) {
+              monsterCostumeCollectionsBuilder_.dispose();
+              monsterCostumeCollectionsBuilder_ = null;
+              monsterCostumeCollections_ = other.monsterCostumeCollections_;
+              bitField3_ = (bitField3_ & ~0x00000100);
+              monsterCostumeCollectionsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getMonsterCostumeCollectionsFieldBuilder() : null;
+            } else {
+              monsterCostumeCollectionsBuilder_.addAllMessages(other.monsterCostumeCollections_);
+            }
+          }
+        }
+        if (monsterCostumeBundlesBuilder_ == null) {
+          if (!other.monsterCostumeBundles_.isEmpty()) {
+            if (monsterCostumeBundles_.isEmpty()) {
+              monsterCostumeBundles_ = other.monsterCostumeBundles_;
+              bitField3_ = (bitField3_ & ~0x00000200);
+            } else {
+              ensureMonsterCostumeBundlesIsMutable();
+              monsterCostumeBundles_.addAll(other.monsterCostumeBundles_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.monsterCostumeBundles_.isEmpty()) {
+            if (monsterCostumeBundlesBuilder_.isEmpty()) {
+              monsterCostumeBundlesBuilder_.dispose();
+              monsterCostumeBundlesBuilder_ = null;
+              monsterCostumeBundles_ = other.monsterCostumeBundles_;
+              bitField3_ = (bitField3_ & ~0x00000200);
+              monsterCostumeBundlesBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getMonsterCostumeBundlesFieldBuilder() : null;
+            } else {
+              monsterCostumeBundlesBuilder_.addAllMessages(other.monsterCostumeBundles_);
+            }
+          }
+        }
+        if (monsterCostumesBuilder_ == null) {
+          if (!other.monsterCostumes_.isEmpty()) {
+            if (monsterCostumes_.isEmpty()) {
+              monsterCostumes_ = other.monsterCostumes_;
+              bitField3_ = (bitField3_ & ~0x00000400);
+            } else {
+              ensureMonsterCostumesIsMutable();
+              monsterCostumes_.addAll(other.monsterCostumes_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.monsterCostumes_.isEmpty()) {
+            if (monsterCostumesBuilder_.isEmpty()) {
+              monsterCostumesBuilder_.dispose();
+              monsterCostumesBuilder_ = null;
+              monsterCostumes_ = other.monsterCostumes_;
+              bitField3_ = (bitField3_ & ~0x00000400);
+              monsterCostumesBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getMonsterCostumesFieldBuilder() : null;
+            } else {
+              monsterCostumesBuilder_.addAllMessages(other.monsterCostumes_);
             }
           }
         }
@@ -37274,6 +37782,966 @@ public final class MsgGameDataOuterClass {
         }
         return linkBonusHiddenDatasBuilder_;
       }
+
+      private java.util.List<com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent> bingoCompleteEvent_ =
+        java.util.Collections.emptyList();
+      private void ensureBingoCompleteEventIsMutable() {
+        if (!((bitField3_ & 0x00000080) == 0x00000080)) {
+          bingoCompleteEvent_ = new java.util.ArrayList<com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent>(bingoCompleteEvent_);
+          bitField3_ |= 0x00000080;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent, com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.Builder, com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEventOrBuilder> bingoCompleteEventBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent> getBingoCompleteEventList() {
+        if (bingoCompleteEventBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(bingoCompleteEvent_);
+        } else {
+          return bingoCompleteEventBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public int getBingoCompleteEventCount() {
+        if (bingoCompleteEventBuilder_ == null) {
+          return bingoCompleteEvent_.size();
+        } else {
+          return bingoCompleteEventBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent getBingoCompleteEvent(int index) {
+        if (bingoCompleteEventBuilder_ == null) {
+          return bingoCompleteEvent_.get(index);
+        } else {
+          return bingoCompleteEventBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public Builder setBingoCompleteEvent(
+          int index, com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent value) {
+        if (bingoCompleteEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBingoCompleteEventIsMutable();
+          bingoCompleteEvent_.set(index, value);
+          onChanged();
+        } else {
+          bingoCompleteEventBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public Builder setBingoCompleteEvent(
+          int index, com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.Builder builderForValue) {
+        if (bingoCompleteEventBuilder_ == null) {
+          ensureBingoCompleteEventIsMutable();
+          bingoCompleteEvent_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          bingoCompleteEventBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public Builder addBingoCompleteEvent(com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent value) {
+        if (bingoCompleteEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBingoCompleteEventIsMutable();
+          bingoCompleteEvent_.add(value);
+          onChanged();
+        } else {
+          bingoCompleteEventBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public Builder addBingoCompleteEvent(
+          int index, com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent value) {
+        if (bingoCompleteEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBingoCompleteEventIsMutable();
+          bingoCompleteEvent_.add(index, value);
+          onChanged();
+        } else {
+          bingoCompleteEventBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public Builder addBingoCompleteEvent(
+          com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.Builder builderForValue) {
+        if (bingoCompleteEventBuilder_ == null) {
+          ensureBingoCompleteEventIsMutable();
+          bingoCompleteEvent_.add(builderForValue.build());
+          onChanged();
+        } else {
+          bingoCompleteEventBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public Builder addBingoCompleteEvent(
+          int index, com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.Builder builderForValue) {
+        if (bingoCompleteEventBuilder_ == null) {
+          ensureBingoCompleteEventIsMutable();
+          bingoCompleteEvent_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          bingoCompleteEventBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public Builder addAllBingoCompleteEvent(
+          java.lang.Iterable<? extends com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent> values) {
+        if (bingoCompleteEventBuilder_ == null) {
+          ensureBingoCompleteEventIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, bingoCompleteEvent_);
+          onChanged();
+        } else {
+          bingoCompleteEventBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public Builder clearBingoCompleteEvent() {
+        if (bingoCompleteEventBuilder_ == null) {
+          bingoCompleteEvent_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000080);
+          onChanged();
+        } else {
+          bingoCompleteEventBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public Builder removeBingoCompleteEvent(int index) {
+        if (bingoCompleteEventBuilder_ == null) {
+          ensureBingoCompleteEventIsMutable();
+          bingoCompleteEvent_.remove(index);
+          onChanged();
+        } else {
+          bingoCompleteEventBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.Builder getBingoCompleteEventBuilder(
+          int index) {
+        return getBingoCompleteEventFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEventOrBuilder getBingoCompleteEventOrBuilder(
+          int index) {
+        if (bingoCompleteEventBuilder_ == null) {
+          return bingoCompleteEvent_.get(index);  } else {
+          return bingoCompleteEventBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEventOrBuilder> 
+           getBingoCompleteEventOrBuilderList() {
+        if (bingoCompleteEventBuilder_ != null) {
+          return bingoCompleteEventBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(bingoCompleteEvent_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.Builder addBingoCompleteEventBuilder() {
+        return getBingoCompleteEventFieldBuilder().addBuilder(
+            com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.Builder addBingoCompleteEventBuilder(
+          int index) {
+        return getBingoCompleteEventFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgBingoCompleteEvent bingo_complete_event = 111;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.Builder> 
+           getBingoCompleteEventBuilderList() {
+        return getBingoCompleteEventFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent, com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.Builder, com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEventOrBuilder> 
+          getBingoCompleteEventFieldBuilder() {
+        if (bingoCompleteEventBuilder_ == null) {
+          bingoCompleteEventBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent, com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEvent.Builder, com.felania.msldb.MsgBingoCompleteEventOuterClass.MsgBingoCompleteEventOrBuilder>(
+                  bingoCompleteEvent_,
+                  ((bitField3_ & 0x00000080) == 0x00000080),
+                  getParentForChildren(),
+                  isClean());
+          bingoCompleteEvent_ = null;
+        }
+        return bingoCompleteEventBuilder_;
+      }
+
+      private java.util.List<com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection> monsterCostumeCollections_ =
+        java.util.Collections.emptyList();
+      private void ensureMonsterCostumeCollectionsIsMutable() {
+        if (!((bitField3_ & 0x00000100) == 0x00000100)) {
+          monsterCostumeCollections_ = new java.util.ArrayList<com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection>(monsterCostumeCollections_);
+          bitField3_ |= 0x00000100;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection, com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.Builder, com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollectionOrBuilder> monsterCostumeCollectionsBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection> getMonsterCostumeCollectionsList() {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(monsterCostumeCollections_);
+        } else {
+          return monsterCostumeCollectionsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public int getMonsterCostumeCollectionsCount() {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          return monsterCostumeCollections_.size();
+        } else {
+          return monsterCostumeCollectionsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection getMonsterCostumeCollections(int index) {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          return monsterCostumeCollections_.get(index);
+        } else {
+          return monsterCostumeCollectionsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public Builder setMonsterCostumeCollections(
+          int index, com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection value) {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonsterCostumeCollectionsIsMutable();
+          monsterCostumeCollections_.set(index, value);
+          onChanged();
+        } else {
+          monsterCostumeCollectionsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public Builder setMonsterCostumeCollections(
+          int index, com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.Builder builderForValue) {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          ensureMonsterCostumeCollectionsIsMutable();
+          monsterCostumeCollections_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          monsterCostumeCollectionsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public Builder addMonsterCostumeCollections(com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection value) {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonsterCostumeCollectionsIsMutable();
+          monsterCostumeCollections_.add(value);
+          onChanged();
+        } else {
+          monsterCostumeCollectionsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public Builder addMonsterCostumeCollections(
+          int index, com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection value) {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonsterCostumeCollectionsIsMutable();
+          monsterCostumeCollections_.add(index, value);
+          onChanged();
+        } else {
+          monsterCostumeCollectionsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public Builder addMonsterCostumeCollections(
+          com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.Builder builderForValue) {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          ensureMonsterCostumeCollectionsIsMutable();
+          monsterCostumeCollections_.add(builderForValue.build());
+          onChanged();
+        } else {
+          monsterCostumeCollectionsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public Builder addMonsterCostumeCollections(
+          int index, com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.Builder builderForValue) {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          ensureMonsterCostumeCollectionsIsMutable();
+          monsterCostumeCollections_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          monsterCostumeCollectionsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public Builder addAllMonsterCostumeCollections(
+          java.lang.Iterable<? extends com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection> values) {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          ensureMonsterCostumeCollectionsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, monsterCostumeCollections_);
+          onChanged();
+        } else {
+          monsterCostumeCollectionsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public Builder clearMonsterCostumeCollections() {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          monsterCostumeCollections_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000100);
+          onChanged();
+        } else {
+          monsterCostumeCollectionsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public Builder removeMonsterCostumeCollections(int index) {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          ensureMonsterCostumeCollectionsIsMutable();
+          monsterCostumeCollections_.remove(index);
+          onChanged();
+        } else {
+          monsterCostumeCollectionsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.Builder getMonsterCostumeCollectionsBuilder(
+          int index) {
+        return getMonsterCostumeCollectionsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollectionOrBuilder getMonsterCostumeCollectionsOrBuilder(
+          int index) {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          return monsterCostumeCollections_.get(index);  } else {
+          return monsterCostumeCollectionsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollectionOrBuilder> 
+           getMonsterCostumeCollectionsOrBuilderList() {
+        if (monsterCostumeCollectionsBuilder_ != null) {
+          return monsterCostumeCollectionsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(monsterCostumeCollections_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.Builder addMonsterCostumeCollectionsBuilder() {
+        return getMonsterCostumeCollectionsFieldBuilder().addBuilder(
+            com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.Builder addMonsterCostumeCollectionsBuilder(
+          int index) {
+        return getMonsterCostumeCollectionsFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeCollection monster_costume_collections = 112;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.Builder> 
+           getMonsterCostumeCollectionsBuilderList() {
+        return getMonsterCostumeCollectionsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection, com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.Builder, com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollectionOrBuilder> 
+          getMonsterCostumeCollectionsFieldBuilder() {
+        if (monsterCostumeCollectionsBuilder_ == null) {
+          monsterCostumeCollectionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection, com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollection.Builder, com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.MsgMonsterCostumeCollectionOrBuilder>(
+                  monsterCostumeCollections_,
+                  ((bitField3_ & 0x00000100) == 0x00000100),
+                  getParentForChildren(),
+                  isClean());
+          monsterCostumeCollections_ = null;
+        }
+        return monsterCostumeCollectionsBuilder_;
+      }
+
+      private java.util.List<com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle> monsterCostumeBundles_ =
+        java.util.Collections.emptyList();
+      private void ensureMonsterCostumeBundlesIsMutable() {
+        if (!((bitField3_ & 0x00000200) == 0x00000200)) {
+          monsterCostumeBundles_ = new java.util.ArrayList<com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle>(monsterCostumeBundles_);
+          bitField3_ |= 0x00000200;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle, com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.Builder, com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundleOrBuilder> monsterCostumeBundlesBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle> getMonsterCostumeBundlesList() {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(monsterCostumeBundles_);
+        } else {
+          return monsterCostumeBundlesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public int getMonsterCostumeBundlesCount() {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          return monsterCostumeBundles_.size();
+        } else {
+          return monsterCostumeBundlesBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle getMonsterCostumeBundles(int index) {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          return monsterCostumeBundles_.get(index);
+        } else {
+          return monsterCostumeBundlesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public Builder setMonsterCostumeBundles(
+          int index, com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle value) {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonsterCostumeBundlesIsMutable();
+          monsterCostumeBundles_.set(index, value);
+          onChanged();
+        } else {
+          monsterCostumeBundlesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public Builder setMonsterCostumeBundles(
+          int index, com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.Builder builderForValue) {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          ensureMonsterCostumeBundlesIsMutable();
+          monsterCostumeBundles_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          monsterCostumeBundlesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public Builder addMonsterCostumeBundles(com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle value) {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonsterCostumeBundlesIsMutable();
+          monsterCostumeBundles_.add(value);
+          onChanged();
+        } else {
+          monsterCostumeBundlesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public Builder addMonsterCostumeBundles(
+          int index, com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle value) {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonsterCostumeBundlesIsMutable();
+          monsterCostumeBundles_.add(index, value);
+          onChanged();
+        } else {
+          monsterCostumeBundlesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public Builder addMonsterCostumeBundles(
+          com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.Builder builderForValue) {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          ensureMonsterCostumeBundlesIsMutable();
+          monsterCostumeBundles_.add(builderForValue.build());
+          onChanged();
+        } else {
+          monsterCostumeBundlesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public Builder addMonsterCostumeBundles(
+          int index, com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.Builder builderForValue) {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          ensureMonsterCostumeBundlesIsMutable();
+          monsterCostumeBundles_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          monsterCostumeBundlesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public Builder addAllMonsterCostumeBundles(
+          java.lang.Iterable<? extends com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle> values) {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          ensureMonsterCostumeBundlesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, monsterCostumeBundles_);
+          onChanged();
+        } else {
+          monsterCostumeBundlesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public Builder clearMonsterCostumeBundles() {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          monsterCostumeBundles_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000200);
+          onChanged();
+        } else {
+          monsterCostumeBundlesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public Builder removeMonsterCostumeBundles(int index) {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          ensureMonsterCostumeBundlesIsMutable();
+          monsterCostumeBundles_.remove(index);
+          onChanged();
+        } else {
+          monsterCostumeBundlesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.Builder getMonsterCostumeBundlesBuilder(
+          int index) {
+        return getMonsterCostumeBundlesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundleOrBuilder getMonsterCostumeBundlesOrBuilder(
+          int index) {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          return monsterCostumeBundles_.get(index);  } else {
+          return monsterCostumeBundlesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundleOrBuilder> 
+           getMonsterCostumeBundlesOrBuilderList() {
+        if (monsterCostumeBundlesBuilder_ != null) {
+          return monsterCostumeBundlesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(monsterCostumeBundles_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.Builder addMonsterCostumeBundlesBuilder() {
+        return getMonsterCostumeBundlesFieldBuilder().addBuilder(
+            com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.Builder addMonsterCostumeBundlesBuilder(
+          int index) {
+        return getMonsterCostumeBundlesFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostumeBundle monster_costume_bundles = 113;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.Builder> 
+           getMonsterCostumeBundlesBuilderList() {
+        return getMonsterCostumeBundlesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle, com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.Builder, com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundleOrBuilder> 
+          getMonsterCostumeBundlesFieldBuilder() {
+        if (monsterCostumeBundlesBuilder_ == null) {
+          monsterCostumeBundlesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle, com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundle.Builder, com.felania.msldb.MsgMonsterCostumeBundleOuterClass.MsgMonsterCostumeBundleOrBuilder>(
+                  monsterCostumeBundles_,
+                  ((bitField3_ & 0x00000200) == 0x00000200),
+                  getParentForChildren(),
+                  isClean());
+          monsterCostumeBundles_ = null;
+        }
+        return monsterCostumeBundlesBuilder_;
+      }
+
+      private java.util.List<com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume> monsterCostumes_ =
+        java.util.Collections.emptyList();
+      private void ensureMonsterCostumesIsMutable() {
+        if (!((bitField3_ & 0x00000400) == 0x00000400)) {
+          monsterCostumes_ = new java.util.ArrayList<com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume>(monsterCostumes_);
+          bitField3_ |= 0x00000400;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume, com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.Builder, com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostumeOrBuilder> monsterCostumesBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume> getMonsterCostumesList() {
+        if (monsterCostumesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(monsterCostumes_);
+        } else {
+          return monsterCostumesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public int getMonsterCostumesCount() {
+        if (monsterCostumesBuilder_ == null) {
+          return monsterCostumes_.size();
+        } else {
+          return monsterCostumesBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume getMonsterCostumes(int index) {
+        if (monsterCostumesBuilder_ == null) {
+          return monsterCostumes_.get(index);
+        } else {
+          return monsterCostumesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public Builder setMonsterCostumes(
+          int index, com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume value) {
+        if (monsterCostumesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonsterCostumesIsMutable();
+          monsterCostumes_.set(index, value);
+          onChanged();
+        } else {
+          monsterCostumesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public Builder setMonsterCostumes(
+          int index, com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.Builder builderForValue) {
+        if (monsterCostumesBuilder_ == null) {
+          ensureMonsterCostumesIsMutable();
+          monsterCostumes_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          monsterCostumesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public Builder addMonsterCostumes(com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume value) {
+        if (monsterCostumesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonsterCostumesIsMutable();
+          monsterCostumes_.add(value);
+          onChanged();
+        } else {
+          monsterCostumesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public Builder addMonsterCostumes(
+          int index, com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume value) {
+        if (monsterCostumesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonsterCostumesIsMutable();
+          monsterCostumes_.add(index, value);
+          onChanged();
+        } else {
+          monsterCostumesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public Builder addMonsterCostumes(
+          com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.Builder builderForValue) {
+        if (monsterCostumesBuilder_ == null) {
+          ensureMonsterCostumesIsMutable();
+          monsterCostumes_.add(builderForValue.build());
+          onChanged();
+        } else {
+          monsterCostumesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public Builder addMonsterCostumes(
+          int index, com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.Builder builderForValue) {
+        if (monsterCostumesBuilder_ == null) {
+          ensureMonsterCostumesIsMutable();
+          monsterCostumes_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          monsterCostumesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public Builder addAllMonsterCostumes(
+          java.lang.Iterable<? extends com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume> values) {
+        if (monsterCostumesBuilder_ == null) {
+          ensureMonsterCostumesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, monsterCostumes_);
+          onChanged();
+        } else {
+          monsterCostumesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public Builder clearMonsterCostumes() {
+        if (monsterCostumesBuilder_ == null) {
+          monsterCostumes_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000400);
+          onChanged();
+        } else {
+          monsterCostumesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public Builder removeMonsterCostumes(int index) {
+        if (monsterCostumesBuilder_ == null) {
+          ensureMonsterCostumesIsMutable();
+          monsterCostumes_.remove(index);
+          onChanged();
+        } else {
+          monsterCostumesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.Builder getMonsterCostumesBuilder(
+          int index) {
+        return getMonsterCostumesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostumeOrBuilder getMonsterCostumesOrBuilder(
+          int index) {
+        if (monsterCostumesBuilder_ == null) {
+          return monsterCostumes_.get(index);  } else {
+          return monsterCostumesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostumeOrBuilder> 
+           getMonsterCostumesOrBuilderList() {
+        if (monsterCostumesBuilder_ != null) {
+          return monsterCostumesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(monsterCostumes_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.Builder addMonsterCostumesBuilder() {
+        return getMonsterCostumesFieldBuilder().addBuilder(
+            com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.Builder addMonsterCostumesBuilder(
+          int index) {
+        return getMonsterCostumesFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgMonsterCostume monster_costumes = 114;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.Builder> 
+           getMonsterCostumesBuilderList() {
+        return getMonsterCostumesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume, com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.Builder, com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostumeOrBuilder> 
+          getMonsterCostumesFieldBuilder() {
+        if (monsterCostumesBuilder_ == null) {
+          monsterCostumesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume, com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.Builder, com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostumeOrBuilder>(
+                  monsterCostumes_,
+                  ((bitField3_ & 0x00000400) == 0x00000400),
+                  getParentForChildren(),
+                  isClean());
+          monsterCostumes_ = null;
+        }
+        return monsterCostumesBuilder_;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -37394,152 +38862,162 @@ public final class MsgGameDataOuterClass {
       "sonData.proto\032 MsgMonthlyMonsterGroupDat" +
       "a.proto\032!MsgMonthlyMonsterRewardData.pro" +
       "to\032\022MsgLinkBonus.proto\032\034MsgLinkBonusHidd" +
-      "enData.proto\"\243-\n\013MsgGameData\022\017\n\007version\030" +
+      "enData.proto\032\033MsgBingoCompleteEvent.prot" +
+      "o\032!MsgMonsterCostumeCollection.proto\032\035Ms" +
+      "gMonsterCostumeBundle.proto\032\027MsgMonsterC",
+      "ostume.proto\"\265/\n\013MsgGameData\022\017\n\007version\030" +
       "\001 \001(\r\022!\n\004uids\030\002 \003(\0132\023.msggamedata.MsgUid" +
-      "\022.\n\013user_levels\030\003 \003(\0132\031.msggamedata.MsgU",
+      "\022.\n\013user_levels\030\003 \003(\0132\031.msggamedata.MsgU" +
       "serLevel\022)\n\010monsters\030\004 \003(\0132\027.msggamedata" +
       ".MsgMonster\0222\n\rmonster_types\030\005 \003(\0132\033.msg" +
       "gamedata.MsgMonsterType\0224\n\016monster_level" +
       "s\030\007 \003(\0132\034.msggamedata.MsgMonsterLevel\0224\n" +
       "\016monster_skills\030\010 \003(\0132\034.msggamedata.MsgM" +
       "onsterSkill\022\'\n\007randoms\030\t \003(\0132\026.msggameda" +
-      "ta.MsgRandom\022)\n\010settings\030\n \003(\0132\027.msggame" +
+      "ta.MsgRandom\022)\n\010settings\030\n \003(\0132\027.msggame",
       "data.MsgSetting\022,\n\nshop_items\030\013 \003(\0132\030.ms" +
       "ggamedata.MsgShopItem\022#\n\005items\030\014 \003(\0132\024.m" +
-      "sggamedata.MsgItem\022%\n\006stages\030\r \003(\0132\025.msg",
+      "sggamedata.MsgItem\022%\n\006stages\030\r \003(\0132\025.msg" +
       "gamedata.MsgStage\022+\n\tsubstages\030\016 \003(\0132\030.m" +
       "sggamedata.MsgSubStage\0224\n\016stage_monsters" +
       "\030\017 \003(\0132\034.msggamedata.MsgStageMonster\022?\n\024" +
       "stage_monster_groups\030\020 \003(\0132!.msggamedata" +
       ".MsgStageMonsterGroup\0224\n\016dungeon_stages\030" +
       "\021 \003(\0132\034.msggamedata.MsgDungeonStage\022:\n\021d" +
-      "ungeon_substages\030\022 \003(\0132\037.msggamedata.Msg" +
+      "ungeon_substages\030\022 \003(\0132\037.msggamedata.Msg",
       "DungeonSubStage\0226\n\020dungeon_monsters\030\023 \003(" +
       "\0132\034.msggamedata.MsgStageMonster\022A\n\026dunge" +
-      "on_monster_groups\030\024 \003(\0132!.msggamedata.Ms",
+      "on_monster_groups\030\024 \003(\0132!.msggamedata.Ms" +
       "gStageMonsterGroup\0224\n\016status_effects\030\025 \003" +
       "(\0132\034.msggamedata.MsgStatusEffect\0224\n\016star" +
       "t_monsters\030\026 \003(\0132\034.msggamedata.MsgStartM" +
       "onster\022#\n\005runes\030\027 \003(\0132\024.msggamedata.MsgR" +
       "une\022\'\n\007summons\030\030 \003(\0132\026.msggamedata.MsgSu" +
       "mmon\0222\n\rrune_settings\030\031 \003(\0132\033.msggamedat" +
-      "a.MsgRuneSetting\022,\n\nrune_rares\030\032 \003(\0132\030.m" +
+      "a.MsgRuneSetting\022,\n\nrune_rares\030\032 \003(\0132\030.m",
       "sggamedata.MsgRuneRare\022A\n\025rune_optional_" +
       "effects\030\033 \003(\0132\".msggamedata.MsgRuneOptio" +
-      "nalEffect\0227\n\020rune_set_effects\030\034 \003(\0132\035.ms",
+      "nalEffect\0227\n\020rune_set_effects\030\034 \003(\0132\035.ms" +
       "ggamedata.MsgRuneSetEffect\022=\n\026monster_be" +
       "yond_pricing\030\035 \003(\0132\035.msggamedata.MsgMons" +
       "terBeyond\022.\n\014monster_dict\030\036 \003(\0132\030.msggam" +
       "edata.MsgDictItem\022/\n\013gift_sender\030\037 \003(\0132\032" +
       ".msggamedata.MsgGiftSender\0223\n\rgift_templ" +
       "ate\030  \003(\0132\034.msggamedata.MsgGiftTemplate\022" +
-      "%\n\006quests\030! \003(\0132\025.msggamedata.MsgQuest\022!" +
+      "%\n\006quests\030! \003(\0132\025.msggamedata.MsgQuest\022!",
       "\n\004npcs\030\" \003(\0132\023.msggamedata.MsgNPC\0226\n\rnpc" +
       "_talk_seqs\030# \003(\0132\037.msggamedata.MsgNPCTal" +
-      "kSequence\0223\n\016npc_auto_talks\030$ \003(\0132\033.msgg",
+      "kSequence\0223\n\016npc_auto_talks\030$ \003(\0132\033.msgg" +
       "amedata.MsgNPCTalkAuto\022:\n\021user_profile_i" +
       "con\030% \003(\0132\037.msggamedata.MsgUserProfileIc" +
       "on\022C\n\031monster_evolution_pricing\030& \003(\0132 ." +
       "msggamedata.MsgMonsterEvolution\022#\n\005helps" +
       "\030\' \003(\0132\024.msggamedata.MsgHelp\022)\n\010subhelps" +
       "\030( \003(\0132\027.msggamedata.MsgSubHelp\0225\n\017joje_" +
-      "shop_slots\030) \003(\0132\034.msggamedata.MsgJojeSh" +
+      "shop_slots\030) \003(\0132\034.msggamedata.MsgJojeSh",
       "opSlot\022.\n\013monster_ais\030* \003(\0132\031.msggamedat" +
       "a.MsgMonsterAi\022@\n\024battle_master_script\030+" +
-      " \003(\0132\".msggamedata.MsgBattleMasterScript",
+      " \003(\0132\".msggamedata.MsgBattleMasterScript" +
       "\022/\n\013arena_grade\030, \003(\0132\032.msggamedata.MsgA" +
       "renaGrade\0226\n\017arena_sub_grade\030- \003(\0132\035.msg" +
       "gamedata.MsgArenaSubGrade\022A\n\025monster_egg" +
       "_cutscenes\030. \003(\0132\".msggamedata.MsgMonste" +
       "rEggCutScene\0229\n\020loading_template\030/ \003(\0132\037" +
       ".msggamedata.MsgLoadingTemplate\0220\n\014log_t" +
-      "emplate\0300 \003(\0132\032.msggamedata.MsgLogTemplt" +
+      "emplate\0300 \003(\0132\032.msggamedata.MsgLogTemplt",
       "e\0228\n\020support_monsters\0302 \003(\0132\036.msggamedat" +
       "a.MsgSupportMonster\0229\n\021custom_btn_sounds" +
-      "\0303 \003(\0132\036.msggamedata.MsgCustomBtnSound\0222",
+      "\0303 \003(\0132\036.msggamedata.MsgCustomBtnSound\0222" +
       "\n\rarena_seasons\0304 \003(\0132\033.msggamedata.MsgA" +
       "renaSeason\022)\n!arena_attacker_gain_winnin" +
       "g_point\0305 \003(\r\022)\n!arena_defender_gain_win" +
       "ning_point\0306 \003(\r\0226\n\017chat_like_color\0307 \003(" +
       "\0132\035.msggamedata.MsgChatLikeColor\022=\n\023dail" +
       "y_bonus_seasons\0308 \003(\0132 .msggamedata.MsgD" +
-      "ailyBonusSeason\0221\n\rdaily_bonuses\0309 \003(\0132\032" +
+      "ailyBonusSeason\0221\n\rdaily_bonuses\0309 \003(\0132\032",
       ".msggamedata.MsgDailyBonus\0228\n\020infinite_s" +
       "easons\030: \003(\0132\036.msggamedata.MsgInfiniteSe" +
-      "ason\0226\n\017infinite_stages\030; \003(\0132\035.msggamed",
+      "ason\0226\n\017infinite_stages\030; \003(\0132\035.msggamed" +
       "ata.MsgInfiniteStage\022<\n\022infinite_substag" +
       "es\030< \003(\0132 .msggamedata.MsgInfiniteSubSta" +
       "ge\0227\n\021infinite_monsters\030= \003(\0132\034.msggamed" +
       "ata.MsgStageMonster\022B\n\027infinite_monster_" +
       "groups\030> \003(\0132!.msggamedata.MsgStageMonst" +
       "erGroup\022)\n\010missions\030? \003(\0132\027.msggamedata." +
-      "MsgMission\0222\n\rlobby_rewards\030@ \003(\0132\033.msgg" +
+      "MsgMission\0222\n\rlobby_rewards\030@ \003(\0132\033.msgg",
       "amedata.MsgLobbyReward\022>\n\025monster_captur" +
       "e_dicts\030A \003(\0132\037.msggamedata.MsgCaptureDi" +
-      "ctItem\022&\n\006credit\030B \003(\0132\026.msggamedata.Msg",
+      "ctItem\022&\n\006credit\030B \003(\0132\026.msggamedata.Msg" +
       "Credit\022<\n\022enforcement_values\030C \003(\0132 .msg" +
       "gamedata.MsgEnforcementValue\0226\n\017revive_m" +
       "onsters\030D \003(\0132\035.msggamedata.MsgReviveMon" +
       "ster\022B\n\025platform_achievements\030E \003(\0132#.ms" +
       "ggamedata.MsgPlatformAchievement\022.\n\010pack" +
       "ages\030F \003(\0132\034.msggamedata.MsgPackageQuest" +
-      "\022>\n\023captureking_seasons\030G \003(\0132!.msggamed" +
+      "\022>\n\023captureking_seasons\030G \003(\0132!.msggamed",
       "ata.MsgCaptureKingSeason\022<\n\022captureking_" +
       "grades\030H \003(\0132 .msggamedata.MsgCaptureKin" +
-      "gGrade\0220\n\014clan_emblems\030I \003(\0132\032.msggameda",
+      "gGrade\0220\n\014clan_emblems\030I \003(\0132\032.msggameda" +
       "ta.MsgClanEmblem\0220\n\014clan_seasons\030J \003(\0132\032" +
       ".msggamedata.MsgClanSeason\022=\n\023clan_seaso" +
       "n_battles\030K \003(\0132 .msggamedata.MsgClanSea" +
       "sonBattle\0224\n\013clan_grades\030L \003(\0132\037.msggame" +
       "data.MsgClanRewardGrade\0229\n\021clan_reward_t" +
       "iers\030M \003(\0132\036.msggamedata.MsgClanRewardTi" +
-      "er\022.\n\013clan_stages\030N \003(\0132\031.msggamedata.Ms" +
+      "er\022.\n\013clan_stages\030N \003(\0132\031.msggamedata.Ms",
       "gClanStage\0224\n\016clan_substages\030O \003(\0132\034.msg" +
       "gamedata.MsgClanSubStage\022=\n\023clan_battle_" +
-      "rewards\030P \003(\0132 .msggamedata.MsgClanBattl",
+      "rewards\030P \003(\0132 .msggamedata.MsgClanBattl" +
       "eReward\022V\n daily_bonus_returnuser_sequen" +
       "ces\030Q \003(\0132,.msggamedata.MsgDailyBonusRet" +
       "urnUserSequence\022<\n\022contractor_seasons\030R " +
       "\003(\0132 .msggamedata.MsgContractorSeason\022F\n" +
       "\030gacha_shop_event_banners\030S \003(\0132$.msggam" +
       "edata.MsgGachaShopEventBanner\022>\n\027special" +
-      "_revive_monsters\030T \003(\0132\035.msggamedata.Msg" +
+      "_revive_monsters\030T \003(\0132\035.msggamedata.Msg",
       "ReviveMonster\0222\n\rbingo_seasons\030Z \003(\0132\033.m" +
       "sggamedata.MsgBingoSeason\022;\n\022bingo_seaso" +
-      "n_datas\030[ \003(\0132\037.msggamedata.MsgBingoSeas",
+      "n_datas\030[ \003(\0132\037.msggamedata.MsgBingoSeas" +
       "onData\0227\n\020bingo_time_datas\030\\ \003(\0132\035.msgga" +
       "medata.MsgBingoTimeData\022C\n\026monster_upgra" +
       "de_skills\030] \003(\0132#.msggamedata.MsgMonster" +
       "UpgradeSkill\022O\n\035monster_upgrade_skill_pr" +
       "icing\030^ \003(\0132(.msggamedata.MsgMonsterUpgr" +
       "adeSkillPrice\022E\n\027clan_attendance_rewards" +
-      "\030_ \003(\0132$.msggamedata.MsgClanAttendanceRe" +
+      "\030_ \003(\0132$.msggamedata.MsgClanAttendanceRe",
       "ward\022<\n\022cvc_season_battles\030` \003(\0132 .msgga" +
       "medata.MsgClanSeasonBattle\022)\n\010promises\030a" +
-      " \003(\0132\027.msggamedata.MsgPromise\022G\n\030super_e",
+      " \003(\0132\027.msggamedata.MsgPromise\022G\n\030super_e" +
       "volution_monsters\030b \003(\0132%.msggamedata.Ms" +
       "gSuperEvolutionMonster\022=\n\023super_stone_re" +
       "cipes\030c \003(\0132 .msggamedata.MsgSuperStoneR" +
       "ecipe\022:\n\021cvc_battle_reward\030d \003(\0132\037.msgga" +
       "medata.MsgCVCBattleReward\022\035\n\025cvc_phase_b" +
       "onus_point\030e \003(\r\022@\n\020capture_festival\030f \003" +
-      "(\0132&.msggamedata.MsgCaptureFestivalRawDa" +
+      "(\0132&.msggamedata.MsgCaptureFestivalRawDa",
       "ta\022Y\n!capture_festival_ticket_condition\030" +
       "g \003(\0132..msggamedata.MsgCaptureFestivalTi" +
-      "cketCondition\022P\n\035stage_monster_groups_fe",
+      "cketCondition\022P\n\035stage_monster_groups_fe" +
       "stival\030h \003(\0132).msggamedata.MsgStageMonst" +
       "erGroupFestival\022O\n\034capture_festival_rank" +
       "_reward\030i \003(\0132).msggamedata.MsgCaptureFe" +
       "stivalRankReward\022M\n\033monthly_monster_seas" +
       "on_data\030j \003(\0132(.msggamedata.MsgMonthlyMo" +
       "nsterSeasonData\022K\n\032monthly_monster_group" +
-      "_data\030k \003(\0132\'.msggamedata.MsgMonthlyMons" +
+      "_data\030k \003(\0132\'.msggamedata.MsgMonthlyMons",
       "terGroupData\022M\n\033monthly_monster_reward_d" +
       "ata\030l \003(\0132(.msggamedata.MsgMonthlyMonste" +
-      "rRewardData\022/\n\014link_bonuses\030m \003(\0132\031.msgg",
+      "rRewardData\022/\n\014link_bonuses\030m \003(\0132\031.msgg" +
       "amedata.MsgLinkBonus\022D\n\027link_bonus_hidde" +
       "n_datas\030n \003(\0132#.msggamedata.MsgLinkBonus" +
-      "HiddenDataB\023\n\021com.felania.msldbb\006proto3"
+      "HiddenData\022@\n\024bingo_complete_event\030o \003(\013" +
+      "2\".msggamedata.MsgBingoCompleteEvent\022M\n\033" +
+      "monster_costume_collections\030p \003(\0132(.msgg" +
+      "amedata.MsgMonsterCostumeCollection\022E\n\027m" +
+      "onster_costume_bundles\030q \003(\0132$.msggameda",
+      "ta.MsgMonsterCostumeBundle\0228\n\020monster_co" +
+      "stumes\030r \003(\0132\036.msggamedata.MsgMonsterCos" +
+      "tumeB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -37645,13 +39123,17 @@ public final class MsgGameDataOuterClass {
           com.felania.msldb.MsgMonthlyMonsterRewardDataOuterClass.getDescriptor(),
           com.felania.msldb.MsgLinkBonusOuterClass.getDescriptor(),
           com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.getDescriptor(),
+          com.felania.msldb.MsgBingoCompleteEventOuterClass.getDescriptor(),
+          com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.getDescriptor(),
+          com.felania.msldb.MsgMonsterCostumeBundleOuterClass.getDescriptor(),
+          com.felania.msldb.MsgMonsterCostumeOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_MsgGameData_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_msggamedata_MsgGameData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgGameData_descriptor,
-        new java.lang.String[] { "Version", "Uids", "UserLevels", "Monsters", "MonsterTypes", "MonsterLevels", "MonsterSkills", "Randoms", "Settings", "ShopItems", "Items", "Stages", "Substages", "StageMonsters", "StageMonsterGroups", "DungeonStages", "DungeonSubstages", "DungeonMonsters", "DungeonMonsterGroups", "StatusEffects", "StartMonsters", "Runes", "Summons", "RuneSettings", "RuneRares", "RuneOptionalEffects", "RuneSetEffects", "MonsterBeyondPricing", "MonsterDict", "GiftSender", "GiftTemplate", "Quests", "Npcs", "NpcTalkSeqs", "NpcAutoTalks", "UserProfileIcon", "MonsterEvolutionPricing", "Helps", "Subhelps", "JojeShopSlots", "MonsterAis", "BattleMasterScript", "ArenaGrade", "ArenaSubGrade", "MonsterEggCutscenes", "LoadingTemplate", "LogTemplate", "SupportMonsters", "CustomBtnSounds", "ArenaSeasons", "ArenaAttackerGainWinningPoint", "ArenaDefenderGainWinningPoint", "ChatLikeColor", "DailyBonusSeasons", "DailyBonuses", "InfiniteSeasons", "InfiniteStages", "InfiniteSubstages", "InfiniteMonsters", "InfiniteMonsterGroups", "Missions", "LobbyRewards", "MonsterCaptureDicts", "Credit", "EnforcementValues", "ReviveMonsters", "PlatformAchievements", "Packages", "CapturekingSeasons", "CapturekingGrades", "ClanEmblems", "ClanSeasons", "ClanSeasonBattles", "ClanGrades", "ClanRewardTiers", "ClanStages", "ClanSubstages", "ClanBattleRewards", "DailyBonusReturnuserSequences", "ContractorSeasons", "GachaShopEventBanners", "SpecialReviveMonsters", "BingoSeasons", "BingoSeasonDatas", "BingoTimeDatas", "MonsterUpgradeSkills", "MonsterUpgradeSkillPricing", "ClanAttendanceRewards", "CvcSeasonBattles", "Promises", "SuperEvolutionMonsters", "SuperStoneRecipes", "CvcBattleReward", "CvcPhaseBonusPoint", "CaptureFestival", "CaptureFestivalTicketCondition", "StageMonsterGroupsFestival", "CaptureFestivalRankReward", "MonthlyMonsterSeasonData", "MonthlyMonsterGroupData", "MonthlyMonsterRewardData", "LinkBonuses", "LinkBonusHiddenDatas", });
+        new java.lang.String[] { "Version", "Uids", "UserLevels", "Monsters", "MonsterTypes", "MonsterLevels", "MonsterSkills", "Randoms", "Settings", "ShopItems", "Items", "Stages", "Substages", "StageMonsters", "StageMonsterGroups", "DungeonStages", "DungeonSubstages", "DungeonMonsters", "DungeonMonsterGroups", "StatusEffects", "StartMonsters", "Runes", "Summons", "RuneSettings", "RuneRares", "RuneOptionalEffects", "RuneSetEffects", "MonsterBeyondPricing", "MonsterDict", "GiftSender", "GiftTemplate", "Quests", "Npcs", "NpcTalkSeqs", "NpcAutoTalks", "UserProfileIcon", "MonsterEvolutionPricing", "Helps", "Subhelps", "JojeShopSlots", "MonsterAis", "BattleMasterScript", "ArenaGrade", "ArenaSubGrade", "MonsterEggCutscenes", "LoadingTemplate", "LogTemplate", "SupportMonsters", "CustomBtnSounds", "ArenaSeasons", "ArenaAttackerGainWinningPoint", "ArenaDefenderGainWinningPoint", "ChatLikeColor", "DailyBonusSeasons", "DailyBonuses", "InfiniteSeasons", "InfiniteStages", "InfiniteSubstages", "InfiniteMonsters", "InfiniteMonsterGroups", "Missions", "LobbyRewards", "MonsterCaptureDicts", "Credit", "EnforcementValues", "ReviveMonsters", "PlatformAchievements", "Packages", "CapturekingSeasons", "CapturekingGrades", "ClanEmblems", "ClanSeasons", "ClanSeasonBattles", "ClanGrades", "ClanRewardTiers", "ClanStages", "ClanSubstages", "ClanBattleRewards", "DailyBonusReturnuserSequences", "ContractorSeasons", "GachaShopEventBanners", "SpecialReviveMonsters", "BingoSeasons", "BingoSeasonDatas", "BingoTimeDatas", "MonsterUpgradeSkills", "MonsterUpgradeSkillPricing", "ClanAttendanceRewards", "CvcSeasonBattles", "Promises", "SuperEvolutionMonsters", "SuperStoneRecipes", "CvcBattleReward", "CvcPhaseBonusPoint", "CaptureFestival", "CaptureFestivalTicketCondition", "StageMonsterGroupsFestival", "CaptureFestivalRankReward", "MonthlyMonsterSeasonData", "MonthlyMonsterGroupData", "MonthlyMonsterRewardData", "LinkBonuses", "LinkBonusHiddenDatas", "BingoCompleteEvent", "MonsterCostumeCollections", "MonsterCostumeBundles", "MonsterCostumes", });
     com.felania.msldb.MsgUidOuterClass.getDescriptor();
     com.felania.msldb.MsgUserLevelOuterClass.getDescriptor();
     com.felania.msldb.MsgMonsterOuterClass.getDescriptor();
@@ -37745,6 +39227,10 @@ public final class MsgGameDataOuterClass {
     com.felania.msldb.MsgMonthlyMonsterRewardDataOuterClass.getDescriptor();
     com.felania.msldb.MsgLinkBonusOuterClass.getDescriptor();
     com.felania.msldb.MsgLinkBonusHiddenDataOuterClass.getDescriptor();
+    com.felania.msldb.MsgBingoCompleteEventOuterClass.getDescriptor();
+    com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.getDescriptor();
+    com.felania.msldb.MsgMonsterCostumeBundleOuterClass.getDescriptor();
+    com.felania.msldb.MsgMonsterCostumeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

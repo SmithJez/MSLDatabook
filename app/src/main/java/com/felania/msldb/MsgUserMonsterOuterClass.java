@@ -188,6 +188,11 @@ public final class MsgUserMonsterOuterClass {
      * <code>uint32 active_skill_level = 33;</code>
      */
     int getActiveSkillLevel();
+
+    /**
+     * <code>fixed32 costume_bundle_uid = 34;</code>
+     */
+    int getCostumeBundleUid();
   }
   /**
    * Protobuf type {@code msggamedata.MsgUserMonster}
@@ -233,6 +238,7 @@ public final class MsgUserMonsterOuterClass {
       storageType_ = 0;
       defaultSkillLevel_ = 0;
       activeSkillLevel_ = 0;
+      costumeBundleUid_ = 0;
     }
 
     @java.lang.Override
@@ -420,6 +426,11 @@ public final class MsgUserMonsterOuterClass {
             case 264: {
 
               activeSkillLevel_ = input.readUInt32();
+              break;
+            }
+            case 277: {
+
+              costumeBundleUid_ = input.readFixed32();
               break;
             }
           }
@@ -753,6 +764,15 @@ public final class MsgUserMonsterOuterClass {
       return activeSkillLevel_;
     }
 
+    public static final int COSTUME_BUNDLE_UID_FIELD_NUMBER = 34;
+    private int costumeBundleUid_;
+    /**
+     * <code>fixed32 costume_bundle_uid = 34;</code>
+     */
+    public int getCostumeBundleUid() {
+      return costumeBundleUid_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -857,6 +877,9 @@ public final class MsgUserMonsterOuterClass {
       }
       if (activeSkillLevel_ != 0) {
         output.writeUInt32(33, activeSkillLevel_);
+      }
+      if (costumeBundleUid_ != 0) {
+        output.writeFixed32(34, costumeBundleUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -990,6 +1013,10 @@ public final class MsgUserMonsterOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(33, activeSkillLevel_);
       }
+      if (costumeBundleUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed32Size(34, costumeBundleUid_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -1072,6 +1099,8 @@ public final class MsgUserMonsterOuterClass {
           == other.getDefaultSkillLevel());
       result = result && (getActiveSkillLevel()
           == other.getActiveSkillLevel());
+      result = result && (getCostumeBundleUid()
+          == other.getCostumeBundleUid());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -1160,6 +1189,8 @@ public final class MsgUserMonsterOuterClass {
       hash = (53 * hash) + getDefaultSkillLevel();
       hash = (37 * hash) + ACTIVE_SKILL_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getActiveSkillLevel();
+      hash = (37 * hash) + COSTUME_BUNDLE_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getCostumeBundleUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1351,6 +1382,8 @@ public final class MsgUserMonsterOuterClass {
 
         activeSkillLevel_ = 0;
 
+        costumeBundleUid_ = 0;
+
         return this;
       }
 
@@ -1404,6 +1437,7 @@ public final class MsgUserMonsterOuterClass {
         result.storageType_ = storageType_;
         result.defaultSkillLevel_ = defaultSkillLevel_;
         result.activeSkillLevel_ = activeSkillLevel_;
+        result.costumeBundleUid_ = costumeBundleUid_;
         onBuilt();
         return result;
       }
@@ -1537,6 +1571,9 @@ public final class MsgUserMonsterOuterClass {
         }
         if (other.getActiveSkillLevel() != 0) {
           setActiveSkillLevel(other.getActiveSkillLevel());
+        }
+        if (other.getCostumeBundleUid() != 0) {
+          setCostumeBundleUid(other.getCostumeBundleUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2442,6 +2479,32 @@ public final class MsgUserMonsterOuterClass {
         onChanged();
         return this;
       }
+
+      private int costumeBundleUid_ ;
+      /**
+       * <code>fixed32 costume_bundle_uid = 34;</code>
+       */
+      public int getCostumeBundleUid() {
+        return costumeBundleUid_;
+      }
+      /**
+       * <code>fixed32 costume_bundle_uid = 34;</code>
+       */
+      public Builder setCostumeBundleUid(int value) {
+        
+        costumeBundleUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed32 costume_bundle_uid = 34;</code>
+       */
+      public Builder clearCostumeBundleUid() {
+        
+        costumeBundleUid_ = 0;
+        onChanged();
+        return this;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -2508,7 +2571,7 @@ public final class MsgUserMonsterOuterClass {
       "\n\024MsgUserMonster.proto\022\013msggamedata\032\025Mon" +
       "sterStatType.proto\032\033MonsterStatWeightTyp" +
       "e.proto\032\022MonsterGrade.proto\032\030MonsterStor" +
-      "ageType.proto\"\242\006\n\016MsgUserMonster\022\n\n\002id\030\001" +
+      "ageType.proto\"\276\006\n\016MsgUserMonster\022\n\n\002id\030\001" +
       " \001(\004\022\017\n\007user_id\030\002 \001(\004\022\023\n\013monster_uid\030\003 \001" +
       "(\007\022\013\n\003lev\030\004 \001(\r\022\016\n\006attack\030\005 \001(\002\022\017\n\007defen" +
       "ce\030\006 \001(\002\022\014\n\004heal\030\007 \001(\002\022\n\n\002hp\030\010 \001(\001\022/\n\tst" +
@@ -2528,8 +2591,8 @@ public final class MsgUserMonsterOuterClass {
       "\022\030\n\020update_timestamp\030\036 \001(\r\0225\n\014storage_ty" +
       "pe\030\037 \001(\0162\037.msggamedata.MonsterStorageTyp" +
       "e\022\033\n\023default_skill_level\030  \001(\r\022\032\n\022active" +
-      "_skill_level\030! \001(\rB\023\n\021com.felania.msldbb" +
-      "\006proto3"
+      "_skill_level\030! \001(\r\022\032\n\022costume_bundle_uid" +
+      "\030\" \001(\007B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2552,7 +2615,7 @@ public final class MsgUserMonsterOuterClass {
     internal_static_msggamedata_MsgUserMonster_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgUserMonster_descriptor,
-        new java.lang.String[] { "Id", "UserId", "MonsterUid", "Lev", "Attack", "Defence", "Heal", "Hp", "StatType", "StatWeightType", "Exp", "RuneSlotShape1", "RuneSlotShape2", "RuneSlotShape3", "RuneSlotId1", "RuneSlotId2", "RuneSlotId3", "Grade", "Locked", "CreateDate", "LastBattleDate", "IsFriend", "IsSupport", "SupportMonsterUid", "LeaderSkillGrade", "PastedUserMonsterId", "PastedCount", "UpdateTimestamp", "StorageType", "DefaultSkillLevel", "ActiveSkillLevel", });
+        new java.lang.String[] { "Id", "UserId", "MonsterUid", "Lev", "Attack", "Defence", "Heal", "Hp", "StatType", "StatWeightType", "Exp", "RuneSlotShape1", "RuneSlotShape2", "RuneSlotShape3", "RuneSlotId1", "RuneSlotId2", "RuneSlotId3", "Grade", "Locked", "CreateDate", "LastBattleDate", "IsFriend", "IsSupport", "SupportMonsterUid", "LeaderSkillGrade", "PastedUserMonsterId", "PastedCount", "UpdateTimestamp", "StorageType", "DefaultSkillLevel", "ActiveSkillLevel", "CostumeBundleUid", });
     com.felania.msldb.MonsterStatTypeOuterClass.getDescriptor();
     com.felania.msldb.MonsterStatWeightTypeOuterClass.getDescriptor();
     com.felania.msldb.MonsterGradeOuterClass.getDescriptor();

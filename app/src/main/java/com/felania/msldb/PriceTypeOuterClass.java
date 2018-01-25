@@ -55,6 +55,10 @@ public final class PriceTypeOuterClass {
      * <code>P_ClanPoint = 8;</code>
      */
     P_ClanPoint(8),
+    /**
+     * <code>P_CostumeTicket = 9;</code>
+     */
+    P_CostumeTicket(9),
     UNRECOGNIZED(-1),
     ;
 
@@ -94,6 +98,10 @@ public final class PriceTypeOuterClass {
      * <code>P_ClanPoint = 8;</code>
      */
     public static final int P_ClanPoint_VALUE = 8;
+    /**
+     * <code>P_CostumeTicket = 9;</code>
+     */
+    public static final int P_CostumeTicket_VALUE = 9;
 
 
     public final int getNumber() {
@@ -123,6 +131,7 @@ public final class PriceTypeOuterClass {
         case 6: return P_PaidGem;
         case 7: return P_Crystal;
         case 8: return P_ClanPoint;
+        case 9: return P_CostumeTicket;
         default: return null;
       }
     }
@@ -184,12 +193,12 @@ public final class PriceTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017PriceType.proto\022\013msggamedata*\221\001\n\tPrice" +
+      "\n\017PriceType.proto\022\013msggamedata*\246\001\n\tPrice" +
       "Type\022\021\n\rPriceTypeNULL\020\000\022\n\n\006P_Gold\020\001\022\t\n\005P" +
       "_Gem\020\002\022\n\n\006P_Cash\020\003\022\020\n\014P_ArenaPoint\020\004\022\r\n\t" +
       "P_FreeGem\020\005\022\r\n\tP_PaidGem\020\006\022\r\n\tP_Crystal\020" +
-      "\007\022\017\n\013P_ClanPoint\020\010B\023\n\021com.felania.msldbb" +
-      "\006proto3"
+      "\007\022\017\n\013P_ClanPoint\020\010\022\023\n\017P_CostumeTicket\020\tB" +
+      "\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

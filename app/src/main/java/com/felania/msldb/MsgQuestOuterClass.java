@@ -1085,6 +1085,10 @@ public final class MsgQuestOuterClass {
        * <code>RewardSuperStoneStuff = 13;</code>
        */
       RewardSuperStoneStuff(13),
+      /**
+       * <code>RewardCostumeTicket = 14;</code>
+       */
+      RewardCostumeTicket(14),
       UNRECOGNIZED(-1),
       ;
 
@@ -1144,6 +1148,10 @@ public final class MsgQuestOuterClass {
        * <code>RewardSuperStoneStuff = 13;</code>
        */
       public static final int RewardSuperStoneStuff_VALUE = 13;
+      /**
+       * <code>RewardCostumeTicket = 14;</code>
+       */
+      public static final int RewardCostumeTicket_VALUE = 14;
 
 
       public final int getNumber() {
@@ -1178,6 +1186,7 @@ public final class MsgQuestOuterClass {
           case 11: return RewardRandomSkillBook;
           case 12: return RewardSuperStone;
           case 13: return RewardSuperStoneStuff;
+          case 14: return RewardCostumeTicket;
           default: return null;
         }
       }
@@ -1447,6 +1456,10 @@ public final class MsgQuestOuterClass {
        * <code>QuestShortcutSuperEvolution = 14;</code>
        */
       QuestShortcutSuperEvolution(14),
+      /**
+       * <code>QuestShortcutCostumeShop = 15;</code>
+       */
+      QuestShortcutCostumeShop(15),
       UNRECOGNIZED(-1),
       ;
 
@@ -1510,6 +1523,10 @@ public final class MsgQuestOuterClass {
        * <code>QuestShortcutSuperEvolution = 14;</code>
        */
       public static final int QuestShortcutSuperEvolution_VALUE = 14;
+      /**
+       * <code>QuestShortcutCostumeShop = 15;</code>
+       */
+      public static final int QuestShortcutCostumeShop_VALUE = 15;
 
 
       public final int getNumber() {
@@ -1545,6 +1562,7 @@ public final class MsgQuestOuterClass {
           case 12: return QuestShortcutAncientDungeon;
           case 13: return QuestShortcutDragonDungeon;
           case 14: return QuestShortcutSuperEvolution;
+          case 15: return QuestShortcutCostumeShop;
           default: return null;
         }
       }
@@ -3551,7 +3569,7 @@ public final class MsgQuestOuterClass {
       "\n\016MsgQuest.proto\022\013msggamedata\032\026MsgQuestS" +
       "ubCondi.proto\032\033MonsterStatWeightType.pro" +
       "to\032\031StageDifficultyType.proto\032\020BattleTyp" +
-      "e.proto\"\357\024\n\010MsgQuest\022\013\n\003uid\030\001 \001(\007\022\033\n\023pre" +
+      "e.proto\"\246\025\n\010MsgQuest\022\013\n\003uid\030\001 \001(\007\022\033\n\023pre" +
       "condi_quest_uids\030\002 \003(\007\0223\n\nmain_condi\030\003 \001" +
       "(\0162\037.msggamedata.MsgQuest.MainCondi\022\022\n\ng" +
       "oal_count\030\004 \001(\r\022\016\n\006repeat\030\005 \001(\r\022\016\n\006hidde" +
@@ -3596,29 +3614,31 @@ public final class MsgQuestOuterClass {
       "ry\020V\022\014\n\010ClanJoin\020W\022\027\n\023MonsterSkillLevelU" +
       "p\020X\022\021\n\rPromiseNewbie\020Y\022\021\n\rPromiseReturn\020" +
       "Z\022\022\n\016SuperEvolution\020[\022\025\n\021CombineSuperSto" +
-      "ne\020\\\022\020\n\014TutorialComp\020c\"\240\002\n\nRewardType\022\016\n" +
+      "ne\020\\\022\020\n\014TutorialComp\020c\"\271\002\n\nRewardType\022\016\n" +
       "\nRewardNone\020\000\022\r\n\tRewardGem\020\001\022\021\n\rRewardMo",
       "nster\020\002\022\016\n\nRewardItem\020\003\022\016\n\nRewardGold\020\004\022" +
       "\r\n\tRewardExp\020\005\022\020\n\014RewardEnergy\020\006\022\027\n\023Rewa" +
       "rdDungeonTicket\020\007\022\025\n\021RewardArenaTicket\020\010" +
       "\022\023\n\017RewardSoulStone\020\t\022\016\n\nRewardRune\020\n\022\031\n" +
       "\025RewardRandomSkillBook\020\013\022\024\n\020RewardSuperS" +
-      "tone\020\014\022\031\n\025RewardSuperStoneStuff\020\r\"\227\001\n\tQu" +
-      "estType\022\017\n\013QuestNormal\020\000\022\020\n\014QuestCapture" +
-      "\020\001\022\020\n\014QuestMonthly\020\002\022\017\n\013QuestWeekly\020\003\022\016\n" +
-      "\nQuestDaily\020\004\022\020\n\014QuestMission\020\005\022\020\n\014Quest" +
-      "Package\020\006\022\020\n\014QuestPromise\020\007\"\233\003\n\rQuestSho",
-      "rtcut\022\025\n\021QuestShortcutNone\020\000\022\027\n\023QuestSho" +
-      "rtcutBattle\020\001\022\026\n\022QuestShortcutStage\020\002\022\030\n" +
-      "\024QuestShortcutDungeon\020\003\022\030\n\024QuestShortcut" +
-      "Monster\020\004\022\027\n\023QuestShortcutSummon\020\005\022\027\n\023Qu" +
-      "estShortcutFriend\020\006\022\025\n\021QuestShortcutShop" +
-      "\020\007\022\031\n\025QuestShortcutJojeShop\020\010\022\026\n\022QuestSh" +
-      "ortcutArena\020\t\022\031\n\025QuestShortcutInfinite\020\n" +
-      "\022\025\n\021QuestShortcutClan\020\013\022\037\n\033QuestShortcut" +
-      "AncientDungeon\020\014\022\036\n\032QuestShortcutDragonD" +
-      "ungeon\020\r\022\037\n\033QuestShortcutSuperEvolution\020",
-      "\016B\023\n\021com.felania.msldbb\006proto3"
+      "tone\020\014\022\031\n\025RewardSuperStoneStuff\020\r\022\027\n\023Rew" +
+      "ardCostumeTicket\020\016\"\227\001\n\tQuestType\022\017\n\013Ques" +
+      "tNormal\020\000\022\020\n\014QuestCapture\020\001\022\020\n\014QuestMont" +
+      "hly\020\002\022\017\n\013QuestWeekly\020\003\022\016\n\nQuestDaily\020\004\022\020" +
+      "\n\014QuestMission\020\005\022\020\n\014QuestPackage\020\006\022\020\n\014Qu",
+      "estPromise\020\007\"\271\003\n\rQuestShortcut\022\025\n\021QuestS" +
+      "hortcutNone\020\000\022\027\n\023QuestShortcutBattle\020\001\022\026" +
+      "\n\022QuestShortcutStage\020\002\022\030\n\024QuestShortcutD" +
+      "ungeon\020\003\022\030\n\024QuestShortcutMonster\020\004\022\027\n\023Qu" +
+      "estShortcutSummon\020\005\022\027\n\023QuestShortcutFrie" +
+      "nd\020\006\022\025\n\021QuestShortcutShop\020\007\022\031\n\025QuestShor" +
+      "tcutJojeShop\020\010\022\026\n\022QuestShortcutArena\020\t\022\031" +
+      "\n\025QuestShortcutInfinite\020\n\022\025\n\021QuestShortc" +
+      "utClan\020\013\022\037\n\033QuestShortcutAncientDungeon\020" +
+      "\014\022\036\n\032QuestShortcutDragonDungeon\020\r\022\037\n\033Que",
+      "stShortcutSuperEvolution\020\016\022\034\n\030QuestShort" +
+      "cutCostumeShop\020\017B\023\n\021com.felania.msldbb\006p" +
+      "roto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

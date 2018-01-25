@@ -17,6 +17,8 @@ import com.felania.monstersuperleaguedatabook.utils.Variables
 import com.felania.msldb.*
 import kotlinx.android.synthetic.main.activity_synergies.*
 import java.util.HashMap
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 
 class SynergyActivity : AppCompatActivity() {
 
@@ -58,6 +60,11 @@ class SynergyActivity : AppCompatActivity() {
         }
 
         ReadDB().execute()
+
+        MobileAds.initialize(applicationContext, "ca-app-pub-1489459199627698~8687372969")
+
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
 
     }
 

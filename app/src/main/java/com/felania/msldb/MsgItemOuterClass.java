@@ -563,6 +563,10 @@ public final class MsgItemOuterClass {
        */
       Booster(14),
       /**
+       * <code>RandomSuperStoneStuff = 15;</code>
+       */
+      RandomSuperStoneStuff(15),
+      /**
        * <code>ShowSkillBook = 99;</code>
        */
       ShowSkillBook(99),
@@ -630,6 +634,10 @@ public final class MsgItemOuterClass {
        */
       public static final int Booster_VALUE = 14;
       /**
+       * <code>RandomSuperStoneStuff = 15;</code>
+       */
+      public static final int RandomSuperStoneStuff_VALUE = 15;
+      /**
        * <code>ShowSkillBook = 99;</code>
        */
       public static final int ShowSkillBook_VALUE = 99;
@@ -668,6 +676,7 @@ public final class MsgItemOuterClass {
           case 12: return ClanGift;
           case 13: return HeroEssence;
           case 14: return Booster;
+          case 15: return RandomSuperStoneStuff;
           case 99: return ShowSkillBook;
           default: return null;
         }
@@ -3657,7 +3666,7 @@ public final class MsgItemOuterClass {
       "roto\032\033MsgItemTypeSuperStone.proto\032!MsgIt" +
       "emTypeClanFestivalGift.proto\032\034MsgItemTyp" +
       "eHeroEssence.proto\032\030MsgItemTypeBooster.p" +
-      "roto\"\345\010\n\007MsgItem\022\013\n\003uid\030\001 \001(\007\022\014\n\004name\030\002 " +
+      "roto\"\200\t\n\007MsgItem\022\013\n\003uid\030\001 \001(\007\022\014\n\004name\030\002 " +
       "\001(\007\022\014\n\004desc\030\003 \001(\007\022+\n\004type\030\004 \001(\0162\035.msggam",
       "edata.MsgItem.ItemType\022\r\n\005grade\030\005 \001(\r\022)\n" +
       "\nsell_price\030\007 \001(\0132\025.msggamedata.MsgPrice" +
@@ -3678,15 +3687,15 @@ public final class MsgItemOuterClass {
       "peClanFestivalGift\0229\n\014hero_essence\030\024 \001(\013" +
       "2#.msggamedata.MsgItemTypeHeroEssence\0220\n" +
       "\007booster\030\025 \001(\0132\037.msggamedata.MsgItemType" +
-      "Booster\"\232\002\n\010ItemType\022\020\n\014ItemTypeNULL\020\000\022\010",
+      "Booster\"\265\002\n\010ItemType\022\020\n\014ItemTypeNULL\020\000\022\010",
       "\n\004Food\020\001\022\017\n\013BeyondStone\020\002\022\016\n\nMonsterEgg\020" +
       "\003\022\r\n\tSoulStone\020\004\022\016\n\nRandomRune\020\005\022\022\n\016Mons" +
       "terRelease\020\006\022\017\n\013StarEssence\020\007\022\024\n\020Monster" +
       "EggHidden\020\010\022\023\n\017RandomSkillBook\020\t\022\016\n\nSupe" +
       "rStone\020\n\022\023\n\017SuperStoneStuff\020\013\022\014\n\010ClanGif" +
-      "t\020\014\022\017\n\013HeroEssence\020\r\022\013\n\007Booster\020\016\022\021\n\rSho" +
-      "wSkillBook\020cB\023\n\021com.felania.msldbb\006proto" +
-      "3"
+      "t\020\014\022\017\n\013HeroEssence\020\r\022\013\n\007Booster\020\016\022\031\n\025Ran" +
+      "domSuperStoneStuff\020\017\022\021\n\rShowSkillBook\020cB" +
+      "\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

@@ -240,6 +240,10 @@ public final class MsgRandomItemOuterClass {
        */
       RandomRune(20),
       /**
+       * <code>CostumeTicket = 21;</code>
+       */
+      CostumeTicket(21),
+      /**
        * <code>ShowSkillBook = 99;</code>
        */
       ShowSkillBook(99),
@@ -331,6 +335,10 @@ public final class MsgRandomItemOuterClass {
        */
       public static final int RandomRune_VALUE = 20;
       /**
+       * <code>CostumeTicket = 21;</code>
+       */
+      public static final int CostumeTicket_VALUE = 21;
+      /**
        * <code>ShowSkillBook = 99;</code>
        */
       public static final int ShowSkillBook_VALUE = 99;
@@ -375,6 +383,7 @@ public final class MsgRandomItemOuterClass {
           case 18: return SuperStoneStuff;
           case 19: return HeroEssence;
           case 20: return RandomRune;
+          case 21: return CostumeTicket;
           case 99: return ShowSkillBook;
           default: return null;
         }
@@ -1068,11 +1077,11 @@ public final class MsgRandomItemOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023MsgRandomItem.proto\022\013msggamedata\032\021Rewa" +
-      "rdGrade.proto\"\366\003\n\rMsgRandomItem\0221\n\004type\030" +
+      "rdGrade.proto\"\211\004\n\rMsgRandomItem\0221\n\004type\030" +
       "\001 \001(\0162#.msggamedata.MsgRandomItem.DataTy" +
       "pe\022\014\n\004prob\030\002 \001(\002\022\013\n\003uid\030\003 \001(\007\022\016\n\006amount\030" +
       "\004 \001(\r\022\'\n\005grade\030\005 \001(\0162\030.msggamedata.Rewar" +
-      "dGrade\"\335\002\n\010DataType\022\010\n\004None\020\000\022\007\n\003Uid\020\001\022\010" +
+      "dGrade\"\360\002\n\010DataType\022\010\n\004None\020\000\022\007\n\003Uid\020\001\022\010" +
       "\n\004Food\020\002\022\010\n\004Gold\020\003\022\n\n\006Energy\020\004\022\007\n\003Gem\020\005\022" +
       "\010\n\004Rune\020\006\022\016\n\nMonsterEgg\020\007\022\r\n\tSoulStone\020\010" +
       "\022\017\n\013BeyondStone\020\t\022\022\n\016InstantMonster\020\n\022\021\n" +
@@ -1080,8 +1089,9 @@ public final class MsgRandomItemOuterClass {
       "rEssence\020\r\022\r\n\tClanPoint\020\016\022\024\n\020MonsterSkil" +
       "lBook\020\017\022\024\n\020MonsterEggHidden\020\020\022\016\n\nSuperSt" +
       "one\020\021\022\023\n\017SuperStoneStuff\020\022\022\017\n\013HeroEssenc" +
-      "e\020\023\022\016\n\nRandomRune\020\024\022\021\n\rShowSkillBook\020cB\023" +
-      "\n\021com.felania.msldbb\006proto3"
+      "e\020\023\022\016\n\nRandomRune\020\024\022\021\n\rCostumeTicket\020\025\022\021" +
+      "\n\rShowSkillBook\020cB\023\n\021com.felania.msldbb\006" +
+      "proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

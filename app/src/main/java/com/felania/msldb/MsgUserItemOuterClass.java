@@ -27,6 +27,11 @@ public final class MsgUserItemOuterClass {
      * <code>uint32 item_count = 2;</code>
      */
     int getItemCount();
+
+    /**
+     * <code>uint32 item_count_delta = 3;</code>
+     */
+    int getItemCountDelta();
   }
   /**
    * Protobuf type {@code msggamedata.MsgUserItem}
@@ -43,6 +48,7 @@ public final class MsgUserItemOuterClass {
     private MsgUserItem() {
       itemUid_ = 0;
       itemCount_ = 0;
+      itemCountDelta_ = 0;
     }
 
     @java.lang.Override
@@ -81,6 +87,11 @@ public final class MsgUserItemOuterClass {
             case 16: {
 
               itemCount_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              itemCountDelta_ = input.readUInt32();
               break;
             }
           }
@@ -125,6 +136,15 @@ public final class MsgUserItemOuterClass {
       return itemCount_;
     }
 
+    public static final int ITEM_COUNT_DELTA_FIELD_NUMBER = 3;
+    private int itemCountDelta_;
+    /**
+     * <code>uint32 item_count_delta = 3;</code>
+     */
+    public int getItemCountDelta() {
+      return itemCountDelta_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -143,6 +163,9 @@ public final class MsgUserItemOuterClass {
       if (itemCount_ != 0) {
         output.writeUInt32(2, itemCount_);
       }
+      if (itemCountDelta_ != 0) {
+        output.writeUInt32(3, itemCountDelta_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -158,6 +181,10 @@ public final class MsgUserItemOuterClass {
       if (itemCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, itemCount_);
+      }
+      if (itemCountDelta_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, itemCountDelta_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -179,6 +206,8 @@ public final class MsgUserItemOuterClass {
           == other.getItemUid());
       result = result && (getItemCount()
           == other.getItemCount());
+      result = result && (getItemCountDelta()
+          == other.getItemCountDelta());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -194,6 +223,8 @@ public final class MsgUserItemOuterClass {
       hash = (53 * hash) + getItemUid();
       hash = (37 * hash) + ITEM_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getItemCount();
+      hash = (37 * hash) + ITEM_COUNT_DELTA_FIELD_NUMBER;
+      hash = (53 * hash) + getItemCountDelta();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -327,6 +358,8 @@ public final class MsgUserItemOuterClass {
 
         itemCount_ = 0;
 
+        itemCountDelta_ = 0;
+
         return this;
       }
 
@@ -351,6 +384,7 @@ public final class MsgUserItemOuterClass {
         com.felania.msldb.MsgUserItemOuterClass.MsgUserItem result = new com.felania.msldb.MsgUserItemOuterClass.MsgUserItem(this);
         result.itemUid_ = itemUid_;
         result.itemCount_ = itemCount_;
+        result.itemCountDelta_ = itemCountDelta_;
         onBuilt();
         return result;
       }
@@ -397,6 +431,9 @@ public final class MsgUserItemOuterClass {
         }
         if (other.getItemCount() != 0) {
           setItemCount(other.getItemCount());
+        }
+        if (other.getItemCountDelta() != 0) {
+          setItemCountDelta(other.getItemCountDelta());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -476,6 +513,32 @@ public final class MsgUserItemOuterClass {
         onChanged();
         return this;
       }
+
+      private int itemCountDelta_ ;
+      /**
+       * <code>uint32 item_count_delta = 3;</code>
+       */
+      public int getItemCountDelta() {
+        return itemCountDelta_;
+      }
+      /**
+       * <code>uint32 item_count_delta = 3;</code>
+       */
+      public Builder setItemCountDelta(int value) {
+        
+        itemCountDelta_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 item_count_delta = 3;</code>
+       */
+      public Builder clearItemCountDelta() {
+        
+        itemCountDelta_ = 0;
+        onChanged();
+        return this;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -539,9 +602,10 @@ public final class MsgUserItemOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MsgUserItem.proto\022\013msggamedata\"3\n\013MsgU" +
+      "\n\021MsgUserItem.proto\022\013msggamedata\"M\n\013MsgU" +
       "serItem\022\020\n\010item_uid\030\001 \001(\007\022\022\n\nitem_count\030" +
-      "\002 \001(\rB\023\n\021com.felania.msldbb\006proto3"
+      "\002 \001(\r\022\030\n\020item_count_delta\030\003 \001(\rB\023\n\021com.f" +
+      "elania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -560,7 +624,7 @@ public final class MsgUserItemOuterClass {
     internal_static_msggamedata_MsgUserItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgUserItem_descriptor,
-        new java.lang.String[] { "ItemUid", "ItemCount", });
+        new java.lang.String[] { "ItemUid", "ItemCount", "ItemCountDelta", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

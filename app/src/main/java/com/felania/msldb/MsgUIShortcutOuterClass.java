@@ -336,6 +336,10 @@ public final class MsgUIShortcutOuterClass {
        * <code>SP_Package = 1;</code>
        */
       SP_Package(1),
+      /**
+       * <code>SP_Costume = 2;</code>
+       */
+      SP_Costume(2),
       UNRECOGNIZED(-1),
       ;
 
@@ -347,6 +351,10 @@ public final class MsgUIShortcutOuterClass {
        * <code>SP_Package = 1;</code>
        */
       public static final int SP_Package_VALUE = 1;
+      /**
+       * <code>SP_Costume = 2;</code>
+       */
+      public static final int SP_Costume_VALUE = 2;
 
 
       public final int getNumber() {
@@ -369,6 +377,7 @@ public final class MsgUIShortcutOuterClass {
         switch (value) {
           case 0: return ShopPlaceNULL;
           case 1: return SP_Package;
+          case 2: return SP_Costume;
           default: return null;
         }
       }
@@ -1030,7 +1039,7 @@ public final class MsgUIShortcutOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023MsgUIShortcut.proto\022\013msggamedata\032\031Stag" +
-      "eDifficultyType.proto\"\310\003\n\rMsgUIShortcut\022" +
+      "eDifficultyType.proto\"\330\003\n\rMsgUIShortcut\022" +
       "/\n\005place\030\001 \001(\0162 .msggamedata.MsgUIShortc" +
       "ut.Place\022\013\n\003uid\030\002 \001(\007\0228\n\nshop_place\030\003 \001(" +
       "\0162$.msggamedata.MsgUIShortcut.ShopPlace\022" +
@@ -1040,9 +1049,10 @@ public final class MsgUIShortcutOuterClass {
       "val\020\002\022\013\n\007P_Stage\020\003\022\025\n\021P_CaptureFestival\020" +
       "\004\022\023\n\017P_FriendDungeon\020\005\022\025\n\021P_GmFriendDung",
       "eon\020\006\022\024\n\020P_SuperEvolution\020\007\022\013\n\007P_Gacha\020\010" +
-      "\022\022\n\016P_HeroFestival\020\t\022\n\n\006P_Shop\020\n\".\n\tShop" +
+      "\022\022\n\016P_HeroFestival\020\t\022\n\n\006P_Shop\020\n\">\n\tShop" +
       "Place\022\021\n\rShopPlaceNULL\020\000\022\016\n\nSP_Package\020\001" +
-      "B\023\n\021com.felania.msldbb\006proto3"
+      "\022\016\n\nSP_Costume\020\002B\023\n\021com.felania.msldbb\006p" +
+      "roto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

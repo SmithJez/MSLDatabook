@@ -311,6 +311,10 @@ public final class MsgShopPurchaseCondOuterClass {
        * <code>RT_Period = 5;</code>
        */
       RT_Period(5),
+      /**
+       * <code>RT_AccountLife = 6;</code>
+       */
+      RT_AccountLife(6),
       UNRECOGNIZED(-1),
       ;
 
@@ -338,6 +342,10 @@ public final class MsgShopPurchaseCondOuterClass {
        * <code>RT_Period = 5;</code>
        */
       public static final int RT_Period_VALUE = 5;
+      /**
+       * <code>RT_AccountLife = 6;</code>
+       */
+      public static final int RT_AccountLife_VALUE = 6;
 
 
       public final int getNumber() {
@@ -364,6 +372,7 @@ public final class MsgShopPurchaseCondOuterClass {
           case 3: return RT_Week;
           case 4: return RT_Month;
           case 5: return RT_Period;
+          case 6: return RT_AccountLife;
           default: return null;
         }
       }
@@ -1001,17 +1010,17 @@ public final class MsgShopPurchaseCondOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031MsgShopPurchaseCond.proto\022\013msggamedata" +
-      "\"\367\002\n\023MsgShopPurchaseCond\0227\n\004rule\030\001 \001(\0162)" +
+      "\"\213\003\n\023MsgShopPurchaseCond\0227\n\004rule\030\001 \001(\0162)" +
       ".msggamedata.MsgShopPurchaseCond.RuleTyp" +
       "e\022\021\n\tday_value\030\002 \001(\r\022>\n\nweek_value\030\003 \001(\016" +
       "2*.msggamedata.MsgShopPurchaseCond.WeekV" +
       "alue\022\023\n\013month_value\030\004 \001(\r\"_\n\tWeekValue\022\n" +
       "\n\006WV_Mon\020\000\022\n\n\006WV_Tue\020\001\022\n\n\006WV_Wed\020\002\022\n\n\006WV" +
       "_Thu\020\003\022\n\n\006WV_Fri\020\004\022\n\n\006WV_Sat\020\005\022\n\n\006WV_Sun" +
-      "\020\006\"^\n\010RuleType\022\020\n\014RuleTypeNULL\020\000\022\n\n\006RT_A" +
+      "\020\006\"r\n\010RuleType\022\020\n\014RuleTypeNULL\020\000\022\n\n\006RT_A" +
       "ll\020\001\022\n\n\006RT_Day\020\002\022\013\n\007RT_Week\020\003\022\014\n\010RT_Mont",
-      "h\020\004\022\r\n\tRT_Period\020\005B\023\n\021com.felania.msldbb" +
-      "\006proto3"
+      "h\020\004\022\r\n\tRT_Period\020\005\022\022\n\016RT_AccountLife\020\006B\023" +
+      "\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

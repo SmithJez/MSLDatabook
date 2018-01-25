@@ -117,6 +117,11 @@ public final class MsgUserProfileDataOuterClass {
      * <code>uint32 user_profile_icon_uid = 15;</code>
      */
     int getUserProfileIconUid();
+
+    /**
+     * <code>fixed32 repr_monster_costume_bundle_uid = 16;</code>
+     */
+    int getReprMonsterCostumeBundleUid();
   }
   /**
    * Protobuf type {@code msggamedata.MsgUserProfileData}
@@ -146,6 +151,7 @@ public final class MsgUserProfileDataOuterClass {
       charType_ = 0;
       skinType_ = 0;
       userProfileIconUid_ = 0;
+      reprMonsterCostumeBundleUid_ = 0;
     }
 
     @java.lang.Override
@@ -255,6 +261,11 @@ public final class MsgUserProfileDataOuterClass {
             case 120: {
 
               userProfileIconUid_ = input.readUInt32();
+              break;
+            }
+            case 133: {
+
+              reprMonsterCostumeBundleUid_ = input.readFixed32();
               break;
             }
           }
@@ -476,6 +487,15 @@ public final class MsgUserProfileDataOuterClass {
       return userProfileIconUid_;
     }
 
+    public static final int REPR_MONSTER_COSTUME_BUNDLE_UID_FIELD_NUMBER = 16;
+    private int reprMonsterCostumeBundleUid_;
+    /**
+     * <code>fixed32 repr_monster_costume_bundle_uid = 16;</code>
+     */
+    public int getReprMonsterCostumeBundleUid() {
+      return reprMonsterCostumeBundleUid_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -532,6 +552,9 @@ public final class MsgUserProfileDataOuterClass {
       }
       if (userProfileIconUid_ != 0) {
         output.writeUInt32(15, userProfileIconUid_);
+      }
+      if (reprMonsterCostumeBundleUid_ != 0) {
+        output.writeFixed32(16, reprMonsterCostumeBundleUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -600,6 +623,10 @@ public final class MsgUserProfileDataOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, userProfileIconUid_);
       }
+      if (reprMonsterCostumeBundleUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed32Size(16, reprMonsterCostumeBundleUid_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -641,6 +668,8 @@ public final class MsgUserProfileDataOuterClass {
       result = result && skinType_ == other.skinType_;
       result = result && (getUserProfileIconUid()
           == other.getUserProfileIconUid());
+      result = result && (getReprMonsterCostumeBundleUid()
+          == other.getReprMonsterCostumeBundleUid());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -684,6 +713,8 @@ public final class MsgUserProfileDataOuterClass {
       hash = (53 * hash) + skinType_;
       hash = (37 * hash) + USER_PROFILE_ICON_UID_FIELD_NUMBER;
       hash = (53 * hash) + getUserProfileIconUid();
+      hash = (37 * hash) + REPR_MONSTER_COSTUME_BUNDLE_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getReprMonsterCostumeBundleUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -843,6 +874,8 @@ public final class MsgUserProfileDataOuterClass {
 
         userProfileIconUid_ = 0;
 
+        reprMonsterCostumeBundleUid_ = 0;
+
         return this;
       }
 
@@ -880,6 +913,7 @@ public final class MsgUserProfileDataOuterClass {
         result.charType_ = charType_;
         result.skinType_ = skinType_;
         result.userProfileIconUid_ = userProfileIconUid_;
+        result.reprMonsterCostumeBundleUid_ = reprMonsterCostumeBundleUid_;
         onBuilt();
         return result;
       }
@@ -966,6 +1000,9 @@ public final class MsgUserProfileDataOuterClass {
         }
         if (other.getUserProfileIconUid() != 0) {
           setUserProfileIconUid(other.getUserProfileIconUid());
+        }
+        if (other.getReprMonsterCostumeBundleUid() != 0) {
+          setReprMonsterCostumeBundleUid(other.getReprMonsterCostumeBundleUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1516,6 +1553,32 @@ public final class MsgUserProfileDataOuterClass {
         onChanged();
         return this;
       }
+
+      private int reprMonsterCostumeBundleUid_ ;
+      /**
+       * <code>fixed32 repr_monster_costume_bundle_uid = 16;</code>
+       */
+      public int getReprMonsterCostumeBundleUid() {
+        return reprMonsterCostumeBundleUid_;
+      }
+      /**
+       * <code>fixed32 repr_monster_costume_bundle_uid = 16;</code>
+       */
+      public Builder setReprMonsterCostumeBundleUid(int value) {
+        
+        reprMonsterCostumeBundleUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed32 repr_monster_costume_bundle_uid = 16;</code>
+       */
+      public Builder clearReprMonsterCostumeBundleUid() {
+        
+        reprMonsterCostumeBundleUid_ = 0;
+        onChanged();
+        return this;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -1582,7 +1645,7 @@ public final class MsgUserProfileDataOuterClass {
       "\n\030MsgUserProfileData.proto\022\013msggamedata\032" +
       "\022MonsterGrade.proto\032\033MonsterStatWeightTy" +
       "pe.proto\032\025MonsterStatType.proto\032\022UserCha" +
-      "rType.proto\032\026UserCharSkinType.proto\"\266\004\n\022" +
+      "rType.proto\032\026UserCharSkinType.proto\"\337\004\n\022" +
       "MsgUserProfileData\022\017\n\007user_id\030\001 \001(\004\022\014\n\004n" +
       "ame\030\002 \001(\t\022\013\n\003lev\030\003 \001(\r\022\027\n\017repr_monster_i" +
       "d\030\004 \001(\004\022\030\n\020repr_monster_uid\030\005 \001(\007\022\030\n\020rep" +
@@ -1597,7 +1660,8 @@ public final class MsgUserProfileDataOuterClass {
       "\tchar_type\030\r \001(\0162\031.msggamedata.UserCharT" +
       "ype\0220\n\tskin_type\030\016 \001(\0162\035.msggamedata.Use" +
       "rCharSkinType\022\035\n\025user_profile_icon_uid\030\017" +
-      " \001(\rB\023\n\021com.felania.msldbb\006proto3"
+      " \001(\r\022\'\n\037repr_monster_costume_bundle_uid\030" +
+      "\020 \001(\007B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1621,7 +1685,7 @@ public final class MsgUserProfileDataOuterClass {
     internal_static_msggamedata_MsgUserProfileData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgUserProfileData_descriptor,
-        new java.lang.String[] { "UserId", "Name", "Lev", "ReprMonsterId", "ReprMonsterUid", "ReprMonsterLev", "ReprMonsterGrade", "ReprMonsterType", "ReprMonsterStatType", "ReprMonsterPastedCount", "ReprMonsterDefaultSkillLevel", "ReprMonsterActiveSkillLevel", "CharType", "SkinType", "UserProfileIconUid", });
+        new java.lang.String[] { "UserId", "Name", "Lev", "ReprMonsterId", "ReprMonsterUid", "ReprMonsterLev", "ReprMonsterGrade", "ReprMonsterType", "ReprMonsterStatType", "ReprMonsterPastedCount", "ReprMonsterDefaultSkillLevel", "ReprMonsterActiveSkillLevel", "CharType", "SkinType", "UserProfileIconUid", "ReprMonsterCostumeBundleUid", });
     com.felania.msldb.MonsterGradeOuterClass.getDescriptor();
     com.felania.msldb.MonsterStatWeightTypeOuterClass.getDescriptor();
     com.felania.msldb.MonsterStatTypeOuterClass.getDescriptor();

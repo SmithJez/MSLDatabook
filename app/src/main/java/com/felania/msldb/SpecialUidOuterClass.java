@@ -91,6 +91,10 @@ public final class SpecialUidOuterClass {
      * <code>SU_LuckyTicket = 100017;</code>
      */
     SU_LuckyTicket(100017),
+    /**
+     * <code>SU_CostumeTicket = 100018;</code>
+     */
+    SU_CostumeTicket(100018),
     UNRECOGNIZED(-1),
     ;
 
@@ -166,6 +170,10 @@ public final class SpecialUidOuterClass {
      * <code>SU_LuckyTicket = 100017;</code>
      */
     public static final int SU_LuckyTicket_VALUE = 100017;
+    /**
+     * <code>SU_CostumeTicket = 100018;</code>
+     */
+    public static final int SU_CostumeTicket_VALUE = 100018;
 
 
     public final int getNumber() {
@@ -204,6 +212,7 @@ public final class SpecialUidOuterClass {
         case 100015: return SU_Crystal;
         case 100016: return SU_ClanPoint;
         case 100017: return SU_LuckyTicket;
+        case 100018: return SU_CostumeTicket;
         default: return null;
       }
     }
@@ -265,7 +274,7 @@ public final class SpecialUidOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020SpecialUid.proto\022\013msggamedata*\335\002\n\nSpec" +
+      "\n\020SpecialUid.proto\022\013msggamedata*\365\002\n\nSpec" +
       "ialUid\022\022\n\016SpecialUidNULL\020\000\022\r\n\007SU_Gold\020\241\215" +
       "\006\022\022\n\014SU_MpCrystal\020\242\215\006\022\022\n\014SU_HpCrystal\020\243\215" +
       "\006\022\014\n\006SU_Gem\020\244\215\006\022\014\n\006SU_Gun\020\245\215\006\022\017\n\tSU_Bull" +
@@ -274,8 +283,8 @@ public final class SpecialUidOuterClass {
       "Point\020\252\215\006\022\014\n\006SU_Uid\020\253\215\006\022\026\n\020SU_DungeonTic" +
       "ket\020\254\215\006\022\020\n\nSU_FreeGem\020\255\215\006\022\020\n\nSU_PaidGem\020" +
       "\256\215\006\022\020\n\nSU_Crystal\020\257\215\006\022\022\n\014SU_ClanPoint\020\260\215" +
-      "\006\022\024\n\016SU_LuckyTicket\020\261\215\006B\023\n\021com.felania.m",
-      "sldbb\006proto3"
+      "\006\022\024\n\016SU_LuckyTicket\020\261\215\006\022\026\n\020SU_CostumeTic",
+      "ket\020\262\215\006B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

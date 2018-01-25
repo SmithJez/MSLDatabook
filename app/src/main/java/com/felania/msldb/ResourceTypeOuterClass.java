@@ -64,6 +64,10 @@ public final class ResourceTypeOuterClass {
      */
     RT_ClanPoint(10),
     /**
+     * <code>RT_CostumeTicket = 11;</code>
+     */
+    RT_CostumeTicket(11),
+    /**
      * <code>RT_Monster = 100;</code>
      */
     RT_Monster(100),
@@ -171,6 +175,10 @@ public final class ResourceTypeOuterClass {
      */
     public static final int RT_ClanPoint_VALUE = 10;
     /**
+     * <code>RT_CostumeTicket = 11;</code>
+     */
+    public static final int RT_CostumeTicket_VALUE = 11;
+    /**
      * <code>RT_Monster = 100;</code>
      */
     public static final int RT_Monster_VALUE = 100;
@@ -261,6 +269,7 @@ public final class ResourceTypeOuterClass {
         case 8: return RT_DungeonTicket;
         case 9: return RT_Crystal;
         case 10: return RT_ClanPoint;
+        case 11: return RT_CostumeTicket;
         case 100: return RT_Monster;
         case 101: return RT_SoulStone;
         case 200: return RT_Item;
@@ -337,20 +346,21 @@ public final class ResourceTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022ResourceType.proto\022\013msggamedata*\347\003\n\014Re" +
+      "\n\022ResourceType.proto\022\013msggamedata*\375\003\n\014Re" +
       "sourceType\022\024\n\020ResourceTypeNULL\020\000\022\n\n\006RT_E" +
       "xp\020\001\022\n\n\006RT_Gem\020\002\022\013\n\007RT_Gold\020\003\022\r\n\tRT_Ener" +
       "gy\020\004\022\021\n\rRT_ArenaPoint\020\005\022\022\n\016RT_ArenaTicke" +
       "t\020\006\022\023\n\017RT_DungeonPoint\020\007\022\024\n\020RT_DungeonTi" +
       "cket\020\010\022\016\n\nRT_Crystal\020\t\022\020\n\014RT_ClanPoint\020\n" +
-      "\022\016\n\nRT_Monster\020d\022\020\n\014RT_SoulStone\020e\022\014\n\007RT" +
-      "_Item\020\310\001\022\014\n\007RT_Food\020\311\001\022\023\n\016RT_BeyondStone" +
-      "\020\312\001\022\022\n\rRT_MonsterEgg\020\313\001\022\023\n\016RT_StarEssenc" +
-      "e\020\314\001\022\014\n\007RT_Rune\020\315\001\022\022\n\rRT_RandomRune\020\316\001\022\021",
-      "\n\014RT_SkillBook\020\317\001\022\027\n\022RT_RandomSkillBook\020" +
-      "\320\001\022\022\n\rRT_SuperStone\020\321\001\022\027\n\022RT_SuperStoneS" +
-      "tuff\020\322\001\022\017\n\nRT_Booster\020\323\001\022\021\n\014RT_HiddenEgg" +
-      "\020\324\001B\023\n\021com.felania.msldbb\006proto3"
+      "\022\024\n\020RT_CostumeTicket\020\013\022\016\n\nRT_Monster\020d\022\020" +
+      "\n\014RT_SoulStone\020e\022\014\n\007RT_Item\020\310\001\022\014\n\007RT_Foo" +
+      "d\020\311\001\022\023\n\016RT_BeyondStone\020\312\001\022\022\n\rRT_MonsterE" +
+      "gg\020\313\001\022\023\n\016RT_StarEssence\020\314\001\022\014\n\007RT_Rune\020\315\001",
+      "\022\022\n\rRT_RandomRune\020\316\001\022\021\n\014RT_SkillBook\020\317\001\022" +
+      "\027\n\022RT_RandomSkillBook\020\320\001\022\022\n\rRT_SuperSton" +
+      "e\020\321\001\022\027\n\022RT_SuperStoneStuff\020\322\001\022\017\n\nRT_Boos" +
+      "ter\020\323\001\022\021\n\014RT_HiddenEgg\020\324\001B\023\n\021com.felania" +
+      ".msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

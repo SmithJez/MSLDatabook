@@ -59,6 +59,10 @@ public final class RewardDataTypeOuterClass {
      * <code>RDT_SoulStone = 9;</code>
      */
     RDT_SoulStone(9),
+    /**
+     * <code>RDT_CostumeTicket = 10;</code>
+     */
+    RDT_CostumeTicket(10),
     UNRECOGNIZED(-1),
     ;
 
@@ -102,6 +106,10 @@ public final class RewardDataTypeOuterClass {
      * <code>RDT_SoulStone = 9;</code>
      */
     public static final int RDT_SoulStone_VALUE = 9;
+    /**
+     * <code>RDT_CostumeTicket = 10;</code>
+     */
+    public static final int RDT_CostumeTicket_VALUE = 10;
 
 
     public final int getNumber() {
@@ -132,6 +140,7 @@ public final class RewardDataTypeOuterClass {
         case 7: return RDT_ClanPoint;
         case 8: return RDT_DungeonTicket;
         case 9: return RDT_SoulStone;
+        case 10: return RDT_CostumeTicket;
         default: return null;
       }
     }
@@ -193,13 +202,14 @@ public final class RewardDataTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024RewardDataType.proto\022\013msggamedata*\300\001\n\016" +
+      "\n\024RewardDataType.proto\022\013msggamedata*\327\001\n\016" +
       "RewardDataType\022\026\n\022RewardDataTypeNULL\020\000\022\014" +
       "\n\010RDT_None\020\001\022\013\n\007RDT_Gem\020\002\022\014\n\010RDT_Gold\020\003\022" +
       "\016\n\nRDT_Energy\020\004\022\023\n\017RDT_ArenaTicket\020\005\022\013\n\007" +
       "RDT_Uid\020\006\022\021\n\rRDT_ClanPoint\020\007\022\025\n\021RDT_Dung" +
-      "eonTicket\020\010\022\021\n\rRDT_SoulStone\020\tB\023\n\021com.fe" +
-      "lania.msldbb\006proto3"
+      "eonTicket\020\010\022\021\n\rRDT_SoulStone\020\t\022\025\n\021RDT_Co" +
+      "stumeTicket\020\nB\023\n\021com.felania.msldbb\006prot" +
+      "o3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

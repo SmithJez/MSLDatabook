@@ -121,13 +121,13 @@ public final class MsgQuestSubCondiOuterClass {
     com.felania.msldb.StageDifficultyTypeOuterClass.StageDifficultyType getVDifficultyType();
 
     /**
-     * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeP v_category_type = 14;</code>
+     * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeL v_category_type = 14;</code>
      */
     int getVCategoryTypeValue();
     /**
-     * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeP v_category_type = 14;</code>
+     * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeL v_category_type = 14;</code>
      */
-    com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP getVCategoryType();
+    com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL getVCategoryType();
 
     /**
      * <code>.msggamedata.MsgNPCTalkTopic.Scene v_npc_scene = 15;</code>
@@ -377,9 +377,9 @@ public final class MsgQuestSubCondiOuterClass {
     }
 
     /**
-     * Protobuf enum {@code msggamedata.MsgQuestSubCondi.CategoryTypeP}
+     * Protobuf enum {@code msggamedata.MsgQuestSubCondi.CategoryTypeL}
      */
-    public enum CategoryTypeP
+    public enum CategoryTypeL
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
        * <code>CategoryTypeNULL = 0;</code>
@@ -510,11 +510,11 @@ public final class MsgQuestSubCondiOuterClass {
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static CategoryTypeP valueOf(int value) {
+      public static CategoryTypeL valueOf(int value) {
         return forNumber(value);
       }
 
-      public static CategoryTypeP forNumber(int value) {
+      public static CategoryTypeL forNumber(int value) {
         switch (value) {
           case 0: return CategoryTypeNULL;
           case 1: return CT_Cash;
@@ -534,15 +534,15 @@ public final class MsgQuestSubCondiOuterClass {
         }
       }
 
-      public static com.google.protobuf.Internal.EnumLiteMap<CategoryTypeP>
+      public static com.google.protobuf.Internal.EnumLiteMap<CategoryTypeL>
           internalGetValueMap() {
         return internalValueMap;
       }
       private static final com.google.protobuf.Internal.EnumLiteMap<
-          CategoryTypeP> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<CategoryTypeP>() {
-              public CategoryTypeP findValueByNumber(int number) {
-                return CategoryTypeP.forNumber(number);
+          CategoryTypeL> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<CategoryTypeL>() {
+              public CategoryTypeL findValueByNumber(int number) {
+                return CategoryTypeL.forNumber(number);
               }
             };
 
@@ -559,9 +559,9 @@ public final class MsgQuestSubCondiOuterClass {
         return com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final CategoryTypeP[] VALUES = values();
+      private static final CategoryTypeL[] VALUES = values();
 
-      public static CategoryTypeP valueOf(
+      public static CategoryTypeL valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
           throw new java.lang.IllegalArgumentException(
@@ -575,11 +575,11 @@ public final class MsgQuestSubCondiOuterClass {
 
       private final int value;
 
-      private CategoryTypeP(int value) {
+      private CategoryTypeL(int value) {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:msggamedata.MsgQuestSubCondi.CategoryTypeP)
+      // @@protoc_insertion_point(enum_scope:msggamedata.MsgQuestSubCondi.CategoryTypeL)
     }
 
     /**
@@ -1412,17 +1412,17 @@ public final class MsgQuestSubCondiOuterClass {
     public static final int V_CATEGORY_TYPE_FIELD_NUMBER = 14;
     private int vCategoryType_;
     /**
-     * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeP v_category_type = 14;</code>
+     * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeL v_category_type = 14;</code>
      */
     public int getVCategoryTypeValue() {
       return vCategoryType_;
     }
     /**
-     * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeP v_category_type = 14;</code>
+     * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeL v_category_type = 14;</code>
      */
-    public com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP getVCategoryType() {
-      com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP result = com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP.valueOf(vCategoryType_);
-      return result == null ? com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP.UNRECOGNIZED : result;
+    public com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL getVCategoryType() {
+      com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL result = com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL.valueOf(vCategoryType_);
+      return result == null ? com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL.UNRECOGNIZED : result;
     }
 
     public static final int V_NPC_SCENE_FIELD_NUMBER = 15;
@@ -1548,7 +1548,7 @@ public final class MsgQuestSubCondiOuterClass {
       if (vDifficultyType_ != com.felania.msldb.StageDifficultyTypeOuterClass.StageDifficultyType.StageDifficultyTypeNULL.getNumber()) {
         output.writeEnum(13, vDifficultyType_);
       }
-      if (vCategoryType_ != com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP.CategoryTypeNULL.getNumber()) {
+      if (vCategoryType_ != com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL.CategoryTypeNULL.getNumber()) {
         output.writeEnum(14, vCategoryType_);
       }
       if (vNpcScene_ != com.felania.msldb.MsgNPCTalkTopicOuterClass.MsgNPCTalkTopic.Scene.Quest.getNumber()) {
@@ -1626,7 +1626,7 @@ public final class MsgQuestSubCondiOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(13, vDifficultyType_);
       }
-      if (vCategoryType_ != com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP.CategoryTypeNULL.getNumber()) {
+      if (vCategoryType_ != com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL.CategoryTypeNULL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(14, vCategoryType_);
       }
@@ -2616,13 +2616,13 @@ public final class MsgQuestSubCondiOuterClass {
 
       private int vCategoryType_ = 0;
       /**
-       * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeP v_category_type = 14;</code>
+       * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeL v_category_type = 14;</code>
        */
       public int getVCategoryTypeValue() {
         return vCategoryType_;
       }
       /**
-       * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeP v_category_type = 14;</code>
+       * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeL v_category_type = 14;</code>
        */
       public Builder setVCategoryTypeValue(int value) {
         vCategoryType_ = value;
@@ -2630,16 +2630,16 @@ public final class MsgQuestSubCondiOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeP v_category_type = 14;</code>
+       * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeL v_category_type = 14;</code>
        */
-      public com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP getVCategoryType() {
-        com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP result = com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP.valueOf(vCategoryType_);
-        return result == null ? com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP.UNRECOGNIZED : result;
+      public com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL getVCategoryType() {
+        com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL result = com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL.valueOf(vCategoryType_);
+        return result == null ? com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL.UNRECOGNIZED : result;
       }
       /**
-       * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeP v_category_type = 14;</code>
+       * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeL v_category_type = 14;</code>
        */
-      public Builder setVCategoryType(com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeP value) {
+      public Builder setVCategoryType(com.felania.msldb.MsgQuestSubCondiOuterClass.MsgQuestSubCondi.CategoryTypeL value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2649,7 +2649,7 @@ public final class MsgQuestSubCondiOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeP v_category_type = 14;</code>
+       * <code>.msggamedata.MsgQuestSubCondi.CategoryTypeL v_category_type = 14;</code>
        */
       public Builder clearVCategoryType() {
         
@@ -2939,12 +2939,12 @@ public final class MsgQuestSubCondiOuterClass {
       "Color\022;\n\021v_difficulty_type\030\r \001(\0162 .msgga" +
       "medata.StageDifficultyType\022D\n\017v_category",
       "_type\030\016 \001(\0162+.msggamedata.MsgQuestSubCon" +
-      "di.CategoryTypeP\0227\n\013v_npc_scene\030\017 \001(\0162\"." +
+      "di.CategoryTypeL\0227\n\013v_npc_scene\030\017 \001(\0162\"." +
       "msggamedata.MsgNPCTalkTopic.Scene\022,\n\014v_p" +
       "rice_type\030\020 \001(\0162\026.msggamedata.PriceType\022" +
       "H\n\023v_lobby_reward_type\030\021 \001(\0162+.msggameda" +
       "ta.MsgLobbyReward.LobbyRewardType\022\030\n\020v_m" +
-      "onster_uid_or\030\022 \003(\007\"\364\001\n\rCategoryTypeP\022\024\n" +
+      "onster_uid_or\030\022 \003(\007\"\364\001\n\rCategoryTypeL\022\024\n" +
       "\020CategoryTypeNULL\020\000\022\013\n\007CT_Cash\020\001\022\013\n\007CT_R" +
       "une\020\002\022\022\n\016CT_BeyondStone\020\003\022\016\n\nCT_Monster\020" +
       "\004\022\016\n\nCT_Capture\020\005\022\022\n\016CT_InstantGold\020\006\022\013\n",
