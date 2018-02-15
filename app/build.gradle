@@ -7,13 +7,13 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '27.0.2'
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.felania.monstersuperleaguedatabook"
         minSdkVersion 14
         targetSdkVersion 26
-        versionCode 21
-        versionName "2.6.1387"
+        versionCode 22
+        versionName "2.6.1406"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
