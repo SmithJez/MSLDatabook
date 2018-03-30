@@ -121,7 +121,7 @@ class AstroguideDetailActivity : AppCompatActivity() {
         if(uid_evo3 > 1) {
             SetViewContent(uid_evo3)
             GetSkillDesc(uid_evo3)
-            TabController(uid_evo3)
+            TabController(uid_evo1)
             SetProfileDB(uid_evo1, uid_evo2, uid_evo3)
         }
 
@@ -201,8 +201,8 @@ class AstroguideDetailActivity : AppCompatActivity() {
 
 
         for(gg in mapDictName) {
-            val monName =  UtilFunctions.GetAstromonNameByID(mapString, mapMonster, gg.value.evo3.monsterUid)
-            val monEle =  mapMonster[gg.value.evo3.monsterUid]!!.element
+            val monName =  UtilFunctions.GetAstromonNameByID(mapString, mapMonster, gg.value.evo1.monsterUid)
+            val monEle =  mapMonster[gg.value.evo1.monsterUid]!!.element
             if(evo3Name == monName ) {
                 when( monEle ) {
                     MonsterElementType.ME_Fire -> {

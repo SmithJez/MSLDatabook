@@ -12,8 +12,8 @@ android {
         applicationId "com.felania.monstersuperleaguedatabook"
         minSdkVersion 14
         targetSdkVersion 26
-        versionCode 22
-        versionName "2.6.1406"
+        versionCode 26
+        versionName "2.6.1470"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
