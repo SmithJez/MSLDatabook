@@ -111,6 +111,9 @@ public final class RspSetFreeMonsterOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1419,7 +1422,7 @@ public final class RspSetFreeMonsterOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspSetFreeMonster(input, extensionRegistry);
+        return new RspSetFreeMonster(input, extensionRegistry);
       }
     };
 
@@ -1461,7 +1464,7 @@ public final class RspSetFreeMonsterOuterClass {
       "e\030\003 \001(\0162).msggamedata.RspSetFreeMonster." +
       "RewardType\0222\n\020reward_user_item\030\004 \001(\0132\030.m" +
       "sggamedata.MsgUserItem\022;\n\025reward_uid_and" +
-      "_amount\030\005 \001(\0132\034.msggamedata.MsgUidAndAmo",
+      "_amount\030\005 \001(\0132\034.msggamedata.MsgUidAndAmo" +
       "unt\022\035\n\025reward_to_gift_system\030\006 \001(\010\"2\n\nRe" +
       "wardType\022\010\n\004None\020\000\022\014\n\010UserItem\020\001\022\014\n\010Curr" +
       "ency\020\002B\023\n\021com.felania.msldbb\006proto3"

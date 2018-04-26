@@ -112,6 +112,9 @@ public final class MsgRuneSetEffectOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1295,7 +1298,7 @@ public final class MsgRuneSetEffectOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRuneSetEffect(input, extensionRegistry);
+        return new MsgRuneSetEffect(input, extensionRegistry);
       }
     };
 
@@ -1337,7 +1340,7 @@ public final class MsgRuneSetEffectOuterClass {
       "ypeAndValue\022\r\n\005count\030\005 \001(\r\0229\n\004cond\030\006 \001(\016" +
       "2+.msggamedata.MsgRuneSetEffect.SetEffec" +
       "tCond\022\014\n\004turn\030\007 \001(\r\"F\n\rSetEffectCond\022\025\n\021" +
-      "SetEffectCondNULL\020\000\022\n\n\006Always\020\001\022\022\n\016EachR",
+      "SetEffectCondNULL\020\000\022\n\n\006Always\020\001\022\022\n\016EachR" +
       "oundStart\020\002B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

@@ -108,6 +108,9 @@ public final class MsgRunningServerEventOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1408,7 +1411,7 @@ public final class MsgRunningServerEventOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRunningServerEvent(input, extensionRegistry);
+        return new MsgRunningServerEvent(input, extensionRegistry);
       }
     };
 
@@ -1450,7 +1453,7 @@ public final class MsgRunningServerEventOuterClass {
       "ration_type\030\006 \001(\0162:.msggamedata.MsgRunni" +
       "ngServerEvent.ServerEventDurationType\022\021\n" +
       "\tstage_uid\030\007 \001(\007\0228\n\trare_type\030\010 \001(\0162%.ms" +
-      "ggamedata.MsgStageMonster.RareType\"\362\003\n\017S",
+      "ggamedata.MsgStageMonster.RareType\"\362\003\n\017S" +
       "erverEventType\022\027\n\023ServerEventTypeNULL\020\000\022" +
       "!\n\035SVREVT_BattleResultMonsterExp\020\001\022\033\n\027SV" +
       "REVT_BattleResultGold\020\002\022\033\n\027SVREVT_Upgrad" +
@@ -1460,7 +1463,7 @@ public final class MsgRunningServerEventOuterClass {
       "\n!SVREVT_IncreaseMonsterCaptureProb\020\010\022\032\n" +
       "\026SVREVT_IncreaseFoodExp\020\t\022\"\n\036SVREVT_Comb" +
       "ineBeyondStonePrice\020\n\022 \n\034SVREVT_Increase" +
-      "CrystalReward\020\013\022-\n)SVREVT_InfiniteDungeo",
+      "CrystalReward\020\013\022-\n)SVREVT_InfiniteDungeo" +
       "nRequireEnergyToZero\020\014\022*\n&SVREVT_Increas" +
       "eAppearMonsterByRareType\020\r\022\033\n\027SVREVT_Use" +
       "FoodPriceFree\020\016\"\261\001\n\027ServerEventDurationT" +

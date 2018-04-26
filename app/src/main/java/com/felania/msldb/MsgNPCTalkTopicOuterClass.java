@@ -97,6 +97,9 @@ public final class MsgNPCTalkTopicOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1266,7 +1269,7 @@ public final class MsgNPCTalkTopicOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgNPCTalkTopic(input, extensionRegistry);
+        return new MsgNPCTalkTopic(input, extensionRegistry);
       }
     };
 
@@ -1308,7 +1311,7 @@ public final class MsgNPCTalkTopicOuterClass {
       "ifficulty\030\005 \001(\0162 .msggamedata.StageDiffi" +
       "cultyType\022\024\n\014talk_seq_uid\030\006 \001(\007\022\022\n\ntopic" +
       "_name\030\007 \001(\007\"J\n\007Trigger\022\010\n\004None\020\000\022\t\n\005Hell" +
-      "o\020\001\022\016\n\nStageClear\020\002\022\013\n\007NPCTalk\020\003\022\r\n\tIntr",
+      "o\020\001\022\016\n\nStageClear\020\002\022\013\n\007NPCTalk\020\003\022\r\n\tIntr" +
       "oduce\020\004\"\204\002\n\005Scene\022\t\n\005Quest\020\000\022\t\n\005Arena\020\001\022" +
       "\010\n\004Shop\020\002\022\014\n\010JojeShop\020\003\022\n\n\006Summon\020\004\022\013\n\007M" +
       "onster\020\005\022\t\n\005Lobby\020\006\022\n\n\006Battle\020\007\022\026\n\022Monst" +

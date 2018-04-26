@@ -125,6 +125,9 @@ public final class RspMonsterSummonByEggOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1571,7 +1574,7 @@ public final class RspMonsterSummonByEggOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspMonsterSummonByEgg(input, extensionRegistry);
+        return new RspMonsterSummonByEgg(input, extensionRegistry);
       }
     };
 
@@ -1613,7 +1616,7 @@ public final class RspMonsterSummonByEggOuterClass {
       "ser_monsters\030\003 \003(\0132\033.msggamedata.MsgUser" +
       "Monster\022D\n\027user_monster_dict_datas\030\004 \003(\013" +
       "2#.msggamedata.MsgUserMonsterDictData\022\027\n" +
-      "\017multiple_summon\030\005 \001(\010B\023\n\021com.felania.ms",
+      "\017multiple_summon\030\005 \001(\010B\023\n\021com.felania.ms" +
       "ldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

@@ -121,6 +121,9 @@ public final class RspMonsterCaptureOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1544,7 +1547,7 @@ public final class RspMonsterCaptureOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspMonsterCapture(input, extensionRegistry);
+        return new RspMonsterCapture(input, extensionRegistry);
       }
     };
 
@@ -1586,7 +1589,7 @@ public final class RspMonsterCaptureOuterClass {
       "er\030\001 \001(\0132\033.msggamedata.MsgUserMonster\022\"\n" +
       "\004user\030\002 \001(\0132\024.msggamedata.MsgUser\022C\n\026use" +
       "r_monster_dict_data\030\003 \001(\0132#.msggamedata." +
-      "MsgUserMonsterDictData\022;\n\nbonus_prob\030\004 \001",
+      "MsgUserMonsterDictData\022;\n\nbonus_prob\030\004 \001" +
       "(\0132\'.msggamedata.MsgMonsterCaptureBonusP" +
       "rob\022F\n\027monster_capture_history\030\005 \001(\0132%.m" +
       "sggamedata.MsgMonsterCaptureHistory\022H\n\030c" +

@@ -84,6 +84,9 @@ public final class ReqShopPurchaseOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -260,6 +263,9 @@ public final class ReqShopPurchaseOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1369,7 +1375,7 @@ public final class ReqShopPurchaseOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new ReceiptInfo(input, extensionRegistry);
+          return new ReceiptInfo(input, extensionRegistry);
         }
       };
 
@@ -2084,7 +2090,7 @@ public final class ReqShopPurchaseOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ReqShopPurchase(input, extensionRegistry);
+        return new ReqShopPurchase(input, extensionRegistry);
       }
     };
 
@@ -2131,7 +2137,7 @@ public final class ReqShopPurchaseOuterClass {
       "pe\030\005 \001(\0162\033.msggamedata.IngameShopType\032\225\001" +
       "\n\013ReceiptInfo\022$\n\005store\030\001 \001(\0162\025.msggameda" +
       "ta.AppStore\022\013\n\003pid\030\002 \001(\t\022\r\n\005token\030\003 \001(\t\022" +
-      "\021\n\tsignature\030\004 \001(\t\022\025\n\rcurrency_unit\030\005 \001(",
+      "\021\n\tsignature\030\004 \001(\t\022\025\n\rcurrency_unit\030\005 \001(" +
       "\t\022\r\n\005price\030\006 \001(\002\022\013\n\003etc\030\007 \001(\tB\023\n\021com.fel" +
       "ania.msldbb\006proto3"
     };

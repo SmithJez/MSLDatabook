@@ -311,6 +311,9 @@ public final class MsgUserOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       int mutable_bitField1_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -3262,7 +3265,7 @@ public final class MsgUserOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgUser(input, extensionRegistry);
+        return new MsgUser(input, extensionRegistry);
       }
     };
 
@@ -3304,7 +3307,7 @@ public final class MsgUserOuterClass {
       "int\030\013 \001(\r\022\024\n\014arena_ticket\030\014 \001(\r\022\026\n\016dunge" +
       "on_ticket\030\r \001(\r\022\032\n\022energy_charge_time\030\016 " +
       "\001(\r\022\031\n\021monster_inven_cnt\030\017 \001(\r\022!\n\031repres" +
-      "entative_monster_id\030\021 \001(\004\022\026\n\016capture_bul",
+      "entative_monster_id\030\021 \001(\004\022\026\n\016capture_bul" +
       "let\030\022 \001(\r\022\025\n\rhello_message\030\023 \001(\t\022\022\n\nlike" +
       "_count\030\024 \001(\r\022\031\n\021like_ticket_count\030\025 \001(\r\022" +
       " \n\030auto_fill_capture_bullet\030\026 \001(\010\022\022\n\nmax" +
@@ -3314,7 +3317,7 @@ public final class MsgUserOuterClass {
       "ofile_icon_uid\030\032 \001(\r\022\025\n\rtutorial_step\030\033 " +
       "\001(\r\022\033\n\023arena_winning_point\030\034 \001(\r\022\025\n\raren" +
       "a_message\030\035 \001(\t\022#\n\033dungeon_ticket_expire" +
-      "d_date\030\036 \001(\004\022+\n#arena_candidate_list_pub",
+      "d_date\030\036 \001(\004\022+\n#arena_candidate_list_pub" +
       "lished_date\030\037 \001(\004\022 \n\030arena_ticket_charge" +
       "_time\030  \001(\r\022\031\n\021arena_reward_date\030! \001(\r\022 " +
       "\n\030last_arena_winning_point\030\" \001(\r\022\030\n\020aren" +

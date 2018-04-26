@@ -145,6 +145,9 @@ public final class MsgGachaShopEventOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1667,7 +1670,7 @@ public final class MsgGachaShopEventOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgGachaShopEvent(input, extensionRegistry);
+        return new MsgGachaShopEvent(input, extensionRegistry);
       }
     };
 
@@ -1709,7 +1712,7 @@ public final class MsgGachaShopEventOuterClass {
       "opEvent.GachaShopEventType\022\022\n\nrandom_uid" +
       "\030\010 \001(\007\022\024\n\014monster_uids\030\t \003(\007\022\020\n\010rate_val" +
       "\030\n \001(\002\022,\n\006reward\030\013 \001(\0132\034.msggamedata.Msg" +
-      "UidAndAmount\022\024\n\014reward_count\030\014 \001(\r\022\037\n\027ti",
+      "UidAndAmount\022\024\n\014reward_count\030\014 \001(\r\022\037\n\027ti" +
       "cket_sales_start_date\030\r \001(\004\"e\n\022GachaShop" +
       "EventType\022\014\n\010GSE_None\020\000\022\025\n\021GSE_CertainRa" +
       "teUp\020\001\022\024\n\020GSE_HeroFestival\020\002\022\024\n\020GSE_Clan" +

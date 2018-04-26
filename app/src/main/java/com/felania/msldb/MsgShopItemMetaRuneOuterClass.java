@@ -140,6 +140,9 @@ public final class MsgShopItemMetaRuneOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1595,7 +1598,7 @@ public final class MsgShopItemMetaRuneOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgShopItemMetaRune(input, extensionRegistry);
+        return new MsgShopItemMetaRune(input, extensionRegistry);
       }
     };
 
@@ -1637,7 +1640,7 @@ public final class MsgShopItemMetaRuneOuterClass {
       ".msggamedata.MsgUidAndAmount\022\023\n\013reward_p" +
       "rob\030\005 \001(\t\022\014\n\004rare\030\006 \001(\r\022!\n\031born_optional" +
       "_effect_prob\030\007 \003(\002\0224\n\rexclude_color\030\010 \003(" +
-      "\0162\035.msggamedata.MonsterRuneColorB\023\n\021com.",
+      "\0162\035.msggamedata.MonsterRuneColorB\023\n\021com." +
       "felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

@@ -213,6 +213,9 @@ public final class RspRefreshMyClanInfoOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2737,7 +2740,7 @@ public final class RspRefreshMyClanInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspRefreshMyClanInfo(input, extensionRegistry);
+        return new RspRefreshMyClanInfo(input, extensionRegistry);
       }
     };
 
@@ -2779,7 +2782,7 @@ public final class RspRefreshMyClanInfoOuterClass {
       "story.proto\"\303\004\n\024RspRefreshMyClanInfo\022\'\n\t" +
       "clan_data\030\001 \001(\0132\024.msggamedata.MsgClan\0228\n" +
       "\014season_state\030\002 \001(\0162\".msggamedata.ClanBa" +
-      "ttleSeasonState\022>\n\023curr_season_history\030\003",
+      "ttleSeasonState\022>\n\023curr_season_history\030\003" +
       " \001(\0132!.msggamedata.MsgClanSeasonHistory\022" +
       "6\n\016my_clan_member\030\004 \001(\0132\036.msggamedata.Ms" +
       "gUserClanMember\0228\n\020clan_member_list\030\005 \003(" +
@@ -2789,7 +2792,7 @@ public final class RspRefreshMyClanInfoOuterClass {
       ".msggamedata.MsgClanListData\022\035\n\025member_n" +
       "ame_in_battle\030\010 \003(\t\022E\n\022apprentice_histor" +
       "y\030\t \001(\0132).msggamedata.MsgUserClanApprent" +
-      "iceHistory\022=\n\024my_cvc_phase_history\030\n \001(\013",
+      "iceHistory\022=\n\024my_cvc_phase_history\030\n \001(\013" +
       "2\037.msggamedata.MsgCVCPhaseHistoryB\023\n\021com" +
       ".felania.msldbb\006proto3"
     };

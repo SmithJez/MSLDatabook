@@ -24,66 +24,24 @@ public final class MsgMonsterCostumeBundleOuterClass {
     int getUid();
 
     /**
-     * <code>fixed32 name = 2;</code>
-     */
-    int getName();
-
-    /**
-     * <code>repeated fixed32 costum_item_uids = 3;</code>
+     * <code>repeated fixed32 costum_item_uids = 2;</code>
      */
     java.util.List<java.lang.Integer> getCostumItemUidsList();
     /**
-     * <code>repeated fixed32 costum_item_uids = 3;</code>
+     * <code>repeated fixed32 costum_item_uids = 2;</code>
      */
     int getCostumItemUidsCount();
     /**
-     * <code>repeated fixed32 costum_item_uids = 3;</code>
+     * <code>repeated fixed32 costum_item_uids = 2;</code>
      */
     int getCostumItemUids(int index);
 
     /**
-     * <code>.msggamedata.MsgPrice price = 4;</code>
-     */
-    boolean hasPrice();
-    /**
-     * <code>.msggamedata.MsgPrice price = 4;</code>
-     */
-    com.felania.msldb.MsgPriceOuterClass.MsgPrice getPrice();
-    /**
-     * <code>.msggamedata.MsgPrice price = 4;</code>
-     */
-    com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder getPriceOrBuilder();
-
-    /**
-     * <code>.msggamedata.MsgShopItem.MarkType mark = 5;</code>
-     */
-    int getMarkValue();
-    /**
-     * <code>.msggamedata.MsgShopItem.MarkType mark = 5;</code>
-     */
-    com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType getMark();
-
-    /**
-     * <code>fixed32 desc3 = 6;</code>
-     */
-    int getDesc3();
-
-    /**
-     * <code>uint64 open_date = 7;</code>
-     */
-    long getOpenDate();
-
-    /**
-     * <code>uint64 close_date = 8;</code>
-     */
-    long getCloseDate();
-
-    /**
-     * <code>string deep_link = 9;</code>
+     * <code>string deep_link = 3;</code>
      */
     java.lang.String getDeepLink();
     /**
-     * <code>string deep_link = 9;</code>
+     * <code>string deep_link = 3;</code>
      */
     com.google.protobuf.ByteString
         getDeepLinkBytes();
@@ -102,12 +60,7 @@ public final class MsgMonsterCostumeBundleOuterClass {
     }
     private MsgMonsterCostumeBundle() {
       uid_ = 0;
-      name_ = 0;
       costumItemUids_ = java.util.Collections.emptyList();
-      mark_ = 0;
-      desc3_ = 0;
-      openDate_ = 0L;
-      closeDate_ = 0L;
       deepLink_ = "";
     }
 
@@ -121,6 +74,9 @@ public final class MsgMonsterCostumeBundleOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -145,24 +101,19 @@ public final class MsgMonsterCostumeBundleOuterClass {
               break;
             }
             case 21: {
-
-              name_ = input.readFixed32();
-              break;
-            }
-            case 29: {
-              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
                 costumItemUids_ = new java.util.ArrayList<java.lang.Integer>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000002;
               }
               costumItemUids_.add(input.readFixed32());
               break;
             }
-            case 26: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002) && input.getBytesUntilLimit() > 0) {
                 costumItemUids_ = new java.util.ArrayList<java.lang.Integer>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 costumItemUids_.add(input.readFixed32());
@@ -170,41 +121,7 @@ public final class MsgMonsterCostumeBundleOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 34: {
-              com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder subBuilder = null;
-              if (price_ != null) {
-                subBuilder = price_.toBuilder();
-              }
-              price_ = input.readMessage(com.felania.msldb.MsgPriceOuterClass.MsgPrice.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(price_);
-                price_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 40: {
-              int rawValue = input.readEnum();
-
-              mark_ = rawValue;
-              break;
-            }
-            case 53: {
-
-              desc3_ = input.readFixed32();
-              break;
-            }
-            case 56: {
-
-              openDate_ = input.readUInt64();
-              break;
-            }
-            case 64: {
-
-              closeDate_ = input.readUInt64();
-              break;
-            }
-            case 74: {
+            case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
               deepLink_ = s;
@@ -218,7 +135,7 @@ public final class MsgMonsterCostumeBundleOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
           costumItemUids_ = java.util.Collections.unmodifiableList(costumItemUids_);
         }
         this.unknownFields = unknownFields.build();
@@ -247,106 +164,33 @@ public final class MsgMonsterCostumeBundleOuterClass {
       return uid_;
     }
 
-    public static final int NAME_FIELD_NUMBER = 2;
-    private int name_;
-    /**
-     * <code>fixed32 name = 2;</code>
-     */
-    public int getName() {
-      return name_;
-    }
-
-    public static final int COSTUM_ITEM_UIDS_FIELD_NUMBER = 3;
+    public static final int COSTUM_ITEM_UIDS_FIELD_NUMBER = 2;
     private java.util.List<java.lang.Integer> costumItemUids_;
     /**
-     * <code>repeated fixed32 costum_item_uids = 3;</code>
+     * <code>repeated fixed32 costum_item_uids = 2;</code>
      */
     public java.util.List<java.lang.Integer>
         getCostumItemUidsList() {
       return costumItemUids_;
     }
     /**
-     * <code>repeated fixed32 costum_item_uids = 3;</code>
+     * <code>repeated fixed32 costum_item_uids = 2;</code>
      */
     public int getCostumItemUidsCount() {
       return costumItemUids_.size();
     }
     /**
-     * <code>repeated fixed32 costum_item_uids = 3;</code>
+     * <code>repeated fixed32 costum_item_uids = 2;</code>
      */
     public int getCostumItemUids(int index) {
       return costumItemUids_.get(index);
     }
     private int costumItemUidsMemoizedSerializedSize = -1;
 
-    public static final int PRICE_FIELD_NUMBER = 4;
-    private com.felania.msldb.MsgPriceOuterClass.MsgPrice price_;
-    /**
-     * <code>.msggamedata.MsgPrice price = 4;</code>
-     */
-    public boolean hasPrice() {
-      return price_ != null;
-    }
-    /**
-     * <code>.msggamedata.MsgPrice price = 4;</code>
-     */
-    public com.felania.msldb.MsgPriceOuterClass.MsgPrice getPrice() {
-      return price_ == null ? com.felania.msldb.MsgPriceOuterClass.MsgPrice.getDefaultInstance() : price_;
-    }
-    /**
-     * <code>.msggamedata.MsgPrice price = 4;</code>
-     */
-    public com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder getPriceOrBuilder() {
-      return getPrice();
-    }
-
-    public static final int MARK_FIELD_NUMBER = 5;
-    private int mark_;
-    /**
-     * <code>.msggamedata.MsgShopItem.MarkType mark = 5;</code>
-     */
-    public int getMarkValue() {
-      return mark_;
-    }
-    /**
-     * <code>.msggamedata.MsgShopItem.MarkType mark = 5;</code>
-     */
-    public com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType getMark() {
-      com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType result = com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.valueOf(mark_);
-      return result == null ? com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.UNRECOGNIZED : result;
-    }
-
-    public static final int DESC3_FIELD_NUMBER = 6;
-    private int desc3_;
-    /**
-     * <code>fixed32 desc3 = 6;</code>
-     */
-    public int getDesc3() {
-      return desc3_;
-    }
-
-    public static final int OPEN_DATE_FIELD_NUMBER = 7;
-    private long openDate_;
-    /**
-     * <code>uint64 open_date = 7;</code>
-     */
-    public long getOpenDate() {
-      return openDate_;
-    }
-
-    public static final int CLOSE_DATE_FIELD_NUMBER = 8;
-    private long closeDate_;
-    /**
-     * <code>uint64 close_date = 8;</code>
-     */
-    public long getCloseDate() {
-      return closeDate_;
-    }
-
-    public static final int DEEP_LINK_FIELD_NUMBER = 9;
+    public static final int DEEP_LINK_FIELD_NUMBER = 3;
     private volatile java.lang.Object deepLink_;
     /**
-     * <code>string deep_link = 9;</code>
+     * <code>string deep_link = 3;</code>
      */
     public java.lang.String getDeepLink() {
       java.lang.Object ref = deepLink_;
@@ -361,7 +205,7 @@ public final class MsgMonsterCostumeBundleOuterClass {
       }
     }
     /**
-     * <code>string deep_link = 9;</code>
+     * <code>string deep_link = 3;</code>
      */
     public com.google.protobuf.ByteString
         getDeepLinkBytes() {
@@ -393,33 +237,15 @@ public final class MsgMonsterCostumeBundleOuterClass {
       if (uid_ != 0) {
         output.writeFixed32(1, uid_);
       }
-      if (name_ != 0) {
-        output.writeFixed32(2, name_);
-      }
       if (getCostumItemUidsList().size() > 0) {
-        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(costumItemUidsMemoizedSerializedSize);
       }
       for (int i = 0; i < costumItemUids_.size(); i++) {
         output.writeFixed32NoTag(costumItemUids_.get(i));
       }
-      if (price_ != null) {
-        output.writeMessage(4, getPrice());
-      }
-      if (mark_ != com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.MarkTypeNULL.getNumber()) {
-        output.writeEnum(5, mark_);
-      }
-      if (desc3_ != 0) {
-        output.writeFixed32(6, desc3_);
-      }
-      if (openDate_ != 0L) {
-        output.writeUInt64(7, openDate_);
-      }
-      if (closeDate_ != 0L) {
-        output.writeUInt64(8, closeDate_);
-      }
       if (!getDeepLinkBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, deepLink_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, deepLink_);
       }
       unknownFields.writeTo(output);
     }
@@ -433,10 +259,6 @@ public final class MsgMonsterCostumeBundleOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeFixed32Size(1, uid_);
       }
-      if (name_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(2, name_);
-      }
       {
         int dataSize = 0;
         dataSize = 4 * getCostumItemUidsList().size();
@@ -448,28 +270,8 @@ public final class MsgMonsterCostumeBundleOuterClass {
         }
         costumItemUidsMemoizedSerializedSize = dataSize;
       }
-      if (price_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getPrice());
-      }
-      if (mark_ != com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.MarkTypeNULL.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, mark_);
-      }
-      if (desc3_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(6, desc3_);
-      }
-      if (openDate_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(7, openDate_);
-      }
-      if (closeDate_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(8, closeDate_);
-      }
       if (!getDeepLinkBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, deepLink_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, deepLink_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -489,22 +291,8 @@ public final class MsgMonsterCostumeBundleOuterClass {
       boolean result = true;
       result = result && (getUid()
           == other.getUid());
-      result = result && (getName()
-          == other.getName());
       result = result && getCostumItemUidsList()
           .equals(other.getCostumItemUidsList());
-      result = result && (hasPrice() == other.hasPrice());
-      if (hasPrice()) {
-        result = result && getPrice()
-            .equals(other.getPrice());
-      }
-      result = result && mark_ == other.mark_;
-      result = result && (getDesc3()
-          == other.getDesc3());
-      result = result && (getOpenDate()
-          == other.getOpenDate());
-      result = result && (getCloseDate()
-          == other.getCloseDate());
       result = result && getDeepLink()
           .equals(other.getDeepLink());
       result = result && unknownFields.equals(other.unknownFields);
@@ -520,26 +308,10 @@ public final class MsgMonsterCostumeBundleOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName();
       if (getCostumItemUidsCount() > 0) {
         hash = (37 * hash) + COSTUM_ITEM_UIDS_FIELD_NUMBER;
         hash = (53 * hash) + getCostumItemUidsList().hashCode();
       }
-      if (hasPrice()) {
-        hash = (37 * hash) + PRICE_FIELD_NUMBER;
-        hash = (53 * hash) + getPrice().hashCode();
-      }
-      hash = (37 * hash) + MARK_FIELD_NUMBER;
-      hash = (53 * hash) + mark_;
-      hash = (37 * hash) + DESC3_FIELD_NUMBER;
-      hash = (53 * hash) + getDesc3();
-      hash = (37 * hash) + OPEN_DATE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getOpenDate());
-      hash = (37 * hash) + CLOSE_DATE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getCloseDate());
       hash = (37 * hash) + DEEP_LINK_FIELD_NUMBER;
       hash = (53 * hash) + getDeepLink().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -673,24 +445,8 @@ public final class MsgMonsterCostumeBundleOuterClass {
         super.clear();
         uid_ = 0;
 
-        name_ = 0;
-
         costumItemUids_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        if (priceBuilder_ == null) {
-          price_ = null;
-        } else {
-          price_ = null;
-          priceBuilder_ = null;
-        }
-        mark_ = 0;
-
-        desc3_ = 0;
-
-        openDate_ = 0L;
-
-        closeDate_ = 0L;
-
+        bitField0_ = (bitField0_ & ~0x00000002);
         deepLink_ = "";
 
         return this;
@@ -718,21 +474,11 @@ public final class MsgMonsterCostumeBundleOuterClass {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.uid_ = uid_;
-        result.name_ = name_;
-        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
           costumItemUids_ = java.util.Collections.unmodifiableList(costumItemUids_);
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.costumItemUids_ = costumItemUids_;
-        if (priceBuilder_ == null) {
-          result.price_ = price_;
-        } else {
-          result.price_ = priceBuilder_.build();
-        }
-        result.mark_ = mark_;
-        result.desc3_ = desc3_;
-        result.openDate_ = openDate_;
-        result.closeDate_ = closeDate_;
         result.deepLink_ = deepLink_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -779,33 +525,15 @@ public final class MsgMonsterCostumeBundleOuterClass {
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
-        if (other.getName() != 0) {
-          setName(other.getName());
-        }
         if (!other.costumItemUids_.isEmpty()) {
           if (costumItemUids_.isEmpty()) {
             costumItemUids_ = other.costumItemUids_;
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureCostumItemUidsIsMutable();
             costumItemUids_.addAll(other.costumItemUids_);
           }
           onChanged();
-        }
-        if (other.hasPrice()) {
-          mergePrice(other.getPrice());
-        }
-        if (other.mark_ != 0) {
-          setMarkValue(other.getMarkValue());
-        }
-        if (other.getDesc3() != 0) {
-          setDesc3(other.getDesc3());
-        }
-        if (other.getOpenDate() != 0L) {
-          setOpenDate(other.getOpenDate());
-        }
-        if (other.getCloseDate() != 0L) {
-          setCloseDate(other.getCloseDate());
         }
         if (!other.getDeepLink().isEmpty()) {
           deepLink_ = other.deepLink_;
@@ -865,60 +593,34 @@ public final class MsgMonsterCostumeBundleOuterClass {
         return this;
       }
 
-      private int name_ ;
-      /**
-       * <code>fixed32 name = 2;</code>
-       */
-      public int getName() {
-        return name_;
-      }
-      /**
-       * <code>fixed32 name = 2;</code>
-       */
-      public Builder setName(int value) {
-        
-        name_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>fixed32 name = 2;</code>
-       */
-      public Builder clearName() {
-        
-        name_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<java.lang.Integer> costumItemUids_ = java.util.Collections.emptyList();
       private void ensureCostumItemUidsIsMutable() {
-        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
           costumItemUids_ = new java.util.ArrayList<java.lang.Integer>(costumItemUids_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated fixed32 costum_item_uids = 3;</code>
+       * <code>repeated fixed32 costum_item_uids = 2;</code>
        */
       public java.util.List<java.lang.Integer>
           getCostumItemUidsList() {
         return java.util.Collections.unmodifiableList(costumItemUids_);
       }
       /**
-       * <code>repeated fixed32 costum_item_uids = 3;</code>
+       * <code>repeated fixed32 costum_item_uids = 2;</code>
        */
       public int getCostumItemUidsCount() {
         return costumItemUids_.size();
       }
       /**
-       * <code>repeated fixed32 costum_item_uids = 3;</code>
+       * <code>repeated fixed32 costum_item_uids = 2;</code>
        */
       public int getCostumItemUids(int index) {
         return costumItemUids_.get(index);
       }
       /**
-       * <code>repeated fixed32 costum_item_uids = 3;</code>
+       * <code>repeated fixed32 costum_item_uids = 2;</code>
        */
       public Builder setCostumItemUids(
           int index, int value) {
@@ -928,7 +630,7 @@ public final class MsgMonsterCostumeBundleOuterClass {
         return this;
       }
       /**
-       * <code>repeated fixed32 costum_item_uids = 3;</code>
+       * <code>repeated fixed32 costum_item_uids = 2;</code>
        */
       public Builder addCostumItemUids(int value) {
         ensureCostumItemUidsIsMutable();
@@ -937,7 +639,7 @@ public final class MsgMonsterCostumeBundleOuterClass {
         return this;
       }
       /**
-       * <code>repeated fixed32 costum_item_uids = 3;</code>
+       * <code>repeated fixed32 costum_item_uids = 2;</code>
        */
       public Builder addAllCostumItemUids(
           java.lang.Iterable<? extends java.lang.Integer> values) {
@@ -948,257 +650,18 @@ public final class MsgMonsterCostumeBundleOuterClass {
         return this;
       }
       /**
-       * <code>repeated fixed32 costum_item_uids = 3;</code>
+       * <code>repeated fixed32 costum_item_uids = 2;</code>
        */
       public Builder clearCostumItemUids() {
         costumItemUids_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-
-      private com.felania.msldb.MsgPriceOuterClass.MsgPrice price_ = null;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.felania.msldb.MsgPriceOuterClass.MsgPrice, com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder, com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder> priceBuilder_;
-      /**
-       * <code>.msggamedata.MsgPrice price = 4;</code>
-       */
-      public boolean hasPrice() {
-        return priceBuilder_ != null || price_ != null;
-      }
-      /**
-       * <code>.msggamedata.MsgPrice price = 4;</code>
-       */
-      public com.felania.msldb.MsgPriceOuterClass.MsgPrice getPrice() {
-        if (priceBuilder_ == null) {
-          return price_ == null ? com.felania.msldb.MsgPriceOuterClass.MsgPrice.getDefaultInstance() : price_;
-        } else {
-          return priceBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.msggamedata.MsgPrice price = 4;</code>
-       */
-      public Builder setPrice(com.felania.msldb.MsgPriceOuterClass.MsgPrice value) {
-        if (priceBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          price_ = value;
-          onChanged();
-        } else {
-          priceBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.msggamedata.MsgPrice price = 4;</code>
-       */
-      public Builder setPrice(
-          com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder builderForValue) {
-        if (priceBuilder_ == null) {
-          price_ = builderForValue.build();
-          onChanged();
-        } else {
-          priceBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.msggamedata.MsgPrice price = 4;</code>
-       */
-      public Builder mergePrice(com.felania.msldb.MsgPriceOuterClass.MsgPrice value) {
-        if (priceBuilder_ == null) {
-          if (price_ != null) {
-            price_ =
-              com.felania.msldb.MsgPriceOuterClass.MsgPrice.newBuilder(price_).mergeFrom(value).buildPartial();
-          } else {
-            price_ = value;
-          }
-          onChanged();
-        } else {
-          priceBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.msggamedata.MsgPrice price = 4;</code>
-       */
-      public Builder clearPrice() {
-        if (priceBuilder_ == null) {
-          price_ = null;
-          onChanged();
-        } else {
-          price_ = null;
-          priceBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.msggamedata.MsgPrice price = 4;</code>
-       */
-      public com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder getPriceBuilder() {
-        
-        onChanged();
-        return getPriceFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.msggamedata.MsgPrice price = 4;</code>
-       */
-      public com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder getPriceOrBuilder() {
-        if (priceBuilder_ != null) {
-          return priceBuilder_.getMessageOrBuilder();
-        } else {
-          return price_ == null ?
-              com.felania.msldb.MsgPriceOuterClass.MsgPrice.getDefaultInstance() : price_;
-        }
-      }
-      /**
-       * <code>.msggamedata.MsgPrice price = 4;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.felania.msldb.MsgPriceOuterClass.MsgPrice, com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder, com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder> 
-          getPriceFieldBuilder() {
-        if (priceBuilder_ == null) {
-          priceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.felania.msldb.MsgPriceOuterClass.MsgPrice, com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder, com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder>(
-                  getPrice(),
-                  getParentForChildren(),
-                  isClean());
-          price_ = null;
-        }
-        return priceBuilder_;
-      }
-
-      private int mark_ = 0;
-      /**
-       * <code>.msggamedata.MsgShopItem.MarkType mark = 5;</code>
-       */
-      public int getMarkValue() {
-        return mark_;
-      }
-      /**
-       * <code>.msggamedata.MsgShopItem.MarkType mark = 5;</code>
-       */
-      public Builder setMarkValue(int value) {
-        mark_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.msggamedata.MsgShopItem.MarkType mark = 5;</code>
-       */
-      public com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType getMark() {
-        com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType result = com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.valueOf(mark_);
-        return result == null ? com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.msggamedata.MsgShopItem.MarkType mark = 5;</code>
-       */
-      public Builder setMark(com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        mark_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.msggamedata.MsgShopItem.MarkType mark = 5;</code>
-       */
-      public Builder clearMark() {
-        
-        mark_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int desc3_ ;
-      /**
-       * <code>fixed32 desc3 = 6;</code>
-       */
-      public int getDesc3() {
-        return desc3_;
-      }
-      /**
-       * <code>fixed32 desc3 = 6;</code>
-       */
-      public Builder setDesc3(int value) {
-        
-        desc3_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>fixed32 desc3 = 6;</code>
-       */
-      public Builder clearDesc3() {
-        
-        desc3_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long openDate_ ;
-      /**
-       * <code>uint64 open_date = 7;</code>
-       */
-      public long getOpenDate() {
-        return openDate_;
-      }
-      /**
-       * <code>uint64 open_date = 7;</code>
-       */
-      public Builder setOpenDate(long value) {
-        
-        openDate_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 open_date = 7;</code>
-       */
-      public Builder clearOpenDate() {
-        
-        openDate_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long closeDate_ ;
-      /**
-       * <code>uint64 close_date = 8;</code>
-       */
-      public long getCloseDate() {
-        return closeDate_;
-      }
-      /**
-       * <code>uint64 close_date = 8;</code>
-       */
-      public Builder setCloseDate(long value) {
-        
-        closeDate_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 close_date = 8;</code>
-       */
-      public Builder clearCloseDate() {
-        
-        closeDate_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
       private java.lang.Object deepLink_ = "";
       /**
-       * <code>string deep_link = 9;</code>
+       * <code>string deep_link = 3;</code>
        */
       public java.lang.String getDeepLink() {
         java.lang.Object ref = deepLink_;
@@ -1213,7 +676,7 @@ public final class MsgMonsterCostumeBundleOuterClass {
         }
       }
       /**
-       * <code>string deep_link = 9;</code>
+       * <code>string deep_link = 3;</code>
        */
       public com.google.protobuf.ByteString
           getDeepLinkBytes() {
@@ -1229,7 +692,7 @@ public final class MsgMonsterCostumeBundleOuterClass {
         }
       }
       /**
-       * <code>string deep_link = 9;</code>
+       * <code>string deep_link = 3;</code>
        */
       public Builder setDeepLink(
           java.lang.String value) {
@@ -1242,7 +705,7 @@ public final class MsgMonsterCostumeBundleOuterClass {
         return this;
       }
       /**
-       * <code>string deep_link = 9;</code>
+       * <code>string deep_link = 3;</code>
        */
       public Builder clearDeepLink() {
         
@@ -1251,7 +714,7 @@ public final class MsgMonsterCostumeBundleOuterClass {
         return this;
       }
       /**
-       * <code>string deep_link = 9;</code>
+       * <code>string deep_link = 3;</code>
        */
       public Builder setDeepLinkBytes(
           com.google.protobuf.ByteString value) {
@@ -1294,7 +757,7 @@ public final class MsgMonsterCostumeBundleOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgMonsterCostumeBundle(input, extensionRegistry);
+        return new MsgMonsterCostumeBundle(input, extensionRegistry);
       }
     };
 
@@ -1328,14 +791,9 @@ public final class MsgMonsterCostumeBundleOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035MsgMonsterCostumeBundle.proto\022\013msggame" +
-      "data\032\016MsgPrice.proto\032\021MsgShopItem.proto\"" +
-      "\356\001\n\027MsgMonsterCostumeBundle\022\013\n\003uid\030\001 \001(\007" +
-      "\022\014\n\004name\030\002 \001(\007\022\030\n\020costum_item_uids\030\003 \003(\007" +
-      "\022$\n\005price\030\004 \001(\0132\025.msggamedata.MsgPrice\022/" +
-      "\n\004mark\030\005 \001(\0162!.msggamedata.MsgShopItem.M" +
-      "arkType\022\r\n\005desc3\030\006 \001(\007\022\021\n\topen_date\030\007 \001(" +
-      "\004\022\022\n\nclose_date\030\010 \001(\004\022\021\n\tdeep_link\030\t \001(\t" +
-      "B\023\n\021com.felania.msldbb\006proto3"
+      "data\"S\n\027MsgMonsterCostumeBundle\022\013\n\003uid\030\001" +
+      " \001(\007\022\030\n\020costum_item_uids\030\002 \003(\007\022\021\n\tdeep_l" +
+      "ink\030\003 \001(\tB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1348,17 +806,13 @@ public final class MsgMonsterCostumeBundleOuterClass {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.felania.msldb.MsgPriceOuterClass.getDescriptor(),
-          com.felania.msldb.MsgShopItemOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_MsgMonsterCostumeBundle_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_msggamedata_MsgMonsterCostumeBundle_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgMonsterCostumeBundle_descriptor,
-        new java.lang.String[] { "Uid", "Name", "CostumItemUids", "Price", "Mark", "Desc3", "OpenDate", "CloseDate", "DeepLink", });
-    com.felania.msldb.MsgPriceOuterClass.getDescriptor();
-    com.felania.msldb.MsgShopItemOuterClass.getDescriptor();
+        new java.lang.String[] { "Uid", "CostumItemUids", "DeepLink", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

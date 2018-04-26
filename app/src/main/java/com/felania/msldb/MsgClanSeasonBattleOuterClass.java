@@ -98,6 +98,9 @@ public final class MsgClanSeasonBattleOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1269,7 +1272,7 @@ public final class MsgClanSeasonBattleOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgClanSeasonBattle(input, extensionRegistry);
+        return new MsgClanSeasonBattle(input, extensionRegistry);
       }
     };
 
@@ -1311,7 +1314,7 @@ public final class MsgClanSeasonBattleOuterClass {
       "oTime\022-\n\rregister_time\030\005 \001(\0132\026.msggameda" +
       "ta.ProtoTime\"]\n\tBattleDay\022\021\n\rBattleDayNU" +
       "LL\020\000\022\007\n\003Mon\020\001\022\007\n\003Tue\020\002\022\007\n\003Wed\020\003\022\007\n\003Thu\020\004" +
-      "\022\007\n\003Fri\020\005\022\007\n\003Sat\020\006\022\007\n\003Sun\020\007B\023\n\021com.felan",
+      "\022\007\n\003Fri\020\005\022\007\n\003Sat\020\006\022\007\n\003Sun\020\007B\023\n\021com.felan" +
       "ia.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

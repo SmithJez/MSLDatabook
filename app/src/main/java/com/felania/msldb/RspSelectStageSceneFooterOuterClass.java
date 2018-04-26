@@ -110,6 +110,9 @@ public final class RspSelectStageSceneFooterOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1295,7 +1298,7 @@ public final class RspSelectStageSceneFooterOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspSelectStageSceneFooter(input, extensionRegistry);
+        return new RspSelectStageSceneFooter(input, extensionRegistry);
       }
     };
 
@@ -1337,7 +1340,7 @@ public final class RspSelectStageSceneFooterOuterClass {
       "freshDungeonType\0224\n\016clan_list_data\030\003 \003(\013" +
       "2\034.msggamedata.MsgClanListData\0229\n\022my_cla" +
       "n_cvc_member\030\004 \001(\0132\035.msggamedata.MsgUser" +
-      "CVCMember\022Q\n\035special_guardian_dungeon_da",
+      "CVCMember\022Q\n\035special_guardian_dungeon_da" +
       "ta\030\005 \001(\0132*.msggamedata.MsgSpecialGuardia" +
       "nDungeonDataB\023\n\021com.felania.msldbb\006proto" +
       "3"

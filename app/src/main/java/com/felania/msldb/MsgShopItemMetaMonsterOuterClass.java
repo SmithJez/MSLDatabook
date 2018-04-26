@@ -111,6 +111,9 @@ public final class MsgShopItemMetaMonsterOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -247,6 +250,9 @@ public final class MsgShopItemMetaMonsterOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -726,7 +732,7 @@ public final class MsgShopItemMetaMonsterOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new StatWeightTypeAndProb(input, extensionRegistry);
+          return new StatWeightTypeAndProb(input, extensionRegistry);
         }
       };
 
@@ -811,6 +817,9 @@ public final class MsgShopItemMetaMonsterOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1609,7 +1618,7 @@ public final class MsgShopItemMetaMonsterOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new MonsterPackageItem(input, extensionRegistry);
+          return new MonsterPackageItem(input, extensionRegistry);
         }
       };
 
@@ -1696,6 +1705,9 @@ public final class MsgShopItemMetaMonsterOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2576,7 +2588,7 @@ public final class MsgShopItemMetaMonsterOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new MonsterPackage(input, extensionRegistry);
+          return new MonsterPackage(input, extensionRegistry);
         }
       };
 
@@ -3733,7 +3745,7 @@ public final class MsgShopItemMetaMonsterOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgShopItemMetaMonster(input, extensionRegistry);
+        return new MsgShopItemMetaMonster(input, extensionRegistry);
       }
     };
 
@@ -3790,7 +3802,7 @@ public final class MsgShopItemMetaMonsterOuterClass {
       "tTypeAndProb\022C\n\007package\030\003 \001(\01322.msggamed" +
       "ata.MsgShopItemMetaMonster.MonsterPackag" +
       "e\022\024\n\014cutscene_uid\030\004 \001(\007\022\013\n\003egg\030\005 \001(\t\032c\n\025" +
-      "StatWeightTypeAndProb\022<\n\020stat_weight_typ",
+      "StatWeightTypeAndProb\022<\n\020stat_weight_typ" +
       "e\030\001 \001(\0162\".msggamedata.MonsterStatWeightT" +
       "ype\022\014\n\004prob\030\002 \001(\002\032|\n\022MonsterPackageItem\022" +
       "\013\n\003uid\030\001 \001(\007\022\013\n\003cnt\030\002 \001(\r\022L\n\tprob_list\030\003" +
@@ -3800,7 +3812,7 @@ public final class MsgShopItemMetaMonsterOuterClass {
       "pItemMetaMonster.MonsterPackageItem\022D\n\004m" +
       "ust\030\002 \001(\01326.msggamedata.MsgShopItemMetaM" +
       "onster.MonsterPackageItem\022E\n\005bonus\030\003 \001(\013" +
-      "26.msggamedata.MsgShopItemMetaMonster.Mo",
+      "26.msggamedata.MsgShopItemMetaMonster.Mo" +
       "nsterPackageItemB\023\n\021com.felania.msldbb\006p" +
       "roto3"
     };

@@ -107,6 +107,9 @@ public final class RspMonsterSummonOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1284,7 +1287,7 @@ public final class RspMonsterSummonOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspMonsterSummon(input, extensionRegistry);
+        return new RspMonsterSummon(input, extensionRegistry);
       }
     };
 
@@ -1326,7 +1329,7 @@ public final class RspMonsterSummonOuterClass {
       "ta.MsgUser\0221\n\014user_monster\030\004 \001(\0132\033.msgga" +
       "medata.MsgUserMonster\022C\n\026user_monster_di" +
       "ct_data\030\005 \001(\0132#.msggamedata.MsgUserMonst" +
-      "erDictData\022>\n\023user_summon_monster\030\006 \001(\0132",
+      "erDictData\022>\n\023user_summon_monster\030\006 \001(\0132" +
       "!.msggamedata.MsgUserSummonMonsterB\023\n\021co" +
       "m.felania.msldbb\006proto3"
     };

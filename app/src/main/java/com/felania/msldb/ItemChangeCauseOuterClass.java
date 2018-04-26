@@ -128,6 +128,18 @@ public final class ItemChangeCauseOuterClass {
      */
     ICC_Get_From_Monster_Drop(29),
     /**
+     * <code>ICC_Get_Lupin_Dungeon_Battle_Clear_Reward = 30;</code>
+     */
+    ICC_Get_Lupin_Dungeon_Battle_Clear_Reward(30),
+    /**
+     * <code>ICC_Use_For_Rename = 31;</code>
+     */
+    ICC_Use_For_Rename(31),
+    /**
+     * <code>ICC_Use_For_Change_Rune_Slot_Shape = 32;</code>
+     */
+    ICC_Use_For_Change_Rune_Slot_Shape(32),
+    /**
      * <code>ICC_Refund_From_DBTool = 99;</code>
      */
     ICC_Refund_From_DBTool(99),
@@ -243,6 +255,18 @@ public final class ItemChangeCauseOuterClass {
      */
     public static final int ICC_Get_From_Monster_Drop_VALUE = 29;
     /**
+     * <code>ICC_Get_Lupin_Dungeon_Battle_Clear_Reward = 30;</code>
+     */
+    public static final int ICC_Get_Lupin_Dungeon_Battle_Clear_Reward_VALUE = 30;
+    /**
+     * <code>ICC_Use_For_Rename = 31;</code>
+     */
+    public static final int ICC_Use_For_Rename_VALUE = 31;
+    /**
+     * <code>ICC_Use_For_Change_Rune_Slot_Shape = 32;</code>
+     */
+    public static final int ICC_Use_For_Change_Rune_Slot_Shape_VALUE = 32;
+    /**
      * <code>ICC_Refund_From_DBTool = 99;</code>
      */
     public static final int ICC_Refund_From_DBTool_VALUE = 99;
@@ -293,6 +317,9 @@ public final class ItemChangeCauseOuterClass {
         case 27: return ICC_Use_Super_Evolution;
         case 28: return ICC_Use_Sell_Super_Stone_Stuff;
         case 29: return ICC_Get_From_Monster_Drop;
+        case 30: return ICC_Get_Lupin_Dungeon_Battle_Clear_Reward;
+        case 31: return ICC_Use_For_Rename;
+        case 32: return ICC_Use_For_Change_Rune_Slot_Shape;
         case 99: return ICC_Refund_From_DBTool;
         default: return null;
       }
@@ -355,7 +382,7 @@ public final class ItemChangeCauseOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025ItemChangeCause.proto\022\013msggamedata*\241\007\n" +
+      "\n\025ItemChangeCause.proto\022\013msggamedata*\220\010\n" +
       "\017ItemChangeCause\022\027\n\023ItemChangeCauseNULL\020" +
       "\000\022\037\n\033ICC_Get_Battle_Clear_Reward\020\001\022\020\n\014IC" +
       "C_Get_Gift\020\002\022\027\n\023ICC_Get_Buy_In_Shop\020\003\022\034\n" +
@@ -364,7 +391,7 @@ public final class ItemChangeCauseOuterClass {
       "\027\n\023ICC_Get_From_DBTool\020\007\022!\n\035ICC_Use_Summ" +
       "on_Monster_By_Egg\020\010\022\032\n\026ICC_Use_Beyond_Mo" +
       "nster\020\t\022\030\n\024ICC_Use_Feed_Monster\020\n\022)\n%ICC" +
-      "_Use_Summon_Monster_By_StarEssence\020\013\022-\n)",
+      "_Use_Summon_Monster_By_StarEssence\020\013\022-\n)" +
       "ICC_Get_From_30day_package_special_rewar" +
       "d\020\017\022\036\n\032ICC_Get_From_30day_package\020\020\022 \n\034I" +
       "CC_Get_From_levelup_package\020\021\022\"\n\036ICC_Get" +
@@ -374,12 +401,15 @@ public final class ItemChangeCauseOuterClass {
       "Clear_Reward\020\025\022%\n!ICC_Get_Clan_Battle_Se" +
       "ason_Reward\020\026\022)\n%ICC_Get_From_LobbyShip_" +
       "special_reward\020\027\022#\n\037ICC_Get_From_adventu" +
-      "re_package2\020\030\022\037\n\033ICC_Use_Combine_Super_S",
+      "re_package2\020\030\022\037\n\033ICC_Use_Combine_Super_S" +
       "tone\020\031\022$\n ICC_Get_From_Combine_Super_Sto" +
       "ne\020\032\022\033\n\027ICC_Use_Super_Evolution\020\033\022\"\n\036ICC" +
       "_Use_Sell_Super_Stone_Stuff\020\034\022\035\n\031ICC_Get" +
-      "_From_Monster_Drop\020\035\022\032\n\026ICC_Refund_From_" +
-      "DBTool\020cB\023\n\021com.felania.msldbb\006proto3"
+      "_From_Monster_Drop\020\035\022-\n)ICC_Get_Lupin_Du" +
+      "ngeon_Battle_Clear_Reward\020\036\022\026\n\022ICC_Use_F" +
+      "or_Rename\020\037\022&\n\"ICC_Use_For_Change_Rune_S" +
+      "lot_Shape\020 \022\032\n\026ICC_Refund_From_DBTool\020cB" +
+      "\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

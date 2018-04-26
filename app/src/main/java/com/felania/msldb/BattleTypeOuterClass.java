@@ -71,6 +71,10 @@ public final class BattleTypeOuterClass {
      * <code>B_CVC = 12;</code>
      */
     B_CVC(12),
+    /**
+     * <code>B_LupinDungeon = 13;</code>
+     */
+    B_LupinDungeon(13),
     UNRECOGNIZED(-1),
     ;
 
@@ -126,6 +130,10 @@ public final class BattleTypeOuterClass {
      * <code>B_CVC = 12;</code>
      */
     public static final int B_CVC_VALUE = 12;
+    /**
+     * <code>B_LupinDungeon = 13;</code>
+     */
+    public static final int B_LupinDungeon_VALUE = 13;
 
 
     public final int getNumber() {
@@ -159,6 +167,7 @@ public final class BattleTypeOuterClass {
         case 10: return B_Clan;
         case 11: return B_ColossusDungeon;
         case 12: return B_CVC;
+        case 13: return B_LupinDungeon;
         default: return null;
       }
     }
@@ -220,15 +229,15 @@ public final class BattleTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020BattleType.proto\022\013msggamedata*\225\002\n\nBatt" +
+      "\n\020BattleType.proto\022\013msggamedata*\251\002\n\nBatt" +
       "leType\022\022\n\016BattleTypeNULL\020\000\022\013\n\007B_Story\020\001\022" +
       "\036\n\032B_AllDayBeyondStoneDungeon\020\002\022\033\n\027B_Day" +
       "BeyondStoneDungeon\020\003\022\027\n\023B_AllDayRuneDung" +
       "eon\020\004\022\024\n\020B_DayRuneDungeon\020\005\022\013\n\007B_Arena\020\006" +
       "\022\016\n\nB_Infinite\020\007\022\034\n\030B_FriendSoulStoneDun" +
       "geon\020\010\022\021\n\rB_GoldDungeon\020\t\022\n\n\006B_Clan\020\n\022\025\n" +
-      "\021B_ColossusDungeon\020\013\022\t\n\005B_CVC\020\014B\023\n\021com.f" +
-      "elania.msldbb\006proto3"
+      "\021B_ColossusDungeon\020\013\022\t\n\005B_CVC\020\014\022\022\n\016B_Lup" +
+      "inDungeon\020\rB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

@@ -79,6 +79,9 @@ public final class MsgUIShortcutOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1005,7 +1008,7 @@ public final class MsgUIShortcutOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgUIShortcut(input, extensionRegistry);
+        return new MsgUIShortcut(input, extensionRegistry);
       }
     };
 
@@ -1047,7 +1050,7 @@ public final class MsgUIShortcutOuterClass {
       "data.StageDifficultyType\"\315\001\n\005Place\022\r\n\tPl" +
       "aceNULL\020\000\022\014\n\010P_Revive\020\001\022\024\n\020P_ReviveFesti" +
       "val\020\002\022\013\n\007P_Stage\020\003\022\025\n\021P_CaptureFestival\020" +
-      "\004\022\023\n\017P_FriendDungeon\020\005\022\025\n\021P_GmFriendDung",
+      "\004\022\023\n\017P_FriendDungeon\020\005\022\025\n\021P_GmFriendDung" +
       "eon\020\006\022\024\n\020P_SuperEvolution\020\007\022\013\n\007P_Gacha\020\010" +
       "\022\022\n\016P_HeroFestival\020\t\022\n\n\006P_Shop\020\n\">\n\tShop" +
       "Place\022\021\n\rShopPlaceNULL\020\000\022\016\n\nSP_Package\020\001" +

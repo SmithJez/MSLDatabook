@@ -268,6 +268,9 @@ public final class MsgInfiniteSubStageOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -3327,7 +3330,7 @@ public final class MsgInfiniteSubStageOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgInfiniteSubStage(input, extensionRegistry);
+        return new MsgInfiniteSubStage(input, extensionRegistry);
       }
     };
 
@@ -3369,7 +3372,7 @@ public final class MsgInfiniteSubStageOuterClass {
       "e\030\005 \001(\t\022\014\n\004exps\030\006 \003(\r\022\024\n\014monster_exps\030\007 " +
       "\003(\r\022\031\n\021required_energies\030\t \003(\r\022\033\n\023normal" +
       "_display_mons\030\n \003(\007\022\031\n\021hard_display_mons" +
-      "\030\013 \003(\007\0223\n\016normal_battles\030\014 \003(\0132\033.msggame",
+      "\030\013 \003(\007\0223\n\016normal_battles\030\014 \003(\0132\033.msggame" +
       "data.MsgStageBattle\0221\n\014hard_battles\030\r \003(" +
       "\0132\033.msggamedata.MsgStageBattle\022\020\n\010tip_ui" +
       "ds\030\016 \003(\r\0228\n\014reward_probs\030\017 \003(\0132\".msggame" +

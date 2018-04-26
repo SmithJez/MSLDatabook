@@ -101,6 +101,9 @@ public final class MsgDailyBonusReturnUserSequenceOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1185,7 +1188,7 @@ public final class MsgDailyBonusReturnUserSequenceOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgDailyBonusReturnUserSequence(input, extensionRegistry);
+        return new MsgDailyBonusReturnUserSequence(input, extensionRegistry);
       }
     };
 
@@ -1227,7 +1230,7 @@ public final class MsgDailyBonusReturnUserSequenceOuterClass {
       "BonusReturnUserSequence.Where\0224\n\titem_ty" +
       "pe\030\004 \001(\0162!.msggamedata.MsgShopItem.ItemT" +
       "ype\022.\n\010uid_data\030\005 \001(\0132\034.msggamedata.MsgU" +
-      "idAndAmount\022H\n\024instant_monster_meta\030\006 \001(",
+      "idAndAmount\022H\n\024instant_monster_meta\030\006 \001(" +
       "\0132*.msggamedata.MsgShopItemMetaInstantMo" +
       "nster\"=\n\005Where\022\r\n\tWhereNULL\020\000\022\020\n\014DBRUSW_" +
       "Lobby\020\001\022\023\n\017DBRUSW_WorldMap\020\002B\023\n\021com.fela" +

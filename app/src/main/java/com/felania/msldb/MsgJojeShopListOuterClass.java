@@ -206,6 +206,9 @@ public final class MsgJojeShopListOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2600,7 +2603,7 @@ public final class MsgJojeShopListOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgJojeShopList(input, extensionRegistry);
+        return new MsgJojeShopList(input, extensionRegistry);
       }
     };
 
@@ -2642,7 +2645,7 @@ public final class MsgJojeShopListOuterClass {
       "BeyondStoneMeta.proto\032\037MsgJojeShopSuperS" +
       "toneMeta.proto\032$MsgJojeShopSuperStoneStu" +
       "ffMeta.proto\"\333\005\n\017MsgJojeShopList\022\n\n\002id\030\001" +
-      " \001(\004\022\013\n\003tid\030\002 \001(\004\022\020\n\010owner_id\030\003 \001(\004\022\014\n\004s",
+      " \001(\004\022\013\n\003tid\030\002 \001(\004\022\020\n\010owner_id\030\003 \001(\004\022\014\n\004s" +
       "lot\030\004 \001(\r\022\023\n\013create_date\030\006 \001(\004\022\025\n\rshop_i" +
       "tem_uid\030\007 \001(\007\022$\n\005price\030\010 \001(\0132\025.msggameda" +
       "ta.MsgPrice\0224\n\titem_type\030\t \001(\0162!.msggame" +
@@ -2652,7 +2655,7 @@ public final class MsgJojeShopListOuterClass {
       " \001(\0132%.msggamedata.MsgJojeShopSoulStoneM" +
       "eta\022@\n\020monster_egg_meta\030\014 \001(\0132&.msggamed" +
       "ata.MsgJojeShopMonsterEggMeta\0223\n\trune_me" +
-      "ta\030\r \001(\0132 .msggamedata.MsgJojeShopRuneMe",
+      "ta\030\r \001(\0132 .msggamedata.MsgJojeShopRuneMe" +
       "ta\0223\n\tfood_meta\030\016 \001(\0132 .msggamedata.MsgJ" +
       "ojeShopFoodMeta\022B\n\021beyond_stone_meta\030\017 \001" +
       "(\0132\'.msggamedata.MsgJojeShopBeyondStoneM" +

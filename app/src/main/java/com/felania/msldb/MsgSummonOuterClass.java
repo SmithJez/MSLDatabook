@@ -24,89 +24,89 @@ public final class MsgSummonOuterClass {
     int getUid();
 
     /**
-     * <code>fixed32 left_monster = 2;</code>
+     * <code>.msggamedata.MsgSummon.SummonType type = 2;</code>
+     */
+    int getTypeValue();
+    /**
+     * <code>.msggamedata.MsgSummon.SummonType type = 2;</code>
+     */
+    com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType getType();
+
+    /**
+     * <code>fixed32 left_monster = 3;</code>
      */
     int getLeftMonster();
 
     /**
-     * <code>fixed32 right_monster = 3;</code>
+     * <code>fixed32 right_monster = 4;</code>
      */
     int getRightMonster();
 
     /**
-     * <code>fixed32 result_monster = 4;</code>
+     * <code>fixed32 result_monster = 5;</code>
      */
     int getResultMonster();
 
     /**
-     * <code>.msggamedata.MsgPrice price = 5;</code>
+     * <code>.msggamedata.MsgPrice price = 6;</code>
      */
     boolean hasPrice();
     /**
-     * <code>.msggamedata.MsgPrice price = 5;</code>
+     * <code>.msggamedata.MsgPrice price = 6;</code>
      */
     com.felania.msldb.MsgPriceOuterClass.MsgPrice getPrice();
     /**
-     * <code>.msggamedata.MsgPrice price = 5;</code>
+     * <code>.msggamedata.MsgPrice price = 6;</code>
      */
     com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder getPriceOrBuilder();
 
     /**
-     * <code>float special_prob = 6;</code>
+     * <code>float special_prob = 7;</code>
      */
     float getSpecialProb();
 
     /**
-     * <code>bool is_limited = 7;</code>
+     * <code>bool is_limited = 8;</code>
      */
     boolean getIsLimited();
 
     /**
-     * <code>uint64 start_date = 8;</code>
+     * <code>fixed32 target_summon_uid = 9;</code>
+     */
+    int getTargetSummonUid();
+
+    /**
+     * <code>uint64 start_date = 10;</code>
      */
     long getStartDate();
 
     /**
-     * <code>uint64 end_date = 9;</code>
+     * <code>uint64 end_date = 11;</code>
      */
     long getEndDate();
 
     /**
-     * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-     */
-    java.util.List<com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition> 
-        getTreePositionList();
-    /**
-     * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-     */
-    com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition getTreePosition(int index);
-    /**
-     * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-     */
-    int getTreePositionCount();
-    /**
-     * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-     */
-    java.util.List<? extends com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePositionOrBuilder> 
-        getTreePositionOrBuilderList();
-    /**
-     * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-     */
-    com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePositionOrBuilder getTreePositionOrBuilder(
-        int index);
-
-    /**
-     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
      */
     boolean hasSummonMaxCountMeta();
     /**
-     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
      */
     com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta getSummonMaxCountMeta();
     /**
-     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
      */
     com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMetaOrBuilder getSummonMaxCountMetaOrBuilder();
+
+    /**
+     * <code>uint32 left_monster_index = 13;</code>
+     */
+    int getLeftMonsterIndex();
+
+    /**
+     * <code>uint32 parent_monster_index = 14;</code>
+     */
+    int getParentMonsterIndex();
   }
   /**
    * Protobuf type {@code msggamedata.MsgSummon}
@@ -122,14 +122,17 @@ public final class MsgSummonOuterClass {
     }
     private MsgSummon() {
       uid_ = 0;
+      type_ = 0;
       leftMonster_ = 0;
       rightMonster_ = 0;
       resultMonster_ = 0;
       specialProb_ = 0F;
       isLimited_ = false;
+      targetSummonUid_ = 0;
       startDate_ = 0L;
       endDate_ = 0L;
-      treePosition_ = java.util.Collections.emptyList();
+      leftMonsterIndex_ = 0;
+      parentMonsterIndex_ = 0;
     }
 
     @java.lang.Override
@@ -142,6 +145,9 @@ public final class MsgSummonOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -165,22 +171,28 @@ public final class MsgSummonOuterClass {
               uid_ = input.readFixed32();
               break;
             }
-            case 21: {
+            case 16: {
+              int rawValue = input.readEnum();
 
-              leftMonster_ = input.readFixed32();
+              type_ = rawValue;
               break;
             }
             case 29: {
 
-              rightMonster_ = input.readFixed32();
+              leftMonster_ = input.readFixed32();
               break;
             }
             case 37: {
 
+              rightMonster_ = input.readFixed32();
+              break;
+            }
+            case 45: {
+
               resultMonster_ = input.readFixed32();
               break;
             }
-            case 42: {
+            case 50: {
               com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder subBuilder = null;
               if (price_ != null) {
                 subBuilder = price_.toBuilder();
@@ -193,36 +205,32 @@ public final class MsgSummonOuterClass {
 
               break;
             }
-            case 53: {
+            case 61: {
 
               specialProb_ = input.readFloat();
               break;
             }
-            case 56: {
+            case 64: {
 
               isLimited_ = input.readBool();
               break;
             }
-            case 64: {
+            case 77: {
+
+              targetSummonUid_ = input.readFixed32();
+              break;
+            }
+            case 80: {
 
               startDate_ = input.readUInt64();
               break;
             }
-            case 72: {
+            case 88: {
 
               endDate_ = input.readUInt64();
               break;
             }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
-                treePosition_ = new java.util.ArrayList<com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition>();
-                mutable_bitField0_ |= 0x00000200;
-              }
-              treePosition_.add(
-                  input.readMessage(com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.parser(), extensionRegistry));
-              break;
-            }
-            case 90: {
+            case 98: {
               com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta.Builder subBuilder = null;
               if (summonMaxCountMeta_ != null) {
                 subBuilder = summonMaxCountMeta_.toBuilder();
@@ -235,6 +243,16 @@ public final class MsgSummonOuterClass {
 
               break;
             }
+            case 104: {
+
+              leftMonsterIndex_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              parentMonsterIndex_ = input.readUInt32();
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -243,9 +261,6 @@ public final class MsgSummonOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
-          treePosition_ = java.util.Collections.unmodifiableList(treePosition_);
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -262,7 +277,113 @@ public final class MsgSummonOuterClass {
               com.felania.msldb.MsgSummonOuterClass.MsgSummon.class, com.felania.msldb.MsgSummonOuterClass.MsgSummon.Builder.class);
     }
 
-    private int bitField0_;
+    /**
+     * Protobuf enum {@code msggamedata.MsgSummon.SummonType}
+     */
+    public enum SummonType
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>SummonTypeNULL = 0;</code>
+       */
+      SummonTypeNULL(0),
+      /**
+       * <code>Normal = 1;</code>
+       */
+      Normal(1),
+      /**
+       * <code>Special = 2;</code>
+       */
+      Special(2),
+      UNRECOGNIZED(-1),
+      ;
+
+      /**
+       * <code>SummonTypeNULL = 0;</code>
+       */
+      public static final int SummonTypeNULL_VALUE = 0;
+      /**
+       * <code>Normal = 1;</code>
+       */
+      public static final int Normal_VALUE = 1;
+      /**
+       * <code>Special = 2;</code>
+       */
+      public static final int Special_VALUE = 2;
+
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static SummonType valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static SummonType forNumber(int value) {
+        switch (value) {
+          case 0: return SummonTypeNULL;
+          case 1: return Normal;
+          case 2: return Special;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<SummonType>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          SummonType> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<SummonType>() {
+              public SummonType findValueByNumber(int number) {
+                return SummonType.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        return getDescriptor().getValues().get(ordinal());
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return com.felania.msldb.MsgSummonOuterClass.MsgSummon.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final SummonType[] VALUES = values();
+
+      public static SummonType valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private SummonType(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:msggamedata.MsgSummon.SummonType)
+    }
+
     public static final int UID_FIELD_NUMBER = 1;
     private int uid_;
     /**
@@ -272,144 +393,152 @@ public final class MsgSummonOuterClass {
       return uid_;
     }
 
-    public static final int LEFT_MONSTER_FIELD_NUMBER = 2;
+    public static final int TYPE_FIELD_NUMBER = 2;
+    private int type_;
+    /**
+     * <code>.msggamedata.MsgSummon.SummonType type = 2;</code>
+     */
+    public int getTypeValue() {
+      return type_;
+    }
+    /**
+     * <code>.msggamedata.MsgSummon.SummonType type = 2;</code>
+     */
+    public com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType getType() {
+      com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType result = com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType.valueOf(type_);
+      return result == null ? com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType.UNRECOGNIZED : result;
+    }
+
+    public static final int LEFT_MONSTER_FIELD_NUMBER = 3;
     private int leftMonster_;
     /**
-     * <code>fixed32 left_monster = 2;</code>
+     * <code>fixed32 left_monster = 3;</code>
      */
     public int getLeftMonster() {
       return leftMonster_;
     }
 
-    public static final int RIGHT_MONSTER_FIELD_NUMBER = 3;
+    public static final int RIGHT_MONSTER_FIELD_NUMBER = 4;
     private int rightMonster_;
     /**
-     * <code>fixed32 right_monster = 3;</code>
+     * <code>fixed32 right_monster = 4;</code>
      */
     public int getRightMonster() {
       return rightMonster_;
     }
 
-    public static final int RESULT_MONSTER_FIELD_NUMBER = 4;
+    public static final int RESULT_MONSTER_FIELD_NUMBER = 5;
     private int resultMonster_;
     /**
-     * <code>fixed32 result_monster = 4;</code>
+     * <code>fixed32 result_monster = 5;</code>
      */
     public int getResultMonster() {
       return resultMonster_;
     }
 
-    public static final int PRICE_FIELD_NUMBER = 5;
+    public static final int PRICE_FIELD_NUMBER = 6;
     private com.felania.msldb.MsgPriceOuterClass.MsgPrice price_;
     /**
-     * <code>.msggamedata.MsgPrice price = 5;</code>
+     * <code>.msggamedata.MsgPrice price = 6;</code>
      */
     public boolean hasPrice() {
       return price_ != null;
     }
     /**
-     * <code>.msggamedata.MsgPrice price = 5;</code>
+     * <code>.msggamedata.MsgPrice price = 6;</code>
      */
     public com.felania.msldb.MsgPriceOuterClass.MsgPrice getPrice() {
       return price_ == null ? com.felania.msldb.MsgPriceOuterClass.MsgPrice.getDefaultInstance() : price_;
     }
     /**
-     * <code>.msggamedata.MsgPrice price = 5;</code>
+     * <code>.msggamedata.MsgPrice price = 6;</code>
      */
     public com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder getPriceOrBuilder() {
       return getPrice();
     }
 
-    public static final int SPECIAL_PROB_FIELD_NUMBER = 6;
+    public static final int SPECIAL_PROB_FIELD_NUMBER = 7;
     private float specialProb_;
     /**
-     * <code>float special_prob = 6;</code>
+     * <code>float special_prob = 7;</code>
      */
     public float getSpecialProb() {
       return specialProb_;
     }
 
-    public static final int IS_LIMITED_FIELD_NUMBER = 7;
+    public static final int IS_LIMITED_FIELD_NUMBER = 8;
     private boolean isLimited_;
     /**
-     * <code>bool is_limited = 7;</code>
+     * <code>bool is_limited = 8;</code>
      */
     public boolean getIsLimited() {
       return isLimited_;
     }
 
-    public static final int START_DATE_FIELD_NUMBER = 8;
+    public static final int TARGET_SUMMON_UID_FIELD_NUMBER = 9;
+    private int targetSummonUid_;
+    /**
+     * <code>fixed32 target_summon_uid = 9;</code>
+     */
+    public int getTargetSummonUid() {
+      return targetSummonUid_;
+    }
+
+    public static final int START_DATE_FIELD_NUMBER = 10;
     private long startDate_;
     /**
-     * <code>uint64 start_date = 8;</code>
+     * <code>uint64 start_date = 10;</code>
      */
     public long getStartDate() {
       return startDate_;
     }
 
-    public static final int END_DATE_FIELD_NUMBER = 9;
+    public static final int END_DATE_FIELD_NUMBER = 11;
     private long endDate_;
     /**
-     * <code>uint64 end_date = 9;</code>
+     * <code>uint64 end_date = 11;</code>
      */
     public long getEndDate() {
       return endDate_;
     }
 
-    public static final int TREE_POSITION_FIELD_NUMBER = 10;
-    private java.util.List<com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition> treePosition_;
-    /**
-     * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-     */
-    public java.util.List<com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition> getTreePositionList() {
-      return treePosition_;
-    }
-    /**
-     * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-     */
-    public java.util.List<? extends com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePositionOrBuilder> 
-        getTreePositionOrBuilderList() {
-      return treePosition_;
-    }
-    /**
-     * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-     */
-    public int getTreePositionCount() {
-      return treePosition_.size();
-    }
-    /**
-     * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-     */
-    public com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition getTreePosition(int index) {
-      return treePosition_.get(index);
-    }
-    /**
-     * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-     */
-    public com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePositionOrBuilder getTreePositionOrBuilder(
-        int index) {
-      return treePosition_.get(index);
-    }
-
-    public static final int SUMMON_MAX_COUNT_META_FIELD_NUMBER = 11;
+    public static final int SUMMON_MAX_COUNT_META_FIELD_NUMBER = 12;
     private com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta summonMaxCountMeta_;
     /**
-     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
      */
     public boolean hasSummonMaxCountMeta() {
       return summonMaxCountMeta_ != null;
     }
     /**
-     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
      */
     public com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta getSummonMaxCountMeta() {
       return summonMaxCountMeta_ == null ? com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta.getDefaultInstance() : summonMaxCountMeta_;
     }
     /**
-     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+     * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
      */
     public com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMetaOrBuilder getSummonMaxCountMetaOrBuilder() {
       return getSummonMaxCountMeta();
+    }
+
+    public static final int LEFT_MONSTER_INDEX_FIELD_NUMBER = 13;
+    private int leftMonsterIndex_;
+    /**
+     * <code>uint32 left_monster_index = 13;</code>
+     */
+    public int getLeftMonsterIndex() {
+      return leftMonsterIndex_;
+    }
+
+    public static final int PARENT_MONSTER_INDEX_FIELD_NUMBER = 14;
+    private int parentMonsterIndex_;
+    /**
+     * <code>uint32 parent_monster_index = 14;</code>
+     */
+    public int getParentMonsterIndex() {
+      return parentMonsterIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -427,35 +556,44 @@ public final class MsgSummonOuterClass {
       if (uid_ != 0) {
         output.writeFixed32(1, uid_);
       }
+      if (type_ != com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType.SummonTypeNULL.getNumber()) {
+        output.writeEnum(2, type_);
+      }
       if (leftMonster_ != 0) {
-        output.writeFixed32(2, leftMonster_);
+        output.writeFixed32(3, leftMonster_);
       }
       if (rightMonster_ != 0) {
-        output.writeFixed32(3, rightMonster_);
+        output.writeFixed32(4, rightMonster_);
       }
       if (resultMonster_ != 0) {
-        output.writeFixed32(4, resultMonster_);
+        output.writeFixed32(5, resultMonster_);
       }
       if (price_ != null) {
-        output.writeMessage(5, getPrice());
+        output.writeMessage(6, getPrice());
       }
       if (specialProb_ != 0F) {
-        output.writeFloat(6, specialProb_);
+        output.writeFloat(7, specialProb_);
       }
       if (isLimited_ != false) {
-        output.writeBool(7, isLimited_);
+        output.writeBool(8, isLimited_);
+      }
+      if (targetSummonUid_ != 0) {
+        output.writeFixed32(9, targetSummonUid_);
       }
       if (startDate_ != 0L) {
-        output.writeUInt64(8, startDate_);
+        output.writeUInt64(10, startDate_);
       }
       if (endDate_ != 0L) {
-        output.writeUInt64(9, endDate_);
-      }
-      for (int i = 0; i < treePosition_.size(); i++) {
-        output.writeMessage(10, treePosition_.get(i));
+        output.writeUInt64(11, endDate_);
       }
       if (summonMaxCountMeta_ != null) {
-        output.writeMessage(11, getSummonMaxCountMeta());
+        output.writeMessage(12, getSummonMaxCountMeta());
+      }
+      if (leftMonsterIndex_ != 0) {
+        output.writeUInt32(13, leftMonsterIndex_);
+      }
+      if (parentMonsterIndex_ != 0) {
+        output.writeUInt32(14, parentMonsterIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -469,45 +607,57 @@ public final class MsgSummonOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeFixed32Size(1, uid_);
       }
+      if (type_ != com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType.SummonTypeNULL.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, type_);
+      }
       if (leftMonster_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(2, leftMonster_);
+          .computeFixed32Size(3, leftMonster_);
       }
       if (rightMonster_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(3, rightMonster_);
+          .computeFixed32Size(4, rightMonster_);
       }
       if (resultMonster_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(4, resultMonster_);
+          .computeFixed32Size(5, resultMonster_);
       }
       if (price_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getPrice());
+          .computeMessageSize(6, getPrice());
       }
       if (specialProb_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, specialProb_);
+          .computeFloatSize(7, specialProb_);
       }
       if (isLimited_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isLimited_);
+          .computeBoolSize(8, isLimited_);
+      }
+      if (targetSummonUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed32Size(9, targetSummonUid_);
       }
       if (startDate_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(8, startDate_);
+          .computeUInt64Size(10, startDate_);
       }
       if (endDate_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(9, endDate_);
-      }
-      for (int i = 0; i < treePosition_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, treePosition_.get(i));
+          .computeUInt64Size(11, endDate_);
       }
       if (summonMaxCountMeta_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getSummonMaxCountMeta());
+          .computeMessageSize(12, getSummonMaxCountMeta());
+      }
+      if (leftMonsterIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, leftMonsterIndex_);
+      }
+      if (parentMonsterIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, parentMonsterIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -527,6 +677,7 @@ public final class MsgSummonOuterClass {
       boolean result = true;
       result = result && (getUid()
           == other.getUid());
+      result = result && type_ == other.type_;
       result = result && (getLeftMonster()
           == other.getLeftMonster());
       result = result && (getRightMonster()
@@ -544,17 +695,21 @@ public final class MsgSummonOuterClass {
               other.getSpecialProb()));
       result = result && (getIsLimited()
           == other.getIsLimited());
+      result = result && (getTargetSummonUid()
+          == other.getTargetSummonUid());
       result = result && (getStartDate()
           == other.getStartDate());
       result = result && (getEndDate()
           == other.getEndDate());
-      result = result && getTreePositionList()
-          .equals(other.getTreePositionList());
       result = result && (hasSummonMaxCountMeta() == other.hasSummonMaxCountMeta());
       if (hasSummonMaxCountMeta()) {
         result = result && getSummonMaxCountMeta()
             .equals(other.getSummonMaxCountMeta());
       }
+      result = result && (getLeftMonsterIndex()
+          == other.getLeftMonsterIndex());
+      result = result && (getParentMonsterIndex()
+          == other.getParentMonsterIndex());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -568,6 +723,8 @@ public final class MsgSummonOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
+      hash = (37 * hash) + TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + type_;
       hash = (37 * hash) + LEFT_MONSTER_FIELD_NUMBER;
       hash = (53 * hash) + getLeftMonster();
       hash = (37 * hash) + RIGHT_MONSTER_FIELD_NUMBER;
@@ -584,20 +741,22 @@ public final class MsgSummonOuterClass {
       hash = (37 * hash) + IS_LIMITED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsLimited());
+      hash = (37 * hash) + TARGET_SUMMON_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetSummonUid();
       hash = (37 * hash) + START_DATE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getStartDate());
       hash = (37 * hash) + END_DATE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getEndDate());
-      if (getTreePositionCount() > 0) {
-        hash = (37 * hash) + TREE_POSITION_FIELD_NUMBER;
-        hash = (53 * hash) + getTreePositionList().hashCode();
-      }
       if (hasSummonMaxCountMeta()) {
         hash = (37 * hash) + SUMMON_MAX_COUNT_META_FIELD_NUMBER;
         hash = (53 * hash) + getSummonMaxCountMeta().hashCode();
       }
+      hash = (37 * hash) + LEFT_MONSTER_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getLeftMonsterIndex();
+      hash = (37 * hash) + PARENT_MONSTER_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getParentMonsterIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -723,12 +882,13 @@ public final class MsgSummonOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getTreePositionFieldBuilder();
         }
       }
       public Builder clear() {
         super.clear();
         uid_ = 0;
+
+        type_ = 0;
 
         leftMonster_ = 0;
 
@@ -746,22 +906,22 @@ public final class MsgSummonOuterClass {
 
         isLimited_ = false;
 
+        targetSummonUid_ = 0;
+
         startDate_ = 0L;
 
         endDate_ = 0L;
 
-        if (treePositionBuilder_ == null) {
-          treePosition_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000200);
-        } else {
-          treePositionBuilder_.clear();
-        }
         if (summonMaxCountMetaBuilder_ == null) {
           summonMaxCountMeta_ = null;
         } else {
           summonMaxCountMeta_ = null;
           summonMaxCountMetaBuilder_ = null;
         }
+        leftMonsterIndex_ = 0;
+
+        parentMonsterIndex_ = 0;
+
         return this;
       }
 
@@ -784,9 +944,8 @@ public final class MsgSummonOuterClass {
 
       public com.felania.msldb.MsgSummonOuterClass.MsgSummon buildPartial() {
         com.felania.msldb.MsgSummonOuterClass.MsgSummon result = new com.felania.msldb.MsgSummonOuterClass.MsgSummon(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
         result.uid_ = uid_;
+        result.type_ = type_;
         result.leftMonster_ = leftMonster_;
         result.rightMonster_ = rightMonster_;
         result.resultMonster_ = resultMonster_;
@@ -797,23 +956,16 @@ public final class MsgSummonOuterClass {
         }
         result.specialProb_ = specialProb_;
         result.isLimited_ = isLimited_;
+        result.targetSummonUid_ = targetSummonUid_;
         result.startDate_ = startDate_;
         result.endDate_ = endDate_;
-        if (treePositionBuilder_ == null) {
-          if (((bitField0_ & 0x00000200) == 0x00000200)) {
-            treePosition_ = java.util.Collections.unmodifiableList(treePosition_);
-            bitField0_ = (bitField0_ & ~0x00000200);
-          }
-          result.treePosition_ = treePosition_;
-        } else {
-          result.treePosition_ = treePositionBuilder_.build();
-        }
         if (summonMaxCountMetaBuilder_ == null) {
           result.summonMaxCountMeta_ = summonMaxCountMeta_;
         } else {
           result.summonMaxCountMeta_ = summonMaxCountMetaBuilder_.build();
         }
-        result.bitField0_ = to_bitField0_;
+        result.leftMonsterIndex_ = leftMonsterIndex_;
+        result.parentMonsterIndex_ = parentMonsterIndex_;
         onBuilt();
         return result;
       }
@@ -858,6 +1010,9 @@ public final class MsgSummonOuterClass {
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
+        }
         if (other.getLeftMonster() != 0) {
           setLeftMonster(other.getLeftMonster());
         }
@@ -876,40 +1031,23 @@ public final class MsgSummonOuterClass {
         if (other.getIsLimited() != false) {
           setIsLimited(other.getIsLimited());
         }
+        if (other.getTargetSummonUid() != 0) {
+          setTargetSummonUid(other.getTargetSummonUid());
+        }
         if (other.getStartDate() != 0L) {
           setStartDate(other.getStartDate());
         }
         if (other.getEndDate() != 0L) {
           setEndDate(other.getEndDate());
         }
-        if (treePositionBuilder_ == null) {
-          if (!other.treePosition_.isEmpty()) {
-            if (treePosition_.isEmpty()) {
-              treePosition_ = other.treePosition_;
-              bitField0_ = (bitField0_ & ~0x00000200);
-            } else {
-              ensureTreePositionIsMutable();
-              treePosition_.addAll(other.treePosition_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.treePosition_.isEmpty()) {
-            if (treePositionBuilder_.isEmpty()) {
-              treePositionBuilder_.dispose();
-              treePositionBuilder_ = null;
-              treePosition_ = other.treePosition_;
-              bitField0_ = (bitField0_ & ~0x00000200);
-              treePositionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getTreePositionFieldBuilder() : null;
-            } else {
-              treePositionBuilder_.addAllMessages(other.treePosition_);
-            }
-          }
-        }
         if (other.hasSummonMaxCountMeta()) {
           mergeSummonMaxCountMeta(other.getSummonMaxCountMeta());
+        }
+        if (other.getLeftMonsterIndex() != 0) {
+          setLeftMonsterIndex(other.getLeftMonsterIndex());
+        }
+        if (other.getParentMonsterIndex() != 0) {
+          setParentMonsterIndex(other.getParentMonsterIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -937,7 +1075,6 @@ public final class MsgSummonOuterClass {
         }
         return this;
       }
-      private int bitField0_;
 
       private int uid_ ;
       /**
@@ -965,15 +1102,59 @@ public final class MsgSummonOuterClass {
         return this;
       }
 
+      private int type_ = 0;
+      /**
+       * <code>.msggamedata.MsgSummon.SummonType type = 2;</code>
+       */
+      public int getTypeValue() {
+        return type_;
+      }
+      /**
+       * <code>.msggamedata.MsgSummon.SummonType type = 2;</code>
+       */
+      public Builder setTypeValue(int value) {
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgSummon.SummonType type = 2;</code>
+       */
+      public com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType getType() {
+        com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType result = com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType.valueOf(type_);
+        return result == null ? com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.msggamedata.MsgSummon.SummonType type = 2;</code>
+       */
+      public Builder setType(com.felania.msldb.MsgSummonOuterClass.MsgSummon.SummonType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgSummon.SummonType type = 2;</code>
+       */
+      public Builder clearType() {
+        
+        type_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int leftMonster_ ;
       /**
-       * <code>fixed32 left_monster = 2;</code>
+       * <code>fixed32 left_monster = 3;</code>
        */
       public int getLeftMonster() {
         return leftMonster_;
       }
       /**
-       * <code>fixed32 left_monster = 2;</code>
+       * <code>fixed32 left_monster = 3;</code>
        */
       public Builder setLeftMonster(int value) {
         
@@ -982,7 +1163,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>fixed32 left_monster = 2;</code>
+       * <code>fixed32 left_monster = 3;</code>
        */
       public Builder clearLeftMonster() {
         
@@ -993,13 +1174,13 @@ public final class MsgSummonOuterClass {
 
       private int rightMonster_ ;
       /**
-       * <code>fixed32 right_monster = 3;</code>
+       * <code>fixed32 right_monster = 4;</code>
        */
       public int getRightMonster() {
         return rightMonster_;
       }
       /**
-       * <code>fixed32 right_monster = 3;</code>
+       * <code>fixed32 right_monster = 4;</code>
        */
       public Builder setRightMonster(int value) {
         
@@ -1008,7 +1189,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>fixed32 right_monster = 3;</code>
+       * <code>fixed32 right_monster = 4;</code>
        */
       public Builder clearRightMonster() {
         
@@ -1019,13 +1200,13 @@ public final class MsgSummonOuterClass {
 
       private int resultMonster_ ;
       /**
-       * <code>fixed32 result_monster = 4;</code>
+       * <code>fixed32 result_monster = 5;</code>
        */
       public int getResultMonster() {
         return resultMonster_;
       }
       /**
-       * <code>fixed32 result_monster = 4;</code>
+       * <code>fixed32 result_monster = 5;</code>
        */
       public Builder setResultMonster(int value) {
         
@@ -1034,7 +1215,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>fixed32 result_monster = 4;</code>
+       * <code>fixed32 result_monster = 5;</code>
        */
       public Builder clearResultMonster() {
         
@@ -1047,13 +1228,13 @@ public final class MsgSummonOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           com.felania.msldb.MsgPriceOuterClass.MsgPrice, com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder, com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder> priceBuilder_;
       /**
-       * <code>.msggamedata.MsgPrice price = 5;</code>
+       * <code>.msggamedata.MsgPrice price = 6;</code>
        */
       public boolean hasPrice() {
         return priceBuilder_ != null || price_ != null;
       }
       /**
-       * <code>.msggamedata.MsgPrice price = 5;</code>
+       * <code>.msggamedata.MsgPrice price = 6;</code>
        */
       public com.felania.msldb.MsgPriceOuterClass.MsgPrice getPrice() {
         if (priceBuilder_ == null) {
@@ -1063,7 +1244,7 @@ public final class MsgSummonOuterClass {
         }
       }
       /**
-       * <code>.msggamedata.MsgPrice price = 5;</code>
+       * <code>.msggamedata.MsgPrice price = 6;</code>
        */
       public Builder setPrice(com.felania.msldb.MsgPriceOuterClass.MsgPrice value) {
         if (priceBuilder_ == null) {
@@ -1079,7 +1260,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgPrice price = 5;</code>
+       * <code>.msggamedata.MsgPrice price = 6;</code>
        */
       public Builder setPrice(
           com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder builderForValue) {
@@ -1093,7 +1274,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgPrice price = 5;</code>
+       * <code>.msggamedata.MsgPrice price = 6;</code>
        */
       public Builder mergePrice(com.felania.msldb.MsgPriceOuterClass.MsgPrice value) {
         if (priceBuilder_ == null) {
@@ -1111,7 +1292,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgPrice price = 5;</code>
+       * <code>.msggamedata.MsgPrice price = 6;</code>
        */
       public Builder clearPrice() {
         if (priceBuilder_ == null) {
@@ -1125,7 +1306,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgPrice price = 5;</code>
+       * <code>.msggamedata.MsgPrice price = 6;</code>
        */
       public com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder getPriceBuilder() {
         
@@ -1133,7 +1314,7 @@ public final class MsgSummonOuterClass {
         return getPriceFieldBuilder().getBuilder();
       }
       /**
-       * <code>.msggamedata.MsgPrice price = 5;</code>
+       * <code>.msggamedata.MsgPrice price = 6;</code>
        */
       public com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder getPriceOrBuilder() {
         if (priceBuilder_ != null) {
@@ -1144,7 +1325,7 @@ public final class MsgSummonOuterClass {
         }
       }
       /**
-       * <code>.msggamedata.MsgPrice price = 5;</code>
+       * <code>.msggamedata.MsgPrice price = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.felania.msldb.MsgPriceOuterClass.MsgPrice, com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder, com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder> 
@@ -1162,13 +1343,13 @@ public final class MsgSummonOuterClass {
 
       private float specialProb_ ;
       /**
-       * <code>float special_prob = 6;</code>
+       * <code>float special_prob = 7;</code>
        */
       public float getSpecialProb() {
         return specialProb_;
       }
       /**
-       * <code>float special_prob = 6;</code>
+       * <code>float special_prob = 7;</code>
        */
       public Builder setSpecialProb(float value) {
         
@@ -1177,7 +1358,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>float special_prob = 6;</code>
+       * <code>float special_prob = 7;</code>
        */
       public Builder clearSpecialProb() {
         
@@ -1188,13 +1369,13 @@ public final class MsgSummonOuterClass {
 
       private boolean isLimited_ ;
       /**
-       * <code>bool is_limited = 7;</code>
+       * <code>bool is_limited = 8;</code>
        */
       public boolean getIsLimited() {
         return isLimited_;
       }
       /**
-       * <code>bool is_limited = 7;</code>
+       * <code>bool is_limited = 8;</code>
        */
       public Builder setIsLimited(boolean value) {
         
@@ -1203,7 +1384,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>bool is_limited = 7;</code>
+       * <code>bool is_limited = 8;</code>
        */
       public Builder clearIsLimited() {
         
@@ -1212,15 +1393,41 @@ public final class MsgSummonOuterClass {
         return this;
       }
 
+      private int targetSummonUid_ ;
+      /**
+       * <code>fixed32 target_summon_uid = 9;</code>
+       */
+      public int getTargetSummonUid() {
+        return targetSummonUid_;
+      }
+      /**
+       * <code>fixed32 target_summon_uid = 9;</code>
+       */
+      public Builder setTargetSummonUid(int value) {
+        
+        targetSummonUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed32 target_summon_uid = 9;</code>
+       */
+      public Builder clearTargetSummonUid() {
+        
+        targetSummonUid_ = 0;
+        onChanged();
+        return this;
+      }
+
       private long startDate_ ;
       /**
-       * <code>uint64 start_date = 8;</code>
+       * <code>uint64 start_date = 10;</code>
        */
       public long getStartDate() {
         return startDate_;
       }
       /**
-       * <code>uint64 start_date = 8;</code>
+       * <code>uint64 start_date = 10;</code>
        */
       public Builder setStartDate(long value) {
         
@@ -1229,7 +1436,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>uint64 start_date = 8;</code>
+       * <code>uint64 start_date = 10;</code>
        */
       public Builder clearStartDate() {
         
@@ -1240,13 +1447,13 @@ public final class MsgSummonOuterClass {
 
       private long endDate_ ;
       /**
-       * <code>uint64 end_date = 9;</code>
+       * <code>uint64 end_date = 11;</code>
        */
       public long getEndDate() {
         return endDate_;
       }
       /**
-       * <code>uint64 end_date = 9;</code>
+       * <code>uint64 end_date = 11;</code>
        */
       public Builder setEndDate(long value) {
         
@@ -1255,7 +1462,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>uint64 end_date = 9;</code>
+       * <code>uint64 end_date = 11;</code>
        */
       public Builder clearEndDate() {
         
@@ -1264,257 +1471,17 @@ public final class MsgSummonOuterClass {
         return this;
       }
 
-      private java.util.List<com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition> treePosition_ =
-        java.util.Collections.emptyList();
-      private void ensureTreePositionIsMutable() {
-        if (!((bitField0_ & 0x00000200) == 0x00000200)) {
-          treePosition_ = new java.util.ArrayList<com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition>(treePosition_);
-          bitField0_ |= 0x00000200;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition, com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.Builder, com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePositionOrBuilder> treePositionBuilder_;
-
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public java.util.List<com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition> getTreePositionList() {
-        if (treePositionBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(treePosition_);
-        } else {
-          return treePositionBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public int getTreePositionCount() {
-        if (treePositionBuilder_ == null) {
-          return treePosition_.size();
-        } else {
-          return treePositionBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition getTreePosition(int index) {
-        if (treePositionBuilder_ == null) {
-          return treePosition_.get(index);
-        } else {
-          return treePositionBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public Builder setTreePosition(
-          int index, com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition value) {
-        if (treePositionBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTreePositionIsMutable();
-          treePosition_.set(index, value);
-          onChanged();
-        } else {
-          treePositionBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public Builder setTreePosition(
-          int index, com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.Builder builderForValue) {
-        if (treePositionBuilder_ == null) {
-          ensureTreePositionIsMutable();
-          treePosition_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          treePositionBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public Builder addTreePosition(com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition value) {
-        if (treePositionBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTreePositionIsMutable();
-          treePosition_.add(value);
-          onChanged();
-        } else {
-          treePositionBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public Builder addTreePosition(
-          int index, com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition value) {
-        if (treePositionBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTreePositionIsMutable();
-          treePosition_.add(index, value);
-          onChanged();
-        } else {
-          treePositionBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public Builder addTreePosition(
-          com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.Builder builderForValue) {
-        if (treePositionBuilder_ == null) {
-          ensureTreePositionIsMutable();
-          treePosition_.add(builderForValue.build());
-          onChanged();
-        } else {
-          treePositionBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public Builder addTreePosition(
-          int index, com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.Builder builderForValue) {
-        if (treePositionBuilder_ == null) {
-          ensureTreePositionIsMutable();
-          treePosition_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          treePositionBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public Builder addAllTreePosition(
-          java.lang.Iterable<? extends com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition> values) {
-        if (treePositionBuilder_ == null) {
-          ensureTreePositionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, treePosition_);
-          onChanged();
-        } else {
-          treePositionBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public Builder clearTreePosition() {
-        if (treePositionBuilder_ == null) {
-          treePosition_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000200);
-          onChanged();
-        } else {
-          treePositionBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public Builder removeTreePosition(int index) {
-        if (treePositionBuilder_ == null) {
-          ensureTreePositionIsMutable();
-          treePosition_.remove(index);
-          onChanged();
-        } else {
-          treePositionBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.Builder getTreePositionBuilder(
-          int index) {
-        return getTreePositionFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePositionOrBuilder getTreePositionOrBuilder(
-          int index) {
-        if (treePositionBuilder_ == null) {
-          return treePosition_.get(index);  } else {
-          return treePositionBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public java.util.List<? extends com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePositionOrBuilder> 
-           getTreePositionOrBuilderList() {
-        if (treePositionBuilder_ != null) {
-          return treePositionBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(treePosition_);
-        }
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.Builder addTreePositionBuilder() {
-        return getTreePositionFieldBuilder().addBuilder(
-            com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.Builder addTreePositionBuilder(
-          int index) {
-        return getTreePositionFieldBuilder().addBuilder(
-            index, com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .msggamedata.MsgSummonTreePosition tree_position = 10;</code>
-       */
-      public java.util.List<com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.Builder> 
-           getTreePositionBuilderList() {
-        return getTreePositionFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition, com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.Builder, com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePositionOrBuilder> 
-          getTreePositionFieldBuilder() {
-        if (treePositionBuilder_ == null) {
-          treePositionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition, com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePosition.Builder, com.felania.msldb.MsgSummonTreePositionOuterClass.MsgSummonTreePositionOrBuilder>(
-                  treePosition_,
-                  ((bitField0_ & 0x00000200) == 0x00000200),
-                  getParentForChildren(),
-                  isClean());
-          treePosition_ = null;
-        }
-        return treePositionBuilder_;
-      }
-
       private com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta summonMaxCountMeta_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
           com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta, com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta.Builder, com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMetaOrBuilder> summonMaxCountMetaBuilder_;
       /**
-       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
        */
       public boolean hasSummonMaxCountMeta() {
         return summonMaxCountMetaBuilder_ != null || summonMaxCountMeta_ != null;
       }
       /**
-       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
        */
       public com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta getSummonMaxCountMeta() {
         if (summonMaxCountMetaBuilder_ == null) {
@@ -1524,7 +1491,7 @@ public final class MsgSummonOuterClass {
         }
       }
       /**
-       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
        */
       public Builder setSummonMaxCountMeta(com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta value) {
         if (summonMaxCountMetaBuilder_ == null) {
@@ -1540,7 +1507,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
        */
       public Builder setSummonMaxCountMeta(
           com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta.Builder builderForValue) {
@@ -1554,7 +1521,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
        */
       public Builder mergeSummonMaxCountMeta(com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta value) {
         if (summonMaxCountMetaBuilder_ == null) {
@@ -1572,7 +1539,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
        */
       public Builder clearSummonMaxCountMeta() {
         if (summonMaxCountMetaBuilder_ == null) {
@@ -1586,7 +1553,7 @@ public final class MsgSummonOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
        */
       public com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta.Builder getSummonMaxCountMetaBuilder() {
         
@@ -1594,7 +1561,7 @@ public final class MsgSummonOuterClass {
         return getSummonMaxCountMetaFieldBuilder().getBuilder();
       }
       /**
-       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
        */
       public com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMetaOrBuilder getSummonMaxCountMetaOrBuilder() {
         if (summonMaxCountMetaBuilder_ != null) {
@@ -1605,7 +1572,7 @@ public final class MsgSummonOuterClass {
         }
       }
       /**
-       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 11;</code>
+       * <code>.msggamedata.MsgSummonMaxCountMeta summon_max_count_meta = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta, com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMeta.Builder, com.felania.msldb.MsgSummonMaxCountMetaOuterClass.MsgSummonMaxCountMetaOrBuilder> 
@@ -1619,6 +1586,58 @@ public final class MsgSummonOuterClass {
           summonMaxCountMeta_ = null;
         }
         return summonMaxCountMetaBuilder_;
+      }
+
+      private int leftMonsterIndex_ ;
+      /**
+       * <code>uint32 left_monster_index = 13;</code>
+       */
+      public int getLeftMonsterIndex() {
+        return leftMonsterIndex_;
+      }
+      /**
+       * <code>uint32 left_monster_index = 13;</code>
+       */
+      public Builder setLeftMonsterIndex(int value) {
+        
+        leftMonsterIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 left_monster_index = 13;</code>
+       */
+      public Builder clearLeftMonsterIndex() {
+        
+        leftMonsterIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int parentMonsterIndex_ ;
+      /**
+       * <code>uint32 parent_monster_index = 14;</code>
+       */
+      public int getParentMonsterIndex() {
+        return parentMonsterIndex_;
+      }
+      /**
+       * <code>uint32 parent_monster_index = 14;</code>
+       */
+      public Builder setParentMonsterIndex(int value) {
+        
+        parentMonsterIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 parent_monster_index = 14;</code>
+       */
+      public Builder clearParentMonsterIndex() {
+        
+        parentMonsterIndex_ = 0;
+        onChanged();
+        return this;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1650,7 +1669,7 @@ public final class MsgSummonOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgSummon(input, extensionRegistry);
+        return new MsgSummon(input, extensionRegistry);
       }
     };
 
@@ -1684,17 +1703,20 @@ public final class MsgSummonOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\017MsgSummon.proto\022\013msggamedata\032\016MsgPrice" +
-      ".proto\032\033MsgSummonTreePosition.proto\032\033Msg" +
-      "SummonMaxCountMeta.proto\"\321\002\n\tMsgSummon\022\013" +
-      "\n\003uid\030\001 \001(\007\022\024\n\014left_monster\030\002 \001(\007\022\025\n\rrig" +
-      "ht_monster\030\003 \001(\007\022\026\n\016result_monster\030\004 \001(\007" +
-      "\022$\n\005price\030\005 \001(\0132\025.msggamedata.MsgPrice\022\024" +
-      "\n\014special_prob\030\006 \001(\002\022\022\n\nis_limited\030\007 \001(\010" +
-      "\022\022\n\nstart_date\030\010 \001(\004\022\020\n\010end_date\030\t \001(\004\0229" +
-      "\n\rtree_position\030\n \003(\0132\".msggamedata.MsgS" +
-      "ummonTreePosition\022A\n\025summon_max_count_me",
-      "ta\030\013 \001(\0132\".msggamedata.MsgSummonMaxCount" +
-      "MetaB\023\n\021com.felania.msldbb\006proto3"
+      ".proto\032\033MsgSummonMaxCountMeta.proto\"\327\003\n\t" +
+      "MsgSummon\022\013\n\003uid\030\001 \001(\007\022/\n\004type\030\002 \001(\0162!.m" +
+      "sggamedata.MsgSummon.SummonType\022\024\n\014left_" +
+      "monster\030\003 \001(\007\022\025\n\rright_monster\030\004 \001(\007\022\026\n\016" +
+      "result_monster\030\005 \001(\007\022$\n\005price\030\006 \001(\0132\025.ms" +
+      "ggamedata.MsgPrice\022\024\n\014special_prob\030\007 \001(\002" +
+      "\022\022\n\nis_limited\030\010 \001(\010\022\031\n\021target_summon_ui" +
+      "d\030\t \001(\007\022\022\n\nstart_date\030\n \001(\004\022\020\n\010end_date\030" +
+      "\013 \001(\004\022A\n\025summon_max_count_meta\030\014 \001(\0132\".m" +
+      "sggamedata.MsgSummonMaxCountMeta\022\032\n\022left" +
+      "_monster_index\030\r \001(\r\022\034\n\024parent_monster_i" +
+      "ndex\030\016 \001(\r\"9\n\nSummonType\022\022\n\016SummonTypeNU" +
+      "LL\020\000\022\n\n\006Normal\020\001\022\013\n\007Special\020\002B\023\n\021com.fel" +
+      "ania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1708,7 +1730,6 @@ public final class MsgSummonOuterClass {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.felania.msldb.MsgPriceOuterClass.getDescriptor(),
-          com.felania.msldb.MsgSummonTreePositionOuterClass.getDescriptor(),
           com.felania.msldb.MsgSummonMaxCountMetaOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_MsgSummon_descriptor =
@@ -1716,9 +1737,8 @@ public final class MsgSummonOuterClass {
     internal_static_msggamedata_MsgSummon_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgSummon_descriptor,
-        new java.lang.String[] { "Uid", "LeftMonster", "RightMonster", "ResultMonster", "Price", "SpecialProb", "IsLimited", "StartDate", "EndDate", "TreePosition", "SummonMaxCountMeta", });
+        new java.lang.String[] { "Uid", "Type", "LeftMonster", "RightMonster", "ResultMonster", "Price", "SpecialProb", "IsLimited", "TargetSummonUid", "StartDate", "EndDate", "SummonMaxCountMeta", "LeftMonsterIndex", "ParentMonsterIndex", });
     com.felania.msldb.MsgPriceOuterClass.getDescriptor();
-    com.felania.msldb.MsgSummonTreePositionOuterClass.getDescriptor();
     com.felania.msldb.MsgSummonMaxCountMetaOuterClass.getDescriptor();
   }
 

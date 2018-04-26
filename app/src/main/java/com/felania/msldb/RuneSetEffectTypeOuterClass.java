@@ -274,7 +274,7 @@ public final class RuneSetEffectTypeOuterClass {
       "cent\020\006\022)\n%RSET_AddStatusEffectResistance" +
       "Percent\020\007\022\022\n\016RSET_AddAttack\020\010\022\023\n\017RSET_Ad" +
       "dDefence\020\t\022\020\n\014RSET_AddHeal\020\n\022\016\n\nRSET_Add" +
-      "Hp\020\013\022\021\n\rRSET_HealMyHp\020\014\022\021\n\rRSET_HealMyMp",
+      "Hp\020\013\022\021\n\rRSET_HealMyHp\020\014\022\021\n\rRSET_HealMyMp" +
       "\020\r\022\016\n\nRSET_IncHp\020\016\022\016\n\nRSET_IncMp\020\017\022\017\n\013RS" +
       "ET_Shield\020\020\022\r\n\tRSET_Stun\020\021B\023\n\021com.felani" +
       "a.msldbb\006proto3"

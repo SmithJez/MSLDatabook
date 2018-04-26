@@ -75,6 +75,9 @@ public final class MsgShopPurchaseCondOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -976,7 +979,7 @@ public final class MsgShopPurchaseCondOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgShopPurchaseCond(input, extensionRegistry);
+        return new MsgShopPurchaseCond(input, extensionRegistry);
       }
     };
 
@@ -1018,7 +1021,7 @@ public final class MsgShopPurchaseCondOuterClass {
       "\n\006WV_Mon\020\000\022\n\n\006WV_Tue\020\001\022\n\n\006WV_Wed\020\002\022\n\n\006WV" +
       "_Thu\020\003\022\n\n\006WV_Fri\020\004\022\n\n\006WV_Sat\020\005\022\n\n\006WV_Sun" +
       "\020\006\"r\n\010RuleType\022\020\n\014RuleTypeNULL\020\000\022\n\n\006RT_A" +
-      "ll\020\001\022\n\n\006RT_Day\020\002\022\013\n\007RT_Week\020\003\022\014\n\010RT_Mont",
+      "ll\020\001\022\n\n\006RT_Day\020\002\022\013\n\007RT_Week\020\003\022\014\n\010RT_Mont" +
       "h\020\004\022\r\n\tRT_Period\020\005\022\022\n\016RT_AccountLife\020\006B\023" +
       "\n\021com.felania.msldbb\006proto3"
     };

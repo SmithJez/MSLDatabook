@@ -139,6 +139,10 @@ public final class UserMetaTypeOuterClass {
      * <code>UMT_Get_Rejoin_Clan_Reward = 1023;</code>
      */
     UMT_Get_Rejoin_Clan_Reward(1023),
+    /**
+     * <code>UMT_Gold_Dungeon_Info = 1024;</code>
+     */
+    UMT_Gold_Dungeon_Info(1024),
     UNRECOGNIZED(-1),
     ;
 
@@ -262,6 +266,10 @@ public final class UserMetaTypeOuterClass {
      * <code>UMT_Get_Rejoin_Clan_Reward = 1023;</code>
      */
     public static final int UMT_Get_Rejoin_Clan_Reward_VALUE = 1023;
+    /**
+     * <code>UMT_Gold_Dungeon_Info = 1024;</code>
+     */
+    public static final int UMT_Gold_Dungeon_Info_VALUE = 1024;
 
 
     public final int getNumber() {
@@ -312,6 +320,7 @@ public final class UserMetaTypeOuterClass {
         case 1021: return UMT_Tutorial_CVC;
         case 1022: return UMT_Combine_Superstone_Stuff;
         case 1023: return UMT_Get_Rejoin_Clan_Reward;
+        case 1024: return UMT_Gold_Dungeon_Info;
         default: return null;
       }
     }
@@ -373,7 +382,7 @@ public final class UserMetaTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022UserMetaType.proto\022\013msggamedata*\314\006\n\014Us" +
+      "\n\022UserMetaType.proto\022\013msggamedata*\350\006\n\014Us" +
       "erMetaType\022\013\n\007UMT_All\020\000\022\022\n\016UMT_Server_Al" +
       "l\020\001\022\025\n\021UMT_BreakUpFriend\020\n\022\027\n\023UMT_VoteMo" +
       "nsterTalk\020\024\022\034\n\030UMT_VoteMonsterRecommend\020" +
@@ -382,7 +391,7 @@ public final class UserMetaTypeOuterClass {
       "n\020\351\007\022\027\n\022UMT_Tutorial_Arena\020\352\007\022\035\n\030UMT_Tut" +
       "orial_GoldDungeon\020\353\007\022!\n\034UMT_Tutorial_Inf" +
       "initeDungeon\020\354\007\022#\n\036UMT_Tutorial_JojeShop" +
-      "_OpenSlot\020\355\007\022\025\n\020UMT_CHECK_REVIEW\020\356\007\022\034\n\027U",
+      "_OpenSlot\020\355\007\022\025\n\020UMT_CHECK_REVIEW\020\356\007\022\034\n\027U" +
       "MT_LOCK_MONSTER_SEIREN\020\357\007\022%\n UMT_REWARD_" +
       "CAPTURE_KING_ENTRANCE\020\360\007\022\031\n\024UMT_Tutorial" +
       "_World_2\020\361\007\022\037\n\032UMT_Tutorial_DragonDungeo" +
@@ -392,10 +401,11 @@ public final class UserMetaTypeOuterClass {
       "utorial_World_3\020\367\007\022\023\n\016UMT_Graduation\020\370\007\022" +
       "\027\n\022UMT_PROMISE_NEWBIE\020\371\007\022\027\n\022UMT_PROMISE_" +
       "RETURN\020\372\007\022\036\n\031UMT_LOCK_MONSTER_VICTORIA\020\373" +
-      "\007\022\032\n\025UMT_LOCK_MONSTER_MIHO\020\374\007\022\025\n\020UMT_Tut",
+      "\007\022\032\n\025UMT_LOCK_MONSTER_MIHO\020\374\007\022\025\n\020UMT_Tut" +
       "orial_CVC\020\375\007\022!\n\034UMT_Combine_Superstone_S" +
       "tuff\020\376\007\022\037\n\032UMT_Get_Rejoin_Clan_Reward\020\377\007" +
-      "B\023\n\021com.felania.msldbb\006proto3"
+      "\022\032\n\025UMT_Gold_Dungeon_Info\020\200\010B\023\n\021com.fela" +
+      "nia.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

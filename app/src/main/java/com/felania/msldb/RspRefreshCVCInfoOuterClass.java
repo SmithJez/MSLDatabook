@@ -178,6 +178,9 @@ public final class RspRefreshCVCInfoOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2250,7 +2253,7 @@ public final class RspRefreshCVCInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspRefreshCVCInfo(input, extensionRegistry);
+        return new RspRefreshCVCInfo(input, extensionRegistry);
       }
     };
 
@@ -2292,7 +2295,7 @@ public final class RspRefreshCVCInfoOuterClass {
       "CVCPhaseHistory\022G\n\036my_clan_cvc_prev_phas" +
       "e_history\030\003 \001(\0132\037.msggamedata.MsgCVCPhas" +
       "eHistory\022:\n\023my_clan_cvc_members\030\004 \003(\0132\035." +
-      "msggamedata.MsgUserCVCMember\022E\n\034enemy_cl",
+      "msggamedata.MsgUserCVCMember\022E\n\034enemy_cl" +
       "an_cvc_phase_history\030\005 \001(\0132\037.msggamedata" +
       ".MsgCVCPhaseHistory\022J\n!enemy_clan_cvc_pr" +
       "ev_phase_history\030\006 \001(\0132\037.msggamedata.Msg" +

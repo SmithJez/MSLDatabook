@@ -143,25 +143,38 @@ public final class RspBattleEndOuterClass {
     com.felania.msldb.MsgRspBattleEndCVCOuterClass.MsgRspBattleEndCVCOrBuilder getCvcOrBuilder();
 
     /**
-     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+     * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+     */
+    boolean hasLupinDungeon();
+    /**
+     * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+     */
+    com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon getLupinDungeon();
+    /**
+     * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+     */
+    com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeonOrBuilder getLupinDungeonOrBuilder();
+
+    /**
+     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
      */
     java.util.List<com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster> 
         getApplyBoosterListList();
     /**
-     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
      */
     com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster getApplyBoosterList(int index);
     /**
-     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
      */
     int getApplyBoosterListCount();
     /**
-     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
      */
     java.util.List<? extends com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBoosterOrBuilder> 
         getApplyBoosterListOrBuilderList();
     /**
-     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
      */
     com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBoosterOrBuilder getApplyBoosterListOrBuilder(
         int index);
@@ -194,6 +207,9 @@ public final class RspBattleEndOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -319,9 +335,22 @@ public final class RspBattleEndOuterClass {
               break;
             }
             case 82: {
-              if (!((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
+              com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon.Builder subBuilder = null;
+              if (lupinDungeon_ != null) {
+                subBuilder = lupinDungeon_.toBuilder();
+              }
+              lupinDungeon_ = input.readMessage(com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(lupinDungeon_);
+                lupinDungeon_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 90: {
+              if (!((mutable_bitField0_ & 0x00000400) == 0x00000400)) {
                 applyBoosterList_ = new java.util.ArrayList<com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster>();
-                mutable_bitField0_ |= 0x00000200;
+                mutable_bitField0_ |= 0x00000400;
               }
               applyBoosterList_.add(
                   input.readMessage(com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.parser(), extensionRegistry));
@@ -338,7 +367,7 @@ public final class RspBattleEndOuterClass {
         if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
           applyEventList_ = java.util.Collections.unmodifiableList(applyEventList_);
         }
-        if (((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
+        if (((mutable_bitField0_ & 0x00000400) == 0x00000400)) {
           applyBoosterList_ = java.util.Collections.unmodifiableList(applyBoosterList_);
         }
         this.unknownFields = unknownFields.build();
@@ -556,35 +585,56 @@ public final class RspBattleEndOuterClass {
       return getCvc();
     }
 
-    public static final int APPLY_BOOSTER_LIST_FIELD_NUMBER = 10;
+    public static final int LUPIN_DUNGEON_FIELD_NUMBER = 10;
+    private com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon lupinDungeon_;
+    /**
+     * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+     */
+    public boolean hasLupinDungeon() {
+      return lupinDungeon_ != null;
+    }
+    /**
+     * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+     */
+    public com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon getLupinDungeon() {
+      return lupinDungeon_ == null ? com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon.getDefaultInstance() : lupinDungeon_;
+    }
+    /**
+     * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+     */
+    public com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeonOrBuilder getLupinDungeonOrBuilder() {
+      return getLupinDungeon();
+    }
+
+    public static final int APPLY_BOOSTER_LIST_FIELD_NUMBER = 11;
     private java.util.List<com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster> applyBoosterList_;
     /**
-     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
      */
     public java.util.List<com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster> getApplyBoosterListList() {
       return applyBoosterList_;
     }
     /**
-     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
      */
     public java.util.List<? extends com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBoosterOrBuilder> 
         getApplyBoosterListOrBuilderList() {
       return applyBoosterList_;
     }
     /**
-     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
      */
     public int getApplyBoosterListCount() {
       return applyBoosterList_.size();
     }
     /**
-     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
      */
     public com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster getApplyBoosterList(int index) {
       return applyBoosterList_.get(index);
     }
     /**
-     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+     * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
      */
     public com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBoosterOrBuilder getApplyBoosterListOrBuilder(
         int index) {
@@ -630,8 +680,11 @@ public final class RspBattleEndOuterClass {
       if (cvc_ != null) {
         output.writeMessage(9, getCvc());
       }
+      if (lupinDungeon_ != null) {
+        output.writeMessage(10, getLupinDungeon());
+      }
       for (int i = 0; i < applyBoosterList_.size(); i++) {
-        output.writeMessage(10, applyBoosterList_.get(i));
+        output.writeMessage(11, applyBoosterList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -677,9 +730,13 @@ public final class RspBattleEndOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, getCvc());
       }
+      if (lupinDungeon_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, getLupinDungeon());
+      }
       for (int i = 0; i < applyBoosterList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, applyBoosterList_.get(i));
+          .computeMessageSize(11, applyBoosterList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -735,6 +792,11 @@ public final class RspBattleEndOuterClass {
         result = result && getCvc()
             .equals(other.getCvc());
       }
+      result = result && (hasLupinDungeon() == other.hasLupinDungeon());
+      if (hasLupinDungeon()) {
+        result = result && getLupinDungeon()
+            .equals(other.getLupinDungeon());
+      }
       result = result && getApplyBoosterListList()
           .equals(other.getApplyBoosterListList());
       result = result && unknownFields.equals(other.unknownFields);
@@ -781,6 +843,10 @@ public final class RspBattleEndOuterClass {
       if (hasCvc()) {
         hash = (37 * hash) + CVC_FIELD_NUMBER;
         hash = (53 * hash) + getCvc().hashCode();
+      }
+      if (hasLupinDungeon()) {
+        hash = (37 * hash) + LUPIN_DUNGEON_FIELD_NUMBER;
+        hash = (53 * hash) + getLupinDungeon().hashCode();
       }
       if (getApplyBoosterListCount() > 0) {
         hash = (37 * hash) + APPLY_BOOSTER_LIST_FIELD_NUMBER;
@@ -967,9 +1033,15 @@ public final class RspBattleEndOuterClass {
           cvc_ = null;
           cvcBuilder_ = null;
         }
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeon_ = null;
+        } else {
+          lupinDungeon_ = null;
+          lupinDungeonBuilder_ = null;
+        }
         if (applyBoosterListBuilder_ == null) {
           applyBoosterList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000200);
+          bitField0_ = (bitField0_ & ~0x00000400);
         } else {
           applyBoosterListBuilder_.clear();
         }
@@ -1042,10 +1114,15 @@ public final class RspBattleEndOuterClass {
         } else {
           result.cvc_ = cvcBuilder_.build();
         }
+        if (lupinDungeonBuilder_ == null) {
+          result.lupinDungeon_ = lupinDungeon_;
+        } else {
+          result.lupinDungeon_ = lupinDungeonBuilder_.build();
+        }
         if (applyBoosterListBuilder_ == null) {
-          if (((bitField0_ & 0x00000200) == 0x00000200)) {
+          if (((bitField0_ & 0x00000400) == 0x00000400)) {
             applyBoosterList_ = java.util.Collections.unmodifiableList(applyBoosterList_);
-            bitField0_ = (bitField0_ & ~0x00000200);
+            bitField0_ = (bitField0_ & ~0x00000400);
           }
           result.applyBoosterList_ = applyBoosterList_;
         } else {
@@ -1143,11 +1220,14 @@ public final class RspBattleEndOuterClass {
         if (other.hasCvc()) {
           mergeCvc(other.getCvc());
         }
+        if (other.hasLupinDungeon()) {
+          mergeLupinDungeon(other.getLupinDungeon());
+        }
         if (applyBoosterListBuilder_ == null) {
           if (!other.applyBoosterList_.isEmpty()) {
             if (applyBoosterList_.isEmpty()) {
               applyBoosterList_ = other.applyBoosterList_;
-              bitField0_ = (bitField0_ & ~0x00000200);
+              bitField0_ = (bitField0_ & ~0x00000400);
             } else {
               ensureApplyBoosterListIsMutable();
               applyBoosterList_.addAll(other.applyBoosterList_);
@@ -1160,7 +1240,7 @@ public final class RspBattleEndOuterClass {
               applyBoosterListBuilder_.dispose();
               applyBoosterListBuilder_ = null;
               applyBoosterList_ = other.applyBoosterList_;
-              bitField0_ = (bitField0_ & ~0x00000200);
+              bitField0_ = (bitField0_ & ~0x00000400);
               applyBoosterListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getApplyBoosterListFieldBuilder() : null;
@@ -2300,12 +2380,129 @@ public final class RspBattleEndOuterClass {
         return cvcBuilder_;
       }
 
+      private com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon lupinDungeon_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon, com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon.Builder, com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeonOrBuilder> lupinDungeonBuilder_;
+      /**
+       * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public boolean hasLupinDungeon() {
+        return lupinDungeonBuilder_ != null || lupinDungeon_ != null;
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon getLupinDungeon() {
+        if (lupinDungeonBuilder_ == null) {
+          return lupinDungeon_ == null ? com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon.getDefaultInstance() : lupinDungeon_;
+        } else {
+          return lupinDungeonBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public Builder setLupinDungeon(com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon value) {
+        if (lupinDungeonBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          lupinDungeon_ = value;
+          onChanged();
+        } else {
+          lupinDungeonBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public Builder setLupinDungeon(
+          com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon.Builder builderForValue) {
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeon_ = builderForValue.build();
+          onChanged();
+        } else {
+          lupinDungeonBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public Builder mergeLupinDungeon(com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon value) {
+        if (lupinDungeonBuilder_ == null) {
+          if (lupinDungeon_ != null) {
+            lupinDungeon_ =
+              com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon.newBuilder(lupinDungeon_).mergeFrom(value).buildPartial();
+          } else {
+            lupinDungeon_ = value;
+          }
+          onChanged();
+        } else {
+          lupinDungeonBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public Builder clearLupinDungeon() {
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeon_ = null;
+          onChanged();
+        } else {
+          lupinDungeon_ = null;
+          lupinDungeonBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon.Builder getLupinDungeonBuilder() {
+        
+        onChanged();
+        return getLupinDungeonFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeonOrBuilder getLupinDungeonOrBuilder() {
+        if (lupinDungeonBuilder_ != null) {
+          return lupinDungeonBuilder_.getMessageOrBuilder();
+        } else {
+          return lupinDungeon_ == null ?
+              com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon.getDefaultInstance() : lupinDungeon_;
+        }
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleEndLupinDungeon lupin_dungeon = 10;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon, com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon.Builder, com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeonOrBuilder> 
+          getLupinDungeonFieldBuilder() {
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon, com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeon.Builder, com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.MsgRspBattleEndLupinDungeonOrBuilder>(
+                  getLupinDungeon(),
+                  getParentForChildren(),
+                  isClean());
+          lupinDungeon_ = null;
+        }
+        return lupinDungeonBuilder_;
+      }
+
       private java.util.List<com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster> applyBoosterList_ =
         java.util.Collections.emptyList();
       private void ensureApplyBoosterListIsMutable() {
-        if (!((bitField0_ & 0x00000200) == 0x00000200)) {
+        if (!((bitField0_ & 0x00000400) == 0x00000400)) {
           applyBoosterList_ = new java.util.ArrayList<com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster>(applyBoosterList_);
-          bitField0_ |= 0x00000200;
+          bitField0_ |= 0x00000400;
          }
       }
 
@@ -2313,7 +2510,7 @@ public final class RspBattleEndOuterClass {
           com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster, com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.Builder, com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBoosterOrBuilder> applyBoosterListBuilder_;
 
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public java.util.List<com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster> getApplyBoosterListList() {
         if (applyBoosterListBuilder_ == null) {
@@ -2323,7 +2520,7 @@ public final class RspBattleEndOuterClass {
         }
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public int getApplyBoosterListCount() {
         if (applyBoosterListBuilder_ == null) {
@@ -2333,7 +2530,7 @@ public final class RspBattleEndOuterClass {
         }
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster getApplyBoosterList(int index) {
         if (applyBoosterListBuilder_ == null) {
@@ -2343,7 +2540,7 @@ public final class RspBattleEndOuterClass {
         }
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public Builder setApplyBoosterList(
           int index, com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster value) {
@@ -2360,7 +2557,7 @@ public final class RspBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public Builder setApplyBoosterList(
           int index, com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.Builder builderForValue) {
@@ -2374,7 +2571,7 @@ public final class RspBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public Builder addApplyBoosterList(com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster value) {
         if (applyBoosterListBuilder_ == null) {
@@ -2390,7 +2587,7 @@ public final class RspBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public Builder addApplyBoosterList(
           int index, com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster value) {
@@ -2407,7 +2604,7 @@ public final class RspBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public Builder addApplyBoosterList(
           com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.Builder builderForValue) {
@@ -2421,7 +2618,7 @@ public final class RspBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public Builder addApplyBoosterList(
           int index, com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.Builder builderForValue) {
@@ -2435,7 +2632,7 @@ public final class RspBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public Builder addAllApplyBoosterList(
           java.lang.Iterable<? extends com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster> values) {
@@ -2450,12 +2647,12 @@ public final class RspBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public Builder clearApplyBoosterList() {
         if (applyBoosterListBuilder_ == null) {
           applyBoosterList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000200);
+          bitField0_ = (bitField0_ & ~0x00000400);
           onChanged();
         } else {
           applyBoosterListBuilder_.clear();
@@ -2463,7 +2660,7 @@ public final class RspBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public Builder removeApplyBoosterList(int index) {
         if (applyBoosterListBuilder_ == null) {
@@ -2476,14 +2673,14 @@ public final class RspBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.Builder getApplyBoosterListBuilder(
           int index) {
         return getApplyBoosterListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBoosterOrBuilder getApplyBoosterListOrBuilder(
           int index) {
@@ -2493,7 +2690,7 @@ public final class RspBattleEndOuterClass {
         }
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public java.util.List<? extends com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBoosterOrBuilder> 
            getApplyBoosterListOrBuilderList() {
@@ -2504,14 +2701,14 @@ public final class RspBattleEndOuterClass {
         }
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.Builder addApplyBoosterListBuilder() {
         return getApplyBoosterListFieldBuilder().addBuilder(
             com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.getDefaultInstance());
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.Builder addApplyBoosterListBuilder(
           int index) {
@@ -2519,7 +2716,7 @@ public final class RspBattleEndOuterClass {
             index, com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.getDefaultInstance());
       }
       /**
-       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 10;</code>
+       * <code>repeated .msggamedata.MsgUserBooster apply_booster_list = 11;</code>
        */
       public java.util.List<com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.Builder> 
            getApplyBoosterListBuilderList() {
@@ -2532,7 +2729,7 @@ public final class RspBattleEndOuterClass {
           applyBoosterListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster, com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBooster.Builder, com.felania.msldb.MsgUserBoosterOuterClass.MsgUserBoosterOrBuilder>(
                   applyBoosterList_,
-                  ((bitField0_ & 0x00000200) == 0x00000200),
+                  ((bitField0_ & 0x00000400) == 0x00000400),
                   getParentForChildren(),
                   isClean());
           applyBoosterList_ = null;
@@ -2569,7 +2766,7 @@ public final class RspBattleEndOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspBattleEnd(input, extensionRegistry);
+        return new RspBattleEnd(input, extensionRegistry);
       }
     };
 
@@ -2609,22 +2806,24 @@ public final class RspBattleEndOuterClass {
       "iendDungeon.proto\032\032MsgRspBattleEndArena." +
       "proto\032\035MsgRspBattleEndInfinite.proto\032\031Ms" +
       "gRspBattleEndClan.proto\032\030MsgRspBattleEnd" +
-      "CVC.proto\032\024MsgUserBooster.proto\"\254\004\n\014RspB" +
-      "attleEnd\022,\n\013battle_type\030\001 \001(\0162\027.msggamed" +
-      "ata.BattleType\022<\n\020apply_event_list\030\002 \003(\013",
-      "2\".msggamedata.MsgRunningServerEvent\0226\n\010" +
-      "scenario\030\003 \001(\0132$.msggamedata.MsgRspBattl" +
-      "eEndScenario\0224\n\007dungeon\030\004 \001(\0132#.msggamed" +
-      "ata.MsgRspBattleEndDungeon\022A\n\016friend_dun" +
-      "geon\030\005 \001(\0132).msggamedata.MsgRspBattleEnd" +
-      "FriendDungeon\0220\n\005arena\030\006 \001(\0132!.msggameda" +
-      "ta.MsgRspBattleEndArena\0226\n\010infinite\030\007 \001(" +
-      "\0132$.msggamedata.MsgRspBattleEndInfinite\022" +
-      ".\n\004clan\030\010 \001(\0132 .msggamedata.MsgRspBattle" +
-      "EndClan\022,\n\003cvc\030\t \001(\0132\037.msggamedata.MsgRs",
-      "pBattleEndCVC\0227\n\022apply_booster_list\030\n \003(" +
-      "\0132\033.msggamedata.MsgUserBoosterB\023\n\021com.fe" +
-      "lania.msldbb\006proto3"
+      "CVC.proto\032!MsgRspBattleEndLupinDungeon.p" +
+      "roto\032\024MsgUserBooster.proto\"\355\004\n\014RspBattle" +
+      "End\022,\n\013battle_type\030\001 \001(\0162\027.msggamedata.B" +
+      "attleType\022<\n\020apply_event_list\030\002 \003(\0132\".ms" +
+      "ggamedata.MsgRunningServerEvent\0226\n\010scena" +
+      "rio\030\003 \001(\0132$.msggamedata.MsgRspBattleEndS" +
+      "cenario\0224\n\007dungeon\030\004 \001(\0132#.msggamedata.M" +
+      "sgRspBattleEndDungeon\022A\n\016friend_dungeon\030" +
+      "\005 \001(\0132).msggamedata.MsgRspBattleEndFrien" +
+      "dDungeon\0220\n\005arena\030\006 \001(\0132!.msggamedata.Ms" +
+      "gRspBattleEndArena\0226\n\010infinite\030\007 \001(\0132$.m" +
+      "sggamedata.MsgRspBattleEndInfinite\022.\n\004cl" +
+      "an\030\010 \001(\0132 .msggamedata.MsgRspBattleEndCl" +
+      "an\022,\n\003cvc\030\t \001(\0132\037.msggamedata.MsgRspBatt" +
+      "leEndCVC\022?\n\rlupin_dungeon\030\n \001(\0132(.msggam" +
+      "edata.MsgRspBattleEndLupinDungeon\0227\n\022app" +
+      "ly_booster_list\030\013 \003(\0132\033.msggamedata.MsgU" +
+      "serBoosterB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2646,6 +2845,7 @@ public final class RspBattleEndOuterClass {
           com.felania.msldb.MsgRspBattleEndInfiniteOuterClass.getDescriptor(),
           com.felania.msldb.MsgRspBattleEndClanOuterClass.getDescriptor(),
           com.felania.msldb.MsgRspBattleEndCVCOuterClass.getDescriptor(),
+          com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.getDescriptor(),
           com.felania.msldb.MsgUserBoosterOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_RspBattleEnd_descriptor =
@@ -2653,7 +2853,7 @@ public final class RspBattleEndOuterClass {
     internal_static_msggamedata_RspBattleEnd_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_RspBattleEnd_descriptor,
-        new java.lang.String[] { "BattleType", "ApplyEventList", "Scenario", "Dungeon", "FriendDungeon", "Arena", "Infinite", "Clan", "Cvc", "ApplyBoosterList", });
+        new java.lang.String[] { "BattleType", "ApplyEventList", "Scenario", "Dungeon", "FriendDungeon", "Arena", "Infinite", "Clan", "Cvc", "LupinDungeon", "ApplyBoosterList", });
     com.felania.msldb.BattleTypeOuterClass.getDescriptor();
     com.felania.msldb.MsgRunningServerEventOuterClass.getDescriptor();
     com.felania.msldb.MsgRspBattleEndScenarioOuterClass.getDescriptor();
@@ -2663,6 +2863,7 @@ public final class RspBattleEndOuterClass {
     com.felania.msldb.MsgRspBattleEndInfiniteOuterClass.getDescriptor();
     com.felania.msldb.MsgRspBattleEndClanOuterClass.getDescriptor();
     com.felania.msldb.MsgRspBattleEndCVCOuterClass.getDescriptor();
+    com.felania.msldb.MsgRspBattleEndLupinDungeonOuterClass.getDescriptor();
     com.felania.msldb.MsgUserBoosterOuterClass.getDescriptor();
   }
 

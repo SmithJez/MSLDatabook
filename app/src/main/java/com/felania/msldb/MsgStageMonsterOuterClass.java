@@ -250,6 +250,9 @@ public final class MsgStageMonsterOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2933,7 +2936,7 @@ public final class MsgStageMonsterOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgStageMonster(input, extensionRegistry);
+        return new MsgStageMonster(input, extensionRegistry);
       }
     };
 
@@ -2975,7 +2978,7 @@ public final class MsgStageMonsterOuterClass {
       "ightType\022\026\n\016attack_ability\030\006 \001(\002\022\027\n\017defe" +
       "nce_ability\030\007 \001(\002\022\024\n\014heal_ability\030\010 \001(\002\022" +
       "\022\n\nhp_ability\030\t \001(\002\022\021\n\tover_kill\030\n \001(\002\022\026" +
-      "\n\016over_kill_prob\030\013 \001(\002\022\r\n\005scale\030\014 \001(\002\022\023\n",
+      "\n\016over_kill_prob\030\013 \001(\002\022\r\n\005scale\030\014 \001(\002\022\023\n" +
       "\013capture_lev\030\r \001(\r\022\022\n\ncapturable\030\016 \001(\010\022\030" +
       "\n\020capture_min_prob\030\021 \001(\002\022\017\n\007is_boss\030\024 \001(" +
       "\010\0228\n\016drop_items_hit\030\025 \003(\0132 .msggamedata." +
@@ -2985,7 +2988,7 @@ public final class MsgStageMonsterOuterClass {
       "pe\0226\n\023monster_skill_grade\030\032 \001(\0162\031.msggam" +
       "edata.MonsterGrade\022\023\n\013boss_skills\030\033 \003(\r\022" +
       "#\n\033add_critical_damage_percent\030\034 \001(\002\022!\n\031" +
-      "add_critical_prob_percent\030\035 \001(\002\022,\n$add_s",
+      "add_critical_prob_percent\030\035 \001(\002\022,\n$add_s" +
       "tatus_effect_resistance_percent\030\036 \001(\002\022N\n" +
       "\021custom_scale_mode\030\037 \001(\01623.msggamedata.M" +
       "sgStageMonster.MonsterCustomScaleMode\022\032\n" +

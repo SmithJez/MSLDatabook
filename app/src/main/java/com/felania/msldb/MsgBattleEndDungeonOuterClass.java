@@ -99,6 +99,21 @@ public final class MsgBattleEndDungeonOuterClass {
      */
     com.felania.msldb.MsgBattleMonsterStatOuterClass.MsgBattleMonsterStatOrBuilder getMonResultDataOrBuilder(
         int index);
+
+    /**
+     * <code>uint64 end_boss_dec_hp = 9;</code>
+     */
+    long getEndBossDecHp();
+
+    /**
+     * <code>uint64 end_boss_dec_hp_by_hit = 10;</code>
+     */
+    long getEndBossDecHpByHit();
+
+    /**
+     * <code>uint64 end_boss_dec_hp_by_status_effect = 11;</code>
+     */
+    long getEndBossDecHpByStatusEffect();
   }
   /**
    * Protobuf type {@code msggamedata.MsgBattleEndDungeon}
@@ -121,6 +136,9 @@ public final class MsgBattleEndDungeonOuterClass {
       monDeath_ = 0;
       monCount_ = 0;
       monResultData_ = java.util.Collections.emptyList();
+      endBossDecHp_ = 0L;
+      endBossDecHpByHit_ = 0L;
+      endBossDecHpByStatusEffect_ = 0L;
     }
 
     @java.lang.Override
@@ -133,6 +151,9 @@ public final class MsgBattleEndDungeonOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -198,6 +219,21 @@ public final class MsgBattleEndDungeonOuterClass {
               }
               monResultData_.add(
                   input.readMessage(com.felania.msldb.MsgBattleMonsterStatOuterClass.MsgBattleMonsterStat.parser(), extensionRegistry));
+              break;
+            }
+            case 72: {
+
+              endBossDecHp_ = input.readUInt64();
+              break;
+            }
+            case 80: {
+
+              endBossDecHpByHit_ = input.readUInt64();
+              break;
+            }
+            case 88: {
+
+              endBossDecHpByStatusEffect_ = input.readUInt64();
               break;
             }
           }
@@ -362,6 +398,33 @@ public final class MsgBattleEndDungeonOuterClass {
       return monResultData_.get(index);
     }
 
+    public static final int END_BOSS_DEC_HP_FIELD_NUMBER = 9;
+    private long endBossDecHp_;
+    /**
+     * <code>uint64 end_boss_dec_hp = 9;</code>
+     */
+    public long getEndBossDecHp() {
+      return endBossDecHp_;
+    }
+
+    public static final int END_BOSS_DEC_HP_BY_HIT_FIELD_NUMBER = 10;
+    private long endBossDecHpByHit_;
+    /**
+     * <code>uint64 end_boss_dec_hp_by_hit = 10;</code>
+     */
+    public long getEndBossDecHpByHit() {
+      return endBossDecHpByHit_;
+    }
+
+    public static final int END_BOSS_DEC_HP_BY_STATUS_EFFECT_FIELD_NUMBER = 11;
+    private long endBossDecHpByStatusEffect_;
+    /**
+     * <code>uint64 end_boss_dec_hp_by_status_effect = 11;</code>
+     */
+    public long getEndBossDecHpByStatusEffect() {
+      return endBossDecHpByStatusEffect_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -397,6 +460,15 @@ public final class MsgBattleEndDungeonOuterClass {
       }
       for (int i = 0; i < monResultData_.size(); i++) {
         output.writeMessage(8, monResultData_.get(i));
+      }
+      if (endBossDecHp_ != 0L) {
+        output.writeUInt64(9, endBossDecHp_);
+      }
+      if (endBossDecHpByHit_ != 0L) {
+        output.writeUInt64(10, endBossDecHpByHit_);
+      }
+      if (endBossDecHpByStatusEffect_ != 0L) {
+        output.writeUInt64(11, endBossDecHpByStatusEffect_);
       }
       unknownFields.writeTo(output);
     }
@@ -438,6 +510,18 @@ public final class MsgBattleEndDungeonOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(8, monResultData_.get(i));
       }
+      if (endBossDecHp_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(9, endBossDecHp_);
+      }
+      if (endBossDecHpByHit_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(10, endBossDecHpByHit_);
+      }
+      if (endBossDecHpByStatusEffect_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(11, endBossDecHpByStatusEffect_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -469,6 +553,12 @@ public final class MsgBattleEndDungeonOuterClass {
           == other.getMonCount());
       result = result && getMonResultDataList()
           .equals(other.getMonResultDataList());
+      result = result && (getEndBossDecHp()
+          == other.getEndBossDecHp());
+      result = result && (getEndBossDecHpByHit()
+          == other.getEndBossDecHpByHit());
+      result = result && (getEndBossDecHpByStatusEffect()
+          == other.getEndBossDecHpByStatusEffect());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -501,6 +591,15 @@ public final class MsgBattleEndDungeonOuterClass {
         hash = (37 * hash) + MON_RESULT_DATA_FIELD_NUMBER;
         hash = (53 * hash) + getMonResultDataList().hashCode();
       }
+      hash = (37 * hash) + END_BOSS_DEC_HP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getEndBossDecHp());
+      hash = (37 * hash) + END_BOSS_DEC_HP_BY_HIT_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getEndBossDecHpByHit());
+      hash = (37 * hash) + END_BOSS_DEC_HP_BY_STATUS_EFFECT_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getEndBossDecHpByStatusEffect());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -656,6 +755,12 @@ public final class MsgBattleEndDungeonOuterClass {
         } else {
           monResultDataBuilder_.clear();
         }
+        endBossDecHp_ = 0L;
+
+        endBossDecHpByHit_ = 0L;
+
+        endBossDecHpByStatusEffect_ = 0L;
+
         return this;
       }
 
@@ -704,6 +809,9 @@ public final class MsgBattleEndDungeonOuterClass {
         } else {
           result.monResultData_ = monResultDataBuilder_.build();
         }
+        result.endBossDecHp_ = endBossDecHp_;
+        result.endBossDecHpByHit_ = endBossDecHpByHit_;
+        result.endBossDecHpByStatusEffect_ = endBossDecHpByStatusEffect_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -815,6 +923,15 @@ public final class MsgBattleEndDungeonOuterClass {
               monResultDataBuilder_.addAllMessages(other.monResultData_);
             }
           }
+        }
+        if (other.getEndBossDecHp() != 0L) {
+          setEndBossDecHp(other.getEndBossDecHp());
+        }
+        if (other.getEndBossDecHpByHit() != 0L) {
+          setEndBossDecHpByHit(other.getEndBossDecHpByHit());
+        }
+        if (other.getEndBossDecHpByStatusEffect() != 0L) {
+          setEndBossDecHpByStatusEffect(other.getEndBossDecHpByStatusEffect());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1497,6 +1614,84 @@ public final class MsgBattleEndDungeonOuterClass {
         }
         return monResultDataBuilder_;
       }
+
+      private long endBossDecHp_ ;
+      /**
+       * <code>uint64 end_boss_dec_hp = 9;</code>
+       */
+      public long getEndBossDecHp() {
+        return endBossDecHp_;
+      }
+      /**
+       * <code>uint64 end_boss_dec_hp = 9;</code>
+       */
+      public Builder setEndBossDecHp(long value) {
+        
+        endBossDecHp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 end_boss_dec_hp = 9;</code>
+       */
+      public Builder clearEndBossDecHp() {
+        
+        endBossDecHp_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long endBossDecHpByHit_ ;
+      /**
+       * <code>uint64 end_boss_dec_hp_by_hit = 10;</code>
+       */
+      public long getEndBossDecHpByHit() {
+        return endBossDecHpByHit_;
+      }
+      /**
+       * <code>uint64 end_boss_dec_hp_by_hit = 10;</code>
+       */
+      public Builder setEndBossDecHpByHit(long value) {
+        
+        endBossDecHpByHit_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 end_boss_dec_hp_by_hit = 10;</code>
+       */
+      public Builder clearEndBossDecHpByHit() {
+        
+        endBossDecHpByHit_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long endBossDecHpByStatusEffect_ ;
+      /**
+       * <code>uint64 end_boss_dec_hp_by_status_effect = 11;</code>
+       */
+      public long getEndBossDecHpByStatusEffect() {
+        return endBossDecHpByStatusEffect_;
+      }
+      /**
+       * <code>uint64 end_boss_dec_hp_by_status_effect = 11;</code>
+       */
+      public Builder setEndBossDecHpByStatusEffect(long value) {
+        
+        endBossDecHpByStatusEffect_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 end_boss_dec_hp_by_status_effect = 11;</code>
+       */
+      public Builder clearEndBossDecHpByStatusEffect() {
+        
+        endBossDecHpByStatusEffect_ = 0L;
+        onChanged();
+        return this;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -1527,7 +1722,7 @@ public final class MsgBattleEndDungeonOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgBattleEndDungeon(input, extensionRegistry);
+        return new MsgBattleEndDungeon(input, extensionRegistry);
       }
     };
 
@@ -1563,14 +1758,17 @@ public final class MsgBattleEndDungeonOuterClass {
       "\n\031MsgBattleEndDungeon.proto\022\013msggamedata" +
       "\032\035MsgDataTypeUidAndAmount.proto\032\031BattleE" +
       "ndResultType.proto\032\032MsgBattleMonsterStat" +
-      ".proto\"\226\002\n\023MsgBattleEndDungeon\022\021\n\tbattle" +
+      ".proto\"\371\002\n\023MsgBattleEndDungeon\022\021\n\tbattle" +
       "_id\030\001 \001(\004\0223\n\005items\030\002 \003(\0132$.msggamedata.M" +
       "sgDataTypeUidAndAmount\0220\n\006result\030\003 \001(\0162 " +
       ".msggamedata.BattleEndResultType\022\022\n\ncurr" +
       "_round\030\004 \001(\r\022\017\n\007revival\030\005 \001(\r\022\021\n\tmon_dea" +
       "th\030\006 \001(\r\022\021\n\tmon_count\030\007 \001(\r\022:\n\017mon_resul" +
-      "t_data\030\010 \003(\0132!.msggamedata.MsgBattleMons",
-      "terStatB\023\n\021com.felania.msldbb\006proto3"
+      "t_data\030\010 \003(\0132!.msggamedata.MsgBattleMons" +
+      "terStat\022\027\n\017end_boss_dec_hp\030\t \001(\004\022\036\n\026end_" +
+      "boss_dec_hp_by_hit\030\n \001(\004\022(\n end_boss_dec" +
+      "_hp_by_status_effect\030\013 \001(\004B\023\n\021com.felani" +
+      "a.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1592,7 +1790,7 @@ public final class MsgBattleEndDungeonOuterClass {
     internal_static_msggamedata_MsgBattleEndDungeon_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgBattleEndDungeon_descriptor,
-        new java.lang.String[] { "BattleId", "Items", "Result", "CurrRound", "Revival", "MonDeath", "MonCount", "MonResultData", });
+        new java.lang.String[] { "BattleId", "Items", "Result", "CurrRound", "Revival", "MonDeath", "MonCount", "MonResultData", "EndBossDecHp", "EndBossDecHpByHit", "EndBossDecHpByStatusEffect", });
     com.felania.msldb.MsgDataTypeUidAndAmountOuterClass.getDescriptor();
     com.felania.msldb.BattleEndResultTypeOuterClass.getDescriptor();
     com.felania.msldb.MsgBattleMonsterStatOuterClass.getDescriptor();

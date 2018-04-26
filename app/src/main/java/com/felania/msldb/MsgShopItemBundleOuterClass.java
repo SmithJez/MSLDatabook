@@ -103,6 +103,9 @@ public final class MsgShopItemBundleOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1327,7 +1330,7 @@ public final class MsgShopItemBundleOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgShopItemBundle(input, extensionRegistry);
+        return new MsgShopItemBundle(input, extensionRegistry);
       }
     };
 
@@ -1369,7 +1372,7 @@ public final class MsgShopItemBundleOuterClass {
       "opItemBundle.ResetMethod\022L\n\tprob_list\030\003 " +
       "\003(\01329.msggamedata.MsgShopItemMetaMonster" +
       ".StatWeightTypeAndProb\"D\n\013ResetMethod\022\013\n" +
-      "\007RM_None\020\000\022\r\n\tRM_Period\020\001\022\013\n\007RM_Week\020\002\022\014",
+      "\007RM_None\020\000\022\r\n\tRM_Period\020\001\022\013\n\007RM_Week\020\002\022\014" +
       "\n\010RM_Month\020\003B\023\n\021com.felania.msldbb\006proto" +
       "3"
     };

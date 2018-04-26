@@ -283,7 +283,7 @@ public final class SpecialUidOuterClass {
       "Point\020\252\215\006\022\014\n\006SU_Uid\020\253\215\006\022\026\n\020SU_DungeonTic" +
       "ket\020\254\215\006\022\020\n\nSU_FreeGem\020\255\215\006\022\020\n\nSU_PaidGem\020" +
       "\256\215\006\022\020\n\nSU_Crystal\020\257\215\006\022\022\n\014SU_ClanPoint\020\260\215" +
-      "\006\022\024\n\016SU_LuckyTicket\020\261\215\006\022\026\n\020SU_CostumeTic",
+      "\006\022\024\n\016SU_LuckyTicket\020\261\215\006\022\026\n\020SU_CostumeTic" +
       "ket\020\262\215\006B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

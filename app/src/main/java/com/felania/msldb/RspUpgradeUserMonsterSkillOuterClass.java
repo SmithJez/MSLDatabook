@@ -92,6 +92,9 @@ public final class RspUpgradeUserMonsterSkillOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1161,7 +1164,7 @@ public final class RspUpgradeUserMonsterSkillOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspUpgradeUserMonsterSkill(input, extensionRegistry);
+        return new RspUpgradeUserMonsterSkill(input, extensionRegistry);
       }
     };
 
@@ -1203,7 +1206,7 @@ public final class RspUpgradeUserMonsterSkillOuterClass {
       "\0221\n\014user_monster\030\003 \001(\0132\033.msggamedata.Msg" +
       "UserMonster\022T\n\rupgrade_skill\030\004 \001(\0162=.msg" +
       "gamedata.RspUpgradeUserMonsterSkill.Skil" +
-      "lUpgradeDirection\"^\n\025SkillUpgradeDirecti",
+      "lUpgradeDirection\"^\n\025SkillUpgradeDirecti" +
       "on\022\024\n\020UpgradeSkillNone\020\000\022\027\n\023UpgradeSkill" +
       "Default\020\001\022\026\n\022UpgradeSkillActive\020\002B\023\n\021com" +
       ".felania.msldbb\006proto3"

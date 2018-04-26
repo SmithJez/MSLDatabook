@@ -229,7 +229,7 @@ public final class MonsterSlotIndexOuterClass {
       "ondStoneDungeonFri\020\006\022\027\n\023MSI_InfiniteDung" +
       "eon\020\007\022\023\n\017MSI_ArenaAttack\020\010\022\024\n\020MSI_ArenaD" +
       "efense\020\t\022\033\n\027MSI_DungeonAncientGolem\020\n\022\025\n" +
-      "\021MSI_DungeonDragon\020\013\022\r\n\tMSI_Count\020\014B\023\n\021c",
+      "\021MSI_DungeonDragon\020\013\022\r\n\tMSI_Count\020\014B\023\n\021c" +
       "om.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

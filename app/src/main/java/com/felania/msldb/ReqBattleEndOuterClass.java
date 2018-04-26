@@ -119,48 +119,61 @@ public final class ReqBattleEndOuterClass {
     com.felania.msldb.MsgBattleEndCVCOuterClass.MsgBattleEndCVCOrBuilder getCvcOrBuilder();
 
     /**
-     * <code>uint32 auto_mode = 9;</code>
+     * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+     */
+    boolean hasLupinDungeon();
+    /**
+     * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+     */
+    com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon getLupinDungeon();
+    /**
+     * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+     */
+    com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeonOrBuilder getLupinDungeonOrBuilder();
+
+    /**
+     * <code>uint32 auto_mode = 10;</code>
      */
     int getAutoMode();
 
     /**
-     * <code>uint32 battle_speed = 10;</code>
+     * <code>uint32 battle_speed = 11;</code>
      */
     int getBattleSpeed();
 
     /**
-     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
      */
     boolean hasTimeReport();
     /**
-     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
      */
     com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport getTimeReport();
     /**
-     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
      */
     com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReportOrBuilder getTimeReportOrBuilder();
 
     /**
-     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
      */
     java.util.List<com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport> 
         getSimulateReportList();
     /**
-     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
      */
     com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport getSimulateReport(int index);
     /**
-     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
      */
     int getSimulateReportCount();
     /**
-     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
      */
     java.util.List<? extends com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReportOrBuilder> 
         getSimulateReportOrBuilderList();
     /**
-     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
      */
     com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReportOrBuilder getSimulateReportOrBuilder(
         int index);
@@ -194,6 +207,9 @@ public final class ReqBattleEndOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -309,17 +325,30 @@ public final class ReqBattleEndOuterClass {
 
               break;
             }
-            case 72: {
+            case 74: {
+              com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon.Builder subBuilder = null;
+              if (lupinDungeon_ != null) {
+                subBuilder = lupinDungeon_.toBuilder();
+              }
+              lupinDungeon_ = input.readMessage(com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(lupinDungeon_);
+                lupinDungeon_ = subBuilder.buildPartial();
+              }
 
-              autoMode_ = input.readUInt32();
               break;
             }
             case 80: {
 
+              autoMode_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
               battleSpeed_ = input.readUInt32();
               break;
             }
-            case 90: {
+            case 98: {
               com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport.Builder subBuilder = null;
               if (timeReport_ != null) {
                 subBuilder = timeReport_.toBuilder();
@@ -332,10 +361,10 @@ public final class ReqBattleEndOuterClass {
 
               break;
             }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000800) == 0x00000800)) {
+            case 106: {
+              if (!((mutable_bitField0_ & 0x00001000) == 0x00001000)) {
                 simulateReport_ = new java.util.ArrayList<com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport>();
-                mutable_bitField0_ |= 0x00000800;
+                mutable_bitField0_ |= 0x00001000;
               }
               simulateReport_.add(
                   input.readMessage(com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.parser(), extensionRegistry));
@@ -349,7 +378,7 @@ public final class ReqBattleEndOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000800) == 0x00000800)) {
+        if (((mutable_bitField0_ & 0x00001000) == 0x00001000)) {
           simulateReport_ = java.util.Collections.unmodifiableList(simulateReport_);
         }
         this.unknownFields = unknownFields.build();
@@ -532,74 +561,95 @@ public final class ReqBattleEndOuterClass {
       return getCvc();
     }
 
-    public static final int AUTO_MODE_FIELD_NUMBER = 9;
+    public static final int LUPIN_DUNGEON_FIELD_NUMBER = 9;
+    private com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon lupinDungeon_;
+    /**
+     * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+     */
+    public boolean hasLupinDungeon() {
+      return lupinDungeon_ != null;
+    }
+    /**
+     * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+     */
+    public com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon getLupinDungeon() {
+      return lupinDungeon_ == null ? com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon.getDefaultInstance() : lupinDungeon_;
+    }
+    /**
+     * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+     */
+    public com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeonOrBuilder getLupinDungeonOrBuilder() {
+      return getLupinDungeon();
+    }
+
+    public static final int AUTO_MODE_FIELD_NUMBER = 10;
     private int autoMode_;
     /**
-     * <code>uint32 auto_mode = 9;</code>
+     * <code>uint32 auto_mode = 10;</code>
      */
     public int getAutoMode() {
       return autoMode_;
     }
 
-    public static final int BATTLE_SPEED_FIELD_NUMBER = 10;
+    public static final int BATTLE_SPEED_FIELD_NUMBER = 11;
     private int battleSpeed_;
     /**
-     * <code>uint32 battle_speed = 10;</code>
+     * <code>uint32 battle_speed = 11;</code>
      */
     public int getBattleSpeed() {
       return battleSpeed_;
     }
 
-    public static final int TIME_REPORT_FIELD_NUMBER = 11;
+    public static final int TIME_REPORT_FIELD_NUMBER = 12;
     private com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport timeReport_;
     /**
-     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
      */
     public boolean hasTimeReport() {
       return timeReport_ != null;
     }
     /**
-     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
      */
     public com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport getTimeReport() {
       return timeReport_ == null ? com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport.getDefaultInstance() : timeReport_;
     }
     /**
-     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+     * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
      */
     public com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReportOrBuilder getTimeReportOrBuilder() {
       return getTimeReport();
     }
 
-    public static final int SIMULATE_REPORT_FIELD_NUMBER = 12;
+    public static final int SIMULATE_REPORT_FIELD_NUMBER = 13;
     private java.util.List<com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport> simulateReport_;
     /**
-     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
      */
     public java.util.List<com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport> getSimulateReportList() {
       return simulateReport_;
     }
     /**
-     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
      */
     public java.util.List<? extends com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReportOrBuilder> 
         getSimulateReportOrBuilderList() {
       return simulateReport_;
     }
     /**
-     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
      */
     public int getSimulateReportCount() {
       return simulateReport_.size();
     }
     /**
-     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
      */
     public com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport getSimulateReport(int index) {
       return simulateReport_.get(index);
     }
     /**
-     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+     * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
      */
     public com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReportOrBuilder getSimulateReportOrBuilder(
         int index) {
@@ -642,17 +692,20 @@ public final class ReqBattleEndOuterClass {
       if (cvc_ != null) {
         output.writeMessage(8, getCvc());
       }
+      if (lupinDungeon_ != null) {
+        output.writeMessage(9, getLupinDungeon());
+      }
       if (autoMode_ != 0) {
-        output.writeUInt32(9, autoMode_);
+        output.writeUInt32(10, autoMode_);
       }
       if (battleSpeed_ != 0) {
-        output.writeUInt32(10, battleSpeed_);
+        output.writeUInt32(11, battleSpeed_);
       }
       if (timeReport_ != null) {
-        output.writeMessage(11, getTimeReport());
+        output.writeMessage(12, getTimeReport());
       }
       for (int i = 0; i < simulateReport_.size(); i++) {
-        output.writeMessage(12, simulateReport_.get(i));
+        output.writeMessage(13, simulateReport_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -694,21 +747,25 @@ public final class ReqBattleEndOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(8, getCvc());
       }
+      if (lupinDungeon_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, getLupinDungeon());
+      }
       if (autoMode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, autoMode_);
+          .computeUInt32Size(10, autoMode_);
       }
       if (battleSpeed_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, battleSpeed_);
+          .computeUInt32Size(11, battleSpeed_);
       }
       if (timeReport_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getTimeReport());
+          .computeMessageSize(12, getTimeReport());
       }
       for (int i = 0; i < simulateReport_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, simulateReport_.get(i));
+          .computeMessageSize(13, simulateReport_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -762,6 +819,11 @@ public final class ReqBattleEndOuterClass {
         result = result && getCvc()
             .equals(other.getCvc());
       }
+      result = result && (hasLupinDungeon() == other.hasLupinDungeon());
+      if (hasLupinDungeon()) {
+        result = result && getLupinDungeon()
+            .equals(other.getLupinDungeon());
+      }
       result = result && (getAutoMode()
           == other.getAutoMode());
       result = result && (getBattleSpeed()
@@ -813,6 +875,10 @@ public final class ReqBattleEndOuterClass {
       if (hasCvc()) {
         hash = (37 * hash) + CVC_FIELD_NUMBER;
         hash = (53 * hash) + getCvc().hashCode();
+      }
+      if (hasLupinDungeon()) {
+        hash = (37 * hash) + LUPIN_DUNGEON_FIELD_NUMBER;
+        hash = (53 * hash) + getLupinDungeon().hashCode();
       }
       hash = (37 * hash) + AUTO_MODE_FIELD_NUMBER;
       hash = (53 * hash) + getAutoMode();
@@ -1000,6 +1066,12 @@ public final class ReqBattleEndOuterClass {
           cvc_ = null;
           cvcBuilder_ = null;
         }
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeon_ = null;
+        } else {
+          lupinDungeon_ = null;
+          lupinDungeonBuilder_ = null;
+        }
         autoMode_ = 0;
 
         battleSpeed_ = 0;
@@ -1012,7 +1084,7 @@ public final class ReqBattleEndOuterClass {
         }
         if (simulateReportBuilder_ == null) {
           simulateReport_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000800);
+          bitField0_ = (bitField0_ & ~0x00001000);
         } else {
           simulateReportBuilder_.clear();
         }
@@ -1076,6 +1148,11 @@ public final class ReqBattleEndOuterClass {
         } else {
           result.cvc_ = cvcBuilder_.build();
         }
+        if (lupinDungeonBuilder_ == null) {
+          result.lupinDungeon_ = lupinDungeon_;
+        } else {
+          result.lupinDungeon_ = lupinDungeonBuilder_.build();
+        }
         result.autoMode_ = autoMode_;
         result.battleSpeed_ = battleSpeed_;
         if (timeReportBuilder_ == null) {
@@ -1084,9 +1161,9 @@ public final class ReqBattleEndOuterClass {
           result.timeReport_ = timeReportBuilder_.build();
         }
         if (simulateReportBuilder_ == null) {
-          if (((bitField0_ & 0x00000800) == 0x00000800)) {
+          if (((bitField0_ & 0x00001000) == 0x00001000)) {
             simulateReport_ = java.util.Collections.unmodifiableList(simulateReport_);
-            bitField0_ = (bitField0_ & ~0x00000800);
+            bitField0_ = (bitField0_ & ~0x00001000);
           }
           result.simulateReport_ = simulateReport_;
         } else {
@@ -1158,6 +1235,9 @@ public final class ReqBattleEndOuterClass {
         if (other.hasCvc()) {
           mergeCvc(other.getCvc());
         }
+        if (other.hasLupinDungeon()) {
+          mergeLupinDungeon(other.getLupinDungeon());
+        }
         if (other.getAutoMode() != 0) {
           setAutoMode(other.getAutoMode());
         }
@@ -1171,7 +1251,7 @@ public final class ReqBattleEndOuterClass {
           if (!other.simulateReport_.isEmpty()) {
             if (simulateReport_.isEmpty()) {
               simulateReport_ = other.simulateReport_;
-              bitField0_ = (bitField0_ & ~0x00000800);
+              bitField0_ = (bitField0_ & ~0x00001000);
             } else {
               ensureSimulateReportIsMutable();
               simulateReport_.addAll(other.simulateReport_);
@@ -1184,7 +1264,7 @@ public final class ReqBattleEndOuterClass {
               simulateReportBuilder_.dispose();
               simulateReportBuilder_ = null;
               simulateReport_ = other.simulateReport_;
-              bitField0_ = (bitField0_ & ~0x00000800);
+              bitField0_ = (bitField0_ & ~0x00001000);
               simulateReportBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getSimulateReportFieldBuilder() : null;
@@ -2084,15 +2164,132 @@ public final class ReqBattleEndOuterClass {
         return cvcBuilder_;
       }
 
+      private com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon lupinDungeon_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon, com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon.Builder, com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeonOrBuilder> lupinDungeonBuilder_;
+      /**
+       * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+       */
+      public boolean hasLupinDungeon() {
+        return lupinDungeonBuilder_ != null || lupinDungeon_ != null;
+      }
+      /**
+       * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+       */
+      public com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon getLupinDungeon() {
+        if (lupinDungeonBuilder_ == null) {
+          return lupinDungeon_ == null ? com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon.getDefaultInstance() : lupinDungeon_;
+        } else {
+          return lupinDungeonBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+       */
+      public Builder setLupinDungeon(com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon value) {
+        if (lupinDungeonBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          lupinDungeon_ = value;
+          onChanged();
+        } else {
+          lupinDungeonBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+       */
+      public Builder setLupinDungeon(
+          com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon.Builder builderForValue) {
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeon_ = builderForValue.build();
+          onChanged();
+        } else {
+          lupinDungeonBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+       */
+      public Builder mergeLupinDungeon(com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon value) {
+        if (lupinDungeonBuilder_ == null) {
+          if (lupinDungeon_ != null) {
+            lupinDungeon_ =
+              com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon.newBuilder(lupinDungeon_).mergeFrom(value).buildPartial();
+          } else {
+            lupinDungeon_ = value;
+          }
+          onChanged();
+        } else {
+          lupinDungeonBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+       */
+      public Builder clearLupinDungeon() {
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeon_ = null;
+          onChanged();
+        } else {
+          lupinDungeon_ = null;
+          lupinDungeonBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+       */
+      public com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon.Builder getLupinDungeonBuilder() {
+        
+        onChanged();
+        return getLupinDungeonFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+       */
+      public com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeonOrBuilder getLupinDungeonOrBuilder() {
+        if (lupinDungeonBuilder_ != null) {
+          return lupinDungeonBuilder_.getMessageOrBuilder();
+        } else {
+          return lupinDungeon_ == null ?
+              com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon.getDefaultInstance() : lupinDungeon_;
+        }
+      }
+      /**
+       * <code>.msggamedata.MsgBattleEndLupinDungeon lupin_dungeon = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon, com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon.Builder, com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeonOrBuilder> 
+          getLupinDungeonFieldBuilder() {
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon, com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeon.Builder, com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.MsgBattleEndLupinDungeonOrBuilder>(
+                  getLupinDungeon(),
+                  getParentForChildren(),
+                  isClean());
+          lupinDungeon_ = null;
+        }
+        return lupinDungeonBuilder_;
+      }
+
       private int autoMode_ ;
       /**
-       * <code>uint32 auto_mode = 9;</code>
+       * <code>uint32 auto_mode = 10;</code>
        */
       public int getAutoMode() {
         return autoMode_;
       }
       /**
-       * <code>uint32 auto_mode = 9;</code>
+       * <code>uint32 auto_mode = 10;</code>
        */
       public Builder setAutoMode(int value) {
         
@@ -2101,7 +2298,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>uint32 auto_mode = 9;</code>
+       * <code>uint32 auto_mode = 10;</code>
        */
       public Builder clearAutoMode() {
         
@@ -2112,13 +2309,13 @@ public final class ReqBattleEndOuterClass {
 
       private int battleSpeed_ ;
       /**
-       * <code>uint32 battle_speed = 10;</code>
+       * <code>uint32 battle_speed = 11;</code>
        */
       public int getBattleSpeed() {
         return battleSpeed_;
       }
       /**
-       * <code>uint32 battle_speed = 10;</code>
+       * <code>uint32 battle_speed = 11;</code>
        */
       public Builder setBattleSpeed(int value) {
         
@@ -2127,7 +2324,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>uint32 battle_speed = 10;</code>
+       * <code>uint32 battle_speed = 11;</code>
        */
       public Builder clearBattleSpeed() {
         
@@ -2140,13 +2337,13 @@ public final class ReqBattleEndOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport, com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport.Builder, com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReportOrBuilder> timeReportBuilder_;
       /**
-       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
        */
       public boolean hasTimeReport() {
         return timeReportBuilder_ != null || timeReport_ != null;
       }
       /**
-       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
        */
       public com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport getTimeReport() {
         if (timeReportBuilder_ == null) {
@@ -2156,7 +2353,7 @@ public final class ReqBattleEndOuterClass {
         }
       }
       /**
-       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
        */
       public Builder setTimeReport(com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport value) {
         if (timeReportBuilder_ == null) {
@@ -2172,7 +2369,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
        */
       public Builder setTimeReport(
           com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport.Builder builderForValue) {
@@ -2186,7 +2383,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
        */
       public Builder mergeTimeReport(com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport value) {
         if (timeReportBuilder_ == null) {
@@ -2204,7 +2401,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
        */
       public Builder clearTimeReport() {
         if (timeReportBuilder_ == null) {
@@ -2218,7 +2415,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
        */
       public com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport.Builder getTimeReportBuilder() {
         
@@ -2226,7 +2423,7 @@ public final class ReqBattleEndOuterClass {
         return getTimeReportFieldBuilder().getBuilder();
       }
       /**
-       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
        */
       public com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReportOrBuilder getTimeReportOrBuilder() {
         if (timeReportBuilder_ != null) {
@@ -2237,7 +2434,7 @@ public final class ReqBattleEndOuterClass {
         }
       }
       /**
-       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 11;</code>
+       * <code>.msggamedata.MsgBattleEndTimeReport time_report = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport, com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReport.Builder, com.felania.msldb.MsgBattleEndTimeReportOuterClass.MsgBattleEndTimeReportOrBuilder> 
@@ -2256,9 +2453,9 @@ public final class ReqBattleEndOuterClass {
       private java.util.List<com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport> simulateReport_ =
         java.util.Collections.emptyList();
       private void ensureSimulateReportIsMutable() {
-        if (!((bitField0_ & 0x00000800) == 0x00000800)) {
+        if (!((bitField0_ & 0x00001000) == 0x00001000)) {
           simulateReport_ = new java.util.ArrayList<com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport>(simulateReport_);
-          bitField0_ |= 0x00000800;
+          bitField0_ |= 0x00001000;
          }
       }
 
@@ -2266,7 +2463,7 @@ public final class ReqBattleEndOuterClass {
           com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport, com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.Builder, com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReportOrBuilder> simulateReportBuilder_;
 
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public java.util.List<com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport> getSimulateReportList() {
         if (simulateReportBuilder_ == null) {
@@ -2276,7 +2473,7 @@ public final class ReqBattleEndOuterClass {
         }
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public int getSimulateReportCount() {
         if (simulateReportBuilder_ == null) {
@@ -2286,7 +2483,7 @@ public final class ReqBattleEndOuterClass {
         }
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport getSimulateReport(int index) {
         if (simulateReportBuilder_ == null) {
@@ -2296,7 +2493,7 @@ public final class ReqBattleEndOuterClass {
         }
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public Builder setSimulateReport(
           int index, com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport value) {
@@ -2313,7 +2510,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public Builder setSimulateReport(
           int index, com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.Builder builderForValue) {
@@ -2327,7 +2524,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public Builder addSimulateReport(com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport value) {
         if (simulateReportBuilder_ == null) {
@@ -2343,7 +2540,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public Builder addSimulateReport(
           int index, com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport value) {
@@ -2360,7 +2557,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public Builder addSimulateReport(
           com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.Builder builderForValue) {
@@ -2374,7 +2571,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public Builder addSimulateReport(
           int index, com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.Builder builderForValue) {
@@ -2388,7 +2585,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public Builder addAllSimulateReport(
           java.lang.Iterable<? extends com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport> values) {
@@ -2403,12 +2600,12 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public Builder clearSimulateReport() {
         if (simulateReportBuilder_ == null) {
           simulateReport_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000800);
+          bitField0_ = (bitField0_ & ~0x00001000);
           onChanged();
         } else {
           simulateReportBuilder_.clear();
@@ -2416,7 +2613,7 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public Builder removeSimulateReport(int index) {
         if (simulateReportBuilder_ == null) {
@@ -2429,14 +2626,14 @@ public final class ReqBattleEndOuterClass {
         return this;
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.Builder getSimulateReportBuilder(
           int index) {
         return getSimulateReportFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReportOrBuilder getSimulateReportOrBuilder(
           int index) {
@@ -2446,7 +2643,7 @@ public final class ReqBattleEndOuterClass {
         }
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public java.util.List<? extends com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReportOrBuilder> 
            getSimulateReportOrBuilderList() {
@@ -2457,14 +2654,14 @@ public final class ReqBattleEndOuterClass {
         }
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.Builder addSimulateReportBuilder() {
         return getSimulateReportFieldBuilder().addBuilder(
             com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.getDefaultInstance());
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.Builder addSimulateReportBuilder(
           int index) {
@@ -2472,7 +2669,7 @@ public final class ReqBattleEndOuterClass {
             index, com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.getDefaultInstance());
       }
       /**
-       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 12;</code>
+       * <code>repeated .msggamedata.MsgBattleEndSimulateReport simulate_report = 13;</code>
        */
       public java.util.List<com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.Builder> 
            getSimulateReportBuilderList() {
@@ -2485,7 +2682,7 @@ public final class ReqBattleEndOuterClass {
           simulateReportBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport, com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReport.Builder, com.felania.msldb.MsgBattleEndSimulateReportOuterClass.MsgBattleEndSimulateReportOrBuilder>(
                   simulateReport_,
-                  ((bitField0_ & 0x00000800) == 0x00000800),
+                  ((bitField0_ & 0x00001000) == 0x00001000),
                   getParentForChildren(),
                   isClean());
           simulateReport_ = null;
@@ -2522,7 +2719,7 @@ public final class ReqBattleEndOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ReqBattleEnd(input, extensionRegistry);
+        return new ReqBattleEnd(input, extensionRegistry);
       }
     };
 
@@ -2561,23 +2758,26 @@ public final class ReqBattleEndOuterClass {
       "FriendDungeon.proto\032\027MsgBattleEndArena.p" +
       "roto\032\032MsgBattleEndInfinite.proto\032\026MsgBat" +
       "tleEndClan.proto\032\025MsgBattleEndCVC.proto\032" +
-      "\034MsgBattleEndTimeReport.proto\032 MsgBattle" +
-      "EndSimulateReport.proto\"\305\004\n\014ReqBattleEnd" +
-      "\022,\n\013battle_type\030\001 \001(\0162\027.msggamedata.Batt" +
-      "leType\0223\n\010scenario\030\002 \001(\0132!.msggamedata.M",
-      "sgBattleEndScenario\0221\n\007dungeon\030\003 \001(\0132 .m" +
-      "sggamedata.MsgBattleEndDungeon\022>\n\016friend" +
-      "_dungeon\030\004 \001(\0132&.msggamedata.MsgBattleEn" +
-      "dFriendDungeon\022-\n\005arena\030\005 \001(\0132\036.msggamed" +
-      "ata.MsgBattleEndArena\0223\n\010infinite\030\006 \001(\0132" +
-      "!.msggamedata.MsgBattleEndInfinite\022+\n\004cl" +
-      "an\030\007 \001(\0132\035.msggamedata.MsgBattleEndClan\022" +
-      ")\n\003cvc\030\010 \001(\0132\034.msggamedata.MsgBattleEndC" +
-      "VC\022\021\n\tauto_mode\030\t \001(\r\022\024\n\014battle_speed\030\n " +
-      "\001(\r\0228\n\013time_report\030\013 \001(\0132#.msggamedata.M",
-      "sgBattleEndTimeReport\022@\n\017simulate_report" +
-      "\030\014 \003(\0132\'.msggamedata.MsgBattleEndSimulat" +
-      "eReportB\023\n\021com.felania.msldbb\006proto3"
+      "\036MsgBattleEndLupinDungeon.proto\032\034MsgBatt" +
+      "leEndTimeReport.proto\032 MsgBattleEndSimul" +
+      "ateReport.proto\"\203\005\n\014ReqBattleEnd\022,\n\013batt" +
+      "le_type\030\001 \001(\0162\027.msggamedata.BattleType\0223" +
+      "\n\010scenario\030\002 \001(\0132!.msggamedata.MsgBattle" +
+      "EndScenario\0221\n\007dungeon\030\003 \001(\0132 .msggameda" +
+      "ta.MsgBattleEndDungeon\022>\n\016friend_dungeon" +
+      "\030\004 \001(\0132&.msggamedata.MsgBattleEndFriendD" +
+      "ungeon\022-\n\005arena\030\005 \001(\0132\036.msggamedata.MsgB" +
+      "attleEndArena\0223\n\010infinite\030\006 \001(\0132!.msggam" +
+      "edata.MsgBattleEndInfinite\022+\n\004clan\030\007 \001(\013" +
+      "2\035.msggamedata.MsgBattleEndClan\022)\n\003cvc\030\010" +
+      " \001(\0132\034.msggamedata.MsgBattleEndCVC\022<\n\rlu" +
+      "pin_dungeon\030\t \001(\0132%.msggamedata.MsgBattl" +
+      "eEndLupinDungeon\022\021\n\tauto_mode\030\n \001(\r\022\024\n\014b" +
+      "attle_speed\030\013 \001(\r\0228\n\013time_report\030\014 \001(\0132#" +
+      ".msggamedata.MsgBattleEndTimeReport\022@\n\017s" +
+      "imulate_report\030\r \003(\0132\'.msggamedata.MsgBa" +
+      "ttleEndSimulateReportB\023\n\021com.felania.msl" +
+      "dbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2598,6 +2798,7 @@ public final class ReqBattleEndOuterClass {
           com.felania.msldb.MsgBattleEndInfiniteOuterClass.getDescriptor(),
           com.felania.msldb.MsgBattleEndClanOuterClass.getDescriptor(),
           com.felania.msldb.MsgBattleEndCVCOuterClass.getDescriptor(),
+          com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.getDescriptor(),
           com.felania.msldb.MsgBattleEndTimeReportOuterClass.getDescriptor(),
           com.felania.msldb.MsgBattleEndSimulateReportOuterClass.getDescriptor(),
         }, assigner);
@@ -2606,7 +2807,7 @@ public final class ReqBattleEndOuterClass {
     internal_static_msggamedata_ReqBattleEnd_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_ReqBattleEnd_descriptor,
-        new java.lang.String[] { "BattleType", "Scenario", "Dungeon", "FriendDungeon", "Arena", "Infinite", "Clan", "Cvc", "AutoMode", "BattleSpeed", "TimeReport", "SimulateReport", });
+        new java.lang.String[] { "BattleType", "Scenario", "Dungeon", "FriendDungeon", "Arena", "Infinite", "Clan", "Cvc", "LupinDungeon", "AutoMode", "BattleSpeed", "TimeReport", "SimulateReport", });
     com.felania.msldb.BattleTypeOuterClass.getDescriptor();
     com.felania.msldb.MsgBattleEndScenarioOuterClass.getDescriptor();
     com.felania.msldb.MsgBattleEndDungeonOuterClass.getDescriptor();
@@ -2615,6 +2816,7 @@ public final class ReqBattleEndOuterClass {
     com.felania.msldb.MsgBattleEndInfiniteOuterClass.getDescriptor();
     com.felania.msldb.MsgBattleEndClanOuterClass.getDescriptor();
     com.felania.msldb.MsgBattleEndCVCOuterClass.getDescriptor();
+    com.felania.msldb.MsgBattleEndLupinDungeonOuterClass.getDescriptor();
     com.felania.msldb.MsgBattleEndTimeReportOuterClass.getDescriptor();
     com.felania.msldb.MsgBattleEndSimulateReportOuterClass.getDescriptor();
   }

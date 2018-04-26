@@ -32,9 +32,9 @@ public final class ReqSetMonsterCostumeOuterClass {
     long getMonsterIds(int index);
 
     /**
-     * <code>fixed32 monster_costume_bundle_uid = 2;</code>
+     * <code>fixed32 monster_costume_uid = 2;</code>
      */
-    int getMonsterCostumeBundleUid();
+    int getMonsterCostumeUid();
   }
   /**
    * Protobuf type {@code msggamedata.ReqSetMonsterCostume}
@@ -50,7 +50,7 @@ public final class ReqSetMonsterCostumeOuterClass {
     }
     private ReqSetMonsterCostume() {
       monsterIds_ = java.util.Collections.emptyList();
-      monsterCostumeBundleUid_ = 0;
+      monsterCostumeUid_ = 0;
     }
 
     @java.lang.Override
@@ -63,6 +63,9 @@ public final class ReqSetMonsterCostumeOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -104,7 +107,7 @@ public final class ReqSetMonsterCostumeOuterClass {
             }
             case 21: {
 
-              monsterCostumeBundleUid_ = input.readFixed32();
+              monsterCostumeUid_ = input.readFixed32();
               break;
             }
           }
@@ -158,13 +161,13 @@ public final class ReqSetMonsterCostumeOuterClass {
     }
     private int monsterIdsMemoizedSerializedSize = -1;
 
-    public static final int MONSTER_COSTUME_BUNDLE_UID_FIELD_NUMBER = 2;
-    private int monsterCostumeBundleUid_;
+    public static final int MONSTER_COSTUME_UID_FIELD_NUMBER = 2;
+    private int monsterCostumeUid_;
     /**
-     * <code>fixed32 monster_costume_bundle_uid = 2;</code>
+     * <code>fixed32 monster_costume_uid = 2;</code>
      */
-    public int getMonsterCostumeBundleUid() {
-      return monsterCostumeBundleUid_;
+    public int getMonsterCostumeUid() {
+      return monsterCostumeUid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -187,8 +190,8 @@ public final class ReqSetMonsterCostumeOuterClass {
       for (int i = 0; i < monsterIds_.size(); i++) {
         output.writeUInt64NoTag(monsterIds_.get(i));
       }
-      if (monsterCostumeBundleUid_ != 0) {
-        output.writeFixed32(2, monsterCostumeBundleUid_);
+      if (monsterCostumeUid_ != 0) {
+        output.writeFixed32(2, monsterCostumeUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -212,9 +215,9 @@ public final class ReqSetMonsterCostumeOuterClass {
         }
         monsterIdsMemoizedSerializedSize = dataSize;
       }
-      if (monsterCostumeBundleUid_ != 0) {
+      if (monsterCostumeUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(2, monsterCostumeBundleUid_);
+          .computeFixed32Size(2, monsterCostumeUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -234,8 +237,8 @@ public final class ReqSetMonsterCostumeOuterClass {
       boolean result = true;
       result = result && getMonsterIdsList()
           .equals(other.getMonsterIdsList());
-      result = result && (getMonsterCostumeBundleUid()
-          == other.getMonsterCostumeBundleUid());
+      result = result && (getMonsterCostumeUid()
+          == other.getMonsterCostumeUid());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -251,8 +254,8 @@ public final class ReqSetMonsterCostumeOuterClass {
         hash = (37 * hash) + MONSTER_IDS_FIELD_NUMBER;
         hash = (53 * hash) + getMonsterIdsList().hashCode();
       }
-      hash = (37 * hash) + MONSTER_COSTUME_BUNDLE_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getMonsterCostumeBundleUid();
+      hash = (37 * hash) + MONSTER_COSTUME_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getMonsterCostumeUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -384,7 +387,7 @@ public final class ReqSetMonsterCostumeOuterClass {
         super.clear();
         monsterIds_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        monsterCostumeBundleUid_ = 0;
+        monsterCostumeUid_ = 0;
 
         return this;
       }
@@ -415,7 +418,7 @@ public final class ReqSetMonsterCostumeOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.monsterIds_ = monsterIds_;
-        result.monsterCostumeBundleUid_ = monsterCostumeBundleUid_;
+        result.monsterCostumeUid_ = monsterCostumeUid_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -468,8 +471,8 @@ public final class ReqSetMonsterCostumeOuterClass {
           }
           onChanged();
         }
-        if (other.getMonsterCostumeBundleUid() != 0) {
-          setMonsterCostumeBundleUid(other.getMonsterCostumeBundleUid());
+        if (other.getMonsterCostumeUid() != 0) {
+          setMonsterCostumeUid(other.getMonsterCostumeUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -565,28 +568,28 @@ public final class ReqSetMonsterCostumeOuterClass {
         return this;
       }
 
-      private int monsterCostumeBundleUid_ ;
+      private int monsterCostumeUid_ ;
       /**
-       * <code>fixed32 monster_costume_bundle_uid = 2;</code>
+       * <code>fixed32 monster_costume_uid = 2;</code>
        */
-      public int getMonsterCostumeBundleUid() {
-        return monsterCostumeBundleUid_;
+      public int getMonsterCostumeUid() {
+        return monsterCostumeUid_;
       }
       /**
-       * <code>fixed32 monster_costume_bundle_uid = 2;</code>
+       * <code>fixed32 monster_costume_uid = 2;</code>
        */
-      public Builder setMonsterCostumeBundleUid(int value) {
+      public Builder setMonsterCostumeUid(int value) {
         
-        monsterCostumeBundleUid_ = value;
+        monsterCostumeUid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>fixed32 monster_costume_bundle_uid = 2;</code>
+       * <code>fixed32 monster_costume_uid = 2;</code>
        */
-      public Builder clearMonsterCostumeBundleUid() {
+      public Builder clearMonsterCostumeUid() {
         
-        monsterCostumeBundleUid_ = 0;
+        monsterCostumeUid_ = 0;
         onChanged();
         return this;
       }
@@ -620,7 +623,7 @@ public final class ReqSetMonsterCostumeOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ReqSetMonsterCostume(input, extensionRegistry);
+        return new ReqSetMonsterCostume(input, extensionRegistry);
       }
     };
 
@@ -654,9 +657,9 @@ public final class ReqSetMonsterCostumeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ReqSetMonsterCostume.proto\022\013msggamedat" +
-      "a\"O\n\024ReqSetMonsterCostume\022\023\n\013monster_ids" +
-      "\030\001 \003(\004\022\"\n\032monster_costume_bundle_uid\030\002 \001" +
-      "(\007B\023\n\021com.felania.msldbb\006proto3"
+      "a\"H\n\024ReqSetMonsterCostume\022\023\n\013monster_ids" +
+      "\030\001 \003(\004\022\033\n\023monster_costume_uid\030\002 \001(\007B\023\n\021c" +
+      "om.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -675,7 +678,7 @@ public final class ReqSetMonsterCostumeOuterClass {
     internal_static_msggamedata_ReqSetMonsterCostume_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_ReqSetMonsterCostume_descriptor,
-        new java.lang.String[] { "MonsterIds", "MonsterCostumeBundleUid", });
+        new java.lang.String[] { "MonsterIds", "MonsterCostumeUid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -149,6 +149,9 @@ public final class MsgBattleEndFriendDungeonOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1683,7 +1686,7 @@ public final class MsgBattleEndFriendDungeonOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgBattleEndFriendDungeon(input, extensionRegistry);
+        return new MsgBattleEndFriendDungeon(input, extensionRegistry);
       }
     };
 
@@ -1725,7 +1728,7 @@ public final class MsgBattleEndFriendDungeonOuterClass {
       "ataTypeUidAndAmount\0220\n\006result\030\003 \001(\0162 .ms" +
       "ggamedata.BattleEndResultType\022\022\n\ncurr_ro" +
       "und\030\004 \001(\r\022\017\n\007revival\030\005 \001(\r\022\021\n\tmon_death\030" +
-      "\006 \001(\r\022\021\n\tmon_count\030\007 \001(\r\022\024\n\014find_user_id",
+      "\006 \001(\r\022\021\n\tmon_count\030\007 \001(\r\022\024\n\014find_user_id" +
       "\030\010 \001(\004\022,\n\004type\030\t \001(\0162\036.msggamedata.Frien" +
       "dDungeonType\022:\n\017mon_result_data\030\n \003(\0132!." +
       "msggamedata.MsgBattleMonsterStatB\023\n\021com." +

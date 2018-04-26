@@ -383,6 +383,9 @@ public final class MsgMonsterOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       int mutable_bitField1_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -4159,7 +4162,7 @@ public final class MsgMonsterOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgMonster(input, extensionRegistry);
+        return new MsgMonster(input, extensionRegistry);
       }
     };
 
@@ -4201,7 +4204,7 @@ public final class MsgMonsterOuterClass {
       "a.MonsterGrade\022\016\n\006def_hp\030\n \001(\002\022\022\n\ndef_at" +
       "tack\030\013 \001(\002\022\023\n\013def_defence\030\014 \001(\002\022\020\n\010def_h" +
       "eal\030\r \001(\002\022\016\n\006inc_hp\030\016 \001(\002\022\022\n\ninc_attack\030" +
-      "\017 \001(\002\022\023\n\013inc_defence\030\020 \001(\002\022\020\n\010inc_heal\030\021",
+      "\017 \001(\002\022\023\n\013inc_defence\030\020 \001(\002\022\020\n\010inc_heal\030\021" +
       " \001(\002\022\n\n\002mp\030\022 \001(\r\022\023\n\013mp_recovery\030\023 \001(\r\0223\n" +
       "\rdef_stat_type\030\024 \001(\0162\034.msggamedata.Monst" +
       "erStatType\022\021\n\tused_type\030\025 \001(\t\0220\n\007element" +
@@ -4211,7 +4214,7 @@ public final class MsgMonsterOuterClass {
       "l\030\031 \001(\007\022*\n\"default_skill_status_effect_b" +
       "eyond\030\032 \001(\007\022)\n!active_skill_status_effec" +
       "t_beyond\030\033 \001(\007\022\024\n\014leader_skill\030\034 \001(\007\0220\n\t" +
-      "evolution\030\035 \001(\0162\035.msggamedata.MonsterEvo",
+      "evolution\030\035 \001(\0162\035.msggamedata.MonsterEvo" +
       "lution\022\025\n\rresource_name\030\036 \001(\t\022%\n\035first_e" +
       "volution_resource_name\030\037 \001(\t\022\032\n\022base_res" +
       "ource_name\030  \001(\t\022\025\n\rcritical_prob\030! \001(\002\022" +
@@ -4221,7 +4224,7 @@ public final class MsgMonsterOuterClass {
       "stone\030\' \001(\r\022\032\n\022monster_default_ai\030( \001(\007\022" +
       "\031\n\021monster_active_ai\030) \001(\007\022\031\n\021default_hi" +
       "t_sound\030* \001(\t\022\030\n\020active_hit_sound\030+ \001(\t\022" +
-      "\022\n\nstory_desc\030, \003(\007\022\031\n\021cond_active_skill",
+      "\022\n\nstory_desc\030, \003(\007\022\031\n\021cond_active_skill" +
       "\030- \001(\007\022.\n&cond_active_skill_status_effec" +
       "t_beyond\030. \001(\007\022\036\n\026monster_cond_active_ai" +
       "\030/ \001(\007\022\035\n\025cond_active_hit_sound\0300 \001(\t\022\030\n" +

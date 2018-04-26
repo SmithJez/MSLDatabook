@@ -355,7 +355,7 @@ public final class ResourceTypeOuterClass {
       "\022\024\n\020RT_CostumeTicket\020\013\022\016\n\nRT_Monster\020d\022\020" +
       "\n\014RT_SoulStone\020e\022\014\n\007RT_Item\020\310\001\022\014\n\007RT_Foo" +
       "d\020\311\001\022\023\n\016RT_BeyondStone\020\312\001\022\022\n\rRT_MonsterE" +
-      "gg\020\313\001\022\023\n\016RT_StarEssence\020\314\001\022\014\n\007RT_Rune\020\315\001",
+      "gg\020\313\001\022\023\n\016RT_StarEssence\020\314\001\022\014\n\007RT_Rune\020\315\001" +
       "\022\022\n\rRT_RandomRune\020\316\001\022\021\n\014RT_SkillBook\020\317\001\022" +
       "\027\n\022RT_RandomSkillBook\020\320\001\022\022\n\rRT_SuperSton" +
       "e\020\321\001\022\027\n\022RT_SuperStoneStuff\020\322\001\022\017\n\nRT_Boos" +

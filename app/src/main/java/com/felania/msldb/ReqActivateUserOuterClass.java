@@ -19,14 +19,14 @@ public final class ReqActivateUserOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string xigncode_cookie2 = 1;</code>
+     * <code>string xigncode_cookie3 = 1;</code>
      */
-    java.lang.String getXigncodeCookie2();
+    java.lang.String getXigncodeCookie3();
     /**
-     * <code>string xigncode_cookie2 = 1;</code>
+     * <code>string xigncode_cookie3 = 1;</code>
      */
     com.google.protobuf.ByteString
-        getXigncodeCookie2Bytes();
+        getXigncodeCookie3Bytes();
   }
   /**
    * Protobuf type {@code msggamedata.ReqActivateUser}
@@ -41,7 +41,7 @@ public final class ReqActivateUserOuterClass {
       super(builder);
     }
     private ReqActivateUser() {
-      xigncodeCookie2_ = "";
+      xigncodeCookie3_ = "";
     }
 
     @java.lang.Override
@@ -54,6 +54,9 @@ public final class ReqActivateUserOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -75,7 +78,7 @@ public final class ReqActivateUserOuterClass {
             case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              xigncodeCookie2_ = s;
+              xigncodeCookie3_ = s;
               break;
             }
           }
@@ -102,34 +105,34 @@ public final class ReqActivateUserOuterClass {
               com.felania.msldb.ReqActivateUserOuterClass.ReqActivateUser.class, com.felania.msldb.ReqActivateUserOuterClass.ReqActivateUser.Builder.class);
     }
 
-    public static final int XIGNCODE_COOKIE2_FIELD_NUMBER = 1;
-    private volatile java.lang.Object xigncodeCookie2_;
+    public static final int XIGNCODE_COOKIE3_FIELD_NUMBER = 1;
+    private volatile java.lang.Object xigncodeCookie3_;
     /**
-     * <code>string xigncode_cookie2 = 1;</code>
+     * <code>string xigncode_cookie3 = 1;</code>
      */
-    public java.lang.String getXigncodeCookie2() {
-      java.lang.Object ref = xigncodeCookie2_;
+    public java.lang.String getXigncodeCookie3() {
+      java.lang.Object ref = xigncodeCookie3_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        xigncodeCookie2_ = s;
+        xigncodeCookie3_ = s;
         return s;
       }
     }
     /**
-     * <code>string xigncode_cookie2 = 1;</code>
+     * <code>string xigncode_cookie3 = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getXigncodeCookie2Bytes() {
-      java.lang.Object ref = xigncodeCookie2_;
+        getXigncodeCookie3Bytes() {
+      java.lang.Object ref = xigncodeCookie3_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        xigncodeCookie2_ = b;
+        xigncodeCookie3_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -148,8 +151,8 @@ public final class ReqActivateUserOuterClass {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getXigncodeCookie2Bytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, xigncodeCookie2_);
+      if (!getXigncodeCookie3Bytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, xigncodeCookie3_);
       }
       unknownFields.writeTo(output);
     }
@@ -159,8 +162,8 @@ public final class ReqActivateUserOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!getXigncodeCookie2Bytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, xigncodeCookie2_);
+      if (!getXigncodeCookie3Bytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, xigncodeCookie3_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -178,8 +181,8 @@ public final class ReqActivateUserOuterClass {
       com.felania.msldb.ReqActivateUserOuterClass.ReqActivateUser other = (com.felania.msldb.ReqActivateUserOuterClass.ReqActivateUser) obj;
 
       boolean result = true;
-      result = result && getXigncodeCookie2()
-          .equals(other.getXigncodeCookie2());
+      result = result && getXigncodeCookie3()
+          .equals(other.getXigncodeCookie3());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -191,8 +194,8 @@ public final class ReqActivateUserOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + XIGNCODE_COOKIE2_FIELD_NUMBER;
-      hash = (53 * hash) + getXigncodeCookie2().hashCode();
+      hash = (37 * hash) + XIGNCODE_COOKIE3_FIELD_NUMBER;
+      hash = (53 * hash) + getXigncodeCookie3().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -322,7 +325,7 @@ public final class ReqActivateUserOuterClass {
       }
       public Builder clear() {
         super.clear();
-        xigncodeCookie2_ = "";
+        xigncodeCookie3_ = "";
 
         return this;
       }
@@ -346,7 +349,7 @@ public final class ReqActivateUserOuterClass {
 
       public com.felania.msldb.ReqActivateUserOuterClass.ReqActivateUser buildPartial() {
         com.felania.msldb.ReqActivateUserOuterClass.ReqActivateUser result = new com.felania.msldb.ReqActivateUserOuterClass.ReqActivateUser(this);
-        result.xigncodeCookie2_ = xigncodeCookie2_;
+        result.xigncodeCookie3_ = xigncodeCookie3_;
         onBuilt();
         return result;
       }
@@ -388,8 +391,8 @@ public final class ReqActivateUserOuterClass {
 
       public Builder mergeFrom(com.felania.msldb.ReqActivateUserOuterClass.ReqActivateUser other) {
         if (other == com.felania.msldb.ReqActivateUserOuterClass.ReqActivateUser.getDefaultInstance()) return this;
-        if (!other.getXigncodeCookie2().isEmpty()) {
-          xigncodeCookie2_ = other.xigncodeCookie2_;
+        if (!other.getXigncodeCookie3().isEmpty()) {
+          xigncodeCookie3_ = other.xigncodeCookie3_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -419,71 +422,71 @@ public final class ReqActivateUserOuterClass {
         return this;
       }
 
-      private java.lang.Object xigncodeCookie2_ = "";
+      private java.lang.Object xigncodeCookie3_ = "";
       /**
-       * <code>string xigncode_cookie2 = 1;</code>
+       * <code>string xigncode_cookie3 = 1;</code>
        */
-      public java.lang.String getXigncodeCookie2() {
-        java.lang.Object ref = xigncodeCookie2_;
+      public java.lang.String getXigncodeCookie3() {
+        java.lang.Object ref = xigncodeCookie3_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          xigncodeCookie2_ = s;
+          xigncodeCookie3_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string xigncode_cookie2 = 1;</code>
+       * <code>string xigncode_cookie3 = 1;</code>
        */
       public com.google.protobuf.ByteString
-          getXigncodeCookie2Bytes() {
-        java.lang.Object ref = xigncodeCookie2_;
+          getXigncodeCookie3Bytes() {
+        java.lang.Object ref = xigncodeCookie3_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          xigncodeCookie2_ = b;
+          xigncodeCookie3_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string xigncode_cookie2 = 1;</code>
+       * <code>string xigncode_cookie3 = 1;</code>
        */
-      public Builder setXigncodeCookie2(
+      public Builder setXigncodeCookie3(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        xigncodeCookie2_ = value;
+        xigncodeCookie3_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string xigncode_cookie2 = 1;</code>
+       * <code>string xigncode_cookie3 = 1;</code>
        */
-      public Builder clearXigncodeCookie2() {
+      public Builder clearXigncodeCookie3() {
         
-        xigncodeCookie2_ = getDefaultInstance().getXigncodeCookie2();
+        xigncodeCookie3_ = getDefaultInstance().getXigncodeCookie3();
         onChanged();
         return this;
       }
       /**
-       * <code>string xigncode_cookie2 = 1;</code>
+       * <code>string xigncode_cookie3 = 1;</code>
        */
-      public Builder setXigncodeCookie2Bytes(
+      public Builder setXigncodeCookie3Bytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        xigncodeCookie2_ = value;
+        xigncodeCookie3_ = value;
         onChanged();
         return this;
       }
@@ -517,7 +520,7 @@ public final class ReqActivateUserOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ReqActivateUser(input, extensionRegistry);
+        return new ReqActivateUser(input, extensionRegistry);
       }
     };
 
@@ -551,7 +554,7 @@ public final class ReqActivateUserOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025ReqActivateUser.proto\022\013msggamedata\"+\n\017" +
-      "ReqActivateUser\022\030\n\020xigncode_cookie2\030\001 \001(" +
+      "ReqActivateUser\022\030\n\020xigncode_cookie3\030\001 \001(" +
       "\tB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
@@ -571,7 +574,7 @@ public final class ReqActivateUserOuterClass {
     internal_static_msggamedata_ReqActivateUser_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_ReqActivateUser_descriptor,
-        new java.lang.String[] { "XigncodeCookie2", });
+        new java.lang.String[] { "XigncodeCookie3", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -153,6 +153,9 @@ public final class RspMonsterSummonByReviveOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1957,7 +1960,7 @@ public final class RspMonsterSummonByReviveOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspMonsterSummonByRevive(input, extensionRegistry);
+        return new RspMonsterSummonByRevive(input, extensionRegistry);
       }
     };
 
@@ -1999,7 +2002,7 @@ public final class RspMonsterSummonByReviveOuterClass {
       "nsters\030\003 \003(\004\0223\n\016result_monster\030\004 \001(\0132\033.m" +
       "sggamedata.MsgUserMonster\022C\n\026user_monste" +
       "r_dict_data\030\005 \003(\0132#.msggamedata.MsgUserM" +
-      "onsterDictData\0223\n\016reward_monster\030\006 \001(\0132\033",
+      "onsterDictData\0223\n\016reward_monster\030\006 \001(\0132\033" +
       ".msggamedata.MsgUserMonster\022;\n\026reward_sp" +
       "ecial_monster\030\007 \001(\0132\033.msggamedata.MsgUse" +
       "rMonster\022>\n\023revive_monster_data\030\010 \001(\0132!." +

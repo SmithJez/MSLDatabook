@@ -172,6 +172,9 @@ public final class MsgRspBattleEndClanOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2112,7 +2115,7 @@ public final class MsgRspBattleEndClanOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRspBattleEndClan(input, extensionRegistry);
+        return new MsgRspBattleEndClan(input, extensionRegistry);
       }
     };
 
@@ -2154,7 +2157,7 @@ public final class MsgRspBattleEndClanOuterClass {
       "user\030\002 \001(\0132\024.msggamedata.MsgUser\022/\n\007my_i" +
       "nfo\030\003 \001(\0132\036.msggamedata.MsgUserClanMembe" +
       "r\0229\n\016season_history\030\004 \001(\0132!.msggamedata." +
-      "MsgClanSeasonHistory\022\023\n\013delta_score\030\005 \001(",
+      "MsgClanSeasonHistory\022\023\n\013delta_score\030\005 \001(" +
       "\004\022\023\n\013bonus_score\030\006 \001(\004\022\032\n\022delta_contribu" +
       "tion\030\007 \001(\004\022\024\n\014reward_grade\030\010 \001(\r\0221\n\007rewa" +
       "rds\030\t \003(\0132 .msggamedata.MsgBattleRewardI" +

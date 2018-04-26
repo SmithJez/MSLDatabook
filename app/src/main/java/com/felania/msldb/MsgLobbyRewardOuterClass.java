@@ -135,6 +135,9 @@ public final class MsgLobbyRewardOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1558,7 +1561,7 @@ public final class MsgLobbyRewardOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgLobbyReward(input, extensionRegistry);
+        return new MsgLobbyReward(input, extensionRegistry);
       }
     };
 
@@ -1600,7 +1603,7 @@ public final class MsgLobbyRewardOuterClass {
       "e_time\030\006 \001(\t\022,\n\006reward\030\007 \001(\0132\034.msggameda" +
       "ta.MsgUidAndAmount\022\023\n\013last_reward\030\010 \001(\r\022" +
       ".\n\nship_types\030\t \003(\0162\032.msggamedata.ShipLo" +
-      "bbyType\">\n\017LobbyRewardType\022\027\n\023LobbyRewar",
+      "bbyType\">\n\017LobbyRewardType\022\027\n\023LobbyRewar" +
       "dTypeNULL\020\000\022\010\n\004Tree\020\001\022\010\n\004Nezz\020\002B\023\n\021com.f" +
       "elania.msldbb\006proto3"
     };

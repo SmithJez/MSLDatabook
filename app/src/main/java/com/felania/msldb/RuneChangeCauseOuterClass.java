@@ -83,6 +83,10 @@ public final class RuneChangeCauseOuterClass {
      * <code>RCC_Get_From_adventure_package2 = 21;</code>
      */
     RCC_Get_From_adventure_package2(21),
+    /**
+     * <code>RCC_Get_Lupin_Dungeon_Battle_Clear_Reward = 22;</code>
+     */
+    RCC_Get_Lupin_Dungeon_Battle_Clear_Reward(22),
     UNRECOGNIZED(-1),
     ;
 
@@ -150,6 +154,10 @@ public final class RuneChangeCauseOuterClass {
      * <code>RCC_Get_From_adventure_package2 = 21;</code>
      */
     public static final int RCC_Get_From_adventure_package2_VALUE = 21;
+    /**
+     * <code>RCC_Get_Lupin_Dungeon_Battle_Clear_Reward = 22;</code>
+     */
+    public static final int RCC_Get_Lupin_Dungeon_Battle_Clear_Reward_VALUE = 22;
 
 
     public final int getNumber() {
@@ -186,6 +194,7 @@ public final class RuneChangeCauseOuterClass {
         case 19: return RCC_Get_Clan_Battle_Clear_Reward;
         case 20: return RCC_Get_From_LobbyShip_special_reward;
         case 21: return RCC_Get_From_adventure_package2;
+        case 22: return RCC_Get_Lupin_Dungeon_Battle_Clear_Reward;
         default: return null;
       }
     }
@@ -247,7 +256,7 @@ public final class RuneChangeCauseOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025RuneChangeCause.proto\022\013msggamedata*\211\004\n" +
+      "\n\025RuneChangeCause.proto\022\013msggamedata*\270\004\n" +
       "\017RuneChangeCause\022\027\n\023RuneChangeCauseNULL\020" +
       "\000\022\027\n\023RCC_Get_Buy_In_Shop\020\001\022\034\n\030RCC_Get_Bu" +
       "y_In_Joje_Shop\020\002\022\037\n\033RCC_Get_Battle_Clear" +
@@ -256,12 +265,13 @@ public final class RuneChangeCauseOuterClass {
       "nster\020\006\022\032\n\026RCC_Use_Overwrite_Rune\020\007\022\020\n\014R" +
       "CC_Get_Gift\020\010\022-\n)RCC_Get_From_30day_pack" +
       "age_special_reward\020\017\022\036\n\032RCC_Get_From_30d" +
-      "ay_package\020\020\022 \n\034RCC_Get_From_levelup_pac",
+      "ay_package\020\020\022 \n\034RCC_Get_From_levelup_pac" +
       "kage\020\021\022\"\n\036RCC_Get_From_adventure_package" +
       "\020\022\022$\n RCC_Get_Clan_Battle_Clear_Reward\020\023" +
       "\022)\n%RCC_Get_From_LobbyShip_special_rewar" +
       "d\020\024\022#\n\037RCC_Get_From_adventure_package2\020\025" +
-      "B\023\n\021com.felania.msldbb\006proto3"
+      "\022-\n)RCC_Get_Lupin_Dungeon_Battle_Clear_R" +
+      "eward\020\026B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

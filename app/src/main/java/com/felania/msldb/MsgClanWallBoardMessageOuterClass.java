@@ -19,79 +19,84 @@ public final class MsgClanWallBoardMessageOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 1;</code>
+     * <code>fixed32 id = 1;</code>
+     */
+    int getId();
+
+    /**
+     * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 2;</code>
      */
     int getMessageTypeValue();
     /**
-     * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 1;</code>
+     * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 2;</code>
      */
     com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType getMessageType();
 
     /**
-     * <code>uint32 serial = 2;</code>
+     * <code>uint32 serial = 3;</code>
      */
     int getSerial();
 
     /**
-     * <code>string name = 3;</code>
+     * <code>string name = 4;</code>
      */
     java.lang.String getName();
     /**
-     * <code>string name = 3;</code>
+     * <code>string name = 4;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
-     * <code>.msggamedata.ClanMemberGrade member_grade = 4;</code>
+     * <code>.msggamedata.ClanMemberGrade member_grade = 5;</code>
      */
     int getMemberGradeValue();
     /**
-     * <code>.msggamedata.ClanMemberGrade member_grade = 4;</code>
+     * <code>.msggamedata.ClanMemberGrade member_grade = 5;</code>
      */
     com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade getMemberGrade();
 
     /**
-     * <code>uint64 lev = 5;</code>
+     * <code>uint64 lev = 6;</code>
      */
     long getLev();
 
     /**
-     * <code>string msg = 6;</code>
+     * <code>string msg = 7;</code>
      */
     java.lang.String getMsg();
     /**
-     * <code>string msg = 6;</code>
+     * <code>string msg = 7;</code>
      */
     com.google.protobuf.ByteString
         getMsgBytes();
 
     /**
-     * <code>fixed32 msg_uid = 7;</code>
+     * <code>fixed32 msg_uid = 8;</code>
      */
     int getMsgUid();
 
     /**
-     * <code>repeated string msg_args = 8;</code>
+     * <code>repeated string msg_args = 9;</code>
      */
     java.util.List<java.lang.String>
         getMsgArgsList();
     /**
-     * <code>repeated string msg_args = 8;</code>
+     * <code>repeated string msg_args = 9;</code>
      */
     int getMsgArgsCount();
     /**
-     * <code>repeated string msg_args = 8;</code>
+     * <code>repeated string msg_args = 9;</code>
      */
     java.lang.String getMsgArgs(int index);
     /**
-     * <code>repeated string msg_args = 8;</code>
+     * <code>repeated string msg_args = 9;</code>
      */
     com.google.protobuf.ByteString
         getMsgArgsBytes(int index);
 
     /**
-     * <code>uint64 created_date = 9;</code>
+     * <code>uint64 created_date = 10;</code>
      */
     long getCreatedDate();
   }
@@ -108,6 +113,7 @@ public final class MsgClanWallBoardMessageOuterClass {
       super(builder);
     }
     private MsgClanWallBoardMessage() {
+      id_ = 0;
       messageType_ = 0;
       serial_ = 0;
       name_ = "";
@@ -129,6 +135,9 @@ public final class MsgClanWallBoardMessageOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -147,55 +156,60 @@ public final class MsgClanWallBoardMessageOuterClass {
               }
               break;
             }
-            case 8: {
+            case 13: {
+
+              id_ = input.readFixed32();
+              break;
+            }
+            case 16: {
               int rawValue = input.readEnum();
 
               messageType_ = rawValue;
               break;
             }
-            case 16: {
+            case 24: {
 
               serial_ = input.readUInt32();
               break;
             }
-            case 26: {
+            case 34: {
               java.lang.String s = input.readStringRequireUtf8();
 
               name_ = s;
               break;
             }
-            case 32: {
+            case 40: {
               int rawValue = input.readEnum();
 
               memberGrade_ = rawValue;
               break;
             }
-            case 40: {
+            case 48: {
 
               lev_ = input.readUInt64();
               break;
             }
-            case 50: {
+            case 58: {
               java.lang.String s = input.readStringRequireUtf8();
 
               msg_ = s;
               break;
             }
-            case 61: {
+            case 69: {
 
               msgUid_ = input.readFixed32();
               break;
             }
-            case 66: {
+            case 74: {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+              if (!((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
                 msgArgs_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000080;
+                mutable_bitField0_ |= 0x00000100;
               }
               msgArgs_.add(s);
               break;
             }
-            case 72: {
+            case 80: {
 
               createdDate_ = input.readUInt64();
               break;
@@ -208,7 +222,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+        if (((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
           msgArgs_ = msgArgs_.getUnmodifiableView();
         }
         this.unknownFields = unknownFields.build();
@@ -362,35 +376,44 @@ public final class MsgClanWallBoardMessageOuterClass {
     }
 
     private int bitField0_;
-    public static final int MESSAGE_TYPE_FIELD_NUMBER = 1;
+    public static final int ID_FIELD_NUMBER = 1;
+    private int id_;
+    /**
+     * <code>fixed32 id = 1;</code>
+     */
+    public int getId() {
+      return id_;
+    }
+
+    public static final int MESSAGE_TYPE_FIELD_NUMBER = 2;
     private int messageType_;
     /**
-     * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 1;</code>
+     * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 2;</code>
      */
     public int getMessageTypeValue() {
       return messageType_;
     }
     /**
-     * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 1;</code>
+     * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 2;</code>
      */
     public com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType getMessageType() {
       com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType result = com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType.valueOf(messageType_);
       return result == null ? com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType.UNRECOGNIZED : result;
     }
 
-    public static final int SERIAL_FIELD_NUMBER = 2;
+    public static final int SERIAL_FIELD_NUMBER = 3;
     private int serial_;
     /**
-     * <code>uint32 serial = 2;</code>
+     * <code>uint32 serial = 3;</code>
      */
     public int getSerial() {
       return serial_;
     }
 
-    public static final int NAME_FIELD_NUMBER = 3;
+    public static final int NAME_FIELD_NUMBER = 4;
     private volatile java.lang.Object name_;
     /**
-     * <code>string name = 3;</code>
+     * <code>string name = 4;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -405,7 +428,7 @@ public final class MsgClanWallBoardMessageOuterClass {
       }
     }
     /**
-     * <code>string name = 3;</code>
+     * <code>string name = 4;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -421,35 +444,35 @@ public final class MsgClanWallBoardMessageOuterClass {
       }
     }
 
-    public static final int MEMBER_GRADE_FIELD_NUMBER = 4;
+    public static final int MEMBER_GRADE_FIELD_NUMBER = 5;
     private int memberGrade_;
     /**
-     * <code>.msggamedata.ClanMemberGrade member_grade = 4;</code>
+     * <code>.msggamedata.ClanMemberGrade member_grade = 5;</code>
      */
     public int getMemberGradeValue() {
       return memberGrade_;
     }
     /**
-     * <code>.msggamedata.ClanMemberGrade member_grade = 4;</code>
+     * <code>.msggamedata.ClanMemberGrade member_grade = 5;</code>
      */
     public com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade getMemberGrade() {
       com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade result = com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade.valueOf(memberGrade_);
       return result == null ? com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade.UNRECOGNIZED : result;
     }
 
-    public static final int LEV_FIELD_NUMBER = 5;
+    public static final int LEV_FIELD_NUMBER = 6;
     private long lev_;
     /**
-     * <code>uint64 lev = 5;</code>
+     * <code>uint64 lev = 6;</code>
      */
     public long getLev() {
       return lev_;
     }
 
-    public static final int MSG_FIELD_NUMBER = 6;
+    public static final int MSG_FIELD_NUMBER = 7;
     private volatile java.lang.Object msg_;
     /**
-     * <code>string msg = 6;</code>
+     * <code>string msg = 7;</code>
      */
     public java.lang.String getMsg() {
       java.lang.Object ref = msg_;
@@ -464,7 +487,7 @@ public final class MsgClanWallBoardMessageOuterClass {
       }
     }
     /**
-     * <code>string msg = 6;</code>
+     * <code>string msg = 7;</code>
      */
     public com.google.protobuf.ByteString
         getMsgBytes() {
@@ -480,48 +503,48 @@ public final class MsgClanWallBoardMessageOuterClass {
       }
     }
 
-    public static final int MSG_UID_FIELD_NUMBER = 7;
+    public static final int MSG_UID_FIELD_NUMBER = 8;
     private int msgUid_;
     /**
-     * <code>fixed32 msg_uid = 7;</code>
+     * <code>fixed32 msg_uid = 8;</code>
      */
     public int getMsgUid() {
       return msgUid_;
     }
 
-    public static final int MSG_ARGS_FIELD_NUMBER = 8;
+    public static final int MSG_ARGS_FIELD_NUMBER = 9;
     private com.google.protobuf.LazyStringList msgArgs_;
     /**
-     * <code>repeated string msg_args = 8;</code>
+     * <code>repeated string msg_args = 9;</code>
      */
     public com.google.protobuf.ProtocolStringList
         getMsgArgsList() {
       return msgArgs_;
     }
     /**
-     * <code>repeated string msg_args = 8;</code>
+     * <code>repeated string msg_args = 9;</code>
      */
     public int getMsgArgsCount() {
       return msgArgs_.size();
     }
     /**
-     * <code>repeated string msg_args = 8;</code>
+     * <code>repeated string msg_args = 9;</code>
      */
     public java.lang.String getMsgArgs(int index) {
       return msgArgs_.get(index);
     }
     /**
-     * <code>repeated string msg_args = 8;</code>
+     * <code>repeated string msg_args = 9;</code>
      */
     public com.google.protobuf.ByteString
         getMsgArgsBytes(int index) {
       return msgArgs_.getByteString(index);
     }
 
-    public static final int CREATED_DATE_FIELD_NUMBER = 9;
+    public static final int CREATED_DATE_FIELD_NUMBER = 10;
     private long createdDate_;
     /**
-     * <code>uint64 created_date = 9;</code>
+     * <code>uint64 created_date = 10;</code>
      */
     public long getCreatedDate() {
       return createdDate_;
@@ -539,32 +562,35 @@ public final class MsgClanWallBoardMessageOuterClass {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (id_ != 0) {
+        output.writeFixed32(1, id_);
+      }
       if (messageType_ != com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType.MT_None.getNumber()) {
-        output.writeEnum(1, messageType_);
+        output.writeEnum(2, messageType_);
       }
       if (serial_ != 0) {
-        output.writeUInt32(2, serial_);
+        output.writeUInt32(3, serial_);
       }
       if (!getNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, name_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, name_);
       }
       if (memberGrade_ != com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade.CMG_Apprentice.getNumber()) {
-        output.writeEnum(4, memberGrade_);
+        output.writeEnum(5, memberGrade_);
       }
       if (lev_ != 0L) {
-        output.writeUInt64(5, lev_);
+        output.writeUInt64(6, lev_);
       }
       if (!getMsgBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, msg_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, msg_);
       }
       if (msgUid_ != 0) {
-        output.writeFixed32(7, msgUid_);
+        output.writeFixed32(8, msgUid_);
       }
       for (int i = 0; i < msgArgs_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, msgArgs_.getRaw(i));
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, msgArgs_.getRaw(i));
       }
       if (createdDate_ != 0L) {
-        output.writeUInt64(9, createdDate_);
+        output.writeUInt64(10, createdDate_);
       }
       unknownFields.writeTo(output);
     }
@@ -574,31 +600,35 @@ public final class MsgClanWallBoardMessageOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed32Size(1, id_);
+      }
       if (messageType_ != com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType.MT_None.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, messageType_);
+          .computeEnumSize(2, messageType_);
       }
       if (serial_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, serial_);
+          .computeUInt32Size(3, serial_);
       }
       if (!getNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, name_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, name_);
       }
       if (memberGrade_ != com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade.CMG_Apprentice.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, memberGrade_);
+          .computeEnumSize(5, memberGrade_);
       }
       if (lev_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, lev_);
+          .computeUInt64Size(6, lev_);
       }
       if (!getMsgBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, msg_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, msg_);
       }
       if (msgUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(7, msgUid_);
+          .computeFixed32Size(8, msgUid_);
       }
       {
         int dataSize = 0;
@@ -610,7 +640,7 @@ public final class MsgClanWallBoardMessageOuterClass {
       }
       if (createdDate_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(9, createdDate_);
+          .computeUInt64Size(10, createdDate_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -628,6 +658,8 @@ public final class MsgClanWallBoardMessageOuterClass {
       com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage other = (com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage) obj;
 
       boolean result = true;
+      result = result && (getId()
+          == other.getId());
       result = result && messageType_ == other.messageType_;
       result = result && (getSerial()
           == other.getSerial());
@@ -655,6 +687,8 @@ public final class MsgClanWallBoardMessageOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (37 * hash) + MESSAGE_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + messageType_;
       hash = (37 * hash) + SERIAL_FIELD_NUMBER;
@@ -806,6 +840,8 @@ public final class MsgClanWallBoardMessageOuterClass {
       }
       public Builder clear() {
         super.clear();
+        id_ = 0;
+
         messageType_ = 0;
 
         serial_ = 0;
@@ -821,7 +857,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         msgUid_ = 0;
 
         msgArgs_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00000100);
         createdDate_ = 0L;
 
         return this;
@@ -848,6 +884,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage result = new com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
+        result.id_ = id_;
         result.messageType_ = messageType_;
         result.serial_ = serial_;
         result.name_ = name_;
@@ -855,9 +892,9 @@ public final class MsgClanWallBoardMessageOuterClass {
         result.lev_ = lev_;
         result.msg_ = msg_;
         result.msgUid_ = msgUid_;
-        if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        if (((bitField0_ & 0x00000100) == 0x00000100)) {
           msgArgs_ = msgArgs_.getUnmodifiableView();
-          bitField0_ = (bitField0_ & ~0x00000080);
+          bitField0_ = (bitField0_ & ~0x00000100);
         }
         result.msgArgs_ = msgArgs_;
         result.createdDate_ = createdDate_;
@@ -903,6 +940,9 @@ public final class MsgClanWallBoardMessageOuterClass {
 
       public Builder mergeFrom(com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage other) {
         if (other == com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.getDefaultInstance()) return this;
+        if (other.getId() != 0) {
+          setId(other.getId());
+        }
         if (other.messageType_ != 0) {
           setMessageTypeValue(other.getMessageTypeValue());
         }
@@ -929,7 +969,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         if (!other.msgArgs_.isEmpty()) {
           if (msgArgs_.isEmpty()) {
             msgArgs_ = other.msgArgs_;
-            bitField0_ = (bitField0_ & ~0x00000080);
+            bitField0_ = (bitField0_ & ~0x00000100);
           } else {
             ensureMsgArgsIsMutable();
             msgArgs_.addAll(other.msgArgs_);
@@ -967,15 +1007,41 @@ public final class MsgClanWallBoardMessageOuterClass {
       }
       private int bitField0_;
 
+      private int id_ ;
+      /**
+       * <code>fixed32 id = 1;</code>
+       */
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>fixed32 id = 1;</code>
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed32 id = 1;</code>
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int messageType_ = 0;
       /**
-       * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 1;</code>
+       * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 2;</code>
        */
       public int getMessageTypeValue() {
         return messageType_;
       }
       /**
-       * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 1;</code>
+       * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 2;</code>
        */
       public Builder setMessageTypeValue(int value) {
         messageType_ = value;
@@ -983,14 +1049,14 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 1;</code>
+       * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 2;</code>
        */
       public com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType getMessageType() {
         com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType result = com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType.valueOf(messageType_);
         return result == null ? com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 1;</code>
+       * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 2;</code>
        */
       public Builder setMessageType(com.felania.msldb.MsgClanWallBoardMessageOuterClass.MsgClanWallBoardMessage.MessageType value) {
         if (value == null) {
@@ -1002,7 +1068,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 1;</code>
+       * <code>.msggamedata.MsgClanWallBoardMessage.MessageType message_type = 2;</code>
        */
       public Builder clearMessageType() {
         
@@ -1013,13 +1079,13 @@ public final class MsgClanWallBoardMessageOuterClass {
 
       private int serial_ ;
       /**
-       * <code>uint32 serial = 2;</code>
+       * <code>uint32 serial = 3;</code>
        */
       public int getSerial() {
         return serial_;
       }
       /**
-       * <code>uint32 serial = 2;</code>
+       * <code>uint32 serial = 3;</code>
        */
       public Builder setSerial(int value) {
         
@@ -1028,7 +1094,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>uint32 serial = 2;</code>
+       * <code>uint32 serial = 3;</code>
        */
       public Builder clearSerial() {
         
@@ -1039,7 +1105,7 @@ public final class MsgClanWallBoardMessageOuterClass {
 
       private java.lang.Object name_ = "";
       /**
-       * <code>string name = 3;</code>
+       * <code>string name = 4;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -1054,7 +1120,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         }
       }
       /**
-       * <code>string name = 3;</code>
+       * <code>string name = 4;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -1070,7 +1136,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         }
       }
       /**
-       * <code>string name = 3;</code>
+       * <code>string name = 4;</code>
        */
       public Builder setName(
           java.lang.String value) {
@@ -1083,7 +1149,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>string name = 3;</code>
+       * <code>string name = 4;</code>
        */
       public Builder clearName() {
         
@@ -1092,7 +1158,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>string name = 3;</code>
+       * <code>string name = 4;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -1108,13 +1174,13 @@ public final class MsgClanWallBoardMessageOuterClass {
 
       private int memberGrade_ = 0;
       /**
-       * <code>.msggamedata.ClanMemberGrade member_grade = 4;</code>
+       * <code>.msggamedata.ClanMemberGrade member_grade = 5;</code>
        */
       public int getMemberGradeValue() {
         return memberGrade_;
       }
       /**
-       * <code>.msggamedata.ClanMemberGrade member_grade = 4;</code>
+       * <code>.msggamedata.ClanMemberGrade member_grade = 5;</code>
        */
       public Builder setMemberGradeValue(int value) {
         memberGrade_ = value;
@@ -1122,14 +1188,14 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.ClanMemberGrade member_grade = 4;</code>
+       * <code>.msggamedata.ClanMemberGrade member_grade = 5;</code>
        */
       public com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade getMemberGrade() {
         com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade result = com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade.valueOf(memberGrade_);
         return result == null ? com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade.UNRECOGNIZED : result;
       }
       /**
-       * <code>.msggamedata.ClanMemberGrade member_grade = 4;</code>
+       * <code>.msggamedata.ClanMemberGrade member_grade = 5;</code>
        */
       public Builder setMemberGrade(com.felania.msldb.ClanMemberGradeOuterClass.ClanMemberGrade value) {
         if (value == null) {
@@ -1141,7 +1207,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.ClanMemberGrade member_grade = 4;</code>
+       * <code>.msggamedata.ClanMemberGrade member_grade = 5;</code>
        */
       public Builder clearMemberGrade() {
         
@@ -1152,13 +1218,13 @@ public final class MsgClanWallBoardMessageOuterClass {
 
       private long lev_ ;
       /**
-       * <code>uint64 lev = 5;</code>
+       * <code>uint64 lev = 6;</code>
        */
       public long getLev() {
         return lev_;
       }
       /**
-       * <code>uint64 lev = 5;</code>
+       * <code>uint64 lev = 6;</code>
        */
       public Builder setLev(long value) {
         
@@ -1167,7 +1233,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>uint64 lev = 5;</code>
+       * <code>uint64 lev = 6;</code>
        */
       public Builder clearLev() {
         
@@ -1178,7 +1244,7 @@ public final class MsgClanWallBoardMessageOuterClass {
 
       private java.lang.Object msg_ = "";
       /**
-       * <code>string msg = 6;</code>
+       * <code>string msg = 7;</code>
        */
       public java.lang.String getMsg() {
         java.lang.Object ref = msg_;
@@ -1193,7 +1259,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         }
       }
       /**
-       * <code>string msg = 6;</code>
+       * <code>string msg = 7;</code>
        */
       public com.google.protobuf.ByteString
           getMsgBytes() {
@@ -1209,7 +1275,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         }
       }
       /**
-       * <code>string msg = 6;</code>
+       * <code>string msg = 7;</code>
        */
       public Builder setMsg(
           java.lang.String value) {
@@ -1222,7 +1288,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>string msg = 6;</code>
+       * <code>string msg = 7;</code>
        */
       public Builder clearMsg() {
         
@@ -1231,7 +1297,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>string msg = 6;</code>
+       * <code>string msg = 7;</code>
        */
       public Builder setMsgBytes(
           com.google.protobuf.ByteString value) {
@@ -1247,13 +1313,13 @@ public final class MsgClanWallBoardMessageOuterClass {
 
       private int msgUid_ ;
       /**
-       * <code>fixed32 msg_uid = 7;</code>
+       * <code>fixed32 msg_uid = 8;</code>
        */
       public int getMsgUid() {
         return msgUid_;
       }
       /**
-       * <code>fixed32 msg_uid = 7;</code>
+       * <code>fixed32 msg_uid = 8;</code>
        */
       public Builder setMsgUid(int value) {
         
@@ -1262,7 +1328,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>fixed32 msg_uid = 7;</code>
+       * <code>fixed32 msg_uid = 8;</code>
        */
       public Builder clearMsgUid() {
         
@@ -1273,39 +1339,39 @@ public final class MsgClanWallBoardMessageOuterClass {
 
       private com.google.protobuf.LazyStringList msgArgs_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureMsgArgsIsMutable() {
-        if (!((bitField0_ & 0x00000080) == 0x00000080)) {
+        if (!((bitField0_ & 0x00000100) == 0x00000100)) {
           msgArgs_ = new com.google.protobuf.LazyStringArrayList(msgArgs_);
-          bitField0_ |= 0x00000080;
+          bitField0_ |= 0x00000100;
          }
       }
       /**
-       * <code>repeated string msg_args = 8;</code>
+       * <code>repeated string msg_args = 9;</code>
        */
       public com.google.protobuf.ProtocolStringList
           getMsgArgsList() {
         return msgArgs_.getUnmodifiableView();
       }
       /**
-       * <code>repeated string msg_args = 8;</code>
+       * <code>repeated string msg_args = 9;</code>
        */
       public int getMsgArgsCount() {
         return msgArgs_.size();
       }
       /**
-       * <code>repeated string msg_args = 8;</code>
+       * <code>repeated string msg_args = 9;</code>
        */
       public java.lang.String getMsgArgs(int index) {
         return msgArgs_.get(index);
       }
       /**
-       * <code>repeated string msg_args = 8;</code>
+       * <code>repeated string msg_args = 9;</code>
        */
       public com.google.protobuf.ByteString
           getMsgArgsBytes(int index) {
         return msgArgs_.getByteString(index);
       }
       /**
-       * <code>repeated string msg_args = 8;</code>
+       * <code>repeated string msg_args = 9;</code>
        */
       public Builder setMsgArgs(
           int index, java.lang.String value) {
@@ -1318,7 +1384,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>repeated string msg_args = 8;</code>
+       * <code>repeated string msg_args = 9;</code>
        */
       public Builder addMsgArgs(
           java.lang.String value) {
@@ -1331,7 +1397,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>repeated string msg_args = 8;</code>
+       * <code>repeated string msg_args = 9;</code>
        */
       public Builder addAllMsgArgs(
           java.lang.Iterable<java.lang.String> values) {
@@ -1342,16 +1408,16 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>repeated string msg_args = 8;</code>
+       * <code>repeated string msg_args = 9;</code>
        */
       public Builder clearMsgArgs() {
         msgArgs_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00000100);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated string msg_args = 8;</code>
+       * <code>repeated string msg_args = 9;</code>
        */
       public Builder addMsgArgsBytes(
           com.google.protobuf.ByteString value) {
@@ -1367,13 +1433,13 @@ public final class MsgClanWallBoardMessageOuterClass {
 
       private long createdDate_ ;
       /**
-       * <code>uint64 created_date = 9;</code>
+       * <code>uint64 created_date = 10;</code>
        */
       public long getCreatedDate() {
         return createdDate_;
       }
       /**
-       * <code>uint64 created_date = 9;</code>
+       * <code>uint64 created_date = 10;</code>
        */
       public Builder setCreatedDate(long value) {
         
@@ -1382,7 +1448,7 @@ public final class MsgClanWallBoardMessageOuterClass {
         return this;
       }
       /**
-       * <code>uint64 created_date = 9;</code>
+       * <code>uint64 created_date = 10;</code>
        */
       public Builder clearCreatedDate() {
         
@@ -1420,7 +1486,7 @@ public final class MsgClanWallBoardMessageOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgClanWallBoardMessage(input, extensionRegistry);
+        return new MsgClanWallBoardMessage(input, extensionRegistry);
       }
     };
 
@@ -1454,17 +1520,18 @@ public final class MsgClanWallBoardMessageOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035MsgClanWallBoardMessage.proto\022\013msggame" +
-      "data\032\025ClanMemberGrade.proto\"\372\002\n\027MsgClanW" +
-      "allBoardMessage\022F\n\014message_type\030\001 \001(\01620." +
-      "msggamedata.MsgClanWallBoardMessage.Mess" +
-      "ageType\022\016\n\006serial\030\002 \001(\r\022\014\n\004name\030\003 \001(\t\0222\n" +
-      "\014member_grade\030\004 \001(\0162\034.msggamedata.ClanMe" +
-      "mberGrade\022\013\n\003lev\030\005 \001(\004\022\013\n\003msg\030\006 \001(\t\022\017\n\007m" +
-      "sg_uid\030\007 \001(\007\022\020\n\010msg_args\030\010 \003(\t\022\024\n\014create" +
-      "d_date\030\t \001(\004\"r\n\013MessageType\022\013\n\007MT_None\020\000" +
-      "\022\013\n\007MT_User\020\001\022\r\n\tMT_System\020\002\022\017\n\013MT_KillB",
-      "oss\020\003\022\021\n\rMT_Graduation\020\004\022\026\n\022MT_CVC_Apply" +
-      "Battle\020\005B\023\n\021com.felania.msldbb\006proto3"
+      "data\032\025ClanMemberGrade.proto\"\206\003\n\027MsgClanW" +
+      "allBoardMessage\022\n\n\002id\030\001 \001(\007\022F\n\014message_t" +
+      "ype\030\002 \001(\01620.msggamedata.MsgClanWallBoard" +
+      "Message.MessageType\022\016\n\006serial\030\003 \001(\r\022\014\n\004n" +
+      "ame\030\004 \001(\t\0222\n\014member_grade\030\005 \001(\0162\034.msggam" +
+      "edata.ClanMemberGrade\022\013\n\003lev\030\006 \001(\004\022\013\n\003ms" +
+      "g\030\007 \001(\t\022\017\n\007msg_uid\030\010 \001(\007\022\020\n\010msg_args\030\t \003" +
+      "(\t\022\024\n\014created_date\030\n \001(\004\"r\n\013MessageType\022" +
+      "\013\n\007MT_None\020\000\022\013\n\007MT_User\020\001\022\r\n\tMT_System\020\002" +
+      "\022\017\n\013MT_KillBoss\020\003\022\021\n\rMT_Graduation\020\004\022\026\n\022" +
+      "MT_CVC_ApplyBattle\020\005B\023\n\021com.felania.msld" +
+      "bb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1484,7 +1551,7 @@ public final class MsgClanWallBoardMessageOuterClass {
     internal_static_msggamedata_MsgClanWallBoardMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgClanWallBoardMessage_descriptor,
-        new java.lang.String[] { "MessageType", "Serial", "Name", "MemberGrade", "Lev", "Msg", "MsgUid", "MsgArgs", "CreatedDate", });
+        new java.lang.String[] { "Id", "MessageType", "Serial", "Name", "MemberGrade", "Lev", "Msg", "MsgUid", "MsgArgs", "CreatedDate", });
     com.felania.msldb.ClanMemberGradeOuterClass.getDescriptor();
   }
 

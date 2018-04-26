@@ -733,7 +733,7 @@ public final class WebEventPlayModeOuterClass {
       "M_Get_Beyond_Stone\020\032\022\031\n\025WEPM_Use_Beyond_" +
       "Stone\020\033\022\024\n\020WEPM_Get_Crystal\020\034\022\024\n\020WEPM_Us" +
       "e_Crystal\020\035\022\031\n\025WEPM_Get_Star_Essence\020\036\022\022" +
-      "\n\016WEPM_Join_Clan\020\037\022\027\n\023WEPM_Get_Clan_Poin",
+      "\n\016WEPM_Join_Clan\020\037\022\027\n\023WEPM_Get_Clan_Poin" +
       "t\020 \022\027\n\023WEPM_Use_Clan_Point\020!\022\023\n\017WEPM_Buy" +
       "_Energy\020\"\022\021\n\rWEPM_Buy_Gold\020#\022\020\n\014WEPM_Buy" +
       "_Gem\020$\022\032\n\026WEPM_Daily_First_Login\020%\022\033\n\027WE" +
@@ -743,7 +743,7 @@ public final class WebEventPlayModeOuterClass {
       "e_Hard\020f\022%\n!WEPM_Play_Scenario_Battle_Ex" +
       "treme\020g\0221\n-WEPM_Play_All_Day_Beyond_Ston" +
       "e_Dungeon_Battle\020n\022-\n)WEPM_Play_Day_Beyo" +
-      "nd_Stone_Dungeon_Battle\020p\022!\n\035WEPM_Play_G",
+      "nd_Stone_Dungeon_Battle\020p\022!\n\035WEPM_Play_G" +
       "old_Dungeon_Battle\020q\022)\n%WEPM_Play_All_Da" +
       "y_Rune_Dungeon_Battle\020r\022#\n\037WEPM_Play_Fri" +
       "end_Dungeon_Battle\020s\022%\n!WEPM_Play_Day_Ru" +
@@ -753,7 +753,7 @@ public final class WebEventPlayModeOuterClass {
       "ontinent1\020y\022(\n$WEPM_Play_Scenario_Battle" +
       "_Continent2\020z\022(\n$WEPM_Play_Scenario_Batt" +
       "le_Continent3\020{\022\033\n\026WEPM_Play_Arena_Battl" +
-      "e\020\202\001\0222\n-WEPM_Play_Day_Beyond_Stone_Dunge",
+      "e\020\202\001\0222\n-WEPM_Play_Day_Beyond_Stone_Dunge" +
       "on_Battle_Mon\020\226\001\0222\n-WEPM_Play_Day_Beyond" +
       "_Stone_Dungeon_Battle_Tue\020\227\001\0222\n-WEPM_Pla" +
       "y_Day_Beyond_Stone_Dungeon_Battle_Wed\020\230\001" +
@@ -763,7 +763,7 @@ public final class WebEventPlayModeOuterClass {
       "y_Beyond_Stone_Dungeon_Battle_Sat\020\233\001\0222\n-" +
       "WEPM_Play_Day_Beyond_Stone_Dungeon_Battl" +
       "e_Sun\020\234\001\022\033\n\026WEPM_Get_Capture_Point\020\240\001\022\033\n" +
-      "\026WEPM_Start_Clan_Battle\020\252\001\022\032\n\025WEPM_Start",
+      "\026WEPM_Start_Clan_Battle\020\252\001\022\032\n\025WEPM_Start" +
       "_CVC_Battle\020\253\001\022\031\n\024WEPM_Attendance_Clan\020\254" +
       "\001\022\031\n\024WEPM_Warm_Up_Monster\020\310\001\022\033\n\026WEPM_Evo" +
       "lution_Monster\020\311\001\022\030\n\023WEPM_Beyond_Monster" +
@@ -773,7 +773,7 @@ public final class WebEventPlayModeOuterClass {
       "WEPM_Find_Nezz\020\254\002\022\026\n\021WEPM_Lobby_Reward\020\255" +
       "\002\022\032\n\025WEPM_Set_Free_Monster\020\256\002\022\032\n\025WEPM_Se" +
       "nd_Friend_Gift\020\266\002\022\031\n\024WEPM_Capture_Monste" +
-      "r\020\300\002\022,\n\'WEPM_Capture_Rare_Monster_In_Con",
+      "r\020\300\002\022,\n\'WEPM_Capture_Rare_Monster_In_Con" +
       "tinent1\020\301\002\022,\n\'WEPM_Capture_Rare_Monster_" +
       "In_Continent2\020\302\002\022,\n\'WEPM_Capture_Rare_Mo" +
       "nster_In_Continent3\020\303\002\022\025\n\020WEPM_Get_Monst" +

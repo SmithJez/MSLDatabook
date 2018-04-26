@@ -203,6 +203,9 @@ public final class MsgStageOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2298,7 +2301,7 @@ public final class MsgStageOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgStage(input, extensionRegistry);
+        return new MsgStage(input, extensionRegistry);
       }
     };
 
@@ -2340,7 +2343,7 @@ public final class MsgStageOuterClass {
       "ds_rune_color\030\010 \001(\0162\035.msggamedata.Monste" +
       "rRuneColor\0229\n\021normal_rune_range\030\t \001(\0132\036." +
       "msggamedata.MsgRuneGradeRange\0227\n\017hard_ru" +
-      "ne_range\030\n \001(\0132\036.msggamedata.MsgRuneGrad",
+      "ne_range\030\n \001(\0132\036.msggamedata.MsgRuneGrad" +
       "eRange\0227\n\017hell_rune_range\030\013 \001(\0132\036.msggam" +
       "edata.MsgRuneGradeRange\022,\n\013battle_type\030\014" +
       " \001(\0162\027.msggamedata.BattleType\022 \n\030normal_" +

@@ -150,6 +150,9 @@ public final class MsgUserClanMemberOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1554,7 +1557,7 @@ public final class MsgUserClanMemberOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgUserClanMember(input, extensionRegistry);
+        return new MsgUserClanMember(input, extensionRegistry);
       }
     };
 
@@ -1596,7 +1599,7 @@ public final class MsgUserClanMemberOuterClass {
       "attle_season_idx\030\004 \001(\r\022\r\n\005phase\030\005 \001(\r\022\032\n" +
       "\022phase_battle_count\030\006 \001(\r\022\033\n\023season_batt" +
       "le_count\030\007 \001(\r\022\037\n\027max_season_battle_coun" +
-      "t\030\010 \001(\r\022\031\n\021season_best_score\030\t \001(\004\022\024\n\014co",
+      "t\030\010 \001(\r\022\031\n\021season_best_score\030\t \001(\004\022\024\n\014co" +
       "ntribution\030\n \001(\004\022\026\n\016cur_boss_level\030\013 \001(\r" +
       "\022\032\n\022cur_boss_remain_hp\030\014 \001(\004\022\030\n\020clan_rew" +
       "ard_date\030\r \001(\r\022\022\n\nlast_login\030\016 \001(\r\022\025\n\ris" +

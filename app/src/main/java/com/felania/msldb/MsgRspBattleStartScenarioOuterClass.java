@@ -98,6 +98,9 @@ public final class MsgRspBattleStartScenarioOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1118,7 +1121,7 @@ public final class MsgRspBattleStartScenarioOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRspBattleStartScenario(input, extensionRegistry);
+        return new MsgRspBattleStartScenario(input, extensionRegistry);
       }
     };
 
@@ -1160,7 +1163,7 @@ public final class MsgRspBattleStartScenarioOuterClass {
       "sicInfo\0223\n\rbattle_friend\030\002 \001(\0132\034.msggame" +
       "data.MsgBattleFriend\0224\n\ndifficulty\030\003 \001(\016" +
       "2 .msggamedata.StageDifficultyType\022F\n\027su" +
-      "pport_monster_history\030\004 \001(\0132%.msggamedat",
+      "pport_monster_history\030\004 \001(\0132%.msggamedat" +
       "a.MsgSupportMonsterHistory\022!\n\031enforcemen" +
       "t_value_enabled\030\005 \001(\010B\023\n\021com.felania.msl" +
       "dbb\006proto3"

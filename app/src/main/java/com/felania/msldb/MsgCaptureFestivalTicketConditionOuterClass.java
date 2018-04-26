@@ -94,6 +94,9 @@ public final class MsgCaptureFestivalTicketConditionOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1170,7 +1173,7 @@ public final class MsgCaptureFestivalTicketConditionOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgCaptureFestivalTicketCondition(input, extensionRegistry);
+        return new MsgCaptureFestivalTicketCondition(input, extensionRegistry);
       }
     };
 
@@ -1212,7 +1215,7 @@ public final class MsgCaptureFestivalTicketConditionOuterClass {
       "MsgCaptureFestivalTicketCondition.Ticket" +
       "ConditionActor\022\r\n\005count\030\004 \001(\r\022,\n\006reward\030" +
       "\005 \001(\0132\034.msggamedata.MsgUidAndAmount\022\r\n\005t" +
-      "itle\030\006 \001(\007\"g\n\023TicketConditionType\022\033\n\027Tic",
+      "itle\030\006 \001(\007\"g\n\023TicketConditionType\022\033\n\027Tic" +
       "ketConditionTypeNULL\020\000\022\r\n\tTCT_Share\020\001\022\014\n" +
       "\010TCT_Wish\020\002\022\026\n\022TCT_CaptureSuccess\020\003\"O\n\024T" +
       "icketConditionActor\022\034\n\030TicketConditionAc" +

@@ -158,6 +158,9 @@ public final class MsgLinkBonusOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -616,6 +619,9 @@ public final class MsgLinkBonusOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1338,7 +1344,7 @@ public final class MsgLinkBonusOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new LinkBonusSubTypeValue(input, extensionRegistry);
+          return new LinkBonusSubTypeValue(input, extensionRegistry);
         }
       };
 
@@ -2676,7 +2682,7 @@ public final class MsgLinkBonusOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgLinkBonus(input, extensionRegistry);
+        return new MsgLinkBonus(input, extensionRegistry);
       }
     };
 
@@ -2723,7 +2729,7 @@ public final class MsgLinkBonusOuterClass {
       "_type\030\005 \001(\0162\'.msggamedata.MsgLinkBonus.L" +
       "inkBonusType\022G\n\016sub_type_value\030\006 \001(\0132/.m" +
       "sggamedata.MsgLinkBonus.LinkBonusSubType" +
-      "Value\022=\n\005where\030\007 \001(\0162..msggamedata.MsgSt",
+      "Value\022=\n\005where\030\007 \001(\0162..msggamedata.MsgSt" +
       "atusEffect.StatusEffectWhere\022\r\n\005grade\030\010 " +
       "\001(\r\022\025\n\rmonster_count\030\t \001(\r\022\031\n\021status_eff" +
       "ect_uid\030\n \001(\007\022=\n\006target\030\013 \001(\0162-.msggamed" +
@@ -2733,7 +2739,7 @@ public final class MsgLinkBonusOuterClass {
       "\022\020\n\010proposer\030\020 \001(\007\032\360\001\n\025LinkBonusSubTypeV" +
       "alue\0220\n\007element\030\001 \001(\0162\037.msggamedata.Mons" +
       "terElementType\022.\n\006gender\030\002 \001(\0162\036.msggame" +
-      "data.MonsterGenderType\022/\n\tstat_type\030\003 \001(",
+      "data.MonsterGenderType\022/\n\tstat_type\030\003 \001(" +
       "\0162\034.msggamedata.MonsterStatType\0220\n\tevolu" +
       "tion\030\004 \001(\0162\035.msggamedata.MonsterEvolutio" +
       "n\022\022\n\nhidden_uid\030\005 \001(\007\"|\n\rLinkBonusType\022\025" +

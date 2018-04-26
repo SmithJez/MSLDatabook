@@ -75,6 +75,9 @@ public final class MsgMonsterAiItemOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -890,7 +893,7 @@ public final class MsgMonsterAiItemOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgMonsterAiItem(input, extensionRegistry);
+        return new MsgMonsterAiItem(input, extensionRegistry);
       }
     };
 
@@ -932,7 +935,7 @@ public final class MsgMonsterAiItemOuterClass {
       "pe\"\360\001\n\rMonsterAiType\022\010\n\004None\020\000\022\n\n\006Random" +
       "\020\001\022\023\n\017OppositeElement\020\002\022\025\n\021EnemyStatusEf" +
       "fect\020\003\022\023\n\017OurStatusEffect\020\004\022\017\n\013EnemyHpOv" +
-      "er\020\005\022\020\n\014EnemyHpUnder\020\006\022\r\n\tOurHpOver\020\007\022\016\n",
+      "er\020\005\022\020\n\014EnemyHpUnder\020\006\022\r\n\tOurHpOver\020\007\022\016\n" +
       "\nOurHpUnder\020\010\022\020\n\014EnemyCntOver\020\t\022\021\n\rEnemy" +
       "CntUnder\020\n\022\017\n\013NoNextRound\020\013\022\020\n\014DefaultSk" +
       "ill\020\014B\023\n\021com.felania.msldbb\006proto3"

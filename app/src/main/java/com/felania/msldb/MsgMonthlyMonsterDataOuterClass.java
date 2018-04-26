@@ -110,9 +110,9 @@ public final class MsgMonthlyMonsterDataOuterClass {
         getBgPrefabBytes();
 
     /**
-     * <code>fixed32 costume_bundle_uid = 12;</code>
+     * <code>fixed32 costume_uid = 12;</code>
      */
-    int getCostumeBundleUid();
+    int getCostumeUid();
 
     /**
      * <code>float size_factor = 13;</code>
@@ -142,7 +142,7 @@ public final class MsgMonthlyMonsterDataOuterClass {
       questStr_ = 0;
       leagueBuffMultiply_ = 0F;
       bgPrefab_ = "";
-      costumeBundleUid_ = 0;
+      costumeUid_ = 0;
       sizeFactor_ = 0F;
     }
 
@@ -156,6 +156,9 @@ public final class MsgMonthlyMonsterDataOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -245,7 +248,7 @@ public final class MsgMonthlyMonsterDataOuterClass {
             }
             case 101: {
 
-              costumeBundleUid_ = input.readFixed32();
+              costumeUid_ = input.readFixed32();
               break;
             }
             case 109: {
@@ -450,13 +453,13 @@ public final class MsgMonthlyMonsterDataOuterClass {
       }
     }
 
-    public static final int COSTUME_BUNDLE_UID_FIELD_NUMBER = 12;
-    private int costumeBundleUid_;
+    public static final int COSTUME_UID_FIELD_NUMBER = 12;
+    private int costumeUid_;
     /**
-     * <code>fixed32 costume_bundle_uid = 12;</code>
+     * <code>fixed32 costume_uid = 12;</code>
      */
-    public int getCostumeBundleUid() {
-      return costumeBundleUid_;
+    public int getCostumeUid() {
+      return costumeUid_;
     }
 
     public static final int SIZE_FACTOR_FIELD_NUMBER = 13;
@@ -513,8 +516,8 @@ public final class MsgMonthlyMonsterDataOuterClass {
       if (!getBgPrefabBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 11, bgPrefab_);
       }
-      if (costumeBundleUid_ != 0) {
-        output.writeFixed32(12, costumeBundleUid_);
+      if (costumeUid_ != 0) {
+        output.writeFixed32(12, costumeUid_);
       }
       if (sizeFactor_ != 0F) {
         output.writeFloat(13, sizeFactor_);
@@ -570,9 +573,9 @@ public final class MsgMonthlyMonsterDataOuterClass {
       if (!getBgPrefabBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, bgPrefab_);
       }
-      if (costumeBundleUid_ != 0) {
+      if (costumeUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(12, costumeBundleUid_);
+          .computeFixed32Size(12, costumeUid_);
       }
       if (sizeFactor_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
@@ -620,8 +623,8 @@ public final class MsgMonthlyMonsterDataOuterClass {
               other.getLeagueBuffMultiply()));
       result = result && getBgPrefab()
           .equals(other.getBgPrefab());
-      result = result && (getCostumeBundleUid()
-          == other.getCostumeBundleUid());
+      result = result && (getCostumeUid()
+          == other.getCostumeUid());
       result = result && (
           java.lang.Float.floatToIntBits(getSizeFactor())
           == java.lang.Float.floatToIntBits(
@@ -665,8 +668,8 @@ public final class MsgMonthlyMonsterDataOuterClass {
           getLeagueBuffMultiply());
       hash = (37 * hash) + BG_PREFAB_FIELD_NUMBER;
       hash = (53 * hash) + getBgPrefab().hashCode();
-      hash = (37 * hash) + COSTUME_BUNDLE_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getCostumeBundleUid();
+      hash = (37 * hash) + COSTUME_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getCostumeUid();
       hash = (37 * hash) + SIZE_FACTOR_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getSizeFactor());
@@ -830,7 +833,7 @@ public final class MsgMonthlyMonsterDataOuterClass {
 
         bgPrefab_ = "";
 
-        costumeBundleUid_ = 0;
+        costumeUid_ = 0;
 
         sizeFactor_ = 0F;
 
@@ -881,7 +884,7 @@ public final class MsgMonthlyMonsterDataOuterClass {
         result.questStr_ = questStr_;
         result.leagueBuffMultiply_ = leagueBuffMultiply_;
         result.bgPrefab_ = bgPrefab_;
-        result.costumeBundleUid_ = costumeBundleUid_;
+        result.costumeUid_ = costumeUid_;
         result.sizeFactor_ = sizeFactor_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -982,8 +985,8 @@ public final class MsgMonthlyMonsterDataOuterClass {
           bgPrefab_ = other.bgPrefab_;
           onChanged();
         }
-        if (other.getCostumeBundleUid() != 0) {
-          setCostumeBundleUid(other.getCostumeBundleUid());
+        if (other.getCostumeUid() != 0) {
+          setCostumeUid(other.getCostumeUid());
         }
         if (other.getSizeFactor() != 0F) {
           setSizeFactor(other.getSizeFactor());
@@ -1668,28 +1671,28 @@ public final class MsgMonthlyMonsterDataOuterClass {
         return this;
       }
 
-      private int costumeBundleUid_ ;
+      private int costumeUid_ ;
       /**
-       * <code>fixed32 costume_bundle_uid = 12;</code>
+       * <code>fixed32 costume_uid = 12;</code>
        */
-      public int getCostumeBundleUid() {
-        return costumeBundleUid_;
+      public int getCostumeUid() {
+        return costumeUid_;
       }
       /**
-       * <code>fixed32 costume_bundle_uid = 12;</code>
+       * <code>fixed32 costume_uid = 12;</code>
        */
-      public Builder setCostumeBundleUid(int value) {
+      public Builder setCostumeUid(int value) {
         
-        costumeBundleUid_ = value;
+        costumeUid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>fixed32 costume_bundle_uid = 12;</code>
+       * <code>fixed32 costume_uid = 12;</code>
        */
-      public Builder clearCostumeBundleUid() {
+      public Builder clearCostumeUid() {
         
-        costumeBundleUid_ = 0;
+        costumeUid_ = 0;
         onChanged();
         return this;
       }
@@ -1749,7 +1752,7 @@ public final class MsgMonthlyMonsterDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgMonthlyMonsterData(input, extensionRegistry);
+        return new MsgMonthlyMonsterData(input, extensionRegistry);
       }
     };
 
@@ -1784,18 +1787,18 @@ public final class MsgMonthlyMonsterDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033MsgMonthlyMonsterData.proto\022\013msggameda" +
       "ta\032\023MsgUIShortcut.proto\032\016MsgQuest.proto\032" +
-      "\026MsgQuestSubCondi.proto\"\212\003\n\025MsgMonthlyMo" +
+      "\026MsgQuestSubCondi.proto\"\203\003\n\025MsgMonthlyMo" +
       "nsterData\022\013\n\003uid\030\001 \001(\007\022\023\n\013monster_uid\030\002 " +
       "\001(\007\022\024\n\014release_date\030\003 \001(\004\022/\n\013ui_shortcut" +
       "\030\004 \001(\0132\032.msggamedata.MsgUIShortcut\022\027\n\017ui" +
       "_shortcut_str\030\005 \001(\007\0223\n\nmain_condi\030\006 \001(\0162" +
       "\037.msggamedata.MsgQuest.MainCondi\022\022\n\ngoal" +
       "_count\030\007 \001(\r\0221\n\nsub_condis\030\010 \003(\0132\035.msgga" +
-      "medata.MsgQuestSubCondi\022\021\n\tquest_str\030\t \001",
+      "medata.MsgQuestSubCondi\022\021\n\tquest_str\030\t \001" +
       "(\007\022\034\n\024league_buff_multiply\030\n \001(\002\022\021\n\tbg_p" +
-      "refab\030\013 \001(\t\022\032\n\022costume_bundle_uid\030\014 \001(\007\022" +
-      "\023\n\013size_factor\030\r \001(\002B\023\n\021com.felania.msld" +
-      "bb\006proto3"
+      "refab\030\013 \001(\t\022\023\n\013costume_uid\030\014 \001(\007\022\023\n\013size" +
+      "_factor\030\r \001(\002B\023\n\021com.felania.msldbb\006prot" +
+      "o3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1817,7 +1820,7 @@ public final class MsgMonthlyMonsterDataOuterClass {
     internal_static_msggamedata_MsgMonthlyMonsterData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgMonthlyMonsterData_descriptor,
-        new java.lang.String[] { "Uid", "MonsterUid", "ReleaseDate", "UiShortcut", "UiShortcutStr", "MainCondi", "GoalCount", "SubCondis", "QuestStr", "LeagueBuffMultiply", "BgPrefab", "CostumeBundleUid", "SizeFactor", });
+        new java.lang.String[] { "Uid", "MonsterUid", "ReleaseDate", "UiShortcut", "UiShortcutStr", "MainCondi", "GoalCount", "SubCondis", "QuestStr", "LeagueBuffMultiply", "BgPrefab", "CostumeUid", "SizeFactor", });
     com.felania.msldb.MsgUIShortcutOuterClass.getDescriptor();
     com.felania.msldb.MsgQuestOuterClass.getDescriptor();
     com.felania.msldb.MsgQuestSubCondiOuterClass.getDescriptor();

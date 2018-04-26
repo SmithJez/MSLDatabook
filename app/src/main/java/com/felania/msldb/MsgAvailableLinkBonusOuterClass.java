@@ -35,19 +35,6 @@ public final class MsgAvailableLinkBonusOuterClass {
      * <code>repeated uint64 user_monster_ids = 2;</code>
      */
     long getUserMonsterIds(int index);
-
-    /**
-     * <code>repeated uint64 target_user_monster_ids = 3;</code>
-     */
-    java.util.List<java.lang.Long> getTargetUserMonsterIdsList();
-    /**
-     * <code>repeated uint64 target_user_monster_ids = 3;</code>
-     */
-    int getTargetUserMonsterIdsCount();
-    /**
-     * <code>repeated uint64 target_user_monster_ids = 3;</code>
-     */
-    long getTargetUserMonsterIds(int index);
   }
   /**
    * Protobuf type {@code msggamedata.MsgAvailableLinkBonus}
@@ -64,7 +51,6 @@ public final class MsgAvailableLinkBonusOuterClass {
     private MsgAvailableLinkBonus() {
       linkBonusUid_ = 0;
       userMonsterIds_ = java.util.Collections.emptyList();
-      targetUserMonsterIds_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -77,6 +63,9 @@ public final class MsgAvailableLinkBonusOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -121,27 +110,6 @@ public final class MsgAvailableLinkBonusOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 24: {
-              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-                targetUserMonsterIds_ = new java.util.ArrayList<java.lang.Long>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              targetUserMonsterIds_.add(input.readUInt64());
-              break;
-            }
-            case 26: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004) && input.getBytesUntilLimit() > 0) {
-                targetUserMonsterIds_ = new java.util.ArrayList<java.lang.Long>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                targetUserMonsterIds_.add(input.readUInt64());
-              }
-              input.popLimit(limit);
-              break;
-            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -152,9 +120,6 @@ public final class MsgAvailableLinkBonusOuterClass {
       } finally {
         if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
           userMonsterIds_ = java.util.Collections.unmodifiableList(userMonsterIds_);
-        }
-        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-          targetUserMonsterIds_ = java.util.Collections.unmodifiableList(targetUserMonsterIds_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -205,29 +170,6 @@ public final class MsgAvailableLinkBonusOuterClass {
     }
     private int userMonsterIdsMemoizedSerializedSize = -1;
 
-    public static final int TARGET_USER_MONSTER_IDS_FIELD_NUMBER = 3;
-    private java.util.List<java.lang.Long> targetUserMonsterIds_;
-    /**
-     * <code>repeated uint64 target_user_monster_ids = 3;</code>
-     */
-    public java.util.List<java.lang.Long>
-        getTargetUserMonsterIdsList() {
-      return targetUserMonsterIds_;
-    }
-    /**
-     * <code>repeated uint64 target_user_monster_ids = 3;</code>
-     */
-    public int getTargetUserMonsterIdsCount() {
-      return targetUserMonsterIds_.size();
-    }
-    /**
-     * <code>repeated uint64 target_user_monster_ids = 3;</code>
-     */
-    public long getTargetUserMonsterIds(int index) {
-      return targetUserMonsterIds_.get(index);
-    }
-    private int targetUserMonsterIdsMemoizedSerializedSize = -1;
-
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -250,13 +192,6 @@ public final class MsgAvailableLinkBonusOuterClass {
       }
       for (int i = 0; i < userMonsterIds_.size(); i++) {
         output.writeUInt64NoTag(userMonsterIds_.get(i));
-      }
-      if (getTargetUserMonsterIdsList().size() > 0) {
-        output.writeUInt32NoTag(26);
-        output.writeUInt32NoTag(targetUserMonsterIdsMemoizedSerializedSize);
-      }
-      for (int i = 0; i < targetUserMonsterIds_.size(); i++) {
-        output.writeUInt64NoTag(targetUserMonsterIds_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -284,20 +219,6 @@ public final class MsgAvailableLinkBonusOuterClass {
         }
         userMonsterIdsMemoizedSerializedSize = dataSize;
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < targetUserMonsterIds_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt64SizeNoTag(targetUserMonsterIds_.get(i));
-        }
-        size += dataSize;
-        if (!getTargetUserMonsterIdsList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        targetUserMonsterIdsMemoizedSerializedSize = dataSize;
-      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -318,8 +239,6 @@ public final class MsgAvailableLinkBonusOuterClass {
           == other.getLinkBonusUid());
       result = result && getUserMonsterIdsList()
           .equals(other.getUserMonsterIdsList());
-      result = result && getTargetUserMonsterIdsList()
-          .equals(other.getTargetUserMonsterIdsList());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -336,10 +255,6 @@ public final class MsgAvailableLinkBonusOuterClass {
       if (getUserMonsterIdsCount() > 0) {
         hash = (37 * hash) + USER_MONSTER_IDS_FIELD_NUMBER;
         hash = (53 * hash) + getUserMonsterIdsList().hashCode();
-      }
-      if (getTargetUserMonsterIdsCount() > 0) {
-        hash = (37 * hash) + TARGET_USER_MONSTER_IDS_FIELD_NUMBER;
-        hash = (53 * hash) + getTargetUserMonsterIdsList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -474,8 +389,6 @@ public final class MsgAvailableLinkBonusOuterClass {
 
         userMonsterIds_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        targetUserMonsterIds_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -506,11 +419,6 @@ public final class MsgAvailableLinkBonusOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.userMonsterIds_ = userMonsterIds_;
-        if (((bitField0_ & 0x00000004) == 0x00000004)) {
-          targetUserMonsterIds_ = java.util.Collections.unmodifiableList(targetUserMonsterIds_);
-          bitField0_ = (bitField0_ & ~0x00000004);
-        }
-        result.targetUserMonsterIds_ = targetUserMonsterIds_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -563,16 +471,6 @@ public final class MsgAvailableLinkBonusOuterClass {
           } else {
             ensureUserMonsterIdsIsMutable();
             userMonsterIds_.addAll(other.userMonsterIds_);
-          }
-          onChanged();
-        }
-        if (!other.targetUserMonsterIds_.isEmpty()) {
-          if (targetUserMonsterIds_.isEmpty()) {
-            targetUserMonsterIds_ = other.targetUserMonsterIds_;
-            bitField0_ = (bitField0_ & ~0x00000004);
-          } else {
-            ensureTargetUserMonsterIdsIsMutable();
-            targetUserMonsterIds_.addAll(other.targetUserMonsterIds_);
           }
           onChanged();
         }
@@ -695,72 +593,6 @@ public final class MsgAvailableLinkBonusOuterClass {
         onChanged();
         return this;
       }
-
-      private java.util.List<java.lang.Long> targetUserMonsterIds_ = java.util.Collections.emptyList();
-      private void ensureTargetUserMonsterIdsIsMutable() {
-        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
-          targetUserMonsterIds_ = new java.util.ArrayList<java.lang.Long>(targetUserMonsterIds_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-      /**
-       * <code>repeated uint64 target_user_monster_ids = 3;</code>
-       */
-      public java.util.List<java.lang.Long>
-          getTargetUserMonsterIdsList() {
-        return java.util.Collections.unmodifiableList(targetUserMonsterIds_);
-      }
-      /**
-       * <code>repeated uint64 target_user_monster_ids = 3;</code>
-       */
-      public int getTargetUserMonsterIdsCount() {
-        return targetUserMonsterIds_.size();
-      }
-      /**
-       * <code>repeated uint64 target_user_monster_ids = 3;</code>
-       */
-      public long getTargetUserMonsterIds(int index) {
-        return targetUserMonsterIds_.get(index);
-      }
-      /**
-       * <code>repeated uint64 target_user_monster_ids = 3;</code>
-       */
-      public Builder setTargetUserMonsterIds(
-          int index, long value) {
-        ensureTargetUserMonsterIdsIsMutable();
-        targetUserMonsterIds_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 target_user_monster_ids = 3;</code>
-       */
-      public Builder addTargetUserMonsterIds(long value) {
-        ensureTargetUserMonsterIdsIsMutable();
-        targetUserMonsterIds_.add(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 target_user_monster_ids = 3;</code>
-       */
-      public Builder addAllTargetUserMonsterIds(
-          java.lang.Iterable<? extends java.lang.Long> values) {
-        ensureTargetUserMonsterIdsIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, targetUserMonsterIds_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 target_user_monster_ids = 3;</code>
-       */
-      public Builder clearTargetUserMonsterIds() {
-        targetUserMonsterIds_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -791,7 +623,7 @@ public final class MsgAvailableLinkBonusOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgAvailableLinkBonus(input, extensionRegistry);
+        return new MsgAvailableLinkBonus(input, extensionRegistry);
       }
     };
 
@@ -825,10 +657,9 @@ public final class MsgAvailableLinkBonusOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033MsgAvailableLinkBonus.proto\022\013msggameda" +
-      "ta\"j\n\025MsgAvailableLinkBonus\022\026\n\016link_bonu" +
-      "s_uid\030\001 \001(\007\022\030\n\020user_monster_ids\030\002 \003(\004\022\037\n" +
-      "\027target_user_monster_ids\030\003 \003(\004B\023\n\021com.fe" +
-      "lania.msldbb\006proto3"
+      "ta\"I\n\025MsgAvailableLinkBonus\022\026\n\016link_bonu" +
+      "s_uid\030\001 \001(\007\022\030\n\020user_monster_ids\030\002 \003(\004B\023\n" +
+      "\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -847,7 +678,7 @@ public final class MsgAvailableLinkBonusOuterClass {
     internal_static_msggamedata_MsgAvailableLinkBonus_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgAvailableLinkBonus_descriptor,
-        new java.lang.String[] { "LinkBonusUid", "UserMonsterIds", "TargetUserMonsterIds", });
+        new java.lang.String[] { "LinkBonusUid", "UserMonsterIds", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -81,6 +81,9 @@ public final class MsgRandomItemOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1043,7 +1046,7 @@ public final class MsgRandomItemOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRandomItem(input, extensionRegistry);
+        return new MsgRandomItem(input, extensionRegistry);
       }
     };
 
@@ -1085,7 +1088,7 @@ public final class MsgRandomItemOuterClass {
       "\n\004Food\020\002\022\010\n\004Gold\020\003\022\n\n\006Energy\020\004\022\007\n\003Gem\020\005\022" +
       "\010\n\004Rune\020\006\022\016\n\nMonsterEgg\020\007\022\r\n\tSoulStone\020\010" +
       "\022\017\n\013BeyondStone\020\t\022\022\n\016InstantMonster\020\n\022\021\n" +
-      "\rDungeonTicket\020\013\022\017\n\013ArenaTicket\020\014\022\017\n\013Sta",
+      "\rDungeonTicket\020\013\022\017\n\013ArenaTicket\020\014\022\017\n\013Sta" +
       "rEssence\020\r\022\r\n\tClanPoint\020\016\022\024\n\020MonsterSkil" +
       "lBook\020\017\022\024\n\020MonsterEggHidden\020\020\022\016\n\nSuperSt" +
       "one\020\021\022\023\n\017SuperStoneStuff\020\022\022\017\n\013HeroEssenc" +

@@ -130,6 +130,9 @@ public final class MsgMonsterSkillOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1404,7 +1407,7 @@ public final class MsgMonsterSkillOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgMonsterSkill(input, extensionRegistry);
+        return new MsgMonsterSkill(input, extensionRegistry);
       }
     };
 
@@ -1446,7 +1449,7 @@ public final class MsgMonsterSkillOuterClass {
       "onsterSkillType\0223\n\006target\030\005 \001(\0162#.msggam" +
       "edata.MonsterSkillTargetType\0222\n\006action\030\006" +
       " \001(\0132\".msggamedata.MsgMonsterSkillAction" +
-      "\022\025\n\rstatus_effect\030\007 \001(\007\0224\n\007trigger\030\010 \001(\013",
+      "\022\025\n\rstatus_effect\030\007 \001(\007\0224\n\007trigger\030\010 \001(\013" +
       "2#.msggamedata.MsgMonsterSkillTrigger\022\014\n" +
       "\004icon\030\t \001(\t\022\021\n\tsoul_size\030\n \001(\rB\023\n\021com.fe" +
       "lania.msldbb\006proto3"

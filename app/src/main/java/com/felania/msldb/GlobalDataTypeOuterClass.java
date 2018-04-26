@@ -400,7 +400,7 @@ public final class GlobalDataTypeOuterClass {
       "\020e\022\017\n\013GDT_Monster\020f\022\026\n\022GDT_MonsterPackag" +
       "e\020g\022\014\n\010GDT_Food\020h\022\023\n\017GDT_BeyondStone\020i\022\022" +
       "\n\016GDT_MonsterEgg\020j\022\023\n\017GDT_StarEssence\020k\022" +
-      "\016\n\nGDT_Random\020l\022\030\n\024GDT_MonsterSkillBook\020",
+      "\016\n\nGDT_Random\020l\022\030\n\024GDT_MonsterSkillBook\020" +
       "m\022\022\n\016GDT_SuperStone\020n\022\027\n\023GDT_SuperStoneS" +
       "tuff\020o\022\022\n\rGDT_MpCrystal\020\310\001\022\022\n\rGDT_HpCrys" +
       "tal\020\311\001\022\014\n\007GDT_Gun\020\312\001\022\017\n\nGDT_Bullet\020\313\001\022\024\n" +

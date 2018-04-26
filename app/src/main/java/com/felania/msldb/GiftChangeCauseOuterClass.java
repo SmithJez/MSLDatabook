@@ -200,6 +200,26 @@ public final class GiftChangeCauseOuterClass {
      */
     GCC_Rejoin_Clan_Reward(45),
     /**
+     * <code>GCC_Super_Evolution_Share_Reward = 46;</code>
+     */
+    GCC_Super_Evolution_Share_Reward(46),
+    /**
+     * <code>GCC_Super_Evolution_Wish_Reward = 47;</code>
+     */
+    GCC_Super_Evolution_Wish_Reward(47),
+    /**
+     * <code>GCC_Super_Evolution_Complete = 48;</code>
+     */
+    GCC_Super_Evolution_Complete(48),
+    /**
+     * <code>GCC_Super_Evolution_Bonus = 49;</code>
+     */
+    GCC_Super_Evolution_Bonus(49),
+    /**
+     * <code>GCC_Gacha_Monster_By_Full_Inven = 50;</code>
+     */
+    GCC_Gacha_Monster_By_Full_Inven(50),
+    /**
      * <code>GCC_Refund_From_DBTool = 99;</code>
      */
     GCC_Refund_From_DBTool(99),
@@ -387,6 +407,26 @@ public final class GiftChangeCauseOuterClass {
      */
     public static final int GCC_Rejoin_Clan_Reward_VALUE = 45;
     /**
+     * <code>GCC_Super_Evolution_Share_Reward = 46;</code>
+     */
+    public static final int GCC_Super_Evolution_Share_Reward_VALUE = 46;
+    /**
+     * <code>GCC_Super_Evolution_Wish_Reward = 47;</code>
+     */
+    public static final int GCC_Super_Evolution_Wish_Reward_VALUE = 47;
+    /**
+     * <code>GCC_Super_Evolution_Complete = 48;</code>
+     */
+    public static final int GCC_Super_Evolution_Complete_VALUE = 48;
+    /**
+     * <code>GCC_Super_Evolution_Bonus = 49;</code>
+     */
+    public static final int GCC_Super_Evolution_Bonus_VALUE = 49;
+    /**
+     * <code>GCC_Gacha_Monster_By_Full_Inven = 50;</code>
+     */
+    public static final int GCC_Gacha_Monster_By_Full_Inven_VALUE = 50;
+    /**
      * <code>GCC_Refund_From_DBTool = 99;</code>
      */
     public static final int GCC_Refund_From_DBTool_VALUE = 99;
@@ -455,6 +495,11 @@ public final class GiftChangeCauseOuterClass {
         case 43: return GCC_Reward_Monthly_Monster_Reward;
         case 44: return GCC_Bingo_Event_Reward;
         case 45: return GCC_Rejoin_Clan_Reward;
+        case 46: return GCC_Super_Evolution_Share_Reward;
+        case 47: return GCC_Super_Evolution_Wish_Reward;
+        case 48: return GCC_Super_Evolution_Complete;
+        case 49: return GCC_Super_Evolution_Bonus;
+        case 50: return GCC_Gacha_Monster_By_Full_Inven;
         case 99: return GCC_Refund_From_DBTool;
         default: return null;
       }
@@ -517,7 +562,7 @@ public final class GiftChangeCauseOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025GiftChangeCause.proto\022\013msggamedata*\303\013\n" +
+      "\n\025GiftChangeCause.proto\022\013msggamedata*\364\014\n" +
       "\017GiftChangeCause\022\027\n\023GiftChangeCauseNULL\020" +
       "\000\022\024\n\020GCC_Arena_Reward\020\001\022\023\n\017GCC_Daily_Bon" +
       "us\020\002\022\024\n\020GCC_Lobby_Reward\020\003\022\032\n\026GCC_First_" +
@@ -526,7 +571,7 @@ public final class GiftChangeCauseOuterClass {
       "onster\020\007\022\033\n\027GCC_Sell_Monster_Reward\020\010\022\025\n" +
       "\021GCC_DBTool_Insert\020\t\022\025\n\021GCC_Reward_By_FT" +
       "T\020\n\022\032\n\026GCC_Tutorial_Completed\020\013\022\034\n\030GCC_D" +
-      "aily_Bonus_New_User\020\014\022\032\n\026GCC_Daily_Bonus",
+      "aily_Bonus_New_User\020\014\022\032\n\026GCC_Daily_Bonus" +
       "_Return\020\r\022$\n GCC_Reward_Capture_King_Ent" +
       "rance\020\016\022\"\n\036GCC_Reward_Capture_King_Resul" +
       "t\020\017\022\036\n\032GCC_Get_From_30day_Package\020\020\022 \n\034G" +
@@ -536,7 +581,7 @@ public final class GiftChangeCauseOuterClass {
       "5day_Package\020\025\022-\n)GCC_Get_From_15day_Pac" +
       "kage_purchase_bonus\020\026\022\031\n\025GCC_First_Clan_" +
       "Battle\020\027\022\032\n\026GCC_Reward_Clan_Season\020\030\022\034\n\030" +
-      "GCC_Get_From_Egg_Package\020\031\022+\n\'GCC_Get_Fr",
+      "GCC_Get_From_Egg_Package\020\031\022+\n\'GCC_Get_Fr" +
       "om_Egg_Package_Purchase_Bonus\020\032\022\037\n\033GCC_G" +
       "et_From_Contract_Bonus\020\033\022%\n!GCC_Get_From" +
       "_Contract_Final_Bonus\020\034\022#\n\037GCC_Daily_Bon" +
@@ -546,7 +591,7 @@ public final class GiftChangeCauseOuterClass {
       "p_Reward\020 \022\024\n\020GCC_Bingo_Reward\020!\022\036\n\032GCC_" +
       "Clan_Graduation_Reward\020\"\022\031\n\025GCC_Reward_C" +
       "VC_Season\020#\022\034\n\030GCC_Clan_Festival_Reward\020" +
-      "$\022\037\n\033GCC_Open_Clan_Festival_Gfit\020%\022%\n!GC",
+      "$\022\037\n\033GCC_Open_Clan_Festival_Gfit\020%\022%\n!GC" +
       "C_Get_From_Light_Contract_Bonus\020&\022+\n\'GCC" +
       "_Get_From_Light_Contract_Final_Bonus\020\'\022\034" +
       "\n\030GCC_Booster_Package_Item\020(\022)\n%GCC_purc" +
@@ -554,8 +599,12 @@ public final class GiftChangeCauseOuterClass {
       "eward_Capture_Festival_Finale\020*\022%\n!GCC_R" +
       "eward_Monthly_Monster_Reward\020+\022\032\n\026GCC_Bi" +
       "ngo_Event_Reward\020,\022\032\n\026GCC_Rejoin_Clan_Re" +
-      "ward\020-\022\032\n\026GCC_Refund_From_DBTool\020cB\023\n\021co" +
-      "m.felania.msldbb\006proto3"
+      "ward\020-\022$\n GCC_Super_Evolution_Share_Rewa" +
+      "rd\020.\022#\n\037GCC_Super_Evolution_Wish_Reward\020" +
+      "/\022 \n\034GCC_Super_Evolution_Complete\0200\022\035\n\031G" +
+      "CC_Super_Evolution_Bonus\0201\022#\n\037GCC_Gacha_" +
+      "Monster_By_Full_Inven\0202\022\032\n\026GCC_Refund_Fr" +
+      "om_DBTool\020cB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

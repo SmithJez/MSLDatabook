@@ -17,6 +17,11 @@ public final class ReqExtendMonsterInvenOuterClass {
   public interface ReqExtendMonsterInvenOrBuilder extends
       // @@protoc_insertion_point(interface_extends:msggamedata.ReqExtendMonsterInven)
       com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>bool is_max_extend = 1;</code>
+     */
+    boolean getIsMaxExtend();
   }
   /**
    * Protobuf type {@code msggamedata.ReqExtendMonsterInven}
@@ -31,6 +36,7 @@ public final class ReqExtendMonsterInvenOuterClass {
       super(builder);
     }
     private ReqExtendMonsterInven() {
+      isMaxExtend_ = false;
     }
 
     @java.lang.Override
@@ -43,6 +49,10 @@ public final class ReqExtendMonsterInvenOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -58,6 +68,11 @@ public final class ReqExtendMonsterInvenOuterClass {
                   input, unknownFields, extensionRegistry, tag)) {
                 done = true;
               }
+              break;
+            }
+            case 8: {
+
+              isMaxExtend_ = input.readBool();
               break;
             }
           }
@@ -84,6 +99,15 @@ public final class ReqExtendMonsterInvenOuterClass {
               com.felania.msldb.ReqExtendMonsterInvenOuterClass.ReqExtendMonsterInven.class, com.felania.msldb.ReqExtendMonsterInvenOuterClass.ReqExtendMonsterInven.Builder.class);
     }
 
+    public static final int IS_MAX_EXTEND_FIELD_NUMBER = 1;
+    private boolean isMaxExtend_;
+    /**
+     * <code>bool is_max_extend = 1;</code>
+     */
+    public boolean getIsMaxExtend() {
+      return isMaxExtend_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -96,6 +120,9 @@ public final class ReqExtendMonsterInvenOuterClass {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isMaxExtend_ != false) {
+        output.writeBool(1, isMaxExtend_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -104,6 +131,10 @@ public final class ReqExtendMonsterInvenOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isMaxExtend_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, isMaxExtend_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -120,6 +151,8 @@ public final class ReqExtendMonsterInvenOuterClass {
       com.felania.msldb.ReqExtendMonsterInvenOuterClass.ReqExtendMonsterInven other = (com.felania.msldb.ReqExtendMonsterInvenOuterClass.ReqExtendMonsterInven) obj;
 
       boolean result = true;
+      result = result && (getIsMaxExtend()
+          == other.getIsMaxExtend());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -131,6 +164,9 @@ public final class ReqExtendMonsterInvenOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_MAX_EXTEND_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsMaxExtend());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -260,6 +296,8 @@ public final class ReqExtendMonsterInvenOuterClass {
       }
       public Builder clear() {
         super.clear();
+        isMaxExtend_ = false;
+
         return this;
       }
 
@@ -282,6 +320,7 @@ public final class ReqExtendMonsterInvenOuterClass {
 
       public com.felania.msldb.ReqExtendMonsterInvenOuterClass.ReqExtendMonsterInven buildPartial() {
         com.felania.msldb.ReqExtendMonsterInvenOuterClass.ReqExtendMonsterInven result = new com.felania.msldb.ReqExtendMonsterInvenOuterClass.ReqExtendMonsterInven(this);
+        result.isMaxExtend_ = isMaxExtend_;
         onBuilt();
         return result;
       }
@@ -323,6 +362,9 @@ public final class ReqExtendMonsterInvenOuterClass {
 
       public Builder mergeFrom(com.felania.msldb.ReqExtendMonsterInvenOuterClass.ReqExtendMonsterInven other) {
         if (other == com.felania.msldb.ReqExtendMonsterInvenOuterClass.ReqExtendMonsterInven.getDefaultInstance()) return this;
+        if (other.getIsMaxExtend() != false) {
+          setIsMaxExtend(other.getIsMaxExtend());
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -347,6 +389,32 @@ public final class ReqExtendMonsterInvenOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private boolean isMaxExtend_ ;
+      /**
+       * <code>bool is_max_extend = 1;</code>
+       */
+      public boolean getIsMaxExtend() {
+        return isMaxExtend_;
+      }
+      /**
+       * <code>bool is_max_extend = 1;</code>
+       */
+      public Builder setIsMaxExtend(boolean value) {
+        
+        isMaxExtend_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_max_extend = 1;</code>
+       */
+      public Builder clearIsMaxExtend() {
+        
+        isMaxExtend_ = false;
+        onChanged();
         return this;
       }
       public final Builder setUnknownFields(
@@ -379,7 +447,7 @@ public final class ReqExtendMonsterInvenOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ReqExtendMonsterInven(input, extensionRegistry);
+        return new ReqExtendMonsterInven(input, extensionRegistry);
       }
     };
 
@@ -413,8 +481,8 @@ public final class ReqExtendMonsterInvenOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ReqExtendMonsterInven.proto\022\013msggameda" +
-      "ta\"\027\n\025ReqExtendMonsterInvenB\023\n\021com.felan" +
-      "ia.msldbb\006proto3"
+      "ta\".\n\025ReqExtendMonsterInven\022\025\n\ris_max_ex" +
+      "tend\030\001 \001(\010B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -433,7 +501,7 @@ public final class ReqExtendMonsterInvenOuterClass {
     internal_static_msggamedata_ReqExtendMonsterInven_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_ReqExtendMonsterInven_descriptor,
-        new java.lang.String[] { });
+        new java.lang.String[] { "IsMaxExtend", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

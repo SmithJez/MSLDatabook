@@ -226,6 +226,9 @@ public final class MsgClanOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2442,7 +2445,7 @@ public final class MsgClanOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgClan(input, extensionRegistry);
+        return new MsgClan(input, extensionRegistry);
       }
     };
 
@@ -2484,7 +2487,7 @@ public final class MsgClanOuterClass {
       "season_count\030\n \001(\r\022\024\n\014max_boss_lev\030\013 \001(\r" +
       "\022\025\n\rbest_cvc_rank\030\014 \001(\r\022\027\n\017chatting_noti" +
       "ce\030\r \001(\t\022\017\n\007comment\030\016 \001(\t\022\035\n\025clan_festiv" +
-      "al_message\030\017 \001(\t\022\014\n\004desc\030\020 \001(\t\022\016\n\006status",
+      "al_message\030\017 \001(\t\022\014\n\004desc\030\020 \001(\t\022\016\n\006status" +
       "\030\021 \001(\r\022\020\n\010req_date\030\022 \001(\004\022\023\n\013private_key\030" +
       "\023 \001(\t\022\022\n\npublic_key\030\024 \001(\t\022\030\n\020apprentice_" +
       "count\030\025 \001(\r\022\030\n\020attendance_count\030\026 \001(\r\0225\n" +

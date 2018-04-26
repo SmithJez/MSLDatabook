@@ -247,7 +247,7 @@ public final class SoulstoneChangeCauseOuterClass {
       "SCC_Get_From_DBTool\020\006\022\032\n\026SCC_Use_Summon_" +
       "Monster\020\007\022(\n$SCC_Get_30day_package_speci" +
       "al_reward\020\017\022\036\n\032SCC_Get_From_30day_packag" +
-      "e\020\020\022 \n\034SCC_Get_From_levelup_package\020\021\022\"\n",
+      "e\020\020\022 \n\034SCC_Get_From_levelup_package\020\021\022\"\n" +
       "\036SCC_Get_From_adventure_package\020\022\022$\n SCC" +
       "_Get_LobbyShip_special_reward\020\023\022#\n\037SCC_G" +
       "et_From_adventure_package2\020\024\022\032\n\026SCC_Refu" +

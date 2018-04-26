@@ -43,6 +43,9 @@ public final class MsgInputLengthConditionOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -1021,7 +1024,7 @@ public final class MsgInputLengthConditionOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgInputLengthCondition(input, extensionRegistry);
+        return new MsgInputLengthCondition(input, extensionRegistry);
       }
     };
 
@@ -1063,7 +1066,7 @@ public final class MsgInputLengthConditionOuterClass {
       "lanChattingNotice\022\032\n\026ClanChattingNoticeN" +
       "ULL\020\000\022\013\n\007CCN_MIN\020\002\022\013\n\007CCN_MAX\020(\":\n\013ClanC" +
       "omment\022\023\n\017ClanCommentNULL\020\000\022\n\n\006CC_MIN\020\002\022" +
-      "\n\n\006CC_MAX\020(\"<\n\nCVCComment\022\022\n\016CVCCommentN",
+      "\n\n\006CC_MAX\020(\"<\n\nCVCComment\022\022\n\016CVCCommentN" +
       "ULL\020\000\022\014\n\010CVCC_MIN\020\002\022\014\n\010CVCC_MAX\020(B\023\n\021com" +
       ".felania.msldbb\006proto3"
     };

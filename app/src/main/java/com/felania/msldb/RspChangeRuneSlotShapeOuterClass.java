@@ -19,43 +19,30 @@ public final class RspChangeRuneSlotShapeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.msggamedata.MsgUser user = 1;</code>
-     */
-    boolean hasUser();
-    /**
-     * <code>.msggamedata.MsgUser user = 1;</code>
-     */
-    com.felania.msldb.MsgUserOuterClass.MsgUser getUser();
-    /**
-     * <code>.msggamedata.MsgUser user = 1;</code>
-     */
-    com.felania.msldb.MsgUserOuterClass.MsgUserOrBuilder getUserOrBuilder();
-
-    /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+     * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
      */
     boolean hasUserMonster();
     /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+     * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
      */
     com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster getUserMonster();
     /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+     * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
      */
     com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder getUserMonsterOrBuilder();
 
     /**
-     * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+     * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
      */
-    boolean hasUserRune();
+    boolean hasRuneChangeTicket();
     /**
-     * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+     * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
      */
-    com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune getUserRune();
+    com.felania.msldb.MsgUserItemOuterClass.MsgUserItem getRuneChangeTicket();
     /**
-     * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+     * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
      */
-    com.felania.msldb.MsgUserRuneOuterClass.MsgUserRuneOrBuilder getUserRuneOrBuilder();
+    com.felania.msldb.MsgUserItemOuterClass.MsgUserItemOrBuilder getRuneChangeTicketOrBuilder();
   }
   /**
    * Protobuf type {@code msggamedata.RspChangeRuneSlotShape}
@@ -82,6 +69,9 @@ public final class RspChangeRuneSlotShapeOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -101,19 +91,6 @@ public final class RspChangeRuneSlotShapeOuterClass {
               break;
             }
             case 10: {
-              com.felania.msldb.MsgUserOuterClass.MsgUser.Builder subBuilder = null;
-              if (user_ != null) {
-                subBuilder = user_.toBuilder();
-              }
-              user_ = input.readMessage(com.felania.msldb.MsgUserOuterClass.MsgUser.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(user_);
-                user_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 18: {
               com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder subBuilder = null;
               if (userMonster_ != null) {
                 subBuilder = userMonster_.toBuilder();
@@ -126,15 +103,15 @@ public final class RspChangeRuneSlotShapeOuterClass {
 
               break;
             }
-            case 26: {
-              com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune.Builder subBuilder = null;
-              if (userRune_ != null) {
-                subBuilder = userRune_.toBuilder();
+            case 18: {
+              com.felania.msldb.MsgUserItemOuterClass.MsgUserItem.Builder subBuilder = null;
+              if (runeChangeTicket_ != null) {
+                subBuilder = runeChangeTicket_.toBuilder();
               }
-              userRune_ = input.readMessage(com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune.parser(), extensionRegistry);
+              runeChangeTicket_ = input.readMessage(com.felania.msldb.MsgUserItemOuterClass.MsgUserItem.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(userRune_);
-                userRune_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(runeChangeTicket_);
+                runeChangeTicket_ = subBuilder.buildPartial();
               }
 
               break;
@@ -163,67 +140,46 @@ public final class RspChangeRuneSlotShapeOuterClass {
               com.felania.msldb.RspChangeRuneSlotShapeOuterClass.RspChangeRuneSlotShape.class, com.felania.msldb.RspChangeRuneSlotShapeOuterClass.RspChangeRuneSlotShape.Builder.class);
     }
 
-    public static final int USER_FIELD_NUMBER = 1;
-    private com.felania.msldb.MsgUserOuterClass.MsgUser user_;
-    /**
-     * <code>.msggamedata.MsgUser user = 1;</code>
-     */
-    public boolean hasUser() {
-      return user_ != null;
-    }
-    /**
-     * <code>.msggamedata.MsgUser user = 1;</code>
-     */
-    public com.felania.msldb.MsgUserOuterClass.MsgUser getUser() {
-      return user_ == null ? com.felania.msldb.MsgUserOuterClass.MsgUser.getDefaultInstance() : user_;
-    }
-    /**
-     * <code>.msggamedata.MsgUser user = 1;</code>
-     */
-    public com.felania.msldb.MsgUserOuterClass.MsgUserOrBuilder getUserOrBuilder() {
-      return getUser();
-    }
-
-    public static final int USER_MONSTER_FIELD_NUMBER = 2;
+    public static final int USER_MONSTER_FIELD_NUMBER = 1;
     private com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster userMonster_;
     /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+     * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
      */
     public boolean hasUserMonster() {
       return userMonster_ != null;
     }
     /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+     * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
      */
     public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster getUserMonster() {
       return userMonster_ == null ? com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.getDefaultInstance() : userMonster_;
     }
     /**
-     * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+     * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
      */
     public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder getUserMonsterOrBuilder() {
       return getUserMonster();
     }
 
-    public static final int USER_RUNE_FIELD_NUMBER = 3;
-    private com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune userRune_;
+    public static final int RUNE_CHANGE_TICKET_FIELD_NUMBER = 2;
+    private com.felania.msldb.MsgUserItemOuterClass.MsgUserItem runeChangeTicket_;
     /**
-     * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+     * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
      */
-    public boolean hasUserRune() {
-      return userRune_ != null;
+    public boolean hasRuneChangeTicket() {
+      return runeChangeTicket_ != null;
     }
     /**
-     * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+     * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
      */
-    public com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune getUserRune() {
-      return userRune_ == null ? com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune.getDefaultInstance() : userRune_;
+    public com.felania.msldb.MsgUserItemOuterClass.MsgUserItem getRuneChangeTicket() {
+      return runeChangeTicket_ == null ? com.felania.msldb.MsgUserItemOuterClass.MsgUserItem.getDefaultInstance() : runeChangeTicket_;
     }
     /**
-     * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+     * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
      */
-    public com.felania.msldb.MsgUserRuneOuterClass.MsgUserRuneOrBuilder getUserRuneOrBuilder() {
-      return getUserRune();
+    public com.felania.msldb.MsgUserItemOuterClass.MsgUserItemOrBuilder getRuneChangeTicketOrBuilder() {
+      return getRuneChangeTicket();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -238,14 +194,11 @@ public final class RspChangeRuneSlotShapeOuterClass {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (user_ != null) {
-        output.writeMessage(1, getUser());
-      }
       if (userMonster_ != null) {
-        output.writeMessage(2, getUserMonster());
+        output.writeMessage(1, getUserMonster());
       }
-      if (userRune_ != null) {
-        output.writeMessage(3, getUserRune());
+      if (runeChangeTicket_ != null) {
+        output.writeMessage(2, getRuneChangeTicket());
       }
       unknownFields.writeTo(output);
     }
@@ -255,17 +208,13 @@ public final class RspChangeRuneSlotShapeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (user_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getUser());
-      }
       if (userMonster_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getUserMonster());
+          .computeMessageSize(1, getUserMonster());
       }
-      if (userRune_ != null) {
+      if (runeChangeTicket_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getUserRune());
+          .computeMessageSize(2, getRuneChangeTicket());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -283,20 +232,15 @@ public final class RspChangeRuneSlotShapeOuterClass {
       com.felania.msldb.RspChangeRuneSlotShapeOuterClass.RspChangeRuneSlotShape other = (com.felania.msldb.RspChangeRuneSlotShapeOuterClass.RspChangeRuneSlotShape) obj;
 
       boolean result = true;
-      result = result && (hasUser() == other.hasUser());
-      if (hasUser()) {
-        result = result && getUser()
-            .equals(other.getUser());
-      }
       result = result && (hasUserMonster() == other.hasUserMonster());
       if (hasUserMonster()) {
         result = result && getUserMonster()
             .equals(other.getUserMonster());
       }
-      result = result && (hasUserRune() == other.hasUserRune());
-      if (hasUserRune()) {
-        result = result && getUserRune()
-            .equals(other.getUserRune());
+      result = result && (hasRuneChangeTicket() == other.hasRuneChangeTicket());
+      if (hasRuneChangeTicket()) {
+        result = result && getRuneChangeTicket()
+            .equals(other.getRuneChangeTicket());
       }
       result = result && unknownFields.equals(other.unknownFields);
       return result;
@@ -309,17 +253,13 @@ public final class RspChangeRuneSlotShapeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasUser()) {
-        hash = (37 * hash) + USER_FIELD_NUMBER;
-        hash = (53 * hash) + getUser().hashCode();
-      }
       if (hasUserMonster()) {
         hash = (37 * hash) + USER_MONSTER_FIELD_NUMBER;
         hash = (53 * hash) + getUserMonster().hashCode();
       }
-      if (hasUserRune()) {
-        hash = (37 * hash) + USER_RUNE_FIELD_NUMBER;
-        hash = (53 * hash) + getUserRune().hashCode();
+      if (hasRuneChangeTicket()) {
+        hash = (37 * hash) + RUNE_CHANGE_TICKET_FIELD_NUMBER;
+        hash = (53 * hash) + getRuneChangeTicket().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -450,23 +390,17 @@ public final class RspChangeRuneSlotShapeOuterClass {
       }
       public Builder clear() {
         super.clear();
-        if (userBuilder_ == null) {
-          user_ = null;
-        } else {
-          user_ = null;
-          userBuilder_ = null;
-        }
         if (userMonsterBuilder_ == null) {
           userMonster_ = null;
         } else {
           userMonster_ = null;
           userMonsterBuilder_ = null;
         }
-        if (userRuneBuilder_ == null) {
-          userRune_ = null;
+        if (runeChangeTicketBuilder_ == null) {
+          runeChangeTicket_ = null;
         } else {
-          userRune_ = null;
-          userRuneBuilder_ = null;
+          runeChangeTicket_ = null;
+          runeChangeTicketBuilder_ = null;
         }
         return this;
       }
@@ -490,20 +424,15 @@ public final class RspChangeRuneSlotShapeOuterClass {
 
       public com.felania.msldb.RspChangeRuneSlotShapeOuterClass.RspChangeRuneSlotShape buildPartial() {
         com.felania.msldb.RspChangeRuneSlotShapeOuterClass.RspChangeRuneSlotShape result = new com.felania.msldb.RspChangeRuneSlotShapeOuterClass.RspChangeRuneSlotShape(this);
-        if (userBuilder_ == null) {
-          result.user_ = user_;
-        } else {
-          result.user_ = userBuilder_.build();
-        }
         if (userMonsterBuilder_ == null) {
           result.userMonster_ = userMonster_;
         } else {
           result.userMonster_ = userMonsterBuilder_.build();
         }
-        if (userRuneBuilder_ == null) {
-          result.userRune_ = userRune_;
+        if (runeChangeTicketBuilder_ == null) {
+          result.runeChangeTicket_ = runeChangeTicket_;
         } else {
-          result.userRune_ = userRuneBuilder_.build();
+          result.runeChangeTicket_ = runeChangeTicketBuilder_.build();
         }
         onBuilt();
         return result;
@@ -546,14 +475,11 @@ public final class RspChangeRuneSlotShapeOuterClass {
 
       public Builder mergeFrom(com.felania.msldb.RspChangeRuneSlotShapeOuterClass.RspChangeRuneSlotShape other) {
         if (other == com.felania.msldb.RspChangeRuneSlotShapeOuterClass.RspChangeRuneSlotShape.getDefaultInstance()) return this;
-        if (other.hasUser()) {
-          mergeUser(other.getUser());
-        }
         if (other.hasUserMonster()) {
           mergeUserMonster(other.getUserMonster());
         }
-        if (other.hasUserRune()) {
-          mergeUserRune(other.getUserRune());
+        if (other.hasRuneChangeTicket()) {
+          mergeRuneChangeTicket(other.getRuneChangeTicket());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -582,134 +508,17 @@ public final class RspChangeRuneSlotShapeOuterClass {
         return this;
       }
 
-      private com.felania.msldb.MsgUserOuterClass.MsgUser user_ = null;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.felania.msldb.MsgUserOuterClass.MsgUser, com.felania.msldb.MsgUserOuterClass.MsgUser.Builder, com.felania.msldb.MsgUserOuterClass.MsgUserOrBuilder> userBuilder_;
-      /**
-       * <code>.msggamedata.MsgUser user = 1;</code>
-       */
-      public boolean hasUser() {
-        return userBuilder_ != null || user_ != null;
-      }
-      /**
-       * <code>.msggamedata.MsgUser user = 1;</code>
-       */
-      public com.felania.msldb.MsgUserOuterClass.MsgUser getUser() {
-        if (userBuilder_ == null) {
-          return user_ == null ? com.felania.msldb.MsgUserOuterClass.MsgUser.getDefaultInstance() : user_;
-        } else {
-          return userBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.msggamedata.MsgUser user = 1;</code>
-       */
-      public Builder setUser(com.felania.msldb.MsgUserOuterClass.MsgUser value) {
-        if (userBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          user_ = value;
-          onChanged();
-        } else {
-          userBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.msggamedata.MsgUser user = 1;</code>
-       */
-      public Builder setUser(
-          com.felania.msldb.MsgUserOuterClass.MsgUser.Builder builderForValue) {
-        if (userBuilder_ == null) {
-          user_ = builderForValue.build();
-          onChanged();
-        } else {
-          userBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.msggamedata.MsgUser user = 1;</code>
-       */
-      public Builder mergeUser(com.felania.msldb.MsgUserOuterClass.MsgUser value) {
-        if (userBuilder_ == null) {
-          if (user_ != null) {
-            user_ =
-              com.felania.msldb.MsgUserOuterClass.MsgUser.newBuilder(user_).mergeFrom(value).buildPartial();
-          } else {
-            user_ = value;
-          }
-          onChanged();
-        } else {
-          userBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.msggamedata.MsgUser user = 1;</code>
-       */
-      public Builder clearUser() {
-        if (userBuilder_ == null) {
-          user_ = null;
-          onChanged();
-        } else {
-          user_ = null;
-          userBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.msggamedata.MsgUser user = 1;</code>
-       */
-      public com.felania.msldb.MsgUserOuterClass.MsgUser.Builder getUserBuilder() {
-        
-        onChanged();
-        return getUserFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.msggamedata.MsgUser user = 1;</code>
-       */
-      public com.felania.msldb.MsgUserOuterClass.MsgUserOrBuilder getUserOrBuilder() {
-        if (userBuilder_ != null) {
-          return userBuilder_.getMessageOrBuilder();
-        } else {
-          return user_ == null ?
-              com.felania.msldb.MsgUserOuterClass.MsgUser.getDefaultInstance() : user_;
-        }
-      }
-      /**
-       * <code>.msggamedata.MsgUser user = 1;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.felania.msldb.MsgUserOuterClass.MsgUser, com.felania.msldb.MsgUserOuterClass.MsgUser.Builder, com.felania.msldb.MsgUserOuterClass.MsgUserOrBuilder> 
-          getUserFieldBuilder() {
-        if (userBuilder_ == null) {
-          userBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.felania.msldb.MsgUserOuterClass.MsgUser, com.felania.msldb.MsgUserOuterClass.MsgUser.Builder, com.felania.msldb.MsgUserOuterClass.MsgUserOrBuilder>(
-                  getUser(),
-                  getParentForChildren(),
-                  isClean());
-          user_ = null;
-        }
-        return userBuilder_;
-      }
-
       private com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster userMonster_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
           com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder> userMonsterBuilder_;
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+       * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
        */
       public boolean hasUserMonster() {
         return userMonsterBuilder_ != null || userMonster_ != null;
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+       * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
        */
       public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster getUserMonster() {
         if (userMonsterBuilder_ == null) {
@@ -719,7 +528,7 @@ public final class RspChangeRuneSlotShapeOuterClass {
         }
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+       * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
        */
       public Builder setUserMonster(com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster value) {
         if (userMonsterBuilder_ == null) {
@@ -735,7 +544,7 @@ public final class RspChangeRuneSlotShapeOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+       * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
        */
       public Builder setUserMonster(
           com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder builderForValue) {
@@ -749,7 +558,7 @@ public final class RspChangeRuneSlotShapeOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+       * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
        */
       public Builder mergeUserMonster(com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster value) {
         if (userMonsterBuilder_ == null) {
@@ -767,7 +576,7 @@ public final class RspChangeRuneSlotShapeOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+       * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
        */
       public Builder clearUserMonster() {
         if (userMonsterBuilder_ == null) {
@@ -781,7 +590,7 @@ public final class RspChangeRuneSlotShapeOuterClass {
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+       * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
        */
       public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder getUserMonsterBuilder() {
         
@@ -789,7 +598,7 @@ public final class RspChangeRuneSlotShapeOuterClass {
         return getUserMonsterFieldBuilder().getBuilder();
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+       * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
        */
       public com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder getUserMonsterOrBuilder() {
         if (userMonsterBuilder_ != null) {
@@ -800,7 +609,7 @@ public final class RspChangeRuneSlotShapeOuterClass {
         }
       }
       /**
-       * <code>.msggamedata.MsgUserMonster user_monster = 2;</code>
+       * <code>.msggamedata.MsgUserMonster user_monster = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonster.Builder, com.felania.msldb.MsgUserMonsterOuterClass.MsgUserMonsterOrBuilder> 
@@ -816,121 +625,121 @@ public final class RspChangeRuneSlotShapeOuterClass {
         return userMonsterBuilder_;
       }
 
-      private com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune userRune_ = null;
+      private com.felania.msldb.MsgUserItemOuterClass.MsgUserItem runeChangeTicket_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune, com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune.Builder, com.felania.msldb.MsgUserRuneOuterClass.MsgUserRuneOrBuilder> userRuneBuilder_;
+          com.felania.msldb.MsgUserItemOuterClass.MsgUserItem, com.felania.msldb.MsgUserItemOuterClass.MsgUserItem.Builder, com.felania.msldb.MsgUserItemOuterClass.MsgUserItemOrBuilder> runeChangeTicketBuilder_;
       /**
-       * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+       * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
        */
-      public boolean hasUserRune() {
-        return userRuneBuilder_ != null || userRune_ != null;
+      public boolean hasRuneChangeTicket() {
+        return runeChangeTicketBuilder_ != null || runeChangeTicket_ != null;
       }
       /**
-       * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+       * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
        */
-      public com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune getUserRune() {
-        if (userRuneBuilder_ == null) {
-          return userRune_ == null ? com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune.getDefaultInstance() : userRune_;
+      public com.felania.msldb.MsgUserItemOuterClass.MsgUserItem getRuneChangeTicket() {
+        if (runeChangeTicketBuilder_ == null) {
+          return runeChangeTicket_ == null ? com.felania.msldb.MsgUserItemOuterClass.MsgUserItem.getDefaultInstance() : runeChangeTicket_;
         } else {
-          return userRuneBuilder_.getMessage();
+          return runeChangeTicketBuilder_.getMessage();
         }
       }
       /**
-       * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+       * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
        */
-      public Builder setUserRune(com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune value) {
-        if (userRuneBuilder_ == null) {
+      public Builder setRuneChangeTicket(com.felania.msldb.MsgUserItemOuterClass.MsgUserItem value) {
+        if (runeChangeTicketBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          userRune_ = value;
+          runeChangeTicket_ = value;
           onChanged();
         } else {
-          userRuneBuilder_.setMessage(value);
+          runeChangeTicketBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+       * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
        */
-      public Builder setUserRune(
-          com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune.Builder builderForValue) {
-        if (userRuneBuilder_ == null) {
-          userRune_ = builderForValue.build();
+      public Builder setRuneChangeTicket(
+          com.felania.msldb.MsgUserItemOuterClass.MsgUserItem.Builder builderForValue) {
+        if (runeChangeTicketBuilder_ == null) {
+          runeChangeTicket_ = builderForValue.build();
           onChanged();
         } else {
-          userRuneBuilder_.setMessage(builderForValue.build());
+          runeChangeTicketBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+       * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
        */
-      public Builder mergeUserRune(com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune value) {
-        if (userRuneBuilder_ == null) {
-          if (userRune_ != null) {
-            userRune_ =
-              com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune.newBuilder(userRune_).mergeFrom(value).buildPartial();
+      public Builder mergeRuneChangeTicket(com.felania.msldb.MsgUserItemOuterClass.MsgUserItem value) {
+        if (runeChangeTicketBuilder_ == null) {
+          if (runeChangeTicket_ != null) {
+            runeChangeTicket_ =
+              com.felania.msldb.MsgUserItemOuterClass.MsgUserItem.newBuilder(runeChangeTicket_).mergeFrom(value).buildPartial();
           } else {
-            userRune_ = value;
+            runeChangeTicket_ = value;
           }
           onChanged();
         } else {
-          userRuneBuilder_.mergeFrom(value);
+          runeChangeTicketBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+       * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
        */
-      public Builder clearUserRune() {
-        if (userRuneBuilder_ == null) {
-          userRune_ = null;
+      public Builder clearRuneChangeTicket() {
+        if (runeChangeTicketBuilder_ == null) {
+          runeChangeTicket_ = null;
           onChanged();
         } else {
-          userRune_ = null;
-          userRuneBuilder_ = null;
+          runeChangeTicket_ = null;
+          runeChangeTicketBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+       * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
        */
-      public com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune.Builder getUserRuneBuilder() {
+      public com.felania.msldb.MsgUserItemOuterClass.MsgUserItem.Builder getRuneChangeTicketBuilder() {
         
         onChanged();
-        return getUserRuneFieldBuilder().getBuilder();
+        return getRuneChangeTicketFieldBuilder().getBuilder();
       }
       /**
-       * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+       * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
        */
-      public com.felania.msldb.MsgUserRuneOuterClass.MsgUserRuneOrBuilder getUserRuneOrBuilder() {
-        if (userRuneBuilder_ != null) {
-          return userRuneBuilder_.getMessageOrBuilder();
+      public com.felania.msldb.MsgUserItemOuterClass.MsgUserItemOrBuilder getRuneChangeTicketOrBuilder() {
+        if (runeChangeTicketBuilder_ != null) {
+          return runeChangeTicketBuilder_.getMessageOrBuilder();
         } else {
-          return userRune_ == null ?
-              com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune.getDefaultInstance() : userRune_;
+          return runeChangeTicket_ == null ?
+              com.felania.msldb.MsgUserItemOuterClass.MsgUserItem.getDefaultInstance() : runeChangeTicket_;
         }
       }
       /**
-       * <code>.msggamedata.MsgUserRune user_rune = 3;</code>
+       * <code>.msggamedata.MsgUserItem rune_change_ticket = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune, com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune.Builder, com.felania.msldb.MsgUserRuneOuterClass.MsgUserRuneOrBuilder> 
-          getUserRuneFieldBuilder() {
-        if (userRuneBuilder_ == null) {
-          userRuneBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune, com.felania.msldb.MsgUserRuneOuterClass.MsgUserRune.Builder, com.felania.msldb.MsgUserRuneOuterClass.MsgUserRuneOrBuilder>(
-                  getUserRune(),
+          com.felania.msldb.MsgUserItemOuterClass.MsgUserItem, com.felania.msldb.MsgUserItemOuterClass.MsgUserItem.Builder, com.felania.msldb.MsgUserItemOuterClass.MsgUserItemOrBuilder> 
+          getRuneChangeTicketFieldBuilder() {
+        if (runeChangeTicketBuilder_ == null) {
+          runeChangeTicketBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.felania.msldb.MsgUserItemOuterClass.MsgUserItem, com.felania.msldb.MsgUserItemOuterClass.MsgUserItem.Builder, com.felania.msldb.MsgUserItemOuterClass.MsgUserItemOrBuilder>(
+                  getRuneChangeTicket(),
                   getParentForChildren(),
                   isClean());
-          userRune_ = null;
+          runeChangeTicket_ = null;
         }
-        return userRuneBuilder_;
+        return runeChangeTicketBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -962,7 +771,7 @@ public final class RspChangeRuneSlotShapeOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspChangeRuneSlotShape(input, extensionRegistry);
+        return new RspChangeRuneSlotShape(input, extensionRegistry);
       }
     };
 
@@ -996,13 +805,12 @@ public final class RspChangeRuneSlotShapeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034RspChangeRuneSlotShape.proto\022\013msggamed" +
-      "ata\032\rMsgUser.proto\032\024MsgUserMonster.proto" +
-      "\032\021MsgUserRune.proto\"\234\001\n\026RspChangeRuneSlo" +
-      "tShape\022\"\n\004user\030\001 \001(\0132\024.msggamedata.MsgUs" +
-      "er\0221\n\014user_monster\030\002 \001(\0132\033.msggamedata.M" +
-      "sgUserMonster\022+\n\tuser_rune\030\003 \001(\0132\030.msgga" +
-      "medata.MsgUserRuneB\023\n\021com.felania.msldbb" +
-      "\006proto3"
+      "ata\032\024MsgUserMonster.proto\032\021MsgUserItem.p" +
+      "roto\"\201\001\n\026RspChangeRuneSlotShape\0221\n\014user_" +
+      "monster\030\001 \001(\0132\033.msggamedata.MsgUserMonst" +
+      "er\0224\n\022rune_change_ticket\030\002 \001(\0132\030.msggame" +
+      "data.MsgUserItemB\023\n\021com.felania.msldbb\006p" +
+      "roto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1015,19 +823,17 @@ public final class RspChangeRuneSlotShapeOuterClass {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.felania.msldb.MsgUserOuterClass.getDescriptor(),
           com.felania.msldb.MsgUserMonsterOuterClass.getDescriptor(),
-          com.felania.msldb.MsgUserRuneOuterClass.getDescriptor(),
+          com.felania.msldb.MsgUserItemOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_RspChangeRuneSlotShape_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_msggamedata_RspChangeRuneSlotShape_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_RspChangeRuneSlotShape_descriptor,
-        new java.lang.String[] { "User", "UserMonster", "UserRune", });
-    com.felania.msldb.MsgUserOuterClass.getDescriptor();
+        new java.lang.String[] { "UserMonster", "RuneChangeTicket", });
     com.felania.msldb.MsgUserMonsterOuterClass.getDescriptor();
-    com.felania.msldb.MsgUserRuneOuterClass.getDescriptor();
+    com.felania.msldb.MsgUserItemOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

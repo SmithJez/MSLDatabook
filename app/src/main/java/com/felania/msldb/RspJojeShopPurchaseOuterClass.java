@@ -169,6 +169,9 @@ public final class RspJojeShopPurchaseOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2241,7 +2244,7 @@ public final class RspJojeShopPurchaseOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspJojeShopPurchase(input, extensionRegistry);
+        return new RspJojeShopPurchase(input, extensionRegistry);
       }
     };
 
@@ -2283,7 +2286,7 @@ public final class RspJojeShopPurchaseOuterClass {
       "e_shop\030\002 \001(\0132\034.msggamedata.MsgUserJojeSh" +
       "op\022,\n\nuser_items\030\003 \003(\0132\030.msggamedata.Msg" +
       "UserItem\022,\n\nuser_runes\030\004 \003(\0132\030.msggameda" +
-      "ta.MsgUserRune\0222\n\ruser_monsters\030\005 \003(\0132\033.",
+      "ta.MsgUserRune\0222\n\ruser_monsters\030\005 \003(\0132\033." +
       "msggamedata.MsgUserMonster\022>\n\021user_monst" +
       "er_dict\030\007 \003(\0132#.msggamedata.MsgUserMonst" +
       "erDictDataB\023\n\021com.felania.msldbb\006proto3"

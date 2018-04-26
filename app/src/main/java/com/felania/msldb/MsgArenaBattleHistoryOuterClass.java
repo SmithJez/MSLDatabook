@@ -106,6 +106,9 @@ public final class MsgArenaBattleHistoryOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1077,7 +1080,7 @@ public final class MsgArenaBattleHistoryOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgArenaBattleHistory(input, extensionRegistry);
+        return new MsgArenaBattleHistory(input, extensionRegistry);
       }
     };
 
@@ -1119,7 +1122,7 @@ public final class MsgArenaBattleHistoryOuterClass {
       "\001(\0162 .msggamedata.BattleEndResultType\022\032\n" +
       "\022gain_winning_point\030\004 \001(\r\022\031\n\021candidate_l" +
       "ist_id\030\005 \001(\004\022\020\n\010chunk_id\030\006 \001(\004\022\023\n\013battle" +
-      "_date\030\007 \001(\004\022-\n\004type\030\010 \001(\0162\037.msggamedata.",
+      "_date\030\007 \001(\004\022-\n\004type\030\010 \001(\0162\037.msggamedata." +
       "ArenaCandidateTypeB\023\n\021com.felania.msldbb" +
       "\006proto3"
     };

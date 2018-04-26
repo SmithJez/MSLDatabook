@@ -24,59 +24,101 @@ public final class MsgMonsterCostumeOuterClass {
     int getUid();
 
     /**
-     * <code>string base_resource_name = 2;</code>
+     * <code>fixed32 costume_name = 2;</code>
+     */
+    int getCostumeName();
+
+    /**
+     * <code>.msggamedata.MsgPrice price = 3;</code>
+     */
+    boolean hasPrice();
+    /**
+     * <code>.msggamedata.MsgPrice price = 3;</code>
+     */
+    com.felania.msldb.MsgPriceOuterClass.MsgPrice getPrice();
+    /**
+     * <code>.msggamedata.MsgPrice price = 3;</code>
+     */
+    com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder getPriceOrBuilder();
+
+    /**
+     * <code>.msggamedata.MsgShopItem.MarkType mark = 4;</code>
+     */
+    int getMarkValue();
+    /**
+     * <code>.msggamedata.MsgShopItem.MarkType mark = 4;</code>
+     */
+    com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType getMark();
+
+    /**
+     * <code>fixed32 desc3 = 5;</code>
+     */
+    int getDesc3();
+
+    /**
+     * <code>uint64 release_date = 6;</code>
+     */
+    long getReleaseDate();
+
+    /**
+     * <code>string base_resource_name = 7;</code>
      */
     java.lang.String getBaseResourceName();
     /**
-     * <code>string base_resource_name = 2;</code>
+     * <code>string base_resource_name = 7;</code>
      */
     com.google.protobuf.ByteString
         getBaseResourceNameBytes();
 
     /**
-     * <code>string texture_name = 3;</code>
+     * <code>string texture_name = 8;</code>
      */
     java.lang.String getTextureName();
     /**
-     * <code>string texture_name = 3;</code>
+     * <code>string texture_name = 8;</code>
      */
     com.google.protobuf.ByteString
         getTextureNameBytes();
 
     /**
-     * <code>float size_factor = 4;</code>
+     * <code>float size_factor = 9;</code>
      */
     float getSizeFactor();
 
     /**
-     * <code>uint32 stat_buff_hp = 5;</code>
+     * <code>uint32 stat_buff_hp = 10;</code>
      */
     int getStatBuffHp();
 
     /**
-     * <code>uint32 stat_buff_attack = 6;</code>
+     * <code>uint32 stat_buff_attack = 11;</code>
      */
     int getStatBuffAttack();
 
     /**
-     * <code>uint32 stat_buff_defence = 7;</code>
+     * <code>uint32 stat_buff_defence = 12;</code>
      */
     int getStatBuffDefence();
 
     /**
-     * <code>uint32 stat_buff_heal = 8;</code>
+     * <code>uint32 stat_buff_heal = 13;</code>
      */
     int getStatBuffHeal();
 
     /**
-     * <code>string base_texture_name = 9;</code>
+     * <code>string base_texture_name = 14;</code>
      */
     java.lang.String getBaseTextureName();
     /**
-     * <code>string base_texture_name = 9;</code>
+     * <code>string base_texture_name = 14;</code>
      */
     com.google.protobuf.ByteString
         getBaseTextureNameBytes();
+
+    /**
+     * <code>fixed32 base_resource_spieces = 15;</code>
+     */
+    int getBaseResourceSpieces();
   }
   /**
    * Protobuf type {@code msggamedata.MsgMonsterCostume}
@@ -92,6 +134,10 @@ public final class MsgMonsterCostumeOuterClass {
     }
     private MsgMonsterCostume() {
       uid_ = 0;
+      costumeName_ = 0;
+      mark_ = 0;
+      desc3_ = 0;
+      releaseDate_ = 0L;
       baseResourceName_ = "";
       textureName_ = "";
       sizeFactor_ = 0F;
@@ -100,6 +146,7 @@ public final class MsgMonsterCostumeOuterClass {
       statBuffDefence_ = 0;
       statBuffHeal_ = 0;
       baseTextureName_ = "";
+      baseResourceSpieces_ = 0;
     }
 
     @java.lang.Override
@@ -112,6 +159,9 @@ public final class MsgMonsterCostumeOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -135,47 +185,86 @@ public final class MsgMonsterCostumeOuterClass {
               uid_ = input.readFixed32();
               break;
             }
-            case 18: {
+            case 21: {
+
+              costumeName_ = input.readFixed32();
+              break;
+            }
+            case 26: {
+              com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder subBuilder = null;
+              if (price_ != null) {
+                subBuilder = price_.toBuilder();
+              }
+              price_ = input.readMessage(com.felania.msldb.MsgPriceOuterClass.MsgPrice.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(price_);
+                price_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 32: {
+              int rawValue = input.readEnum();
+
+              mark_ = rawValue;
+              break;
+            }
+            case 45: {
+
+              desc3_ = input.readFixed32();
+              break;
+            }
+            case 48: {
+
+              releaseDate_ = input.readUInt64();
+              break;
+            }
+            case 58: {
               java.lang.String s = input.readStringRequireUtf8();
 
               baseResourceName_ = s;
               break;
             }
-            case 26: {
+            case 66: {
               java.lang.String s = input.readStringRequireUtf8();
 
               textureName_ = s;
               break;
             }
-            case 37: {
+            case 77: {
 
               sizeFactor_ = input.readFloat();
               break;
             }
-            case 40: {
+            case 80: {
 
               statBuffHp_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 88: {
 
               statBuffAttack_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 96: {
 
               statBuffDefence_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 104: {
 
               statBuffHeal_ = input.readUInt32();
               break;
             }
-            case 74: {
+            case 114: {
               java.lang.String s = input.readStringRequireUtf8();
 
               baseTextureName_ = s;
+              break;
+            }
+            case 125: {
+
+              baseResourceSpieces_ = input.readFixed32();
               break;
             }
           }
@@ -211,10 +300,74 @@ public final class MsgMonsterCostumeOuterClass {
       return uid_;
     }
 
-    public static final int BASE_RESOURCE_NAME_FIELD_NUMBER = 2;
+    public static final int COSTUME_NAME_FIELD_NUMBER = 2;
+    private int costumeName_;
+    /**
+     * <code>fixed32 costume_name = 2;</code>
+     */
+    public int getCostumeName() {
+      return costumeName_;
+    }
+
+    public static final int PRICE_FIELD_NUMBER = 3;
+    private com.felania.msldb.MsgPriceOuterClass.MsgPrice price_;
+    /**
+     * <code>.msggamedata.MsgPrice price = 3;</code>
+     */
+    public boolean hasPrice() {
+      return price_ != null;
+    }
+    /**
+     * <code>.msggamedata.MsgPrice price = 3;</code>
+     */
+    public com.felania.msldb.MsgPriceOuterClass.MsgPrice getPrice() {
+      return price_ == null ? com.felania.msldb.MsgPriceOuterClass.MsgPrice.getDefaultInstance() : price_;
+    }
+    /**
+     * <code>.msggamedata.MsgPrice price = 3;</code>
+     */
+    public com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder getPriceOrBuilder() {
+      return getPrice();
+    }
+
+    public static final int MARK_FIELD_NUMBER = 4;
+    private int mark_;
+    /**
+     * <code>.msggamedata.MsgShopItem.MarkType mark = 4;</code>
+     */
+    public int getMarkValue() {
+      return mark_;
+    }
+    /**
+     * <code>.msggamedata.MsgShopItem.MarkType mark = 4;</code>
+     */
+    public com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType getMark() {
+      com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType result = com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.valueOf(mark_);
+      return result == null ? com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.UNRECOGNIZED : result;
+    }
+
+    public static final int DESC3_FIELD_NUMBER = 5;
+    private int desc3_;
+    /**
+     * <code>fixed32 desc3 = 5;</code>
+     */
+    public int getDesc3() {
+      return desc3_;
+    }
+
+    public static final int RELEASE_DATE_FIELD_NUMBER = 6;
+    private long releaseDate_;
+    /**
+     * <code>uint64 release_date = 6;</code>
+     */
+    public long getReleaseDate() {
+      return releaseDate_;
+    }
+
+    public static final int BASE_RESOURCE_NAME_FIELD_NUMBER = 7;
     private volatile java.lang.Object baseResourceName_;
     /**
-     * <code>string base_resource_name = 2;</code>
+     * <code>string base_resource_name = 7;</code>
      */
     public java.lang.String getBaseResourceName() {
       java.lang.Object ref = baseResourceName_;
@@ -229,7 +382,7 @@ public final class MsgMonsterCostumeOuterClass {
       }
     }
     /**
-     * <code>string base_resource_name = 2;</code>
+     * <code>string base_resource_name = 7;</code>
      */
     public com.google.protobuf.ByteString
         getBaseResourceNameBytes() {
@@ -245,10 +398,10 @@ public final class MsgMonsterCostumeOuterClass {
       }
     }
 
-    public static final int TEXTURE_NAME_FIELD_NUMBER = 3;
+    public static final int TEXTURE_NAME_FIELD_NUMBER = 8;
     private volatile java.lang.Object textureName_;
     /**
-     * <code>string texture_name = 3;</code>
+     * <code>string texture_name = 8;</code>
      */
     public java.lang.String getTextureName() {
       java.lang.Object ref = textureName_;
@@ -263,7 +416,7 @@ public final class MsgMonsterCostumeOuterClass {
       }
     }
     /**
-     * <code>string texture_name = 3;</code>
+     * <code>string texture_name = 8;</code>
      */
     public com.google.protobuf.ByteString
         getTextureNameBytes() {
@@ -279,55 +432,55 @@ public final class MsgMonsterCostumeOuterClass {
       }
     }
 
-    public static final int SIZE_FACTOR_FIELD_NUMBER = 4;
+    public static final int SIZE_FACTOR_FIELD_NUMBER = 9;
     private float sizeFactor_;
     /**
-     * <code>float size_factor = 4;</code>
+     * <code>float size_factor = 9;</code>
      */
     public float getSizeFactor() {
       return sizeFactor_;
     }
 
-    public static final int STAT_BUFF_HP_FIELD_NUMBER = 5;
+    public static final int STAT_BUFF_HP_FIELD_NUMBER = 10;
     private int statBuffHp_;
     /**
-     * <code>uint32 stat_buff_hp = 5;</code>
+     * <code>uint32 stat_buff_hp = 10;</code>
      */
     public int getStatBuffHp() {
       return statBuffHp_;
     }
 
-    public static final int STAT_BUFF_ATTACK_FIELD_NUMBER = 6;
+    public static final int STAT_BUFF_ATTACK_FIELD_NUMBER = 11;
     private int statBuffAttack_;
     /**
-     * <code>uint32 stat_buff_attack = 6;</code>
+     * <code>uint32 stat_buff_attack = 11;</code>
      */
     public int getStatBuffAttack() {
       return statBuffAttack_;
     }
 
-    public static final int STAT_BUFF_DEFENCE_FIELD_NUMBER = 7;
+    public static final int STAT_BUFF_DEFENCE_FIELD_NUMBER = 12;
     private int statBuffDefence_;
     /**
-     * <code>uint32 stat_buff_defence = 7;</code>
+     * <code>uint32 stat_buff_defence = 12;</code>
      */
     public int getStatBuffDefence() {
       return statBuffDefence_;
     }
 
-    public static final int STAT_BUFF_HEAL_FIELD_NUMBER = 8;
+    public static final int STAT_BUFF_HEAL_FIELD_NUMBER = 13;
     private int statBuffHeal_;
     /**
-     * <code>uint32 stat_buff_heal = 8;</code>
+     * <code>uint32 stat_buff_heal = 13;</code>
      */
     public int getStatBuffHeal() {
       return statBuffHeal_;
     }
 
-    public static final int BASE_TEXTURE_NAME_FIELD_NUMBER = 9;
+    public static final int BASE_TEXTURE_NAME_FIELD_NUMBER = 14;
     private volatile java.lang.Object baseTextureName_;
     /**
-     * <code>string base_texture_name = 9;</code>
+     * <code>string base_texture_name = 14;</code>
      */
     public java.lang.String getBaseTextureName() {
       java.lang.Object ref = baseTextureName_;
@@ -342,7 +495,7 @@ public final class MsgMonsterCostumeOuterClass {
       }
     }
     /**
-     * <code>string base_texture_name = 9;</code>
+     * <code>string base_texture_name = 14;</code>
      */
     public com.google.protobuf.ByteString
         getBaseTextureNameBytes() {
@@ -356,6 +509,15 @@ public final class MsgMonsterCostumeOuterClass {
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
+    }
+
+    public static final int BASE_RESOURCE_SPIECES_FIELD_NUMBER = 15;
+    private int baseResourceSpieces_;
+    /**
+     * <code>fixed32 base_resource_spieces = 15;</code>
+     */
+    public int getBaseResourceSpieces() {
+      return baseResourceSpieces_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -373,29 +535,47 @@ public final class MsgMonsterCostumeOuterClass {
       if (uid_ != 0) {
         output.writeFixed32(1, uid_);
       }
+      if (costumeName_ != 0) {
+        output.writeFixed32(2, costumeName_);
+      }
+      if (price_ != null) {
+        output.writeMessage(3, getPrice());
+      }
+      if (mark_ != com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.MarkTypeNULL.getNumber()) {
+        output.writeEnum(4, mark_);
+      }
+      if (desc3_ != 0) {
+        output.writeFixed32(5, desc3_);
+      }
+      if (releaseDate_ != 0L) {
+        output.writeUInt64(6, releaseDate_);
+      }
       if (!getBaseResourceNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, baseResourceName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, baseResourceName_);
       }
       if (!getTextureNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, textureName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, textureName_);
       }
       if (sizeFactor_ != 0F) {
-        output.writeFloat(4, sizeFactor_);
+        output.writeFloat(9, sizeFactor_);
       }
       if (statBuffHp_ != 0) {
-        output.writeUInt32(5, statBuffHp_);
+        output.writeUInt32(10, statBuffHp_);
       }
       if (statBuffAttack_ != 0) {
-        output.writeUInt32(6, statBuffAttack_);
+        output.writeUInt32(11, statBuffAttack_);
       }
       if (statBuffDefence_ != 0) {
-        output.writeUInt32(7, statBuffDefence_);
+        output.writeUInt32(12, statBuffDefence_);
       }
       if (statBuffHeal_ != 0) {
-        output.writeUInt32(8, statBuffHeal_);
+        output.writeUInt32(13, statBuffHeal_);
       }
       if (!getBaseTextureNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, baseTextureName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, baseTextureName_);
+      }
+      if (baseResourceSpieces_ != 0) {
+        output.writeFixed32(15, baseResourceSpieces_);
       }
       unknownFields.writeTo(output);
     }
@@ -409,34 +589,58 @@ public final class MsgMonsterCostumeOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeFixed32Size(1, uid_);
       }
+      if (costumeName_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed32Size(2, costumeName_);
+      }
+      if (price_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getPrice());
+      }
+      if (mark_ != com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.MarkTypeNULL.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(4, mark_);
+      }
+      if (desc3_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed32Size(5, desc3_);
+      }
+      if (releaseDate_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(6, releaseDate_);
+      }
       if (!getBaseResourceNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, baseResourceName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, baseResourceName_);
       }
       if (!getTextureNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, textureName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, textureName_);
       }
       if (sizeFactor_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(4, sizeFactor_);
+          .computeFloatSize(9, sizeFactor_);
       }
       if (statBuffHp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, statBuffHp_);
+          .computeUInt32Size(10, statBuffHp_);
       }
       if (statBuffAttack_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, statBuffAttack_);
+          .computeUInt32Size(11, statBuffAttack_);
       }
       if (statBuffDefence_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, statBuffDefence_);
+          .computeUInt32Size(12, statBuffDefence_);
       }
       if (statBuffHeal_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, statBuffHeal_);
+          .computeUInt32Size(13, statBuffHeal_);
       }
       if (!getBaseTextureNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, baseTextureName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, baseTextureName_);
+      }
+      if (baseResourceSpieces_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed32Size(15, baseResourceSpieces_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -456,6 +660,18 @@ public final class MsgMonsterCostumeOuterClass {
       boolean result = true;
       result = result && (getUid()
           == other.getUid());
+      result = result && (getCostumeName()
+          == other.getCostumeName());
+      result = result && (hasPrice() == other.hasPrice());
+      if (hasPrice()) {
+        result = result && getPrice()
+            .equals(other.getPrice());
+      }
+      result = result && mark_ == other.mark_;
+      result = result && (getDesc3()
+          == other.getDesc3());
+      result = result && (getReleaseDate()
+          == other.getReleaseDate());
       result = result && getBaseResourceName()
           .equals(other.getBaseResourceName());
       result = result && getTextureName()
@@ -474,6 +690,8 @@ public final class MsgMonsterCostumeOuterClass {
           == other.getStatBuffHeal());
       result = result && getBaseTextureName()
           .equals(other.getBaseTextureName());
+      result = result && (getBaseResourceSpieces()
+          == other.getBaseResourceSpieces());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -487,6 +705,19 @@ public final class MsgMonsterCostumeOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
+      hash = (37 * hash) + COSTUME_NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getCostumeName();
+      if (hasPrice()) {
+        hash = (37 * hash) + PRICE_FIELD_NUMBER;
+        hash = (53 * hash) + getPrice().hashCode();
+      }
+      hash = (37 * hash) + MARK_FIELD_NUMBER;
+      hash = (53 * hash) + mark_;
+      hash = (37 * hash) + DESC3_FIELD_NUMBER;
+      hash = (53 * hash) + getDesc3();
+      hash = (37 * hash) + RELEASE_DATE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getReleaseDate());
       hash = (37 * hash) + BASE_RESOURCE_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getBaseResourceName().hashCode();
       hash = (37 * hash) + TEXTURE_NAME_FIELD_NUMBER;
@@ -504,6 +735,8 @@ public final class MsgMonsterCostumeOuterClass {
       hash = (53 * hash) + getStatBuffHeal();
       hash = (37 * hash) + BASE_TEXTURE_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getBaseTextureName().hashCode();
+      hash = (37 * hash) + BASE_RESOURCE_SPIECES_FIELD_NUMBER;
+      hash = (53 * hash) + getBaseResourceSpieces();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -635,6 +868,20 @@ public final class MsgMonsterCostumeOuterClass {
         super.clear();
         uid_ = 0;
 
+        costumeName_ = 0;
+
+        if (priceBuilder_ == null) {
+          price_ = null;
+        } else {
+          price_ = null;
+          priceBuilder_ = null;
+        }
+        mark_ = 0;
+
+        desc3_ = 0;
+
+        releaseDate_ = 0L;
+
         baseResourceName_ = "";
 
         textureName_ = "";
@@ -650,6 +897,8 @@ public final class MsgMonsterCostumeOuterClass {
         statBuffHeal_ = 0;
 
         baseTextureName_ = "";
+
+        baseResourceSpieces_ = 0;
 
         return this;
       }
@@ -674,6 +923,15 @@ public final class MsgMonsterCostumeOuterClass {
       public com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume buildPartial() {
         com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume result = new com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume(this);
         result.uid_ = uid_;
+        result.costumeName_ = costumeName_;
+        if (priceBuilder_ == null) {
+          result.price_ = price_;
+        } else {
+          result.price_ = priceBuilder_.build();
+        }
+        result.mark_ = mark_;
+        result.desc3_ = desc3_;
+        result.releaseDate_ = releaseDate_;
         result.baseResourceName_ = baseResourceName_;
         result.textureName_ = textureName_;
         result.sizeFactor_ = sizeFactor_;
@@ -682,6 +940,7 @@ public final class MsgMonsterCostumeOuterClass {
         result.statBuffDefence_ = statBuffDefence_;
         result.statBuffHeal_ = statBuffHeal_;
         result.baseTextureName_ = baseTextureName_;
+        result.baseResourceSpieces_ = baseResourceSpieces_;
         onBuilt();
         return result;
       }
@@ -726,6 +985,21 @@ public final class MsgMonsterCostumeOuterClass {
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
+        if (other.getCostumeName() != 0) {
+          setCostumeName(other.getCostumeName());
+        }
+        if (other.hasPrice()) {
+          mergePrice(other.getPrice());
+        }
+        if (other.mark_ != 0) {
+          setMarkValue(other.getMarkValue());
+        }
+        if (other.getDesc3() != 0) {
+          setDesc3(other.getDesc3());
+        }
+        if (other.getReleaseDate() != 0L) {
+          setReleaseDate(other.getReleaseDate());
+        }
         if (!other.getBaseResourceName().isEmpty()) {
           baseResourceName_ = other.baseResourceName_;
           onChanged();
@@ -752,6 +1026,9 @@ public final class MsgMonsterCostumeOuterClass {
         if (!other.getBaseTextureName().isEmpty()) {
           baseTextureName_ = other.baseTextureName_;
           onChanged();
+        }
+        if (other.getBaseResourceSpieces() != 0) {
+          setBaseResourceSpieces(other.getBaseResourceSpieces());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -806,9 +1083,248 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
 
+      private int costumeName_ ;
+      /**
+       * <code>fixed32 costume_name = 2;</code>
+       */
+      public int getCostumeName() {
+        return costumeName_;
+      }
+      /**
+       * <code>fixed32 costume_name = 2;</code>
+       */
+      public Builder setCostumeName(int value) {
+        
+        costumeName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed32 costume_name = 2;</code>
+       */
+      public Builder clearCostumeName() {
+        
+        costumeName_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.felania.msldb.MsgPriceOuterClass.MsgPrice price_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.felania.msldb.MsgPriceOuterClass.MsgPrice, com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder, com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder> priceBuilder_;
+      /**
+       * <code>.msggamedata.MsgPrice price = 3;</code>
+       */
+      public boolean hasPrice() {
+        return priceBuilder_ != null || price_ != null;
+      }
+      /**
+       * <code>.msggamedata.MsgPrice price = 3;</code>
+       */
+      public com.felania.msldb.MsgPriceOuterClass.MsgPrice getPrice() {
+        if (priceBuilder_ == null) {
+          return price_ == null ? com.felania.msldb.MsgPriceOuterClass.MsgPrice.getDefaultInstance() : price_;
+        } else {
+          return priceBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.msggamedata.MsgPrice price = 3;</code>
+       */
+      public Builder setPrice(com.felania.msldb.MsgPriceOuterClass.MsgPrice value) {
+        if (priceBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          price_ = value;
+          onChanged();
+        } else {
+          priceBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgPrice price = 3;</code>
+       */
+      public Builder setPrice(
+          com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder builderForValue) {
+        if (priceBuilder_ == null) {
+          price_ = builderForValue.build();
+          onChanged();
+        } else {
+          priceBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgPrice price = 3;</code>
+       */
+      public Builder mergePrice(com.felania.msldb.MsgPriceOuterClass.MsgPrice value) {
+        if (priceBuilder_ == null) {
+          if (price_ != null) {
+            price_ =
+              com.felania.msldb.MsgPriceOuterClass.MsgPrice.newBuilder(price_).mergeFrom(value).buildPartial();
+          } else {
+            price_ = value;
+          }
+          onChanged();
+        } else {
+          priceBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgPrice price = 3;</code>
+       */
+      public Builder clearPrice() {
+        if (priceBuilder_ == null) {
+          price_ = null;
+          onChanged();
+        } else {
+          price_ = null;
+          priceBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgPrice price = 3;</code>
+       */
+      public com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder getPriceBuilder() {
+        
+        onChanged();
+        return getPriceFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.msggamedata.MsgPrice price = 3;</code>
+       */
+      public com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder getPriceOrBuilder() {
+        if (priceBuilder_ != null) {
+          return priceBuilder_.getMessageOrBuilder();
+        } else {
+          return price_ == null ?
+              com.felania.msldb.MsgPriceOuterClass.MsgPrice.getDefaultInstance() : price_;
+        }
+      }
+      /**
+       * <code>.msggamedata.MsgPrice price = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.felania.msldb.MsgPriceOuterClass.MsgPrice, com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder, com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder> 
+          getPriceFieldBuilder() {
+        if (priceBuilder_ == null) {
+          priceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.felania.msldb.MsgPriceOuterClass.MsgPrice, com.felania.msldb.MsgPriceOuterClass.MsgPrice.Builder, com.felania.msldb.MsgPriceOuterClass.MsgPriceOrBuilder>(
+                  getPrice(),
+                  getParentForChildren(),
+                  isClean());
+          price_ = null;
+        }
+        return priceBuilder_;
+      }
+
+      private int mark_ = 0;
+      /**
+       * <code>.msggamedata.MsgShopItem.MarkType mark = 4;</code>
+       */
+      public int getMarkValue() {
+        return mark_;
+      }
+      /**
+       * <code>.msggamedata.MsgShopItem.MarkType mark = 4;</code>
+       */
+      public Builder setMarkValue(int value) {
+        mark_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgShopItem.MarkType mark = 4;</code>
+       */
+      public com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType getMark() {
+        com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType result = com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.valueOf(mark_);
+        return result == null ? com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.msggamedata.MsgShopItem.MarkType mark = 4;</code>
+       */
+      public Builder setMark(com.felania.msldb.MsgShopItemOuterClass.MsgShopItem.MarkType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        mark_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgShopItem.MarkType mark = 4;</code>
+       */
+      public Builder clearMark() {
+        
+        mark_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int desc3_ ;
+      /**
+       * <code>fixed32 desc3 = 5;</code>
+       */
+      public int getDesc3() {
+        return desc3_;
+      }
+      /**
+       * <code>fixed32 desc3 = 5;</code>
+       */
+      public Builder setDesc3(int value) {
+        
+        desc3_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed32 desc3 = 5;</code>
+       */
+      public Builder clearDesc3() {
+        
+        desc3_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long releaseDate_ ;
+      /**
+       * <code>uint64 release_date = 6;</code>
+       */
+      public long getReleaseDate() {
+        return releaseDate_;
+      }
+      /**
+       * <code>uint64 release_date = 6;</code>
+       */
+      public Builder setReleaseDate(long value) {
+        
+        releaseDate_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 release_date = 6;</code>
+       */
+      public Builder clearReleaseDate() {
+        
+        releaseDate_ = 0L;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object baseResourceName_ = "";
       /**
-       * <code>string base_resource_name = 2;</code>
+       * <code>string base_resource_name = 7;</code>
        */
       public java.lang.String getBaseResourceName() {
         java.lang.Object ref = baseResourceName_;
@@ -823,7 +1339,7 @@ public final class MsgMonsterCostumeOuterClass {
         }
       }
       /**
-       * <code>string base_resource_name = 2;</code>
+       * <code>string base_resource_name = 7;</code>
        */
       public com.google.protobuf.ByteString
           getBaseResourceNameBytes() {
@@ -839,7 +1355,7 @@ public final class MsgMonsterCostumeOuterClass {
         }
       }
       /**
-       * <code>string base_resource_name = 2;</code>
+       * <code>string base_resource_name = 7;</code>
        */
       public Builder setBaseResourceName(
           java.lang.String value) {
@@ -852,7 +1368,7 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
       /**
-       * <code>string base_resource_name = 2;</code>
+       * <code>string base_resource_name = 7;</code>
        */
       public Builder clearBaseResourceName() {
         
@@ -861,7 +1377,7 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
       /**
-       * <code>string base_resource_name = 2;</code>
+       * <code>string base_resource_name = 7;</code>
        */
       public Builder setBaseResourceNameBytes(
           com.google.protobuf.ByteString value) {
@@ -877,7 +1393,7 @@ public final class MsgMonsterCostumeOuterClass {
 
       private java.lang.Object textureName_ = "";
       /**
-       * <code>string texture_name = 3;</code>
+       * <code>string texture_name = 8;</code>
        */
       public java.lang.String getTextureName() {
         java.lang.Object ref = textureName_;
@@ -892,7 +1408,7 @@ public final class MsgMonsterCostumeOuterClass {
         }
       }
       /**
-       * <code>string texture_name = 3;</code>
+       * <code>string texture_name = 8;</code>
        */
       public com.google.protobuf.ByteString
           getTextureNameBytes() {
@@ -908,7 +1424,7 @@ public final class MsgMonsterCostumeOuterClass {
         }
       }
       /**
-       * <code>string texture_name = 3;</code>
+       * <code>string texture_name = 8;</code>
        */
       public Builder setTextureName(
           java.lang.String value) {
@@ -921,7 +1437,7 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
       /**
-       * <code>string texture_name = 3;</code>
+       * <code>string texture_name = 8;</code>
        */
       public Builder clearTextureName() {
         
@@ -930,7 +1446,7 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
       /**
-       * <code>string texture_name = 3;</code>
+       * <code>string texture_name = 8;</code>
        */
       public Builder setTextureNameBytes(
           com.google.protobuf.ByteString value) {
@@ -946,13 +1462,13 @@ public final class MsgMonsterCostumeOuterClass {
 
       private float sizeFactor_ ;
       /**
-       * <code>float size_factor = 4;</code>
+       * <code>float size_factor = 9;</code>
        */
       public float getSizeFactor() {
         return sizeFactor_;
       }
       /**
-       * <code>float size_factor = 4;</code>
+       * <code>float size_factor = 9;</code>
        */
       public Builder setSizeFactor(float value) {
         
@@ -961,7 +1477,7 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
       /**
-       * <code>float size_factor = 4;</code>
+       * <code>float size_factor = 9;</code>
        */
       public Builder clearSizeFactor() {
         
@@ -972,13 +1488,13 @@ public final class MsgMonsterCostumeOuterClass {
 
       private int statBuffHp_ ;
       /**
-       * <code>uint32 stat_buff_hp = 5;</code>
+       * <code>uint32 stat_buff_hp = 10;</code>
        */
       public int getStatBuffHp() {
         return statBuffHp_;
       }
       /**
-       * <code>uint32 stat_buff_hp = 5;</code>
+       * <code>uint32 stat_buff_hp = 10;</code>
        */
       public Builder setStatBuffHp(int value) {
         
@@ -987,7 +1503,7 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stat_buff_hp = 5;</code>
+       * <code>uint32 stat_buff_hp = 10;</code>
        */
       public Builder clearStatBuffHp() {
         
@@ -998,13 +1514,13 @@ public final class MsgMonsterCostumeOuterClass {
 
       private int statBuffAttack_ ;
       /**
-       * <code>uint32 stat_buff_attack = 6;</code>
+       * <code>uint32 stat_buff_attack = 11;</code>
        */
       public int getStatBuffAttack() {
         return statBuffAttack_;
       }
       /**
-       * <code>uint32 stat_buff_attack = 6;</code>
+       * <code>uint32 stat_buff_attack = 11;</code>
        */
       public Builder setStatBuffAttack(int value) {
         
@@ -1013,7 +1529,7 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stat_buff_attack = 6;</code>
+       * <code>uint32 stat_buff_attack = 11;</code>
        */
       public Builder clearStatBuffAttack() {
         
@@ -1024,13 +1540,13 @@ public final class MsgMonsterCostumeOuterClass {
 
       private int statBuffDefence_ ;
       /**
-       * <code>uint32 stat_buff_defence = 7;</code>
+       * <code>uint32 stat_buff_defence = 12;</code>
        */
       public int getStatBuffDefence() {
         return statBuffDefence_;
       }
       /**
-       * <code>uint32 stat_buff_defence = 7;</code>
+       * <code>uint32 stat_buff_defence = 12;</code>
        */
       public Builder setStatBuffDefence(int value) {
         
@@ -1039,7 +1555,7 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stat_buff_defence = 7;</code>
+       * <code>uint32 stat_buff_defence = 12;</code>
        */
       public Builder clearStatBuffDefence() {
         
@@ -1050,13 +1566,13 @@ public final class MsgMonsterCostumeOuterClass {
 
       private int statBuffHeal_ ;
       /**
-       * <code>uint32 stat_buff_heal = 8;</code>
+       * <code>uint32 stat_buff_heal = 13;</code>
        */
       public int getStatBuffHeal() {
         return statBuffHeal_;
       }
       /**
-       * <code>uint32 stat_buff_heal = 8;</code>
+       * <code>uint32 stat_buff_heal = 13;</code>
        */
       public Builder setStatBuffHeal(int value) {
         
@@ -1065,7 +1581,7 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stat_buff_heal = 8;</code>
+       * <code>uint32 stat_buff_heal = 13;</code>
        */
       public Builder clearStatBuffHeal() {
         
@@ -1076,7 +1592,7 @@ public final class MsgMonsterCostumeOuterClass {
 
       private java.lang.Object baseTextureName_ = "";
       /**
-       * <code>string base_texture_name = 9;</code>
+       * <code>string base_texture_name = 14;</code>
        */
       public java.lang.String getBaseTextureName() {
         java.lang.Object ref = baseTextureName_;
@@ -1091,7 +1607,7 @@ public final class MsgMonsterCostumeOuterClass {
         }
       }
       /**
-       * <code>string base_texture_name = 9;</code>
+       * <code>string base_texture_name = 14;</code>
        */
       public com.google.protobuf.ByteString
           getBaseTextureNameBytes() {
@@ -1107,7 +1623,7 @@ public final class MsgMonsterCostumeOuterClass {
         }
       }
       /**
-       * <code>string base_texture_name = 9;</code>
+       * <code>string base_texture_name = 14;</code>
        */
       public Builder setBaseTextureName(
           java.lang.String value) {
@@ -1120,7 +1636,7 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
       /**
-       * <code>string base_texture_name = 9;</code>
+       * <code>string base_texture_name = 14;</code>
        */
       public Builder clearBaseTextureName() {
         
@@ -1129,7 +1645,7 @@ public final class MsgMonsterCostumeOuterClass {
         return this;
       }
       /**
-       * <code>string base_texture_name = 9;</code>
+       * <code>string base_texture_name = 14;</code>
        */
       public Builder setBaseTextureNameBytes(
           com.google.protobuf.ByteString value) {
@@ -1139,6 +1655,32 @@ public final class MsgMonsterCostumeOuterClass {
   checkByteStringIsUtf8(value);
         
         baseTextureName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int baseResourceSpieces_ ;
+      /**
+       * <code>fixed32 base_resource_spieces = 15;</code>
+       */
+      public int getBaseResourceSpieces() {
+        return baseResourceSpieces_;
+      }
+      /**
+       * <code>fixed32 base_resource_spieces = 15;</code>
+       */
+      public Builder setBaseResourceSpieces(int value) {
+        
+        baseResourceSpieces_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed32 base_resource_spieces = 15;</code>
+       */
+      public Builder clearBaseResourceSpieces() {
+        
+        baseResourceSpieces_ = 0;
         onChanged();
         return this;
       }
@@ -1172,7 +1714,7 @@ public final class MsgMonsterCostumeOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgMonsterCostume(input, extensionRegistry);
+        return new MsgMonsterCostume(input, extensionRegistry);
       }
     };
 
@@ -1205,14 +1747,19 @@ public final class MsgMonsterCostumeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027MsgMonsterCostume.proto\022\013msggamedata\"\345" +
-      "\001\n\021MsgMonsterCostume\022\013\n\003uid\030\001 \001(\007\022\032\n\022bas" +
-      "e_resource_name\030\002 \001(\t\022\024\n\014texture_name\030\003 " +
-      "\001(\t\022\023\n\013size_factor\030\004 \001(\002\022\024\n\014stat_buff_hp" +
-      "\030\005 \001(\r\022\030\n\020stat_buff_attack\030\006 \001(\r\022\031\n\021stat" +
-      "_buff_defence\030\007 \001(\r\022\026\n\016stat_buff_heal\030\010 " +
-      "\001(\r\022\031\n\021base_texture_name\030\t \001(\tB\023\n\021com.fe" +
-      "lania.msldbb\006proto3"
+      "\n\027MsgMonsterCostume.proto\022\013msggamedata\032\016" +
+      "MsgPrice.proto\032\021MsgShopItem.proto\"\226\003\n\021Ms" +
+      "gMonsterCostume\022\013\n\003uid\030\001 \001(\007\022\024\n\014costume_" +
+      "name\030\002 \001(\007\022$\n\005price\030\003 \001(\0132\025.msggamedata." +
+      "MsgPrice\022/\n\004mark\030\004 \001(\0162!.msggamedata.Msg" +
+      "ShopItem.MarkType\022\r\n\005desc3\030\005 \001(\007\022\024\n\014rele" +
+      "ase_date\030\006 \001(\004\022\032\n\022base_resource_name\030\007 \001" +
+      "(\t\022\024\n\014texture_name\030\010 \001(\t\022\023\n\013size_factor\030" +
+      "\t \001(\002\022\024\n\014stat_buff_hp\030\n \001(\r\022\030\n\020stat_buff" +
+      "_attack\030\013 \001(\r\022\031\n\021stat_buff_defence\030\014 \001(\r" +
+      "\022\026\n\016stat_buff_heal\030\r \001(\r\022\031\n\021base_texture" +
+      "_name\030\016 \001(\t\022\035\n\025base_resource_spieces\030\017 \001" +
+      "(\007B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1225,13 +1772,17 @@ public final class MsgMonsterCostumeOuterClass {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.felania.msldb.MsgPriceOuterClass.getDescriptor(),
+          com.felania.msldb.MsgShopItemOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_MsgMonsterCostume_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_msggamedata_MsgMonsterCostume_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgMonsterCostume_descriptor,
-        new java.lang.String[] { "Uid", "BaseResourceName", "TextureName", "SizeFactor", "StatBuffHp", "StatBuffAttack", "StatBuffDefence", "StatBuffHeal", "BaseTextureName", });
+        new java.lang.String[] { "Uid", "CostumeName", "Price", "Mark", "Desc3", "ReleaseDate", "BaseResourceName", "TextureName", "SizeFactor", "StatBuffHp", "StatBuffAttack", "StatBuffDefence", "StatBuffHeal", "BaseTextureName", "BaseResourceSpieces", });
+    com.felania.msldb.MsgPriceOuterClass.getDescriptor();
+    com.felania.msldb.MsgShopItemOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

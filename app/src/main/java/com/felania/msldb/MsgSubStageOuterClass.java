@@ -328,6 +328,9 @@ public final class MsgSubStageOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -4139,7 +4142,7 @@ public final class MsgSubStageOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgSubStage(input, extensionRegistry);
+        return new MsgSubStage(input, extensionRegistry);
       }
     };
 
@@ -4181,7 +4184,7 @@ public final class MsgSubStageOuterClass {
       "cts\030\007 \003(\0132\036.msggamedata.MsgSubStageEffec" +
       "t\0223\n\016normal_battles\030\t \003(\0132\033.msggamedata." +
       "MsgStageBattle\0221\n\014hard_battles\030\n \003(\0132\033.m" +
-      "sggamedata.MsgStageBattle\0221\n\014hell_battle",
+      "sggamedata.MsgStageBattle\0221\n\014hell_battle" +
       "s\030\013 \003(\0132\033.msggamedata.MsgStageBattle\022\036\n\026" +
       "normal_required_energy\030\014 \001(\r\022\034\n\024hard_req" +
       "uired_energy\030\r \001(\r\022\034\n\024hell_required_ener" +
@@ -4191,7 +4194,7 @@ public final class MsgSubStageOuterClass {
       "s\030\025 \003(\007\022\030\n\020boss_start_scene\030\026 \001(\t\022\017\n\007tag" +
       "_txt\030\027 \001(\007\0228\n\014reward_probs\030\030 \003(\0132\".msgga" +
       "medata.MsgSubStageRewardProb\022B\n\014reward_m" +
-      "usts\030\031 \003(\0132,.msggamedata.MsgSubStageRewa",
+      "usts\030\031 \003(\0132,.msggamedata.MsgSubStageRewa" +
       "rdMustDifficulty\022\026\n\016reward_general\030\032 \001(\r" +
       "B\023\n\021com.felania.msldbb\006proto3"
     };

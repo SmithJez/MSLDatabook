@@ -136,6 +136,9 @@ public final class MsgBattleRewardInfoOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1632,7 +1635,7 @@ public final class MsgBattleRewardInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgBattleRewardInfo(input, extensionRegistry);
+        return new MsgBattleRewardInfo(input, extensionRegistry);
       }
     };
 
@@ -1674,7 +1677,7 @@ public final class MsgBattleRewardInfoOuterClass {
       "a\030\002 \001(\r\022.\n\014reward_grade\030\003 \001(\0162\030.msggamed" +
       "ata.RewardGrade\022&\n\004item\030\004 \001(\0132\030.msggamed" +
       "ata.MsgUserItem\0221\n\014user_monster\030\005 \001(\0132\033." +
-      "msggamedata.MsgUserMonster\022&\n\004rune\030\006 \001(\013",
+      "msggamedata.MsgUserMonster\022&\n\004rune\030\006 \001(\013" +
       "2\030.msggamedata.MsgUserRune\0227\n\nsoul_stone" +
       "\030\007 \001(\0132#.msggamedata.MsgUserMonsterDictD" +
       "ata\0228\n\nskill_book\030\010 \001(\0132$.msggamedata.Ms" +

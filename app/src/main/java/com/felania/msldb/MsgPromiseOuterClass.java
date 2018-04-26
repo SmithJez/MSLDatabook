@@ -134,6 +134,9 @@ public final class MsgPromiseOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1499,7 +1502,7 @@ public final class MsgPromiseOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgPromise(input, extensionRegistry);
+        return new MsgPromise(input, extensionRegistry);
       }
     };
 
@@ -1541,7 +1544,7 @@ public final class MsgPromiseOuterClass {
       " \003(\007\022\027\n\017daily_bonus_uid\030\t \001(\007\022\023\n\013monster" +
       "_uid\030\n \001(\007\022\024\n\014comment_uids\030\013 \003(\007\"F\n\016MsgP" +
       "romiseType\022\026\n\022MsgPromiseTypeNULL\020\000\022\r\n\tPT" +
-      "_Newbie\020\001\022\r\n\tPT_Return\020\002B\023\n\021com.felania.",
+      "_Newbie\020\001\022\r\n\tPT_Return\020\002B\023\n\021com.felania." +
       "msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

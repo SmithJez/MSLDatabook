@@ -96,6 +96,9 @@ public final class RspSendCaptureFestivalEventMessageOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1139,7 +1142,7 @@ public final class RspSendCaptureFestivalEventMessageOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspSendCaptureFestivalEventMessage(input, extensionRegistry);
+        return new RspSendCaptureFestivalEventMessage(input, extensionRegistry);
       }
     };
 
@@ -1181,7 +1184,7 @@ public final class RspSendCaptureFestivalEventMessageOuterClass {
       "estival\022B\n\025user_capture_festival\030\002 \001(\0132#" +
       ".msggamedata.MsgUserCaptureFestival\022B\n\re" +
       "vent_message\030\003 \001(\0132+.msggamedata.MsgCapt" +
-      "ureFestivalEventMessage\022\032\n\022reward_ticket",
+      "ureFestivalEventMessage\022\032\n\022reward_ticket" +
       "_uids\030\004 \003(\rB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

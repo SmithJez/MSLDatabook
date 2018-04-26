@@ -127,6 +127,9 @@ public final class MsgGeneralDungeonStageInfoOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -544,6 +547,9 @@ public final class MsgGeneralDungeonStageInfoOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -938,7 +944,7 @@ public final class MsgGeneralDungeonStageInfoOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new MsgUnlockConditionUserLev(input, extensionRegistry);
+          return new MsgUnlockConditionUserLev(input, extensionRegistry);
         }
       };
 
@@ -998,6 +1004,9 @@ public final class MsgGeneralDungeonStageInfoOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1449,7 +1458,7 @@ public final class MsgGeneralDungeonStageInfoOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new MsgUnlockConditionClearSubStage(input, extensionRegistry);
+          return new MsgUnlockConditionClearSubStage(input, extensionRegistry);
         }
       };
 
@@ -2659,7 +2668,7 @@ public final class MsgGeneralDungeonStageInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgGeneralDungeonStageInfo(input, extensionRegistry);
+        return new MsgGeneralDungeonStageInfo(input, extensionRegistry);
       }
     };
 
@@ -2711,7 +2720,7 @@ public final class MsgGeneralDungeonStageInfoOuterClass {
       "edata.MsgGeneralDungeonStageInfo.MsgUnlo" +
       "ckConditionClearSubStage\022I\n\014reset_method" +
       "\030\003 \001(\01623.msggamedata.MsgGeneralDungeonSt" +
-      "ageInfo.ResetMethod\022/\n\020hard_reset_price\030",
+      "ageInfo.ResetMethod\022/\n\020hard_reset_price\030" +
       "\004 \001(\0132\025.msggamedata.MsgPrice\022B\n\topen_day" +
       "s\030\005 \003(\0162/.msggamedata.MsgGeneralDungeonS" +
       "tageInfo.OpenDay\022\030\n\020clear_hard_reset\030\006 \001" +
@@ -2721,7 +2730,7 @@ public final class MsgGeneralDungeonStageInfoOuterClass {
       "e_uid\030\001 \001(\007\022\022\n\ndifficulty\030\002 \001(\r\"&\n\013Reset" +
       "Method\022\013\n\007RM_None\020\000\022\n\n\006RM_Day\020\001\"y\n\007OpenD" +
       "ay\022\n\n\006OD_Mon\020\000\022\n\n\006OD_Tue\020\001\022\n\n\006OD_Wed\020\002\022\n" +
-      "\n\006OD_Thu\020\003\022\n\n\006OD_Fri\020\004\022\n\n\006OD_Sat\020\005\022\n\n\006OD",
+      "\n\006OD_Thu\020\003\022\n\n\006OD_Fri\020\004\022\n\n\006OD_Sat\020\005\022\n\n\006OD" +
       "_Sun\020\006\022\016\n\nOD_WeekEnd\020\007\022\n\n\006OD_All\020\010B\023\n\021co" +
       "m.felania.msldbb\006proto3"
     };

@@ -508,6 +508,9 @@ public final class MsgShopItemOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       int mutable_bitField1_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -1092,49 +1095,57 @@ public final class MsgShopItemOuterClass {
        */
       IT_ExtendMonsterSlot(52),
       /**
-       * <code>IT_WinkyDisplay = 54;</code>
+       * <code>IT_MaxExtendMonsterSlot = 53;</code>
        */
-      IT_WinkyDisplay(54),
+      IT_MaxExtendMonsterSlot(53),
       /**
-       * <code>IT_Winky = 55;</code>
+       * <code>IT_WinkyDisplay = 55;</code>
        */
-      IT_Winky(55),
+      IT_WinkyDisplay(55),
       /**
-       * <code>IT_MonsterDisplay = 56;</code>
+       * <code>IT_Winky = 56;</code>
        */
-      IT_MonsterDisplay(56),
+      IT_Winky(56),
       /**
-       * <code>IT_ExtendMonsterStorage = 57;</code>
+       * <code>IT_MonsterDisplay = 57;</code>
        */
-      IT_ExtendMonsterStorage(57),
+      IT_MonsterDisplay(57),
       /**
-       * <code>IT_FestivalTicket = 58;</code>
+       * <code>IT_ExtendMonsterStorage = 58;</code>
        */
-      IT_FestivalTicket(58),
+      IT_ExtendMonsterStorage(58),
       /**
-       * <code>IT_SkillBook = 59;</code>
+       * <code>IT_FestivalTicket = 59;</code>
        */
-      IT_SkillBook(59),
+      IT_FestivalTicket(59),
       /**
-       * <code>IT_Promise_Package = 60;</code>
+       * <code>IT_SkillBook = 60;</code>
        */
-      IT_Promise_Package(60),
+      IT_SkillBook(60),
       /**
-       * <code>IT_SuperStone = 61;</code>
+       * <code>IT_Promise_Package = 61;</code>
        */
-      IT_SuperStone(61),
+      IT_Promise_Package(61),
       /**
-       * <code>IT_SuperStoneStuff = 62;</code>
+       * <code>IT_SuperStone = 62;</code>
        */
-      IT_SuperStoneStuff(62),
+      IT_SuperStone(62),
       /**
-       * <code>IT_BoosterPackage = 63;</code>
+       * <code>IT_SuperStoneStuff = 63;</code>
        */
-      IT_BoosterPackage(63),
+      IT_SuperStoneStuff(63),
       /**
-       * <code>IT_CostumeTicket = 64;</code>
+       * <code>IT_BoosterPackage = 64;</code>
        */
-      IT_CostumeTicket(64),
+      IT_BoosterPackage(64),
+      /**
+       * <code>IT_CostumeTicket = 65;</code>
+       */
+      IT_CostumeTicket(65),
+      /**
+       * <code>IT_RandomSuperStoneStuff = 66;</code>
+       */
+      IT_RandomSuperStoneStuff(66),
       UNRECOGNIZED(-1),
       ;
 
@@ -1275,49 +1286,57 @@ public final class MsgShopItemOuterClass {
        */
       public static final int IT_ExtendMonsterSlot_VALUE = 52;
       /**
-       * <code>IT_WinkyDisplay = 54;</code>
+       * <code>IT_MaxExtendMonsterSlot = 53;</code>
        */
-      public static final int IT_WinkyDisplay_VALUE = 54;
+      public static final int IT_MaxExtendMonsterSlot_VALUE = 53;
       /**
-       * <code>IT_Winky = 55;</code>
+       * <code>IT_WinkyDisplay = 55;</code>
        */
-      public static final int IT_Winky_VALUE = 55;
+      public static final int IT_WinkyDisplay_VALUE = 55;
       /**
-       * <code>IT_MonsterDisplay = 56;</code>
+       * <code>IT_Winky = 56;</code>
        */
-      public static final int IT_MonsterDisplay_VALUE = 56;
+      public static final int IT_Winky_VALUE = 56;
       /**
-       * <code>IT_ExtendMonsterStorage = 57;</code>
+       * <code>IT_MonsterDisplay = 57;</code>
        */
-      public static final int IT_ExtendMonsterStorage_VALUE = 57;
+      public static final int IT_MonsterDisplay_VALUE = 57;
       /**
-       * <code>IT_FestivalTicket = 58;</code>
+       * <code>IT_ExtendMonsterStorage = 58;</code>
        */
-      public static final int IT_FestivalTicket_VALUE = 58;
+      public static final int IT_ExtendMonsterStorage_VALUE = 58;
       /**
-       * <code>IT_SkillBook = 59;</code>
+       * <code>IT_FestivalTicket = 59;</code>
        */
-      public static final int IT_SkillBook_VALUE = 59;
+      public static final int IT_FestivalTicket_VALUE = 59;
       /**
-       * <code>IT_Promise_Package = 60;</code>
+       * <code>IT_SkillBook = 60;</code>
        */
-      public static final int IT_Promise_Package_VALUE = 60;
+      public static final int IT_SkillBook_VALUE = 60;
       /**
-       * <code>IT_SuperStone = 61;</code>
+       * <code>IT_Promise_Package = 61;</code>
        */
-      public static final int IT_SuperStone_VALUE = 61;
+      public static final int IT_Promise_Package_VALUE = 61;
       /**
-       * <code>IT_SuperStoneStuff = 62;</code>
+       * <code>IT_SuperStone = 62;</code>
        */
-      public static final int IT_SuperStoneStuff_VALUE = 62;
+      public static final int IT_SuperStone_VALUE = 62;
       /**
-       * <code>IT_BoosterPackage = 63;</code>
+       * <code>IT_SuperStoneStuff = 63;</code>
        */
-      public static final int IT_BoosterPackage_VALUE = 63;
+      public static final int IT_SuperStoneStuff_VALUE = 63;
       /**
-       * <code>IT_CostumeTicket = 64;</code>
+       * <code>IT_BoosterPackage = 64;</code>
        */
-      public static final int IT_CostumeTicket_VALUE = 64;
+      public static final int IT_BoosterPackage_VALUE = 64;
+      /**
+       * <code>IT_CostumeTicket = 65;</code>
+       */
+      public static final int IT_CostumeTicket_VALUE = 65;
+      /**
+       * <code>IT_RandomSuperStoneStuff = 66;</code>
+       */
+      public static final int IT_RandomSuperStoneStuff_VALUE = 66;
 
 
       public final int getNumber() {
@@ -1372,17 +1391,19 @@ public final class MsgShopItemOuterClass {
           case 50: return IT_JojeShopRefresh;
           case 51: return IT_BattleContinue;
           case 52: return IT_ExtendMonsterSlot;
-          case 54: return IT_WinkyDisplay;
-          case 55: return IT_Winky;
-          case 56: return IT_MonsterDisplay;
-          case 57: return IT_ExtendMonsterStorage;
-          case 58: return IT_FestivalTicket;
-          case 59: return IT_SkillBook;
-          case 60: return IT_Promise_Package;
-          case 61: return IT_SuperStone;
-          case 62: return IT_SuperStoneStuff;
-          case 63: return IT_BoosterPackage;
-          case 64: return IT_CostumeTicket;
+          case 53: return IT_MaxExtendMonsterSlot;
+          case 55: return IT_WinkyDisplay;
+          case 56: return IT_Winky;
+          case 57: return IT_MonsterDisplay;
+          case 58: return IT_ExtendMonsterStorage;
+          case 59: return IT_FestivalTicket;
+          case 60: return IT_SkillBook;
+          case 61: return IT_Promise_Package;
+          case 62: return IT_SuperStone;
+          case 63: return IT_SuperStoneStuff;
+          case 64: return IT_BoosterPackage;
+          case 65: return IT_CostumeTicket;
+          case 66: return IT_RandomSuperStoneStuff;
           default: return null;
         }
       }
@@ -1866,6 +1887,10 @@ public final class MsgShopItemOuterClass {
        * <code>MT_Limited = 7;</code>
        */
       MT_Limited(7),
+      /**
+       * <code>MT_Free = 8;</code>
+       */
+      MT_Free(8),
       UNRECOGNIZED(-1),
       ;
 
@@ -1901,6 +1926,10 @@ public final class MsgShopItemOuterClass {
        * <code>MT_Limited = 7;</code>
        */
       public static final int MT_Limited_VALUE = 7;
+      /**
+       * <code>MT_Free = 8;</code>
+       */
+      public static final int MT_Free_VALUE = 8;
 
 
       public final int getNumber() {
@@ -1929,6 +1958,7 @@ public final class MsgShopItemOuterClass {
           case 5: return MT_Update;
           case 6: return MT_Unavailable;
           case 7: return MT_Limited;
+          case 8: return MT_Free;
           default: return null;
         }
       }
@@ -7634,7 +7664,7 @@ public final class MsgShopItemOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgShopItem(input, extensionRegistry);
+        return new MsgShopItem(input, extensionRegistry);
       }
     };
 
@@ -7676,17 +7706,17 @@ public final class MsgShopItemOuterClass {
       "to\032\031MsgShopItemMetaCash.proto\032!MsgShopIt" +
       "emMetaWinkyDisplay.proto\032\031MsgShopPurchas" +
       "eCond.proto\032\034MsgJojeShopItemAddInfo.prot" +
-      "o\032\026Msg30daysPackage.proto\032\027MsgLevelupPac",
+      "o\032\026Msg30daysPackage.proto\032\027MsgLevelupPac" +
       "kage.proto\032\031MsgAdventurePackage.proto\032\027M" +
       "sgShopItemBundle.proto\032\026MsgCrystalReward" +
       ".proto\032\037MsgShopItemOptionalReward.proto\032" +
       "\035MsgPackagePurchaseBonus.proto\032!MsgShopI" +
       "temMetaUserShipBuff.proto\032#MsgShopItemMe" +
       "taPromisePackage.proto\032#MsgShopItemMetaB" +
-      "oosterPackage.proto\"\305\031\n\013MsgShopItem\022\013\n\003u" +
+      "oosterPackage.proto\"\215\032\n\013MsgShopItem\022\013\n\003u" +
       "id\030\001 \001(\007\022\014\n\004name\030\002 \001(\007\022\014\n\004desc\030\003 \001(\007\0227\n\010" +
       "category\030\004 \001(\0162%.msggamedata.MsgShopItem" +
-      ".CategoryType\0224\n\titem_type\030\005 \001(\0162!.msgga",
+      ".CategoryType\0224\n\titem_type\030\005 \001(\0162!.msgga" +
       "medata.MsgShopItem.ItemType\022.\n\tdata_type" +
       "\030\006 \001(\0162\033.msggamedata.RewardDataType\022$\n\005p" +
       "rice\030\007 \001(\0132\025.msggamedata.MsgPrice\022\014\n\004ico" +
@@ -7696,7 +7726,7 @@ public final class MsgShopItemOuterClass {
       "a\030\013 \001(\r\022.\n\010uid_data\030\014 \001(\0132\034.msggamedata." +
       "MsgUidAndAmount\0223\n\trune_meta\030\r \001(\0132 .msg" +
       "gamedata.MsgShopItemMetaRune\0229\n\014monster_" +
-      "meta\030\016 \001(\0132#.msggamedata.MsgShopItemMeta",
+      "meta\030\016 \001(\0132#.msggamedata.MsgShopItemMeta" +
       "Monster\0221\n\010gun_meta\030\017 \001(\0132\037.msggamedata." +
       "MsgShopItemMetaGun\0227\n\013bullet_meta\030\020 \001(\0132" +
       "\".msggamedata.MsgShopItemMetaBullet\022H\n\024i" +
@@ -7706,7 +7736,7 @@ public final class MsgShopItemOuterClass {
       "sh\022C\n\021winkydisplay_meta\030\025 \001(\0132(.msggamed" +
       "ata.MsgShopItemMetaWinkyDisplay\022<\n\022purch" +
       "ase_condition\030\026 \001(\0132 .msggamedata.MsgSho" +
-      "pPurchaseCond\022\023\n\013limit_count\030\027 \001(\r\022\021\n\top",
+      "pPurchaseCond\022\023\n\013limit_count\030\027 \001(\r\022\021\n\top" +
       "en_date\030\031 \001(\004\022\022\n\nclose_date\030\032 \001(\004\022\020\n\010reg" +
       "_date\030\033 \001(\004\022;\n\016joje_shop_info\030\034 \001(\0132#.ms" +
       "ggamedata.MsgJojeShopItemAddInfo\0223\n\014days" +
@@ -7716,7 +7746,7 @@ public final class MsgShopItemOuterClass {
       "age\030\037 \001(\0132 .msggamedata.MsgAdventurePack" +
       "age\0223\n\013item_bundle\030  \001(\0132\036.msggamedata.M" +
       "sgShopItemBundle\0225\n\016crystal_reward\030! \001(\013" +
-      "2\035.msggamedata.MsgCrystalReward\022\030\n\020displ",
+      "2\035.msggamedata.MsgCrystalReward\022\030\n\020displ" +
       "ay_item_uid\030\" \001(\007\022?\n\017optional_reward\030# \003" +
       "(\0132&.msggamedata.MsgShopItemOptionalRewa" +
       "rd\022<\n\016purchase_bonus\030$ \003(\0132$.msggamedata" +
@@ -7726,9 +7756,9 @@ public final class MsgShopItemOuterClass {
       "\030) \001(\0132(.msggamedata.MsgShopItemMetaUser" +
       "ShipBuff\022C\n\017promise_package\030* \001(\0132*.msgg" +
       "amedata.MsgShopItemMetaPromisePackage\022C\n" +
-      "\017booster_package\030+ \001(\0132*.msggamedata.Msg",
+      "\017booster_package\030+ \001(\0132*.msggamedata.Msg" +
       "ShopItemMetaBoosterPackage\022\016\n\006illust\030, \001" +
-      "(\t\"\220\007\n\010ItemType\022\020\n\014ItemTypeNULL\020\000\022\n\n\006IT_" +
+      "(\t\"\313\007\n\010ItemType\022\020\n\014ItemTypeNULL\020\000\022\n\n\006IT_" +
       "Gem\020\001\022\013\n\007IT_Gold\020\002\022\r\n\tIT_Energy\020\003\022\022\n\016IT_" +
       "ArenaTicket\020\004\022\013\n\007IT_Rune\020\005\022\022\n\016IT_BeyondS" +
       "tone\020\006\022\016\n\nIT_Monster\020\007\022\n\n\006IT_Gun\020\010\022\r\n\tIT" +
@@ -7736,7 +7766,7 @@ public final class MsgShopItemOuterClass {
       "Stone\020\013\022\022\n\016IT_ProfileIcon\020\014\022\021\n\rIT_Monste" +
       "rEgg\020\r\022\025\n\021IT_InstantMonster\020\016\022\013\n\007IT_Food" +
       "\020\017\022\025\n\021IT_MonsterPackage\020\020\022\024\n\020IT_30daysPa" +
-      "ckage\020\021\022\025\n\021IT_LevelupPackage\020\022\022\027\n\023IT_Adv",
+      "ckage\020\021\022\025\n\021IT_LevelupPackage\020\022\022\027\n\023IT_Adv" +
       "enturePackage\020\023\022\022\n\016IT_StarEssence\020\024\022\021\n\rI" +
       "T_ItemBundle\020\025\022\025\n\021IT_PremiumPackage\020\026\022\024\n" +
       "\020IT_DungeonTicket\020\027\022\020\n\014IT_RandomGem\020\030\022\021\n" +
@@ -7744,28 +7774,30 @@ public final class MsgShopItemOuterClass {
       "T_RandomRune\020\033\022\021\n\rIT_NewStorage\020\034\022\027\n\023IT_" +
       "MonsterEggHidden\020\035\022\030\n\024IT_AdventurePackag" +
       "e2\020\036\022\026\n\022IT_JojeShopRefresh\0202\022\025\n\021IT_Battl" +
-      "eContinue\0203\022\030\n\024IT_ExtendMonsterSlot\0204\022\023\n" +
-      "\017IT_WinkyDisplay\0206\022\014\n\010IT_Winky\0207\022\025\n\021IT_M" +
-      "onsterDisplay\0208\022\033\n\027IT_ExtendMonsterStora",
-      "ge\0209\022\025\n\021IT_FestivalTicket\020:\022\020\n\014IT_SkillB" +
-      "ook\020;\022\026\n\022IT_Promise_Package\020<\022\021\n\rIT_Supe" +
-      "rStone\020=\022\026\n\022IT_SuperStoneStuff\020>\022\025\n\021IT_B" +
-      "oosterPackage\020?\022\024\n\020IT_CostumeTicket\020@\"\277\001" +
-      "\n\tWhereType\022\021\n\rWhereTypeNULL\020\000\022\013\n\007WT_Sho" +
-      "p\020\001\022\014\n\010WT_Popup\020\002\022\020\n\014WT_GoldPopup\020\003\022\013\n\007W" +
-      "T_Joje\020\004\022\016\n\nWT_Setting\020\005\022\014\n\010WT_Gacha\020\007\022\016" +
-      "\n\nWT_Package\020\010\022\016\n\nWT_Expired\020\t\022\013\n\007WT_Cla" +
-      "n\020\n\022\016\n\nWT_Booster\020\013\022\n\n\006WT_Etc\0202\"\363\001\n\014Cate" +
-      "goryType\022\024\n\020CategoryTypeNULL\020\000\022\013\n\007CT_Cas",
-      "h\020\001\022\013\n\007CT_Rune\020\002\022\022\n\016CT_BeyondStone\020\003\022\016\n\n" +
-      "CT_Monster\020\004\022\016\n\nCT_Capture\020\005\022\022\n\016CT_Insta" +
-      "ntGold\020\006\022\013\n\007CT_Joje\020\007\022\022\n\016CT_ProfileIcon\020" +
-      "\010\022\016\n\nCT_Package\020\t\022\021\n\rCT_ItemBundle\020\n\022\016\n\n" +
-      "CT_Crystal\020\013\022\013\n\007CT_Clan\020\014\022\n\n\006CT_Etc\0202\"\203\001" +
-      "\n\010MarkType\022\020\n\014MarkTypeNULL\020\000\022\r\n\tMT_Commo" +
-      "n\020\001\022\n\n\006MT_Hot\020\002\022\013\n\007MT_Sale\020\003\022\n\n\006MT_New\020\004" +
-      "\022\r\n\tMT_Update\020\005\022\022\n\016MT_Unavailable\020\006\022\016\n\nM" +
-      "T_Limited\020\007B\023\n\021com.felania.msldbb\006proto3"
+      "eContinue\0203\022\030\n\024IT_ExtendMonsterSlot\0204\022\033\n" +
+      "\027IT_MaxExtendMonsterSlot\0205\022\023\n\017IT_WinkyDi" +
+      "splay\0207\022\014\n\010IT_Winky\0208\022\025\n\021IT_MonsterDispl" +
+      "ay\0209\022\033\n\027IT_ExtendMonsterStorage\020:\022\025\n\021IT_" +
+      "FestivalTicket\020;\022\020\n\014IT_SkillBook\020<\022\026\n\022IT" +
+      "_Promise_Package\020=\022\021\n\rIT_SuperStone\020>\022\026\n" +
+      "\022IT_SuperStoneStuff\020?\022\025\n\021IT_BoosterPacka" +
+      "ge\020@\022\024\n\020IT_CostumeTicket\020A\022\034\n\030IT_RandomS" +
+      "uperStoneStuff\020B\"\277\001\n\tWhereType\022\021\n\rWhereT" +
+      "ypeNULL\020\000\022\013\n\007WT_Shop\020\001\022\014\n\010WT_Popup\020\002\022\020\n\014" +
+      "WT_GoldPopup\020\003\022\013\n\007WT_Joje\020\004\022\016\n\nWT_Settin" +
+      "g\020\005\022\014\n\010WT_Gacha\020\007\022\016\n\nWT_Package\020\010\022\016\n\nWT_" +
+      "Expired\020\t\022\013\n\007WT_Clan\020\n\022\016\n\nWT_Booster\020\013\022\n" +
+      "\n\006WT_Etc\0202\"\363\001\n\014CategoryType\022\024\n\020CategoryT" +
+      "ypeNULL\020\000\022\013\n\007CT_Cash\020\001\022\013\n\007CT_Rune\020\002\022\022\n\016C" +
+      "T_BeyondStone\020\003\022\016\n\nCT_Monster\020\004\022\016\n\nCT_Ca" +
+      "pture\020\005\022\022\n\016CT_InstantGold\020\006\022\013\n\007CT_Joje\020\007" +
+      "\022\022\n\016CT_ProfileIcon\020\010\022\016\n\nCT_Package\020\t\022\021\n\r" +
+      "CT_ItemBundle\020\n\022\016\n\nCT_Crystal\020\013\022\013\n\007CT_Cl" +
+      "an\020\014\022\n\n\006CT_Etc\0202\"\220\001\n\010MarkType\022\020\n\014MarkTyp" +
+      "eNULL\020\000\022\r\n\tMT_Common\020\001\022\n\n\006MT_Hot\020\002\022\013\n\007MT" +
+      "_Sale\020\003\022\n\n\006MT_New\020\004\022\r\n\tMT_Update\020\005\022\022\n\016MT" +
+      "_Unavailable\020\006\022\016\n\nMT_Limited\020\007\022\013\n\007MT_Fre" +
+      "e\020\010B\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

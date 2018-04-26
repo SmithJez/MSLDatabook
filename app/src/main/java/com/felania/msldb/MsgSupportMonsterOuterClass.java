@@ -137,6 +137,9 @@ public final class MsgSupportMonsterOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1472,7 +1475,7 @@ public final class MsgSupportMonsterOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgSupportMonster(input, extensionRegistry);
+        return new MsgSupportMonster(input, extensionRegistry);
       }
     };
 
@@ -1514,7 +1517,7 @@ public final class MsgSupportMonsterOuterClass {
       "nster_lev\030\004 \001(\r\0220\n\rmonster_grade\030\005 \001(\0162\031" +
       ".msggamedata.MonsterGrade\022?\n\023monster_wei" +
       "ght_type\030\006 \001(\0162\".msggamedata.MonsterStat" +
-      "WeightType\0227\n\021monster_stat_type\030\007 \001(\0162\034.",
+      "WeightType\0227\n\021monster_stat_type\030\007 \001(\0162\034." +
       "msggamedata.MonsterStatType\022\021\n\topen_date" +
       "\030\010 \001(\004\022\022\n\nclose_date\030\t \001(\004\022\026\n\016attack_abi" +
       "lity\030\n \001(\002\022\027\n\017defence_ability\030\013 \001(\002\022\024\n\014h" +

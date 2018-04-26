@@ -104,6 +104,9 @@ public final class MsgEnforcementValueOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -386,6 +389,9 @@ public final class MsgEnforcementValueOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -919,7 +925,7 @@ public final class MsgEnforcementValueOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new TargetStage(input, extensionRegistry);
+          return new TargetStage(input, extensionRegistry);
         }
       };
 
@@ -985,6 +991,9 @@ public final class MsgEnforcementValueOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1493,7 +1502,7 @@ public final class MsgEnforcementValueOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new TargetShop(input, extensionRegistry);
+          return new TargetShop(input, extensionRegistry);
         }
       };
 
@@ -1559,6 +1568,9 @@ public final class MsgEnforcementValueOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2067,7 +2079,7 @@ public final class MsgEnforcementValueOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new TargetCountAndSeed(input, extensionRegistry);
+          return new TargetCountAndSeed(input, extensionRegistry);
         }
       };
 
@@ -3065,7 +3077,7 @@ public final class MsgEnforcementValueOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgEnforcementValue(input, extensionRegistry);
+        return new MsgEnforcementValue(input, extensionRegistry);
       }
     };
 
@@ -3122,7 +3134,7 @@ public final class MsgEnforcementValueOuterClass {
       "tStage\022@\n\013target_shop\030\004 \001(\0132+.msggamedat" +
       "a.MsgEnforcementValue.TargetShop\022T\n\027targ" +
       "et_capture_festival\030\005 \001(\01323.msggamedata." +
-      "MsgEnforcementValue.TargetCountAndSeed\022\014",
+      "MsgEnforcementValue.TargetCountAndSeed\022\014" +
       "\n\004data\030\006 \001(\007\032l\n\013TargetStage\022\024\n\014substage_" +
       "uid\030\001 \001(\007\0224\n\ndifficulty\030\002 \001(\0162 .msggamed" +
       "ata.StageDifficultyType\022\021\n\tround_idx\030\003 \001" +
@@ -3132,7 +3144,7 @@ public final class MsgEnforcementValueOuterClass {
       "\001(\r\022\014\n\004seed\030\003 \001(\r\"\246\001\n\030MsgEnforcementValu" +
       "eState\022 \n\034MsgEnforcementValueStateNULL\020\000" +
       "\022\r\n\tEVS_Stage\020\001\022\014\n\010EVS_Shop\020\002\022\025\n\021EVS_Sho" +
-      "p_Festival\020\003\022\032\n\026EVS_Shop_Clan_Festival\020\004",
+      "p_Festival\020\003\022\032\n\026EVS_Shop_Clan_Festival\020\004" +
       "\022\030\n\024EVS_Capture_Festival\020\005B\023\n\021com.felani" +
       "a.msldbb\006proto3"
     };

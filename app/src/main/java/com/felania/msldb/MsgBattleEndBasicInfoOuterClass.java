@@ -198,6 +198,9 @@ public final class MsgBattleEndBasicInfoOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2544,7 +2547,7 @@ public final class MsgBattleEndBasicInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgBattleEndBasicInfo(input, extensionRegistry);
+        return new MsgBattleEndBasicInfo(input, extensionRegistry);
       }
     };
 
@@ -2586,7 +2589,7 @@ public final class MsgBattleEndBasicInfoOuterClass {
       "eEndResultType\022\"\n\004user\030\002 \001(\0132\024.msggameda" +
       "ta.MsgUser\022\033\n\023levup_reward_energy\030\006 \001(\r\022" +
       "\030\n\020levup_reward_gem\030\007 \001(\r\0222\n\ruser_monste" +
-      "rs\030\013 \003(\0132\033.msggamedata.MsgUserMonster\0225\n",
+      "rs\030\013 \003(\0132\033.msggamedata.MsgUserMonster\0225\n" +
       "\014monster_slot\030\017 \001(\0132\037.msggamedata.MsgMon" +
       "sterSlotData\022\035\n\025reward_to_gift_system\030\023 " +
       "\001(\010\0225\n\023reward_star_essence\030\024 \001(\0132\030.msgga" +

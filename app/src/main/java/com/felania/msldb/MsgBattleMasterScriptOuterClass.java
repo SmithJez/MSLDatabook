@@ -65,6 +65,9 @@ public final class MsgBattleMasterScriptOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -777,7 +780,7 @@ public final class MsgBattleMasterScriptOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgBattleMasterScript(input, extensionRegistry);
+        return new MsgBattleMasterScript(input, extensionRegistry);
       }
     };
 
@@ -819,7 +822,7 @@ public final class MsgBattleMasterScriptOuterClass {
       "sRound\020\003\022\027\n\023RareMonsterDetected\020\004\022\014\n\010DoA" +
       "ttack\020\005\022\025\n\021GetCriticalDamage\020\006\022\021\n\rDeadMy" +
       "Monster\020\007\022\030\n\024SelectCaptureMonster\020\010\022\022\n\016S" +
-      "ucceedCapture\020\t\022\021\n\rFailedCapture\020\nB\023\n\021co",
+      "ucceedCapture\020\t\022\021\n\rFailedCapture\020\nB\023\n\021co" +
       "m.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

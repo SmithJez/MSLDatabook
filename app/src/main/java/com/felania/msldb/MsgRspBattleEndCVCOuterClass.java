@@ -215,6 +215,9 @@ public final class MsgRspBattleEndCVCOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2689,7 +2692,7 @@ public final class MsgRspBattleEndCVCOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRspBattleEndCVC(input, extensionRegistry);
+        return new MsgRspBattleEndCVC(input, extensionRegistry);
       }
     };
 
@@ -2731,7 +2734,7 @@ public final class MsgRspBattleEndCVCOuterClass {
       "_results\030\002 \003(\0162 .msggamedata.BattleEndRe" +
       "sultType\022\"\n\004user\030\003 \001(\0132\024.msggamedata.Msg" +
       "User\022B\n\031my_clan_cvc_phase_history\030\004 \001(\0132" +
-      "\037.msggamedata.MsgCVCPhaseHistory\0224\n\rmy_c",
+      "\037.msggamedata.MsgCVCPhaseHistory\0224\n\rmy_c" +
       "vc_member\030\005 \001(\0132\035.msggamedata.MsgUserCVC" +
       "Member\022E\n\034enemy_clan_cvc_phase_history\030\006" +
       " \001(\0132\037.msggamedata.MsgCVCPhaseHistory\0227\n" +

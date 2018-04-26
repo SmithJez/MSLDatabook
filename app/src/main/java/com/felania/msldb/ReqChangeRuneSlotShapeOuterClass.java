@@ -19,14 +19,23 @@ public final class ReqChangeRuneSlotShapeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 user_monster_id = 1;</code>
+     * <code>fixed32 user_monster_id = 1;</code>
      */
-    long getUserMonsterId();
+    int getUserMonsterId();
 
     /**
-     * <code>uint32 slot_idx = 2;</code>
+     * <code>fixed32 change_rune_slot_idx = 2;</code>
      */
-    int getSlotIdx();
+    int getChangeRuneSlotIdx();
+
+    /**
+     * <code>.msggamedata.MonsterRuneSlotShape select_rune_slot_shape = 3;</code>
+     */
+    int getSelectRuneSlotShapeValue();
+    /**
+     * <code>.msggamedata.MonsterRuneSlotShape select_rune_slot_shape = 3;</code>
+     */
+    com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape getSelectRuneSlotShape();
   }
   /**
    * Protobuf type {@code msggamedata.ReqChangeRuneSlotShape}
@@ -41,8 +50,9 @@ public final class ReqChangeRuneSlotShapeOuterClass {
       super(builder);
     }
     private ReqChangeRuneSlotShape() {
-      userMonsterId_ = 0L;
-      slotIdx_ = 0;
+      userMonsterId_ = 0;
+      changeRuneSlotIdx_ = 0;
+      selectRuneSlotShape_ = 0;
     }
 
     @java.lang.Override
@@ -55,6 +65,9 @@ public final class ReqChangeRuneSlotShapeOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -73,14 +86,20 @@ public final class ReqChangeRuneSlotShapeOuterClass {
               }
               break;
             }
-            case 8: {
+            case 13: {
 
-              userMonsterId_ = input.readUInt64();
+              userMonsterId_ = input.readFixed32();
               break;
             }
-            case 16: {
+            case 21: {
 
-              slotIdx_ = input.readUInt32();
+              changeRuneSlotIdx_ = input.readFixed32();
+              break;
+            }
+            case 24: {
+              int rawValue = input.readEnum();
+
+              selectRuneSlotShape_ = rawValue;
               break;
             }
           }
@@ -108,21 +127,37 @@ public final class ReqChangeRuneSlotShapeOuterClass {
     }
 
     public static final int USER_MONSTER_ID_FIELD_NUMBER = 1;
-    private long userMonsterId_;
+    private int userMonsterId_;
     /**
-     * <code>uint64 user_monster_id = 1;</code>
+     * <code>fixed32 user_monster_id = 1;</code>
      */
-    public long getUserMonsterId() {
+    public int getUserMonsterId() {
       return userMonsterId_;
     }
 
-    public static final int SLOT_IDX_FIELD_NUMBER = 2;
-    private int slotIdx_;
+    public static final int CHANGE_RUNE_SLOT_IDX_FIELD_NUMBER = 2;
+    private int changeRuneSlotIdx_;
     /**
-     * <code>uint32 slot_idx = 2;</code>
+     * <code>fixed32 change_rune_slot_idx = 2;</code>
      */
-    public int getSlotIdx() {
-      return slotIdx_;
+    public int getChangeRuneSlotIdx() {
+      return changeRuneSlotIdx_;
+    }
+
+    public static final int SELECT_RUNE_SLOT_SHAPE_FIELD_NUMBER = 3;
+    private int selectRuneSlotShape_;
+    /**
+     * <code>.msggamedata.MonsterRuneSlotShape select_rune_slot_shape = 3;</code>
+     */
+    public int getSelectRuneSlotShapeValue() {
+      return selectRuneSlotShape_;
+    }
+    /**
+     * <code>.msggamedata.MonsterRuneSlotShape select_rune_slot_shape = 3;</code>
+     */
+    public com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape getSelectRuneSlotShape() {
+      com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape result = com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape.valueOf(selectRuneSlotShape_);
+      return result == null ? com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -137,11 +172,14 @@ public final class ReqChangeRuneSlotShapeOuterClass {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (userMonsterId_ != 0L) {
-        output.writeUInt64(1, userMonsterId_);
+      if (userMonsterId_ != 0) {
+        output.writeFixed32(1, userMonsterId_);
       }
-      if (slotIdx_ != 0) {
-        output.writeUInt32(2, slotIdx_);
+      if (changeRuneSlotIdx_ != 0) {
+        output.writeFixed32(2, changeRuneSlotIdx_);
+      }
+      if (selectRuneSlotShape_ != com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape.MRSS_None.getNumber()) {
+        output.writeEnum(3, selectRuneSlotShape_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,13 +189,17 @@ public final class ReqChangeRuneSlotShapeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (userMonsterId_ != 0L) {
+      if (userMonsterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, userMonsterId_);
+          .computeFixed32Size(1, userMonsterId_);
       }
-      if (slotIdx_ != 0) {
+      if (changeRuneSlotIdx_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, slotIdx_);
+          .computeFixed32Size(2, changeRuneSlotIdx_);
+      }
+      if (selectRuneSlotShape_ != com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape.MRSS_None.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, selectRuneSlotShape_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -177,8 +219,9 @@ public final class ReqChangeRuneSlotShapeOuterClass {
       boolean result = true;
       result = result && (getUserMonsterId()
           == other.getUserMonsterId());
-      result = result && (getSlotIdx()
-          == other.getSlotIdx());
+      result = result && (getChangeRuneSlotIdx()
+          == other.getChangeRuneSlotIdx());
+      result = result && selectRuneSlotShape_ == other.selectRuneSlotShape_;
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -191,10 +234,11 @@ public final class ReqChangeRuneSlotShapeOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + USER_MONSTER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getUserMonsterId());
-      hash = (37 * hash) + SLOT_IDX_FIELD_NUMBER;
-      hash = (53 * hash) + getSlotIdx();
+      hash = (53 * hash) + getUserMonsterId();
+      hash = (37 * hash) + CHANGE_RUNE_SLOT_IDX_FIELD_NUMBER;
+      hash = (53 * hash) + getChangeRuneSlotIdx();
+      hash = (37 * hash) + SELECT_RUNE_SLOT_SHAPE_FIELD_NUMBER;
+      hash = (53 * hash) + selectRuneSlotShape_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -324,9 +368,11 @@ public final class ReqChangeRuneSlotShapeOuterClass {
       }
       public Builder clear() {
         super.clear();
-        userMonsterId_ = 0L;
+        userMonsterId_ = 0;
 
-        slotIdx_ = 0;
+        changeRuneSlotIdx_ = 0;
+
+        selectRuneSlotShape_ = 0;
 
         return this;
       }
@@ -351,7 +397,8 @@ public final class ReqChangeRuneSlotShapeOuterClass {
       public com.felania.msldb.ReqChangeRuneSlotShapeOuterClass.ReqChangeRuneSlotShape buildPartial() {
         com.felania.msldb.ReqChangeRuneSlotShapeOuterClass.ReqChangeRuneSlotShape result = new com.felania.msldb.ReqChangeRuneSlotShapeOuterClass.ReqChangeRuneSlotShape(this);
         result.userMonsterId_ = userMonsterId_;
-        result.slotIdx_ = slotIdx_;
+        result.changeRuneSlotIdx_ = changeRuneSlotIdx_;
+        result.selectRuneSlotShape_ = selectRuneSlotShape_;
         onBuilt();
         return result;
       }
@@ -393,11 +440,14 @@ public final class ReqChangeRuneSlotShapeOuterClass {
 
       public Builder mergeFrom(com.felania.msldb.ReqChangeRuneSlotShapeOuterClass.ReqChangeRuneSlotShape other) {
         if (other == com.felania.msldb.ReqChangeRuneSlotShapeOuterClass.ReqChangeRuneSlotShape.getDefaultInstance()) return this;
-        if (other.getUserMonsterId() != 0L) {
+        if (other.getUserMonsterId() != 0) {
           setUserMonsterId(other.getUserMonsterId());
         }
-        if (other.getSlotIdx() != 0) {
-          setSlotIdx(other.getSlotIdx());
+        if (other.getChangeRuneSlotIdx() != 0) {
+          setChangeRuneSlotIdx(other.getChangeRuneSlotIdx());
+        }
+        if (other.selectRuneSlotShape_ != 0) {
+          setSelectRuneSlotShapeValue(other.getSelectRuneSlotShapeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -426,54 +476,98 @@ public final class ReqChangeRuneSlotShapeOuterClass {
         return this;
       }
 
-      private long userMonsterId_ ;
+      private int userMonsterId_ ;
       /**
-       * <code>uint64 user_monster_id = 1;</code>
+       * <code>fixed32 user_monster_id = 1;</code>
        */
-      public long getUserMonsterId() {
+      public int getUserMonsterId() {
         return userMonsterId_;
       }
       /**
-       * <code>uint64 user_monster_id = 1;</code>
+       * <code>fixed32 user_monster_id = 1;</code>
        */
-      public Builder setUserMonsterId(long value) {
+      public Builder setUserMonsterId(int value) {
         
         userMonsterId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 user_monster_id = 1;</code>
+       * <code>fixed32 user_monster_id = 1;</code>
        */
       public Builder clearUserMonsterId() {
         
-        userMonsterId_ = 0L;
+        userMonsterId_ = 0;
         onChanged();
         return this;
       }
 
-      private int slotIdx_ ;
+      private int changeRuneSlotIdx_ ;
       /**
-       * <code>uint32 slot_idx = 2;</code>
+       * <code>fixed32 change_rune_slot_idx = 2;</code>
        */
-      public int getSlotIdx() {
-        return slotIdx_;
+      public int getChangeRuneSlotIdx() {
+        return changeRuneSlotIdx_;
       }
       /**
-       * <code>uint32 slot_idx = 2;</code>
+       * <code>fixed32 change_rune_slot_idx = 2;</code>
        */
-      public Builder setSlotIdx(int value) {
+      public Builder setChangeRuneSlotIdx(int value) {
         
-        slotIdx_ = value;
+        changeRuneSlotIdx_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 slot_idx = 2;</code>
+       * <code>fixed32 change_rune_slot_idx = 2;</code>
        */
-      public Builder clearSlotIdx() {
+      public Builder clearChangeRuneSlotIdx() {
         
-        slotIdx_ = 0;
+        changeRuneSlotIdx_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int selectRuneSlotShape_ = 0;
+      /**
+       * <code>.msggamedata.MonsterRuneSlotShape select_rune_slot_shape = 3;</code>
+       */
+      public int getSelectRuneSlotShapeValue() {
+        return selectRuneSlotShape_;
+      }
+      /**
+       * <code>.msggamedata.MonsterRuneSlotShape select_rune_slot_shape = 3;</code>
+       */
+      public Builder setSelectRuneSlotShapeValue(int value) {
+        selectRuneSlotShape_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MonsterRuneSlotShape select_rune_slot_shape = 3;</code>
+       */
+      public com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape getSelectRuneSlotShape() {
+        com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape result = com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape.valueOf(selectRuneSlotShape_);
+        return result == null ? com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.msggamedata.MonsterRuneSlotShape select_rune_slot_shape = 3;</code>
+       */
+      public Builder setSelectRuneSlotShape(com.felania.msldb.MonsterRuneSlotShapeOuterClass.MonsterRuneSlotShape value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        selectRuneSlotShape_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MonsterRuneSlotShape select_rune_slot_shape = 3;</code>
+       */
+      public Builder clearSelectRuneSlotShape() {
+        
+        selectRuneSlotShape_ = 0;
         onChanged();
         return this;
       }
@@ -507,7 +601,7 @@ public final class ReqChangeRuneSlotShapeOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ReqChangeRuneSlotShape(input, extensionRegistry);
+        return new ReqChangeRuneSlotShape(input, extensionRegistry);
       }
     };
 
@@ -541,9 +635,12 @@ public final class ReqChangeRuneSlotShapeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ReqChangeRuneSlotShape.proto\022\013msggamed" +
-      "ata\"C\n\026ReqChangeRuneSlotShape\022\027\n\017user_mo" +
-      "nster_id\030\001 \001(\004\022\020\n\010slot_idx\030\002 \001(\rB\023\n\021com." +
-      "felania.msldbb\006proto3"
+      "ata\032\032MonsterRuneSlotShape.proto\"\222\001\n\026ReqC" +
+      "hangeRuneSlotShape\022\027\n\017user_monster_id\030\001 " +
+      "\001(\007\022\034\n\024change_rune_slot_idx\030\002 \001(\007\022A\n\026sel" +
+      "ect_rune_slot_shape\030\003 \001(\0162!.msggamedata." +
+      "MonsterRuneSlotShapeB\023\n\021com.felania.msld" +
+      "bb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -556,13 +653,15 @@ public final class ReqChangeRuneSlotShapeOuterClass {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.felania.msldb.MonsterRuneSlotShapeOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_ReqChangeRuneSlotShape_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_msggamedata_ReqChangeRuneSlotShape_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_ReqChangeRuneSlotShape_descriptor,
-        new java.lang.String[] { "UserMonsterId", "SlotIdx", });
+        new java.lang.String[] { "UserMonsterId", "ChangeRuneSlotIdx", "SelectRuneSlotShape", });
+    com.felania.msldb.MonsterRuneSlotShapeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

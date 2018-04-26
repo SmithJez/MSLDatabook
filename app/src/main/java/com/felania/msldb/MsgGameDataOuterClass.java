@@ -2533,6 +2533,150 @@ public final class MsgGameDataOuterClass {
      */
     com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostumeOrBuilder getMonsterCostumesOrBuilder(
         int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+     */
+    java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData> 
+        getSuperEvolutionFestivalRawDatasList();
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+     */
+    com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData getSuperEvolutionFestivalRawDatas(int index);
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+     */
+    int getSuperEvolutionFestivalRawDatasCount();
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawDataOrBuilder> 
+        getSuperEvolutionFestivalRawDatasOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+     */
+    com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawDataOrBuilder getSuperEvolutionFestivalRawDatasOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+     */
+    java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward> 
+        getSuperEvolutionFestivalRewardsList();
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+     */
+    com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward getSuperEvolutionFestivalRewards(int index);
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+     */
+    int getSuperEvolutionFestivalRewardsCount();
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalRewardOrBuilder> 
+        getSuperEvolutionFestivalRewardsOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+     */
+    com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalRewardOrBuilder getSuperEvolutionFestivalRewardsOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+     */
+    java.util.List<com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason> 
+        getLupinDungeonSeasonsList();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+     */
+    com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason getLupinDungeonSeasons(int index);
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+     */
+    int getLupinDungeonSeasonsCount();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeasonOrBuilder> 
+        getLupinDungeonSeasonsOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+     */
+    com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeasonOrBuilder getLupinDungeonSeasonsOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+     */
+    java.util.List<com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage> 
+        getLupinDungeonStagesList();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+     */
+    com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage getLupinDungeonStages(int index);
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+     */
+    int getLupinDungeonStagesCount();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStageOrBuilder> 
+        getLupinDungeonStagesOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+     */
+    com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStageOrBuilder getLupinDungeonStagesOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+     */
+    java.util.List<com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage> 
+        getLupinDungeonSubstagesList();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+     */
+    com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage getLupinDungeonSubstages(int index);
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+     */
+    int getLupinDungeonSubstagesCount();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStageOrBuilder> 
+        getLupinDungeonSubstagesOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+     */
+    com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStageOrBuilder getLupinDungeonSubstagesOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+     */
+    java.util.List<com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards> 
+        getLupinBattleRewardsList();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+     */
+    com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards getLupinBattleRewards(int index);
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+     */
+    int getLupinBattleRewardsCount();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+     */
+    java.util.List<? extends com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewardsOrBuilder> 
+        getLupinBattleRewardsOrBuilderList();
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+     */
+    com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewardsOrBuilder getLupinBattleRewardsOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code msggamedata.MsgGameData}
@@ -2654,6 +2798,12 @@ public final class MsgGameDataOuterClass {
       monsterCostumeCollections_ = java.util.Collections.emptyList();
       monsterCostumeBundles_ = java.util.Collections.emptyList();
       monsterCostumes_ = java.util.Collections.emptyList();
+      superEvolutionFestivalRawDatas_ = java.util.Collections.emptyList();
+      superEvolutionFestivalRewards_ = java.util.Collections.emptyList();
+      lupinDungeonSeasons_ = java.util.Collections.emptyList();
+      lupinDungeonStages_ = java.util.Collections.emptyList();
+      lupinDungeonSubstages_ = java.util.Collections.emptyList();
+      lupinBattleRewards_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -2666,6 +2816,9 @@ public final class MsgGameDataOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       int mutable_bitField1_ = 0;
       int mutable_bitField2_ = 0;
@@ -3682,6 +3835,60 @@ public final class MsgGameDataOuterClass {
                   input.readMessage(com.felania.msldb.MsgMonsterCostumeOuterClass.MsgMonsterCostume.parser(), extensionRegistry));
               break;
             }
+            case 922: {
+              if (!((mutable_bitField3_ & 0x00000800) == 0x00000800)) {
+                superEvolutionFestivalRawDatas_ = new java.util.ArrayList<com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData>();
+                mutable_bitField3_ |= 0x00000800;
+              }
+              superEvolutionFestivalRawDatas_.add(
+                  input.readMessage(com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.parser(), extensionRegistry));
+              break;
+            }
+            case 930: {
+              if (!((mutable_bitField3_ & 0x00001000) == 0x00001000)) {
+                superEvolutionFestivalRewards_ = new java.util.ArrayList<com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward>();
+                mutable_bitField3_ |= 0x00001000;
+              }
+              superEvolutionFestivalRewards_.add(
+                  input.readMessage(com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.parser(), extensionRegistry));
+              break;
+            }
+            case 938: {
+              if (!((mutable_bitField3_ & 0x00002000) == 0x00002000)) {
+                lupinDungeonSeasons_ = new java.util.ArrayList<com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason>();
+                mutable_bitField3_ |= 0x00002000;
+              }
+              lupinDungeonSeasons_.add(
+                  input.readMessage(com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.parser(), extensionRegistry));
+              break;
+            }
+            case 946: {
+              if (!((mutable_bitField3_ & 0x00004000) == 0x00004000)) {
+                lupinDungeonStages_ = new java.util.ArrayList<com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage>();
+                mutable_bitField3_ |= 0x00004000;
+              }
+              lupinDungeonStages_.add(
+                  input.readMessage(com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.parser(), extensionRegistry));
+              break;
+            }
+            case 954: {
+              if (!((mutable_bitField3_ & 0x00008000) == 0x00008000)) {
+                lupinDungeonSubstages_ = new java.util.ArrayList<com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage>();
+                mutable_bitField3_ |= 0x00008000;
+              }
+              lupinDungeonSubstages_.add(
+                  input.readMessage(com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.parser(), extensionRegistry));
+              break;
+            }
+            case 962: {
+              if (!((mutable_bitField3_ & 0x00010000) == 0x00010000)) {
+                lupinBattleRewards_ = new java.util.ArrayList<com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards>();
+                mutable_bitField3_ |= 0x00010000;
+              }
+              lupinBattleRewards_.add(
+                  input.readMessage(com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.parser(), extensionRegistry));
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -4007,6 +4214,24 @@ public final class MsgGameDataOuterClass {
         }
         if (((mutable_bitField3_ & 0x00000400) == 0x00000400)) {
           monsterCostumes_ = java.util.Collections.unmodifiableList(monsterCostumes_);
+        }
+        if (((mutable_bitField3_ & 0x00000800) == 0x00000800)) {
+          superEvolutionFestivalRawDatas_ = java.util.Collections.unmodifiableList(superEvolutionFestivalRawDatas_);
+        }
+        if (((mutable_bitField3_ & 0x00001000) == 0x00001000)) {
+          superEvolutionFestivalRewards_ = java.util.Collections.unmodifiableList(superEvolutionFestivalRewards_);
+        }
+        if (((mutable_bitField3_ & 0x00002000) == 0x00002000)) {
+          lupinDungeonSeasons_ = java.util.Collections.unmodifiableList(lupinDungeonSeasons_);
+        }
+        if (((mutable_bitField3_ & 0x00004000) == 0x00004000)) {
+          lupinDungeonStages_ = java.util.Collections.unmodifiableList(lupinDungeonStages_);
+        }
+        if (((mutable_bitField3_ & 0x00008000) == 0x00008000)) {
+          lupinDungeonSubstages_ = java.util.Collections.unmodifiableList(lupinDungeonSubstages_);
+        }
+        if (((mutable_bitField3_ & 0x00010000) == 0x00010000)) {
+          lupinBattleRewards_ = java.util.Collections.unmodifiableList(lupinBattleRewards_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -7708,6 +7933,216 @@ public final class MsgGameDataOuterClass {
       return monsterCostumes_.get(index);
     }
 
+    public static final int SUPER_EVOLUTION_FESTIVAL_RAW_DATAS_FIELD_NUMBER = 115;
+    private java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData> superEvolutionFestivalRawDatas_;
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData> getSuperEvolutionFestivalRawDatasList() {
+      return superEvolutionFestivalRawDatas_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawDataOrBuilder> 
+        getSuperEvolutionFestivalRawDatasOrBuilderList() {
+      return superEvolutionFestivalRawDatas_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+     */
+    public int getSuperEvolutionFestivalRawDatasCount() {
+      return superEvolutionFestivalRawDatas_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+     */
+    public com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData getSuperEvolutionFestivalRawDatas(int index) {
+      return superEvolutionFestivalRawDatas_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+     */
+    public com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawDataOrBuilder getSuperEvolutionFestivalRawDatasOrBuilder(
+        int index) {
+      return superEvolutionFestivalRawDatas_.get(index);
+    }
+
+    public static final int SUPER_EVOLUTION_FESTIVAL_REWARDS_FIELD_NUMBER = 116;
+    private java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward> superEvolutionFestivalRewards_;
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward> getSuperEvolutionFestivalRewardsList() {
+      return superEvolutionFestivalRewards_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalRewardOrBuilder> 
+        getSuperEvolutionFestivalRewardsOrBuilderList() {
+      return superEvolutionFestivalRewards_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+     */
+    public int getSuperEvolutionFestivalRewardsCount() {
+      return superEvolutionFestivalRewards_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+     */
+    public com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward getSuperEvolutionFestivalRewards(int index) {
+      return superEvolutionFestivalRewards_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+     */
+    public com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalRewardOrBuilder getSuperEvolutionFestivalRewardsOrBuilder(
+        int index) {
+      return superEvolutionFestivalRewards_.get(index);
+    }
+
+    public static final int LUPIN_DUNGEON_SEASONS_FIELD_NUMBER = 117;
+    private java.util.List<com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason> lupinDungeonSeasons_;
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason> getLupinDungeonSeasonsList() {
+      return lupinDungeonSeasons_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeasonOrBuilder> 
+        getLupinDungeonSeasonsOrBuilderList() {
+      return lupinDungeonSeasons_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+     */
+    public int getLupinDungeonSeasonsCount() {
+      return lupinDungeonSeasons_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+     */
+    public com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason getLupinDungeonSeasons(int index) {
+      return lupinDungeonSeasons_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+     */
+    public com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeasonOrBuilder getLupinDungeonSeasonsOrBuilder(
+        int index) {
+      return lupinDungeonSeasons_.get(index);
+    }
+
+    public static final int LUPIN_DUNGEON_STAGES_FIELD_NUMBER = 118;
+    private java.util.List<com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage> lupinDungeonStages_;
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage> getLupinDungeonStagesList() {
+      return lupinDungeonStages_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStageOrBuilder> 
+        getLupinDungeonStagesOrBuilderList() {
+      return lupinDungeonStages_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+     */
+    public int getLupinDungeonStagesCount() {
+      return lupinDungeonStages_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+     */
+    public com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage getLupinDungeonStages(int index) {
+      return lupinDungeonStages_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+     */
+    public com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStageOrBuilder getLupinDungeonStagesOrBuilder(
+        int index) {
+      return lupinDungeonStages_.get(index);
+    }
+
+    public static final int LUPIN_DUNGEON_SUBSTAGES_FIELD_NUMBER = 119;
+    private java.util.List<com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage> lupinDungeonSubstages_;
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage> getLupinDungeonSubstagesList() {
+      return lupinDungeonSubstages_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStageOrBuilder> 
+        getLupinDungeonSubstagesOrBuilderList() {
+      return lupinDungeonSubstages_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+     */
+    public int getLupinDungeonSubstagesCount() {
+      return lupinDungeonSubstages_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+     */
+    public com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage getLupinDungeonSubstages(int index) {
+      return lupinDungeonSubstages_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+     */
+    public com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStageOrBuilder getLupinDungeonSubstagesOrBuilder(
+        int index) {
+      return lupinDungeonSubstages_.get(index);
+    }
+
+    public static final int LUPIN_BATTLE_REWARDS_FIELD_NUMBER = 120;
+    private java.util.List<com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards> lupinBattleRewards_;
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+     */
+    public java.util.List<com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards> getLupinBattleRewardsList() {
+      return lupinBattleRewards_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+     */
+    public java.util.List<? extends com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewardsOrBuilder> 
+        getLupinBattleRewardsOrBuilderList() {
+      return lupinBattleRewards_;
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+     */
+    public int getLupinBattleRewardsCount() {
+      return lupinBattleRewards_.size();
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+     */
+    public com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards getLupinBattleRewards(int index) {
+      return lupinBattleRewards_.get(index);
+    }
+    /**
+     * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+     */
+    public com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewardsOrBuilder getLupinBattleRewardsOrBuilder(
+        int index) {
+      return lupinBattleRewards_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -8053,6 +8488,24 @@ public final class MsgGameDataOuterClass {
       }
       for (int i = 0; i < monsterCostumes_.size(); i++) {
         output.writeMessage(114, monsterCostumes_.get(i));
+      }
+      for (int i = 0; i < superEvolutionFestivalRawDatas_.size(); i++) {
+        output.writeMessage(115, superEvolutionFestivalRawDatas_.get(i));
+      }
+      for (int i = 0; i < superEvolutionFestivalRewards_.size(); i++) {
+        output.writeMessage(116, superEvolutionFestivalRewards_.get(i));
+      }
+      for (int i = 0; i < lupinDungeonSeasons_.size(); i++) {
+        output.writeMessage(117, lupinDungeonSeasons_.get(i));
+      }
+      for (int i = 0; i < lupinDungeonStages_.size(); i++) {
+        output.writeMessage(118, lupinDungeonStages_.get(i));
+      }
+      for (int i = 0; i < lupinDungeonSubstages_.size(); i++) {
+        output.writeMessage(119, lupinDungeonSubstages_.get(i));
+      }
+      for (int i = 0; i < lupinBattleRewards_.size(); i++) {
+        output.writeMessage(120, lupinBattleRewards_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -8520,6 +8973,30 @@ public final class MsgGameDataOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(114, monsterCostumes_.get(i));
       }
+      for (int i = 0; i < superEvolutionFestivalRawDatas_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(115, superEvolutionFestivalRawDatas_.get(i));
+      }
+      for (int i = 0; i < superEvolutionFestivalRewards_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(116, superEvolutionFestivalRewards_.get(i));
+      }
+      for (int i = 0; i < lupinDungeonSeasons_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(117, lupinDungeonSeasons_.get(i));
+      }
+      for (int i = 0; i < lupinDungeonStages_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(118, lupinDungeonStages_.get(i));
+      }
+      for (int i = 0; i < lupinDungeonSubstages_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(119, lupinDungeonSubstages_.get(i));
+      }
+      for (int i = 0; i < lupinBattleRewards_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(120, lupinBattleRewards_.get(i));
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -8750,6 +9227,18 @@ public final class MsgGameDataOuterClass {
           .equals(other.getMonsterCostumeBundlesList());
       result = result && getMonsterCostumesList()
           .equals(other.getMonsterCostumesList());
+      result = result && getSuperEvolutionFestivalRawDatasList()
+          .equals(other.getSuperEvolutionFestivalRawDatasList());
+      result = result && getSuperEvolutionFestivalRewardsList()
+          .equals(other.getSuperEvolutionFestivalRewardsList());
+      result = result && getLupinDungeonSeasonsList()
+          .equals(other.getLupinDungeonSeasonsList());
+      result = result && getLupinDungeonStagesList()
+          .equals(other.getLupinDungeonStagesList());
+      result = result && getLupinDungeonSubstagesList()
+          .equals(other.getLupinDungeonSubstagesList());
+      result = result && getLupinBattleRewardsList()
+          .equals(other.getLupinBattleRewardsList());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -9187,6 +9676,30 @@ public final class MsgGameDataOuterClass {
         hash = (37 * hash) + MONSTER_COSTUMES_FIELD_NUMBER;
         hash = (53 * hash) + getMonsterCostumesList().hashCode();
       }
+      if (getSuperEvolutionFestivalRawDatasCount() > 0) {
+        hash = (37 * hash) + SUPER_EVOLUTION_FESTIVAL_RAW_DATAS_FIELD_NUMBER;
+        hash = (53 * hash) + getSuperEvolutionFestivalRawDatasList().hashCode();
+      }
+      if (getSuperEvolutionFestivalRewardsCount() > 0) {
+        hash = (37 * hash) + SUPER_EVOLUTION_FESTIVAL_REWARDS_FIELD_NUMBER;
+        hash = (53 * hash) + getSuperEvolutionFestivalRewardsList().hashCode();
+      }
+      if (getLupinDungeonSeasonsCount() > 0) {
+        hash = (37 * hash) + LUPIN_DUNGEON_SEASONS_FIELD_NUMBER;
+        hash = (53 * hash) + getLupinDungeonSeasonsList().hashCode();
+      }
+      if (getLupinDungeonStagesCount() > 0) {
+        hash = (37 * hash) + LUPIN_DUNGEON_STAGES_FIELD_NUMBER;
+        hash = (53 * hash) + getLupinDungeonStagesList().hashCode();
+      }
+      if (getLupinDungeonSubstagesCount() > 0) {
+        hash = (37 * hash) + LUPIN_DUNGEON_SUBSTAGES_FIELD_NUMBER;
+        hash = (53 * hash) + getLupinDungeonSubstagesList().hashCode();
+      }
+      if (getLupinBattleRewardsCount() > 0) {
+        hash = (37 * hash) + LUPIN_BATTLE_REWARDS_FIELD_NUMBER;
+        hash = (53 * hash) + getLupinBattleRewardsList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -9415,6 +9928,12 @@ public final class MsgGameDataOuterClass {
           getMonsterCostumeCollectionsFieldBuilder();
           getMonsterCostumeBundlesFieldBuilder();
           getMonsterCostumesFieldBuilder();
+          getSuperEvolutionFestivalRawDatasFieldBuilder();
+          getSuperEvolutionFestivalRewardsFieldBuilder();
+          getLupinDungeonSeasonsFieldBuilder();
+          getLupinDungeonStagesFieldBuilder();
+          getLupinDungeonSubstagesFieldBuilder();
+          getLupinBattleRewardsFieldBuilder();
         }
       }
       public Builder clear() {
@@ -10044,6 +10563,42 @@ public final class MsgGameDataOuterClass {
           bitField3_ = (bitField3_ & ~0x00000400);
         } else {
           monsterCostumesBuilder_.clear();
+        }
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          superEvolutionFestivalRawDatas_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000800);
+        } else {
+          superEvolutionFestivalRawDatasBuilder_.clear();
+        }
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          superEvolutionFestivalRewards_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00001000);
+        } else {
+          superEvolutionFestivalRewardsBuilder_.clear();
+        }
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          lupinDungeonSeasons_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00002000);
+        } else {
+          lupinDungeonSeasonsBuilder_.clear();
+        }
+        if (lupinDungeonStagesBuilder_ == null) {
+          lupinDungeonStages_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00004000);
+        } else {
+          lupinDungeonStagesBuilder_.clear();
+        }
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          lupinDungeonSubstages_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00008000);
+        } else {
+          lupinDungeonSubstagesBuilder_.clear();
+        }
+        if (lupinBattleRewardsBuilder_ == null) {
+          lupinBattleRewards_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00010000);
+        } else {
+          lupinBattleRewardsBuilder_.clear();
         }
         return this;
       }
@@ -11014,6 +11569,60 @@ public final class MsgGameDataOuterClass {
           result.monsterCostumes_ = monsterCostumes_;
         } else {
           result.monsterCostumes_ = monsterCostumesBuilder_.build();
+        }
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          if (((bitField3_ & 0x00000800) == 0x00000800)) {
+            superEvolutionFestivalRawDatas_ = java.util.Collections.unmodifiableList(superEvolutionFestivalRawDatas_);
+            bitField3_ = (bitField3_ & ~0x00000800);
+          }
+          result.superEvolutionFestivalRawDatas_ = superEvolutionFestivalRawDatas_;
+        } else {
+          result.superEvolutionFestivalRawDatas_ = superEvolutionFestivalRawDatasBuilder_.build();
+        }
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          if (((bitField3_ & 0x00001000) == 0x00001000)) {
+            superEvolutionFestivalRewards_ = java.util.Collections.unmodifiableList(superEvolutionFestivalRewards_);
+            bitField3_ = (bitField3_ & ~0x00001000);
+          }
+          result.superEvolutionFestivalRewards_ = superEvolutionFestivalRewards_;
+        } else {
+          result.superEvolutionFestivalRewards_ = superEvolutionFestivalRewardsBuilder_.build();
+        }
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          if (((bitField3_ & 0x00002000) == 0x00002000)) {
+            lupinDungeonSeasons_ = java.util.Collections.unmodifiableList(lupinDungeonSeasons_);
+            bitField3_ = (bitField3_ & ~0x00002000);
+          }
+          result.lupinDungeonSeasons_ = lupinDungeonSeasons_;
+        } else {
+          result.lupinDungeonSeasons_ = lupinDungeonSeasonsBuilder_.build();
+        }
+        if (lupinDungeonStagesBuilder_ == null) {
+          if (((bitField3_ & 0x00004000) == 0x00004000)) {
+            lupinDungeonStages_ = java.util.Collections.unmodifiableList(lupinDungeonStages_);
+            bitField3_ = (bitField3_ & ~0x00004000);
+          }
+          result.lupinDungeonStages_ = lupinDungeonStages_;
+        } else {
+          result.lupinDungeonStages_ = lupinDungeonStagesBuilder_.build();
+        }
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          if (((bitField3_ & 0x00008000) == 0x00008000)) {
+            lupinDungeonSubstages_ = java.util.Collections.unmodifiableList(lupinDungeonSubstages_);
+            bitField3_ = (bitField3_ & ~0x00008000);
+          }
+          result.lupinDungeonSubstages_ = lupinDungeonSubstages_;
+        } else {
+          result.lupinDungeonSubstages_ = lupinDungeonSubstagesBuilder_.build();
+        }
+        if (lupinBattleRewardsBuilder_ == null) {
+          if (((bitField3_ & 0x00010000) == 0x00010000)) {
+            lupinBattleRewards_ = java.util.Collections.unmodifiableList(lupinBattleRewards_);
+            bitField3_ = (bitField3_ & ~0x00010000);
+          }
+          result.lupinBattleRewards_ = lupinBattleRewards_;
+        } else {
+          result.lupinBattleRewards_ = lupinBattleRewardsBuilder_.build();
         }
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -13765,6 +14374,162 @@ public final class MsgGameDataOuterClass {
                    getMonsterCostumesFieldBuilder() : null;
             } else {
               monsterCostumesBuilder_.addAllMessages(other.monsterCostumes_);
+            }
+          }
+        }
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          if (!other.superEvolutionFestivalRawDatas_.isEmpty()) {
+            if (superEvolutionFestivalRawDatas_.isEmpty()) {
+              superEvolutionFestivalRawDatas_ = other.superEvolutionFestivalRawDatas_;
+              bitField3_ = (bitField3_ & ~0x00000800);
+            } else {
+              ensureSuperEvolutionFestivalRawDatasIsMutable();
+              superEvolutionFestivalRawDatas_.addAll(other.superEvolutionFestivalRawDatas_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.superEvolutionFestivalRawDatas_.isEmpty()) {
+            if (superEvolutionFestivalRawDatasBuilder_.isEmpty()) {
+              superEvolutionFestivalRawDatasBuilder_.dispose();
+              superEvolutionFestivalRawDatasBuilder_ = null;
+              superEvolutionFestivalRawDatas_ = other.superEvolutionFestivalRawDatas_;
+              bitField3_ = (bitField3_ & ~0x00000800);
+              superEvolutionFestivalRawDatasBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getSuperEvolutionFestivalRawDatasFieldBuilder() : null;
+            } else {
+              superEvolutionFestivalRawDatasBuilder_.addAllMessages(other.superEvolutionFestivalRawDatas_);
+            }
+          }
+        }
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          if (!other.superEvolutionFestivalRewards_.isEmpty()) {
+            if (superEvolutionFestivalRewards_.isEmpty()) {
+              superEvolutionFestivalRewards_ = other.superEvolutionFestivalRewards_;
+              bitField3_ = (bitField3_ & ~0x00001000);
+            } else {
+              ensureSuperEvolutionFestivalRewardsIsMutable();
+              superEvolutionFestivalRewards_.addAll(other.superEvolutionFestivalRewards_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.superEvolutionFestivalRewards_.isEmpty()) {
+            if (superEvolutionFestivalRewardsBuilder_.isEmpty()) {
+              superEvolutionFestivalRewardsBuilder_.dispose();
+              superEvolutionFestivalRewardsBuilder_ = null;
+              superEvolutionFestivalRewards_ = other.superEvolutionFestivalRewards_;
+              bitField3_ = (bitField3_ & ~0x00001000);
+              superEvolutionFestivalRewardsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getSuperEvolutionFestivalRewardsFieldBuilder() : null;
+            } else {
+              superEvolutionFestivalRewardsBuilder_.addAllMessages(other.superEvolutionFestivalRewards_);
+            }
+          }
+        }
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          if (!other.lupinDungeonSeasons_.isEmpty()) {
+            if (lupinDungeonSeasons_.isEmpty()) {
+              lupinDungeonSeasons_ = other.lupinDungeonSeasons_;
+              bitField3_ = (bitField3_ & ~0x00002000);
+            } else {
+              ensureLupinDungeonSeasonsIsMutable();
+              lupinDungeonSeasons_.addAll(other.lupinDungeonSeasons_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.lupinDungeonSeasons_.isEmpty()) {
+            if (lupinDungeonSeasonsBuilder_.isEmpty()) {
+              lupinDungeonSeasonsBuilder_.dispose();
+              lupinDungeonSeasonsBuilder_ = null;
+              lupinDungeonSeasons_ = other.lupinDungeonSeasons_;
+              bitField3_ = (bitField3_ & ~0x00002000);
+              lupinDungeonSeasonsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getLupinDungeonSeasonsFieldBuilder() : null;
+            } else {
+              lupinDungeonSeasonsBuilder_.addAllMessages(other.lupinDungeonSeasons_);
+            }
+          }
+        }
+        if (lupinDungeonStagesBuilder_ == null) {
+          if (!other.lupinDungeonStages_.isEmpty()) {
+            if (lupinDungeonStages_.isEmpty()) {
+              lupinDungeonStages_ = other.lupinDungeonStages_;
+              bitField3_ = (bitField3_ & ~0x00004000);
+            } else {
+              ensureLupinDungeonStagesIsMutable();
+              lupinDungeonStages_.addAll(other.lupinDungeonStages_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.lupinDungeonStages_.isEmpty()) {
+            if (lupinDungeonStagesBuilder_.isEmpty()) {
+              lupinDungeonStagesBuilder_.dispose();
+              lupinDungeonStagesBuilder_ = null;
+              lupinDungeonStages_ = other.lupinDungeonStages_;
+              bitField3_ = (bitField3_ & ~0x00004000);
+              lupinDungeonStagesBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getLupinDungeonStagesFieldBuilder() : null;
+            } else {
+              lupinDungeonStagesBuilder_.addAllMessages(other.lupinDungeonStages_);
+            }
+          }
+        }
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          if (!other.lupinDungeonSubstages_.isEmpty()) {
+            if (lupinDungeonSubstages_.isEmpty()) {
+              lupinDungeonSubstages_ = other.lupinDungeonSubstages_;
+              bitField3_ = (bitField3_ & ~0x00008000);
+            } else {
+              ensureLupinDungeonSubstagesIsMutable();
+              lupinDungeonSubstages_.addAll(other.lupinDungeonSubstages_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.lupinDungeonSubstages_.isEmpty()) {
+            if (lupinDungeonSubstagesBuilder_.isEmpty()) {
+              lupinDungeonSubstagesBuilder_.dispose();
+              lupinDungeonSubstagesBuilder_ = null;
+              lupinDungeonSubstages_ = other.lupinDungeonSubstages_;
+              bitField3_ = (bitField3_ & ~0x00008000);
+              lupinDungeonSubstagesBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getLupinDungeonSubstagesFieldBuilder() : null;
+            } else {
+              lupinDungeonSubstagesBuilder_.addAllMessages(other.lupinDungeonSubstages_);
+            }
+          }
+        }
+        if (lupinBattleRewardsBuilder_ == null) {
+          if (!other.lupinBattleRewards_.isEmpty()) {
+            if (lupinBattleRewards_.isEmpty()) {
+              lupinBattleRewards_ = other.lupinBattleRewards_;
+              bitField3_ = (bitField3_ & ~0x00010000);
+            } else {
+              ensureLupinBattleRewardsIsMutable();
+              lupinBattleRewards_.addAll(other.lupinBattleRewards_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.lupinBattleRewards_.isEmpty()) {
+            if (lupinBattleRewardsBuilder_.isEmpty()) {
+              lupinBattleRewardsBuilder_.dispose();
+              lupinBattleRewardsBuilder_ = null;
+              lupinBattleRewards_ = other.lupinBattleRewards_;
+              bitField3_ = (bitField3_ & ~0x00010000);
+              lupinBattleRewardsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getLupinBattleRewardsFieldBuilder() : null;
+            } else {
+              lupinBattleRewardsBuilder_.addAllMessages(other.lupinBattleRewards_);
             }
           }
         }
@@ -38742,6 +39507,1446 @@ public final class MsgGameDataOuterClass {
         }
         return monsterCostumesBuilder_;
       }
+
+      private java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData> superEvolutionFestivalRawDatas_ =
+        java.util.Collections.emptyList();
+      private void ensureSuperEvolutionFestivalRawDatasIsMutable() {
+        if (!((bitField3_ & 0x00000800) == 0x00000800)) {
+          superEvolutionFestivalRawDatas_ = new java.util.ArrayList<com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData>(superEvolutionFestivalRawDatas_);
+          bitField3_ |= 0x00000800;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData, com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.Builder, com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawDataOrBuilder> superEvolutionFestivalRawDatasBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData> getSuperEvolutionFestivalRawDatasList() {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(superEvolutionFestivalRawDatas_);
+        } else {
+          return superEvolutionFestivalRawDatasBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public int getSuperEvolutionFestivalRawDatasCount() {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          return superEvolutionFestivalRawDatas_.size();
+        } else {
+          return superEvolutionFestivalRawDatasBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData getSuperEvolutionFestivalRawDatas(int index) {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          return superEvolutionFestivalRawDatas_.get(index);
+        } else {
+          return superEvolutionFestivalRawDatasBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public Builder setSuperEvolutionFestivalRawDatas(
+          int index, com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData value) {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSuperEvolutionFestivalRawDatasIsMutable();
+          superEvolutionFestivalRawDatas_.set(index, value);
+          onChanged();
+        } else {
+          superEvolutionFestivalRawDatasBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public Builder setSuperEvolutionFestivalRawDatas(
+          int index, com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.Builder builderForValue) {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          ensureSuperEvolutionFestivalRawDatasIsMutable();
+          superEvolutionFestivalRawDatas_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          superEvolutionFestivalRawDatasBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public Builder addSuperEvolutionFestivalRawDatas(com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData value) {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSuperEvolutionFestivalRawDatasIsMutable();
+          superEvolutionFestivalRawDatas_.add(value);
+          onChanged();
+        } else {
+          superEvolutionFestivalRawDatasBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public Builder addSuperEvolutionFestivalRawDatas(
+          int index, com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData value) {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSuperEvolutionFestivalRawDatasIsMutable();
+          superEvolutionFestivalRawDatas_.add(index, value);
+          onChanged();
+        } else {
+          superEvolutionFestivalRawDatasBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public Builder addSuperEvolutionFestivalRawDatas(
+          com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.Builder builderForValue) {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          ensureSuperEvolutionFestivalRawDatasIsMutable();
+          superEvolutionFestivalRawDatas_.add(builderForValue.build());
+          onChanged();
+        } else {
+          superEvolutionFestivalRawDatasBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public Builder addSuperEvolutionFestivalRawDatas(
+          int index, com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.Builder builderForValue) {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          ensureSuperEvolutionFestivalRawDatasIsMutable();
+          superEvolutionFestivalRawDatas_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          superEvolutionFestivalRawDatasBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public Builder addAllSuperEvolutionFestivalRawDatas(
+          java.lang.Iterable<? extends com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData> values) {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          ensureSuperEvolutionFestivalRawDatasIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, superEvolutionFestivalRawDatas_);
+          onChanged();
+        } else {
+          superEvolutionFestivalRawDatasBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public Builder clearSuperEvolutionFestivalRawDatas() {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          superEvolutionFestivalRawDatas_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00000800);
+          onChanged();
+        } else {
+          superEvolutionFestivalRawDatasBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public Builder removeSuperEvolutionFestivalRawDatas(int index) {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          ensureSuperEvolutionFestivalRawDatasIsMutable();
+          superEvolutionFestivalRawDatas_.remove(index);
+          onChanged();
+        } else {
+          superEvolutionFestivalRawDatasBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.Builder getSuperEvolutionFestivalRawDatasBuilder(
+          int index) {
+        return getSuperEvolutionFestivalRawDatasFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawDataOrBuilder getSuperEvolutionFestivalRawDatasOrBuilder(
+          int index) {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          return superEvolutionFestivalRawDatas_.get(index);  } else {
+          return superEvolutionFestivalRawDatasBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawDataOrBuilder> 
+           getSuperEvolutionFestivalRawDatasOrBuilderList() {
+        if (superEvolutionFestivalRawDatasBuilder_ != null) {
+          return superEvolutionFestivalRawDatasBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(superEvolutionFestivalRawDatas_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.Builder addSuperEvolutionFestivalRawDatasBuilder() {
+        return getSuperEvolutionFestivalRawDatasFieldBuilder().addBuilder(
+            com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.Builder addSuperEvolutionFestivalRawDatasBuilder(
+          int index) {
+        return getSuperEvolutionFestivalRawDatasFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalRawData super_evolution_festival_raw_datas = 115;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.Builder> 
+           getSuperEvolutionFestivalRawDatasBuilderList() {
+        return getSuperEvolutionFestivalRawDatasFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData, com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.Builder, com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawDataOrBuilder> 
+          getSuperEvolutionFestivalRawDatasFieldBuilder() {
+        if (superEvolutionFestivalRawDatasBuilder_ == null) {
+          superEvolutionFestivalRawDatasBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData, com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawData.Builder, com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.MsgSuperEvolutionFestivalRawDataOrBuilder>(
+                  superEvolutionFestivalRawDatas_,
+                  ((bitField3_ & 0x00000800) == 0x00000800),
+                  getParentForChildren(),
+                  isClean());
+          superEvolutionFestivalRawDatas_ = null;
+        }
+        return superEvolutionFestivalRawDatasBuilder_;
+      }
+
+      private java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward> superEvolutionFestivalRewards_ =
+        java.util.Collections.emptyList();
+      private void ensureSuperEvolutionFestivalRewardsIsMutable() {
+        if (!((bitField3_ & 0x00001000) == 0x00001000)) {
+          superEvolutionFestivalRewards_ = new java.util.ArrayList<com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward>(superEvolutionFestivalRewards_);
+          bitField3_ |= 0x00001000;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward, com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.Builder, com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalRewardOrBuilder> superEvolutionFestivalRewardsBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward> getSuperEvolutionFestivalRewardsList() {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(superEvolutionFestivalRewards_);
+        } else {
+          return superEvolutionFestivalRewardsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public int getSuperEvolutionFestivalRewardsCount() {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          return superEvolutionFestivalRewards_.size();
+        } else {
+          return superEvolutionFestivalRewardsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward getSuperEvolutionFestivalRewards(int index) {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          return superEvolutionFestivalRewards_.get(index);
+        } else {
+          return superEvolutionFestivalRewardsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public Builder setSuperEvolutionFestivalRewards(
+          int index, com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward value) {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSuperEvolutionFestivalRewardsIsMutable();
+          superEvolutionFestivalRewards_.set(index, value);
+          onChanged();
+        } else {
+          superEvolutionFestivalRewardsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public Builder setSuperEvolutionFestivalRewards(
+          int index, com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.Builder builderForValue) {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          ensureSuperEvolutionFestivalRewardsIsMutable();
+          superEvolutionFestivalRewards_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          superEvolutionFestivalRewardsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public Builder addSuperEvolutionFestivalRewards(com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward value) {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSuperEvolutionFestivalRewardsIsMutable();
+          superEvolutionFestivalRewards_.add(value);
+          onChanged();
+        } else {
+          superEvolutionFestivalRewardsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public Builder addSuperEvolutionFestivalRewards(
+          int index, com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward value) {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSuperEvolutionFestivalRewardsIsMutable();
+          superEvolutionFestivalRewards_.add(index, value);
+          onChanged();
+        } else {
+          superEvolutionFestivalRewardsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public Builder addSuperEvolutionFestivalRewards(
+          com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.Builder builderForValue) {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          ensureSuperEvolutionFestivalRewardsIsMutable();
+          superEvolutionFestivalRewards_.add(builderForValue.build());
+          onChanged();
+        } else {
+          superEvolutionFestivalRewardsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public Builder addSuperEvolutionFestivalRewards(
+          int index, com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.Builder builderForValue) {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          ensureSuperEvolutionFestivalRewardsIsMutable();
+          superEvolutionFestivalRewards_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          superEvolutionFestivalRewardsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public Builder addAllSuperEvolutionFestivalRewards(
+          java.lang.Iterable<? extends com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward> values) {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          ensureSuperEvolutionFestivalRewardsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, superEvolutionFestivalRewards_);
+          onChanged();
+        } else {
+          superEvolutionFestivalRewardsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public Builder clearSuperEvolutionFestivalRewards() {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          superEvolutionFestivalRewards_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00001000);
+          onChanged();
+        } else {
+          superEvolutionFestivalRewardsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public Builder removeSuperEvolutionFestivalRewards(int index) {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          ensureSuperEvolutionFestivalRewardsIsMutable();
+          superEvolutionFestivalRewards_.remove(index);
+          onChanged();
+        } else {
+          superEvolutionFestivalRewardsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.Builder getSuperEvolutionFestivalRewardsBuilder(
+          int index) {
+        return getSuperEvolutionFestivalRewardsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalRewardOrBuilder getSuperEvolutionFestivalRewardsOrBuilder(
+          int index) {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          return superEvolutionFestivalRewards_.get(index);  } else {
+          return superEvolutionFestivalRewardsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalRewardOrBuilder> 
+           getSuperEvolutionFestivalRewardsOrBuilderList() {
+        if (superEvolutionFestivalRewardsBuilder_ != null) {
+          return superEvolutionFestivalRewardsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(superEvolutionFestivalRewards_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.Builder addSuperEvolutionFestivalRewardsBuilder() {
+        return getSuperEvolutionFestivalRewardsFieldBuilder().addBuilder(
+            com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.Builder addSuperEvolutionFestivalRewardsBuilder(
+          int index) {
+        return getSuperEvolutionFestivalRewardsFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgSuperEvolutionFestivalReward super_evolution_festival_rewards = 116;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.Builder> 
+           getSuperEvolutionFestivalRewardsBuilderList() {
+        return getSuperEvolutionFestivalRewardsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward, com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.Builder, com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalRewardOrBuilder> 
+          getSuperEvolutionFestivalRewardsFieldBuilder() {
+        if (superEvolutionFestivalRewardsBuilder_ == null) {
+          superEvolutionFestivalRewardsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward, com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalReward.Builder, com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.MsgSuperEvolutionFestivalRewardOrBuilder>(
+                  superEvolutionFestivalRewards_,
+                  ((bitField3_ & 0x00001000) == 0x00001000),
+                  getParentForChildren(),
+                  isClean());
+          superEvolutionFestivalRewards_ = null;
+        }
+        return superEvolutionFestivalRewardsBuilder_;
+      }
+
+      private java.util.List<com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason> lupinDungeonSeasons_ =
+        java.util.Collections.emptyList();
+      private void ensureLupinDungeonSeasonsIsMutable() {
+        if (!((bitField3_ & 0x00002000) == 0x00002000)) {
+          lupinDungeonSeasons_ = new java.util.ArrayList<com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason>(lupinDungeonSeasons_);
+          bitField3_ |= 0x00002000;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason, com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.Builder, com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeasonOrBuilder> lupinDungeonSeasonsBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason> getLupinDungeonSeasonsList() {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(lupinDungeonSeasons_);
+        } else {
+          return lupinDungeonSeasonsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public int getLupinDungeonSeasonsCount() {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          return lupinDungeonSeasons_.size();
+        } else {
+          return lupinDungeonSeasonsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason getLupinDungeonSeasons(int index) {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          return lupinDungeonSeasons_.get(index);
+        } else {
+          return lupinDungeonSeasonsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public Builder setLupinDungeonSeasons(
+          int index, com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason value) {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinDungeonSeasonsIsMutable();
+          lupinDungeonSeasons_.set(index, value);
+          onChanged();
+        } else {
+          lupinDungeonSeasonsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public Builder setLupinDungeonSeasons(
+          int index, com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.Builder builderForValue) {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          ensureLupinDungeonSeasonsIsMutable();
+          lupinDungeonSeasons_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          lupinDungeonSeasonsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public Builder addLupinDungeonSeasons(com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason value) {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinDungeonSeasonsIsMutable();
+          lupinDungeonSeasons_.add(value);
+          onChanged();
+        } else {
+          lupinDungeonSeasonsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public Builder addLupinDungeonSeasons(
+          int index, com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason value) {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinDungeonSeasonsIsMutable();
+          lupinDungeonSeasons_.add(index, value);
+          onChanged();
+        } else {
+          lupinDungeonSeasonsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public Builder addLupinDungeonSeasons(
+          com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.Builder builderForValue) {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          ensureLupinDungeonSeasonsIsMutable();
+          lupinDungeonSeasons_.add(builderForValue.build());
+          onChanged();
+        } else {
+          lupinDungeonSeasonsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public Builder addLupinDungeonSeasons(
+          int index, com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.Builder builderForValue) {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          ensureLupinDungeonSeasonsIsMutable();
+          lupinDungeonSeasons_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          lupinDungeonSeasonsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public Builder addAllLupinDungeonSeasons(
+          java.lang.Iterable<? extends com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason> values) {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          ensureLupinDungeonSeasonsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, lupinDungeonSeasons_);
+          onChanged();
+        } else {
+          lupinDungeonSeasonsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public Builder clearLupinDungeonSeasons() {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          lupinDungeonSeasons_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00002000);
+          onChanged();
+        } else {
+          lupinDungeonSeasonsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public Builder removeLupinDungeonSeasons(int index) {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          ensureLupinDungeonSeasonsIsMutable();
+          lupinDungeonSeasons_.remove(index);
+          onChanged();
+        } else {
+          lupinDungeonSeasonsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.Builder getLupinDungeonSeasonsBuilder(
+          int index) {
+        return getLupinDungeonSeasonsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeasonOrBuilder getLupinDungeonSeasonsOrBuilder(
+          int index) {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          return lupinDungeonSeasons_.get(index);  } else {
+          return lupinDungeonSeasonsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeasonOrBuilder> 
+           getLupinDungeonSeasonsOrBuilderList() {
+        if (lupinDungeonSeasonsBuilder_ != null) {
+          return lupinDungeonSeasonsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(lupinDungeonSeasons_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.Builder addLupinDungeonSeasonsBuilder() {
+        return getLupinDungeonSeasonsFieldBuilder().addBuilder(
+            com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.Builder addLupinDungeonSeasonsBuilder(
+          int index) {
+        return getLupinDungeonSeasonsFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSeason lupin_dungeon_seasons = 117;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.Builder> 
+           getLupinDungeonSeasonsBuilderList() {
+        return getLupinDungeonSeasonsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason, com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.Builder, com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeasonOrBuilder> 
+          getLupinDungeonSeasonsFieldBuilder() {
+        if (lupinDungeonSeasonsBuilder_ == null) {
+          lupinDungeonSeasonsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason, com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeason.Builder, com.felania.msldb.MsgLupinDungeonSeasonOuterClass.MsgLupinDungeonSeasonOrBuilder>(
+                  lupinDungeonSeasons_,
+                  ((bitField3_ & 0x00002000) == 0x00002000),
+                  getParentForChildren(),
+                  isClean());
+          lupinDungeonSeasons_ = null;
+        }
+        return lupinDungeonSeasonsBuilder_;
+      }
+
+      private java.util.List<com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage> lupinDungeonStages_ =
+        java.util.Collections.emptyList();
+      private void ensureLupinDungeonStagesIsMutable() {
+        if (!((bitField3_ & 0x00004000) == 0x00004000)) {
+          lupinDungeonStages_ = new java.util.ArrayList<com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage>(lupinDungeonStages_);
+          bitField3_ |= 0x00004000;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage, com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.Builder, com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStageOrBuilder> lupinDungeonStagesBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage> getLupinDungeonStagesList() {
+        if (lupinDungeonStagesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(lupinDungeonStages_);
+        } else {
+          return lupinDungeonStagesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public int getLupinDungeonStagesCount() {
+        if (lupinDungeonStagesBuilder_ == null) {
+          return lupinDungeonStages_.size();
+        } else {
+          return lupinDungeonStagesBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage getLupinDungeonStages(int index) {
+        if (lupinDungeonStagesBuilder_ == null) {
+          return lupinDungeonStages_.get(index);
+        } else {
+          return lupinDungeonStagesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public Builder setLupinDungeonStages(
+          int index, com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage value) {
+        if (lupinDungeonStagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinDungeonStagesIsMutable();
+          lupinDungeonStages_.set(index, value);
+          onChanged();
+        } else {
+          lupinDungeonStagesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public Builder setLupinDungeonStages(
+          int index, com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.Builder builderForValue) {
+        if (lupinDungeonStagesBuilder_ == null) {
+          ensureLupinDungeonStagesIsMutable();
+          lupinDungeonStages_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          lupinDungeonStagesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public Builder addLupinDungeonStages(com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage value) {
+        if (lupinDungeonStagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinDungeonStagesIsMutable();
+          lupinDungeonStages_.add(value);
+          onChanged();
+        } else {
+          lupinDungeonStagesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public Builder addLupinDungeonStages(
+          int index, com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage value) {
+        if (lupinDungeonStagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinDungeonStagesIsMutable();
+          lupinDungeonStages_.add(index, value);
+          onChanged();
+        } else {
+          lupinDungeonStagesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public Builder addLupinDungeonStages(
+          com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.Builder builderForValue) {
+        if (lupinDungeonStagesBuilder_ == null) {
+          ensureLupinDungeonStagesIsMutable();
+          lupinDungeonStages_.add(builderForValue.build());
+          onChanged();
+        } else {
+          lupinDungeonStagesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public Builder addLupinDungeonStages(
+          int index, com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.Builder builderForValue) {
+        if (lupinDungeonStagesBuilder_ == null) {
+          ensureLupinDungeonStagesIsMutable();
+          lupinDungeonStages_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          lupinDungeonStagesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public Builder addAllLupinDungeonStages(
+          java.lang.Iterable<? extends com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage> values) {
+        if (lupinDungeonStagesBuilder_ == null) {
+          ensureLupinDungeonStagesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, lupinDungeonStages_);
+          onChanged();
+        } else {
+          lupinDungeonStagesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public Builder clearLupinDungeonStages() {
+        if (lupinDungeonStagesBuilder_ == null) {
+          lupinDungeonStages_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00004000);
+          onChanged();
+        } else {
+          lupinDungeonStagesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public Builder removeLupinDungeonStages(int index) {
+        if (lupinDungeonStagesBuilder_ == null) {
+          ensureLupinDungeonStagesIsMutable();
+          lupinDungeonStages_.remove(index);
+          onChanged();
+        } else {
+          lupinDungeonStagesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.Builder getLupinDungeonStagesBuilder(
+          int index) {
+        return getLupinDungeonStagesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStageOrBuilder getLupinDungeonStagesOrBuilder(
+          int index) {
+        if (lupinDungeonStagesBuilder_ == null) {
+          return lupinDungeonStages_.get(index);  } else {
+          return lupinDungeonStagesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStageOrBuilder> 
+           getLupinDungeonStagesOrBuilderList() {
+        if (lupinDungeonStagesBuilder_ != null) {
+          return lupinDungeonStagesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(lupinDungeonStages_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.Builder addLupinDungeonStagesBuilder() {
+        return getLupinDungeonStagesFieldBuilder().addBuilder(
+            com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.Builder addLupinDungeonStagesBuilder(
+          int index) {
+        return getLupinDungeonStagesFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonStage lupin_dungeon_stages = 118;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.Builder> 
+           getLupinDungeonStagesBuilderList() {
+        return getLupinDungeonStagesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage, com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.Builder, com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStageOrBuilder> 
+          getLupinDungeonStagesFieldBuilder() {
+        if (lupinDungeonStagesBuilder_ == null) {
+          lupinDungeonStagesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage, com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStage.Builder, com.felania.msldb.MsgLupinDungeonStageOuterClass.MsgLupinDungeonStageOrBuilder>(
+                  lupinDungeonStages_,
+                  ((bitField3_ & 0x00004000) == 0x00004000),
+                  getParentForChildren(),
+                  isClean());
+          lupinDungeonStages_ = null;
+        }
+        return lupinDungeonStagesBuilder_;
+      }
+
+      private java.util.List<com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage> lupinDungeonSubstages_ =
+        java.util.Collections.emptyList();
+      private void ensureLupinDungeonSubstagesIsMutable() {
+        if (!((bitField3_ & 0x00008000) == 0x00008000)) {
+          lupinDungeonSubstages_ = new java.util.ArrayList<com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage>(lupinDungeonSubstages_);
+          bitField3_ |= 0x00008000;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage, com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.Builder, com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStageOrBuilder> lupinDungeonSubstagesBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage> getLupinDungeonSubstagesList() {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(lupinDungeonSubstages_);
+        } else {
+          return lupinDungeonSubstagesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public int getLupinDungeonSubstagesCount() {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          return lupinDungeonSubstages_.size();
+        } else {
+          return lupinDungeonSubstagesBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage getLupinDungeonSubstages(int index) {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          return lupinDungeonSubstages_.get(index);
+        } else {
+          return lupinDungeonSubstagesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public Builder setLupinDungeonSubstages(
+          int index, com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage value) {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinDungeonSubstagesIsMutable();
+          lupinDungeonSubstages_.set(index, value);
+          onChanged();
+        } else {
+          lupinDungeonSubstagesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public Builder setLupinDungeonSubstages(
+          int index, com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.Builder builderForValue) {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          ensureLupinDungeonSubstagesIsMutable();
+          lupinDungeonSubstages_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          lupinDungeonSubstagesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public Builder addLupinDungeonSubstages(com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage value) {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinDungeonSubstagesIsMutable();
+          lupinDungeonSubstages_.add(value);
+          onChanged();
+        } else {
+          lupinDungeonSubstagesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public Builder addLupinDungeonSubstages(
+          int index, com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage value) {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinDungeonSubstagesIsMutable();
+          lupinDungeonSubstages_.add(index, value);
+          onChanged();
+        } else {
+          lupinDungeonSubstagesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public Builder addLupinDungeonSubstages(
+          com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.Builder builderForValue) {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          ensureLupinDungeonSubstagesIsMutable();
+          lupinDungeonSubstages_.add(builderForValue.build());
+          onChanged();
+        } else {
+          lupinDungeonSubstagesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public Builder addLupinDungeonSubstages(
+          int index, com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.Builder builderForValue) {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          ensureLupinDungeonSubstagesIsMutable();
+          lupinDungeonSubstages_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          lupinDungeonSubstagesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public Builder addAllLupinDungeonSubstages(
+          java.lang.Iterable<? extends com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage> values) {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          ensureLupinDungeonSubstagesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, lupinDungeonSubstages_);
+          onChanged();
+        } else {
+          lupinDungeonSubstagesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public Builder clearLupinDungeonSubstages() {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          lupinDungeonSubstages_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00008000);
+          onChanged();
+        } else {
+          lupinDungeonSubstagesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public Builder removeLupinDungeonSubstages(int index) {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          ensureLupinDungeonSubstagesIsMutable();
+          lupinDungeonSubstages_.remove(index);
+          onChanged();
+        } else {
+          lupinDungeonSubstagesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.Builder getLupinDungeonSubstagesBuilder(
+          int index) {
+        return getLupinDungeonSubstagesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStageOrBuilder getLupinDungeonSubstagesOrBuilder(
+          int index) {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          return lupinDungeonSubstages_.get(index);  } else {
+          return lupinDungeonSubstagesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStageOrBuilder> 
+           getLupinDungeonSubstagesOrBuilderList() {
+        if (lupinDungeonSubstagesBuilder_ != null) {
+          return lupinDungeonSubstagesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(lupinDungeonSubstages_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.Builder addLupinDungeonSubstagesBuilder() {
+        return getLupinDungeonSubstagesFieldBuilder().addBuilder(
+            com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.Builder addLupinDungeonSubstagesBuilder(
+          int index) {
+        return getLupinDungeonSubstagesFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonSubStage lupin_dungeon_substages = 119;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.Builder> 
+           getLupinDungeonSubstagesBuilderList() {
+        return getLupinDungeonSubstagesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage, com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.Builder, com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStageOrBuilder> 
+          getLupinDungeonSubstagesFieldBuilder() {
+        if (lupinDungeonSubstagesBuilder_ == null) {
+          lupinDungeonSubstagesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage, com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStage.Builder, com.felania.msldb.MsgLupinDungeonSubStageOuterClass.MsgLupinDungeonSubStageOrBuilder>(
+                  lupinDungeonSubstages_,
+                  ((bitField3_ & 0x00008000) == 0x00008000),
+                  getParentForChildren(),
+                  isClean());
+          lupinDungeonSubstages_ = null;
+        }
+        return lupinDungeonSubstagesBuilder_;
+      }
+
+      private java.util.List<com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards> lupinBattleRewards_ =
+        java.util.Collections.emptyList();
+      private void ensureLupinBattleRewardsIsMutable() {
+        if (!((bitField3_ & 0x00010000) == 0x00010000)) {
+          lupinBattleRewards_ = new java.util.ArrayList<com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards>(lupinBattleRewards_);
+          bitField3_ |= 0x00010000;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards, com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.Builder, com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewardsOrBuilder> lupinBattleRewardsBuilder_;
+
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards> getLupinBattleRewardsList() {
+        if (lupinBattleRewardsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(lupinBattleRewards_);
+        } else {
+          return lupinBattleRewardsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public int getLupinBattleRewardsCount() {
+        if (lupinBattleRewardsBuilder_ == null) {
+          return lupinBattleRewards_.size();
+        } else {
+          return lupinBattleRewardsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards getLupinBattleRewards(int index) {
+        if (lupinBattleRewardsBuilder_ == null) {
+          return lupinBattleRewards_.get(index);
+        } else {
+          return lupinBattleRewardsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public Builder setLupinBattleRewards(
+          int index, com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards value) {
+        if (lupinBattleRewardsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinBattleRewardsIsMutable();
+          lupinBattleRewards_.set(index, value);
+          onChanged();
+        } else {
+          lupinBattleRewardsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public Builder setLupinBattleRewards(
+          int index, com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.Builder builderForValue) {
+        if (lupinBattleRewardsBuilder_ == null) {
+          ensureLupinBattleRewardsIsMutable();
+          lupinBattleRewards_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          lupinBattleRewardsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public Builder addLupinBattleRewards(com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards value) {
+        if (lupinBattleRewardsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinBattleRewardsIsMutable();
+          lupinBattleRewards_.add(value);
+          onChanged();
+        } else {
+          lupinBattleRewardsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public Builder addLupinBattleRewards(
+          int index, com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards value) {
+        if (lupinBattleRewardsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureLupinBattleRewardsIsMutable();
+          lupinBattleRewards_.add(index, value);
+          onChanged();
+        } else {
+          lupinBattleRewardsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public Builder addLupinBattleRewards(
+          com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.Builder builderForValue) {
+        if (lupinBattleRewardsBuilder_ == null) {
+          ensureLupinBattleRewardsIsMutable();
+          lupinBattleRewards_.add(builderForValue.build());
+          onChanged();
+        } else {
+          lupinBattleRewardsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public Builder addLupinBattleRewards(
+          int index, com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.Builder builderForValue) {
+        if (lupinBattleRewardsBuilder_ == null) {
+          ensureLupinBattleRewardsIsMutable();
+          lupinBattleRewards_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          lupinBattleRewardsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public Builder addAllLupinBattleRewards(
+          java.lang.Iterable<? extends com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards> values) {
+        if (lupinBattleRewardsBuilder_ == null) {
+          ensureLupinBattleRewardsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, lupinBattleRewards_);
+          onChanged();
+        } else {
+          lupinBattleRewardsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public Builder clearLupinBattleRewards() {
+        if (lupinBattleRewardsBuilder_ == null) {
+          lupinBattleRewards_ = java.util.Collections.emptyList();
+          bitField3_ = (bitField3_ & ~0x00010000);
+          onChanged();
+        } else {
+          lupinBattleRewardsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public Builder removeLupinBattleRewards(int index) {
+        if (lupinBattleRewardsBuilder_ == null) {
+          ensureLupinBattleRewardsIsMutable();
+          lupinBattleRewards_.remove(index);
+          onChanged();
+        } else {
+          lupinBattleRewardsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.Builder getLupinBattleRewardsBuilder(
+          int index) {
+        return getLupinBattleRewardsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewardsOrBuilder getLupinBattleRewardsOrBuilder(
+          int index) {
+        if (lupinBattleRewardsBuilder_ == null) {
+          return lupinBattleRewards_.get(index);  } else {
+          return lupinBattleRewardsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public java.util.List<? extends com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewardsOrBuilder> 
+           getLupinBattleRewardsOrBuilderList() {
+        if (lupinBattleRewardsBuilder_ != null) {
+          return lupinBattleRewardsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(lupinBattleRewards_);
+        }
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.Builder addLupinBattleRewardsBuilder() {
+        return getLupinBattleRewardsFieldBuilder().addBuilder(
+            com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.Builder addLupinBattleRewardsBuilder(
+          int index) {
+        return getLupinBattleRewardsFieldBuilder().addBuilder(
+            index, com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .msggamedata.MsgLupinDungeonBattleRewards lupin_battle_rewards = 120;</code>
+       */
+      public java.util.List<com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.Builder> 
+           getLupinBattleRewardsBuilderList() {
+        return getLupinBattleRewardsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards, com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.Builder, com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewardsOrBuilder> 
+          getLupinBattleRewardsFieldBuilder() {
+        if (lupinBattleRewardsBuilder_ == null) {
+          lupinBattleRewardsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards, com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewards.Builder, com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.MsgLupinDungeonBattleRewardsOrBuilder>(
+                  lupinBattleRewards_,
+                  ((bitField3_ & 0x00010000) == 0x00010000),
+                  getParentForChildren(),
+                  isClean());
+          lupinBattleRewards_ = null;
+        }
+        return lupinBattleRewardsBuilder_;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -38772,7 +40977,7 @@ public final class MsgGameDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgGameData(input, extensionRegistry);
+        return new MsgGameData(input, extensionRegistry);
       }
     };
 
@@ -38814,7 +41019,7 @@ public final class MsgGameDataOuterClass {
       "sgSubStage.proto\032\025MsgStageMonster.proto\032" +
       "\032MsgStageMonsterGroup.proto\032\025MsgDungeonS" +
       "tage.proto\032\030MsgDungeonSubStage.proto\032\025Ms" +
-      "gStatusEffect.proto\032\025MsgStartMonster.pro",
+      "gStatusEffect.proto\032\025MsgStartMonster.pro" +
       "to\032\rMsgRune.proto\032\017MsgSummon.proto\032\024MsgR" +
       "uneSetting.proto\032\021MsgRuneRare.proto\032\033Msg" +
       "RuneOptionalEffect.proto\032\026MsgRuneSetEffe" +
@@ -38824,7 +41029,7 @@ public final class MsgGameDataOuterClass {
       "proto\032\030MsgNPCTalkSequence.proto\032\024MsgNPCT" +
       "alkAuto.proto\032\030MsgUserProfileIcon.proto\032" +
       "\031MsgMonsterEvolution.proto\032\rMsgHelp.prot" +
-      "o\032\020MsgSubHelp.proto\032\025MsgJojeShopSlot.pro",
+      "o\032\020MsgSubHelp.proto\032\025MsgJojeShopSlot.pro" +
       "to\032\022MsgMonsterAi.proto\032\033MsgBattleMasterS" +
       "cript.proto\032\023MsgArenaGrade.proto\032\026MsgAre" +
       "naSubGrade.proto\032\033MsgMonsterEggCutScene." +
@@ -38834,7 +41039,7 @@ public final class MsgGameDataOuterClass {
       "roto\032\026MsgChatLikeColor.proto\032\031MsgDailyBo" +
       "nusSeason.proto\032\023MsgDailyBonus.proto\032\027Ms" +
       "gInfiniteSeason.proto\032\026MsgInfiniteStage." +
-      "proto\032\031MsgInfiniteSubStage.proto\032\020MsgMis",
+      "proto\032\031MsgInfiniteSubStage.proto\032\020MsgMis" +
       "sion.proto\032\024MsgLobbyReward.proto\032\030MsgCap" +
       "tureDictItem.proto\032\017MsgCredit.proto\032\031Msg" +
       "EnforcementValue.proto\032\026MsgReviveMonster" +
@@ -38844,7 +41049,7 @@ public final class MsgGameDataOuterClass {
       "lanEmblem.proto\032\023MsgClanSeason.proto\032\031Ms" +
       "gClanSeasonBattle.proto\032\030MsgClanRewardGr" +
       "ade.proto\032\027MsgClanRewardTier.proto\032\022MsgC" +
-      "lanStage.proto\032\025MsgClanSubStage.proto\032\031M",
+      "lanStage.proto\032\025MsgClanSubStage.proto\032\031M" +
       "sgClanBattleReward.proto\032%MsgDailyBonusR" +
       "eturnUserSequence.proto\032\031MsgContractorSe" +
       "ason.proto\032\035MsgGachaShopEventBanner.prot" +
@@ -38854,7 +41059,7 @@ public final class MsgGameDataOuterClass {
       "deSkillPrice.proto\032\035MsgClanAttendanceRew" +
       "ard.proto\032\020MsgPromise.proto\032\036MsgSuperEvo" +
       "lutionMonster.proto\032\031MsgSuperStoneRecipe" +
-      ".proto\032\030MsgCVCBattleReward.proto\032\037MsgCap",
+      ".proto\032\030MsgCVCBattleReward.proto\032\037MsgCap" +
       "tureFestivalRawData.proto\032\'MsgCaptureFes" +
       "tivalTicketCondition.proto\032\"MsgStageMons" +
       "terGroupFestival.proto\032\"MsgCaptureFestiv" +
@@ -38864,160 +41069,177 @@ public final class MsgGameDataOuterClass {
       "to\032\022MsgLinkBonus.proto\032\034MsgLinkBonusHidd" +
       "enData.proto\032\033MsgBingoCompleteEvent.prot" +
       "o\032!MsgMonsterCostumeCollection.proto\032\035Ms" +
-      "gMonsterCostumeBundle.proto\032\027MsgMonsterC",
-      "ostume.proto\"\265/\n\013MsgGameData\022\017\n\007version\030" +
-      "\001 \001(\r\022!\n\004uids\030\002 \003(\0132\023.msggamedata.MsgUid" +
-      "\022.\n\013user_levels\030\003 \003(\0132\031.msggamedata.MsgU" +
-      "serLevel\022)\n\010monsters\030\004 \003(\0132\027.msggamedata" +
-      ".MsgMonster\0222\n\rmonster_types\030\005 \003(\0132\033.msg" +
-      "gamedata.MsgMonsterType\0224\n\016monster_level" +
-      "s\030\007 \003(\0132\034.msggamedata.MsgMonsterLevel\0224\n" +
-      "\016monster_skills\030\010 \003(\0132\034.msggamedata.MsgM" +
-      "onsterSkill\022\'\n\007randoms\030\t \003(\0132\026.msggameda" +
-      "ta.MsgRandom\022)\n\010settings\030\n \003(\0132\027.msggame",
-      "data.MsgSetting\022,\n\nshop_items\030\013 \003(\0132\030.ms" +
-      "ggamedata.MsgShopItem\022#\n\005items\030\014 \003(\0132\024.m" +
-      "sggamedata.MsgItem\022%\n\006stages\030\r \003(\0132\025.msg" +
-      "gamedata.MsgStage\022+\n\tsubstages\030\016 \003(\0132\030.m" +
-      "sggamedata.MsgSubStage\0224\n\016stage_monsters" +
-      "\030\017 \003(\0132\034.msggamedata.MsgStageMonster\022?\n\024" +
-      "stage_monster_groups\030\020 \003(\0132!.msggamedata" +
-      ".MsgStageMonsterGroup\0224\n\016dungeon_stages\030" +
-      "\021 \003(\0132\034.msggamedata.MsgDungeonStage\022:\n\021d" +
-      "ungeon_substages\030\022 \003(\0132\037.msggamedata.Msg",
-      "DungeonSubStage\0226\n\020dungeon_monsters\030\023 \003(" +
-      "\0132\034.msggamedata.MsgStageMonster\022A\n\026dunge" +
-      "on_monster_groups\030\024 \003(\0132!.msggamedata.Ms" +
-      "gStageMonsterGroup\0224\n\016status_effects\030\025 \003" +
-      "(\0132\034.msggamedata.MsgStatusEffect\0224\n\016star" +
-      "t_monsters\030\026 \003(\0132\034.msggamedata.MsgStartM" +
-      "onster\022#\n\005runes\030\027 \003(\0132\024.msggamedata.MsgR" +
-      "une\022\'\n\007summons\030\030 \003(\0132\026.msggamedata.MsgSu" +
-      "mmon\0222\n\rrune_settings\030\031 \003(\0132\033.msggamedat" +
-      "a.MsgRuneSetting\022,\n\nrune_rares\030\032 \003(\0132\030.m",
-      "sggamedata.MsgRuneRare\022A\n\025rune_optional_" +
-      "effects\030\033 \003(\0132\".msggamedata.MsgRuneOptio" +
-      "nalEffect\0227\n\020rune_set_effects\030\034 \003(\0132\035.ms" +
-      "ggamedata.MsgRuneSetEffect\022=\n\026monster_be" +
-      "yond_pricing\030\035 \003(\0132\035.msggamedata.MsgMons" +
-      "terBeyond\022.\n\014monster_dict\030\036 \003(\0132\030.msggam" +
-      "edata.MsgDictItem\022/\n\013gift_sender\030\037 \003(\0132\032" +
-      ".msggamedata.MsgGiftSender\0223\n\rgift_templ" +
-      "ate\030  \003(\0132\034.msggamedata.MsgGiftTemplate\022" +
-      "%\n\006quests\030! \003(\0132\025.msggamedata.MsgQuest\022!",
-      "\n\004npcs\030\" \003(\0132\023.msggamedata.MsgNPC\0226\n\rnpc" +
-      "_talk_seqs\030# \003(\0132\037.msggamedata.MsgNPCTal" +
-      "kSequence\0223\n\016npc_auto_talks\030$ \003(\0132\033.msgg" +
-      "amedata.MsgNPCTalkAuto\022:\n\021user_profile_i" +
-      "con\030% \003(\0132\037.msggamedata.MsgUserProfileIc" +
-      "on\022C\n\031monster_evolution_pricing\030& \003(\0132 ." +
-      "msggamedata.MsgMonsterEvolution\022#\n\005helps" +
-      "\030\' \003(\0132\024.msggamedata.MsgHelp\022)\n\010subhelps" +
-      "\030( \003(\0132\027.msggamedata.MsgSubHelp\0225\n\017joje_" +
-      "shop_slots\030) \003(\0132\034.msggamedata.MsgJojeSh",
-      "opSlot\022.\n\013monster_ais\030* \003(\0132\031.msggamedat" +
-      "a.MsgMonsterAi\022@\n\024battle_master_script\030+" +
-      " \003(\0132\".msggamedata.MsgBattleMasterScript" +
-      "\022/\n\013arena_grade\030, \003(\0132\032.msggamedata.MsgA" +
-      "renaGrade\0226\n\017arena_sub_grade\030- \003(\0132\035.msg" +
-      "gamedata.MsgArenaSubGrade\022A\n\025monster_egg" +
-      "_cutscenes\030. \003(\0132\".msggamedata.MsgMonste" +
-      "rEggCutScene\0229\n\020loading_template\030/ \003(\0132\037" +
-      ".msggamedata.MsgLoadingTemplate\0220\n\014log_t" +
-      "emplate\0300 \003(\0132\032.msggamedata.MsgLogTemplt",
-      "e\0228\n\020support_monsters\0302 \003(\0132\036.msggamedat" +
-      "a.MsgSupportMonster\0229\n\021custom_btn_sounds" +
-      "\0303 \003(\0132\036.msggamedata.MsgCustomBtnSound\0222" +
-      "\n\rarena_seasons\0304 \003(\0132\033.msggamedata.MsgA" +
-      "renaSeason\022)\n!arena_attacker_gain_winnin" +
-      "g_point\0305 \003(\r\022)\n!arena_defender_gain_win" +
-      "ning_point\0306 \003(\r\0226\n\017chat_like_color\0307 \003(" +
-      "\0132\035.msggamedata.MsgChatLikeColor\022=\n\023dail" +
-      "y_bonus_seasons\0308 \003(\0132 .msggamedata.MsgD" +
-      "ailyBonusSeason\0221\n\rdaily_bonuses\0309 \003(\0132\032",
-      ".msggamedata.MsgDailyBonus\0228\n\020infinite_s" +
-      "easons\030: \003(\0132\036.msggamedata.MsgInfiniteSe" +
-      "ason\0226\n\017infinite_stages\030; \003(\0132\035.msggamed" +
-      "ata.MsgInfiniteStage\022<\n\022infinite_substag" +
-      "es\030< \003(\0132 .msggamedata.MsgInfiniteSubSta" +
-      "ge\0227\n\021infinite_monsters\030= \003(\0132\034.msggamed" +
-      "ata.MsgStageMonster\022B\n\027infinite_monster_" +
-      "groups\030> \003(\0132!.msggamedata.MsgStageMonst" +
-      "erGroup\022)\n\010missions\030? \003(\0132\027.msggamedata." +
-      "MsgMission\0222\n\rlobby_rewards\030@ \003(\0132\033.msgg",
-      "amedata.MsgLobbyReward\022>\n\025monster_captur" +
-      "e_dicts\030A \003(\0132\037.msggamedata.MsgCaptureDi" +
-      "ctItem\022&\n\006credit\030B \003(\0132\026.msggamedata.Msg" +
-      "Credit\022<\n\022enforcement_values\030C \003(\0132 .msg" +
-      "gamedata.MsgEnforcementValue\0226\n\017revive_m" +
-      "onsters\030D \003(\0132\035.msggamedata.MsgReviveMon" +
-      "ster\022B\n\025platform_achievements\030E \003(\0132#.ms" +
-      "ggamedata.MsgPlatformAchievement\022.\n\010pack" +
-      "ages\030F \003(\0132\034.msggamedata.MsgPackageQuest" +
-      "\022>\n\023captureking_seasons\030G \003(\0132!.msggamed",
-      "ata.MsgCaptureKingSeason\022<\n\022captureking_" +
-      "grades\030H \003(\0132 .msggamedata.MsgCaptureKin" +
-      "gGrade\0220\n\014clan_emblems\030I \003(\0132\032.msggameda" +
-      "ta.MsgClanEmblem\0220\n\014clan_seasons\030J \003(\0132\032" +
-      ".msggamedata.MsgClanSeason\022=\n\023clan_seaso" +
-      "n_battles\030K \003(\0132 .msggamedata.MsgClanSea" +
-      "sonBattle\0224\n\013clan_grades\030L \003(\0132\037.msggame" +
-      "data.MsgClanRewardGrade\0229\n\021clan_reward_t" +
-      "iers\030M \003(\0132\036.msggamedata.MsgClanRewardTi" +
-      "er\022.\n\013clan_stages\030N \003(\0132\031.msggamedata.Ms",
-      "gClanStage\0224\n\016clan_substages\030O \003(\0132\034.msg" +
-      "gamedata.MsgClanSubStage\022=\n\023clan_battle_" +
-      "rewards\030P \003(\0132 .msggamedata.MsgClanBattl" +
-      "eReward\022V\n daily_bonus_returnuser_sequen" +
-      "ces\030Q \003(\0132,.msggamedata.MsgDailyBonusRet" +
-      "urnUserSequence\022<\n\022contractor_seasons\030R " +
-      "\003(\0132 .msggamedata.MsgContractorSeason\022F\n" +
-      "\030gacha_shop_event_banners\030S \003(\0132$.msggam" +
-      "edata.MsgGachaShopEventBanner\022>\n\027special" +
-      "_revive_monsters\030T \003(\0132\035.msggamedata.Msg",
-      "ReviveMonster\0222\n\rbingo_seasons\030Z \003(\0132\033.m" +
-      "sggamedata.MsgBingoSeason\022;\n\022bingo_seaso" +
-      "n_datas\030[ \003(\0132\037.msggamedata.MsgBingoSeas" +
-      "onData\0227\n\020bingo_time_datas\030\\ \003(\0132\035.msgga" +
-      "medata.MsgBingoTimeData\022C\n\026monster_upgra" +
-      "de_skills\030] \003(\0132#.msggamedata.MsgMonster" +
-      "UpgradeSkill\022O\n\035monster_upgrade_skill_pr" +
-      "icing\030^ \003(\0132(.msggamedata.MsgMonsterUpgr" +
-      "adeSkillPrice\022E\n\027clan_attendance_rewards" +
-      "\030_ \003(\0132$.msggamedata.MsgClanAttendanceRe",
-      "ward\022<\n\022cvc_season_battles\030` \003(\0132 .msgga" +
-      "medata.MsgClanSeasonBattle\022)\n\010promises\030a" +
-      " \003(\0132\027.msggamedata.MsgPromise\022G\n\030super_e" +
-      "volution_monsters\030b \003(\0132%.msggamedata.Ms" +
-      "gSuperEvolutionMonster\022=\n\023super_stone_re" +
-      "cipes\030c \003(\0132 .msggamedata.MsgSuperStoneR" +
-      "ecipe\022:\n\021cvc_battle_reward\030d \003(\0132\037.msgga" +
-      "medata.MsgCVCBattleReward\022\035\n\025cvc_phase_b" +
-      "onus_point\030e \003(\r\022@\n\020capture_festival\030f \003" +
-      "(\0132&.msggamedata.MsgCaptureFestivalRawDa",
-      "ta\022Y\n!capture_festival_ticket_condition\030" +
-      "g \003(\0132..msggamedata.MsgCaptureFestivalTi" +
-      "cketCondition\022P\n\035stage_monster_groups_fe" +
-      "stival\030h \003(\0132).msggamedata.MsgStageMonst" +
-      "erGroupFestival\022O\n\034capture_festival_rank" +
-      "_reward\030i \003(\0132).msggamedata.MsgCaptureFe" +
-      "stivalRankReward\022M\n\033monthly_monster_seas" +
-      "on_data\030j \003(\0132(.msggamedata.MsgMonthlyMo" +
-      "nsterSeasonData\022K\n\032monthly_monster_group" +
-      "_data\030k \003(\0132\'.msggamedata.MsgMonthlyMons",
-      "terGroupData\022M\n\033monthly_monster_reward_d" +
-      "ata\030l \003(\0132(.msggamedata.MsgMonthlyMonste" +
-      "rRewardData\022/\n\014link_bonuses\030m \003(\0132\031.msgg" +
-      "amedata.MsgLinkBonus\022D\n\027link_bonus_hidde" +
-      "n_datas\030n \003(\0132#.msggamedata.MsgLinkBonus" +
-      "HiddenData\022@\n\024bingo_complete_event\030o \003(\013" +
-      "2\".msggamedata.MsgBingoCompleteEvent\022M\n\033" +
-      "monster_costume_collections\030p \003(\0132(.msgg" +
-      "amedata.MsgMonsterCostumeCollection\022E\n\027m" +
-      "onster_costume_bundles\030q \003(\0132$.msggameda",
-      "ta.MsgMonsterCostumeBundle\0228\n\020monster_co" +
-      "stumes\030r \003(\0132\036.msggamedata.MsgMonsterCos" +
-      "tumeB\023\n\021com.felania.msldbb\006proto3"
+      "gMonsterCostumeBundle.proto\032\027MsgMonsterC" +
+      "ostume.proto\032&MsgSuperEvolutionFestivalR" +
+      "awData.proto\032%MsgSuperEvolutionFestivalR" +
+      "eward.proto\032\033MsgLupinDungeonSeason.proto" +
+      "\032\032MsgLupinDungeonStage.proto\032\035MsgLupinDu" +
+      "ngeonSubStage.proto\032\"MsgLupinDungeonBatt" +
+      "leRewards.proto\"\3742\n\013MsgGameData\022\017\n\007versi" +
+      "on\030\001 \001(\r\022!\n\004uids\030\002 \003(\0132\023.msggamedata.Msg" +
+      "Uid\022.\n\013user_levels\030\003 \003(\0132\031.msggamedata.M" +
+      "sgUserLevel\022)\n\010monsters\030\004 \003(\0132\027.msggamed" +
+      "ata.MsgMonster\0222\n\rmonster_types\030\005 \003(\0132\033." +
+      "msggamedata.MsgMonsterType\0224\n\016monster_le" +
+      "vels\030\007 \003(\0132\034.msggamedata.MsgMonsterLevel" +
+      "\0224\n\016monster_skills\030\010 \003(\0132\034.msggamedata.M" +
+      "sgMonsterSkill\022\'\n\007randoms\030\t \003(\0132\026.msggam" +
+      "edata.MsgRandom\022)\n\010settings\030\n \003(\0132\027.msgg" +
+      "amedata.MsgSetting\022,\n\nshop_items\030\013 \003(\0132\030" +
+      ".msggamedata.MsgShopItem\022#\n\005items\030\014 \003(\0132" +
+      "\024.msggamedata.MsgItem\022%\n\006stages\030\r \003(\0132\025." +
+      "msggamedata.MsgStage\022+\n\tsubstages\030\016 \003(\0132" +
+      "\030.msggamedata.MsgSubStage\0224\n\016stage_monst" +
+      "ers\030\017 \003(\0132\034.msggamedata.MsgStageMonster\022" +
+      "?\n\024stage_monster_groups\030\020 \003(\0132!.msggamed" +
+      "ata.MsgStageMonsterGroup\0224\n\016dungeon_stag" +
+      "es\030\021 \003(\0132\034.msggamedata.MsgDungeonStage\022:" +
+      "\n\021dungeon_substages\030\022 \003(\0132\037.msggamedata." +
+      "MsgDungeonSubStage\0226\n\020dungeon_monsters\030\023" +
+      " \003(\0132\034.msggamedata.MsgStageMonster\022A\n\026du" +
+      "ngeon_monster_groups\030\024 \003(\0132!.msggamedata" +
+      ".MsgStageMonsterGroup\0224\n\016status_effects\030" +
+      "\025 \003(\0132\034.msggamedata.MsgStatusEffect\0224\n\016s" +
+      "tart_monsters\030\026 \003(\0132\034.msggamedata.MsgSta" +
+      "rtMonster\022#\n\005runes\030\027 \003(\0132\024.msggamedata.M" +
+      "sgRune\022\'\n\007summons\030\030 \003(\0132\026.msggamedata.Ms" +
+      "gSummon\0222\n\rrune_settings\030\031 \003(\0132\033.msggame" +
+      "data.MsgRuneSetting\022,\n\nrune_rares\030\032 \003(\0132" +
+      "\030.msggamedata.MsgRuneRare\022A\n\025rune_option" +
+      "al_effects\030\033 \003(\0132\".msggamedata.MsgRuneOp" +
+      "tionalEffect\0227\n\020rune_set_effects\030\034 \003(\0132\035" +
+      ".msggamedata.MsgRuneSetEffect\022=\n\026monster" +
+      "_beyond_pricing\030\035 \003(\0132\035.msggamedata.MsgM" +
+      "onsterBeyond\022.\n\014monster_dict\030\036 \003(\0132\030.msg" +
+      "gamedata.MsgDictItem\022/\n\013gift_sender\030\037 \003(" +
+      "\0132\032.msggamedata.MsgGiftSender\0223\n\rgift_te" +
+      "mplate\030  \003(\0132\034.msggamedata.MsgGiftTempla" +
+      "te\022%\n\006quests\030! \003(\0132\025.msggamedata.MsgQues" +
+      "t\022!\n\004npcs\030\" \003(\0132\023.msggamedata.MsgNPC\0226\n\r" +
+      "npc_talk_seqs\030# \003(\0132\037.msggamedata.MsgNPC" +
+      "TalkSequence\0223\n\016npc_auto_talks\030$ \003(\0132\033.m" +
+      "sggamedata.MsgNPCTalkAuto\022:\n\021user_profil" +
+      "e_icon\030% \003(\0132\037.msggamedata.MsgUserProfil" +
+      "eIcon\022C\n\031monster_evolution_pricing\030& \003(\013" +
+      "2 .msggamedata.MsgMonsterEvolution\022#\n\005he" +
+      "lps\030\' \003(\0132\024.msggamedata.MsgHelp\022)\n\010subhe" +
+      "lps\030( \003(\0132\027.msggamedata.MsgSubHelp\0225\n\017jo" +
+      "je_shop_slots\030) \003(\0132\034.msggamedata.MsgJoj" +
+      "eShopSlot\022.\n\013monster_ais\030* \003(\0132\031.msggame" +
+      "data.MsgMonsterAi\022@\n\024battle_master_scrip" +
+      "t\030+ \003(\0132\".msggamedata.MsgBattleMasterScr" +
+      "ipt\022/\n\013arena_grade\030, \003(\0132\032.msggamedata.M" +
+      "sgArenaGrade\0226\n\017arena_sub_grade\030- \003(\0132\035." +
+      "msggamedata.MsgArenaSubGrade\022A\n\025monster_" +
+      "egg_cutscenes\030. \003(\0132\".msggamedata.MsgMon" +
+      "sterEggCutScene\0229\n\020loading_template\030/ \003(" +
+      "\0132\037.msggamedata.MsgLoadingTemplate\0220\n\014lo" +
+      "g_template\0300 \003(\0132\032.msggamedata.MsgLogTem" +
+      "plte\0228\n\020support_monsters\0302 \003(\0132\036.msggame" +
+      "data.MsgSupportMonster\0229\n\021custom_btn_sou" +
+      "nds\0303 \003(\0132\036.msggamedata.MsgCustomBtnSoun" +
+      "d\0222\n\rarena_seasons\0304 \003(\0132\033.msggamedata.M" +
+      "sgArenaSeason\022)\n!arena_attacker_gain_win" +
+      "ning_point\0305 \003(\r\022)\n!arena_defender_gain_" +
+      "winning_point\0306 \003(\r\0226\n\017chat_like_color\0307" +
+      " \003(\0132\035.msggamedata.MsgChatLikeColor\022=\n\023d" +
+      "aily_bonus_seasons\0308 \003(\0132 .msggamedata.M" +
+      "sgDailyBonusSeason\0221\n\rdaily_bonuses\0309 \003(" +
+      "\0132\032.msggamedata.MsgDailyBonus\0228\n\020infinit" +
+      "e_seasons\030: \003(\0132\036.msggamedata.MsgInfinit" +
+      "eSeason\0226\n\017infinite_stages\030; \003(\0132\035.msgga" +
+      "medata.MsgInfiniteStage\022<\n\022infinite_subs" +
+      "tages\030< \003(\0132 .msggamedata.MsgInfiniteSub" +
+      "Stage\0227\n\021infinite_monsters\030= \003(\0132\034.msgga" +
+      "medata.MsgStageMonster\022B\n\027infinite_monst" +
+      "er_groups\030> \003(\0132!.msggamedata.MsgStageMo" +
+      "nsterGroup\022)\n\010missions\030? \003(\0132\027.msggameda" +
+      "ta.MsgMission\0222\n\rlobby_rewards\030@ \003(\0132\033.m" +
+      "sggamedata.MsgLobbyReward\022>\n\025monster_cap" +
+      "ture_dicts\030A \003(\0132\037.msggamedata.MsgCaptur" +
+      "eDictItem\022&\n\006credit\030B \003(\0132\026.msggamedata." +
+      "MsgCredit\022<\n\022enforcement_values\030C \003(\0132 ." +
+      "msggamedata.MsgEnforcementValue\0226\n\017reviv" +
+      "e_monsters\030D \003(\0132\035.msggamedata.MsgRevive" +
+      "Monster\022B\n\025platform_achievements\030E \003(\0132#" +
+      ".msggamedata.MsgPlatformAchievement\022.\n\010p" +
+      "ackages\030F \003(\0132\034.msggamedata.MsgPackageQu" +
+      "est\022>\n\023captureking_seasons\030G \003(\0132!.msgga" +
+      "medata.MsgCaptureKingSeason\022<\n\022captureki" +
+      "ng_grades\030H \003(\0132 .msggamedata.MsgCapture" +
+      "KingGrade\0220\n\014clan_emblems\030I \003(\0132\032.msggam" +
+      "edata.MsgClanEmblem\0220\n\014clan_seasons\030J \003(" +
+      "\0132\032.msggamedata.MsgClanSeason\022=\n\023clan_se" +
+      "ason_battles\030K \003(\0132 .msggamedata.MsgClan" +
+      "SeasonBattle\0224\n\013clan_grades\030L \003(\0132\037.msgg" +
+      "amedata.MsgClanRewardGrade\0229\n\021clan_rewar" +
+      "d_tiers\030M \003(\0132\036.msggamedata.MsgClanRewar" +
+      "dTier\022.\n\013clan_stages\030N \003(\0132\031.msggamedata" +
+      ".MsgClanStage\0224\n\016clan_substages\030O \003(\0132\034." +
+      "msggamedata.MsgClanSubStage\022=\n\023clan_batt" +
+      "le_rewards\030P \003(\0132 .msggamedata.MsgClanBa" +
+      "ttleReward\022V\n daily_bonus_returnuser_seq" +
+      "uences\030Q \003(\0132,.msggamedata.MsgDailyBonus" +
+      "ReturnUserSequence\022<\n\022contractor_seasons" +
+      "\030R \003(\0132 .msggamedata.MsgContractorSeason" +
+      "\022F\n\030gacha_shop_event_banners\030S \003(\0132$.msg" +
+      "gamedata.MsgGachaShopEventBanner\022>\n\027spec" +
+      "ial_revive_monsters\030T \003(\0132\035.msggamedata." +
+      "MsgReviveMonster\0222\n\rbingo_seasons\030Z \003(\0132" +
+      "\033.msggamedata.MsgBingoSeason\022;\n\022bingo_se" +
+      "ason_datas\030[ \003(\0132\037.msggamedata.MsgBingoS" +
+      "easonData\0227\n\020bingo_time_datas\030\\ \003(\0132\035.ms" +
+      "ggamedata.MsgBingoTimeData\022C\n\026monster_up" +
+      "grade_skills\030] \003(\0132#.msggamedata.MsgMons" +
+      "terUpgradeSkill\022O\n\035monster_upgrade_skill" +
+      "_pricing\030^ \003(\0132(.msggamedata.MsgMonsterU" +
+      "pgradeSkillPrice\022E\n\027clan_attendance_rewa" +
+      "rds\030_ \003(\0132$.msggamedata.MsgClanAttendanc" +
+      "eReward\022<\n\022cvc_season_battles\030` \003(\0132 .ms" +
+      "ggamedata.MsgClanSeasonBattle\022)\n\010promise" +
+      "s\030a \003(\0132\027.msggamedata.MsgPromise\022G\n\030supe" +
+      "r_evolution_monsters\030b \003(\0132%.msggamedata" +
+      ".MsgSuperEvolutionMonster\022=\n\023super_stone" +
+      "_recipes\030c \003(\0132 .msggamedata.MsgSuperSto" +
+      "neRecipe\022:\n\021cvc_battle_reward\030d \003(\0132\037.ms" +
+      "ggamedata.MsgCVCBattleReward\022\035\n\025cvc_phas" +
+      "e_bonus_point\030e \003(\r\022@\n\020capture_festival\030" +
+      "f \003(\0132&.msggamedata.MsgCaptureFestivalRa" +
+      "wData\022Y\n!capture_festival_ticket_conditi" +
+      "on\030g \003(\0132..msggamedata.MsgCaptureFestiva" +
+      "lTicketCondition\022P\n\035stage_monster_groups" +
+      "_festival\030h \003(\0132).msggamedata.MsgStageMo" +
+      "nsterGroupFestival\022O\n\034capture_festival_r" +
+      "ank_reward\030i \003(\0132).msggamedata.MsgCaptur" +
+      "eFestivalRankReward\022M\n\033monthly_monster_s" +
+      "eason_data\030j \003(\0132(.msggamedata.MsgMonthl" +
+      "yMonsterSeasonData\022K\n\032monthly_monster_gr" +
+      "oup_data\030k \003(\0132\'.msggamedata.MsgMonthlyM" +
+      "onsterGroupData\022M\n\033monthly_monster_rewar" +
+      "d_data\030l \003(\0132(.msggamedata.MsgMonthlyMon" +
+      "sterRewardData\022/\n\014link_bonuses\030m \003(\0132\031.m" +
+      "sggamedata.MsgLinkBonus\022D\n\027link_bonus_hi" +
+      "dden_datas\030n \003(\0132#.msggamedata.MsgLinkBo" +
+      "nusHiddenData\022@\n\024bingo_complete_event\030o " +
+      "\003(\0132\".msggamedata.MsgBingoCompleteEvent\022" +
+      "M\n\033monster_costume_collections\030p \003(\0132(.m" +
+      "sggamedata.MsgMonsterCostumeCollection\022E" +
+      "\n\027monster_costume_bundles\030q \003(\0132$.msggam" +
+      "edata.MsgMonsterCostumeBundle\0228\n\020monster" +
+      "_costumes\030r \003(\0132\036.msggamedata.MsgMonster" +
+      "Costume\022Y\n\"super_evolution_festival_raw_" +
+      "datas\030s \003(\0132-.msggamedata.MsgSuperEvolut" +
+      "ionFestivalRawData\022V\n super_evolution_fe" +
+      "stival_rewards\030t \003(\0132,.msggamedata.MsgSu" +
+      "perEvolutionFestivalReward\022A\n\025lupin_dung" +
+      "eon_seasons\030u \003(\0132\".msggamedata.MsgLupin" +
+      "DungeonSeason\022?\n\024lupin_dungeon_stages\030v " +
+      "\003(\0132!.msggamedata.MsgLupinDungeonStage\022E" +
+      "\n\027lupin_dungeon_substages\030w \003(\0132$.msggam" +
+      "edata.MsgLupinDungeonSubStage\022G\n\024lupin_b" +
+      "attle_rewards\030x \003(\0132).msggamedata.MsgLup" +
+      "inDungeonBattleRewardsB\023\n\021com.felania.ms" +
+      "ldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -39127,13 +41349,19 @@ public final class MsgGameDataOuterClass {
           com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.getDescriptor(),
           com.felania.msldb.MsgMonsterCostumeBundleOuterClass.getDescriptor(),
           com.felania.msldb.MsgMonsterCostumeOuterClass.getDescriptor(),
+          com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.getDescriptor(),
+          com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.getDescriptor(),
+          com.felania.msldb.MsgLupinDungeonSeasonOuterClass.getDescriptor(),
+          com.felania.msldb.MsgLupinDungeonStageOuterClass.getDescriptor(),
+          com.felania.msldb.MsgLupinDungeonSubStageOuterClass.getDescriptor(),
+          com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_MsgGameData_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_msggamedata_MsgGameData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgGameData_descriptor,
-        new java.lang.String[] { "Version", "Uids", "UserLevels", "Monsters", "MonsterTypes", "MonsterLevels", "MonsterSkills", "Randoms", "Settings", "ShopItems", "Items", "Stages", "Substages", "StageMonsters", "StageMonsterGroups", "DungeonStages", "DungeonSubstages", "DungeonMonsters", "DungeonMonsterGroups", "StatusEffects", "StartMonsters", "Runes", "Summons", "RuneSettings", "RuneRares", "RuneOptionalEffects", "RuneSetEffects", "MonsterBeyondPricing", "MonsterDict", "GiftSender", "GiftTemplate", "Quests", "Npcs", "NpcTalkSeqs", "NpcAutoTalks", "UserProfileIcon", "MonsterEvolutionPricing", "Helps", "Subhelps", "JojeShopSlots", "MonsterAis", "BattleMasterScript", "ArenaGrade", "ArenaSubGrade", "MonsterEggCutscenes", "LoadingTemplate", "LogTemplate", "SupportMonsters", "CustomBtnSounds", "ArenaSeasons", "ArenaAttackerGainWinningPoint", "ArenaDefenderGainWinningPoint", "ChatLikeColor", "DailyBonusSeasons", "DailyBonuses", "InfiniteSeasons", "InfiniteStages", "InfiniteSubstages", "InfiniteMonsters", "InfiniteMonsterGroups", "Missions", "LobbyRewards", "MonsterCaptureDicts", "Credit", "EnforcementValues", "ReviveMonsters", "PlatformAchievements", "Packages", "CapturekingSeasons", "CapturekingGrades", "ClanEmblems", "ClanSeasons", "ClanSeasonBattles", "ClanGrades", "ClanRewardTiers", "ClanStages", "ClanSubstages", "ClanBattleRewards", "DailyBonusReturnuserSequences", "ContractorSeasons", "GachaShopEventBanners", "SpecialReviveMonsters", "BingoSeasons", "BingoSeasonDatas", "BingoTimeDatas", "MonsterUpgradeSkills", "MonsterUpgradeSkillPricing", "ClanAttendanceRewards", "CvcSeasonBattles", "Promises", "SuperEvolutionMonsters", "SuperStoneRecipes", "CvcBattleReward", "CvcPhaseBonusPoint", "CaptureFestival", "CaptureFestivalTicketCondition", "StageMonsterGroupsFestival", "CaptureFestivalRankReward", "MonthlyMonsterSeasonData", "MonthlyMonsterGroupData", "MonthlyMonsterRewardData", "LinkBonuses", "LinkBonusHiddenDatas", "BingoCompleteEvent", "MonsterCostumeCollections", "MonsterCostumeBundles", "MonsterCostumes", });
+        new java.lang.String[] { "Version", "Uids", "UserLevels", "Monsters", "MonsterTypes", "MonsterLevels", "MonsterSkills", "Randoms", "Settings", "ShopItems", "Items", "Stages", "Substages", "StageMonsters", "StageMonsterGroups", "DungeonStages", "DungeonSubstages", "DungeonMonsters", "DungeonMonsterGroups", "StatusEffects", "StartMonsters", "Runes", "Summons", "RuneSettings", "RuneRares", "RuneOptionalEffects", "RuneSetEffects", "MonsterBeyondPricing", "MonsterDict", "GiftSender", "GiftTemplate", "Quests", "Npcs", "NpcTalkSeqs", "NpcAutoTalks", "UserProfileIcon", "MonsterEvolutionPricing", "Helps", "Subhelps", "JojeShopSlots", "MonsterAis", "BattleMasterScript", "ArenaGrade", "ArenaSubGrade", "MonsterEggCutscenes", "LoadingTemplate", "LogTemplate", "SupportMonsters", "CustomBtnSounds", "ArenaSeasons", "ArenaAttackerGainWinningPoint", "ArenaDefenderGainWinningPoint", "ChatLikeColor", "DailyBonusSeasons", "DailyBonuses", "InfiniteSeasons", "InfiniteStages", "InfiniteSubstages", "InfiniteMonsters", "InfiniteMonsterGroups", "Missions", "LobbyRewards", "MonsterCaptureDicts", "Credit", "EnforcementValues", "ReviveMonsters", "PlatformAchievements", "Packages", "CapturekingSeasons", "CapturekingGrades", "ClanEmblems", "ClanSeasons", "ClanSeasonBattles", "ClanGrades", "ClanRewardTiers", "ClanStages", "ClanSubstages", "ClanBattleRewards", "DailyBonusReturnuserSequences", "ContractorSeasons", "GachaShopEventBanners", "SpecialReviveMonsters", "BingoSeasons", "BingoSeasonDatas", "BingoTimeDatas", "MonsterUpgradeSkills", "MonsterUpgradeSkillPricing", "ClanAttendanceRewards", "CvcSeasonBattles", "Promises", "SuperEvolutionMonsters", "SuperStoneRecipes", "CvcBattleReward", "CvcPhaseBonusPoint", "CaptureFestival", "CaptureFestivalTicketCondition", "StageMonsterGroupsFestival", "CaptureFestivalRankReward", "MonthlyMonsterSeasonData", "MonthlyMonsterGroupData", "MonthlyMonsterRewardData", "LinkBonuses", "LinkBonusHiddenDatas", "BingoCompleteEvent", "MonsterCostumeCollections", "MonsterCostumeBundles", "MonsterCostumes", "SuperEvolutionFestivalRawDatas", "SuperEvolutionFestivalRewards", "LupinDungeonSeasons", "LupinDungeonStages", "LupinDungeonSubstages", "LupinBattleRewards", });
     com.felania.msldb.MsgUidOuterClass.getDescriptor();
     com.felania.msldb.MsgUserLevelOuterClass.getDescriptor();
     com.felania.msldb.MsgMonsterOuterClass.getDescriptor();
@@ -39231,6 +41459,12 @@ public final class MsgGameDataOuterClass {
     com.felania.msldb.MsgMonsterCostumeCollectionOuterClass.getDescriptor();
     com.felania.msldb.MsgMonsterCostumeBundleOuterClass.getDescriptor();
     com.felania.msldb.MsgMonsterCostumeOuterClass.getDescriptor();
+    com.felania.msldb.MsgSuperEvolutionFestivalRawDataOuterClass.getDescriptor();
+    com.felania.msldb.MsgSuperEvolutionFestivalRewardOuterClass.getDescriptor();
+    com.felania.msldb.MsgLupinDungeonSeasonOuterClass.getDescriptor();
+    com.felania.msldb.MsgLupinDungeonStageOuterClass.getDescriptor();
+    com.felania.msldb.MsgLupinDungeonSubStageOuterClass.getDescriptor();
+    com.felania.msldb.MsgLupinDungeonBattleRewardsOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

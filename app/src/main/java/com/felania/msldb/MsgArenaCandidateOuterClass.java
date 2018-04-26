@@ -162,6 +162,9 @@ public final class MsgArenaCandidateOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1745,7 +1748,7 @@ public final class MsgArenaCandidateOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgArenaCandidate(input, extensionRegistry);
+        return new MsgArenaCandidate(input, extensionRegistry);
       }
     };
 
@@ -1787,7 +1790,7 @@ public final class MsgArenaCandidateOuterClass {
       "(\t\022\025\n\rwinning_point\030\006 \001(\r\022\024\n\014expired_tim" +
       "e\030\007 \001(\004\022-\n\010monsters\030\025 \003(\0132\033.msggamedata." +
       "MsgUserMonster\022\035\n\025user_profile_icon_uid\030" +
-      "\036 \001(\r\022,\n\tchar_type\030\037 \001(\0162\031.msggamedata.U",
+      "\036 \001(\r\022,\n\tchar_type\030\037 \001(\0162\031.msggamedata.U" +
       "serCharType\0220\n\tskin_type\030  \001(\0162\035.msggame" +
       "data.UserCharSkinType\022-\n\004type\030! \001(\0162\037.ms" +
       "ggamedata.ArenaCandidateType\022\030\n\020arena_se" +

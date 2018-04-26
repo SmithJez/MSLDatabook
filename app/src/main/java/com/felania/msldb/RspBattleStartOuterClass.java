@@ -130,6 +130,19 @@ public final class RspBattleStartOuterClass {
      * <code>.msggamedata.MsgRspBattleStartCVC cvc = 9;</code>
      */
     com.felania.msldb.MsgRspBattleStartCVCOuterClass.MsgRspBattleStartCVCOrBuilder getCvcOrBuilder();
+
+    /**
+     * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+     */
+    boolean hasLupinDungeon();
+    /**
+     * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+     */
+    com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon getLupinDungeon();
+    /**
+     * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+     */
+    com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeonOrBuilder getLupinDungeonOrBuilder();
   }
   /**
    * Protobuf type {@code msggamedata.RspBattleStart}
@@ -157,6 +170,9 @@ public final class RspBattleStartOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -281,6 +297,19 @@ public final class RspBattleStartOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(cvc_);
                 cvc_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 82: {
+              com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon.Builder subBuilder = null;
+              if (lupinDungeon_ != null) {
+                subBuilder = lupinDungeon_.toBuilder();
+              }
+              lupinDungeon_ = input.readMessage(com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(lupinDungeon_);
+                lupinDungeon_ = subBuilder.buildPartial();
               }
 
               break;
@@ -493,6 +522,27 @@ public final class RspBattleStartOuterClass {
       return getCvc();
     }
 
+    public static final int LUPIN_DUNGEON_FIELD_NUMBER = 10;
+    private com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon lupinDungeon_;
+    /**
+     * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+     */
+    public boolean hasLupinDungeon() {
+      return lupinDungeon_ != null;
+    }
+    /**
+     * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+     */
+    public com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon getLupinDungeon() {
+      return lupinDungeon_ == null ? com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon.getDefaultInstance() : lupinDungeon_;
+    }
+    /**
+     * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+     */
+    public com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeonOrBuilder getLupinDungeonOrBuilder() {
+      return getLupinDungeon();
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -531,6 +581,9 @@ public final class RspBattleStartOuterClass {
       }
       if (cvc_ != null) {
         output.writeMessage(9, getCvc());
+      }
+      if (lupinDungeon_ != null) {
+        output.writeMessage(10, getLupinDungeon());
       }
       unknownFields.writeTo(output);
     }
@@ -575,6 +628,10 @@ public final class RspBattleStartOuterClass {
       if (cvc_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, getCvc());
+      }
+      if (lupinDungeon_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, getLupinDungeon());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -633,6 +690,11 @@ public final class RspBattleStartOuterClass {
         result = result && getCvc()
             .equals(other.getCvc());
       }
+      result = result && (hasLupinDungeon() == other.hasLupinDungeon());
+      if (hasLupinDungeon()) {
+        result = result && getLupinDungeon()
+            .equals(other.getLupinDungeon());
+      }
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -677,6 +739,10 @@ public final class RspBattleStartOuterClass {
       if (hasCvc()) {
         hash = (37 * hash) + CVC_FIELD_NUMBER;
         hash = (53 * hash) + getCvc().hashCode();
+      }
+      if (hasLupinDungeon()) {
+        hash = (37 * hash) + LUPIN_DUNGEON_FIELD_NUMBER;
+        hash = (53 * hash) + getLupinDungeon().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -857,6 +923,12 @@ public final class RspBattleStartOuterClass {
           cvc_ = null;
           cvcBuilder_ = null;
         }
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeon_ = null;
+        } else {
+          lupinDungeon_ = null;
+          lupinDungeonBuilder_ = null;
+        }
         return this;
       }
 
@@ -919,6 +991,11 @@ public final class RspBattleStartOuterClass {
           result.cvc_ = cvc_;
         } else {
           result.cvc_ = cvcBuilder_.build();
+        }
+        if (lupinDungeonBuilder_ == null) {
+          result.lupinDungeon_ = lupinDungeon_;
+        } else {
+          result.lupinDungeon_ = lupinDungeonBuilder_.build();
         }
         onBuilt();
         return result;
@@ -987,6 +1064,9 @@ public final class RspBattleStartOuterClass {
         }
         if (other.hasCvc()) {
           mergeCvc(other.getCvc());
+        }
+        if (other.hasLupinDungeon()) {
+          mergeLupinDungeon(other.getLupinDungeon());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1994,6 +2074,123 @@ public final class RspBattleStartOuterClass {
         }
         return cvcBuilder_;
       }
+
+      private com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon lupinDungeon_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon, com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon.Builder, com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeonOrBuilder> lupinDungeonBuilder_;
+      /**
+       * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public boolean hasLupinDungeon() {
+        return lupinDungeonBuilder_ != null || lupinDungeon_ != null;
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon getLupinDungeon() {
+        if (lupinDungeonBuilder_ == null) {
+          return lupinDungeon_ == null ? com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon.getDefaultInstance() : lupinDungeon_;
+        } else {
+          return lupinDungeonBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public Builder setLupinDungeon(com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon value) {
+        if (lupinDungeonBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          lupinDungeon_ = value;
+          onChanged();
+        } else {
+          lupinDungeonBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public Builder setLupinDungeon(
+          com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon.Builder builderForValue) {
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeon_ = builderForValue.build();
+          onChanged();
+        } else {
+          lupinDungeonBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public Builder mergeLupinDungeon(com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon value) {
+        if (lupinDungeonBuilder_ == null) {
+          if (lupinDungeon_ != null) {
+            lupinDungeon_ =
+              com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon.newBuilder(lupinDungeon_).mergeFrom(value).buildPartial();
+          } else {
+            lupinDungeon_ = value;
+          }
+          onChanged();
+        } else {
+          lupinDungeonBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public Builder clearLupinDungeon() {
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeon_ = null;
+          onChanged();
+        } else {
+          lupinDungeon_ = null;
+          lupinDungeonBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon.Builder getLupinDungeonBuilder() {
+        
+        onChanged();
+        return getLupinDungeonFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+       */
+      public com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeonOrBuilder getLupinDungeonOrBuilder() {
+        if (lupinDungeonBuilder_ != null) {
+          return lupinDungeonBuilder_.getMessageOrBuilder();
+        } else {
+          return lupinDungeon_ == null ?
+              com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon.getDefaultInstance() : lupinDungeon_;
+        }
+      }
+      /**
+       * <code>.msggamedata.MsgRspBattleStartLupinDungeon lupin_dungeon = 10;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon, com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon.Builder, com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeonOrBuilder> 
+          getLupinDungeonFieldBuilder() {
+        if (lupinDungeonBuilder_ == null) {
+          lupinDungeonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon, com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeon.Builder, com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.MsgRspBattleStartLupinDungeonOrBuilder>(
+                  getLupinDungeon(),
+                  getParentForChildren(),
+                  isClean());
+          lupinDungeon_ = null;
+        }
+        return lupinDungeonBuilder_;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -2024,7 +2221,7 @@ public final class RspBattleStartOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspBattleStart(input, extensionRegistry);
+        return new RspBattleStart(input, extensionRegistry);
       }
     };
 
@@ -2064,21 +2261,23 @@ public final class RspBattleStartOuterClass {
       "gRspBattleStartArena.proto\032\037MsgRspBattle" +
       "StartInfinite.proto\032\033MsgRspBattleStartCl" +
       "an.proto\032\037MsgRspBattleStartColossus.prot" +
-      "o\032\032MsgRspBattleStartCVC.proto\"\377\003\n\016RspBat" +
-      "tleStart\022,\n\013battle_type\030\001 \001(\0162\027.msggamed" +
-      "ata.BattleType\0228\n\010scenario\030\002 \001(\0132&.msgga",
-      "medata.MsgRspBattleStartScenario\0226\n\007dung" +
-      "eon\030\003 \001(\0132%.msggamedata.MsgRspBattleStar" +
-      "tDungeon\022C\n\016friend_dungeon\030\004 \001(\0132+.msgga" +
-      "medata.MsgRspBattleStartFriendDungeon\0222\n" +
-      "\005arena\030\005 \001(\0132#.msggamedata.MsgRspBattleS" +
-      "tartArena\0228\n\010infinite\030\006 \001(\0132&.msggamedat" +
-      "a.MsgRspBattleStartInfinite\0220\n\004clan\030\007 \001(" +
-      "\0132\".msggamedata.MsgRspBattleStartClan\0228\n" +
-      "\010colossus\030\010 \001(\0132&.msggamedata.MsgRspBatt" +
-      "leStartColossus\022.\n\003cvc\030\t \001(\0132!.msggameda",
-      "ta.MsgRspBattleStartCVCB\023\n\021com.felania.m" +
-      "sldbb\006proto3"
+      "o\032\032MsgRspBattleStartCVC.proto\032#MsgRspBat" +
+      "tleStartLupinDungeon.proto\"\302\004\n\016RspBattle" +
+      "Start\022,\n\013battle_type\030\001 \001(\0162\027.msggamedata" +
+      ".BattleType\0228\n\010scenario\030\002 \001(\0132&.msggamed" +
+      "ata.MsgRspBattleStartScenario\0226\n\007dungeon" +
+      "\030\003 \001(\0132%.msggamedata.MsgRspBattleStartDu" +
+      "ngeon\022C\n\016friend_dungeon\030\004 \001(\0132+.msggamed" +
+      "ata.MsgRspBattleStartFriendDungeon\0222\n\005ar" +
+      "ena\030\005 \001(\0132#.msggamedata.MsgRspBattleStar" +
+      "tArena\0228\n\010infinite\030\006 \001(\0132&.msggamedata.M" +
+      "sgRspBattleStartInfinite\0220\n\004clan\030\007 \001(\0132\"" +
+      ".msggamedata.MsgRspBattleStartClan\0228\n\010co" +
+      "lossus\030\010 \001(\0132&.msggamedata.MsgRspBattleS" +
+      "tartColossus\022.\n\003cvc\030\t \001(\0132!.msggamedata." +
+      "MsgRspBattleStartCVC\022A\n\rlupin_dungeon\030\n " +
+      "\001(\0132*.msggamedata.MsgRspBattleStartLupin" +
+      "DungeonB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2100,13 +2299,14 @@ public final class RspBattleStartOuterClass {
           com.felania.msldb.MsgRspBattleStartClanOuterClass.getDescriptor(),
           com.felania.msldb.MsgRspBattleStartColossusOuterClass.getDescriptor(),
           com.felania.msldb.MsgRspBattleStartCVCOuterClass.getDescriptor(),
+          com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_RspBattleStart_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_msggamedata_RspBattleStart_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_RspBattleStart_descriptor,
-        new java.lang.String[] { "BattleType", "Scenario", "Dungeon", "FriendDungeon", "Arena", "Infinite", "Clan", "Colossus", "Cvc", });
+        new java.lang.String[] { "BattleType", "Scenario", "Dungeon", "FriendDungeon", "Arena", "Infinite", "Clan", "Colossus", "Cvc", "LupinDungeon", });
     com.felania.msldb.BattleTypeOuterClass.getDescriptor();
     com.felania.msldb.MsgRspBattleStartScenarioOuterClass.getDescriptor();
     com.felania.msldb.MsgRspBattleStartDungeonOuterClass.getDescriptor();
@@ -2116,6 +2316,7 @@ public final class RspBattleStartOuterClass {
     com.felania.msldb.MsgRspBattleStartClanOuterClass.getDescriptor();
     com.felania.msldb.MsgRspBattleStartColossusOuterClass.getDescriptor();
     com.felania.msldb.MsgRspBattleStartCVCOuterClass.getDescriptor();
+    com.felania.msldb.MsgRspBattleStartLupinDungeonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

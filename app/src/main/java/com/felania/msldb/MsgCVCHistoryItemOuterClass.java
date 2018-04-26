@@ -103,6 +103,9 @@ public final class MsgCVCHistoryItemOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1114,7 +1117,7 @@ public final class MsgCVCHistoryItemOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgCVCHistoryItem(input, extensionRegistry);
+        return new MsgCVCHistoryItem(input, extensionRegistry);
       }
     };
 
@@ -1156,7 +1159,7 @@ public final class MsgCVCHistoryItemOuterClass {
       "fileData\022\021\n\tbattle_id\030\003 \001(\004\022\025\n\ruser_ship" +
       "_uid\030\004 \001(\r\0220\n\006result\030\005 \001(\0162 .msggamedata" +
       ".BattleEndResultType\022\031\n\021battle_start_tim" +
-      "e\030\006 \001(\004\022\022\n\ngain_score\030\007 \001(\rB\023\n\021com.felan",
+      "e\030\006 \001(\004\022\022\n\ngain_score\030\007 \001(\rB\023\n\021com.felan" +
       "ia.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

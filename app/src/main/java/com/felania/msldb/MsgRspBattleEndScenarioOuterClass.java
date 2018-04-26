@@ -56,6 +56,19 @@ public final class MsgRspBattleEndScenarioOuterClass {
      * <code>.msggamedata.MsgFriendDungeonFindHistory find_friend_dungeon = 3;</code>
      */
     com.felania.msldb.MsgFriendDungeonFindHistoryOuterClass.MsgFriendDungeonFindHistoryOrBuilder getFindFriendDungeonOrBuilder();
+
+    /**
+     * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+     */
+    boolean hasUserLupinDungeon();
+    /**
+     * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+     */
+    com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon getUserLupinDungeon();
+    /**
+     * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+     */
+    com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeonOrBuilder getUserLupinDungeonOrBuilder();
   }
   /**
    * Protobuf type {@code msggamedata.MsgRspBattleEndScenario}
@@ -82,6 +95,9 @@ public final class MsgRspBattleEndScenarioOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -135,6 +151,19 @@ public final class MsgRspBattleEndScenarioOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(findFriendDungeon_);
                 findFriendDungeon_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 34: {
+              com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon.Builder subBuilder = null;
+              if (userLupinDungeon_ != null) {
+                subBuilder = userLupinDungeon_.toBuilder();
+              }
+              userLupinDungeon_ = input.readMessage(com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(userLupinDungeon_);
+                userLupinDungeon_ = subBuilder.buildPartial();
               }
 
               break;
@@ -226,6 +255,27 @@ public final class MsgRspBattleEndScenarioOuterClass {
       return getFindFriendDungeon();
     }
 
+    public static final int USER_LUPIN_DUNGEON_FIELD_NUMBER = 4;
+    private com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon userLupinDungeon_;
+    /**
+     * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+     */
+    public boolean hasUserLupinDungeon() {
+      return userLupinDungeon_ != null;
+    }
+    /**
+     * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+     */
+    public com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon getUserLupinDungeon() {
+      return userLupinDungeon_ == null ? com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon.getDefaultInstance() : userLupinDungeon_;
+    }
+    /**
+     * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+     */
+    public com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeonOrBuilder getUserLupinDungeonOrBuilder() {
+      return getUserLupinDungeon();
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -247,6 +297,9 @@ public final class MsgRspBattleEndScenarioOuterClass {
       if (findFriendDungeon_ != null) {
         output.writeMessage(3, getFindFriendDungeon());
       }
+      if (userLupinDungeon_ != null) {
+        output.writeMessage(4, getUserLupinDungeon());
+      }
       unknownFields.writeTo(output);
     }
 
@@ -266,6 +319,10 @@ public final class MsgRspBattleEndScenarioOuterClass {
       if (findFriendDungeon_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getFindFriendDungeon());
+      }
+      if (userLupinDungeon_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, getUserLupinDungeon());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -298,6 +355,11 @@ public final class MsgRspBattleEndScenarioOuterClass {
         result = result && getFindFriendDungeon()
             .equals(other.getFindFriendDungeon());
       }
+      result = result && (hasUserLupinDungeon() == other.hasUserLupinDungeon());
+      if (hasUserLupinDungeon()) {
+        result = result && getUserLupinDungeon()
+            .equals(other.getUserLupinDungeon());
+      }
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -320,6 +382,10 @@ public final class MsgRspBattleEndScenarioOuterClass {
       if (hasFindFriendDungeon()) {
         hash = (37 * hash) + FIND_FRIEND_DUNGEON_FIELD_NUMBER;
         hash = (53 * hash) + getFindFriendDungeon().hashCode();
+      }
+      if (hasUserLupinDungeon()) {
+        hash = (37 * hash) + USER_LUPIN_DUNGEON_FIELD_NUMBER;
+        hash = (53 * hash) + getUserLupinDungeon().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -468,6 +534,12 @@ public final class MsgRspBattleEndScenarioOuterClass {
           findFriendDungeon_ = null;
           findFriendDungeonBuilder_ = null;
         }
+        if (userLupinDungeonBuilder_ == null) {
+          userLupinDungeon_ = null;
+        } else {
+          userLupinDungeon_ = null;
+          userLupinDungeonBuilder_ = null;
+        }
         return this;
       }
 
@@ -504,6 +576,11 @@ public final class MsgRspBattleEndScenarioOuterClass {
           result.findFriendDungeon_ = findFriendDungeon_;
         } else {
           result.findFriendDungeon_ = findFriendDungeonBuilder_.build();
+        }
+        if (userLupinDungeonBuilder_ == null) {
+          result.userLupinDungeon_ = userLupinDungeon_;
+        } else {
+          result.userLupinDungeon_ = userLupinDungeonBuilder_.build();
         }
         onBuilt();
         return result;
@@ -554,6 +631,9 @@ public final class MsgRspBattleEndScenarioOuterClass {
         }
         if (other.hasFindFriendDungeon()) {
           mergeFindFriendDungeon(other.getFindFriendDungeon());
+        }
+        if (other.hasUserLupinDungeon()) {
+          mergeUserLupinDungeon(other.getUserLupinDungeon());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -932,6 +1012,123 @@ public final class MsgRspBattleEndScenarioOuterClass {
         }
         return findFriendDungeonBuilder_;
       }
+
+      private com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon userLupinDungeon_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon, com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon.Builder, com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeonOrBuilder> userLupinDungeonBuilder_;
+      /**
+       * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+       */
+      public boolean hasUserLupinDungeon() {
+        return userLupinDungeonBuilder_ != null || userLupinDungeon_ != null;
+      }
+      /**
+       * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+       */
+      public com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon getUserLupinDungeon() {
+        if (userLupinDungeonBuilder_ == null) {
+          return userLupinDungeon_ == null ? com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon.getDefaultInstance() : userLupinDungeon_;
+        } else {
+          return userLupinDungeonBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+       */
+      public Builder setUserLupinDungeon(com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon value) {
+        if (userLupinDungeonBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          userLupinDungeon_ = value;
+          onChanged();
+        } else {
+          userLupinDungeonBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+       */
+      public Builder setUserLupinDungeon(
+          com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon.Builder builderForValue) {
+        if (userLupinDungeonBuilder_ == null) {
+          userLupinDungeon_ = builderForValue.build();
+          onChanged();
+        } else {
+          userLupinDungeonBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+       */
+      public Builder mergeUserLupinDungeon(com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon value) {
+        if (userLupinDungeonBuilder_ == null) {
+          if (userLupinDungeon_ != null) {
+            userLupinDungeon_ =
+              com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon.newBuilder(userLupinDungeon_).mergeFrom(value).buildPartial();
+          } else {
+            userLupinDungeon_ = value;
+          }
+          onChanged();
+        } else {
+          userLupinDungeonBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+       */
+      public Builder clearUserLupinDungeon() {
+        if (userLupinDungeonBuilder_ == null) {
+          userLupinDungeon_ = null;
+          onChanged();
+        } else {
+          userLupinDungeon_ = null;
+          userLupinDungeonBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+       */
+      public com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon.Builder getUserLupinDungeonBuilder() {
+        
+        onChanged();
+        return getUserLupinDungeonFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+       */
+      public com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeonOrBuilder getUserLupinDungeonOrBuilder() {
+        if (userLupinDungeonBuilder_ != null) {
+          return userLupinDungeonBuilder_.getMessageOrBuilder();
+        } else {
+          return userLupinDungeon_ == null ?
+              com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon.getDefaultInstance() : userLupinDungeon_;
+        }
+      }
+      /**
+       * <code>.msggamedata.MsgUserLupinDungeon user_lupin_dungeon = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon, com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon.Builder, com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeonOrBuilder> 
+          getUserLupinDungeonFieldBuilder() {
+        if (userLupinDungeonBuilder_ == null) {
+          userLupinDungeonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon, com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeon.Builder, com.felania.msldb.MsgUserLupinDungeonOuterClass.MsgUserLupinDungeonOrBuilder>(
+                  getUserLupinDungeon(),
+                  getParentForChildren(),
+                  isClean());
+          userLupinDungeon_ = null;
+        }
+        return userLupinDungeonBuilder_;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
@@ -962,7 +1159,7 @@ public final class MsgRspBattleEndScenarioOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRspBattleEndScenario(input, extensionRegistry);
+        return new MsgRspBattleEndScenario(input, extensionRegistry);
       }
     };
 
@@ -998,13 +1195,15 @@ public final class MsgRspBattleEndScenarioOuterClass {
       "\n\035MsgRspBattleEndScenario.proto\022\013msggame" +
       "data\032\033MsgBattleEndBasicInfo.proto\032#MsgSc" +
       "enarioBattleClearHistory.proto\032!MsgFrien" +
-      "dDungeonFindHistory.proto\"\325\001\n\027MsgRspBatt" +
-      "leEndScenario\0220\n\004info\030\001 \001(\0132\".msggamedat" +
-      "a.MsgBattleEndBasicInfo\022A\n\rclear_history" +
-      "\030\002 \001(\0132*.msggamedata.MsgScenarioBattleCl" +
-      "earHistory\022E\n\023find_friend_dungeon\030\003 \001(\0132" +
-      "(.msggamedata.MsgFriendDungeonFindHistor" +
-      "yB\023\n\021com.felania.msldbb\006proto3"
+      "dDungeonFindHistory.proto\032\031MsgUserLupinD" +
+      "ungeon.proto\"\223\002\n\027MsgRspBattleEndScenario" +
+      "\0220\n\004info\030\001 \001(\0132\".msggamedata.MsgBattleEn" +
+      "dBasicInfo\022A\n\rclear_history\030\002 \001(\0132*.msgg" +
+      "amedata.MsgScenarioBattleClearHistory\022E\n" +
+      "\023find_friend_dungeon\030\003 \001(\0132(.msggamedata" +
+      ".MsgFriendDungeonFindHistory\022<\n\022user_lup" +
+      "in_dungeon\030\004 \001(\0132 .msggamedata.MsgUserLu" +
+      "pinDungeonB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1020,16 +1219,18 @@ public final class MsgRspBattleEndScenarioOuterClass {
           com.felania.msldb.MsgBattleEndBasicInfoOuterClass.getDescriptor(),
           com.felania.msldb.MsgScenarioBattleClearHistoryOuterClass.getDescriptor(),
           com.felania.msldb.MsgFriendDungeonFindHistoryOuterClass.getDescriptor(),
+          com.felania.msldb.MsgUserLupinDungeonOuterClass.getDescriptor(),
         }, assigner);
     internal_static_msggamedata_MsgRspBattleEndScenario_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_msggamedata_MsgRspBattleEndScenario_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msggamedata_MsgRspBattleEndScenario_descriptor,
-        new java.lang.String[] { "Info", "ClearHistory", "FindFriendDungeon", });
+        new java.lang.String[] { "Info", "ClearHistory", "FindFriendDungeon", "UserLupinDungeon", });
     com.felania.msldb.MsgBattleEndBasicInfoOuterClass.getDescriptor();
     com.felania.msldb.MsgScenarioBattleClearHistoryOuterClass.getDescriptor();
     com.felania.msldb.MsgFriendDungeonFindHistoryOuterClass.getDescriptor();
+    com.felania.msldb.MsgUserLupinDungeonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

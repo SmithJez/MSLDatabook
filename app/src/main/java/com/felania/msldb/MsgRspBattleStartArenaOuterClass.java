@@ -133,6 +133,9 @@ public final class MsgRspBattleStartArenaOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1630,7 +1633,7 @@ public final class MsgRspBattleStartArenaOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRspBattleStartArena(input, extensionRegistry);
+        return new MsgRspBattleStartArena(input, extensionRegistry);
       }
     };
 
@@ -1672,7 +1675,7 @@ public final class MsgRspBattleStartArenaOuterClass {
       "rena_monsters\030\004 \003(\0132\034.msggamedata.MsgAre" +
       "naMonster\0225\n\014monster_slot\030\005 \001(\0132\037.msggam" +
       "edata.MsgMonsterSlotData\022\027\n\017arena_battle" +
-      "_id\030\006 \001(\004\022\033\n\023monthly_monster_uid\030\007 \003(\007B\023",
+      "_id\030\006 \001(\004\022\033\n\023monthly_monster_uid\030\007 \003(\007B\023" +
       "\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

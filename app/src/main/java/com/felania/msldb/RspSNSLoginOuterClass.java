@@ -134,6 +134,9 @@ public final class RspSNSLoginOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1576,7 +1579,7 @@ public final class RspSNSLoginOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspSNSLogin(input, extensionRegistry);
+        return new RspSNSLogin(input, extensionRegistry);
       }
     };
 
@@ -1618,7 +1621,7 @@ public final class RspSNSLoginOuterClass {
       "\004 \001(\0132\024.msggamedata.MsgUser\022,\n\013sns_accou" +
       "nt\030\005 \001(\0132\027.msggamedata.MsgAccount\022&\n\010sns" +
       "_user\030\006 \001(\0132\024.msggamedata.MsgUser\022\022\n\nnee" +
-      "d_login\030\007 \001(\010\022\r\n\005token\030\010 \001(\t\022\016\n\006ticket\030\t",
+      "d_login\030\007 \001(\010\022\r\n\005token\030\010 \001(\t\022\016\n\006ticket\030\t" +
       " \001(\rB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

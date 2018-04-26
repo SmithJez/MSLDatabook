@@ -150,6 +150,9 @@ public final class MsgDungeonStageOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1697,7 +1700,7 @@ public final class MsgDungeonStageOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgDungeonStage(input, extensionRegistry);
+        return new MsgDungeonStage(input, extensionRegistry);
       }
     };
 
@@ -1739,7 +1742,7 @@ public final class MsgDungeonStageOuterClass {
       " \001(\0162\027.msggamedata.BattleType\022\031\n\021stage_t" +
       "itle_image\030\010 \001(\t\022\030\n\020stage_mark_image\030\t \001" +
       "(\t\022\021\n\tsubstages\030\014 \003(\007\022H\n\027generalDungeonS" +
-      "tageInfo\030\r \001(\0132\'.msggamedata.MsgGeneralD",
+      "tageInfo\030\r \001(\0132\'.msggamedata.MsgGeneralD" +
       "ungeonStageInfo\022F\n\026friendDungeonStageInf" +
       "o\030\016 \001(\0132&.msggamedata.MsgFriendDungeonSt" +
       "ageInfoB\023\n\021com.felania.msldbb\006proto3"

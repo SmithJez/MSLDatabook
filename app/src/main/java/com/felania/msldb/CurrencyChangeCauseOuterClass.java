@@ -140,6 +140,10 @@ public final class CurrencyChangeCauseOuterClass {
      */
     CCC_Get_Booster_Package_Instant_Reward(29),
     /**
+     * <code>CCC_Get_Lupin_Dungoen_Battle_Clear_Reward = 30;</code>
+     */
+    CCC_Get_Lupin_Dungoen_Battle_Clear_Reward(30),
+    /**
      * <code>CCC_Use_Buy_Bullet = 50;</code>
      */
     CCC_Use_Buy_Bullet(50),
@@ -259,6 +263,10 @@ public final class CurrencyChangeCauseOuterClass {
      * <code>CCC_Use_Costume_Ticket = 79;</code>
      */
     CCC_Use_Costume_Ticket(79),
+    /**
+     * <code>CCC_Use_Max_Extend_Monster_slot = 80;</code>
+     */
+    CCC_Use_Max_Extend_Monster_slot(80),
     /**
      * <code>CCC_Refund_From_DBTool = 99;</code>
      */
@@ -387,6 +395,10 @@ public final class CurrencyChangeCauseOuterClass {
      */
     public static final int CCC_Get_Booster_Package_Instant_Reward_VALUE = 29;
     /**
+     * <code>CCC_Get_Lupin_Dungoen_Battle_Clear_Reward = 30;</code>
+     */
+    public static final int CCC_Get_Lupin_Dungoen_Battle_Clear_Reward_VALUE = 30;
+    /**
      * <code>CCC_Use_Buy_Bullet = 50;</code>
      */
     public static final int CCC_Use_Buy_Bullet_VALUE = 50;
@@ -507,6 +519,10 @@ public final class CurrencyChangeCauseOuterClass {
      */
     public static final int CCC_Use_Costume_Ticket_VALUE = 79;
     /**
+     * <code>CCC_Use_Max_Extend_Monster_slot = 80;</code>
+     */
+    public static final int CCC_Use_Max_Extend_Monster_slot_VALUE = 80;
+    /**
      * <code>CCC_Refund_From_DBTool = 99;</code>
      */
     public static final int CCC_Refund_From_DBTool_VALUE = 99;
@@ -560,6 +576,7 @@ public final class CurrencyChangeCauseOuterClass {
         case 27: return CCC_Get_Festival_Ticket_Reward;
         case 28: return CCC_Get_Sell_SuperStoneStuff;
         case 29: return CCC_Get_Booster_Package_Instant_Reward;
+        case 30: return CCC_Get_Lupin_Dungoen_Battle_Clear_Reward;
         case 50: return CCC_Use_Buy_Bullet;
         case 51: return CCC_Use_In_Joje_Shop;
         case 52: return CCC_Use_In_Shop;
@@ -590,6 +607,7 @@ public final class CurrencyChangeCauseOuterClass {
         case 77: return CCC_Use_Rapid_Combining_Superstone;
         case 78: return CCC_Use_Super_Evolution;
         case 79: return CCC_Use_Costume_Ticket;
+        case 80: return CCC_Use_Max_Extend_Monster_slot;
         case 99: return CCC_Refund_From_DBTool;
         default: return null;
       }
@@ -653,7 +671,7 @@ public final class CurrencyChangeCauseOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031CurrencyChangeCause.proto\022\013msggamedata" +
-      "*\263\017\n\023CurrencyChangeCause\022\033\n\027CurrencyChan" +
+      "*\207\020\n\023CurrencyChangeCause\022\033\n\027CurrencyChan" +
       "geCauseNULL\020\000\022\027\n\023CCC_Get_Buy_In_Shop\020\001\022\037" +
       "\n\033CCC_Get_Buy_In_Instant_Shop\020\002\022\030\n\024CCC_G" +
       "et_Lobby_Reward\020\003\022\027\n\023CCC_Get_Battle_Drop" +
@@ -661,7 +679,7 @@ public final class CurrencyChangeCauseOuterClass {
       "CC_Get_Gift\020\006\022\030\n\024CCC_Get_Quest_Reward\020\007\022" +
       "\025\n\021CCC_Get_Sell_Rune\020\010\022\030\n\024CCC_Get_Sell_M" +
       "onster\020\t\022\034\n\030CCC_Get_Send_Gift_Reward\020\n\022\037" +
-      "\n\033CCC_Get_User_Levelup_Reward\020\013\022\033\n\027CCC_G",
+      "\n\033CCC_Get_User_Levelup_Reward\020\013\022\033\n\027CCC_G" +
       "et_Send_Gift_Bonus\020\014\022\037\n\033CCC_Get_Monster_" +
       "Dict_Reward\020\r\022\037\n\033CCC_Get_Arena_Battle_Re" +
       "ward\020\016\022(\n$CCC_Get_30day_package_special_" +
@@ -671,39 +689,41 @@ public final class CurrencyChangeCauseOuterClass {
       "_Reward\020\023\022#\n\037CCC_Get_Shop_Item_Bundle_Re" +
       "ward\020\024\022(\n$CCC_Get_15day_package_special_" +
       "reward\020\025\022$\n CCC_Get_Clan_Battle_Clear_Re" +
-      "ward\020\026\022)\n%CCC_Use_Summon_Monster_By_Star",
+      "ward\020\026\022)\n%CCC_Use_Summon_Monster_By_Star" +
       "Essence\020\027\022%\n!CCC_Get_Clan_Battle_Season_" +
       "Reward\020\030\022\025\n\021CCC_Get_LobbyShip\020\031\022$\n CCC_G" +
       "et_LobbyShip_special_reward\020\032\022\"\n\036CCC_Get" +
       "_Festival_Ticket_Reward\020\033\022 \n\034CCC_Get_Sel" +
       "l_SuperStoneStuff\020\034\022*\n&CCC_Get_Booster_P" +
-      "ackage_Instant_Reward\020\035\022\026\n\022CCC_Use_Buy_B" +
-      "ullet\0202\022\030\n\024CCC_Use_In_Joje_Shop\0203\022\023\n\017CCC" +
-      "_Use_In_Shop\0204\022\033\n\027CCC_Use_In_Instant_Sho" +
-      "p\0205\022\037\n\033CCC_Use_Extend_Monster_slot\0206\022\030\n\024" +
-      "CCC_Use_Unequip_Rune\0207\022\030\n\024CCC_Use_Upgrad",
-      "e_Rune\0208\022\032\n\026CCC_Use_Summon_Monster\0209\022\'\n#" +
-      "CCC_Use_Summon_Monster_By_Soulstone\020:\022$\n" +
-      " CCC_Use_Summon_Monster_By_Revive\020;\022!\n\035C" +
-      "CC_Use_Summon_Monster_By_Egg\020<\022\032\n\026CCC_Us" +
-      "e_Beyond_Monster\020=\022$\n CCC_Use_Warmup_Evo" +
-      "lution_Monster\020>\022#\n\037CCC_Use_Final_Evolut" +
-      "ion_Monster\020?\022!\n\035CCC_Use_Max_Evolution_M" +
-      "onster\020@\022 \n\034CCC_Use_Feed_Item_To_Monster" +
-      "\020A\022\036\n\032CCC_Use_Refresh_arena_list\020B\022%\n!CC" +
-      "C_Use_Reset_Dungeon_Enter_Count\020C\022\033\n\027CCC",
-      "_Use_Continue_Battle\020D\022\"\n\036CCC_Use_Refres" +
-      "h_Joje_Shop_List\020E\022\031\n\025CCC_Use_Start_Dung" +
-      "eon\020F\022 \n\034CCC_Use_Dungeon_Ticket_Reset\020G\022" +
-      " \n\034CCC_Use_Combine_Beyond_Stone\020H\022\027\n\023CCC" +
-      "_Use_Create_Clan\020I\022,\n(CCC_Use_Summon_Mon" +
-      "ster_By_Special_Revive\020J\022\034\n\030CCC_Use_Buy_" +
-      "Default_Ship\020K\022!\n\035CCC_Use_Upgrade_Monste" +
-      "r_Skill\020L\022&\n\"CCC_Use_Rapid_Combining_Sup" +
-      "erstone\020M\022\033\n\027CCC_Use_Super_Evolution\020N\022\032" +
-      "\n\026CCC_Use_Costume_Ticket\020O\022\032\n\026CCC_Refund",
-      "_From_DBTool\020cB\023\n\021com.felania.msldbb\006pro" +
-      "to3"
+      "ackage_Instant_Reward\020\035\022-\n)CCC_Get_Lupin" +
+      "_Dungoen_Battle_Clear_Reward\020\036\022\026\n\022CCC_Us" +
+      "e_Buy_Bullet\0202\022\030\n\024CCC_Use_In_Joje_Shop\0203" +
+      "\022\023\n\017CCC_Use_In_Shop\0204\022\033\n\027CCC_Use_In_Inst" +
+      "ant_Shop\0205\022\037\n\033CCC_Use_Extend_Monster_slo" +
+      "t\0206\022\030\n\024CCC_Use_Unequip_Rune\0207\022\030\n\024CCC_Use" +
+      "_Upgrade_Rune\0208\022\032\n\026CCC_Use_Summon_Monste" +
+      "r\0209\022\'\n#CCC_Use_Summon_Monster_By_Soulsto" +
+      "ne\020:\022$\n CCC_Use_Summon_Monster_By_Revive" +
+      "\020;\022!\n\035CCC_Use_Summon_Monster_By_Egg\020<\022\032\n" +
+      "\026CCC_Use_Beyond_Monster\020=\022$\n CCC_Use_War" +
+      "mup_Evolution_Monster\020>\022#\n\037CCC_Use_Final" +
+      "_Evolution_Monster\020?\022!\n\035CCC_Use_Max_Evol" +
+      "ution_Monster\020@\022 \n\034CCC_Use_Feed_Item_To_" +
+      "Monster\020A\022\036\n\032CCC_Use_Refresh_arena_list\020" +
+      "B\022%\n!CCC_Use_Reset_Dungeon_Enter_Count\020C" +
+      "\022\033\n\027CCC_Use_Continue_Battle\020D\022\"\n\036CCC_Use" +
+      "_Refresh_Joje_Shop_List\020E\022\031\n\025CCC_Use_Sta" +
+      "rt_Dungeon\020F\022 \n\034CCC_Use_Dungeon_Ticket_R" +
+      "eset\020G\022 \n\034CCC_Use_Combine_Beyond_Stone\020H" +
+      "\022\027\n\023CCC_Use_Create_Clan\020I\022,\n(CCC_Use_Sum" +
+      "mon_Monster_By_Special_Revive\020J\022\034\n\030CCC_U" +
+      "se_Buy_Default_Ship\020K\022!\n\035CCC_Use_Upgrade" +
+      "_Monster_Skill\020L\022&\n\"CCC_Use_Rapid_Combin" +
+      "ing_Superstone\020M\022\033\n\027CCC_Use_Super_Evolut" +
+      "ion\020N\022\032\n\026CCC_Use_Costume_Ticket\020O\022#\n\037CCC" +
+      "_Use_Max_Extend_Monster_slot\020P\022\032\n\026CCC_Re" +
+      "fund_From_DBTool\020cB\023\n\021com.felania.msldbb" +
+      "\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

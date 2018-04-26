@@ -24,13 +24,17 @@ public final class MonsterCostumeChangeTypeOuterClass {
      */
     MonsterCostumeChangeTypeNULL(0),
     /**
-     * <code>MCCT_Equip = 1;</code>
+     * <code>MCCT_Gain = 1;</code>
      */
-    MCCT_Equip(1),
+    MCCT_Gain(1),
     /**
-     * <code>MCCT_UnEquip = 2;</code>
+     * <code>MCCT_Equip = 2;</code>
      */
-    MCCT_UnEquip(2),
+    MCCT_Equip(2),
+    /**
+     * <code>MCCT_UnEquip = 3;</code>
+     */
+    MCCT_UnEquip(3),
     UNRECOGNIZED(-1),
     ;
 
@@ -39,13 +43,17 @@ public final class MonsterCostumeChangeTypeOuterClass {
      */
     public static final int MonsterCostumeChangeTypeNULL_VALUE = 0;
     /**
-     * <code>MCCT_Equip = 1;</code>
+     * <code>MCCT_Gain = 1;</code>
      */
-    public static final int MCCT_Equip_VALUE = 1;
+    public static final int MCCT_Gain_VALUE = 1;
     /**
-     * <code>MCCT_UnEquip = 2;</code>
+     * <code>MCCT_Equip = 2;</code>
      */
-    public static final int MCCT_UnEquip_VALUE = 2;
+    public static final int MCCT_Equip_VALUE = 2;
+    /**
+     * <code>MCCT_UnEquip = 3;</code>
+     */
+    public static final int MCCT_UnEquip_VALUE = 3;
 
 
     public final int getNumber() {
@@ -67,8 +75,9 @@ public final class MonsterCostumeChangeTypeOuterClass {
     public static MonsterCostumeChangeType forNumber(int value) {
       switch (value) {
         case 0: return MonsterCostumeChangeTypeNULL;
-        case 1: return MCCT_Equip;
-        case 2: return MCCT_UnEquip;
+        case 1: return MCCT_Gain;
+        case 2: return MCCT_Equip;
+        case 3: return MCCT_UnEquip;
         default: return null;
       }
     }
@@ -131,10 +140,10 @@ public final class MonsterCostumeChangeTypeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036MonsterCostumeChangeType.proto\022\013msggam" +
-      "edata*^\n\030MonsterCostumeChangeType\022 \n\034Mon" +
-      "sterCostumeChangeTypeNULL\020\000\022\016\n\nMCCT_Equi" +
-      "p\020\001\022\020\n\014MCCT_UnEquip\020\002B\023\n\021com.felania.msl" +
-      "dbb\006proto3"
+      "edata*m\n\030MonsterCostumeChangeType\022 \n\034Mon" +
+      "sterCostumeChangeTypeNULL\020\000\022\r\n\tMCCT_Gain" +
+      "\020\001\022\016\n\nMCCT_Equip\020\002\022\020\n\014MCCT_UnEquip\020\003B\023\n\021" +
+      "com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

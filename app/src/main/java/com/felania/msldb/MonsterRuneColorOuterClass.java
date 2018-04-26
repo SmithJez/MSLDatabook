@@ -319,7 +319,7 @@ public final class MonsterRuneColorOuterClass {
       "ink\020\013\022\020\n\014MRC_HealMyHp\020\014\022\020\n\014MRC_HealMyMp\020" +
       "\r\022\r\n\tMRC_IncHp\020\016\022\r\n\tMRC_IncMp\020\017\022\016\n\nMRC_S" +
       "hield\020\020\022\014\n\010MRC_Stun\020\021\022\033\n\027MRC_Inc_Blue_De" +
-      "c_Orange\020\022\022\033\n\027MRC_Inc_Orange_Dec_Blue\020\023\022",
+      "c_Orange\020\022\022\033\n\027MRC_Inc_Orange_Dec_Blue\020\023\022" +
       "\032\n\026MRC_Inc_Green_Dec_Blue\020\024\022\032\n\026MRC_Inc_R" +
       "ed_Dec_Yellow\020\025\022\032\n\026MRC_Inc_Yellow_Dec_Re" +
       "d\020\026B\023\n\021com.felania.msldbb\006proto3"

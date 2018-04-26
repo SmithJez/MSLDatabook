@@ -115,6 +115,9 @@ public final class MsgRspBattleEndArenaOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1240,7 +1243,7 @@ public final class MsgRspBattleEndArenaOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRspBattleEndArena(input, extensionRegistry);
+        return new MsgRspBattleEndArena(input, extensionRegistry);
       }
     };
 
@@ -1282,7 +1285,7 @@ public final class MsgRspBattleEndArenaOuterClass {
       "\001(\0132\".msggamedata.MsgArenaBattleHistory\022" +
       " \n\030gain_arena_winning_point\030\004 \001(\r\022\030\n\020gai" +
       "n_arena_point\030\005 \001(\r\022\036\n\026enemy_profile_ico" +
-      "n_uid\030\006 \001(\007\022\027\n\017is_first_battle\030\007 \001(\010\022&\n\036",
+      "n_uid\030\006 \001(\007\022\027\n\017is_first_battle\030\007 \001(\010\022&\n\036" +
       "enemy_gain_arena_winning_point\030\010 \001(\r\022\020\n\010" +
       "is_valid\030\t \001(\010B\023\n\021com.felania.msldbb\006pro" +
       "to3"

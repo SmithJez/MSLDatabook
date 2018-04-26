@@ -120,6 +120,9 @@ public final class RspReceivePackageRewardOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1476,7 +1479,7 @@ public final class RspReceivePackageRewardOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RspReceivePackageReward(input, extensionRegistry);
+        return new RspReceivePackageReward(input, extensionRegistry);
       }
     };
 
@@ -1518,7 +1521,7 @@ public final class RspReceivePackageRewardOuterClass {
       "sggamedata.MsgUser\022+\n\tuser_item\030\004 \001(\0132\030." +
       "msggamedata.MsgUserItem\0221\n\014user_monster\030" +
       "\005 \001(\0132\033.msggamedata.MsgUserMonster\022C\n\026us" +
-      "er_monster_dict_data\030\006 \001(\0132#.msggamedata",
+      "er_monster_dict_data\030\006 \001(\0132#.msggamedata" +
       ".MsgUserMonsterDictData\022+\n\tuser_rune\030\007 \001" +
       "(\0132\030.msggamedata.MsgUserRuneB\023\n\021com.fela" +
       "nia.msldbb\006proto3"

@@ -259,6 +259,9 @@ public final class MsgRuneRareOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       int mutable_bitField1_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -2706,7 +2709,7 @@ public final class MsgRuneRareOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRuneRare(input, extensionRegistry);
+        return new MsgRuneRare(input, extensionRegistry);
       }
     };
 
@@ -2748,7 +2751,7 @@ public final class MsgRuneRareOuterClass {
       "ward_prob\030\013 \001(\r\022\023\n\013unequip_mul\030\014 \001(\002\022\020\n\010" +
       "sell_mul\030\r \001(\002\022\016\n\006add_hp\030\016 \001(\r\022\026\n\016add_hp" +
       "_percent\030\017 \001(\002\022\031\n\021add_hp_maxupgrade\030\020 \001(" +
-      "\r\022!\n\031add_hp_percent_maxupgrade\030\021 \001(\002\022\022\n\n",
+      "\r\022!\n\031add_hp_percent_maxupgrade\030\021 \001(\002\022\022\n\n" +
       "add_attack\030\022 \001(\r\022\032\n\022add_attack_percent\030\023" +
       " \001(\002\022\035\n\025add_attack_maxupgrade\030\024 \001(\r\022%\n\035a" +
       "dd_attack_percent_maxupgrade\030\025 \001(\002\022\023\n\013ad" +
@@ -2758,7 +2761,7 @@ public final class MsgRuneRareOuterClass {
       "add_heal\030\032 \001(\r\022\030\n\020add_heal_percent\030\033 \001(\002" +
       "\022\033\n\023add_heal_maxupgrade\030\034 \001(\r\022#\n\033add_hea" +
       "l_percent_maxupgrade\030\035 \001(\002\022#\n\033add_critic" +
-      "al_damage_percent\030\036 \001(\002\022!\n\031add_critical_",
+      "al_damage_percent\030\036 \001(\002\022!\n\031add_critical_" +
       "prob_percent\030\037 \001(\002\022,\n$add_status_effect_" +
       "resistance_percent\030  \001(\002\022.\n&add_critical" +
       "_damage_percent_maxupgrade\030! \001(\002\022,\n$add_" +

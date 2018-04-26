@@ -87,6 +87,9 @@ public final class MsgDailyBonusOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -495,6 +498,9 @@ public final class MsgDailyBonusOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1655,7 +1661,7 @@ public final class MsgDailyBonusOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new MsgDailyBonusItem(input, extensionRegistry);
+          return new MsgDailyBonusItem(input, extensionRegistry);
         }
       };
 
@@ -2524,7 +2530,7 @@ public final class MsgDailyBonusOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgDailyBonus(input, extensionRegistry);
+        return new MsgDailyBonus(input, extensionRegistry);
       }
     };
 
@@ -2571,7 +2577,7 @@ public final class MsgDailyBonusOuterClass {
       "msggamedata.MsgDailyBonus.MsgDailyBonusI" +
       "tem\032\325\002\n\021MsgDailyBonusItem\022\013\n\003day\030\001 \001(\r\0224" +
       "\n\titem_type\030\002 \001(\0162!.msggamedata.MsgShopI" +
-      "tem.ItemType\022.\n\010uid_data\030\003 \001(\0132\034.msggame",
+      "tem.ItemType\022.\n\010uid_data\030\003 \001(\0132\034.msggame" +
       "data.MsgUidAndAmount\022H\n\024instant_monster_" +
       "meta\030\004 \001(\0132*.msggamedata.MsgShopItemMeta" +
       "InstantMonster\022G\n\tshow_type\030\005 \001(\01624.msgg" +
@@ -2581,7 +2587,7 @@ public final class MsgDailyBonusOuterClass {
       "onusType\022\031\n\025MsgDailyBonusTypeNULL\020\000\022\r\n\tD" +
       "BT_Daily\020\001\022\017\n\013DBT_NewUser\020\002\022\022\n\016DBT_Retur" +
       "nUser\020\003\022\020\n\014DBT_Contract\020\004\"c\n\031MsgDailyBon" +
-      "usItemShowType\022!\n\035MsgDailyBonusItemShowT",
+      "usItemShowType\022!\n\035MsgDailyBonusItemShowT" +
       "ypeNULL\020\000\022\020\n\014DBIST_Normal\020\001\022\021\n\rDBIST_Spe" +
       "cial\020\002B\023\n\021com.felania.msldbb\006proto3"
     };

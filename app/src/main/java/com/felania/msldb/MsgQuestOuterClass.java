@@ -224,6 +224,9 @@ public final class MsgQuestOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -3533,7 +3536,7 @@ public final class MsgQuestOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgQuest(input, extensionRegistry);
+        return new MsgQuest(input, extensionRegistry);
       }
     };
 
@@ -3575,7 +3578,7 @@ public final class MsgQuestOuterClass {
       "oal_count\030\004 \001(\r\022\016\n\006repeat\030\005 \001(\r\022\016\n\006hidde" +
       "n\030\006 \001(\010\022-\n\004type\030\007 \001(\0162\037.msggamedata.MsgQ" +
       "uest.QuestType\0221\n\nsub_condis\030\010 \003(\0132\035.msg" +
-      "gamedata.MsgQuestSubCondi\022\014\n\004name\030\t \001(\007\022",
+      "gamedata.MsgQuestSubCondi\022\014\n\004name\030\t \001(\007\022" +
       "\014\n\004desc\030\n \001(\007\0225\n\013reward_type\030\013 \001(\0162 .msg" +
       "gamedata.MsgQuest.RewardType\022\022\n\nreward_v" +
       "al\030\014 \001(\r\022\026\n\016reward_val_uid\030\r \001(\007\022J\n\036rewa" +
@@ -3585,7 +3588,7 @@ public final class MsgQuestOuterClass {
       "uest.QuestShortcut\022\032\n\022shortcut_stage_uid" +
       "\030\021 \001(\007\022C\n\031shortcut_stage_difficulty\030\022 \001(" +
       "\0162 .msggamedata.StageDifficultyType\022\024\n\014t" +
-      "alk_seq_uid\030\023 \001(\007\0225\n\024shortcut_battle_typ",
+      "alk_seq_uid\030\023 \001(\007\0225\n\024shortcut_battle_typ" +
       "e\030\024 \001(\0162\027.msggamedata.BattleType\022\036\n\026rewa" +
       "rd_val_monster_lev\030\025 \001(\r\"\263\010\n\tMainCondi\022\021" +
       "\n\rMainCondiNULL\020\000\022\017\n\013UserLevelUp\020\001\022\026\n\022Da" +
@@ -3595,7 +3598,7 @@ public final class MsgQuestOuterClass {
       "nter\020\t\022\016\n\nBattleLose\020\n\022\021\n\rBattleContWin\020" +
       "\013\022\013\n\007SetRune\020\r\022\010\n\004Feed\020\016\022\n\n\006Beyond\020\017\022\r\n\t" +
       "Evolution\020\020\022\016\n\nCollectMon\020\021\022\013\n\007HaveMon\020\022" +
-      "\022\n\n\006Summon\020\023\022\023\n\017UpgradeRuneSucc\020\024\022\023\n\017Upg",
+      "\022\n\n\006Summon\020\023\022\023\n\017UpgradeRuneSucc\020\024\022\023\n\017Upg" +
       "radeRuneFail\020\025\022\016\n\nUpgradeGun\020\026\022\017\n\013Upgrad" +
       "eChip\020\027\022\n\n\006WarmUp\020\030\022\013\n\007ShopBuy\020\036\022\016\n\nCapt" +
       "ureTry\020(\022\017\n\013CaptureSucc\020)\022\017\n\013CaptureFail" +
@@ -3605,7 +3608,7 @@ public final class MsgQuestOuterClass {
       "serLogin\020=\022\014\n\010UserConn\020>\022\r\n\tConnBonus\020F\022" +
       "\021\n\rConnBonusGold\020G\022\023\n\017DailyQuestClear\020H\022" +
       "\022\n\016ArenaClearList\020I\022\021\n\rPromoteLeague\020J\022\023" +
-      "\n\017SetArenaDefence\020K\022\025\n\021UserSetHelloArena",
+      "\n\017SetArenaDefence\020K\022\025\n\021UserSetHelloArena" +
       "\020L\022\026\n\022ExtendMonsterInven\020M\022\033\n\027DiscoverGu" +
       "ardianDungeon\020O\022\016\n\nMonLevelUp\020P\022\024\n\020Weekl" +
       "yQuestClear\020Q\022\027\n\023WeeklyQuestAllClear\020R\022\025" +
@@ -3615,7 +3618,7 @@ public final class MsgQuestOuterClass {
       "p\020X\022\021\n\rPromiseNewbie\020Y\022\021\n\rPromiseReturn\020" +
       "Z\022\022\n\016SuperEvolution\020[\022\025\n\021CombineSuperSto" +
       "ne\020\\\022\020\n\014TutorialComp\020c\"\271\002\n\nRewardType\022\016\n" +
-      "\nRewardNone\020\000\022\r\n\tRewardGem\020\001\022\021\n\rRewardMo",
+      "\nRewardNone\020\000\022\r\n\tRewardGem\020\001\022\021\n\rRewardMo" +
       "nster\020\002\022\016\n\nRewardItem\020\003\022\016\n\nRewardGold\020\004\022" +
       "\r\n\tRewardExp\020\005\022\020\n\014RewardEnergy\020\006\022\027\n\023Rewa" +
       "rdDungeonTicket\020\007\022\025\n\021RewardArenaTicket\020\010" +
@@ -3625,7 +3628,7 @@ public final class MsgQuestOuterClass {
       "ardCostumeTicket\020\016\"\227\001\n\tQuestType\022\017\n\013Ques" +
       "tNormal\020\000\022\020\n\014QuestCapture\020\001\022\020\n\014QuestMont" +
       "hly\020\002\022\017\n\013QuestWeekly\020\003\022\016\n\nQuestDaily\020\004\022\020" +
-      "\n\014QuestMission\020\005\022\020\n\014QuestPackage\020\006\022\020\n\014Qu",
+      "\n\014QuestMission\020\005\022\020\n\014QuestPackage\020\006\022\020\n\014Qu" +
       "estPromise\020\007\"\271\003\n\rQuestShortcut\022\025\n\021QuestS" +
       "hortcutNone\020\000\022\027\n\023QuestShortcutBattle\020\001\022\026" +
       "\n\022QuestShortcutStage\020\002\022\030\n\024QuestShortcutD" +
@@ -3635,7 +3638,7 @@ public final class MsgQuestOuterClass {
       "tcutJojeShop\020\010\022\026\n\022QuestShortcutArena\020\t\022\031" +
       "\n\025QuestShortcutInfinite\020\n\022\025\n\021QuestShortc" +
       "utClan\020\013\022\037\n\033QuestShortcutAncientDungeon\020" +
-      "\014\022\036\n\032QuestShortcutDragonDungeon\020\r\022\037\n\033Que",
+      "\014\022\036\n\032QuestShortcutDragonDungeon\020\r\022\037\n\033Que" +
       "stShortcutSuperEvolution\020\016\022\034\n\030QuestShort" +
       "cutCostumeShop\020\017B\023\n\021com.felania.msldbb\006p" +
       "roto3"

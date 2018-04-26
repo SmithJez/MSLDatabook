@@ -167,6 +167,9 @@ public final class ReqUserRegisterOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1782,7 +1785,7 @@ public final class ReqUserRegisterOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ReqUserRegister(input, extensionRegistry);
+        return new ReqUserRegister(input, extensionRegistry);
       }
     };
 
@@ -1824,7 +1827,7 @@ public final class ReqUserRegisterOuterClass {
       "a.UserCharType\0220\n\tskin_type\030\004 \001(\0162\035.msgg" +
       "amedata.UserCharSkinType\022\025\n\rhello_messag" +
       "e\030\005 \001(\t\022\020\n\010timezone\030\006 \001(\r\022\025\n\rarena_messa" +
-      "ge\030\007 \001(\t\0222\n\tsms_alarm\030\010 \001(\0162\037.msggamedat",
+      "ge\030\007 \001(\t\0222\n\tsms_alarm\030\010 \001(\0162\037.msggamedat" +
       "a.AccountPushSetting\0223\n\npush_alarm\030\t \001(\016" +
       "2\037.msggamedata.AccountPushSetting\022<\n\022cli" +
       "ent_device_info\030\n \001(\0132 .msggamedata.MsgC" +

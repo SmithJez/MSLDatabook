@@ -108,6 +108,9 @@ public final class MsgRspBattleEndDungeonOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1350,7 +1353,7 @@ public final class MsgRspBattleEndDungeonOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRspBattleEndDungeon(input, extensionRegistry);
+        return new MsgRspBattleEndDungeon(input, extensionRegistry);
       }
     };
 
@@ -1392,7 +1395,7 @@ public final class MsgRspBattleEndDungeonOuterClass {
       "on\0220\n\004info\030\001 \001(\0132\".msggamedata.MsgBattle" +
       "EndBasicInfo\022>\n\rstage_history\030\002 \001(\0132\'.ms" +
       "ggamedata.MsgUserDungeonStageHistory\022O\n\026" +
-      "colossus_stage_history\030\003 \001(\0132/.msggameda",
+      "colossus_stage_history\030\003 \001(\0132/.msggameda" +
       "ta.MsgUserColossusDungeonStageHistory\022@\n" +
       "\rclear_history\030\004 \001(\0132).msggamedata.MsgDu" +
       "ngeonBattleClearHistory\022C\n\025colossus_clea" +

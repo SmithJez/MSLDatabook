@@ -184,6 +184,9 @@ public final class MsgUserCVCMemberOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1890,7 +1893,7 @@ public final class MsgUserCVCMemberOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgUserCVCMember(input, extensionRegistry);
+        return new MsgUserCVCMember(input, extensionRegistry);
       }
     };
 
@@ -1932,7 +1935,7 @@ public final class MsgUserCVCMemberOuterClass {
       "sggamedata.UserCharSkinType\022\035\n\025user_prof" +
       "ile_icon_uid\030\006 \001(\r\0222\n\014member_grade\030\007 \001(\016" +
       "2\034.msggamedata.ClanMemberGrade\022\023\n\013cvc_me" +
-      "ssage\030\010 \001(\t\022\026\n\016cvc_season_idx\030\t \001(\r\022\031\n\021l",
+      "ssage\030\010 \001(\t\022\026\n\016cvc_season_idx\030\t \001(\r\022\031\n\021l" +
       "ast_season_score\030\n \001(\004\022\r\n\005phase\030\013 \001(\r\022\033\n" +
       "\023remain_battle_count\030\014 \001(\r\022\020\n\010ship_uid\030\r" +
       " \001(\r\022\021\n\tship_name\030\016 \001(\t\022\022\n\ncvc_energy\030\017 " +

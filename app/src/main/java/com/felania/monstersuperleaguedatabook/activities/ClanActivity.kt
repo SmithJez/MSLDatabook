@@ -292,7 +292,8 @@ class ClanActivity : AppCompatActivity () {
         val mulTimeZone = offsetTimeZone * 3600L
 
 
-        val convertUserToServerTime = currentUserTime + mulTimeZone
+        //val convertUserToServerTime = currentUserTime + mulTimeZone
+        val convertUserToServerTime = 1525014000
 
         var season : MsgClanSeasonOuterClass.MsgClanSeason = MsgClanSeasonOuterClass.MsgClanSeason.getDefaultInstance()
 

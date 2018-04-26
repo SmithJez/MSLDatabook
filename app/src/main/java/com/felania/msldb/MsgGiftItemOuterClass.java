@@ -108,6 +108,9 @@ public final class MsgGiftItemOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1350,7 +1353,7 @@ public final class MsgGiftItemOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgGiftItem(input, extensionRegistry);
+        return new MsgGiftItem(input, extensionRegistry);
       }
     };
 
@@ -1392,7 +1395,7 @@ public final class MsgGiftItemOuterClass {
       "msggamedata.MsgUserRune\0223\n\016v_user_monste" +
       "r\030\003 \001(\0132\033.msggamedata.MsgUserMonster\022@\n\023" +
       "v_user_monster_dict\030\004 \001(\0132#.msggamedata." +
-      "MsgUserMonsterDictData\022:\n\014v_skill_book\030\005",
+      "MsgUserMonsterDictData\022:\n\014v_skill_book\030\005" +
       " \001(\0132$.msggamedata.MsgUserMonsterSkillBo" +
       "okB\023\n\021com.felania.msldbb\006proto3"
     };

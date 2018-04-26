@@ -158,6 +158,9 @@ public final class MsgStatusEffectOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2151,6 +2154,9 @@ public final class MsgStatusEffectOuterClass {
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
             com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2709,7 +2715,7 @@ public final class MsgStatusEffectOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-            return new MsgStatusEffectBossSelf(input, extensionRegistry);
+          return new MsgStatusEffectBossSelf(input, extensionRegistry);
         }
       };
 
@@ -4017,7 +4023,7 @@ public final class MsgStatusEffectOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgStatusEffect(input, extensionRegistry);
+        return new MsgStatusEffect(input, extensionRegistry);
       }
     };
 
@@ -4064,7 +4070,7 @@ public final class MsgStatusEffectOuterClass {
       "ffectSubType\0220\n\007element\030\006 \001(\0162\037.msggamed" +
       "ata.MonsterElementType\022\014\n\004turn\030\007 \001(\r\022\014\n\004" +
       "prob\030\010 \001(\002\022\017\n\007v_float\030\t \001(\002\022\r\n\005v_int\030\n \001" +
-      "(\r\022=\n\005where\030\013 \001(\0162..msggamedata.MsgStatu",
+      "(\r\022=\n\005where\030\013 \001(\0162..msggamedata.MsgStatu" +
       "sEffect.StatusEffectWhere\022G\n\tboss_self\030\014" +
       " \001(\01324.msggamedata.MsgStatusEffect.MsgSt" +
       "atusEffectBossSelf\022@\n\007if_cond\030\r \001(\0162/.ms" +
@@ -4074,7 +4080,7 @@ public final class MsgStatusEffectOuterClass {
       "bType\032\271\001\n\027MsgStatusEffectBossSelf\022F\n\006tar" +
       "get\030\001 \001(\01626.msggamedata.MsgStatusEffect." +
       "StatusEffectTriggerTarget\022B\n\004cond\030\002 \001(\0162" +
-      "4.msggamedata.MsgStatusEffect.StatusEffe",
+      "4.msggamedata.MsgStatusEffect.StatusEffe" +
       "ctTriggerCond\022\022\n\ncond_count\030\003 \001(\r\"\212\001\n\021St" +
       "atusEffectWhere\022\031\n\025StatusEffectWhereNULL" +
       "\020\000\022\013\n\007SEW_All\020\001\022\r\n\tSEW_Story\020\002\022\017\n\013SEW_Du" +
@@ -4084,7 +4090,7 @@ public final class MsgStatusEffectOuterClass {
       "ET_Debuff\020\002\022\r\n\tSET_Clear\020\003\022\017\n\013SET_Ongoin" +
       "g\020\004\022\014\n\010SET_Stun\020\005\022\017\n\013SET_Silence\020\006\022\014\n\010SE" +
       "T_Heal\020\007\022\020\n\014SET_Recovery\020\010\022\016\n\nSET_Shield" +
-      "\020\t\022\013\n\007SET_Dec\020\n\022\017\n\013SET_Provoke\020\013\022\014\n\010SET_",
+      "\020\t\022\013\n\007SET_Dec\020\n\022\017\n\013SET_Provoke\020\013\022\014\n\010SET_" +
       "Boss\020\014\022\022\n\016SET_LeaderBuff\020\025\022\020\n\014SET_SelfBu" +
       "ff\020\037\022\014\n\010SET_Seal\020)\"v\n\031StatusEffectTrigge" +
       "rTarget\022!\n\035StatusEffectTriggerTargetNULL" +
@@ -4094,7 +4100,7 @@ public final class MsgStatusEffectOuterClass {
       "\n\tSETC_Turn\020\001\022\014\n\010SETC_Hit\020\002\022\017\n\013SETC_Alwa" +
       "ys\020\003\"h\n\022StatusEffectIfCond\022\032\n\026StatusEffe" +
       "ctIfCondNULL\020\000\022\014\n\010SEIC_All\020\001\022\021\n\rSEIC_Cri" +
-      "tical\020\002\022\025\n\021SEIC_StatusEffect\020\003\"\237\036\n\023Statu",
+      "tical\020\002\022\025\n\021SEIC_StatusEffect\020\003\"\237\036\n\023Statu" +
       "sEffectSubType\022\033\n\027StatusEffectSubTypeNUL" +
       "L\020\000\022\023\n\017SEST_BuffAttack\020\001\022\024\n\020SEST_BuffDef" +
       "ence\020\002\022\021\n\rSEST_BuffHeal\020\003\022\036\n\032SEST_BuffHp" +
@@ -4104,7 +4110,7 @@ public final class MsgStatusEffectOuterClass {
       "BuffCriticalProb\020\010\022\033\n\027SEST_BuffCriticalD" +
       "amage\020\t\022\033\n\027SEST_BuffFinalValueHeal\020\n\022\025\n\021" +
       "SEST_DebuffAttack\020\025\022\026\n\022SEST_DebuffDefenc" +
-      "e\020\026\022\023\n\017SEST_DebuffHeal\020\027\022 \n\034SEST_DebuffH",
+      "e\020\026\022\023\n\017SEST_DebuffHeal\020\027\022 \n\034SEST_DebuffH" +
       "pCrystalRecovery\020\030\022 \n\034SEST_DebuffMpCryst" +
       "alRecovery\020\031\022\037\n\033SEST_DebuffHpCrystalGetP" +
       "rob\020\032\022\037\n\033SEST_DebuffMpCrystalGetProb\020\033\022\037" +
@@ -4114,7 +4120,7 @@ public final class MsgStatusEffectOuterClass {
       "_ClearDebuff\020 \022\024\n\020SEST_ClearShield\020!\022\025\n\021" +
       "SEST_OngoingIncHp\020)\022\025\n\021SEST_OngoingDecHp" +
       "\020*\022\025\n\021SEST_OngoingIncMp\020+\022\025\n\021SEST_Ongoin" +
-      "gDecMp\020,\022%\n!SEST_OngoingDecHpPercentFrom",
+      "gDecMp\020,\022%\n!SEST_OngoingDecHpPercentFrom" +
       "MaxHp\020-\022\035\n\031SEST_OngoingDecHpAbsolute\020.\022+" +
       "\n\'SEST_OngoingDoubleDecHpPercentFromMaxH" +
       "p\020/\022+\n\'SEST_OngoingTripleDecHpPercentFro" +
@@ -4124,7 +4130,7 @@ public final class MsgStatusEffectOuterClass {
       "\n\014SEST_Silence\020=\022\036\n\032SEST_HealMyHpByEnemy" +
       "Damage\020G\022\036\n\032SEST_HealMyMpByEnemyDamage\020H" +
       "\022\037\n\033SEST_RecoveryMyMpByMyDamage\020Q\022\037\n\033SES" +
-      "T_ShieldDamageByAbsolute\020[\022\034\n\030SEST_Shiel",
+      "T_ShieldDamageByAbsolute\020[\022\034\n\030SEST_Shiel" +
       "dDamageByMaxHp\020\\\022\032\n\026SEST_ShieldDamageByL" +
       "ev\020]\022 \n\034SEST_DecEnemyMpByEnemyDamage\020e\022\022" +
       "\n\016SEST_ProvokeMe\020o\022\037\n\033SEST_BossImmuneSta" +
@@ -4134,7 +4140,7 @@ public final class MsgStatusEffectOuterClass {
       "StatusEffectWithOngoingDec\020}\022\033\n\027SEST_Bos" +
       "sImmuneClanBoss\020~\022)\n%SEST_BossImmuneClan" +
       "BossWithoutOngoing\020\177\022\035\n\030SEST_BossImmuneG" +
-      "olemBoss\020\200\001\022&\n!SEST_BossAddStatusWithCle",
+      "olemBoss\020\200\001\022&\n!SEST_BossAddStatusWithCle" +
       "arDebuff\020\201\001\022 \n\033SEST_BossImmuneColossusBo" +
       "ss\020\202\001\022 \n\033SEST_BossReduceOngoingDecHp\020\203\001\022" +
       "\026\n\021SEST_LeaderBuffHp\020\311\001\022\032\n\025SEST_LeaderBu" +
@@ -4144,7 +4150,7 @@ public final class MsgStatusEffectOuterClass {
       "BuffMpCrystalRecovery\020\316\001\022\"\n\035SEST_LeaderB" +
       "uffCriticalDamage\020\317\001\022 \n\033SEST_LeaderBuffC" +
       "riticalProb\020\320\001\022*\n%SEST_LeaderBuffStatusE" +
-      "ffectResistance\020\321\001\022#\n\036SEST_LeaderDebuffA",
+      "ffectResistance\020\321\001\022#\n\036SEST_LeaderDebuffA" +
       "ttackToEnemy\020\322\001\022$\n\037SEST_LeaderDebuffDefe" +
       "nceToEnemy\020\323\001\022!\n\034SEST_LeaderDebuffHealTo" +
       "Enemy\020\324\001\022.\n)SEST_LeaderDebuffHpCrystalRe" +
@@ -4154,7 +4160,7 @@ public final class MsgStatusEffectOuterClass {
       "aderDebuffCriticalProbToEnemy\020\330\001\0223\n.SEST" +
       "_LeaderDebuffStatusEffectResistanceToEne" +
       "my\020\331\001\022\036\n\031SEST_SelfBuffCriticalProb\020\255\002\022 \n" +
-      "\033SEST_SelfBuffCriticalDamage\020\256\002\022#\n\036SEST_",
+      "\033SEST_SelfBuffCriticalDamage\020\256\002\022#\n\036SEST_" +
       "SelfReplacedAttackByMaxHp\020\257\002\022(\n#SEST_Sel" +
       "fReplacedAttackByMaxDefence\020\260\002\022%\n SEST_S" +
       "elfReplacedAttackByMaxHeal\020\261\002\022 \n\033SEST_Se" +
@@ -4164,7 +4170,7 @@ public final class MsgStatusEffectOuterClass {
       "mMaxMp\020\265\002\022/\n*SEST_SelfHealMyMpByPercentF" +
       "romMaxMpOurTeam\020\266\002\022(\n#SEST_SelfHealMyHpB" +
       "yPercentFromMaxHp\020\267\002\022/\n*SEST_SelfHealMyH" +
-      "pByPercentFromMaxHpOurTeam\020\270\002\022#\n\036SEST_Se",
+      "pByPercentFromMaxHpOurTeam\020\270\002\022#\n\036SEST_Se" +
       "lfHealMyMpByEnemyDamage\020\271\002\022*\n%SEST_SelfH" +
       "ealMyMpByEnemyDamageOurTeam\020\272\002\022#\n\036SEST_S" +
       "elfHealMyHpByEnemyDamage\020\273\002\022*\n%SEST_Self" +
@@ -4174,7 +4180,7 @@ public final class MsgStatusEffectOuterClass {
       "alMyHpByPercentFromMyMaxHpOurTeam\020\277\002\022*\n%" +
       "SEST_SelfHealMyMpByPercentFromMyMaxMp\020\300\002" +
       "\0221\n,SEST_SelfHealMyMpByPercentFromMyMaxM" +
-      "pOurTeam\020\301\002\022\035\n\030SEST_SelfCloneSoulHptoMp\020",
+      "pOurTeam\020\301\002\022\035\n\030SEST_SelfCloneSoulHptoMp\020" +
       "\302\002\022\035\n\030SEST_SelfCloneSoulMptoHp\020\303\002\022.\n)SES" +
       "T_SelfHealMyHpMpByPercentFromMyMaxHpMp\020\304" +
       "\002\0225\n0SEST_SelfHealMyHpMpByPercentFromMyM" +
@@ -4184,7 +4190,7 @@ public final class MsgStatusEffectOuterClass {
       "SelfHealMyMpByPercentFromEnemyMp\020\310\002\022#\n\036S" +
       "EST_SelfAddDamageByEnemyMaxHp\020\311\002\022\032\n\025SEST" +
       "_SelfStealEnemyMp\020\312\002\022\'\n\"SEST_SelfStealEn" +
-      "emyMpByEnemyDamage\020\313\002\022\'\n\"SEST_SelfAddAtt",
+      "emyMpByEnemyDamage\020\313\002\022\'\n\"SEST_SelfAddAtt" +
       "ackByTurnAccumulate\020\314\002\022#\n\036SEST_SelfAddAt" +
       "tackByHpLossRate\020\315\002\022*\n%SEST_SelfAddAttac" +
       "kByTargetDebuffCount\020\316\002\022\032\n\025SEST_SealStat" +

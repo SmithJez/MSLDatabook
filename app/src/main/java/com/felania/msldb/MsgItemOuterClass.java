@@ -265,6 +265,9 @@ public final class MsgItemOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -567,6 +570,18 @@ public final class MsgItemOuterClass {
        */
       RandomSuperStoneStuff(15),
       /**
+       * <code>RandomSuperStone = 16;</code>
+       */
+      RandomSuperStone(16),
+      /**
+       * <code>RenameTicket = 17;</code>
+       */
+      RenameTicket(17),
+      /**
+       * <code>RuneChangeTicket = 18;</code>
+       */
+      RuneChangeTicket(18),
+      /**
        * <code>ShowSkillBook = 99;</code>
        */
       ShowSkillBook(99),
@@ -638,6 +653,18 @@ public final class MsgItemOuterClass {
        */
       public static final int RandomSuperStoneStuff_VALUE = 15;
       /**
+       * <code>RandomSuperStone = 16;</code>
+       */
+      public static final int RandomSuperStone_VALUE = 16;
+      /**
+       * <code>RenameTicket = 17;</code>
+       */
+      public static final int RenameTicket_VALUE = 17;
+      /**
+       * <code>RuneChangeTicket = 18;</code>
+       */
+      public static final int RuneChangeTicket_VALUE = 18;
+      /**
        * <code>ShowSkillBook = 99;</code>
        */
       public static final int ShowSkillBook_VALUE = 99;
@@ -677,6 +704,9 @@ public final class MsgItemOuterClass {
           case 13: return HeroEssence;
           case 14: return Booster;
           case 15: return RandomSuperStoneStuff;
+          case 16: return RandomSuperStone;
+          case 17: return RenameTicket;
+          case 18: return RuneChangeTicket;
           case 99: return ShowSkillBook;
           default: return null;
         }
@@ -3625,7 +3655,7 @@ public final class MsgItemOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgItem(input, extensionRegistry);
+        return new MsgItem(input, extensionRegistry);
       }
     };
 
@@ -3666,8 +3696,8 @@ public final class MsgItemOuterClass {
       "roto\032\033MsgItemTypeSuperStone.proto\032!MsgIt" +
       "emTypeClanFestivalGift.proto\032\034MsgItemTyp" +
       "eHeroEssence.proto\032\030MsgItemTypeBooster.p" +
-      "roto\"\200\t\n\007MsgItem\022\013\n\003uid\030\001 \001(\007\022\014\n\004name\030\002 " +
-      "\001(\007\022\014\n\004desc\030\003 \001(\007\022+\n\004type\030\004 \001(\0162\035.msggam",
+      "roto\"\276\t\n\007MsgItem\022\013\n\003uid\030\001 \001(\007\022\014\n\004name\030\002 " +
+      "\001(\007\022\014\n\004desc\030\003 \001(\007\022+\n\004type\030\004 \001(\0162\035.msggam" +
       "edata.MsgItem.ItemType\022\r\n\005grade\030\005 \001(\r\022)\n" +
       "\nsell_price\030\007 \001(\0132\025.msggamedata.MsgPrice" +
       "\022\026\n\016sell_available\030\010 \001(\010\022\014\n\004icon\030\t \001(\t\0220" +
@@ -3677,7 +3707,7 @@ public final class MsgItemOuterClass {
       "id\030\014 \001(\007\022(\n\tuse_price\030\r \001(\0132\025.msggamedat" +
       "a.MsgPrice\022&\n\004meta\030\016 \001(\0132\030.msggamedata.M" +
       "sgItemMeta\022<\n\020random_rune_data\030\017 \001(\0132\".m" +
-      "sggamedata.MsgItemTypeRandomRune\022D\n\024mons",
+      "sggamedata.MsgItemTypeRandomRune\022D\n\024mons" +
       "ter_release_data\030\020 \001(\0132&.msggamedata.Msg" +
       "ItemTypeMonsterRelease\022>\n\021star_essence_d" +
       "ata\030\021 \001(\0132#.msggamedata.MsgItemTypeStarE" +
@@ -3687,15 +3717,17 @@ public final class MsgItemOuterClass {
       "peClanFestivalGift\0229\n\014hero_essence\030\024 \001(\013" +
       "2#.msggamedata.MsgItemTypeHeroEssence\0220\n" +
       "\007booster\030\025 \001(\0132\037.msggamedata.MsgItemType" +
-      "Booster\"\265\002\n\010ItemType\022\020\n\014ItemTypeNULL\020\000\022\010",
+      "Booster\"\363\002\n\010ItemType\022\020\n\014ItemTypeNULL\020\000\022\010" +
       "\n\004Food\020\001\022\017\n\013BeyondStone\020\002\022\016\n\nMonsterEgg\020" +
       "\003\022\r\n\tSoulStone\020\004\022\016\n\nRandomRune\020\005\022\022\n\016Mons" +
       "terRelease\020\006\022\017\n\013StarEssence\020\007\022\024\n\020Monster" +
       "EggHidden\020\010\022\023\n\017RandomSkillBook\020\t\022\016\n\nSupe" +
       "rStone\020\n\022\023\n\017SuperStoneStuff\020\013\022\014\n\010ClanGif" +
       "t\020\014\022\017\n\013HeroEssence\020\r\022\013\n\007Booster\020\016\022\031\n\025Ran" +
-      "domSuperStoneStuff\020\017\022\021\n\rShowSkillBook\020cB" +
-      "\023\n\021com.felania.msldbb\006proto3"
+      "domSuperStoneStuff\020\017\022\024\n\020RandomSuperStone" +
+      "\020\020\022\020\n\014RenameTicket\020\021\022\024\n\020RuneChangeTicket" +
+      "\020\022\022\021\n\rShowSkillBook\020cB\023\n\021com.felania.msl" +
+      "dbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

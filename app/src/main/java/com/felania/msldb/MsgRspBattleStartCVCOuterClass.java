@@ -139,6 +139,9 @@ public final class MsgRspBattleStartCVCOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1649,7 +1652,7 @@ public final class MsgRspBattleStartCVCOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRspBattleStartCVC(input, extensionRegistry);
+        return new MsgRspBattleStartCVC(input, extensionRegistry);
       }
     };
 
@@ -1691,7 +1694,7 @@ public final class MsgRspBattleStartCVCOuterClass {
       "\030\004 \001(\r\022(\n\nenemy_user\030\005 \001(\0132\024.msggamedata" +
       ".MsgUser\022\026\n\016enemy_ship_uid\030\006 \001(\r\022\035\n\025enem" +
       "y_clan_ship_score\030\007 \001(\r\022A\n\026enemy_member_" +
-      "slot_info\030\010 \001(\0132!.msggamedata.MsgCVCMemb",
+      "slot_info\030\010 \001(\0132!.msggamedata.MsgCVCMemb" +
       "erSlotInfo\0228\n\014monster_slot\030\t \001(\0132\".msgga" +
       "medata.MsgUserCVCMonsterSlot\022\025\n\rused_mon" +
       "sters\030\n \003(\004B\023\n\021com.felania.msldbb\006proto3"

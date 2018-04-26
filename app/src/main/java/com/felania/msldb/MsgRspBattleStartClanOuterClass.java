@@ -163,6 +163,9 @@ public final class MsgRspBattleStartClanOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2085,7 +2088,7 @@ public final class MsgRspBattleStartClanOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgRspBattleStartClan(input, extensionRegistry);
+        return new MsgRspBattleStartClan(input, extensionRegistry);
       }
     };
 
@@ -2127,7 +2130,7 @@ public final class MsgRspBattleStartClanOuterClass {
       "_uid\030\002 \001(\007\0229\n\016season_history\030\003 \001(\0132!.msg" +
       "gamedata.MsgClanSeasonHistory\022\"\n\004user\030\004 " +
       "\001(\0132\024.msggamedata.MsgUser\022/\n\007my_info\030\005 \001" +
-      "(\0132\036.msggamedata.MsgUserClanMember\0229\n\014mo",
+      "(\0132\036.msggamedata.MsgUserClanMember\0229\n\014mo" +
       "nster_slot\030\006 \001(\0132#.msggamedata.MsgUserCl" +
       "anMonsterSlot\022+\n\007battles\030\007 \003(\0132\032.msggame" +
       "data.MsgBattleData\022;\n\026coworker_user_mons" +

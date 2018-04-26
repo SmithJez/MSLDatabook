@@ -109,6 +109,9 @@ public final class MsgMonsterTypeOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1049,7 +1052,7 @@ public final class MsgMonsterTypeOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgMonsterType(input, extensionRegistry);
+        return new MsgMonsterType(input, extensionRegistry);
       }
     };
 
@@ -1091,7 +1094,7 @@ public final class MsgMonsterTypeOuterClass {
       "k_weight\030\003 \001(\002\022\026\n\016defence_weight\030\004 \001(\002\022\023" +
       "\n\013heal_weight\030\005 \001(\002\022\021\n\thp_weight\030\006 \001(\002\0220" +
       "\n\tevolution\030\013 \001(\0162\035.msggamedata.MonsterE" +
-      "volution\022\023\n\013prob_weight\030\014 \001(\002\022\n\n\002sp\030\r \001(",
+      "volution\022\023\n\013prob_weight\030\014 \001(\002\022\n\n\002sp\030\r \001(" +
       "\rB\023\n\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

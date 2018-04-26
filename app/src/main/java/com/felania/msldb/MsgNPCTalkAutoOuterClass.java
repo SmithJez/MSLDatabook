@@ -107,6 +107,9 @@ public final class MsgNPCTalkAutoOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1170,7 +1173,7 @@ public final class MsgNPCTalkAutoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgNPCTalkAuto(input, extensionRegistry);
+        return new MsgNPCTalkAuto(input, extensionRegistry);
       }
     };
 
@@ -1212,7 +1215,7 @@ public final class MsgNPCTalkAutoOuterClass {
       "er\022\025\n\rtrigger_v_uid\030\004 \001(\007\022\025\n\rtrigger_v_i" +
       "nt\030\005 \001(\007\0225\n\022trigger_v_tutorial\030\006 \001(\0162\031.m" +
       "sggamedata.TutorialStep\022>\n\024trigger_v_dif" +
-      "ficulty\030\007 \001(\0162 .msggamedata.StageDifficu",
+      "ficulty\030\007 \001(\0162 .msggamedata.StageDifficu" +
       "ltyType\022\024\n\014talk_seq_uid\030\010 \001(\007\"\255\001\n\007Trigge" +
       "r\022\013\n\007NewUser\020\000\022\r\n\tWorldOpen\020\001\022\016\n\nRoundSt" +
       "art\020\002\022\014\n\010RoundEnd\020\003\022\014\n\010Tutorial\020\004\022\016\n\nSta" +

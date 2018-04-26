@@ -156,6 +156,9 @@ public final class MsgDungeonSubStageOuterClass {
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -1720,7 +1723,7 @@ public final class MsgDungeonSubStageOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MsgDungeonSubStage(input, extensionRegistry);
+        return new MsgDungeonSubStage(input, extensionRegistry);
       }
     };
 
@@ -1762,7 +1765,7 @@ public final class MsgDungeonSubStageOuterClass {
       "\016\n\006reward\030\t \001(\007\022,\n\007battles\030\n \003(\0132\033.msgga" +
       "medata.MsgStageBattle\022\030\n\020boss_start_scen" +
       "e\030\013 \001(\t\022\024\n\014stage_prefab\030\014 \001(\t\022\025\n\rtag_coo" +
-      "l_turn\030\r \001(\r\022\027\n\017tag_opportunity\030\016 \001(\rB\023\n",
+      "l_turn\030\r \001(\r\022\027\n\017tag_opportunity\030\016 \001(\rB\023\n" +
       "\021com.felania.msldbb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
